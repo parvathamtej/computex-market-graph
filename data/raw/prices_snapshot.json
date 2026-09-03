@@ -1,0 +1,2701 @@
+{
+ "captured_at_utc": "2026-09-02T202709Z",
+ "snapshot_count": 1,
+ "by_gpu": [
+  {
+   "gpu": "B300",
+   "n": 5,
+   "min": 7.705,
+   "median": 7.91,
+   "max": 9.0075,
+   "spread": 1.17,
+   "cheapest": "verda",
+   "dearest": "scaleway",
+   "offers": [
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 7.705,
+     "regions": []
+    },
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 7.8075,
+     "regions": []
+    },
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 7.91,
+     "regions": []
+    },
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 7.91,
+     "regions": []
+    },
+    {
+     "provider": "scaleway",
+     "usd_gpu_hr": 9.0075,
+     "regions": []
+    }
+   ]
+  },
+  {
+   "gpu": "B200",
+   "n": 10,
+   "min": 3.74,
+   "median": 6.52,
+   "max": 6.99,
+   "spread": 1.87,
+   "cheapest": "boostrun",
+   "dearest": "lambdalabs",
+   "offers": [
+    {
+     "provider": "boostrun",
+     "usd_gpu_hr": 3.74,
+     "regions": []
+    },
+    {
+     "provider": "excesssupply",
+     "usd_gpu_hr": 4.5137,
+     "regions": []
+    },
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 6.305,
+     "regions": []
+    },
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 6.4175,
+     "regions": []
+    },
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 6.52,
+     "regions": []
+    },
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 6.52,
+     "regions": []
+    },
+    {
+     "provider": "lambdalabs",
+     "usd_gpu_hr": 6.69,
+     "regions": []
+    },
+    {
+     "provider": "lambdalabs",
+     "usd_gpu_hr": 6.79,
+     "regions": []
+    },
+    {
+     "provider": "lambdalabs",
+     "usd_gpu_hr": 6.89,
+     "regions": []
+    },
+    {
+     "provider": "lambdalabs",
+     "usd_gpu_hr": 6.99,
+     "regions": []
+    }
+   ]
+  },
+  {
+   "gpu": "H200",
+   "n": 17,
+   "min": 2.25,
+   "median": 4.47,
+   "max": 4.63,
+   "spread": 2.06,
+   "cheapest": "amaya",
+   "dearest": "excesssupply",
+   "offers": [
+    {
+     "provider": "amaya",
+     "usd_gpu_hr": 2.25,
+     "regions": []
+    },
+    {
+     "provider": "excesssupply",
+     "usd_gpu_hr": 2.25,
+     "regions": []
+    },
+    {
+     "provider": "boostrun",
+     "usd_gpu_hr": 2.45,
+     "regions": []
+    },
+    {
+     "provider": "horizon",
+     "usd_gpu_hr": 3.0,
+     "regions": []
+    },
+    {
+     "provider": "excesssupply",
+     "usd_gpu_hr": 3.2,
+     "regions": []
+    },
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 4.205,
+     "regions": []
+    },
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 4.205,
+     "regions": []
+    },
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 4.41,
+     "regions": []
+    },
+    {
+     "provider": "digitalocean",
+     "usd_gpu_hr": 4.47,
+     "regions": []
+    },
+    {
+     "provider": "digitalocean",
+     "usd_gpu_hr": 4.47,
+     "regions": []
+    },
+    {
+     "provider": "excesssupply",
+     "usd_gpu_hr": 4.5163,
+     "regions": []
+    },
+    {
+     "provider": "excesssupply",
+     "usd_gpu_hr": 4.5163,
+     "regions": []
+    },
+    {
+     "provider": "nebius",
+     "usd_gpu_hr": 4.5163,
+     "regions": []
+    },
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 4.615,
+     "regions": []
+    },
+    {
+     "provider": "excesssupply",
+     "usd_gpu_hr": 4.63,
+     "regions": []
+    },
+    {
+     "provider": "nebius",
+     "usd_gpu_hr": 4.63,
+     "regions": []
+    },
+    {
+     "provider": "excesssupply",
+     "usd_gpu_hr": 4.63,
+     "regions": []
+    }
+   ]
+  },
+  {
+   "gpu": "GH200",
+   "n": 2,
+   "min": 2.29,
+   "median": 3.26,
+   "max": 4.23,
+   "spread": 1.85,
+   "cheapest": "lambdalabs",
+   "dearest": "latitude",
+   "offers": [
+    {
+     "provider": "lambdalabs",
+     "usd_gpu_hr": 2.29,
+     "regions": [
+      "dulles-usa-3"
+     ]
+    },
+    {
+     "provider": "latitude",
+     "usd_gpu_hr": 4.23,
+     "regions": []
+    }
+   ]
+  },
+  {
+   "gpu": "H100_nvl",
+   "n": 3,
+   "min": 3.16,
+   "median": 3.16,
+   "max": 3.16,
+   "spread": 1.0,
+   "cheapest": "massedcompute",
+   "dearest": "massedcompute",
+   "offers": [
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 3.16,
+     "regions": []
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 3.16,
+     "regions": []
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 3.16,
+     "regions": []
+    }
+   ]
+  },
+  {
+   "gpu": "H100",
+   "n": 39,
+   "min": 1.66,
+   "median": 2.6,
+   "max": 5.99,
+   "spread": 3.61,
+   "cheapest": "latitude",
+   "dearest": "paperspace",
+   "offers": [
+    {
+     "provider": "latitude",
+     "usd_gpu_hr": 1.66,
+     "regions": []
+    },
+    {
+     "provider": "latitude",
+     "usd_gpu_hr": 1.7925,
+     "regions": []
+    },
+    {
+     "provider": "horizon",
+     "usd_gpu_hr": 1.95,
+     "regions": []
+    },
+    {
+     "provider": "latitude",
+     "usd_gpu_hr": 1.99,
+     "regions": []
+    },
+    {
+     "provider": "voltagepark",
+     "usd_gpu_hr": 1.99,
+     "regions": []
+    },
+    {
+     "provider": "voltagepark",
+     "usd_gpu_hr": 1.99,
+     "regions": []
+    },
+    {
+     "provider": "voltagepark",
+     "usd_gpu_hr": 1.99,
+     "regions": []
+    },
+    {
+     "provider": "voltagepark",
+     "usd_gpu_hr": 1.99,
+     "regions": []
+    },
+    {
+     "provider": "voltagepark",
+     "usd_gpu_hr": 1.99,
+     "regions": []
+    },
+    {
+     "provider": "latitude",
+     "usd_gpu_hr": 2.2425,
+     "regions": []
+    },
+    {
+     "provider": "denvr",
+     "usd_gpu_hr": 2.35,
+     "regions": []
+    },
+    {
+     "provider": "imwt",
+     "usd_gpu_hr": 2.48,
+     "regions": []
+    },
+    {
+     "provider": "imwt",
+     "usd_gpu_hr": 2.48,
+     "regions": []
+    },
+    {
+     "provider": "imwt",
+     "usd_gpu_hr": 2.48,
+     "regions": []
+    },
+    {
+     "provider": "imwt",
+     "usd_gpu_hr": 2.48,
+     "regions": []
+    },
+    {
+     "provider": "hyperstack",
+     "usd_gpu_hr": 2.5,
+     "regions": []
+    },
+    {
+     "provider": "hyperstack",
+     "usd_gpu_hr": 2.5,
+     "regions": []
+    },
+    {
+     "provider": "hyperstack",
+     "usd_gpu_hr": 2.5,
+     "regions": [
+      "montreal-canada-2"
+     ]
+    },
+    {
+     "provider": "hyperstack",
+     "usd_gpu_hr": 2.5,
+     "regions": []
+    },
+    {
+     "provider": "hyperstack",
+     "usd_gpu_hr": 2.6,
+     "regions": []
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 2.7275,
+     "regions": []
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 2.7275,
+     "regions": []
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 2.73,
+     "regions": [
+      "desmoines-usa-1"
+     ]
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 2.73,
+     "regions": [
+      "desmoines-usa-1"
+     ]
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 3.14,
+     "regions": []
+    },
+    {
+     "provider": "hyperstack",
+     "usd_gpu_hr": 3.2,
+     "regions": []
+    },
+    {
+     "provider": "scaleway",
+     "usd_gpu_hr": 3.3,
+     "regions": []
+    },
+    {
+     "provider": "scaleway",
+     "usd_gpu_hr": 3.3,
+     "regions": [
+      "warsaw-poland-1"
+     ]
+    },
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 3.31,
+     "regions": []
+    },
+    {
+     "provider": "nebius",
+     "usd_gpu_hr": 3.8662,
+     "regions": []
+    },
+    {
+     "provider": "digitalocean",
+     "usd_gpu_hr": 3.89,
+     "regions": []
+    },
+    {
+     "provider": "nebius",
+     "usd_gpu_hr": 3.98,
+     "regions": []
+    },
+    {
+     "provider": "lambdalabs",
+     "usd_gpu_hr": 3.99,
+     "regions": []
+    },
+    {
+     "provider": "lambdalabs",
+     "usd_gpu_hr": 4.09,
+     "regions": []
+    },
+    {
+     "provider": "lambdalabs",
+     "usd_gpu_hr": 4.19,
+     "regions": []
+    },
+    {
+     "provider": "lambdalabs",
+     "usd_gpu_hr": 4.29,
+     "regions": []
+    },
+    {
+     "provider": "lambdalabs",
+     "usd_gpu_hr": 4.36,
+     "regions": []
+    },
+    {
+     "provider": "digitalocean",
+     "usd_gpu_hr": 4.41,
+     "regions": []
+    },
+    {
+     "provider": "paperspace",
+     "usd_gpu_hr": 5.99,
+     "regions": [
+      "newyork-usa-1"
+     ]
+    }
+   ]
+  },
+  {
+   "gpu": "V100_32G",
+   "n": 3,
+   "min": 2.34,
+   "median": 2.34,
+   "max": 2.34,
+   "spread": 1.0,
+   "cheapest": "paperspace",
+   "dearest": "paperspace",
+   "offers": [
+    {
+     "provider": "paperspace",
+     "usd_gpu_hr": 2.34,
+     "regions": [
+      "newyork-usa-1"
+     ]
+    },
+    {
+     "provider": "paperspace",
+     "usd_gpu_hr": 2.34,
+     "regions": [
+      "newyork-usa-1"
+     ]
+    },
+    {
+     "provider": "paperspace",
+     "usd_gpu_hr": 2.34,
+     "regions": [
+      "newyork-usa-1"
+     ]
+    }
+   ]
+  },
+  {
+   "gpu": "A100",
+   "n": 17,
+   "min": 1.36,
+   "median": 1.99,
+   "max": 3.19,
+   "spread": 2.35,
+   "cheapest": "verda",
+   "dearest": "paperspace",
+   "offers": [
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 1.36,
+     "regions": []
+    },
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 1.36,
+     "regions": []
+    },
+    {
+     "provider": "denvr",
+     "usd_gpu_hr": 1.4,
+     "regions": [
+      "calgary-canada-1"
+     ]
+    },
+    {
+     "provider": "denvr",
+     "usd_gpu_hr": 1.4,
+     "regions": [
+      "calgary-canada-1"
+     ]
+    },
+    {
+     "provider": "crusoe",
+     "usd_gpu_hr": 1.45,
+     "regions": []
+    },
+    {
+     "provider": "crusoe",
+     "usd_gpu_hr": 1.45,
+     "regions": []
+    },
+    {
+     "provider": "crusoe",
+     "usd_gpu_hr": 1.45,
+     "regions": []
+    },
+    {
+     "provider": "crusoe",
+     "usd_gpu_hr": 1.45,
+     "regions": []
+    },
+    {
+     "provider": "lambdalabs",
+     "usd_gpu_hr": 1.99,
+     "regions": [
+      "dulles-usa-1",
+      "mumbai-india-1",
+      "phoenix-usa-2"
+     ]
+    },
+    {
+     "provider": "lambdalabs",
+     "usd_gpu_hr": 1.99,
+     "regions": []
+    },
+    {
+     "provider": "lambdalabs",
+     "usd_gpu_hr": 1.99,
+     "regions": []
+    },
+    {
+     "provider": "lambdalabs",
+     "usd_gpu_hr": 1.99,
+     "regions": [
+      "dulles-usa-1"
+     ]
+    },
+    {
+     "provider": "lambdalabs",
+     "usd_gpu_hr": 1.99,
+     "regions": []
+    },
+    {
+     "provider": "paperspace",
+     "usd_gpu_hr": 3.11,
+     "regions": []
+    },
+    {
+     "provider": "paperspace",
+     "usd_gpu_hr": 3.11,
+     "regions": []
+    },
+    {
+     "provider": "paperspace",
+     "usd_gpu_hr": 3.13,
+     "regions": []
+    },
+    {
+     "provider": "paperspace",
+     "usd_gpu_hr": 3.19,
+     "regions": [
+      "newyork-usa-1"
+     ]
+    }
+   ]
+  },
+  {
+   "gpu": "RTXPro6000",
+   "n": 20,
+   "min": 0.99,
+   "median": 1.875,
+   "max": 3.41,
+   "spread": 3.44,
+   "cheapest": "boostrun",
+   "dearest": "latitude",
+   "offers": [
+    {
+     "provider": "boostrun",
+     "usd_gpu_hr": 0.99,
+     "regions": []
+    },
+    {
+     "provider": "imwt",
+     "usd_gpu_hr": 1.25,
+     "regions": []
+    },
+    {
+     "provider": "imwt",
+     "usd_gpu_hr": 1.25,
+     "regions": []
+    },
+    {
+     "provider": "imwt",
+     "usd_gpu_hr": 1.25,
+     "regions": []
+    },
+    {
+     "provider": "imwt",
+     "usd_gpu_hr": 1.25,
+     "regions": []
+    },
+    {
+     "provider": "excesssupply",
+     "usd_gpu_hr": 1.35,
+     "regions": []
+    },
+    {
+     "provider": "hyperstack",
+     "usd_gpu_hr": 1.85,
+     "regions": []
+    },
+    {
+     "provider": "hyperstack",
+     "usd_gpu_hr": 1.85,
+     "regions": []
+    },
+    {
+     "provider": "hyperstack",
+     "usd_gpu_hr": 1.85,
+     "regions": []
+    },
+    {
+     "provider": "hyperstack",
+     "usd_gpu_hr": 1.85,
+     "regions": []
+    },
+    {
+     "provider": "latitude",
+     "usd_gpu_hr": 1.9,
+     "regions": []
+    },
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 1.95,
+     "regions": []
+    },
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 1.955,
+     "regions": []
+    },
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 1.9575,
+     "regions": []
+    },
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 1.9575,
+     "regions": []
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 2.1888,
+     "regions": []
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 2.19,
+     "regions": [
+      "beltsville-usa-1",
+      "kansascity-usa-6"
+     ]
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 2.19,
+     "regions": [
+      "beltsville-usa-1",
+      "kansascity-usa-6"
+     ]
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 2.19,
+     "regions": []
+    },
+    {
+     "provider": "latitude",
+     "usd_gpu_hr": 3.41,
+     "regions": [
+      "SYD2",
+      "ashburn-usa-7"
+     ]
+    }
+   ]
+  },
+  {
+   "gpu": "A100_80G",
+   "n": 31,
+   "min": 1.35,
+   "median": 1.65,
+   "max": 3.28,
+   "spread": 2.43,
+   "cheapest": "hyperstack",
+   "dearest": "paperspace",
+   "offers": [
+    {
+     "provider": "hyperstack",
+     "usd_gpu_hr": 1.35,
+     "regions": [
+      "montreal-canada-2"
+     ]
+    },
+    {
+     "provider": "hyperstack",
+     "usd_gpu_hr": 1.35,
+     "regions": []
+    },
+    {
+     "provider": "hyperstack",
+     "usd_gpu_hr": 1.35,
+     "regions": []
+    },
+    {
+     "provider": "hyperstack",
+     "usd_gpu_hr": 1.35,
+     "regions": [
+      "montreal-canada-2"
+     ]
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 1.35,
+     "regions": []
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 1.35,
+     "regions": [
+      "desmoines-usa-1"
+     ]
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 1.35,
+     "regions": [
+      "desmoines-usa-1"
+     ]
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 1.35,
+     "regions": []
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 1.38,
+     "regions": [
+      "desmoines-usa-1"
+     ]
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 1.38,
+     "regions": [
+      "beltsville-usa-1",
+      "kansascity-usa-1"
+     ]
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 1.38,
+     "regions": [
+      "desmoines-usa-1"
+     ]
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 1.38,
+     "regions": []
+    },
+    {
+     "provider": "hyperstack",
+     "usd_gpu_hr": 1.4,
+     "regions": []
+    },
+    {
+     "provider": "denvr",
+     "usd_gpu_hr": 1.4,
+     "regions": [
+      "houston-usa-1"
+     ]
+    },
+    {
+     "provider": "denvr",
+     "usd_gpu_hr": 1.525,
+     "regions": [
+      "houston-usa-1"
+     ]
+    },
+    {
+     "provider": "crusoe",
+     "usd_gpu_hr": 1.65,
+     "regions": [
+      "culpeper-usa-1"
+     ]
+    },
+    {
+     "provider": "crusoe",
+     "usd_gpu_hr": 1.65,
+     "regions": [
+      "culpeper-usa-1"
+     ]
+    },
+    {
+     "provider": "crusoe",
+     "usd_gpu_hr": 1.65,
+     "regions": []
+    },
+    {
+     "provider": "crusoe",
+     "usd_gpu_hr": 1.65,
+     "regions": []
+    },
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 1.85,
+     "regions": []
+    },
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 1.855,
+     "regions": []
+    },
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 1.8575,
+     "regions": []
+    },
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 1.8575,
+     "regions": []
+    },
+    {
+     "provider": "crusoe",
+     "usd_gpu_hr": 1.95,
+     "regions": [
+      "culpeper-usa-1"
+     ]
+    },
+    {
+     "provider": "vultr",
+     "usd_gpu_hr": 2.6,
+     "regions": []
+    },
+    {
+     "provider": "lambdalabs",
+     "usd_gpu_hr": 2.79,
+     "regions": []
+    },
+    {
+     "provider": "excesssupply",
+     "usd_gpu_hr": 3.0,
+     "regions": []
+    },
+    {
+     "provider": "paperspace",
+     "usd_gpu_hr": 3.22,
+     "regions": []
+    },
+    {
+     "provider": "paperspace",
+     "usd_gpu_hr": 3.22,
+     "regions": []
+    },
+    {
+     "provider": "paperspace",
+     "usd_gpu_hr": 3.24,
+     "regions": []
+    },
+    {
+     "provider": "paperspace",
+     "usd_gpu_hr": 3.28,
+     "regions": [
+      "newyork-usa-1"
+     ]
+    }
+   ]
+  },
+  {
+   "gpu": "L40S",
+   "n": 19,
+   "min": 0.69,
+   "median": 1.45,
+   "max": 1.7,
+   "spread": 2.46,
+   "cheapest": "boostrun",
+   "dearest": "scaleway",
+   "offers": [
+    {
+     "provider": "boostrun",
+     "usd_gpu_hr": 0.69,
+     "regions": []
+    },
+    {
+     "provider": "latitude",
+     "usd_gpu_hr": 0.74,
+     "regions": []
+    },
+    {
+     "provider": "latitude",
+     "usd_gpu_hr": 0.8712,
+     "regions": []
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 0.88,
+     "regions": [
+      "desmoines-usa-1",
+      "kansascity-usa-1"
+     ]
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 0.88,
+     "regions": [
+      "kansascity-usa-1"
+     ]
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 0.88,
+     "regions": []
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 0.88,
+     "regions": [
+      "desmoines-usa-1",
+      "kansascity-usa-1"
+     ]
+    },
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 1.43,
+     "regions": []
+    },
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 1.4375,
+     "regions": []
+    },
+    {
+     "provider": "crusoe",
+     "usd_gpu_hr": 1.45,
+     "regions": []
+    },
+    {
+     "provider": "crusoe",
+     "usd_gpu_hr": 1.45,
+     "regions": []
+    },
+    {
+     "provider": "crusoe",
+     "usd_gpu_hr": 1.45,
+     "regions": [
+      "culpeper-usa-1",
+      "houston-usa-2"
+     ]
+    },
+    {
+     "provider": "crusoe",
+     "usd_gpu_hr": 1.45,
+     "regions": []
+    },
+    {
+     "provider": "crusoe",
+     "usd_gpu_hr": 1.45,
+     "regions": []
+    },
+    {
+     "provider": "digitalocean",
+     "usd_gpu_hr": 1.57,
+     "regions": []
+    },
+    {
+     "provider": "scaleway",
+     "usd_gpu_hr": 1.7,
+     "regions": [
+      "warsaw-poland-1"
+     ]
+    },
+    {
+     "provider": "scaleway",
+     "usd_gpu_hr": 1.7,
+     "regions": []
+    },
+    {
+     "provider": "scaleway",
+     "usd_gpu_hr": 1.7,
+     "regions": [
+      "warsaw-poland-1"
+     ]
+    },
+    {
+     "provider": "scaleway",
+     "usd_gpu_hr": 1.7,
+     "regions": []
+    }
+   ]
+  },
+  {
+   "gpu": "A10",
+   "n": 1,
+   "min": 1.29,
+   "median": 1.29,
+   "max": 1.29,
+   "spread": 1.0,
+   "cheapest": "lambdalabs",
+   "dearest": "lambdalabs",
+   "offers": [
+    {
+     "provider": "lambdalabs",
+     "usd_gpu_hr": 1.29,
+     "regions": [
+      "dulles-usa-1",
+      "sanjose-usa-2"
+     ]
+    }
+   ]
+  },
+  {
+   "gpu": "A40",
+   "n": 6,
+   "min": 1.1,
+   "median": 1.1,
+   "max": 1.86,
+   "spread": 1.69,
+   "cheapest": "crusoe",
+   "dearest": "vultr",
+   "offers": [
+    {
+     "provider": "crusoe",
+     "usd_gpu_hr": 1.1,
+     "regions": []
+    },
+    {
+     "provider": "crusoe",
+     "usd_gpu_hr": 1.1,
+     "regions": []
+    },
+    {
+     "provider": "crusoe",
+     "usd_gpu_hr": 1.1,
+     "regions": []
+    },
+    {
+     "provider": "crusoe",
+     "usd_gpu_hr": 1.1,
+     "regions": []
+    },
+    {
+     "provider": "vultr",
+     "usd_gpu_hr": 1.86,
+     "regions": [
+      "london-uk-1",
+      "singapore-singapore-1"
+     ]
+    },
+    {
+     "provider": "vultr",
+     "usd_gpu_hr": 1.86,
+     "regions": []
+    }
+   ]
+  },
+  {
+   "gpu": "GAUDI2",
+   "n": 1,
+   "min": 1.1,
+   "median": 1.1,
+   "max": 1.1,
+   "spread": 1.0,
+   "cheapest": "denvr",
+   "dearest": "denvr",
+   "offers": [
+    {
+     "provider": "denvr",
+     "usd_gpu_hr": 1.1,
+     "regions": [
+      "houston-usa-1"
+     ]
+    }
+   ]
+  },
+  {
+   "gpu": "L40",
+   "n": 7,
+   "min": 0.88,
+   "median": 1.0,
+   "max": 1.49,
+   "spread": 1.69,
+   "cheapest": "massedcompute",
+   "dearest": "massedcompute",
+   "offers": [
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 0.88,
+     "regions": [
+      "desmoines-usa-1"
+     ]
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 0.99,
+     "regions": [
+      "desmoines-usa-1"
+     ]
+    },
+    {
+     "provider": "hyperstack",
+     "usd_gpu_hr": 1.0,
+     "regions": []
+    },
+    {
+     "provider": "hyperstack",
+     "usd_gpu_hr": 1.0,
+     "regions": [
+      "montreal-canada-2"
+     ]
+    },
+    {
+     "provider": "hyperstack",
+     "usd_gpu_hr": 1.0,
+     "regions": [
+      "montreal-canada-2"
+     ]
+    },
+    {
+     "provider": "hyperstack",
+     "usd_gpu_hr": 1.0,
+     "regions": [
+      "montreal-canada-2"
+     ]
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 1.49,
+     "regions": [
+      "desmoines-usa-1"
+     ]
+    }
+   ]
+  },
+  {
+   "gpu": "RTX6000Ada",
+   "n": 9,
+   "min": 0.6,
+   "median": 0.97,
+   "max": 1.57,
+   "spread": 2.62,
+   "cheapest": "boostrun",
+   "dearest": "digitalocean",
+   "offers": [
+    {
+     "provider": "boostrun",
+     "usd_gpu_hr": 0.6,
+     "regions": []
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 0.97,
+     "regions": [
+      "desmoines-usa-1",
+      "kansascity-usa-1"
+     ]
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 0.97,
+     "regions": [
+      "desmoines-usa-1",
+      "kansascity-usa-1"
+     ]
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 0.97,
+     "regions": [
+      "desmoines-usa-1",
+      "kansascity-usa-1"
+     ]
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 0.97,
+     "regions": []
+    },
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 1.1,
+     "regions": []
+    },
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 1.105,
+     "regions": []
+    },
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 1.1075,
+     "regions": []
+    },
+    {
+     "provider": "digitalocean",
+     "usd_gpu_hr": 1.57,
+     "regions": []
+    }
+   ]
+  },
+  {
+   "gpu": "L4",
+   "n": 4,
+   "min": 0.95,
+   "median": 0.95,
+   "max": 0.95,
+   "spread": 1.0,
+   "cheapest": "scaleway",
+   "dearest": "scaleway",
+   "offers": [
+    {
+     "provider": "scaleway",
+     "usd_gpu_hr": 0.95,
+     "regions": [
+      "warsaw-poland-1"
+     ]
+    },
+    {
+     "provider": "scaleway",
+     "usd_gpu_hr": 0.95,
+     "regions": [
+      "warsaw-poland-1"
+     ]
+    },
+    {
+     "provider": "scaleway",
+     "usd_gpu_hr": 0.95,
+     "regions": [
+      "warsaw-poland-1"
+     ]
+    },
+    {
+     "provider": "scaleway",
+     "usd_gpu_hr": 0.95,
+     "regions": [
+      "warsaw-poland-1"
+     ]
+    }
+   ]
+  },
+  {
+   "gpu": "RTX4000Ada",
+   "n": 1,
+   "min": 0.79,
+   "median": 0.79,
+   "max": 0.79,
+   "spread": 1.0,
+   "cheapest": "digitalocean",
+   "dearest": "digitalocean",
+   "offers": [
+    {
+     "provider": "digitalocean",
+     "usd_gpu_hr": 0.79,
+     "regions": []
+    }
+   ]
+  },
+  {
+   "gpu": "RTX6000",
+   "n": 1,
+   "min": 0.69,
+   "median": 0.69,
+   "max": 0.69,
+   "spread": 1.0,
+   "cheapest": "lambdalabs",
+   "dearest": "lambdalabs",
+   "offers": [
+    {
+     "provider": "lambdalabs",
+     "usd_gpu_hr": 0.69,
+     "regions": []
+    }
+   ]
+  },
+  {
+   "gpu": "RTX5090",
+   "n": 6,
+   "min": 0.65,
+   "median": 0.65,
+   "max": 0.7,
+   "spread": 1.08,
+   "cheapest": "excesssupply",
+   "dearest": "excesssupply",
+   "offers": [
+    {
+     "provider": "excesssupply",
+     "usd_gpu_hr": 0.65,
+     "regions": [
+      "oslo-norway-3"
+     ]
+    },
+    {
+     "provider": "excesssupply",
+     "usd_gpu_hr": 0.65,
+     "regions": [
+      "oslo-norway-3"
+     ]
+    },
+    {
+     "provider": "excesssupply",
+     "usd_gpu_hr": 0.65,
+     "regions": []
+    },
+    {
+     "provider": "excesssupply",
+     "usd_gpu_hr": 0.65,
+     "regions": []
+    },
+    {
+     "provider": "excesssupply",
+     "usd_gpu_hr": 0.7,
+     "regions": [
+      "casper-usa-2"
+     ]
+    },
+    {
+     "provider": "phyntec",
+     "usd_gpu_hr": 0.7,
+     "regions": []
+    }
+   ]
+  },
+  {
+   "gpu": "RTX4090",
+   "n": 7,
+   "min": 0.4,
+   "median": 0.6,
+   "max": 0.6,
+   "spread": 1.5,
+   "cheapest": "excesssupply",
+   "dearest": "excesssupply",
+   "offers": [
+    {
+     "provider": "excesssupply",
+     "usd_gpu_hr": 0.4,
+     "regions": [
+      "casper-usa-2"
+     ]
+    },
+    {
+     "provider": "phyntec",
+     "usd_gpu_hr": 0.4,
+     "regions": []
+    },
+    {
+     "provider": "boostrun",
+     "usd_gpu_hr": 0.49,
+     "regions": []
+    },
+    {
+     "provider": "excesssupply",
+     "usd_gpu_hr": 0.6,
+     "regions": [
+      "oslo-norway-3"
+     ]
+    },
+    {
+     "provider": "excesssupply",
+     "usd_gpu_hr": 0.6,
+     "regions": []
+    },
+    {
+     "provider": "excesssupply",
+     "usd_gpu_hr": 0.6,
+     "regions": [
+      "oslo-norway-3"
+     ]
+    },
+    {
+     "provider": "excesssupply",
+     "usd_gpu_hr": 0.6,
+     "regions": []
+    }
+   ]
+  },
+  {
+   "gpu": "A6000",
+   "n": 33,
+   "min": 0.49,
+   "median": 0.57,
+   "max": 1.93,
+   "spread": 3.94,
+   "cheapest": "imwt",
+   "dearest": "paperspace",
+   "offers": [
+    {
+     "provider": "imwt",
+     "usd_gpu_hr": 0.49,
+     "regions": []
+    },
+    {
+     "provider": "imwt",
+     "usd_gpu_hr": 0.49,
+     "regions": []
+    },
+    {
+     "provider": "imwt",
+     "usd_gpu_hr": 0.49,
+     "regions": []
+    },
+    {
+     "provider": "imwt",
+     "usd_gpu_hr": 0.49,
+     "regions": []
+    },
+    {
+     "provider": "hyperstack",
+     "usd_gpu_hr": 0.5,
+     "regions": []
+    },
+    {
+     "provider": "hyperstack",
+     "usd_gpu_hr": 0.5,
+     "regions": []
+    },
+    {
+     "provider": "hyperstack",
+     "usd_gpu_hr": 0.5,
+     "regions": [
+      "montreal-canada-2"
+     ]
+    },
+    {
+     "provider": "hyperstack",
+     "usd_gpu_hr": 0.5,
+     "regions": []
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 0.57,
+     "regions": []
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 0.57,
+     "regions": [
+      "desmoines-usa-1"
+     ]
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 0.57,
+     "regions": [
+      "kansascity-usa-1"
+     ]
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 0.57,
+     "regions": [
+      "desmoines-usa-1"
+     ]
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 0.57,
+     "regions": [
+      "desmoines-usa-1",
+      "kansascity-usa-1",
+      "wichita-usa-1"
+     ]
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 0.57,
+     "regions": [
+      "wichita-usa-1"
+     ]
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 0.57,
+     "regions": [
+      "wichita-usa-1"
+     ]
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 0.57,
+     "regions": []
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 0.57,
+     "regions": []
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 0.57,
+     "regions": [
+      "desmoines-usa-1",
+      "kansascity-usa-1"
+     ]
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 0.57,
+     "regions": [
+      "desmoines-usa-1",
+      "kansascity-usa-1"
+     ]
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 0.57,
+     "regions": [
+      "kansascity-usa-1"
+     ]
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 0.58,
+     "regions": []
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 0.58,
+     "regions": []
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 0.58,
+     "regions": []
+    },
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 1.08,
+     "regions": []
+    },
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 1.08,
+     "regions": []
+    },
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 1.08,
+     "regions": []
+    },
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 1.08,
+     "regions": []
+    },
+    {
+     "provider": "lambdalabs",
+     "usd_gpu_hr": 1.09,
+     "regions": []
+    },
+    {
+     "provider": "lambdalabs",
+     "usd_gpu_hr": 1.09,
+     "regions": []
+    },
+    {
+     "provider": "lambdalabs",
+     "usd_gpu_hr": 1.09,
+     "regions": []
+    },
+    {
+     "provider": "paperspace",
+     "usd_gpu_hr": 1.93,
+     "regions": [
+      "newyork-usa-1"
+     ]
+    },
+    {
+     "provider": "paperspace",
+     "usd_gpu_hr": 1.93,
+     "regions": [
+      "newyork-usa-1"
+     ]
+    },
+    {
+     "provider": "paperspace",
+     "usd_gpu_hr": 1.93,
+     "regions": [
+      "newyork-usa-1"
+     ]
+    }
+   ]
+  },
+  {
+   "gpu": "A16",
+   "n": 5,
+   "min": 0.51,
+   "median": 0.5112,
+   "max": 0.5744,
+   "spread": 1.13,
+   "cheapest": "vultr",
+   "dearest": "vultr",
+   "offers": [
+    {
+     "provider": "vultr",
+     "usd_gpu_hr": 0.51,
+     "regions": [
+      "bangalore-india-1"
+     ]
+    },
+    {
+     "provider": "vultr",
+     "usd_gpu_hr": 0.51,
+     "regions": []
+    },
+    {
+     "provider": "vultr",
+     "usd_gpu_hr": 0.5112,
+     "regions": []
+    },
+    {
+     "provider": "vultr",
+     "usd_gpu_hr": 0.5125,
+     "regions": [
+      "bangalore-india-1"
+     ]
+    },
+    {
+     "provider": "vultr",
+     "usd_gpu_hr": 0.5744,
+     "regions": []
+    }
+   ]
+  },
+  {
+   "gpu": "CPU",
+   "n": 4,
+   "min": 0.2,
+   "median": 0.5,
+   "max": 1.3,
+   "spread": 6.5,
+   "cheapest": "lambdalabs",
+   "dearest": "hyperstack",
+   "offers": [
+    {
+     "provider": "lambdalabs",
+     "usd_gpu_hr": 0.2,
+     "regions": []
+    },
+    {
+     "provider": "hyperstack",
+     "usd_gpu_hr": 0.35,
+     "regions": [
+      "montreal-canada-2",
+      "oslo-norway-1"
+     ]
+    },
+    {
+     "provider": "hyperstack",
+     "usd_gpu_hr": 0.65,
+     "regions": [
+      "montreal-canada-2",
+      "oslo-norway-1"
+     ]
+    },
+    {
+     "provider": "hyperstack",
+     "usd_gpu_hr": 1.3,
+     "regions": [
+      "montreal-canada-2",
+      "oslo-norway-1"
+     ]
+    }
+   ]
+  },
+  {
+   "gpu": "A5000",
+   "n": 7,
+   "min": 0.44,
+   "median": 0.44,
+   "max": 1.42,
+   "spread": 3.23,
+   "cheapest": "massedcompute",
+   "dearest": "paperspace",
+   "offers": [
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 0.44,
+     "regions": []
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 0.44,
+     "regions": []
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 0.44,
+     "regions": []
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 0.44,
+     "regions": []
+    },
+    {
+     "provider": "paperspace",
+     "usd_gpu_hr": 1.42,
+     "regions": [
+      "newyork-usa-1"
+     ]
+    },
+    {
+     "provider": "paperspace",
+     "usd_gpu_hr": 1.42,
+     "regions": [
+      "newyork-usa-1"
+     ]
+    },
+    {
+     "provider": "paperspace",
+     "usd_gpu_hr": 1.42,
+     "regions": [
+      "newyork-usa-1"
+     ]
+    }
+   ]
+  },
+  {
+   "gpu": "V100",
+   "n": 6,
+   "min": 0.39,
+   "median": 0.39,
+   "max": 2.34,
+   "spread": 6.0,
+   "cheapest": "verda",
+   "dearest": "paperspace",
+   "offers": [
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 0.39,
+     "regions": []
+    },
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 0.39,
+     "regions": []
+    },
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 0.39,
+     "regions": []
+    },
+    {
+     "provider": "verda",
+     "usd_gpu_hr": 0.39,
+     "regions": []
+    },
+    {
+     "provider": "lambdalabs",
+     "usd_gpu_hr": 0.79,
+     "regions": []
+    },
+    {
+     "provider": "paperspace",
+     "usd_gpu_hr": 2.34,
+     "regions": [
+      "newyork-usa-1"
+     ]
+    }
+   ]
+  },
+  {
+   "gpu": "A30",
+   "n": 4,
+   "min": 0.35,
+   "median": 0.35,
+   "max": 0.35,
+   "spread": 1.0,
+   "cheapest": "massedcompute",
+   "dearest": "massedcompute",
+   "offers": [
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 0.35,
+     "regions": []
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 0.35,
+     "regions": []
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 0.35,
+     "regions": []
+    },
+    {
+     "provider": "massedcompute",
+     "usd_gpu_hr": 0.35,
+     "regions": []
+    }
+   ]
+  },
+  {
+   "gpu": "A4000",
+   "n": 8,
+   "min": 0.15,
+   "median": 0.15,
+   "max": 0.8,
+   "spread": 5.33,
+   "cheapest": "hyperstack",
+   "dearest": "paperspace",
+   "offers": [
+    {
+     "provider": "hyperstack",
+     "usd_gpu_hr": 0.15,
+     "regions": []
+    },
+    {
+     "provider": "hyperstack",
+     "usd_gpu_hr": 0.15,
+     "regions": []
+    },
+    {
+     "provider": "hyperstack",
+     "usd_gpu_hr": 0.15,
+     "regions": []
+    },
+    {
+     "provider": "hyperstack",
+     "usd_gpu_hr": 0.15,
+     "regions": []
+    },
+    {
+     "provider": "hyperstack",
+     "usd_gpu_hr": 0.15,
+     "regions": []
+    },
+    {
+     "provider": "paperspace",
+     "usd_gpu_hr": 0.8,
+     "regions": [
+      "newyork-usa-1"
+     ]
+    },
+    {
+     "provider": "paperspace",
+     "usd_gpu_hr": 0.8,
+     "regions": [
+      "newyork-usa-1"
+     ]
+    },
+    {
+     "provider": "paperspace",
+     "usd_gpu_hr": 0.8,
+     "regions": [
+      "newyork-usa-1"
+     ]
+    }
+   ]
+  }
+ ],
+ "azure_apac_regional": [
+  {
+   "sku": "Standard_NC72lds_xl_RTXPRO6000BSE_v6",
+   "regions": {
+    "southeastasia": 6.728,
+    "japaneast": 3.54,
+    "koreacentral": 3.296,
+    "australiaeast": 3.54
+   },
+   "cheapest_region": "koreacentral",
+   "dearest_region": "southeastasia",
+   "min": 3.296,
+   "max": 6.728,
+   "spread": 2.04
+  },
+  {
+   "sku": "Standard_NC288ds_xl_RTXPRO6000BSE_v6",
+   "regions": {
+    "southeastasia": 15.4,
+    "japaneast": 29.208,
+    "koreacentral": 14.86,
+    "australiaeast": 29.208
+   },
+   "cheapest_region": "koreacentral",
+   "dearest_region": "japaneast",
+   "min": 14.86,
+   "max": 29.208,
+   "spread": 1.97
+  },
+  {
+   "sku": "Standard_NC72ds_xl_RTXPRO6000BSE_v6",
+   "regions": {
+    "southeastasia": 3.963,
+    "japaneast": 4.107,
+    "koreacentral": 3.824,
+    "australiaeast": 7.419
+   },
+   "cheapest_region": "koreacentral",
+   "dearest_region": "australiaeast",
+   "min": 3.824,
+   "max": 7.419,
+   "spread": 1.94
+  },
+  {
+   "sku": "Standard_NC288lds_xl_RTXPRO6000BSE_v6",
+   "regions": {
+    "southeastasia": 15.4,
+    "japaneast": 29.208,
+    "koreacentral": 28.108,
+    "australiaeast": 15.96
+   },
+   "cheapest_region": "southeastasia",
+   "dearest_region": "japaneast",
+   "min": 15.4,
+   "max": 29.208,
+   "spread": 1.9
+  },
+  {
+   "sku": "Standard_NC36lds_xl_RTXPRO6000BSE_v6",
+   "regions": {
+    "southeastasia": 3.396,
+    "japaneast": 1.803,
+    "koreacentral": 3.335,
+    "australiaeast": 1.803
+   },
+   "cheapest_region": "japaneast",
+   "dearest_region": "southeastasia",
+   "min": 1.803,
+   "max": 3.396,
+   "spread": 1.88
+  },
+  {
+   "sku": "Standard_NC324lds_xl_RTXPRO6000BSE_v6",
+   "regions": {
+    "southeastasia": 34.924,
+    "japaneast": 20.748,
+    "koreacentral": 19.318,
+    "australiaeast": 20.748
+   },
+   "cheapest_region": "koreacentral",
+   "dearest_region": "southeastasia",
+   "min": 19.318,
+   "max": 34.924,
+   "spread": 1.81
+  },
+  {
+   "sku": "Standard_NC264lds_xl_RTXPRO6000BSE_v6",
+   "regions": {
+    "southeastasia": 27.544,
+    "japaneast": 15.96,
+    "koreacentral": 27.004,
+    "australiaeast": 28.104
+   },
+   "cheapest_region": "japaneast",
+   "dearest_region": "australiaeast",
+   "min": 15.96,
+   "max": 28.104,
+   "spread": 1.76
+  },
+  {
+   "sku": "Standard_NC132lds_xl_RTXPRO6000BSE_v6",
+   "regions": {
+    "southeastasia": 13.772,
+    "japaneast": 14.052,
+    "koreacentral": 13.502,
+    "australiaeast": 7.98
+   },
+   "cheapest_region": "australiaeast",
+   "dearest_region": "japaneast",
+   "min": 7.98,
+   "max": 14.052,
+   "spread": 1.76
+  },
+  {
+   "sku": "Standard_NC36ds_xl_RTXPRO6000BSE_v6",
+   "regions": {
+    "southeastasia": 3.675,
+    "japaneast": 2.092,
+    "koreacentral": 3.604,
+    "australiaeast": 2.092
+   },
+   "cheapest_region": "japaneast",
+   "dearest_region": "southeastasia",
+   "min": 2.092,
+   "max": 3.675,
+   "spread": 1.76
+  },
+  {
+   "sku": "Standard_NC132ds_xl_RTXPRO6000BSE_v6",
+   "regions": {
+    "southeastasia": 8.932,
+    "japaneast": 9.257,
+    "koreacentral": 14.691,
+    "australiaeast": 15.329
+   },
+   "cheapest_region": "southeastasia",
+   "dearest_region": "australiaeast",
+   "min": 8.932,
+   "max": 15.329,
+   "spread": 1.72
+  },
+  {
+   "sku": "Standard_NC8as_T4_v3",
+   "regions": {
+    "southeastasia": 1.42,
+    "japaneast": 1.383,
+    "koreacentral": 1.293,
+    "centralindia": 0.827,
+    "australiaeast": 1.346
+   },
+   "cheapest_region": "centralindia",
+   "dearest_region": "southeastasia",
+   "min": 0.827,
+   "max": 1.42,
+   "spread": 1.72
+  },
+  {
+   "sku": "Standard_NC64as_T4_v3",
+   "regions": {
+    "southeastasia": 9.033,
+    "japaneast": 5.875,
+    "koreacentral": 5.353,
+    "centralindia": 7.731,
+    "australiaeast": 5.658
+   },
+   "cheapest_region": "koreacentral",
+   "dearest_region": "southeastasia",
+   "min": 5.353,
+   "max": 9.033,
+   "spread": 1.69
+  },
+  {
+   "sku": "Standard_NC144ds_xl_RTXPRO6000BSE_v6",
+   "regions": {
+    "southeastasia": 15.556,
+    "japaneast": 9.257,
+    "koreacentral": 15.243,
+    "australiaeast": 9.257
+   },
+   "cheapest_region": "japaneast",
+   "dearest_region": "southeastasia",
+   "min": 9.257,
+   "max": 15.556,
+   "spread": 1.68
+  },
+  {
+   "sku": "Standard_NC24lds_xl_RTXPRO6000BSE_v6",
+   "regions": {
+    "southeastasia": 1.582,
+    "japaneast": 1.64,
+    "koreacentral": 2.631,
+    "australiaeast": 1.64
+   },
+   "cheapest_region": "southeastasia",
+   "dearest_region": "koreacentral",
+   "min": 1.582,
+   "max": 2.631,
+   "spread": 1.66
+  }
+ ],
+ "vast_by_country": [
+  {
+   "country": "US",
+   "offers": 26,
+   "median": 0.195
+  },
+  {
+   "country": "CN",
+   "offers": 10,
+   "median": 0.1211
+  },
+  {
+   "country": "KR",
+   "offers": 8,
+   "median": 0.4037
+  },
+  {
+   "country": "VN",
+   "offers": 5,
+   "median": 0.0889
+  },
+  {
+   "country": "CA",
+   "offers": 5,
+   "median": 0.2278
+  },
+  {
+   "country": "FR",
+   "offers": 3,
+   "median": 0.163
+  },
+  {
+   "country": "AR",
+   "offers": 2,
+   "median": 0.0683
+  },
+  {
+   "country": "CZ",
+   "offers": 1,
+   "median": 1.0681
+  },
+  {
+   "country": "SK",
+   "offers": 1,
+   "median": 0.3222
+  },
+  {
+   "country": "DE",
+   "offers": 1,
+   "median": 1.2044
+  },
+  {
+   "country": "GB",
+   "offers": 1,
+   "median": 0.0724
+  },
+  {
+   "country": "SE",
+   "offers": 1,
+   "median": 0.1763
+  }
+ ],
+ "runpod": [
+  {
+   "id": "AMD Instinct MI300X OAM",
+   "displayName": "MI300X",
+   "memoryInGb": 192,
+   "secureCloud": true,
+   "communityCloud": false,
+   "lowestPrice": {
+    "minimumBidPrice": null,
+    "uninterruptablePrice": null
+   }
+  },
+  {
+   "id": "NVIDIA A100 80GB PCIe",
+   "displayName": "A100 PCIe",
+   "memoryInGb": 80,
+   "secureCloud": true,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": 1.19,
+    "uninterruptablePrice": 1.19
+   }
+  },
+  {
+   "id": "NVIDIA A100-SXM4-40GB",
+   "displayName": "A100 SXM 40GB",
+   "memoryInGb": 40,
+   "secureCloud": false,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": 1,
+    "uninterruptablePrice": 1
+   }
+  },
+  {
+   "id": "NVIDIA A100-SXM4-80GB",
+   "displayName": "A100 SXM",
+   "memoryInGb": 80,
+   "secureCloud": true,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": 1.39,
+    "uninterruptablePrice": 1.39
+   }
+  },
+  {
+   "id": "NVIDIA A40",
+   "displayName": "A40",
+   "memoryInGb": 48,
+   "secureCloud": true,
+   "communityCloud": false,
+   "lowestPrice": {
+    "minimumBidPrice": 0.35,
+    "uninterruptablePrice": 0.35
+   }
+  },
+  {
+   "id": "NVIDIA B200",
+   "displayName": "B200",
+   "memoryInGb": 180,
+   "secureCloud": true,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": 5.98,
+    "uninterruptablePrice": 5.98
+   }
+  },
+  {
+   "id": "NVIDIA B300 SXM6 AC",
+   "displayName": "B300",
+   "memoryInGb": 288,
+   "secureCloud": true,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": 6.94,
+    "uninterruptablePrice": 6.94
+   }
+  },
+  {
+   "id": "NVIDIA GeForce RTX 3070",
+   "displayName": "RTX 3070",
+   "memoryInGb": 8,
+   "secureCloud": false,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": 0.13,
+    "uninterruptablePrice": 0.13
+   }
+  },
+  {
+   "id": "NVIDIA GeForce RTX 3080",
+   "displayName": "RTX 3080",
+   "memoryInGb": 10,
+   "secureCloud": false,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": null,
+    "uninterruptablePrice": null
+   }
+  },
+  {
+   "id": "NVIDIA GeForce RTX 3080 Ti",
+   "displayName": "RTX 3080 Ti",
+   "memoryInGb": 12,
+   "secureCloud": false,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": 0.18,
+    "uninterruptablePrice": 0.18
+   }
+  },
+  {
+   "id": "NVIDIA GeForce RTX 3090",
+   "displayName": "RTX 3090",
+   "memoryInGb": 24,
+   "secureCloud": true,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": 0.22,
+    "uninterruptablePrice": 0.22
+   }
+  },
+  {
+   "id": "NVIDIA GeForce RTX 3090 Ti",
+   "displayName": "RTX 3090 Ti",
+   "memoryInGb": 24,
+   "secureCloud": false,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": 0.27,
+    "uninterruptablePrice": 0.27
+   }
+  },
+  {
+   "id": "NVIDIA GeForce RTX 4070 Ti",
+   "displayName": "RTX 4070 Ti",
+   "memoryInGb": 12,
+   "secureCloud": false,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": 0.19,
+    "uninterruptablePrice": 0.19
+   }
+  },
+  {
+   "id": "NVIDIA GeForce RTX 4080",
+   "displayName": "RTX 4080",
+   "memoryInGb": 16,
+   "secureCloud": false,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": null,
+    "uninterruptablePrice": null
+   }
+  },
+  {
+   "id": "NVIDIA GeForce RTX 4080 SUPER",
+   "displayName": "RTX 4080 SUPER",
+   "memoryInGb": 16,
+   "secureCloud": false,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": 0.28,
+    "uninterruptablePrice": 0.28
+   }
+  },
+  {
+   "id": "NVIDIA GeForce RTX 4090",
+   "displayName": "RTX 4090",
+   "memoryInGb": 24,
+   "secureCloud": true,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": 0.34,
+    "uninterruptablePrice": 0.34
+   }
+  },
+  {
+   "id": "NVIDIA GeForce RTX 5080",
+   "displayName": "RTX 5080",
+   "memoryInGb": 16,
+   "secureCloud": false,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": 0.39,
+    "uninterruptablePrice": 0.39
+   }
+  },
+  {
+   "id": "NVIDIA GeForce RTX 5090",
+   "displayName": "RTX 5090",
+   "memoryInGb": 32,
+   "secureCloud": true,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": 0.69,
+    "uninterruptablePrice": 0.69
+   }
+  },
+  {
+   "id": "NVIDIA H100 80GB HBM3",
+   "displayName": "H100 SXM",
+   "memoryInGb": 80,
+   "secureCloud": true,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": 2.69,
+    "uninterruptablePrice": 2.69
+   }
+  },
+  {
+   "id": "NVIDIA H100 NVL",
+   "displayName": "H100 NVL",
+   "memoryInGb": 94,
+   "secureCloud": true,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": 2.59,
+    "uninterruptablePrice": 2.59
+   }
+  },
+  {
+   "id": "NVIDIA H100 PCIe",
+   "displayName": "H100 PCIe",
+   "memoryInGb": 80,
+   "secureCloud": true,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": 1.99,
+    "uninterruptablePrice": 1.99
+   }
+  },
+  {
+   "id": "NVIDIA H200",
+   "displayName": "H200 SXM",
+   "memoryInGb": 141,
+   "secureCloud": true,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": 3.59,
+    "uninterruptablePrice": 3.59
+   }
+  },
+  {
+   "id": "NVIDIA H200 NVL",
+   "displayName": "H200 NVL",
+   "memoryInGb": 143,
+   "secureCloud": true,
+   "communityCloud": false,
+   "lowestPrice": {
+    "minimumBidPrice": null,
+    "uninterruptablePrice": null
+   }
+  },
+  {
+   "id": "NVIDIA L4",
+   "displayName": "L4",
+   "memoryInGb": 24,
+   "secureCloud": true,
+   "communityCloud": false,
+   "lowestPrice": {
+    "minimumBidPrice": 0.44,
+    "uninterruptablePrice": 0.44
+   }
+  },
+  {
+   "id": "NVIDIA L40",
+   "displayName": "L40",
+   "memoryInGb": 48,
+   "secureCloud": true,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": 0.69,
+    "uninterruptablePrice": 0.69
+   }
+  },
+  {
+   "id": "NVIDIA L40S",
+   "displayName": "L40S",
+   "memoryInGb": 48,
+   "secureCloud": true,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": 0.79,
+    "uninterruptablePrice": 0.79
+   }
+  },
+  {
+   "id": "NVIDIA RTX 2000 Ada Generation",
+   "displayName": "RTX 2000 Ada",
+   "memoryInGb": 16,
+   "secureCloud": true,
+   "communityCloud": false,
+   "lowestPrice": {
+    "minimumBidPrice": 0.5,
+    "uninterruptablePrice": 0.5
+   }
+  },
+  {
+   "id": "NVIDIA RTX 4000 Ada Generation",
+   "displayName": "RTX 4000 Ada",
+   "memoryInGb": 20,
+   "secureCloud": true,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": 0.2,
+    "uninterruptablePrice": 0.2
+   }
+  },
+  {
+   "id": "NVIDIA RTX 4000 SFF Ada Generation",
+   "displayName": "RTX 4000 Ada SFF",
+   "memoryInGb": 20,
+   "secureCloud": false,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": null,
+    "uninterruptablePrice": null
+   }
+  },
+  {
+   "id": "NVIDIA RTX 5000 Ada Generation",
+   "displayName": "RTX 5000 Ada",
+   "memoryInGb": 32,
+   "secureCloud": false,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": null,
+    "uninterruptablePrice": null
+   }
+  },
+  {
+   "id": "NVIDIA RTX 6000 Ada Generation",
+   "displayName": "RTX 6000 Ada",
+   "memoryInGb": 48,
+   "secureCloud": true,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": null,
+    "uninterruptablePrice": null
+   }
+  },
+  {
+   "id": "NVIDIA RTX A2000",
+   "displayName": "RTX A2000",
+   "memoryInGb": 6,
+   "secureCloud": false,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": null,
+    "uninterruptablePrice": null
+   }
+  },
+  {
+   "id": "NVIDIA RTX A4000",
+   "displayName": "RTX A4000",
+   "memoryInGb": 16,
+   "secureCloud": true,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": 0.17,
+    "uninterruptablePrice": 0.17
+   }
+  },
+  {
+   "id": "NVIDIA RTX A4500",
+   "displayName": "RTX A4500",
+   "memoryInGb": 20,
+   "secureCloud": true,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": 0.19,
+    "uninterruptablePrice": 0.19
+   }
+  },
+  {
+   "id": "NVIDIA RTX A5000",
+   "displayName": "RTX A5000",
+   "memoryInGb": 24,
+   "secureCloud": true,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": null,
+    "uninterruptablePrice": null
+   }
+  },
+  {
+   "id": "NVIDIA RTX A6000",
+   "displayName": "RTX A6000",
+   "memoryInGb": 48,
+   "secureCloud": true,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": null,
+    "uninterruptablePrice": null
+   }
+  },
+  {
+   "id": "NVIDIA RTX PRO 4000 Blackwell",
+   "displayName": "RTX PRO 4000",
+   "memoryInGb": 24,
+   "secureCloud": true,
+   "communityCloud": false,
+   "lowestPrice": {
+    "minimumBidPrice": 0.5,
+    "uninterruptablePrice": 0.5
+   }
+  },
+  {
+   "id": "NVIDIA RTX PRO 4500 Blackwell",
+   "displayName": "RTX PRO 4500",
+   "memoryInGb": 32,
+   "secureCloud": true,
+   "communityCloud": false,
+   "lowestPrice": {
+    "minimumBidPrice": 0.34,
+    "uninterruptablePrice": 0.34
+   }
+  },
+  {
+   "id": "NVIDIA RTX PRO 4500 Blackwell Server Edition",
+   "displayName": "RTX PRO 4500 SE",
+   "memoryInGb": 32,
+   "secureCloud": true,
+   "communityCloud": false,
+   "lowestPrice": {
+    "minimumBidPrice": 0.5,
+    "uninterruptablePrice": 0.5
+   }
+  },
+  {
+   "id": "NVIDIA RTX PRO 5000 Blackwell",
+   "displayName": "RTX PRO 5000",
+   "memoryInGb": 48,
+   "secureCloud": true,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": 0.82,
+    "uninterruptablePrice": 0.82
+   }
+  },
+  {
+   "id": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+   "displayName": "RTX PRO 6000 MaxQ",
+   "memoryInGb": 96,
+   "secureCloud": false,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": null,
+    "uninterruptablePrice": null
+   }
+  },
+  {
+   "id": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+   "displayName": "RTX PRO 6000",
+   "memoryInGb": 96,
+   "secureCloud": true,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": 1.69,
+    "uninterruptablePrice": 1.69
+   }
+  },
+  {
+   "id": "NVIDIA RTX PRO 6000 Blackwell Server Edition MIG 1g.24gb",
+   "displayName": "PRO 6000 MIG 24GB",
+   "memoryInGb": 24,
+   "secureCloud": true,
+   "communityCloud": false,
+   "lowestPrice": {
+    "minimumBidPrice": 0.5,
+    "uninterruptablePrice": 0.5
+   }
+  },
+  {
+   "id": "NVIDIA RTX PRO 6000 Blackwell Server Edition MIG 2g.48gb",
+   "displayName": "PRO 6000 MIG 48GB",
+   "memoryInGb": 48,
+   "secureCloud": true,
+   "communityCloud": false,
+   "lowestPrice": {
+    "minimumBidPrice": 1,
+    "uninterruptablePrice": 1
+   }
+  },
+  {
+   "id": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+   "displayName": "RTX PRO 6000 WK",
+   "memoryInGb": 96,
+   "secureCloud": true,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": 1.69,
+    "uninterruptablePrice": 1.69
+   }
+  },
+  {
+   "id": "Tesla V100-PCIE-16GB",
+   "displayName": "Tesla V100",
+   "memoryInGb": 16,
+   "secureCloud": false,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": null,
+    "uninterruptablePrice": null
+   }
+  },
+  {
+   "id": "Tesla V100-SXM2-16GB",
+   "displayName": "V100 SXM2",
+   "memoryInGb": 16,
+   "secureCloud": false,
+   "communityCloud": true,
+   "lowestPrice": {
+    "minimumBidPrice": 0.23,
+    "uninterruptablePrice": 0.23
+   }
+  },
+  {
+   "id": "unknown",
+   "displayName": "unknown",
+   "memoryInGb": 0,
+   "secureCloud": false,
+   "communityCloud": false,
+   "lowestPrice": {
+    "minimumBidPrice": null,
+    "uninterruptablePrice": null
+   }
+  }
+ ]
+}

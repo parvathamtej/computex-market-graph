@@ -1,0 +1,2017 @@
+[
+ {
+  "deal_id": "coreweave-openai-2025-03",
+  "deal_type": "D1",
+  "from_entity": "coreweave",
+  "to_entity": "openai",
+  "headline": "CoreWeave agreed to supply OpenAI with AI compute under a contract worth up to $11.9 billion.",
+  "notes": "First of three OpenAI tranches. Cumulative CoreWeave-OpenAI contract value reached ~$22.4bn by September 2025.",
+  "source_urls": [
+   "https://www.coreweave.com/news/coreweave-announces-agreement-with-openai-to-deliver-ai-infrastructure"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 11900000000,
+  "quantity_raw": "up to $11.9 billion",
+  "quantity_unit": "USD",
+  "status": "signed",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2025-03-10",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "coreweave-openai-2025-05",
+  "deal_type": "D1",
+  "from_entity": "coreweave",
+  "to_entity": "openai",
+  "headline": "CoreWeave expanded its OpenAI compute contract by up to $4 billion.",
+  "notes": "Second tranche; value stated retrospectively in the September 2025 release.",
+  "source_urls": [
+   "https://www.coreweave.com/news/coreweave-expands-agreement-with-openai-by-up-to-6-5b"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 4000000000,
+  "quantity_raw": "up to $4 billion",
+  "quantity_unit": "USD",
+  "status": "signed",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2025-05-15",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "coreweave-openai-2025-09",
+  "deal_type": "D1",
+  "from_entity": "coreweave",
+  "to_entity": "openai",
+  "headline": "CoreWeave added up to $6.5 billion more OpenAI compute, taking the total relationship to about $22.4 billion.",
+  "notes": "Third tranche. DOUBLE-COUNT RISK: the ~$22.4bn cumulative figure includes the March and May 2025 deals recorded separately.",
+  "source_urls": [
+   "https://www.coreweave.com/news/coreweave-expands-agreement-with-openai-by-up-to-6-5b"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 6500000000,
+  "quantity_raw": "up to $6.5 billion; ~$22.4 billion cumulative",
+  "quantity_unit": "USD",
+  "status": "signed",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2025-09-25",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "coreweave-backlog-2026-q2",
+  "deal_type": "D1",
+  "from_entity": "coreweave",
+  "headline": "CoreWeave's contracted revenue backlog stood at about $104 billion at the end of June 2026.",
+  "notes": "Aggregate figure that subsumes the individually recorded OpenAI, Microsoft and Meta contracts \u2014 do not add to them. Company also cited >$25bn of net new commitments added in early Q3 2026.",
+  "source_urls": [
+   "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Second-Quarter-2026-Results/default.aspx",
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+  ],
+  "geography": [
+   "United States",
+   "United Kingdom",
+   "Norway",
+   "Sweden",
+   "Spain"
+  ],
+  "usd_value": 104000000000,
+  "quantity_raw": "approximately $104 billion revenue backlog",
+  "quantity_unit": "USD",
+  "status": "signed",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-08-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "coreweave-concentration-2026-q2",
+  "deal_type": "D1",
+  "from_entity": "coreweave",
+  "headline": "Three customers produced 72% of CoreWeave's revenue in the second quarter of 2026, with the largest alone at 36%.",
+  "notes": "CONCENTRATION RECORD. From the Q2 2026 10-Q: Customer A 36% (Q2'26) vs 71% (Q2'25); Customer B 26%; Customer C 10%. Six months 2026: A 40%, B 23%. Customers A and B were each 32% of net accounts receivable at 30 June 2026; at 31 Dec 2025 Customer A alone was 68% of receivables. CoreWeave does not name the customers in the filing; Microsoft and OpenAI are the publicly known largest counterparties. Deferred revenue $9.7bn at 30 June 2026.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "quantity_raw": "Customer A 36%, Customer B 26%, Customer C 10% of Q2 2026 revenue",
+  "quantity_value": 36,
+  "status": "operational",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-08-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "coreweave-supplier-concentration-2025",
+  "deal_type": "D2",
+  "from_entity": "nvidia",
+  "to_entity": "coreweave",
+  "headline": "All GPUs in CoreWeave's fleet are Nvidia, and three suppliers accounted for 60% of its 2025 purchases.",
+  "notes": "Supply-side concentration. 10-Q states 'as a result of our obligations in our current customer contracts, all of the GPUs used in our infrastructure today are NVIDIA GPUs'. No unit counts disclosed.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "quantity_raw": "three suppliers accounted for 23%, 20% and 17% of total purchases in FY2025",
+  "status": "operational",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-08-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "microsoft-coreweave-option-declined-2025-03",
+  "deal_type": "D15",
+  "from_entity": "microsoft",
+  "to_entity": "coreweave",
+  "headline": "Microsoft declined to take up a nearly $12 billion option for extra CoreWeave capacity, and OpenAI picked the contract up instead.",
+  "notes": "OFFLOADING RECORD. Reported by Semafor; the FT separately reported Microsoft withdrew some commitments over delivery problems. CoreWeave publicly denied any contract cancellations. The capacity was re-contracted to OpenAI, so it was absorbed rather than stranded.",
+  "source_urls": [
+   "https://www.semafor.com/article/03/20/2025/microsoft-chose-not-to-exercise-12-billion-coreweave-option",
+   "https://www.datacenterdynamics.com/en/news/microsoft-denies-canceling-commitments-with-coreweave-ahead-of-ipo/"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 12000000000,
+  "quantity_raw": "nearly $12 billion option not exercised",
+  "quantity_unit": "USD",
+  "status": "cancelled",
+  "confidence": "T3",
+  "binding_status": "non_binding",
+  "announced_date": "2025-03-20",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "coreweave-corescientific-merger-terminated-2025-10",
+  "deal_type": "D15",
+  "from_entity": "core-scientific",
+  "to_entity": "coreweave",
+  "headline": "Core Scientific shareholders voted down CoreWeave's roughly $9 billion all-stock takeover and the merger agreement was terminated.",
+  "notes": "OFFLOADING/CANCELLATION RECORD. CoreWeave had sought to buy its largest landlord; shareholders rejected it. The underlying 12-year colocation contracts remain in force.",
+  "source_urls": [
+   "https://investors.corescientific.com/news-events/press-releases/detail/124/core-scientific-announces-termination-of-merger-agreement-with-coreweave",
+   "https://www.cnbc.com/2025/10/30/core-scientific-shareholders-reject-9-billion-coreweave-offer-deal-terminated.html"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 9000000000,
+  "quantity_raw": "approximately $9 billion all-stock acquisition",
+  "quantity_unit": "USD",
+  "status": "cancelled",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2025-10-30",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "coreweave-kenilworth-jv-2025-06",
+  "deal_type": "D6",
+  "from_entity": "coreweave",
+  "headline": "CoreWeave entered a joint venture with an infrastructure developer to build a multi-phase data centre campus in Kenilworth, New Jersey.",
+  "notes": "CoreWeave otherwise leases all of its data centres; this JV is its only real-property ownership stake. MW not disclosed in the filing.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Kenilworth, New Jersey",
+  "quantity_raw": "multi-phase data center campus",
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2025-06-30",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "nebius-microsoft-2025-09",
+  "deal_type": "D1",
+  "from_entity": "nebius",
+  "to_entity": "microsoft",
+  "headline": "Microsoft contracted up to $19.4 billion of AI capacity from Nebius, including more than 100,000 Nvidia GB300 GPUs.",
+  "notes": "Headline base value widely reported as $17.4bn rising to $19.4bn if options are exercised. Delivered from the Vineland, New Jersey campus.",
+  "source_urls": [
+   "https://nebius.com/newsroom/nebius-announces-multi-billion-dollar-agreement-with-microsoft-for-ai-infrastructure",
+   "https://www.datacenterdynamics.com/en/news/microsoft-to-get-100000-nvidia-gb300s-under-nebius-deal-has-signed-more-than-33bn-in-capacity-agreements-with-neoclouds/"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Vineland, New Jersey",
+  "usd_value": 19400000000,
+  "quantity_raw": "up to $19.4 billion; 100,000+ Nvidia GB300",
+  "quantity_unit": "USD",
+  "status": "signed",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2025-09-08",
+  "term_years": 5,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "nebius-meta-2025-11",
+  "deal_type": "D1",
+  "from_entity": "nebius",
+  "to_entity": "meta",
+  "headline": "Meta signed a five-year, $3 billion AI infrastructure contract with Nebius.",
+  "notes": "First Meta agreement. Nebius said at the time it was sold out of all available capacity.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/nebius-signs-3bn-deal-with-meta-says-current-available-capacity-is-sold-out-as-it-targets-25gw-by-end-of-2026/"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 3000000000,
+  "quantity_raw": "$3 billion over five years",
+  "quantity_unit": "USD",
+  "status": "signed",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2025-11-10",
+  "term_years": 5,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "nebius-meta-2026-03",
+  "deal_type": "D1",
+  "from_entity": "nebius",
+  "to_entity": "meta",
+  "headline": "Nebius signed a second Meta contract worth about $27 billion over five years, starting in early 2027.",
+  "notes": "Only $12bn is dedicated committed capacity; up to $15bn more is optional volume Meta may purchase. Described as one of the first large-scale Nvidia Vera Rubin deployments.",
+  "source_urls": [
+   "https://nebius.com/newsroom/nebius-signs-new-ai-infrastructure-agreement-with-meta"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 27000000000,
+  "quantity_raw": "approximately $27 billion ($12bn dedicated capacity plus up to $15bn optional)",
+  "quantity_unit": "USD",
+  "status": "signed",
+  "confidence": "T2",
+  "binding_status": "conditional",
+  "announced_date": "2026-03-16",
+  "term_start": "2027-01",
+  "term_years": 5,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "nebius-commitments-2026-q2",
+  "deal_type": "D1",
+  "from_entity": "nebius",
+  "headline": "Nebius reported more than $40 billion of customer commitments and $3.0 billion of annualised recurring revenue at the end of June 2026.",
+  "notes": "Aggregate; subsumes the Microsoft and Meta contracts recorded separately. Q2 2026 revenue $582.3m, capex ~$5.7bn in the quarter, >$9bn of customer prepayments expected in 2026. Nebius does not publish a customer concentration percentage \u2014 a notable gap given two hyperscalers dominate the commitment book.",
+  "source_urls": [
+   "https://assets.nebius.com/assets/a6ecfd85-a6cb-4967-8ef7-9a25bd261f9c/SHLQ226.pdf",
+   "https://nebius.com/newsroom/nebius-reports-second-quarter-2026-financial-results"
+  ],
+  "geography": [
+   "United States",
+   "Finland",
+   "Iceland",
+   "United Kingdom",
+   "France",
+   "Spain",
+   "Estonia",
+   "Israel"
+  ],
+  "usd_value": 40000000000,
+  "quantity_raw": ">$40 billion in customer commitments; ARR $3.0 billion",
+  "quantity_unit": "USD",
+  "status": "signed",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-08-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "nebius-q2-2026-wins",
+  "deal_type": "D1",
+  "from_entity": "nebius",
+  "headline": "Nebius signed four contracts each averaging over $1 billion in the second quarter of 2026, including deals with Reflection and Cohere.",
+  "notes": "Named: Reflection, Cohere. Two others described only as a US AI neolab and a US quantitative trading firm. Included in the >$40bn commitment total.",
+  "source_urls": [
+   "https://assets.nebius.com/assets/a6ecfd85-a6cb-4967-8ef7-9a25bd261f9c/SHLQ226.pdf"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "quantity_raw": "four landmark deals averaging >$1 billion total contract value each",
+  "quantity_unit": "USD",
+  "status": "signed",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-08-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "nebius-power-target-2026",
+  "deal_type": "D5",
+  "to_entity": "nebius",
+  "headline": "Nebius is targeting more than 5 gigawatts of contracted power by the end of 2026.",
+  "notes": "Guidance raised from '+4 GW' in May 2026. Earlier (Nov 2025) guidance was 2.5GW contracted and 800MW-1GW connected by end 2026.",
+  "source_urls": [
+   "https://assets.nebius.com/assets/a6ecfd85-a6cb-4967-8ef7-9a25bd261f9c/SHLQ226.pdf"
+  ],
+  "geography": [
+   "United States",
+   "Finland",
+   "Iceland",
+   "United Kingdom",
+   "France",
+   "Spain",
+   "Estonia",
+   "Israel"
+  ],
+  "mw": 5000.0,
+  "h100e": 3496503.5,
+  "h100e_basis": "5,000 MW / 1.43 kW per H100e",
+  "quantity_raw": ">5 GW contracted power by end of 2026",
+  "quantity_value": 5,
+  "quantity_unit": "GW",
+  "status": "announced",
+  "confidence": "T1",
+  "binding_status": "speculative",
+  "announced_date": "2026-08-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "from_entity": null
+ },
+ {
+  "deal_id": "iren-microsoft-2025-11",
+  "deal_type": "D1",
+  "from_entity": "iren",
+  "to_entity": "microsoft",
+  "headline": "IREN signed a five-year, $9.7 billion AI cloud contract with Microsoft covering four Texas data centre builds.",
+  "notes": "Includes GPU acquisitions plus development of Horizon 1-4. Horizon 1 (50MW liquid-cooled) delivered. IREN's 10-K states the Microsoft and Nvidia contracts together 'represent a substantial majority of our contracted revenue'.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/iren-20260630.htm",
+   "https://iren.gcs-web.com/news-releases/news-release-details/iren-secures-97bn-ai-cloud-contract-microsoft"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Childress, Texas (Horizon 1-4)",
+  "usd_value": 9700000000,
+  "quantity_raw": "approximately $9.7 billion of total contract value",
+  "quantity_unit": "USD",
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2025-11-03",
+  "term_years": 5,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "iren-nvidia-2026-05",
+  "deal_type": "D1",
+  "from_entity": "iren",
+  "to_entity": "nvidia",
+  "headline": "Nvidia contracted about $3.4 billion of IREN cloud capacity over five years for its own internal AI and research workloads.",
+  "notes": "Disclosed in the FY2026 10-K customer concentration risk factor. Exact signing date within May 2026 not stated.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/iren-20260630.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 3400000000,
+  "quantity_raw": "approximately $3.4 billion of total contract value",
+  "quantity_unit": "USD",
+  "status": "signed",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-05-01",
+  "term_start": "2026-05",
+  "term_years": 5,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "iren-concentration-fy2026",
+  "deal_type": "D1",
+  "from_entity": "iren",
+  "headline": "Microsoft and Nvidia together account for a substantial majority of IREN's contracted AI revenue.",
+  "notes": "CONCENTRATION RECORD. IREN does not publish a numeric single-customer percentage; the 10-K risk factor names the two contracts and says together they are a substantial majority. RPO $5.1bn under ASC 606 plus $11.4bn of ASC 842 lease contract value = ~$16.6bn total contracted, at 30 June 2026.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/iren-20260630.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "quantity_raw": "Microsoft $9.7bn + Nvidia $3.4bn = 'a substantial majority of our contracted revenue'",
+  "status": "signed",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-08-27",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "iren-gpu-fleet-fy2026",
+  "deal_type": "D2",
+  "from_entity": "nvidia",
+  "to_entity": "iren",
+  "headline": "IREN's installed and on-order GPU fleet spans AMD MI350X and Nvidia H100, H200, B200, B300, GB300 and VR200 systems.",
+  "notes": "CHIP PURCHASE RECORD. No unit counts disclosed in the 10-K. Financed partly by equipment leases: ~$102m (Aug 2025, 36-month), ~$96m (24-month) and ~$200m (Nov 2025, 24-month). Customer prepayments represent 45-55% of GPU capex per the FY26 results release.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/iren-20260630.htm"
+  ],
+  "geography": [
+   "United States",
+   "Canada"
+  ],
+  "quantity_raw": "GPUs installed and on order included AMD MI350X and NVIDIA H100, H200, B200, B300, GB300 and VR200",
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-08-27",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "nscale-microsoft-2025-10",
+  "deal_type": "D1",
+  "from_entity": "nscale",
+  "to_entity": "microsoft",
+  "headline": "Microsoft contracted about 200,000 Nvidia GB300 GPUs from Nscale across four countries.",
+  "notes": "Breakdown: Texas ~240MW facility with 104,000 GB300 from Q3 2026; Sines, Portugal 12,600 from Q1 2026; Loughton, UK 50MW with 23,000 from Q1 2027; Narvik, Norway 52,000 via the Aker JV. Contract value not disclosed by Nscale; press reports put the wider Microsoft relationship at ~$14bn.",
+  "source_urls": [
+   "https://www.nscale.com/press-releases/nscale-microsoft-2025"
+  ],
+  "geography": [
+   "United States",
+   "Portugal",
+   "United Kingdom",
+   "Norway"
+  ],
+  "mw": 829.4,
+  "h100e": 580000.0,
+  "h100e_basis": "200,000 GPUs x 2.90 (GB300)",
+  "quantity_raw": "approximately 200,000 NVIDIA GB300 GPUs",
+  "quantity_value": 200000,
+  "quantity_unit": "GPUs",
+  "status": "in_progress",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2025-10-15",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "nscale-microsoft-monarch-2026-03",
+  "deal_type": "D1",
+  "from_entity": "nscale",
+  "to_entity": "microsoft",
+  "headline": "Microsoft signed a letter of intent for a 1.35 gigawatt Nscale campus in West Virginia built around Nvidia Vera Rubin systems.",
+  "notes": "LOI only, not a signed contract. Combines a multi-year compute services agreement with an extended data centre lease. Deliveries from late 2027; 2GW operational targeted H1 2028. Off-grid Caterpillar G3500 gas gensets.",
+  "source_urls": [
+   "https://thenextweb.com/news/nscale-west-virginia-monarch-microsoft-vera-rubin"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Monarch Compute Campus, Mason County, West Virginia",
+  "mw": 1350.0,
+  "h100e": 944055.9,
+  "h100e_basis": "1,350 MW / 1.43 kW per H100e",
+  "quantity_raw": "1.35 gigawatts; approximately 430,000 NVIDIA Vera Rubin NVL72 units",
+  "quantity_value": 1.35,
+  "quantity_unit": "GW",
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "LOI",
+  "announced_date": "2026-03-17",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "nscale-backlog-2026",
+  "deal_type": "D1",
+  "from_entity": "nscale",
+  "headline": "Nscale disclosed about $51 billion of contracted AI revenue backlog ahead of a planned US listing.",
+  "notes": "Reported figure ahead of IPO, not from a filing \u2014 treat as T4. ~194,000 of the 289,000 contracted chips are Nvidia Vera Rubin. Microsoft is by far the dominant counterparty, implying extreme single-customer concentration, but Nscale has not published a percentage.",
+  "source_urls": [
+   "https://techfundingnews.com/nscale-eyes-us-ipo-after-revealing-51b-ai-contract-backlog/"
+  ],
+  "geography": [
+   "United States",
+   "United Kingdom",
+   "Norway",
+   "Portugal"
+  ],
+  "usd_value": 51000000000,
+  "quantity_raw": "$51 billion contracted revenue; ~289,000 chips contracted, ~25,000 active",
+  "quantity_unit": "USD",
+  "status": "signed",
+  "confidence": "T4",
+  "binding_status": "binding",
+  "announced_date": "2026-08-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "lambda-microsoft-2025-11",
+  "deal_type": "D1",
+  "from_entity": "lambda",
+  "to_entity": "microsoft",
+  "headline": "Lambda signed a multibillion-dollar agreement to supply Microsoft with AI infrastructure using tens of thousands of Nvidia GPUs.",
+  "notes": "Neither dollar value nor exact GPU count disclosed. Microsoft is understood to be Lambda's largest customer, but Lambda is private and publishes no concentration figure.",
+  "source_urls": [
+   "https://lambda.ai/blog/lambda-announces-multibillion-dollar-agreement-with-microsoft-to-deploy-ai-infrastructure-powered-by-tens-of-thousands-of-nvidia-gpus",
+   "https://www.cnbc.com/2025/11/03/lambda-ai-microsoft-nvidia.html"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "quantity_raw": "multibillion-dollar; tens of thousands of NVIDIA GPUs",
+  "status": "signed",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2025-11-03",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "fluidstack-france-exit-2026-03",
+  "deal_type": "D15",
+  "from_entity": "fluidstack",
+  "headline": "Fluidstack walked away from a flagship 1 gigawatt, roughly EUR 10 billion French AI project and two other French sites to concentrate on the United States.",
+  "notes": "OFFLOADING RECORD \u2014 the largest outright abandonment in this slice. Three French projects dropped: the Bosquel Business Park site with CC2SO, the Eclairion suburban Paris site where Mistral AI was to be primary tenant, and the 1GW supercomputer under a February 2025 MOU with the French government. Stated reason: to concentrate on the US market.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/fluidstack-drops-projects-in-france-to-focus-on-us-report/",
+   "https://www.bloomberg.com/news/articles/2026-03-18/fluidstack-drops-out-of-marquee-10-billion-ai-project-in-france"
+  ],
+  "geography": [
+   "France"
+  ],
+  "site": "Bosquel Business Park (Somme); Eclairion (suburban Paris)",
+  "mw": 1000.0,
+  "h100e": 699300.7,
+  "h100e_basis": "1,000 MW / 1.43 kW per H100e",
+  "usd_value": 11500000000,
+  "quantity_raw": "EUR 10 billion / $11.5 billion, 1GW supercomputer project abandoned",
+  "quantity_value": 1,
+  "quantity_unit": "GW",
+  "status": "cancelled",
+  "confidence": "T3",
+  "binding_status": "non_binding",
+  "announced_date": "2026-03-18",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "fluidstack-funding-2026-04",
+  "deal_type": "D9",
+  "to_entity": "fluidstack",
+  "headline": "Fluidstack raised $750 million at a $7 billion valuation with Google and Anthropic anchoring its data centre push.",
+  "notes": "Lead investor Situational Awareness. Customers cited: Anthropic, Google, Meta, Mistral, Character.AI. Google separately provides ~$1.8bn of lease backstops. Later reports of a larger round at an $18bn valuation were not verified from a primary source and are not recorded here.",
+  "source_urls": [
+   "https://app.dealroom.co/news/note/fluidstack-raises-750m-at-7b-as-google-and-anthropic-anchor-its-ai-data-centre-push"
+  ],
+  "geography": [
+   "United Kingdom",
+   "United States"
+  ],
+  "usd_value": 750000000,
+  "quantity_raw": "$750 million at $7 billion valuation",
+  "quantity_unit": "USD",
+  "status": "signed",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2026-04-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "from_entity": null
+ },
+ {
+  "deal_id": "together-hypertec-cluster",
+  "deal_type": "D1",
+  "from_entity": "hypertec",
+  "to_entity": "together-ai",
+  "headline": "Hypertec built a 36,000-GPU cluster for Together AI and the pair formed a European AI infrastructure alliance.",
+  "notes": "Together AI leases rather than owns this capacity. The $5bn figure is the stated ceiling of the alliance's private investment, not a contract value. Exact announcement date not pinned down in the sources reviewed.",
+  "source_urls": [
+   "https://hypertec.com/news/hypertec-expands-into-europe-with-5c-and-together-ai-a-strategic-ai-infrastructure-alliance-driving-up-to-5-billion-in-private-investments",
+   "https://www.timesofai.com/news/together-ai-hypertec-36k-gpu-cluster/"
+  ],
+  "geography": [
+   "Canada",
+   "Europe"
+  ],
+  "mw": 51.48,
+  "h100e": 36000,
+  "h100e_basis": "36,000 GPUs, chip unstated, treated as 1.0",
+  "usd_value": 5000000000,
+  "quantity_raw": "36,000 GPU cluster; up to $5 billion in private investment",
+  "quantity_value": 36000,
+  "quantity_unit": "GPUs",
+  "status": "in_progress",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2025-06-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "voltage-park-h100-purchase",
+  "deal_type": "D2",
+  "from_entity": "nvidia",
+  "to_entity": "voltage-park",
+  "headline": "Voltage Park bought about 24,000 Nvidia H100 GPUs to launch a non-profit-owned GPU cloud.",
+  "notes": "CHIP PURCHASE RECORD. Funded by the Navigation Fund (Jed McCaleb). This remains the only verified Voltage Park chip count; no 2026 update was found. As a pure H100 fleet this is the operator in this slice most exposed to H100 spot price decay.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/ai-cloud-computing-non-profit-buys-24000-nvidia-h100-chips/"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "mw": 34.32,
+  "h100e": 24000.0,
+  "h100e_basis": "24,000 GPUs x 1.00 (H100)",
+  "quantity_raw": "24,000 Nvidia H100 chips",
+  "quantity_value": 24000,
+  "quantity_unit": "GPUs",
+  "status": "operational",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2023-10-31",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "tensorwave-amd-mi355x-2026-06",
+  "deal_type": "D2",
+  "from_entity": "amd",
+  "to_entity": "tensorwave",
+  "headline": "TensorWave raised $350 million to buy AMD Instinct MI355X accelerators for its AMD-only AI cloud.",
+  "notes": "The $350m is equity raised, characterised in coverage as being deployed into MI355X capacity; it is not a disclosed purchase order value. No unit count published.",
+  "source_urls": [
+   "https://www.businesswire.com/news/home/20260610650010/en/TensorWave-Raises-$350-Million-Series-B-at-$1.55B-Valuation-to-Expand-Global-AMD-Powered-AI-Infrastructure"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 350000000,
+  "quantity_raw": "$350 million Series B at $1.55 billion valuation, directed at AMD Instinct MI355X",
+  "quantity_unit": "USD",
+  "status": "in_progress",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2026-06-10",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "vultr-ohio-amd-2025-12",
+  "deal_type": "D2",
+  "from_entity": "amd",
+  "to_entity": "vultr",
+  "headline": "Vultr committed $1 billion to a 50MW Ohio supercluster of 24,000 AMD Instinct MI355X GPUs.",
+  "notes": "CHIP PURCHASE RECORD. One of the largest single AMD accelerator orders by an independent cloud.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/vultr-plans-50mw-amd-mi355x-cluster-in-springfield-ohio/",
+   "https://www.techpowerup.com/343644/amd-to-power-vultrs-ohio-ai-supercluster-with-24-000-instinct-mi355x-gpus"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Springfield, Ohio",
+  "mw": 61.78,
+  "h100e": 43200.0,
+  "h100e_basis": "24,000 GPUs x 1.80 (MI355X)",
+  "usd_value": 1000000000,
+  "quantity_raw": "$1 billion investment; 24,000 AMD Instinct MI355X; 50MW",
+  "quantity_value": 24000,
+  "quantity_unit": "GPUs",
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2025-12-02",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "gmi-cloud-loan-2026",
+  "deal_type": "D8",
+  "to_entity": "gmi-cloud",
+  "headline": "GMI Cloud sought a $635 million loan secured on its customer contracts for GPU capacity.",
+  "notes": "Reported, not confirmed closed. Exact date within the reporting window not established; GMI's Asia-Pacific operations are out of scope for this slice.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/gmi-cloud-seeks-635m-loan-supported-by-customer-contracts-for-gpu-capacity-report/"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 635000000,
+  "quantity_raw": "$635 million loan",
+  "quantity_unit": "USD",
+  "status": "announced",
+  "confidence": "T4",
+  "binding_status": "non_binding",
+  "announced_date": "2026-01-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "from_entity": null
+ },
+ {
+  "deal_id": "corescientific-coreweave-2024",
+  "deal_type": "D4",
+  "from_entity": "core-scientific",
+  "to_entity": "coreweave",
+  "headline": "Core Scientific leases about 590MW of data centre capacity to CoreWeave on a 12-year take-or-pay basis worth over $10 billion.",
+  "notes": "Built up through successive option exercises (70MW, 112MW, 120MW and others) during 2024. Two five-year extension options; no unilateral termination right for either party. ~$850m average annualised colocation GAAP revenue expected.",
+  "source_urls": [
+   "https://investors.corescientific.com/news-events/press-releases/detail/95/core-scientific-announces-exercise-of-final-contract-option-by-coreweave-for-delivery-of-approximately-120-mw-of-additional-digital-infrastructure-to-host-high-performance-computing-operations",
+   "https://www.investing.com/news/company-news/core-scientific-q1-fy2026-slides-10b-ai-contracts-3-gw-pipeline-93CH-4665996"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Denton TX ~260MW; Dalton GA ~175MW; Muskogee OK ~70MW; Marble NC ~65MW; Austin TX ~20MW",
+  "mw": 590,
+  "h100e": 412587.4,
+  "h100e_basis": "590 MW / 1.43 kW per H100e",
+  "usd_value": 10000000000,
+  "quantity_raw": "approximately 590 MW; over $10 billion of total revenue potential",
+  "quantity_value": 590,
+  "quantity_unit": "MW",
+  "status": "in_progress",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2024-10-22",
+  "term_years": 12,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "corescientific-concentration-2026-q2",
+  "deal_type": "D1",
+  "from_entity": "core-scientific",
+  "to_entity": "coreweave",
+  "headline": "One colocation customer generated 83% of all Core Scientific revenue in the second quarter of 2026.",
+  "notes": "CONCENTRATION RECORD \u2014 the highest verified single-customer dependence in this slice. The 10-Q does not name the customer but CoreWeave is the only colocation counterparty publicly identified. Comparison: Q2 2025 the colocation single customer was 13%, while a digital-asset self-mining customer was 80%. So Core Scientific has swapped one 80%-plus dependence for another.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000014/core-20260630.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "quantity_raw": "83% of total revenue from one customer in the Colocation segment (Q2 2026); 77% for the six months",
+  "quantity_value": 83,
+  "status": "operational",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-07-28",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "corescientific-block-termination-2026-q2",
+  "deal_type": "D15",
+  "from_entity": "core-scientific",
+  "headline": "Core Scientific paid to tear up its mining-equipment supply contract with Block, taking a $41.9 million loss.",
+  "notes": "OFFLOADING RECORD. Termination and settlement agreement with Block, Inc. and Proto Global LLC cancelling the existing contract and all future delivery obligations of mining equipment. ASIC miners rather than GPUs, but a hard, quantified cancellation of a signed hardware supply contract as the company pivots to AI colocation. Core Scientific also took a $266.5m PP&E impairment and a $19.5m loss remeasuring mining equipment held for sale in H1 2026.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000014/core-20260630.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 41900000,
+  "quantity_raw": "$41.9 million loss on contract termination",
+  "quantity_unit": "USD",
+  "status": "cancelled",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-07-28",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "corescientific-polaris-muskogee-2026",
+  "deal_type": "D6",
+  "to_entity": "core-scientific",
+  "headline": "Core Scientific agreed to buy the Polaris site with up to 440MW of gross utility power for about $421 million.",
+  "notes": "$120m already in escrow at 30 June 2026; expected to close Q3 2026. Purchase price rises by $40m if a further 40MW of firm capacity becomes available before 31 December 2026.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000014/core-20260630.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Polaris DS LLC (Muskogee, Oklahoma)",
+  "mw": 440,
+  "h100e": 307692.3,
+  "h100e_basis": "440 MW / 1.43 kW per H100e",
+  "usd_value": 421000000,
+  "quantity_raw": "up to 440 MW of gross utility power; approximately $421 million cash",
+  "quantity_value": 440,
+  "quantity_unit": "MW",
+  "status": "announced",
+  "confidence": "T1",
+  "binding_status": "conditional",
+  "announced_date": "2026-07-28",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "from_entity": null
+ },
+ {
+  "deal_id": "terawulf-fluidstack-2025-08",
+  "deal_type": "D4",
+  "from_entity": "terawulf",
+  "to_entity": "fluidstack",
+  "headline": "TeraWulf signed 10-year AI hosting agreements with Fluidstack for more than 200MW at Lake Mariner, with Google taking a stake in TeraWulf.",
+  "notes": "Google backstopped Fluidstack's lease obligations and took an equity stake in TeraWulf.",
+  "source_urls": [
+   "https://investors.terawulf.com/news-events/press-releases/detail/112/terawulf-signs-200-mw-10-year-ai-hosting-agreements-with-fluidstack",
+   "https://www.sec.gov/Archives/edgar/data/1083301/000110465925079463/tm2523651d3_ex99-1.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Lake Mariner, Barker, New York",
+  "mw": 200,
+  "h100e": 139860.1,
+  "h100e_basis": "200 MW / 1.43 kW per H100e",
+  "quantity_raw": "200+ MW over 10 years",
+  "quantity_value": 200,
+  "quantity_unit": "MW",
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2025-08-14",
+  "term_years": 10,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "terawulf-fluidstack-cb5-2025-08",
+  "deal_type": "D4",
+  "from_entity": "terawulf",
+  "to_entity": "fluidstack",
+  "headline": "Fluidstack exercised its option for a further 160MW building at Lake Mariner, taking TeraWulf's contracted capacity past 360MW.",
+  "notes": "Option exercise on the August 2025 master arrangement.",
+  "source_urls": [
+   "https://investors.terawulf.com/news-events/press-releases/detail/114/terawulf-announces-fluidstack-expansion-with-160-mw-cb-5-lease-at-lake-mariner"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Lake Mariner, Barker, New York",
+  "mw": 160,
+  "h100e": 111888.1,
+  "h100e_basis": "160 MW / 1.43 kW per H100e",
+  "quantity_raw": "160 MW CB-5 lease; total contracted capacity over 360 MW of critical IT load",
+  "quantity_value": 160,
+  "quantity_unit": "MW",
+  "status": "in_progress",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2025-08-18",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "terawulf-fluidstack-abernathy-jv-2025-10",
+  "deal_type": "D6",
+  "from_entity": "terawulf",
+  "to_entity": "fluidstack",
+  "headline": "TeraWulf and Fluidstack formed a 168MW joint venture in Abernathy, Texas worth about $9.5 billion over 25 years, with a $1.3 billion Google backstop.",
+  "notes": "TeraWulf held 51%. Lease term shortenable to 20 or 15 years at option. Google backstop $1.3bn. TeraWulf later sold out of this JV entirely - see terawulf-abernathy-exit-2026-07.",
+  "source_urls": [
+   "https://investors.terawulf.com/news-events/press-releases/detail/121/terawulf-expands-strategic-partnership-with-fluidstack-through-new-168-mw-ai-compute-joint-venture"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Abernathy, Texas",
+  "mw": 168,
+  "h100e": 117482.5,
+  "h100e_basis": "168 MW / 1.43 kW per H100e",
+  "usd_value": 9500000000,
+  "quantity_raw": "168 MW critical IT (240 MW gross); approximately $9.5 billion over a 25-year term",
+  "quantity_value": 168,
+  "quantity_unit": "MW",
+  "status": "in_progress",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2025-10-28",
+  "term_years": 25,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "terawulf-abernathy-exit-2026-07",
+  "deal_type": "D15",
+  "from_entity": "terawulf",
+  "to_entity": "fluidstack",
+  "headline": "TeraWulf sold its entire 50.1% stake in the Abernathy AI campus joint venture to a Fluidstack-led investor group for about $530 million.",
+  "notes": "OFFLOADING RECORD. TeraWulf exited a 168MW contracted AI campus less than nine months after forming the JV, monetising a ~$450m investment at a premium. Recorded as an offload because a contracted position was handed to the counterparty rather than developed; TeraWulf framed it as capital recycling into the larger Anthropic lease, not distress.",
+  "source_urls": [
+   "https://investors.terawulf.com/news-events/press-releases/detail/142/terawulf-announces-anthropic-lease-at-justified-data-campus-and-sale-of-majority-interest-in-abernathy-joint-venture-to-fluidstack",
+   "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000166/wulf-20260630.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Abernathy, Texas",
+  "mw": 168,
+  "h100e": 117482.5,
+  "h100e_basis": "168 MW / 1.43 kW per H100e",
+  "usd_value": 530000000,
+  "quantity_raw": "entire 50.1% ownership interest sold for approximately $530 million; 168 MW campus",
+  "quantity_value": 168,
+  "quantity_unit": "MW",
+  "status": "signed",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2026-07-06",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "terawulf-anthropic-2026-07",
+  "deal_type": "D4",
+  "from_entity": "terawulf",
+  "to_entity": "anthropic",
+  "headline": "Anthropic signed a 20-year lease for 401MW at TeraWulf's Kentucky campus worth about $19 billion.",
+  "notes": "Initial capacity H2 2027, full 401MW by early 2028. Supported by an investment-grade credit. Campus gross power ~480MW.",
+  "source_urls": [
+   "https://investors.terawulf.com/news-events/press-releases/detail/142/terawulf-announces-anthropic-lease-at-justified-data-campus-and-sale-of-majority-interest-in-abernathy-joint-venture-to-fluidstack",
+   "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000166/wulf-20260630.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Justified Data Campus, Hawesville, Kentucky",
+  "mw": 401,
+  "h100e": 280419.6,
+  "h100e_basis": "401 MW / 1.43 kW per H100e",
+  "usd_value": 19000000000,
+  "quantity_raw": "approximately 401 MW of critical IT capacity; approximately $19 billion over the initial term, up to ~$33 billion with both five-year extensions",
+  "quantity_value": 401,
+  "quantity_unit": "MW",
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-07-06",
+  "term_years": 20,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "terawulf-concentration-2026-q2",
+  "deal_type": "D1",
+  "from_entity": "terawulf",
+  "headline": "All of TeraWulf's AI hosting revenue came from just two customers in the first half of 2026.",
+  "notes": "CONCENTRATION RECORD. 10-Q concentrations note: 'For the three and six months ended June 30, 2026, the Company's HPC lease revenue was generated from two customers.' The two are Fluidstack and Anthropic. In Q2 2025 TeraWulf derived 100% of revenue from bitcoin mining, so the AI dependence is entirely new.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000166/wulf-20260630.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "quantity_raw": "HPC lease revenue generated from two customers; HPC lease revenue was ~71% of total revenue in Q2 2026",
+  "quantity_value": 71,
+  "status": "operational",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-08-05",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "cipher-fluidstack-2025-09",
+  "deal_type": "D4",
+  "from_entity": "cipher-mining",
+  "to_entity": "fluidstack",
+  "headline": "Cipher signed a 168MW, 10-year AI hosting deal with Fluidstack worth about $3 billion, with Google backstopping $1.4 billion.",
+  "notes": "Google guarantees the lease if Fluidstack defaults and took a stake in Cipher. Tenant entity is Fluidstack USA II Inc. Expected commencement September/October 2026.",
+  "source_urls": [
+   "https://investors.cipherdigital.com/static-files/382f9061-a211-487f-9c57-2131f6c06bd8",
+   "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000041/cifr-20260630.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Barber Lake, Colorado City, Texas",
+  "mw": 168,
+  "h100e": 117482.5,
+  "h100e_basis": "168 MW / 1.43 kW per H100e",
+  "usd_value": 3000000000,
+  "quantity_raw": "168 MW of Critical IT Load; ~$3 billion contracted revenue over the initial 10-year term",
+  "quantity_value": 168,
+  "quantity_unit": "MW",
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2025-09-25",
+  "term_start": "2026-10",
+  "term_years": 10,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "cipher-fluidstack-2025-11-expansion",
+  "deal_type": "D4",
+  "from_entity": "cipher-mining",
+  "to_entity": "fluidstack",
+  "headline": "Cipher added a further 56MW, 10-year AI hosting agreement with Fluidstack.",
+  "notes": "Incremental expansion of the September 2025 Barber Lake agreement, taking Fluidstack's total contracted load at the site to 224MW. Contract value for the 56MW increment was not separately disclosed. Legal counsel Davis Polk.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1819989/000095010325015073/dp237633_ex9901.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Barber Lake, Colorado City, Texas",
+  "mw": 56,
+  "h100e": 39160.8,
+  "h100e_basis": "56 MW / 1.43 kW per H100e",
+  "quantity_raw": "additional 56 MW, 10-year",
+  "quantity_value": 56,
+  "quantity_unit": "MW",
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2025-11-20",
+  "term_years": 10,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "cipher-aws-2025-11",
+  "deal_type": "D4",
+  "from_entity": "cipher-mining",
+  "to_entity": "aws",
+  "headline": "AWS agreed a 15-year, 300MW hosting deal with Cipher worth about $5.5 billion.",
+  "notes": "Two phases from July 2026 completing Q4 2026; rent commences August 2026. Air and liquid cooling. Cipher's 10-Q refers to building 'one of its existing sites for a hyperscaler tenant' without naming AWS.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/aws-signs-300mw-hosting-deal-to-lease-capacity-from-cipher-mining/"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "mw": 300,
+  "h100e": 209790.2,
+  "h100e_basis": "300 MW / 1.43 kW per H100e",
+  "usd_value": 5500000000,
+  "quantity_raw": "300MW; approximately $5.5 billion over 15 years",
+  "quantity_value": 300,
+  "quantity_unit": "MW",
+  "status": "in_progress",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2025-11-03",
+  "term_start": "2026-08",
+  "term_years": 15,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "cipher-contracted-2026-q2",
+  "deal_type": "D1",
+  "from_entity": "cipher-mining",
+  "headline": "Cipher reported about 907MW of operating and contracted capacity and $11.4 billion of contracted revenue.",
+  "notes": "Aggregate; subsumes the Fluidstack and AWS leases above. Three data centre campus leases with leading hyperscalers. Projected $793m average annualised NOI over base lease terms. Cipher publishes no numeric customer concentration, but with three tenants across three campuses the concentration is inherently severe.",
+  "source_urls": [
+   "https://www.investing.com/news/company-news/cipher-digital-q2-2026-slides-show-114b-pipeline-amid-earnings-miss-93CH-4834719",
+   "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000041/cifr-20260630.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "mw": 907,
+  "h100e": 634265.7,
+  "h100e_basis": "907 MW / 1.43 kW per H100e",
+  "usd_value": 11400000000,
+  "quantity_raw": "907 megawatts operating and contracted; approximately $11.4 billion in contracted revenue; 5.3 GW development portfolio across 11 sites",
+  "quantity_value": 907,
+  "quantity_unit": "MW",
+  "status": "in_progress",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2026-08-04",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "hut8-fluidstack-riverbend-2025-12",
+  "deal_type": "D4",
+  "from_entity": "hut-8",
+  "to_entity": "fluidstack",
+  "headline": "Fluidstack leased 245MW at Hut 8's Louisiana River Bend campus for 15 years, worth $7.0 billion, backstopped by Google.",
+  "notes": "Google backstops the lease payments and the operations services agreement for the 15-year base term. Right of first offer on up to 1,000MW more. Entergy Louisiana power, initial 330MW utility capacity. Delivery from Q2 2027. Coverage links the capacity to Anthropic via Fluidstack, but the lease counterparty is Fluidstack.",
+  "source_urls": [
+   "https://canada.hut8.com/resources/press-releases/hut-8-signs-15-year-245-mw-ai-data-center-lease-at-river-bend-campus-with-total-contract-value-of-usd7-0-billion",
+   "https://www.datacenterdynamics.com/en/news/hut-8-signs-245mw-capacity-deal-with-fluidstack-as-part-of-multi-gigawatt-partnership-with-anthropic/"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "River Bend, Louisiana",
+  "mw": 245,
+  "h100e": 171328.7,
+  "h100e_basis": "245 MW / 1.43 kW per H100e",
+  "usd_value": 7000000000,
+  "quantity_raw": "245 MW of IT capacity; $7.0 billion over a 15-year base term, up to $17.7 billion with renewals",
+  "quantity_value": 245,
+  "quantity_unit": "MW",
+  "status": "in_progress",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2025-12-17",
+  "term_years": 15,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "hut8-beaconpoint-phase1",
+  "deal_type": "D4",
+  "from_entity": "hut-8",
+  "headline": "Hut 8 leased the first 352MW of its Beacon Point campus in Texas to an unnamed high-investment-grade technology company.",
+  "notes": "Tenant not named. Phase 1 value inferred from the campus total of $19.6bn less the $9.8bn Phase 2 - not stated directly, so no usd_value asserted here.",
+  "source_urls": [
+   "https://www.prnewswire.com/news-releases/hut-8-fully-commercializes-1-gw-beacon-point-ai-data-center-campus-with-second-352-mw-it-lease-bringing-campus-level-base-term-contract-value-to-19-6-billion-302829514.html",
+   "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090025/hut-20260630x10q.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Beacon Point, Nueces County, Texas",
+  "mw": 352,
+  "h100e": 246153.8,
+  "h100e_basis": "352 MW / 1.43 kW per H100e",
+  "quantity_raw": "352 MW of critical IT capacity, 15-year base term",
+  "quantity_value": 352,
+  "quantity_unit": "MW",
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-07-20",
+  "term_years": 15,
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "hut8-beaconpoint-phase2-2026-07",
+  "deal_type": "D4",
+  "from_entity": "hut-8",
+  "headline": "The same tenant doubled its Beacon Point commitment with a second 352MW lease worth $9.8 billion, fully contracting the 1GW campus.",
+  "notes": "Average annual NOI ~$655.0m. Initial delivery Q2 2028; campus initial energization Q1 2027. Brings Beacon Point to 704MW contracted and Hut 8 to 949MW total. Triple-net lease with 3% annual escalators. CONCENTRATION: one unnamed tenant now holds 704 of Hut 8's 949 contracted MW, i.e. 74%.",
+  "source_urls": [
+   "https://www.prnewswire.com/news-releases/hut-8-fully-commercializes-1-gw-beacon-point-ai-data-center-campus-with-second-352-mw-it-lease-bringing-campus-level-base-term-contract-value-to-19-6-billion-302829514.html",
+   "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090025/hut-20260630x10q.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Beacon Point, Nueces County, Texas",
+  "mw": 352,
+  "h100e": 246153.8,
+  "h100e_basis": "352 MW / 1.43 kW per H100e",
+  "usd_value": 9800000000,
+  "quantity_raw": "352 MW additional critical IT capacity (~500 MW utility); approximately $9.8 billion over 15 years, up to ~$25.1 billion with three five-year renewals",
+  "quantity_value": 352,
+  "quantity_unit": "MW",
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-07-20",
+  "term_years": 15,
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "hut8-farnorth-sale-2026-02",
+  "deal_type": "D15",
+  "from_entity": "hut-8",
+  "headline": "Hut 8 sold its Far North power generation joint venture, booking a $34.7 million gain and a $24.7 million lease buyout.",
+  "notes": "OFFLOADING RECORD (partial). Divestiture of the Far North JV within the Power segment in February 2026, including a $24.7m lease buyout that exceeded the carrying lease liability by $3.9m. Hut 8 states it did not represent a strategic shift. Power generation assets, not GPU capacity.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090025/hut-20260630x10q.htm"
+  ],
+  "geography": [
+   "Canada"
+  ],
+  "usd_value": 34700000,
+  "quantity_raw": "sale of the Far North JV; $34.7 million gain net of transaction costs in H1 2026",
+  "quantity_unit": "USD",
+  "status": "signed",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-02-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "galaxy-coreweave-helios",
+  "deal_type": "D4",
+  "from_entity": "galaxy-digital",
+  "to_entity": "coreweave",
+  "headline": "Galaxy leased 526MW of critical IT load at its Helios campus in West Texas to CoreWeave on 15-year terms.",
+  "notes": "Two five-year extension options. Phase I of 133MW (200MW gross) completed July 2026. CONCENTRATION: 100% of Helios AI capacity is contracted to a single customer, CoreWeave.",
+  "source_urls": [
+   "https://www.prnewswire.com/news-releases/galaxy-completes-phase-i-of-its-helios-data-center-campus-delivering-133-megawatts-of-critical-it-load-to-coreweave-302818664.html"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Helios, West Texas",
+  "mw": 526,
+  "h100e": 367832.2,
+  "h100e_basis": "526 MW / 1.43 kW per H100e",
+  "quantity_raw": "526 MW of critical IT load across Phases I-III; over $1 billion expected average annual revenue",
+  "quantity_value": 526,
+  "quantity_unit": "MW",
+  "status": "in_progress",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2026-07-06",
+  "term_years": 15,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "galaxy-helios-interconnect-2026",
+  "deal_type": "D5",
+  "to_entity": "galaxy-digital",
+  "headline": "Galaxy secured ERCOT approval for an extra 830MW at Helios, doubling approved power to more than 1.6 gigawatts.",
+  "notes": "2,200-acre campus. Exact announcement date not established from the sources reviewed; year is certain.",
+  "source_urls": [
+   "https://www.prnewswire.com/news-releases/galaxy-completes-ercot-interconnection-studies-and-secures-approval-for-additional-830-megawatts-at-helios-data-center-campus-doubling-total-approved-power-capacity-to-over-1-6-gigawatts-302662509.html"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Helios, West Texas",
+  "mw": 830,
+  "h100e": 580419.6,
+  "h100e_basis": "830 MW / 1.43 kW per H100e",
+  "quantity_raw": "additional 830 megawatts; total approved capacity over 1.6 gigawatts, potential 3.6 GW",
+  "quantity_value": 830,
+  "quantity_unit": "MW",
+  "status": "announced",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2026-01-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "from_entity": null
+ },
+ {
+  "deal_id": "applieddigital-coreweave-400mw",
+  "deal_type": "D4",
+  "from_entity": "applied-digital",
+  "to_entity": "coreweave",
+  "headline": "CoreWeave has leased 400MW across three buildings at Applied Digital's Polaris Forge 1 campus in North Dakota for about $11.0 billion.",
+  "notes": "Built from the ELN-02 (100MW) and ELN-03 (150MW) leases signed 28 May 2025 plus the Building 4 lease (150MW) signed 28 August 2025. Take-or-pay, non-cancellable; termination for convenience requires payment of the full remaining contractual value.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1144879/000114487926000048/apld-20260531.htm",
+   "https://ir.applieddigital.com/news-events/press-releases/detail/128/applied-digital-finalizes-additional-150mw-lease-with"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Polaris Forge 1, Ellendale, North Dakota",
+  "mw": 400,
+  "h100e": 279720.3,
+  "h100e_basis": "400 MW / 1.43 kW per H100e",
+  "usd_value": 11000000000,
+  "quantity_raw": "400 MW of contracted critical IT load; ~$11.0B total contracted revenue over 15 years",
+  "quantity_value": 400,
+  "quantity_unit": "MW",
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2025-08-28",
+  "term_years": 15,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "applieddigital-coreweave-spv-2026-03",
+  "deal_type": "D15",
+  "from_entity": "coreweave",
+  "to_entity": "applied-digital",
+  "headline": "CoreWeave suspended half of one North Dakota lease and pushed both leases into a ring-fenced subsidiary, posting a $50 million letter of credit.",
+  "notes": "OFFLOADING RECORD. Effective 30 March 2026 the ELN-02 parent lease term was SUSPENDED for two of its four data halls, which moved to a new lease with CoreWeave Compute Acquisition Co. VIII, LLC on substantially the same terms; the ELN-03 lease was assigned outright to the same SPV and CoreWeave Parent was released. CoreWeave Parent gave an unconditional springing guaranty and a $50m letter of credit. Applied Digital frames this as credit enhancement driven by the SPV's A3 rating versus CoreWeave Parent's BB - but the mechanical effect is that a lessee moved 250MW of obligations off the parent balance sheet into a bankruptcy-remote vehicle. No capacity was released to the market.",
+  "source_urls": [
+   "https://ir.applieddigital.com/sec-filings/all-sec-filings/content/0001493152-26-014498/form8-ka.htm",
+   "https://www.sec.gov/Archives/edgar/data/1144879/000114487926000048/apld-20260531.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Polaris Forge 1, Ellendale, North Dakota",
+  "mw": 250,
+  "h100e": 174825.2,
+  "h100e_basis": "250 MW / 1.43 kW per H100e",
+  "usd_value": 50000000,
+  "quantity_raw": "two of four data halls of the 100MW ELN-02 lease suspended; the whole 150MW ELN-03 lease assigned to an SPV; $50 million letter of credit",
+  "quantity_value": 250,
+  "quantity_unit": "MW",
+  "status": "resized",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-04-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "applieddigital-concentration-fy2026",
+  "deal_type": "D1",
+  "from_entity": "applied-digital",
+  "to_entity": "coreweave",
+  "headline": "A single customer produced 59% of Applied Digital's HPC hosting revenue segment share of total company revenue in its 2026 financial year.",
+  "notes": "CONCENTRATION RECORD. FY2026 ended 31 May 2026. The HPC customer is CoreWeave. A separate single crypto-mining customer was 25% of revenue from continuing operations. Combined, two customers were 84% of continuing-operations revenue.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1144879/000114487926000048/apld-20260531.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "quantity_raw": "one customer accounting for 59% of total revenue from continuing operations in the HPC Hosting segment; one customer 25% in the Data Center Hosting segment",
+  "quantity_value": 59,
+  "status": "operational",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-07-29",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "applieddigital-portfolio-2026-05",
+  "deal_type": "D4",
+  "from_entity": "applied-digital",
+  "headline": "Applied Digital had 1,410MW of leases signed across five campuses worth about $36.2 billion at the end of May 2026.",
+  "notes": "Aggregate; subsumes the CoreWeave 400MW lease. Breakdown: Polaris Forge 1 CoreWeave 400MW ~$11.0bn; Polaris Forge 2 investment-grade hyperscaler 200MW ~$5.0bn; Polaris Forge 3 high investment-grade hyperscaler 300MW ~$7.5bn; Delta Forge 1 300MW ~$7.5bn; Delta Forge 2 210MW ~$5.2bn. All take-or-pay and non-cancellable. Active pipeline of over 3GW of gross utility power beyond this.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1144879/000114487926000048/apld-20260531.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "mw": 1410,
+  "h100e": 986014.0,
+  "h100e_basis": "1,410 MW / 1.43 kW per H100e",
+  "usd_value": 36200000000,
+  "quantity_raw": "approximately 1,410 MW of contracted critical IT load; approximately $36.2 billion over initial 15-year base terms",
+  "quantity_value": 1410,
+  "quantity_unit": "MW",
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-07-29",
+  "term_years": 15,
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "applieddigital-chronoscale-spinoff-2026-05",
+  "deal_type": "D15",
+  "from_entity": "applied-digital",
+  "headline": "Applied Digital separated its GPU cloud business into ChronoScale, a separately listed company, exiting the cloud rental market.",
+  "notes": "OFFLOADING RECORD. The cloud services business had been classified as held for sale until 15 February 2026 before the separation. ChronoScale Corporation began trading on Nasdaq as CHRN on 5 May 2026; a holding company transaction on 1 July 2026 created ChronoScale Holdings Corporation. It rents space at third-party colocation centres in Colorado, Minnesota and Utah. Applied Digital also disclosed 'renegotiations of certain of our leases' during FY2026 without further detail.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1144879/000114487926000048/apld-20260531.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "quantity_raw": "separation completed 5 May 2026; Applied Digital retained ~97% of ChronoScale equity",
+  "status": "signed",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-05-05",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "riot-amd-2026-01",
+  "deal_type": "D4",
+  "from_entity": "riot-platforms",
+  "to_entity": "amd",
+  "headline": "AMD leased 50MW at Riot's Rockdale campus in Texas, with 25MW live by mid-2026.",
+  "notes": "Riot's first AI data centre tenant. Contract value not disclosed.",
+  "source_urls": [
+   "https://www.riotplatforms.com/riot-platforms-reports-second-quarter-2026-financial-results-and-strategic-highlights/"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Rockdale, Texas",
+  "mw": 50,
+  "h100e": 34965.0,
+  "h100e_basis": "50 MW / 1.43 kW per H100e",
+  "quantity_raw": "50 MW total contracted; initial 25 MW operational Q2 2026; 10 MW Phase 3 by November 2026; 15 MW Phase 4 by May 2027",
+  "quantity_value": 50,
+  "quantity_unit": "MW",
+  "status": "in_progress",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2026-01-16",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "riot-frontierlab-rockdale-2026-08",
+  "deal_type": "D4",
+  "from_entity": "riot-platforms",
+  "headline": "An unnamed frontier AI lab leased 191MW at Rockdale from Riot for 20 years, worth $9.1 billion.",
+  "notes": "Tenant not named. Initial 96MW December 2027, full 191MW June 2028. NOI $7.3-8.2bn over the base term. $573m interim financing from Morgan Stanley. CONCENTRATION: with AMD's 50MW this is 241MW at a single campus and ~$9.8bn of Riot's contracted revenue, i.e. one tenant is ~93% of Riot's contracted AI revenue.",
+  "source_urls": [
+   "https://www.riotplatforms.com/riot-platforms-reports-second-quarter-2026-financial-results-and-strategic-highlights/",
+   "https://www.sec.gov/Archives/edgar/data/1167419/000110465926093448/riot-20260630x10q.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Rockdale, Texas",
+  "mw": 191,
+  "h100e": 133566.4,
+  "h100e_basis": "191 MW / 1.43 kW per H100e",
+  "usd_value": 9100000000,
+  "quantity_raw": "191 MW critical IT; $9.1 billion in total initial contract revenue over 20 years, ~$16.1 billion if both five-year extensions are exercised",
+  "quantity_value": 191,
+  "quantity_unit": "MW",
+  "status": "signed",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-08-10",
+  "term_end": "2048-06",
+  "term_years": 20,
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "riot-corsicana-loi-2026-08",
+  "deal_type": "D7",
+  "to_entity": "riot-platforms",
+  "headline": "Riot signed a letter of intent for a 1 gigawatt AI facility at its Corsicana site in Texas.",
+  "notes": "LOI only; counterparty not disclosed.",
+  "source_urls": [
+   "https://blockspace.media/insight/riot-platforms-signs-ai-lease-rockdale-2026/"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Corsicana, Texas",
+  "mw": 1000.0,
+  "h100e": 699300.7,
+  "h100e_basis": "1,000 MW / 1.43 kW per H100e",
+  "quantity_raw": "1 GW facility",
+  "quantity_value": 1,
+  "quantity_unit": "GW",
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "LOI",
+  "announced_date": "2026-08-10",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "from_entity": null
+ },
+ {
+  "deal_id": "bitfarms-panthercreek-financing-2025-10",
+  "deal_type": "D8",
+  "to_entity": "bitfarms",
+  "headline": "Bitfarms converted a Macquarie debt facility into $300 million of project financing to build HPC/AI capacity at Panther Creek.",
+  "notes": "Converted an existing Macquarie debt facility into project financing specifically to accelerate HPC/AI development at Panther Creek, and drew a further $50m. Bitfarms also announced a partnership with T5 Data Centers to advance the campus. No AI tenant named.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1812477/000121390025097957/ea026090401ex99-1_bitfarms.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Panther Creek, Pennsylvania",
+  "usd_value": 300000000,
+  "quantity_raw": "$300 million project financing plus an additional $50 million drawn",
+  "quantity_unit": "USD",
+  "status": "signed",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2025-10-10",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "from_entity": null
+ },
+ {
+  "deal_id": "bitfarms-mining-cessation-2026",
+  "deal_type": "D15",
+  "from_entity": "bitfarms",
+  "headline": "Bitfarms, now renamed Keel Infrastructure, shut down bitcoin mining at four sites to convert them to AI and HPC use.",
+  "notes": "OFFLOADING RECORD (asset repurposing). Q2 2026 10-Q filed as Keel Infrastructure Corp. (formerly Bitfarms Ltd.) records accelerated depreciation from ceasing mining at Panther Creek and Scrubgrass in Pennsylvania and revised useful lives at Washington State and Sharon. No AI tenant has been publicly named for these sites, so this is capacity being taken out of one use without a confirmed contract in the other.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1812477/000181247726000023/keel-20260630.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "quantity_raw": "cessation of Bitcoin Mining operations at Washington State, Panther Creek, Scrubgrass and Sharon sites",
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-08-10",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "crusoe-microsoft-abilene-2026-03",
+  "deal_type": "D6",
+  "from_entity": "crusoe",
+  "to_entity": "microsoft",
+  "headline": "Crusoe is building a new 900MW AI campus in Abilene, Texas for Microsoft, taking the whole Abilene site to 2.1 gigawatts.",
+  "notes": "900MW on-site power plant plus battery storage. First building energized mid-2027. Adjacent to the existing OpenAI/Oracle Stargate campus.",
+  "source_urls": [
+   "https://www.crusoe.ai/resources/newsroom/crusoe-announces-new-900-mw-ai-factory-campus-in-abilene-texas-to-support-microsoft-ai-infrastructure"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Abilene, Texas",
+  "mw": 900,
+  "h100e": 629370.6,
+  "h100e_basis": "900 MW / 1.43 kW per H100e",
+  "quantity_raw": "900 MW new campus; 2.1 GW total projected across the full Abilene site",
+  "quantity_value": 900,
+  "quantity_unit": "MW",
+  "status": "in_progress",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2026-03-27",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "crusoe-abilene-stargate",
+  "deal_type": "D6",
+  "from_entity": "crusoe",
+  "to_entity": "openai",
+  "headline": "Crusoe built the Abilene Stargate campus for OpenAI and Oracle, expanding it to 1.2 gigawatts.",
+  "notes": "Oracle is the facility development partner and OpenAI the end user. Crusoe raised $11.6bn of debt and equity for the campus. Construction began June 2024, Phase 1 operational H1 2025, full expansion mid-2026. Exact announcement date of the 1.2GW expansion not pinned down.",
+  "source_urls": [
+   "https://www.datacenterfrontier.com/hyperscale/article/55276169/crusoe-adds-45-gw-natural-gas-to-fuel-ai-expands-abilene-data-center-to-12-gw",
+   "https://www.datacenterdynamics.com/en/news/crusoe-secures-116bn-in-debt-and-equity-for-openais-stargate-data-center-campus-in-abilene-texas/"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Abilene, Texas",
+  "mw": 1200.0,
+  "h100e": 839160.8,
+  "h100e_basis": "1,200 MW / 1.43 kW per H100e",
+  "quantity_raw": "Phase 1 200+ MW; expansion to 1.2 GW across 8 buildings and ~4 million sq ft",
+  "quantity_value": 1.2,
+  "quantity_unit": "GW",
+  "status": "in_progress",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2026-01-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "crusoe-gas-jv-2026",
+  "deal_type": "D5",
+  "to_entity": "crusoe",
+  "headline": "Crusoe secured 4.5 gigawatts of natural gas generation through a joint venture with Engine No. 1 to power AI campuses off-grid.",
+  "notes": "Turbines acquired by Engine No. 1 and Chevron. Bypasses traditional utility interconnection. Exact date not established from the source.",
+  "source_urls": [
+   "https://www.datacenterfrontier.com/hyperscale/article/55276169/crusoe-adds-45-gw-natural-gas-to-fuel-ai-expands-abilene-data-center-to-12-gw"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "mw": 4500.0,
+  "h100e": 3146853.1,
+  "h100e_basis": "4,500 MW / 1.43 kW per H100e",
+  "quantity_raw": "4.5 gigawatts of natural gas capacity; seven GE Vernova turbines",
+  "quantity_value": 4.5,
+  "quantity_unit": "GW",
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2026-01-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "from_entity": null
+ },
+ {
+  "deal_id": "crusoe-tallgrass-wyoming-2026-01",
+  "deal_type": "D6",
+  "from_entity": "crusoe",
+  "headline": "Crusoe won approval for Project Jade, a 1.8 gigawatt data centre campus and power plant near Cheyenne, Wyoming.",
+  "notes": "Power from BFC Power and Cheyenne Power Hub built by Tallgrass. First buildings electrified 2027. Total project cost reported as potentially reaching $50bn. No tenant named. Deal status recorded as 'announced' because the schema's deal status vocabulary has no 'permitted' value; the underlying site received county approval on 6 January 2026 and the SITE record carries status 'permitted'.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/crusoe-gets-go-ahead-for-18gw-data-center-campus-and-power-plant-in-cheyenne-wyoming/",
+   "https://www.crusoe.ai/resources/newsroom/crusoe-and-tallgrass-announce-ai-data-center-in-wyoming"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Project Jade, Laramie County, Wyoming",
+  "mw": 1800.0,
+  "h100e": 1258741.3,
+  "h100e_basis": "1,800 MW / 1.43 kW per H100e",
+  "usd_value": 7000000000,
+  "quantity_raw": "1.8GW campus, scalable to 10GW; 2.7GW of on-site gas generation; ~$7 billion Tallgrass investment",
+  "quantity_value": 1.8,
+  "quantity_unit": "GW",
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2026-01-06",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "oracle-openai-2025-09",
+  "deal_type": "D1",
+  "from_entity": "oracle",
+  "to_entity": "openai",
+  "headline": "OpenAI contracted about $300 billion of cloud capacity from Oracle over five years.",
+  "notes": "Reported by the Wall Street Journal rather than announced by either party, hence T3. The single largest compute contract in this dataset and the dominant component of Oracle's RPO. CONCENTRATION: this makes OpenAI by far Oracle's largest cloud customer.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/openai-signs-300bn-cloud-deal-with-oracle-report/"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 300000000000,
+  "quantity_raw": "$300 billion over five years",
+  "quantity_unit": "USD",
+  "status": "signed",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2025-09-10",
+  "term_start": "2027-01",
+  "term_years": 5,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "nvidia-neocloud-backstop-2026",
+  "deal_type": "D10",
+  "from_entity": "nvidia",
+  "headline": "Nvidia agreed to rent back unused GPU capacity from neocloud operators if their customer demand falls short.",
+  "notes": "GUARANTEE/BACKSTOP RECORD, directly relevant to offloading risk: it is the mechanism by which neoclouds can hand unsold capacity back rather than dump it on the spot market. Neither the counterparties nor the aggregate committed amount are public. Exact date not established.",
+  "source_urls": [
+   "https://capacityglobal.com/news/nvidia-now-agrees-to-rent-back-unused-gpu-capacity-from-neocloud-operators-if-customer-demand-falls-short/"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "quantity_raw": "backstop of unused GPU capacity",
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2026-01-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "whitefiber-canopy-termination-2026-q2",
+  "deal_type": "D15",
+  "from_entity": "canopy-wave",
+  "to_entity": "whitefiber",
+  "headline": "WhiteFiber's original anchor GPU customer tore up its multi-year contract, paying a termination fee that grew to $15.7 million.",
+  "notes": "OFFLOADING RECORD \u2014 the clearest verified case in this slice of a customer buying its way out of a multi-year GPU contract. The Initial Customer is Canopy Wave. The Termination Agreement was executed in Q2 2026, preserved $12.5m of invoiced unpaid receivables (since collected), and left WhiteFiber recognising ~$2.2m of bad debt on the unpreserved balance. The $12.3m fee was recognised as revenue in Q2 2026 then amended upward to $15.7m after quarter end and remains outstanding. WhiteFiber redeployed the freed GPUs to other customers. A prior 2,048-GPU H100 expansion order under the same relationship had already been cut back to 464 GPUs in January 2025 after the customer asked to delay so it could evaluate newer Nvidia parts.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/2042022/000121390026088026/ea0300877-10q_whitefiber.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "mw": 4.69,
+  "h100e": 3276.8,
+  "h100e_basis": "2,048 GPUs x 1.60 (H100/B200)",
+  "usd_value": 15700000,
+  "quantity_raw": "Master Services and Lease Agreement covering 2,048 GPUs over three years, worth >$50 million of annualized revenue, terminated; fixed termination fee $12.3 million, later amended to $15.7 million",
+  "quantity_value": 2048,
+  "quantity_unit": "GPUs",
+  "status": "cancelled",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-08-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "whitefiber-dnafund-termination-2025-11",
+  "deal_type": "D15",
+  "from_entity": "whitefiber",
+  "to_entity": "dna-fund",
+  "headline": "WhiteFiber terminated DNA Fund's GPU contract with $7.3 million unpaid, and has recovered only $2.2 million.",
+  "notes": "OFFLOADING / DEFAULT RECORD. Terminated by WhiteFiber in accordance with the contract terms in November 2025. The customer agreed under the termination agreement to repay the balance; roughly 70% of it was still outstanding as of the August 2026 10-Q. Exact day in November not stated.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/2042022/000121390026088026/ea0300877-10q_whitefiber.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 7300000,
+  "quantity_raw": "MSA and all related purchase orders terminated; ~$7.3 million outstanding accounts receivable, $2.2 million collected to date",
+  "quantity_unit": "USD",
+  "status": "cancelled",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2025-11-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "whitefiber-h200-monthly-terminated-2026-01",
+  "deal_type": "D15",
+  "to_entity": "whitefiber",
+  "headline": "Six month-to-month agreements covering 88 Nvidia H200 GPUs at WhiteFiber were terminated in January 2026.",
+  "notes": "OFFLOADING RECORD. Small but a direct instance of short-tenor H200 capacity being handed back. The same customer later signed new orders for 10 H200 servers (Feb 2026, ~$1.3m) and 256 H100 servers (Mar 2026, ~$50.2m). Exact day in January not stated.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/2042022/000121390026088026/ea0300877-10q_whitefiber.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "mw": 0.14,
+  "h100e": 101.2,
+  "h100e_basis": "88 GPUs x 1.15 (H200)",
+  "quantity_raw": "six month-to-month agreements for a total of 88 H200 GPUs terminated",
+  "quantity_value": 88,
+  "quantity_unit": "GPUs",
+  "status": "cancelled",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-01-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "from_entity": null
+ },
+ {
+  "deal_id": "whitefiber-discontinued-orders-2026-h1",
+  "deal_type": "D15",
+  "to_entity": "whitefiber",
+  "headline": "Three customer orders were discontinued at WhiteFiber in the first half of 2026, costing about $5.1 million of revenue.",
+  "notes": "OFFLOADING RECORD (summary). The three are the Canopy Initial Customer termination, a Master Services Agreement terminated in January 2026, and a service order signed in January 2026 that was terminated within the period. Offsetting this, WhiteFiber signed new orders worth $635.8m of total contracted revenue over six-month to three-year terms.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/2042022/000121390026088026/ea0300877-10q_whitefiber.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 5100000,
+  "quantity_raw": "discontinuation of three customer orders; approximately $5.1M impact to revenue in the six months ended June 30, 2026",
+  "quantity_value": 3,
+  "status": "cancelled",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-08-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "from_entity": null
+ },
+ {
+  "deal_id": "whitefiber-h200-resale-2026-h1",
+  "deal_type": "D14",
+  "from_entity": "whitefiber",
+  "headline": "WhiteFiber sold 126 Nvidia H200 GPUs second-hand for $26.1 million, a $1.8 million gain over book value.",
+  "notes": "SECOND-HAND SALE RECORD. Rare verified secondary-market GPU price point: ~$207,000 per H200 GPU, sold above carrying value. Full cash consideration collected. WhiteFiber also took a $5.0m impairment charge on property, plant and equipment in H1 2026.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/2042022/000121390026088026/ea0300877-10q_whitefiber.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "mw": 0.21,
+  "h100e": 144.9,
+  "h100e_basis": "126 GPUs x 1.15 (H200)",
+  "usd_value": 26100000,
+  "quantity_raw": "126 H200 GPUs sold for total consideration of approximately $26.1 million; carrying amount $24.3 million; gain $1.8 million",
+  "quantity_value": 126,
+  "quantity_unit": "GPUs",
+  "status": "signed",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-08-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "whitefiber-nscale-nc1-2025-11",
+  "deal_type": "D1",
+  "from_entity": "whitefiber",
+  "to_entity": "nscale",
+  "headline": "Nscale contracted about $865 million of colocation at WhiteFiber's North Carolina campus over ten years.",
+  "notes": "Signed by Enovum NC-1 Bidco, LLC with Nscale Services US Inc. and Nscale Global Holdings Limited. Includes annual escalators and non-recurring installation charges; electricity is a pass-through. Billing expected to start in Q3 2026. CONCENTRATION: WhiteFiber's 10-Q lists as a specific risk 'our dependence on Nscale as the sole contracted tenant at our NC-1 campus'. Exact day in November not stated.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/2042022/000121390026088026/ea0300877-10q_whitefiber.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "NC-1, North Carolina",
+  "usd_value": 865000000,
+  "quantity_raw": "approximately $865 million in total contracted revenue over a 10-year term",
+  "quantity_unit": "USD",
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2025-11-01",
+  "term_years": 10,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "whitefiber-concentration-2026-h1",
+  "deal_type": "D1",
+  "from_entity": "whitefiber",
+  "headline": "WhiteFiber has seven customers and its largest was 63% of revenue in the first half of 2026.",
+  "notes": "CONCENTRATION RECORD. Compounded by Nscale being the sole contracted tenant at the NC-1 campus, so both the cloud and colocation sides are single-name dependent.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/2042022/000121390026088026/ea0300877-10q_whitefiber.htm"
+  ],
+  "geography": [
+   "United States",
+   "Canada",
+   "Iceland"
+  ],
+  "quantity_raw": "seven existing customers; largest customer approximately 63% of revenue during the six months ended June 30, 2026",
+  "quantity_value": 63,
+  "status": "operational",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-08-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "whitefiber-duke-nc1-capacity-2025-05",
+  "deal_type": "D5",
+  "to_entity": "whitefiber",
+  "headline": "Duke Energy agreed to ramp WhiteFiber's North Carolina campus to 99MW of gross power within four years.",
+  "notes": "Capacity Agreement with Duke Energy Carolinas. An Assignment and Assumption Agreement with Unifi Manufacturing and Duke Energy Carolinas followed on 4 August 2025. The 200MW figure is management's view based on a Duke preliminary transmission study, subject to substation upgrades.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/2042022/000121390026088026/ea0300877-10q_whitefiber.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "NC-1, North Carolina",
+  "mw": 99,
+  "h100e": 69230.8,
+  "h100e_basis": "99 MW / 1.43 kW per H100e",
+  "quantity_raw": "24 MW (gross) by September 1, 2025; 40 MW (gross) by April 1, 2026; at least 99 MW (gross) within four years of May 2025; potentially up to 200 MW over an extended period",
+  "quantity_value": 99,
+  "quantity_unit": "MW",
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2025-05-20",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "from_entity": null
+ },
+ {
+  "deal_id": "iren-dell-b300-ncnr-2026-03",
+  "deal_type": "D2",
+  "from_entity": "dell",
+  "to_entity": "iren",
+  "headline": "IREN's Nvidia B300 order from Dell is contractually non-cancellable and non-returnable, secured by a Dell security interest.",
+  "notes": "CHIP PURCHASE RECORD, and directly relevant to offloading risk: the order 'may not be cancelled, rescheduled, or modified without Supplier's prior written consent' and supersedes any return or cancellation rights in the underlying supply contract. Dell holds a security interest in the hardware until paid in full. Buying entity is IE US Hardware 4 Inc. The 'CHD' prefix indicates Childress. Unit counts and prices are redacted from the public exhibit.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000026/exhibit104-ncnrandsupple.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Childress, Texas",
+  "quantity_raw": "purchase order CHD_DELL_B300_030326 under a Purchase Agreement dated March 3, 2026; quantities redacted",
+  "status": "signed",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-05-08",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "iren-dell-b200-ncnr-2026-05",
+  "deal_type": "D2",
+  "from_entity": "dell",
+  "to_entity": "iren",
+  "headline": "IREN placed a second non-cancellable Dell order, this time for Nvidia B200 systems.",
+  "notes": "CHIP PURCHASE RECORD. Same non-cancellable, non-returnable structure as the March 2026 B300 order, with a Dell security interest until payment in full. Buying entity IE US Hardware 4 Inc. Unit counts and prices redacted.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/a1015ie4ncnrandsupplemen.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Childress, Texas",
+  "quantity_raw": "purchase order CHD_NV_DELL_B200_051526 under a Purchase Agreement dated on or about May 20, 2026; quantities redacted",
+  "status": "signed",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-08-27",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "nexgen-aqcompute-supercloud",
+  "deal_type": "D2",
+  "from_entity": "nvidia",
+  "to_entity": "nexgen-cloud",
+  "headline": "NexGen Cloud committed $1 billion to an AI Supercloud of more than 20,000 Nvidia H100 GPUs hosted in AQ Compute's European data centres.",
+  "notes": "CHIP PURCHASE RECORD. Deployment target was June 2024; the source page was last updated 1 October 2025 and does not restate the original announcement date, so announced_date is the stated deployment target month and should be treated as approximate. Specific sites and MW are not disclosed. A pure-H100 fleet of this vintage is heavily exposed to H100 price decay.",
+  "source_urls": [
+   "https://www.hyperstack.cloud/blog/company-news/nexgen-cloud-and-aq-compute-advance-towards-net-zero-ai-supercloud"
+  ],
+  "geography": [
+   "Europe"
+  ],
+  "mw": 28.6,
+  "h100e": 20000.0,
+  "h100e_basis": "20,000 GPUs x 1.00 (H100)",
+  "usd_value": 1000000000,
+  "quantity_raw": "20,000+ NVIDIA H100 Tensor Core GPUs; $1 billion AI Supercloud investment",
+  "quantity_value": 20000,
+  "quantity_unit": "GPUs",
+  "status": "operational",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2024-06-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "ovhcloud-h100-listprice-2024-01",
+  "deal_type": "D12",
+  "from_entity": "ovhcloud",
+  "headline": "OVHcloud listed its H100 PCIe GPU instance at EUR 2.80 per hour when it launched the product.",
+  "notes": "PUBLISHED LIST PRICE, not a cleared trade, and it is a January 2024 price - included as a dated reference point for the H100 price decline rather than as a current 2026 quote. OVHcloud's current H100 price could not be verified: the live pricing page did not render a figure. OVHcloud operates 40 data centres across 4 continents but publishes no GPU counts or MW for its AI estate.",
+  "source_urls": [
+   "https://corporate.ovhcloud.com/en/newsroom/news/ai-offer/"
+  ],
+  "geography": [
+   "France"
+  ],
+  "quantity_raw": "EUR 2.80 per hour for H100 PCIe GPU instances; EUR 3.10 per hour for H100 PCIe managed AI solutions; L40S EUR 1.40; L4 EUR 0.75; A10 pricing also listed",
+  "quantity_value": 2.8,
+  "status": "operational",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2024-01-24",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ }
+]

@@ -1,0 +1,1049 @@
+{
+"Kulai, Johor, Malaysia|Malaysia": {
+"lat": 1.6666667,
+"lng": 103.6,
+"matched": "Kulai, Johor, Malaysia",
+"rank": 12,
+"kind": "district"
+},
+"Kulai, Malaysia|Malaysia": {
+"lat": 1.6666667,
+"lng": 103.6,
+"matched": "Kulai, Johor, Malaysia",
+"rank": 12,
+"kind": "district"
+},
+"Johor, Malaysia|Malaysia": {
+"lat": 2.0228821,
+"lng": 103.3114564,
+"matched": "Johor, Malaysia",
+"rank": 8,
+"kind": "state"
+},
+"Sedenak, Malaysia|Malaysia": {
+"lat": 1.7126551,
+"lng": 103.5257302,
+"matched": "Sedenak, Kulai, Johor, 81030, Malaysia",
+"rank": 19,
+"kind": "village"
+},
+"Iskandar Puteri, Johor, Malaysia|Malaysia": {
+"lat": 1.4522711,
+"lng": 103.6144729,
+"matched": "Iskandar Puteri, Johor Bahru, Johor, Malaysia",
+"rank": 14,
+"kind": "city"
+},
+"Gelang Patah, Johor, Malaysia|Malaysia": {
+"lat": 1.4494162,
+"lng": 103.5872736,
+"matched": "Gelang Patah, Iskandar Puteri, Johor Bahru, Johor, 81550, Malaysia",
+"rank": 18,
+"kind": "town"
+},
+"Bukit Batu, Johor, Malaysia|Malaysia": {
+"lat": 1.7290972,
+"lng": 103.621931,
+"matched": "Bukit Batu, Kulai, Johor, 81000, Malaysia",
+"rank": 18,
+"kind": "peak"
+},
+"Kota Tinggi, Johor, Malaysia|Malaysia": {
+"lat": 1.7336743,
+"lng": 103.9006975,
+"matched": "Kota Tinggi, Johor, Malaysia",
+"rank": 18,
+"kind": "town"
+},
+"Johor Bahru, Malaysia|Malaysia": {
+"lat": 1.4581986,
+"lng": 103.7649059,
+"matched": "Johor Bahru, Johor, 80730, Malaysia",
+"rank": 16,
+"kind": "city"
+},
+"Pasir Gudang, Malaysia|Malaysia": {
+"lat": 1.4953437,
+"lng": 103.9207048,
+"matched": "Pasir Gudang, Johor Bahru, Johor, 81700, Malaysia",
+"rank": 16,
+"kind": "city"
+},
+"Cyberjaya, Selangor, Malaysia|Malaysia": {
+"lat": 2.9338908,
+"lng": 101.6455587,
+"matched": "Cyberjaya, Sepang, Selangor, Malaysia",
+"rank": 16,
+"kind": "town"
+},
+"Nongsa, Batam, Indonesia|Indonesia": {
+"lat": 1.114765,
+"lng": 104.1258557,
+"matched": "Nongsa, Batam, Riau Islands, Indonesia",
+"rank": 14,
+"kind": "city_district"
+},
+"Cikarang, Indonesia|Indonesia": {
+"lat": -6.2553138,
+"lng": 107.1450733,
+"matched": "Cikarang, Jalan Yos Sudarso, Cikarang Kota, Cikarang, Kab Bekasi, West Java, 17383, Indonesia",
+"rank": 30,
+"kind": "railway"
+},
+"West Java, Indonesia|Indonesia": {
+"lat": -6.8891904,
+"lng": 107.6404716,
+"matched": "West Java, Indonesia",
+"rank": 8,
+"kind": "state"
+},
+"Java, Indonesia|Indonesia": {
+"lat": -7.3279694,
+"lng": 109.613911,
+"matched": "Java, Indonesia",
+"rank": 17,
+"kind": "island"
+},
+"Jurong Island, Singapore|Singapore": {
+"lat": 1.2685254,
+"lng": 103.6785584,
+"matched": "Jurong Island And Bukom, Western Islands, West Region, Singapore",
+"rank": 14,
+"kind": "neighbourhood"
+},
+"Singapore, Singapore|Singapore": {
+"lat": 1.2899175,
+"lng": 103.8519072,
+"matched": "Singapore",
+"rank": 15,
+"kind": "city"
+},
+"Jurong East, Singapore|Singapore": {
+"lat": 1.3204168,
+"lng": 103.7347925,
+"matched": "Jurong East, West Region, Singapore",
+"rank": 12,
+"kind": "suburb"
+},
+"Navi Mumbai, India|India": {
+"lat": 19.0308262,
+"lng": 73.0198537,
+"matched": "Navi Mumbai, Thane Subdistrict, Thane, Maharashtra, India",
+"rank": 16,
+"kind": "city"
+},
+"Noida, India|India": {
+"lat": 28.5706333,
+"lng": 77.3272147,
+"matched": "Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India",
+"rank": 16,
+"kind": "city"
+},
+"Chennai, India|India": {
+"lat": 13.0836939,
+"lng": 80.270186,
+"matched": "Chennai, Tamil Nadu, India",
+"rank": 16,
+"kind": "city"
+},
+"Panvel, Navi Mumbai, India|India": {
+"lat": 19.0416496,
+"lng": 73.0284345,
+"matched": "Sion-Panvel Highway, nerul, Nerul East, Navi Mumbai, Thane Subdistrict, Thane, Maharashtra, 400007, India",
+"rank": 26,
+"kind": "road"
+},
+"Greater Noida, India|India": {
+"lat": 28.4670734,
+"lng": 77.5137649,
+"matched": "Greater Noida, Gautam Buddha Nagar, Uttar Pradesh, 210310, India",
+"rank": 16,
+"kind": "city"
+},
+"Hyderabad, Telangana, India|India": {
+"lat": 17.360589,
+"lng": 78.4740613,
+"matched": "Hyderabad, Bahadurpura mandal, Hyderabad, Telangana, India",
+"rank": 16,
+"kind": "city"
+},
+"Jamnagar, Gujarat, India|India": {
+"lat": 22.4732415,
+"lng": 70.0552102,
+"matched": "Jamnagar, Jamnagar City Taluka, Jamnagar, Gujarat, 361001, India",
+"rank": 16,
+"kind": "city"
+},
+"Mumbai, India|India": {
+"lat": 19.054999,
+"lng": 72.8692035,
+"matched": "Mumbai, Mumbai Suburban District, Maharashtra, 400051, India",
+"rank": 16,
+"kind": "city"
+},
+"Sakai, Osaka, Japan|Japan": {
+"lat": 34.5737364,
+"lng": 135.4828866,
+"matched": "Sakai, Osaka Prefecture, 590-0078, Japan",
+"rank": 16,
+"kind": "city"
+},
+"Ishikari, Hokkaido, Japan|Japan": {
+"lat": 43.171677,
+"lng": 141.3159605,
+"matched": "Ishikari, Ishikari Subprefecture, Hokkaido Prefecture, Hokkaido Region, Japan",
+"rank": 16,
+"kind": "city"
+},
+"Hokkaido, Japan|Japan": {
+"lat": 43.4519831,
+"lng": 142.8197834,
+"matched": "Hokkaido Prefecture, Hokkaido Region, Japan",
+"rank": 8,
+"kind": "province"
+},
+"Kagawa Prefecture, Japan|Japan": {
+"lat": 34.2480104,
+"lng": 134.0586579,
+"matched": "Kagawa Prefecture, Japan",
+"rank": 8,
+"kind": "province"
+},
+"Prefecture, Japan|Japan": {
+"lat": 43.4519831,
+"lng": 142.8197834,
+"matched": "Hokkaido Prefecture, Hokkaido Region, Japan",
+"rank": 8,
+"kind": "province"
+},
+"Ishikawa Prefecture, Japan|Japan": {
+"lat": 36.9890574,
+"lng": 136.8162839,
+"matched": "Ishikawa Prefecture, Japan",
+"rank": 8,
+"kind": "province"
+},
+"Okuma, Fukushima, Japan|Japan": {
+"lat": 37.3813068,
+"lng": 140.9587132,
+"matched": "Okuma, Futaba County, Fukushima Prefecture, Japan",
+"rank": 16,
+"kind": "town"
+},
+"Ulsan, South Korea|South Korea": {
+"lat": 35.5391697,
+"lng": 129.3119136,
+"matched": "Ulsan, South Korea",
+"rank": 8,
+"kind": "city"
+},
+"Tainan, Taiwan|Taiwan": {
+"lat": 22.9912348,
+"lng": 120.184982,
+"matched": "Tainan, Taiwan",
+"rank": 8,
+"kind": "city"
+},
+"Taoyuan, Taiwan|Taiwan": {
+"lat": 24.9929995,
+"lng": 121.3010003,
+"matched": "Taoyuan City, Taiwan",
+"rank": 8,
+"kind": "city"
+},
+"Taichung, Taiwan|Taiwan": {
+"lat": 24.163162,
+"lng": 120.6478282,
+"matched": "Taichung, Taiwan",
+"rank": 8,
+"kind": "city"
+},
+"Eastern Creek, Sydney, NSW, Australia|Australia": {
+"lat": -33.8059423,
+"lng": 150.849956,
+"matched": "Eastern Creek, Sydney, New South Wales, 2766, Australia",
+"rank": 18,
+"kind": "suburb"
+},
+"Melbourne, VIC, Australia|Australia": {
+"lat": -37.8142454,
+"lng": 144.9631732,
+"matched": "Melbourne, Victoria, Australia",
+"rank": 16,
+"kind": "city"
+},
+"George Town, Australia|Australia": {
+"lat": -41.1050157,
+"lng": 146.8238459,
+"matched": "George Town, Tasmania, 7253, Australia",
+"rank": 18,
+"kind": "town"
+},
+"St Leonards, Tasmania, Australia|Australia": {
+"lat": -41.4569092,
+"lng": 147.1993273,
+"matched": "St Leonards, Launceston, Tasmania, Australia",
+"rank": 18,
+"kind": "suburb"
+},
+"Tailem Bend, South Australia, Australia|Australia": {
+"lat": -35.2529335,
+"lng": 139.4533779,
+"matched": "Tailem Bend, South Australia, 5260, Australia",
+"rank": 18,
+"kind": "town"
+},
+"Stirling North, South Australia, Australia|Australia": {
+"lat": -32.5169935,
+"lng": 137.8398139,
+"matched": "Stirling North, South Australia, 5710, Australia",
+"rank": 18,
+"kind": "suburb"
+},
+"Docklands, Melbourne, VIC, Australia|Australia": {
+"lat": -37.8175423,
+"lng": 144.9394923,
+"matched": "Docklands, Melbourne, Victoria, 3008, Australia",
+"rank": 18,
+"kind": "suburb"
+},
+"Cu Chi, Ho Chi Minh City, Vietnam|Vietnam": {
+"lat": 10.9744159,
+"lng": 106.4948968,
+"matched": "C\u1ee7 Chi, X\u00e3 T\u00e2n An H\u1ed9i, Ho Chi Minh City, Vietnam",
+"rank": 18,
+"kind": "town"
+},
+"Chonburi, Thailand|Thailand": {
+"lat": 13.1857117,
+"lng": 101.1210777,
+"matched": "Chon Buri Province, Thailand",
+"rank": 8,
+"kind": "province"
+},
+"Corridor, Thailand|Thailand": {
+"lat": 13.7997237,
+"lng": 100.5507295,
+"matched": "Clock Tower Corridor, Chatuchak Subdistrict, Chatuchak District, Bangkok, 10900, Thailand",
+"rank": 26,
+"kind": "road"
+},
+"Bangkok, Thailand|Thailand": {
+"lat": 13.7524938,
+"lng": 100.4935089,
+"matched": "Bangkok, Thailand",
+"rank": 8,
+"kind": "city"
+},
+"Central Tokyo, Japan|Japan": {
+"lat": 35.6902601,
+"lng": 139.7538782,
+"matched": "National Archives of Japan, Shuto Expressway Inner Circular Route, Kitanomaru Park, Chiyoda, Tokyo, 102-0091, Japan",
+"rank": 30,
+"kind": "amenity"
+},
+"Paju, Gyeonggi Province, South Korea|South Korea": {
+"lat": 37.7598955,
+"lng": 126.7801502,
+"matched": "Paju-si, Gyeonggi, South Korea",
+"rank": 12,
+"kind": "city"
+},
+"Paju, South Korea|South Korea": {
+"lat": 37.7598955,
+"lng": 126.7801502,
+"matched": "Paju-si, Gyeonggi, South Korea",
+"rank": 12,
+"kind": "city"
+},
+"Gyeonggi Province, South Korea|South Korea": {
+"lat": 37.2884675,
+"lng": 127.0535231,
+"matched": "Gyeonggi, South Korea",
+"rank": 8,
+"kind": "province"
+},
+"Province, South Korea|South Korea": {
+"lat": 37.2884675,
+"lng": 127.0535231,
+"matched": "Gyeonggi, South Korea",
+"rank": 8,
+"kind": "province"
+},
+"Palava, India|India": {
+"lat": 19.1646091,
+"lng": 73.1127841,
+"matched": "Palava Phase 2, Kalyan Subdistrict, Thane, Maharashtra, India",
+"rank": 19,
+"kind": "suburb"
+},
+"Huntingwood , Sydney, NSW, Australia|Australia": {
+"lat": -33.797973,
+"lng": 150.881592,
+"matched": "Huntingwood, Sydney, New South Wales, Australia",
+"rank": 18,
+"kind": "suburb"
+},
+"Laverton North, Melbourne, VIC, Australia|Australia": {
+"lat": -37.8300705,
+"lng": 144.7869487,
+"matched": "Laverton North, Melbourne, Victoria, 3026, Australia",
+"rank": 18,
+"kind": "suburb"
+},
+"Truganina, Melbourne, VIC, Australia|Australia": {
+"lat": -37.8089015,
+"lng": 144.721139,
+"matched": "Truganina, Melbourne, Victoria, Australia",
+"rank": 18,
+"kind": "suburb"
+},
+"Wetherill Park , Sydney, NSW, Australia|Australia": {
+"lat": -33.8483333,
+"lng": 150.9011111,
+"matched": "Wetherill Park, Sydney, New South Wales, 2164, Australia",
+"rank": 18,
+"kind": "suburb"
+},
+"Tullamarine, Melbourne, VIC, Australia|Australia": {
+"lat": -37.704658,
+"lng": 144.8717732,
+"matched": "Tullamarine, Melbourne, Victoria, 3043, Australia",
+"rank": 18,
+"kind": "suburb"
+},
+"Canal Flats, British Columbia, Canada|Canada": {
+"lat": 50.1596927,
+"lng": -115.8076908,
+"matched": "Canal Flats, Regional District of East Kootenay, British Columbia, V0B 1B0, Canada",
+"rank": 16,
+"kind": "village"
+},
+"Prince George, British Columbia, Canada|Canada": {
+"lat": 53.9128645,
+"lng": -122.7453699,
+"matched": "Prince George, Regional District of Fraser-Fort George, British Columbia, Canada",
+"rank": 16,
+"kind": "city"
+},
+"Mackenzie, British Columbia, Canada|Canada": {
+"lat": 55.3243966,
+"lng": -123.0926095,
+"matched": "Mackenzie, Regional District of Fraser-Fort George, British Columbia, V0J 2C0, Canada",
+"rank": 16,
+"kind": "town"
+},
+"Childress, Texas, United States|United States": {
+"lat": 34.5196569,
+"lng": -100.2067656,
+"matched": "Childress County, Texas, 79201, United States",
+"rank": 12,
+"kind": "county"
+},
+"Childress, United States|United States": {
+"lat": 34.5196569,
+"lng": -100.2067656,
+"matched": "Childress County, Texas, 79201, United States",
+"rank": 12,
+"kind": "county"
+},
+"Texas, United States|United States": {
+"lat": 31.2638905,
+"lng": -98.5456116,
+"matched": "Texas, United States",
+"rank": 8,
+"kind": "state"
+},
+"Sweetwater, Texas, United States|United States": {
+"lat": 32.4709519,
+"lng": -100.405938,
+"matched": "Sweetwater, Nolan County, Texas, 79556, United States",
+"rank": 16,
+"kind": "town"
+},
+"Kiowa, Oklahoma, United States|United States": {
+"lat": 34.9425062,
+"lng": -99.019906,
+"matched": "Kiowa County, Oklahoma, United States",
+"rank": 12,
+"kind": "county"
+},
+"Kiowa, United States|United States": {
+"lat": 38.4411214,
+"lng": -102.7628476,
+"matched": "Kiowa County, Colorado, United States",
+"rank": 12,
+"kind": "county"
+},
+"Oklahoma, United States|United States": {
+"lat": 34.9550817,
+"lng": -97.2684063,
+"matched": "Oklahoma, United States",
+"rank": 8,
+"kind": "state"
+},
+"Badajoz, Extremadura, Spain|Spain": {
+"lat": 38.878187,
+"lng": -6.9701115,
+"matched": "Badajoz, Extremadura, Spain",
+"rank": 16,
+"kind": "city"
+},
+"Bundey, South Australia, Australia|Australia": {
+"lat": -33.8871756,
+"lng": 139.2710946,
+"matched": "Bundey, South Australia, Australia",
+"rank": 18,
+"kind": "city_district"
+},
+"Denton, Texas, United States|United States": {
+"lat": 33.1838787,
+"lng": -97.1413417,
+"matched": "Denton County, Texas, United States",
+"rank": 12,
+"kind": "county"
+},
+"Denton, United States|United States": {
+"lat": 33.1838787,
+"lng": -97.1413417,
+"matched": "Denton County, Texas, United States",
+"rank": 12,
+"kind": "county"
+},
+"Dalton, Georgia, United States|United States": {
+"lat": 34.7691867,
+"lng": -84.9702475,
+"matched": "Dalton, Whitfield County, Georgia, United States",
+"rank": 16,
+"kind": "city"
+},
+"Muskogee, Oklahoma, United States|United States": {
+"lat": 35.6630196,
+"lng": -95.3927706,
+"matched": "Muskogee County, Oklahoma, United States",
+"rank": 12,
+"kind": "county"
+},
+"Marble, North Carolina, United States|United States": {
+"lat": 35.175086,
+"lng": -83.9249052,
+"matched": "Marble, Cherokee County, North Carolina, 28905, United States",
+"rank": 20,
+"kind": "hamlet"
+},
+"Austin, Texas, United States|United States": {
+"lat": 30.2711286,
+"lng": -97.7436995,
+"matched": "Austin, Travis County, Texas, United States",
+"rank": 16,
+"kind": "city"
+},
+"Hunt County, Texas, United States|United States": {
+"lat": 33.1161567,
+"lng": -96.0808922,
+"matched": "Hunt County, Texas, United States",
+"rank": 12,
+"kind": "county"
+},
+"Hunt County, United States|United States": {
+"lat": 33.1161567,
+"lng": -96.0808922,
+"matched": "Hunt County, Texas, United States",
+"rank": 12,
+"kind": "county"
+},
+"Ellendale, North Dakota, United States|United States": {
+"lat": 46.00275,
+"lng": -98.527046,
+"matched": "Ellendale, Ellendale Township, Dickey County, North Dakota, 58436, United States",
+"rank": 16,
+"kind": "town"
+},
+"Harwood, North Dakota, United States|United States": {
+"lat": 46.979412,
+"lng": -96.880638,
+"matched": "Harwood, Cass County, North Dakota, United States",
+"rank": 16,
+"kind": "village"
+},
+"Jamestown, North Dakota, United States|United States": {
+"lat": 46.910544,
+"lng": -98.708436,
+"matched": "Jamestown, Midway Township, Stutsman County, North Dakota, United States",
+"rank": 16,
+"kind": "town"
+},
+"Barker, New York, United States|United States": {
+"lat": 43.3276844,
+"lng": -78.5547563,
+"matched": "Village of Barker, Town of Somerset, Niagara County, New York, United States",
+"rank": 16,
+"kind": "village"
+},
+"Hawesville, Kentucky, United States|United States": {
+"lat": 37.9000554,
+"lng": -86.754988,
+"matched": "Hawesville, Hancock County, Kentucky, United States",
+"rank": 16,
+"kind": "city"
+},
+"Kentucky, United States|United States": {
+"lat": 37.5726028,
+"lng": -85.1551411,
+"matched": "Kentucky, United States",
+"rank": 8,
+"kind": "state"
+},
+"Maryland, United States|United States": {
+"lat": 39.5162401,
+"lng": -76.9382069,
+"matched": "Maryland, United States",
+"rank": 8,
+"kind": "state"
+},
+"Abernathy, Texas, United States|United States": {
+"lat": 33.8323812,
+"lng": -101.8430151,
+"matched": "Abernathy, Hale County, Texas, 79311, United States",
+"rank": 16,
+"kind": "village"
+},
+"Odessa, Texas, United States|United States": {
+"lat": 31.8457149,
+"lng": -102.367687,
+"matched": "Odessa, Ector County, Texas, United States",
+"rank": 16,
+"kind": "city"
+},
+"Wink, Texas, United States|United States": {
+"lat": 31.7534049,
+"lng": -103.15583,
+"matched": "Wink, Winkler County, Texas, United States",
+"rank": 16,
+"kind": "village"
+},
+"Colorado City, Texas, United States|United States": {
+"lat": 32.3930337,
+"lng": -100.86351,
+"matched": "Colorado City, Mitchell County, Texas, 79512, United States",
+"rank": 16,
+"kind": "town"
+},
+"West Texas, United States|United States": {
+"lat": 26.1717097,
+"lng": -98.1628013,
+"matched": "West Texas, San Juan South Estates Colonia, San Juan, Hidalgo County, Texas, 78589, United States",
+"rank": 26,
+"kind": "road"
+},
+"Nueces County, Texas, United States|United States": {
+"lat": 27.7153774,
+"lng": -97.6199942,
+"matched": "Nueces County, Texas, United States",
+"rank": 12,
+"kind": "county"
+},
+"Nueces County, United States|United States": {
+"lat": 27.7153774,
+"lng": -97.6199942,
+"matched": "Nueces County, Texas, United States",
+"rank": 12,
+"kind": "county"
+},
+"Louisiana, United States|United States": {
+"lat": 30.8703881,
+"lng": -92.007126,
+"matched": "Louisiana, United States",
+"rank": 8,
+"kind": "state"
+},
+"Amarillo, Texas, United States|United States": {
+"lat": 35.20729,
+"lng": -101.8371192,
+"matched": "Amarillo, Potter County, Texas, United States",
+"rank": 16,
+"kind": "city"
+},
+"Orla, Texas, United States|United States": {
+"lat": 31.8250149,
+"lng": -103.9090099,
+"matched": "Orla, Reeves County, Texas, 79770, United States",
+"rank": 19,
+"kind": "village"
+},
+"Niagara Falls, New York, United States|United States": {
+"lat": 43.084841,
+"lng": -79.0701786,
+"matched": "Niagara Falls, City of Niagara Falls, Niagara County, New York, United States",
+"rank": 20,
+"kind": "waterfall"
+},
+"Medicine Hat, Alberta, Canada|Canada": {
+"lat": 50.04303,
+"lng": -110.679016,
+"matched": "Medicine Hat, Alberta, Canada",
+"rank": 12,
+"kind": "city"
+},
+"Medicine Hat, Canada|Canada": {
+"lat": 50.04303,
+"lng": -110.679016,
+"matched": "Medicine Hat, Alberta, Canada",
+"rank": 12,
+"kind": "city"
+},
+"Alberta, Canada|Canada": {
+"lat": 55.001251,
+"lng": -115.002136,
+"matched": "Alberta, Canada",
+"rank": 8,
+"kind": "state"
+},
+"Drumheller, Alberta, Canada|Canada": {
+"lat": 51.401597,
+"lng": -112.6185167,
+"matched": "Drumheller, Alberta, Canada",
+"rank": 12,
+"kind": "county"
+},
+"Drumheller, Canada|Canada": {
+"lat": 51.401597,
+"lng": -112.6185167,
+"matched": "Drumheller, Alberta, Canada",
+"rank": 12,
+"kind": "county"
+},
+"McCamey, Texas, United States|United States": {
+"lat": 31.1315405,
+"lng": -102.2223286,
+"matched": "McCamey, Upton County, Texas, 79752, United States",
+"rank": 16,
+"kind": "town"
+},
+"Rockdale, Texas, United States|United States": {
+"lat": 30.6549433,
+"lng": -97.0058245,
+"matched": "Rockdale, Milam County, Texas, 76567, United States",
+"rank": 16,
+"kind": "town"
+},
+"Corsicana, Texas, United States|United States": {
+"lat": 32.0938236,
+"lng": -96.464675,
+"matched": "Corsicana, Navarro County, Texas, United States",
+"rank": 16,
+"kind": "town"
+},
+"Carbon County, Pennsylvania, United States|United States": {
+"lat": 40.8908468,
+"lng": -75.7212917,
+"matched": "Carbon County, Pennsylvania, United States",
+"rank": 12,
+"kind": "county"
+},
+"Carbon County, United States|United States": {
+"lat": 40.8908468,
+"lng": -75.7212917,
+"matched": "Carbon County, Pennsylvania, United States",
+"rank": 12,
+"kind": "county"
+},
+"Pennsylvania, United States|United States": {
+"lat": 40.9699889,
+"lng": -77.7278831,
+"matched": "Pennsylvania, United States",
+"rank": 8,
+"kind": "state"
+},
+"Venango County, Pennsylvania, United States|United States": {
+"lat": 41.3996112,
+"lng": -79.7709417,
+"matched": "Venango County, Pennsylvania, United States",
+"rank": 12,
+"kind": "county"
+},
+"Venango County, United States|United States": {
+"lat": 41.3996112,
+"lng": -79.7709417,
+"matched": "Venango County, Pennsylvania, United States",
+"rank": 12,
+"kind": "county"
+},
+"Sharon, Pennsylvania, United States|United States": {
+"lat": 41.232947,
+"lng": -80.5078056,
+"matched": "Sharon, Mercer County, Pennsylvania, 16146, United States",
+"rank": 16,
+"kind": "town"
+},
+"Washington, United States|United States": {
+"lat": 38.8950982,
+"lng": -77.0363849,
+"matched": "Washington, District of Columbia, United States",
+"rank": 16,
+"kind": "city"
+},
+"Abilene, Texas, United States|United States": {
+"lat": 32.44645,
+"lng": -99.7475905,
+"matched": "Abilene, Taylor County, Texas, United States",
+"rank": 16,
+"kind": "city"
+},
+"Laramie County, Wyoming, United States|United States": {
+"lat": 41.2737321,
+"lng": -104.7268231,
+"matched": "Laramie County, Wyoming, United States",
+"rank": 12,
+"kind": "county"
+},
+"Laramie County, United States|United States": {
+"lat": 41.2737321,
+"lng": -104.7268231,
+"matched": "Laramie County, Wyoming, United States",
+"rank": 12,
+"kind": "county"
+},
+"Wyoming, United States|United States": {
+"lat": 43.1700264,
+"lng": -107.568534,
+"matched": "Wyoming, United States",
+"rank": 8,
+"kind": "state"
+},
+"Loughton, Essex, United Kingdom|United Kingdom": {
+"lat": 51.6467058,
+"lng": 0.0544098,
+"matched": "Loughton, Debden Green, Epping Forest, Essex, England, United Kingdom",
+"rank": 20,
+"kind": "town"
+},
+"Sines, Portugal|Portugal": {
+"lat": 37.956549,
+"lng": -8.8689639,
+"matched": "Sines, Set\u00fabal, Portugal",
+"rank": 14,
+"kind": "city"
+},
+"Narvik, Norway|Norway": {
+"lat": 68.4383796,
+"lng": 17.4271978,
+"matched": "Narvik, Nordland, 8517, Norway",
+"rank": 18,
+"kind": "town"
+},
+"Mason County, West Virginia, United States|United States": {
+"lat": 38.7499013,
+"lng": -82.052456,
+"matched": "Mason County, West Virginia, United States",
+"rank": 12,
+"kind": "county"
+},
+"Mason County, United States|United States": {
+"lat": 30.705029,
+"lng": -99.2233284,
+"matched": "Mason County, Texas, United States",
+"rank": 12,
+"kind": "county"
+},
+"West Virginia, United States|United States": {
+"lat": 38.4758406,
+"lng": -80.8408415,
+"matched": "West Virginia, United States",
+"rank": 8,
+"kind": "state"
+},
+"Virginia, United States|United States": {
+"lat": 37.1232245,
+"lng": -78.4927721,
+"matched": "Virginia, United States",
+"rank": 8,
+"kind": "state"
+},
+"Vineland, New Jersey, United States|United States": {
+"lat": 39.4862777,
+"lng": -75.0254256,
+"matched": "Vineland, Cumberland County, New Jersey, United States",
+"rank": 16,
+"kind": "city"
+},
+"Mantsala, Finland|Finland": {
+"lat": 60.6353444,
+"lng": 25.3159266,
+"matched": "M\u00e4nts\u00e4l\u00e4, Helsinki sub-region, Uusimaa, Mainland Finland, Finland",
+"rank": 16,
+"kind": "town"
+},
+"Longcross, Surrey, United Kingdom|United Kingdom": {
+"lat": 51.385277,
+"lng": -0.5950836,
+"matched": "Longcross, Burma Road, Chobham, Borough of Runnymede, Surrey, England, KT16 0EX, United Kingdom",
+"rank": 30,
+"kind": "railway"
+},
+"Kansas City, Missouri, United States|United States": {
+"lat": 39.100105,
+"lng": -94.5781416,
+"matched": "Kansas City, Jackson County, Missouri, United States",
+"rank": 16,
+"kind": "city"
+},
+"Paris, France|France": {
+"lat": 48.8588897,
+"lng": 2.320041,
+"matched": "Paris, Ile-de-France, Metropolitan France, France",
+"rank": 15,
+"kind": "suburb"
+},
+"Kenilworth, New Jersey, United States|United States": {
+"lat": 40.6771374,
+"lng": -74.2870715,
+"matched": "Kenilworth, Union County, New Jersey, 07033, United States",
+"rank": 16,
+"kind": "town"
+},
+"Springfield, Ohio, United States|United States": {
+"lat": 39.9234046,
+"lng": -83.810138,
+"matched": "Springfield, Clark County, Ohio, United States",
+"rank": 16,
+"kind": "city"
+},
+"Atlanta, Georgia, United States|United States": {
+"lat": 33.7544657,
+"lng": -84.3898151,
+"matched": "Atlanta, Fulton County, Georgia, United States",
+"rank": 16,
+"kind": "city"
+},
+"North Carolina, United States|United States": {
+"lat": 35.6729639,
+"lng": -79.0392919,
+"matched": "North Carolina, United States",
+"rank": 8,
+"kind": "state"
+},
+"Carolina, United States|United States": {
+"lat": 18.3640599,
+"lng": -65.9526682,
+"matched": "Carolina, Puerto Rico, United States",
+"rank": 12,
+"kind": "county"
+},
+"Montreal, Quebec, Canada|Canada": {
+"lat": 45.5031824,
+"lng": -73.5698065,
+"matched": "Montreal, Urban agglomeration of Montreal, Montreal (administrative region), Quebec, Canada",
+"rank": 16,
+"kind": "city"
+},
+"Pointe-Claire, Quebec, Canada|Canada": {
+"lat": 45.4566767,
+"lng": -73.8067442,
+"matched": "Pointe-Claire, Urban agglomeration of Montreal, Montreal (administrative region), Quebec, Canada",
+"rank": 16,
+"kind": "town"
+},
+"Saint-Jerome, Quebec, Canada|Canada": {
+"lat": 45.7780402,
+"lng": -74.0033272,
+"matched": "Saint-J\u00e9r\u00f4me, La Rivi\u00e8re-du-Nord, Laurentides, Quebec, Canada",
+"rank": 16,
+"kind": "city"
+},
+"Hoa Lac, Hanoi, Vietnam|Vietnam": {
+"lat": 21.0149036,
+"lng": 105.5030091,
+"matched": "Ho\u00e0 L\u1ea1c, H\u00e0 N\u1ed9i, Vietnam",
+"rank": 18,
+"kind": "town"
+},
+"Santa Rosa, Laguna, Philippines|Philippines": {
+"lat": 14.3146042,
+"lng": 121.1137004,
+"matched": "Santa Rosa, Laguna, Calabarzon, Philippines",
+"rank": 12,
+"kind": "city"
+},
+"Santa Rosa, Philippines|Philippines": {
+"lat": 14.3146042,
+"lng": 121.1137004,
+"matched": "Santa Rosa, Laguna, Calabarzon, Philippines",
+"rank": 12,
+"kind": "city"
+},
+"Laguna, Philippines|Philippines": {
+"lat": 14.1696476,
+"lng": 121.3336526,
+"matched": "Laguna, Calabarzon, Philippines",
+"rank": 8,
+"kind": "state"
+},
+"Sedenak, Johor, Malaysia|Malaysia": {
+"lat": 1.7126551,
+"lng": 103.5257302,
+"matched": "Sedenak, Kulai, Johor, 81030, Malaysia",
+"rank": 19,
+"kind": "village"
+},
+"Johor Bahru, Johor, Malaysia|Malaysia": {
+"lat": 1.4581986,
+"lng": 103.7649059,
+"matched": "Johor Bahru, Johor, 80730, Malaysia",
+"rank": 16,
+"kind": "city"
+},
+"Pasir Gudang, Johor, Malaysia|Malaysia": {
+"lat": 1.4953437,
+"lng": 103.9207048,
+"matched": "Pasir Gudang, Johor Bahru, Johor, 81700, Malaysia",
+"rank": 16,
+"kind": "city"
+},
+"Batam, Indonesia|Indonesia": {
+"lat": 1.1030815,
+"lng": 104.0383696,
+"matched": "Batam, Riau Islands, Indonesia",
+"rank": 12,
+"kind": "city"
+},
+"Cikarang, Greater Jakarta, Indonesia|Indonesia": null,
+"Greater Noida, Delhi NCR, India|India": null,
+"Thailand|Thailand": {
+"lat": 14.8971921,
+"lng": 100.83273,
+"matched": "Thailand",
+"rank": 4,
+"kind": "country"
+},
+"Eastern Economic Corridor, Thailand|Thailand": null,
+"Tseung Kwan O, Hong Kong, Hong Kong|Hong Kong": null,
+"Tseung Kwan O, Hong Kong|Hong Kong": null,
+"Hong Kong, Hong Kong|Hong Kong": null,
+"Kong, Hong Kong|Hong Kong": null,
+"Hong Kong|Hong Kong": null,
+"Tsuen Wan, Hong Kong, Hong Kong|Hong Kong": null,
+"Tsuen Wan, Hong Kong|Hong Kong": null,
+"Palava , Mumbai Metropolitan Region, India|India": null,
+"United States|United States": {
+"lat": 39.7837304,
+"lng": -100.445882,
+"matched": "United States",
+"rank": 4,
+"kind": "country"
+},
+"Israel|Israel": {
+"lat": 30.8124247,
+"lng": 34.8594762,
+"matched": "Israel",
+"rank": 4,
+"kind": "country"
+},
+"Iceland|Iceland": {
+"lat": 64.9841821,
+"lng": -18.1059013,
+"matched": "Iceland",
+"rank": 4,
+"kind": "country"
+}
+}

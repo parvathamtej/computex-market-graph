@@ -1,0 +1,278 @@
+[
+  {
+    "site_id": "flow-tk7-tk8-central-tokyo",
+    "name": "FLOW Digital Infrastructure TK7/TK8 campus",
+    "operator": "FLOW Digital Infrastructure",
+    "owner": "PAG (FLOW Digital Infrastructure)",
+    "country": "Japan",
+    "city": "Central Tokyo (near Otemachi/Toyosu clusters; ward not stated)",
+    "lat": null,
+    "lng": null,
+    "it_load_mw": 30,
+    "it_load_mw_raw": "30MW combined campus; TK7 6MW IT load",
+    "phase_note": "Two buildings: TK7 (6 MW IT) is the first phase, ready for service Q1 2027; TK8 MW not individually stated",
+    "status": "under_construction",
+    "power_source": "",
+    "chips_installed": [],
+    "commissioned": null,
+    "source_urls": [
+      "https://www.flowdigital.com/en/resources/newsroom/flow-digital-infrastructure-announces-new-data-center-central-tokyo",
+      "https://www.datacenterdynamics.com/en/news/pags-flow-breaks-ground-on-tokyo-data-center-campus/"
+    ],
+    "notes": "Company announcement 29 Jul 2025 (T2) says construction underway; DCD headline 'breaks ground'. Captured 2026-09-03 while sourcing Japan under-construction capacity."
+  },
+  {
+    "site_id": "sunevision-mega-idc-tko",
+    "name": "SUNeVision MEGA IDC Phase Two",
+    "operator": "SUNeVision",
+    "owner": "SUNeVision (Sun Hung Kai Properties)",
+    "country": "Hong Kong",
+    "city": "Tseung Kwan O, Hong Kong",
+    "lat": null,
+    "lng": null,
+    "it_load_mw": 130,
+    "it_load_mw_raw": "130MW (JLL via Real Estate Asia); SUNeVision release states only ~350,000 sq ft GFA for Phase Two and 'over 180MW' for the full three-phase campus",
+    "phase_note": "Phase Two of the MEGA IDC campus; Phase One (50 MW) live 2024; Phase Two completion scheduled 2026/2027 (SUNeVision) or 2027 (JLL)",
+    "status": "under_construction",
+    "power_source": "",
+    "chips_installed": [],
+    "commissioned": null,
+    "source_urls": [
+      "https://realestateasia.com/industrial/news/hong-kong-data-centre-pipeline-hits-517mw",
+      "https://www.malaymail.com/news/money/mediaoutreach/2025/03/27/sunevision-initiates-mega-idc-phase-two-development/371408"
+    ],
+    "notes": "Reuses existing site_id for the campus (sites_apac.json has it as 'phased', 180 MW). Phase Two MW comes from JLL as quoted by Real Estate Asia (22 Sep 2025), not from SUNeVision, which only gives GFA; 50 + 130 = 180 is consistent with the stated campus total. Captured 2026-09-03."
+  },
+  {
+    "site_id": "china-telecom-global-tko-idc",
+    "name": "China Telecom Global TKO IDC",
+    "operator": "China Telecom Global",
+    "owner": "China Telecom Global",
+    "country": "Hong Kong",
+    "city": "Tseung Kwan O, Hong Kong",
+    "lat": null,
+    "lng": null,
+    "it_load_mw": 56,
+    "it_load_mw_raw": "56MW",
+    "phase_note": "Single facility; completion date not stated",
+    "status": "under_construction",
+    "power_source": "",
+    "chips_installed": [],
+    "commissioned": null,
+    "source_urls": [
+      "https://realestateasia.com/industrial/news/hong-kong-data-centre-pipeline-hits-517mw"
+    ],
+    "notes": "Listed by JLL (via Real Estate Asia, 22 Sep 2025) among Hong Kong's 517 MW under construction. T4 (analyst report via trade press); no operator disclosure checked. Captured 2026-09-03."
+  },
+  {
+    "site_id": "vantage-tsuen-wan-west-hk",
+    "name": "Vantage Tsuen Wan West",
+    "operator": "Vantage Data Centers",
+    "owner": "Vantage Data Centers",
+    "country": "Hong Kong",
+    "city": "Tsuen Wan, Hong Kong",
+    "lat": null,
+    "lng": null,
+    "it_load_mw": 48,
+    "it_load_mw_raw": "48MW",
+    "phase_note": "Completion date not stated",
+    "status": "under_construction",
+    "power_source": "",
+    "chips_installed": [],
+    "commissioned": null,
+    "source_urls": [
+      "https://realestateasia.com/industrial/news/hong-kong-data-centre-pipeline-hits-517mw"
+    ],
+    "notes": "Listed by JLL (via Real Estate Asia, 22 Sep 2025) among Hong Kong's 517 MW under construction. T4; not cross-checked with Vantage. Captured 2026-09-03."
+  },
+  {
+    "site_id": "lg-uplus-paju-aidc",
+    "name": "LG Uplus Paju AI Data Centre",
+    "operator": "LG Uplus",
+    "owner": "LG Uplus",
+    "country": "South Korea",
+    "city": "Paju, Gyeonggi Province",
+    "lat": null,
+    "lng": null,
+    "it_load_mw": 200,
+    "it_load_mw_raw": "200 MW class facility spanning about 150,000 square meters",
+    "phase_note": "Computer Center 1 scheduled for completion June 2027 (all tenancy contracts secured); Phase 2 (Computer Centers 2 and 3, KRW 1.3 trillion) approved by the board 29 Jul 2026; Computer Center 1 MW not disclosed",
+    "status": "under_construction",
+    "power_source": "",
+    "chips_installed": [],
+    "commissioned": null,
+    "source_urls": [
+      "https://w.media/lg-uplus-to-invest-additional-us-910-million-for-paju-aidc-expansion/",
+      "https://www.techtimes.com/articles/323695/20260810/seoul-data-center-vacancy-hits-11-turning-citys-ai-market-queue.htm"
+    ],
+    "notes": "200 MW is the full campus figure, not the phase currently being built. Described by Tech Times (10 Aug 2026) as 'the largest AI data center project in the Seoul metropolitan area'. Captured 2026-09-03."
+  },
+  {
+    "site_id": "stt-gdc-palava-mumbai",
+    "name": "ST Telemedia Global Data Centres Palava campus",
+    "operator": "ST Telemedia Global Data Centres India",
+    "owner": "ST Telemedia Global Data Centres",
+    "country": "India",
+    "city": "Palava (Dombivli), Mumbai Metropolitan Region",
+    "lat": null,
+    "lng": null,
+    "it_load_mw": 400,
+    "it_load_mw_raw": "400 MW campus, with an initial 50 MW phase under construction",
+    "phase_note": "Initial 50 MW phase under construction; 400 MW full campus",
+    "status": "under_construction",
+    "power_source": "",
+    "chips_installed": [],
+    "commissioned": null,
+    "source_urls": [
+      "https://www.knightfrank.co.uk/site-assets/research/report-pdfs/data-centres/data-centre-atlas-2026.pdf"
+    ],
+    "notes": "Knight Frank/DC Byte Data Centre Atlas 2026 (Mumbai section): 'ST Telemedia Global Data Centres is progressing a 400 MW campus in Palava, with an initial 50 MW phase under construction.' T4 (analyst report). The 400 MW is the campus envelope; only 50 MW is being built. Captured 2026-09-03."
+  },
+  {
+    "site_id": "airtrunk-syd3-huntingwood",
+    "name": "AirTrunk SYD3",
+    "operator": "AirTrunk",
+    "owner": "AirTrunk (Blackstone)",
+    "country": "Australia",
+    "city": "Huntingwood (Blacktown LGA), Sydney, NSW",
+    "lat": null,
+    "lng": null,
+    "it_load_mw": 400,
+    "it_load_mw_raw": "400 MW (Renewmap); AirTrunk product page '400+ MW' across 42 data halls; original 2021 filing 320+ MW IT load across nine phases",
+    "phase_note": "Multi-phase campus; phase currently being built not itemised",
+    "status": "under_construction",
+    "power_source": "",
+    "chips_installed": [],
+    "commissioned": null,
+    "source_urls": [
+      "https://itkservices3.com/background/data_centres_australia_top10_construction"
+    ],
+    "notes": "Renewmap May 2026 snapshot via ITK Research (11 May 2026): largest of 19 Australian sites under construction (1,853 MW total, full-campus basis). Address 51 Huntingwood Drive per ITK; lat/lng not verified. T4 secondary compilation. Captured 2026-09-03."
+  },
+  {
+    "site_id": "cdc-laverton-north-campus",
+    "name": "CDC Data Centres Laverton (Campus One and Two)",
+    "operator": "CDC Data Centres",
+    "owner": "CDC Data Centres (Infratil / Future Fund / CSC)",
+    "country": "Australia",
+    "city": "Laverton North, Melbourne, VIC",
+    "lat": null,
+    "lng": null,
+    "it_load_mw": 400,
+    "it_load_mw_raw": "Renewmap: Campus One 150 MW + Campus Two 300 MW; CDC markets a single campus of 'over 400 MW'",
+    "phase_note": "Ground broken 17 Feb 2025 at 20-38 Leakes Road; Renewmap's 150/300 split reads as phasing of one master plan",
+    "status": "under_construction",
+    "power_source": "",
+    "chips_installed": [],
+    "commissioned": null,
+    "source_urls": [
+      "https://itkservices3.com/background/data_centres_australia_top10_construction"
+    ],
+    "notes": "Renewmap May 2026 snapshot via ITK Research. Treated as one site here to avoid double counting the two Renewmap rows. T4. Captured 2026-09-03."
+  },
+  {
+    "site_id": "stack-mel02-truganina",
+    "name": "Stack Infrastructure MEL02",
+    "operator": "Stack Infrastructure",
+    "owner": "Stack Infrastructure (Blue Owl)",
+    "country": "Australia",
+    "city": "Truganina, Melbourne, VIC",
+    "lat": null,
+    "lng": null,
+    "it_load_mw": 252,
+    "it_load_mw_raw": "252 MW of IT capacity, single technical building; on-site 132 kV substation 300+ MW",
+    "phase_note": "Structure reported complete late 2025; electrical/mechanical fit-out continuing; 2026 in-service target",
+    "status": "under_construction",
+    "power_source": "",
+    "chips_installed": [],
+    "commissioned": null,
+    "source_urls": [
+      "https://itkservices3.com/background/data_centres_australia_top10_construction"
+    ],
+    "notes": "Renewmap May 2026 snapshot via ITK Research. T4. Captured 2026-09-03."
+  },
+  {
+    "site_id": "stockland-edgeconnex-davis-road",
+    "name": "Stockland / EdgeConneX Davis Road",
+    "operator": "EdgeConneX",
+    "owner": "Stockland and EdgeConneX (50:50 JV, March 2026)",
+    "country": "Australia",
+    "city": "Wetherill Park (Fairfield LGA), Sydney, NSW",
+    "lat": null,
+    "lng": null,
+    "it_load_mw": 132,
+    "it_load_mw_raw": "160 MW gross (Renewmap); SSD application: two 80 MW halls at 66 MW IT load each (~132 MW IT)",
+    "phase_note": "2027 completion target",
+    "status": "under_construction",
+    "power_source": "",
+    "chips_installed": [],
+    "commissioned": null,
+    "source_urls": [
+      "https://itkservices3.com/background/data_centres_australia_top10_construction"
+    ],
+    "notes": "Renewmap May 2026 snapshot via ITK Research; IT load taken from the planning application figures quoted by ITK (2 x 66 MW), gross 160 MW. T4. Captured 2026-09-03."
+  },
+  {
+    "site_id": "cdc-eastern-creek-ec5-ec6",
+    "name": "CDC Data Centres Eastern Creek 5 and 6",
+    "operator": "CDC Data Centres",
+    "owner": "CDC Data Centres",
+    "country": "Australia",
+    "city": "Eastern Creek, Sydney, NSW",
+    "lat": null,
+    "lng": null,
+    "it_load_mw": 108,
+    "it_load_mw_raw": "EC5 + EC6 = 108 MW IT load (CDC disclosure); Renewmap lists 79 MW each (158 MW gross)",
+    "phase_note": "A$1 billion expansion announced Oct 2022 on the 15 ha campus at 17 Roberts Road",
+    "status": "under_construction",
+    "power_source": "",
+    "chips_installed": [],
+    "commissioned": null,
+    "source_urls": [
+      "https://itkservices3.com/background/data_centres_australia_top10_construction"
+    ],
+    "notes": "Renewmap May 2026 snapshot via ITK Research; the 108 MW IT figure is CDC's own combined disclosure as quoted by ITK. T4. Captured 2026-09-03."
+  },
+  {
+    "site_id": "vantage-mel1-tullamarine",
+    "name": "Vantage MEL1",
+    "operator": "Vantage Data Centers",
+    "owner": "Vantage Data Centers (DigitalBridge / Silver Lake)",
+    "country": "Australia",
+    "city": "Tullamarine, Melbourne, VIC",
+    "lat": null,
+    "lng": null,
+    "it_load_mw": 64,
+    "it_load_mw_raw": "64 MW of critical IT load across three buildings",
+    "phase_note": "2026 commissioning target",
+    "status": "under_construction",
+    "power_source": "",
+    "chips_installed": [],
+    "commissioned": null,
+    "source_urls": [
+      "https://itkservices3.com/background/data_centres_australia_top10_construction"
+    ],
+    "notes": "Renewmap May 2026 snapshot via ITK Research. T4. Captured 2026-09-03."
+  },
+  {
+    "site_id": "stack-mel01c-mel01d-truganina",
+    "name": "Stack Infrastructure MEL01C and MEL01D",
+    "operator": "Stack Infrastructure",
+    "owner": "Stack Infrastructure (Blue Owl)",
+    "country": "Australia",
+    "city": "Truganina, Melbourne, VIC",
+    "lat": null,
+    "lng": null,
+    "it_load_mw": 108,
+    "it_load_mw_raw": "54 MW each for MEL01C and MEL01D (Renewmap lists only MEL01D at 54 MW)",
+    "phase_note": "Third and fourth buildings of the 180 MW MEL01 campus; both in vertical construction, topping-out Nov 2025",
+    "status": "under_construction",
+    "power_source": "",
+    "chips_installed": [],
+    "commissioned": null,
+    "source_urls": [
+      "https://itkservices3.com/background/data_centres_australia_top10_construction"
+    ],
+    "notes": "Renewmap May 2026 snapshot via ITK Research; ITK notes MEL01C (also 54 MW, also under construction) is missing from the Renewmap snapshot. T4. Captured 2026-09-03."
+  }
+]

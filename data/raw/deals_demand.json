@@ -1,0 +1,218 @@
+[
+ {
+  "deal_id": "nvidia-openai-ohio-guarantee-2026-08",
+  "deal_type": "D10",
+  "from_entity": "nvidia",
+  "to_entity": "openai",
+  "headline": "Nvidia guaranteed up to $105 billion of OpenAI's lease and power payment obligations at the Ohio campus.",
+  "notes": "A land, power and shell (LPS) credit guarantee, not a purchase. Nvidia also invested $1.5bn of equity in SB Energy and is the exclusive chip provider. Jensen Huang publicly rejected the 'circular financing' characterisation, saying OpenAI will pay the lease. This is the SAME underlying transaction as openai-sbenergy-ohio-lease-2026-08 seen from the guarantor's side; counting both as demand would double count the campus.",
+  "source_urls": [
+   "https://www.reuters.com/business/media-telecom/nvidia-invest-15-billion-sb-energy-under-openai-data-center-deal-2026-08-17/",
+   "https://www.cnbc.com/2026/08/17/nvidia-financing-open-ai-data-center-ohio.html",
+   "https://www.axios.com/2026/08/17/openai-nvidia-ohio-data-center-sb-energy"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "PORTS-Pike Technology Campus, Pike County, Ohio",
+  "usd_value": 105000000000,
+  "quantity_raw": "up to $105 billion guarantee, covering an initial 4.25GW",
+  "quantity_value": 105000000000,
+  "quantity_unit": "USD",
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2026-08-17",
+  "term_start": "2026-08",
+  "term_years": 20,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "nvidia-openai-ohio-guarantee-original-2026-07",
+  "deal_type": "D10",
+  "from_entity": "nvidia",
+  "to_entity": "openai",
+  "headline": "Nvidia's originally discussed backstop for the Ohio campus, about $250 billion, was cut to under $120 billion before the final $105 billion deal.",
+  "notes": "A RARE DOCUMENTED DOWNSIZING. Reported in July 2026 as a roughly $250bn Nvidia commitment behind a 10GW Ohio project; the Wall Street Journal reported on 2026-08-14 that Nvidia had cut it to less than $120bn after investors objected to its risk exposure; the deal finally announced on 2026-08-17 guarantees up to $105bn and covers only 4.25GW initially. Recorded separately so the shrinkage is visible; the surviving obligation is the $105bn record, so do not count both.",
+  "source_urls": [
+   "https://www.wsj.com/tech/nvidia-downsizes-plans-for-250-billion-guarantee-of-openai-data-center-b56c38d3",
+   "https://www.networkworld.com/article/4212543/nvidia-scales-back-financing-guarantee-for-openai-data-center.html",
+   "https://www.aljazeera.com/economy/2026/7/27/nvidia-plans-250bn-push-to-bolster-openais-infrastructure-ambitions"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "PORTS-Pike Technology Campus, Pike County, Ohio",
+  "usd_value": 250000000000,
+  "quantity_raw": "$250 billion guarantee, reduced to less than $120 billion",
+  "quantity_value": 250000000000,
+  "quantity_unit": "USD",
+  "status": "resized",
+  "confidence": "T3",
+  "binding_status": "speculative",
+  "announced_date": "2026-08-14",
+  "captured_at": "2026-09-02",
+  "is_restatement": true,
+  "same_underlying_as": "nvidia-openai-ohio-guarantee-2026-08"
+ },
+ {
+  "deal_id": "openai-funding-122b-2026-03",
+  "deal_type": "D9",
+  "to_entity": "openai",
+  "headline": "OpenAI closed a $122 billion funding round at an $852 billion valuation, the cash behind its compute commitments.",
+  "notes": "Included as the funding-side answer to 'does the money exist yet'. $122bn of new equity against a compute target of about $600bn to 2030 means the great majority of OpenAI's commitments are still unfunded from equity and depend on revenue growth, debt, vendor financing and third-party guarantees such as the Nvidia Ohio backstop. A further ~$7bn secondary share sale completed in August 2026 raised no new company cash.",
+  "source_urls": [
+   "https://techcrunch.com/2026/03/31/openai-not-yet-public-raises-3b-from-retail-investors-in-monster-122b-fund-raise/",
+   "https://www.cnbc.com/2026/08/10/openai-wraps-7-billion-share-sale-ahead-of-potential-ipo-.html"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 122000000000,
+  "quantity_raw": "$122 billion at an $852 billion valuation",
+  "quantity_value": 122000000000,
+  "quantity_unit": "USD",
+  "status": "signed",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2026-03-31",
+  "term_start": "2026-03",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "from_entity": null
+ },
+ {
+  "deal_id": "meta-compute-resale-2026-07",
+  "deal_type": "D15",
+  "from_entity": "meta",
+  "headline": "Meta began planning to rent out excess AI compute it had booked, under an initiative reported as Meta Compute.",
+  "notes": "THE RARE OFFLOAD RECORD. Reported by Bloomberg; led by Santosh Janardhan, Daniel Gross and Dina Powell McCormick. Meta would either resell raw capacity like a neocloud or offer model access like AWS Bedrock. It implies Meta contracted MORE capacity than it needs, which matters for anyone summing announced demand: some portion of Meta's ~$48bn of rented GPUs and $21bn CoreWeave / $27bn Nebius contracts is being re-offered to the market rather than consumed. The Anthropic talks (anthropic-meta-compute-talks-2026-07) are the first identified counterparty. Nothing signed.",
+  "source_urls": [
+   "https://www.tomshardware.com/tech-industry/meta-reportedly-plans-to-rent-out-its-ai-compute",
+   "https://www.techrepublic.com/article/news-meta-ai-compute-cloud-business/"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "quantity_raw": "excess capacity from roughly $48 billion of committed third-party GPU rentals",
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "speculative",
+  "announced_date": "2026-07-02",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "microsoft-lease-cancellations-2025-03",
+  "deal_type": "D15",
+  "from_entity": "microsoft",
+  "headline": "Microsoft walked away from more than 2 gigawatts of leased data centre capacity in the US and Europe.",
+  "notes": "ANALYST CLAIM, NOT A DISCLOSURE - TD Cowen channel checks, reported by Bloomberg and others across February and March 2025; Microsoft never confirmed the figure and attributed changes to power and pacing. SemiAnalysis argued the cancellations were widely misread and were mostly a self-build slowdown. Kept because verified releases of capacity are almost never tracked, but confidence is deliberately T4.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/microsoft-cancels-up-to-2gw-of-data-center-projects-says-td-cowen/",
+   "https://www.bloomberg.com/news/articles/2025-03-26/microsoft-abandons-more-data-center-projects-td-cowen-says"
+  ],
+  "geography": [
+   "United States",
+   "Europe"
+  ],
+  "mw": 2000.0,
+  "h100e": 1398601.4,
+  "h100e_basis": "2,000 MW / 1.43 kW per H100e",
+  "quantity_raw": "more than 2GW of data center capacity cancelled or deferred",
+  "quantity_value": 2,
+  "quantity_unit": "GW",
+  "status": "cancelled",
+  "confidence": "T4",
+  "binding_status": "non_binding",
+  "announced_date": "2025-03-26",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "google-cipher-fluidstack-backstop-2025-09",
+  "deal_type": "D10",
+  "from_entity": "google",
+  "to_entity": "fluidstack",
+  "headline": "Google backstopped $1.4 billion of Fluidstack's AI hosting lease with Cipher Mining and took a stake in Cipher.",
+  "notes": "Included on the demand side because it is a hyperscaler underwriting somebody else's compute obligation in order to get capacity built - the same pattern as Nvidia's Ohio guarantee. Fluidstack later became Anthropic's principal US landlord partner, and Anthropic is a Google investee, so this backstop indirectly supports Anthropic demand. Google repeated the pattern with a further 39MW Cipher lease and with TeraWulf.",
+  "source_urls": [
+   "https://www.globenewswire.com/news-release/2025/09/25/3156107/0/en/cipher-mining-signs-168-mw-10-year-ai-hosting-agreement-with-fluidstack.html",
+   "https://fortune.com/crypto/2025/09/25/google-fluidstack-cipher-mining-bitcoin-miner-ai-data-centers/"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Cipher Mining Barber Lake, Texas",
+  "usd_value": 1400000000,
+  "quantity_raw": "$1.4 billion backstop against a $3 billion, 168MW ten-year hosting agreement; 5.4% Cipher stake",
+  "quantity_value": 1400000000,
+  "quantity_unit": "USD",
+  "status": "signed",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2025-09-25",
+  "term_start": "2025-09",
+  "term_years": 10,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "nvidia-coreweave-backstop-6-3b-2025-09",
+  "deal_type": "D10",
+  "from_entity": "nvidia",
+  "to_entity": "coreweave",
+  "headline": "Nvidia agreed to buy up to $6.3 billion of CoreWeave cloud capacity that CoreWeave fails to sell, through 2032.",
+  "notes": "Disclosed in CoreWeave's own SEC filing. Nvidia becomes the buyer of last resort for capacity CoreWeave cannot place, which makes it demand only in a contingent sense - it should NOT be added to genuine end-user demand, and it inflates any 'contracted backlog' figure that includes it.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000047/crwv-20250909.htm",
+   "https://www.datacenterdynamics.com/en/news/nvidia-to-purchase-unsold-compute-capacity-from-coreweave-for-63bn/"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 6300000000,
+  "quantity_raw": "$6.3 billion order for unsold cloud capacity",
+  "quantity_value": 6300000000,
+  "quantity_unit": "USD",
+  "status": "signed",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2025-09-15",
+  "term_start": "2025-09",
+  "term_end": "2032-04",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "nvidia-ai-compute-partnership-2026-07",
+  "deal_type": "D10",
+  "from_entity": "nvidia",
+  "headline": "Nvidia's AI Compute Partnership committed $36 billion to rent capacity from small clouds, then was paused within weeks.",
+  "notes": "A SECOND RARE PULLBACK. Announced July 2026: Nvidia would rent GPU capacity from providers who could not find customers, guaranteeing them revenue and taking 50% of revenue above an agreed hourly cost base. Named partners included Sharon AI and Firmus Technologies. Nvidia's quarterly filing put total commitments at $36bn on roughly six-year terms. Reported by the Wall Street Journal on 2026-08-27 to have been paused in late August over antitrust exposure, less than two months after launch. Anyone counting the $36bn as durable demand should not.",
+  "source_urls": [
+   "https://finance.yahoo.com/technology/ai/articles/nvidia-pauses-ai-cloud-revenue-120700044.html",
+   "https://www.msn.com/en-gb/news/other/nvidia-pauses-revenue-sharing-deals-with-ai-cloud-companies-wsj-reports/ar-AA2b4wVn"
+  ],
+  "geography": [
+   "United States",
+   "Australia"
+  ],
+  "usd_value": 36000000000,
+  "quantity_raw": "$36 billion in total commitments, typical six-year duration",
+  "quantity_value": 36000000000,
+  "quantity_unit": "USD",
+  "status": "resized",
+  "confidence": "T3",
+  "binding_status": "conditional",
+  "announced_date": "2026-08-27",
+  "term_start": "2026-07",
+  "term_years": 6,
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ }
+]

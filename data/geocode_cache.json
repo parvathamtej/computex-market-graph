@@ -1,0 +1,667 @@
+{
+"Malaysia": {
+"lat": 4.5693754,
+"lng": 102.2656823,
+"matched": "Malaysia"
+},
+"Iskandar Puteri, Johor, Malaysia": {
+"lat": 1.4522711,
+"lng": 103.6144729,
+"matched": "Iskandar Puteri, Johor Bahru, Johor, Malaysia"
+},
+"Bukit Batu, Johor, Malaysia": {
+"lat": 1.7290972,
+"lng": 103.621931,
+"matched": "Bukit Batu, Kulai, Johor, 81000, Malaysia"
+},
+"Kota Tinggi, Johor, Malaysia": {
+"lat": 1.7336743,
+"lng": 103.9006975,
+"matched": "Kota Tinggi, Johor, Malaysia"
+},
+"Johor Bahru, Johor, Malaysia": {
+"lat": 1.4581986,
+"lng": 103.7649059,
+"matched": "Johor Bahru, Johor, 80730, Malaysia"
+},
+"Pasir Gudang, Johor, Malaysia": {
+"lat": 1.4953437,
+"lng": 103.9207048,
+"matched": "Pasir Gudang, Johor Bahru, Johor, 81700, Malaysia"
+},
+"Johor, Malaysia": {
+"lat": 2.0228821,
+"lng": 103.3114564,
+"matched": "Johor, Malaysia"
+},
+"Johor Bahru, Malaysia": {
+"lat": 1.4581986,
+"lng": 103.7649059,
+"matched": "Johor Bahru, Johor, 80730, Malaysia"
+},
+"Batam, Indonesia": {
+"lat": 1.1030815,
+"lng": 104.0383696,
+"matched": "Batam, Riau Islands, Indonesia"
+},
+"Indonesia": {
+"lat": -2.4833826,
+"lng": 117.8902853,
+"matched": "Indonesia"
+},
+"West Java, Indonesia": {
+"lat": -6.8891904,
+"lng": 107.6404716,
+"matched": "West Java, Indonesia"
+},
+"Jurong Island, Singapore": {
+"lat": 1.2685254,
+"lng": 103.6785584,
+"matched": "Jurong Island And Bukom, Western Islands, West Region, Singapore"
+},
+"Singapore": {
+"lat": 1.357107,
+"lng": 103.8194992,
+"matched": "Singapore"
+},
+"Jurong East, Singapore": {
+"lat": 1.3204168,
+"lng": 103.7347925,
+"matched": "Jurong East, West Region, Singapore"
+},
+"Navi Mumbai, India": {
+"lat": 19.0308262,
+"lng": 73.0198537,
+"matched": "Navi Mumbai, Thane Subdistrict, Thane, Maharashtra, India"
+},
+"Noida, India": {
+"lat": 28.5706333,
+"lng": 77.3272147,
+"matched": "Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+},
+"Chennai, India": {
+"lat": 13.0836939,
+"lng": 80.270186,
+"matched": "Chennai, Tamil Nadu, India"
+},
+"Panvel, Navi Mumbai, India": {
+"lat": 19.0679742,
+"lng": 73.0040192,
+"matched": "Sion-Panvel Highway, Sanpada, Navi Mumbai, Thane Subdistrict, Thane, Maharashtra, 400705, India"
+},
+"Hyderabad, Telangana, India": {
+"lat": 17.360589,
+"lng": 78.4740613,
+"matched": "Hyderabad, Bahadurpura mandal, Hyderabad, Telangana, India"
+},
+"Mumbai, India": {
+"lat": 19.054999,
+"lng": 72.8692035,
+"matched": "Mumbai, Mumbai Suburban District, Maharashtra, 400051, India"
+},
+"Sakai, Osaka, Japan": {
+"lat": 34.5737364,
+"lng": 135.4828866,
+"matched": "Sakai, Osaka Prefecture, 590-0078, Japan"
+},
+"Ishikari, Hokkaido, Japan": {
+"lat": 43.171677,
+"lng": 141.3159605,
+"matched": "Ishikari, Ishikari Subprefecture, Hokkaido Prefecture, Hokkaido Region, Japan"
+},
+"Hokkaido, Japan": {
+"lat": 43.4339536,
+"lng": 142.9521222,
+"matched": "Hokkaido Region, Japan"
+},
+"Japan": {
+"lat": 36.5748441,
+"lng": 139.2394179,
+"matched": "Japan"
+},
+"Ishikawa Prefecture, Japan": {
+"lat": 36.9890574,
+"lng": 136.8162839,
+"matched": "Ishikawa Prefecture, Japan"
+},
+"Okuma, Fukushima, Japan": {
+"lat": 37.3813068,
+"lng": 140.9587132,
+"matched": "Okuma, Futaba County, Fukushima Prefecture, Japan"
+},
+"Ulsan, South Korea": {
+"lat": 35.5391697,
+"lng": 129.3119136,
+"matched": "Ulsan, South Korea"
+},
+"Taiwan": {
+"lat": 23.9739374,
+"lng": 120.9820179,
+"matched": "Taiwan"
+},
+"Australia": {
+"lat": -24.7761086,
+"lng": 134.755,
+"matched": "Australia"
+},
+"George Town, Australia": {
+"lat": -41.1050157,
+"lng": 146.8238459,
+"matched": "George Town, Tasmania, 7253, Australia"
+},
+"St Leonards, Tasmania, Australia": {
+"lat": -41.4569092,
+"lng": 147.1993273,
+"matched": "St Leonards, Launceston, Tasmania, Australia"
+},
+"Tailem Bend, South Australia, Australia": {
+"lat": -35.2529335,
+"lng": 139.4533779,
+"matched": "Tailem Bend, South Australia, 5260, Australia"
+},
+"Docklands, Melbourne, VIC, Australia": {
+"lat": -37.8175423,
+"lng": 144.9394923,
+"matched": "Docklands, Melbourne, Victoria, 3008, Australia"
+},
+"Vietnam": {
+"lat": 15.9266657,
+"lng": 107.9650855,
+"matched": "Vietnam"
+},
+"Thailand": {
+"lat": 14.8971921,
+"lng": 100.83273,
+"matched": "Thailand"
+},
+"Hong Kong": {
+"lat": 22.3492361,
+"lng": 114.1857778,
+"matched": "Hong Kong, China"
+},
+"Paju, Gyeonggi Province, South Korea": {
+"lat": 37.7598955,
+"lng": 126.7801502,
+"matched": "Paju-si, Gyeonggi, South Korea"
+},
+"Huntingwood , Sydney, NSW, Australia": {
+"lat": -33.797973,
+"lng": 150.881592,
+"matched": "Huntingwood, Sydney, New South Wales, Australia"
+},
+"Laverton North, Melbourne, VIC, Australia": {
+"lat": -37.8300705,
+"lng": 144.7869487,
+"matched": "Laverton North, Melbourne, Victoria, 3026, Australia"
+},
+"Wetherill Park , Sydney, NSW, Australia": {
+"lat": -33.8483333,
+"lng": 150.9011111,
+"matched": "Wetherill Park, Sydney, New South Wales, 2164, Australia"
+},
+"Tullamarine, Melbourne, VIC, Australia": {
+"lat": -37.704658,
+"lng": 144.8717732,
+"matched": "Tullamarine, Melbourne, Victoria, 3043, Australia"
+},
+"Canal Flats, British Columbia, Canada": {
+"lat": 50.1596927,
+"lng": -115.8076908,
+"matched": "Canal Flats, Regional District of East Kootenay, British Columbia, V0B 1B0, Canada"
+},
+"Canada": {
+"lat": 61.0666922,
+"lng": -107.991707,
+"matched": "Canada"
+},
+"Childress, Texas, United States": {
+"lat": 34.5196569,
+"lng": -100.2067656,
+"matched": "Childress County, Texas, 79201, United States"
+},
+"Sweetwater, Texas, United States": {
+"lat": 32.4709519,
+"lng": -100.405938,
+"matched": "Sweetwater, Nolan County, Texas, 79556, United States"
+},
+"Badajoz, Extremadura, Spain": {
+"lat": 38.878187,
+"lng": -6.9701115,
+"matched": "Badajoz, Extremadura, Spain"
+},
+"Bundey, South Australia, Australia": {
+"lat": -33.8871756,
+"lng": 139.2710946,
+"matched": "Bundey, South Australia, Australia"
+},
+"Denton, Texas, United States": {
+"lat": 33.1838787,
+"lng": -97.1413417,
+"matched": "Denton County, Texas, United States"
+},
+"Austin, Texas, United States": {
+"lat": 30.2711286,
+"lng": -97.7436995,
+"matched": "Austin, Travis County, Texas, United States"
+},
+"Ellendale, North Dakota, United States": {
+"lat": 46.00275,
+"lng": -98.527046,
+"matched": "Ellendale, Ellendale Township, Dickey County, North Dakota, 58436, United States"
+},
+"Jamestown, North Dakota, United States": {
+"lat": 46.910544,
+"lng": -98.708436,
+"matched": "Jamestown, Midway Township, Stutsman County, North Dakota, United States"
+},
+"Barker, New York, United States": {
+"lat": 43.3276844,
+"lng": -78.5547563,
+"matched": "Village of Barker, Town of Somerset, Niagara County, New York, United States"
+},
+"Hawesville, Kentucky, United States": {
+"lat": 37.9000554,
+"lng": -86.754988,
+"matched": "Hawesville, Hancock County, Kentucky, United States"
+},
+"Kentucky, United States": {
+"lat": 37.5726028,
+"lng": -85.1551411,
+"matched": "Kentucky, United States"
+},
+"Maryland, United States": {
+"lat": 39.5162401,
+"lng": -76.9382069,
+"matched": "Maryland, United States"
+},
+"Odessa, Texas, United States": {
+"lat": 31.8457149,
+"lng": -102.367687,
+"matched": "Odessa, Ector County, Texas, United States"
+},
+"Texas, United States": {
+"lat": 31.2638905,
+"lng": -98.5456116,
+"matched": "Texas, United States"
+},
+"Nueces County, Texas, United States": {
+"lat": 27.7153774,
+"lng": -97.6199942,
+"matched": "Nueces County, Texas, United States"
+},
+"Amarillo, Texas, United States": {
+"lat": 35.20729,
+"lng": -101.8371192,
+"matched": "Amarillo, Potter County, Texas, United States"
+},
+"Niagara Falls, New York, United States": {
+"lat": 43.084841,
+"lng": -79.0701786,
+"matched": "Niagara Falls, City of Niagara Falls, Niagara County, New York, United States"
+},
+"McCamey, Texas, United States": {
+"lat": 31.1315405,
+"lng": -102.2223286,
+"matched": "McCamey, Upton County, Texas, 79752, United States"
+},
+"Rockdale, Texas, United States": {
+"lat": 30.6549433,
+"lng": -97.0058245,
+"matched": "Rockdale, Milam County, Texas, 76567, United States"
+},
+"Carbon County, Pennsylvania, United States": {
+"lat": 40.8908468,
+"lng": -75.7212917,
+"matched": "Carbon County, Pennsylvania, United States"
+},
+"Venango County, Pennsylvania, United States": {
+"lat": 41.3996112,
+"lng": -79.7709417,
+"matched": "Venango County, Pennsylvania, United States"
+},
+"Washington, United States": {
+"lat": 38.8950982,
+"lng": -77.0363849,
+"matched": "Washington, District of Columbia, United States"
+},
+"Abilene, Texas, United States": {
+"lat": 32.44645,
+"lng": -99.7475905,
+"matched": "Abilene, Taylor County, Texas, United States"
+},
+"Laramie County, Wyoming, United States": {
+"lat": 41.2737321,
+"lng": -104.7268231,
+"matched": "Laramie County, Wyoming, United States"
+},
+"Loughton, Essex, United Kingdom": {
+"lat": 51.6467058,
+"lng": 0.0544098,
+"matched": "Loughton, Debden Green, Epping Forest, Essex, England, United Kingdom"
+},
+"Mason County, West Virginia, United States": {
+"lat": 38.7499013,
+"lng": -82.052456,
+"matched": "Mason County, West Virginia, United States"
+},
+"Vineland, New Jersey, United States": {
+"lat": 39.4862777,
+"lng": -75.0254256,
+"matched": "Vineland, Cumberland County, New Jersey, United States"
+},
+"Finland": {
+"lat": 63.2467777,
+"lng": 25.9209164,
+"matched": "Finland"
+},
+"Longcross, Surrey, United Kingdom": {
+"lat": 51.385277,
+"lng": -0.5950836,
+"matched": "Longcross, Burma Road, Chobham, Borough of Runnymede, Surrey, England, KT16 0EX, United Kingdom"
+},
+"Kansas City, Missouri, United States": {
+"lat": 39.100105,
+"lng": -94.5781416,
+"matched": "Kansas City, Jackson County, Missouri, United States"
+},
+"France": {
+"lat": 46.603354,
+"lng": 1.8883335,
+"matched": "France"
+},
+"Kenilworth, New Jersey, United States": {
+"lat": 40.6771374,
+"lng": -74.2870715,
+"matched": "Kenilworth, Union County, New Jersey, 07033, United States"
+},
+"Atlanta, Georgia, United States": {
+"lat": 33.7544657,
+"lng": -84.3898151,
+"matched": "Atlanta, Fulton County, Georgia, United States"
+},
+"Santa Rosa, Laguna, Philippines": {
+"lat": 14.3146042,
+"lng": 121.1137004,
+"matched": "Santa Rosa, Laguna, Calabarzon, Philippines"
+},
+"Kiowa, Oklahoma, United States": {
+"lat": 34.9425062,
+"lng": -99.019906,
+"matched": "Kiowa County, Oklahoma, United States"
+},
+"Dalton, Georgia, United States": {
+"lat": 34.7691867,
+"lng": -84.9702475,
+"matched": "Dalton, Whitfield County, Georgia, United States"
+},
+"Muskogee, Oklahoma, United States": {
+"lat": 35.6630196,
+"lng": -95.3927706,
+"matched": "Muskogee County, Oklahoma, United States"
+},
+"Wink, Texas, United States": {
+"lat": 31.7534049,
+"lng": -103.15583,
+"matched": "Wink, Winkler County, Texas, 79789, United States"
+},
+"Corsicana, Texas, United States": {
+"lat": 32.0938236,
+"lng": -96.464675,
+"matched": "Corsicana, Navarro County, Texas, United States"
+},
+"Sharon, Pennsylvania, United States": {
+"lat": 41.232947,
+"lng": -80.5078056,
+"matched": "Sharon, Mercer County, Pennsylvania, 16146, United States"
+},
+"Sines, Portugal": {
+"lat": 37.956549,
+"lng": -8.8689639,
+"matched": "Sines, Set\u00fabal, Portugal"
+},
+"Narvik, Norway": {
+"lat": 68.4383796,
+"lng": 17.4271978,
+"matched": "Narvik, Nordland, 8517, Norway"
+},
+"Marble, North Carolina, United States": {
+"lat": 35.175086,
+"lng": -83.9249052,
+"matched": "Marble, Cherokee County, North Carolina, 28905, United States"
+},
+"Hunt County, Texas, United States": {
+"lat": 33.1161567,
+"lng": -96.0808922,
+"matched": "Hunt County, Texas, United States"
+},
+"Harwood, North Dakota, United States": {
+"lat": 46.979412,
+"lng": -96.880638,
+"matched": "Harwood, Cass County, North Dakota, United States"
+},
+"Abernathy, Texas, United States": {
+"lat": 33.8323812,
+"lng": -101.8430151,
+"matched": "Abernathy, Hale County, Texas, 79311, United States"
+},
+"United States": {
+"lat": 39.7837304,
+"lng": -100.445882,
+"matched": "United States"
+},
+"Louisiana, United States": {
+"lat": 30.8703881,
+"lng": -92.007126,
+"matched": "Louisiana, United States"
+},
+"Orla, Texas, United States": {
+"lat": 31.8250149,
+"lng": -103.9090099,
+"matched": "Orla, Reeves County, Texas, 79770, United States"
+},
+"Springfield, Ohio, United States": {
+"lat": 39.9234046,
+"lng": -83.810138,
+"matched": "Springfield, Clark County, Ohio, United States"
+},
+"North Carolina, United States": {
+"lat": 35.6729639,
+"lng": -79.0392919,
+"matched": "North Carolina, United States"
+},
+"Delhi NCR, India": {
+"lat": 28.4220884,
+"lng": 77.1042989,
+"matched": "DoubleTree by Hilton Hotel Gurgaon - New Delhi NCR, Sector 56, Golf Course Road, Sector 61, Sector 56, Sohna, Gurgaon, Haryana, 122011, India"
+},
+"Jamnagar, Gujarat, India": {
+"lat": 22.4732415,
+"lng": 70.0552102,
+"matched": "Jamnagar, Jamnagar City Taluka, Jamnagar, Gujarat, 361001, India"
+},
+"Mumbai Metropolitan Region, India": {
+"lat": 19.0822739,
+"lng": 73.1517704,
+"matched": "Mumbai Metropolitan Region, Maharashtra, India"
+},
+"Singapore, Singapore": {
+"lat": 1.2899175,
+"lng": 103.8519072,
+"matched": "Singapore"
+},
+"Paris, France": {
+"lat": 48.8534951,
+"lng": 2.3483915,
+"matched": "Paris, Ile-de-France, Metropolitan France, France"
+},
+"Belgium": {
+"lat": 50.6402809,
+"lng": 4.6667145,
+"matched": "Belgium"
+},
+"China": {
+"lat": 34.5412252,
+"lng": 108.9237067,
+"matched": "China"
+},
+"Estonia": {
+"lat": 58.7523778,
+"lng": 25.3319078,
+"matched": "Estonia"
+},
+"Iceland": {
+"lat": 64.9841821,
+"lng": -18.1059013,
+"matched": "Iceland"
+},
+"India": {
+"lat": 22.3511148,
+"lng": 78.6677428,
+"matched": "India"
+},
+"Israel": {
+"lat": 30.8124247,
+"lng": 34.8594762,
+"matched": "Israel"
+},
+"Macau": {
+"lat": 22.1757605,
+"lng": 113.5514142,
+"matched": "Macau, China"
+},
+"Netherlands": {
+"lat": 52.2434979,
+"lng": 5.6343227,
+"matched": "Netherlands"
+},
+"New Zealand": {
+"lat": -41.5000831,
+"lng": 172.8344077,
+"matched": "New Zealand"
+},
+"Norway": {
+"lat": 61.1529386,
+"lng": 8.7876653,
+"matched": "Norway"
+},
+"Philippines": {
+"lat": 12.7503486,
+"lng": 122.7312101,
+"matched": "Philippines"
+},
+"Portugal": {
+"lat": 39.6621648,
+"lng": -8.1353519,
+"matched": "Portugal"
+},
+"Saudi Arabia": {
+"lat": 25.6242618,
+"lng": 42.3528328,
+"matched": "Saudi Arabia"
+},
+"South Korea": {
+"lat": 36.638392,
+"lng": 127.6961188,
+"matched": "South Korea"
+},
+"Spain": {
+"lat": 39.3260685,
+"lng": -4.8379791,
+"matched": "Spain"
+},
+"Sweden": {
+"lat": 59.6749712,
+"lng": 14.5208584,
+"matched": "Sweden"
+},
+"Switzerland": {
+"lat": 46.7985624,
+"lng": 8.2319736,
+"matched": "Switzerland"
+},
+"United Arab Emirates": {
+"lat": 24.0002488,
+"lng": 53.9994829,
+"matched": "United Arab Emirates"
+},
+"United Kingdom": {
+"lat": 54.7023545,
+"lng": -3.2765753,
+"matched": "United Kingdom"
+},
+"San Francisco, United States": {
+"lat": 37.7879363,
+"lng": -122.4075201,
+"matched": "San Francisco, California, United States"
+},
+"C": {
+"lat": 47.5490251,
+"lng": 1.7324062,
+"matched": "Centre-Val de Loire, Metropolitan France, France"
+},
+"K": {
+"lat": 52.1983941,
+"lng": 18.6357564,
+"matched": "Ko\u0142o, Ko\u0142o County, Greater Poland Voivodeship, Poland"
+},
+"S": {
+"lat": 18.2612839,
+"lng": -73.8444985,
+"matched": "Sud Department, Haiti"
+},
+"a": {
+"lat": -25.2269908,
+"lng": -64.5911956,
+"matched": "Salta, Argentina"
+},
+"e": {
+"lat": 3.9894393,
+"lng": 14.178373,
+"matched": "East, Cameroon"
+},
+"h": {
+"lat": 57.0262661,
+"lng": 16.5749837,
+"matched": "Kalmar County, Sweden"
+},
+"i": {
+"lat": 43.9583753,
+"lng": 7.8667427,
+"matched": "Provincia di Imperia, Liguria, Italy"
+},
+"m": {
+"lat": 2.3293744,
+"lng": 102.2880962,
+"matched": "Malacca, Malaysia"
+},
+"n": {
+"lat": 8.7712794,
+"lng": 13.7803627,
+"matched": "North, Cameroon"
+},
+"o": {
+"lat": 60.9943157,
+"lng": 75.5139561,
+"matched": "Ob River, Ural Federal District, Russia"
+},
+"r": {
+"lat": -22.9110137,
+"lng": -43.2093727,
+"matched": "Rio de Janeiro, Southeast Region, Brazil"
+},
+"t": {
+"lat": 50.7504894,
+"lng": 20.7829122,
+"matched": "Holy Cross Voivodeship, Poland"
+},
+"u": {
+"lat": -43.7128356,
+"lng": -68.7461817,
+"matched": "Chubut, Argentina"
+},
+"Beijing, China": {
+"lat": 39.9057136,
+"lng": 116.3912972,
+"matched": "Beijing, China"
+}
+}
