@@ -1,0 +1,1564 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ComputeX Market Graph</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>__LEAFLET_CSS__</style>
+<style>
+:root{
+  --sp1:4px; --sp2:8px; --sp3:12px; --sp4:16px; --sp5:24px;
+  --r-sm:6px; --r-md:8px; --r-lg:12px; --r-full:999px;
+  --dur:150ms; --ease:cubic-bezier(0,0,.2,1);
+  --panel-w:384px;
+  --font:'Inter',-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,'SF Mono',Menlo,Consolas,monospace;
+  /* dark is the primary theme for a map tool: pins read best on a dark ground */
+  --bg:#0B0D10; --s1:#16191F; --s2:#1E2229; --s3:#262B33;
+  --bd:rgba(255,255,255,.08); --bd2:rgba(255,255,255,.16);
+  --t1:#ECEEF2; --t2:#A8B0BF; --t3:#8B93A3;
+  --glass:rgba(22,25,31,.88); --glass-bd:rgba(255,255,255,.09);
+  --sh:0 10px 30px rgba(0,0,0,.45), 0 1px 2px rgba(0,0,0,.4);
+  /* six layer colours, validated for a dark ground and colour-vision deficiency */
+  --c-site:#1F9C8B;  --c-site-t:#5FD3C2;
+  --c-dem:#B8861B;   --c-dem-t:#F0C24B;
+  --c-con:#CC3A84;   --c-con-t:#F27AB6;
+  --c-cap:#8570D8;   --c-cap-t:#B4A5F0;
+  --c-off:#CC5555;   --c-off-t:#F08A8A;
+  --c-px:#3390CC;    --c-px-t:#75BDF0;
+  --c-ctry:#6B7A8C;
+  --acc:var(--c-con); --acct:var(--c-con-t);
+  --good:#4CC08A; --warn:#E0A227;
+  color-scheme:dark;
+}
+:root[data-theme="light"]{
+  --bg:#F3F5F7; --s1:#FFFFFF; --s2:#EEF1F4; --s3:#E3E8ED;
+  --bd:rgba(10,20,30,.10); --bd2:rgba(10,20,30,.20);
+  --t1:#0F151B; --t2:#46525E; --t3:#6E7B88;
+  --glass:rgba(255,255,255,.92); --glass-bd:rgba(10,20,30,.10);
+  --sh:0 10px 30px rgba(20,30,40,.14), 0 1px 2px rgba(20,30,40,.10);
+  --c-site:#0F7F71; --c-site-t:#0B6B5F; --c-dem:#9A6E0E; --c-dem-t:#7E5A0B;
+  --c-con:#C22B78; --c-con-t:#A0205F; --c-cap:#6A55C9; --c-cap-t:#5442A6;
+  --c-off:#C13F3F; --c-off-t:#A03030; --c-px:#2076B0; --c-px-t:#185E8E; --c-ctry:#7A8896;
+  --good:#1E7F55; --warn:#9A6E0E; color-scheme:light;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--t1);font-family:var(--font);font-size:13.5px;line-height:1.45;
+     -webkit-font-smoothing:antialiased;overflow:hidden}
+button,input{font:inherit;color:inherit}
+a{color:var(--acct);text-decoration:none}a:hover{text-decoration:underline}
+:focus-visible{outline:2px solid var(--acct);outline-offset:2px;border-radius:3px}
+.num{font-variant-numeric:tabular-nums}
+.mono{font-family:var(--mono)}
+.ic{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- map ---------- */
+#map{position:fixed;inset:0;background:var(--bg);z-index:0}
+.leaflet-container{font:inherit;background:var(--bg)}
+.leaflet-control-attribution{background:var(--glass)!important;color:var(--t3)!important;font-size:10px;
+  border-top-left-radius:6px}
+.leaflet-control-attribution a{color:var(--t2)!important}
+.leaflet-tooltip{background:var(--glass);color:var(--t1);border:1px solid var(--glass-bd);border-radius:var(--r-sm);
+  box-shadow:var(--sh);font-family:var(--font);font-size:12px;padding:6px 9px;line-height:1.35;backdrop-filter:blur(10px)}
+.leaflet-tooltip::before{display:none}
+.leaflet-tooltip b{font-weight:600}
+.leaflet-tooltip .tt-sub{color:var(--t3);font-size:11px;margin-top:2px}
+.leaflet-tooltip .tt-k{font-family:var(--mono);font-size:11px;color:var(--t2)}
+.leaflet-tooltip.tt-wide{max-width:360px;white-space:normal}
+.tt-h{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--t3);margin:7px 0 2px}
+.tt-row{display:flex;justify-content:space-between;gap:10px;font-size:11.5px;padding:2px 0;border-top:1px solid var(--bd)}
+.tt-row span:first-child{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tt-row .tt-k{flex:none}
+.tt-src{display:block;font-family:var(--mono);font-size:10px;color:var(--t3);margin-top:3px}
+.ctryhandle{cursor:pointer}.ctryhandle:hover{color:var(--acct)}
+/* in-map popup card */
+.cxpop .leaflet-popup-content-wrapper{background:var(--glass);border:1px solid var(--glass-bd);backdrop-filter:blur(14px);border-radius:var(--r-lg);box-shadow:var(--sh);padding:0}
+.cxpop .leaflet-popup-content{margin:0;width:auto!important}
+.cxpop .ppwrap{overflow:auto;resize:both;min-width:300px;min-height:180px;max-width:88vw;max-height:82vh;
+  width:var(--pp-w,404px);height:var(--pp-h,440px)}
+.cxpop .ppwrap::-webkit-resizer{background:transparent}
+.pp .lnk{background:none;border:0;color:var(--acct);cursor:pointer;font:inherit;font-size:10.5px;padding:2px 0;text-decoration:underline}
+.pp .lnk:hover{color:var(--t1)}
+.cl{position:relative;cursor:zoom-in}
+.cl-list{position:absolute;right:-4px;bottom:-4px;width:20px;height:20px;border-radius:50%;
+  background:var(--s1);border:1px solid var(--bd2);color:var(--t2);font-size:11px;line-height:18px;
+  text-align:center;cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,.4)}
+.cl-list:hover{background:var(--acc);color:#fff;border-color:var(--acc)}
+.cl-n{position:absolute;left:-3px;top:-3px;min-width:17px;height:17px;padding:0 4px;border-radius:9px;
+  background:var(--s1);border:1px solid var(--bd2);color:var(--t3);font-family:var(--mono);font-size:9.5px;
+  line-height:15px;text-align:center;pointer-events:none}
+.cxpop .ppgrip{position:absolute;right:2px;bottom:2px;width:14px;height:14px;pointer-events:none;opacity:.5;
+  background:linear-gradient(135deg,transparent 46%,var(--t3) 46%,var(--t3) 56%,transparent 56%,transparent 72%,var(--t3) 72%,var(--t3) 82%,transparent 82%)}
+.cxpop .leaflet-popup-tip{background:var(--glass)}
+.cxpop .leaflet-popup-close-button{color:var(--t3);font-size:18px;padding:6px 8px 0 0}
+.pp{padding:14px 16px 12px;font-family:var(--font);font-size:12.5px;color:var(--t1)}
+.pp-kind{font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--t3);margin-bottom:3px}
+.pp h3{margin:0 0 2px;font-size:15px;font-weight:600;letter-spacing:-.01em;line-height:1.25}
+.pp-sub{color:var(--t3);font-size:11.5px;margin-bottom:8px}
+.pp-tags{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:8px}
+.pp-kpis{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin:8px 0 4px}
+.pp-kpis div{background:var(--s2);border:1px solid var(--bd);border-radius:var(--r-sm);padding:7px 8px}
+.pp-kpis b{display:block;font-size:17px;font-weight:700;letter-spacing:-.02em;line-height:1.05}
+.pp-kpis small{color:var(--t3);font-size:10.5px}
+.pp-h{font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--t3);margin:12px 0 4px}
+.prow2{display:flex;gap:10px;align-items:flex-start;padding:6px 0;border-top:1px solid var(--bd)}
+.prow2 .pr-l{flex:1;min-width:0}.prow2 .pr-l b{font-weight:600}
+.prow2 .pr-l small{display:block;color:var(--t3);font-size:11px;line-height:1.35;margin-top:1px}
+.prow2 .pr-v{font-family:var(--mono);font-size:11.5px;color:var(--t2);white-space:nowrap;flex:none}
+.pr-src{font-size:10.5px;margin-top:2px}
+.pr-what{color:var(--t2)}
+.tag.dem{color:var(--c-dem-t);border-color:var(--c-dem)}
+.pp-none{color:var(--t3);font-size:11.5px;padding:4px 0}
+.pp-src{margin-top:10px;font-size:11px;color:var(--t3)}
+.pr-btns{display:flex;gap:6px;margin-top:12px}.pr-btns .btn{padding:7px 10px;font-size:12px}
+a.src{font-family:var(--mono);font-size:10.5px;color:var(--acct)}
+.when{font-family:var(--mono);font-size:10px;color:var(--t3)}
+.mini .mn small a.src{font-size:10px}
+.cl{display:flex;align-items:center;justify-content:center;border-radius:50%;color:#fff;font-weight:600;
+    font-size:11px;text-align:center;line-height:1.1;border:2px solid rgba(255,255,255,.7);
+    box-shadow:0 2px 10px rgba(0,0,0,.4);font-family:var(--font)}
+.pxlabel{background:var(--glass);border:1px solid var(--c-px);color:var(--t1);border-radius:var(--r-sm);
+  padding:3px 7px;font-family:var(--mono);font-size:11px;white-space:nowrap;box-shadow:var(--sh)}
+.pxlabel b{color:var(--c-px-t);font-weight:600}
+.ctrylabel{background:none;border:0;box-shadow:none;color:var(--t1);font-weight:600;font-size:11.5px;text-shadow:0 1px 3px rgba(0,0,0,.8)}
+.ctrylabel small{display:block;font-weight:400;color:var(--t2);font-family:var(--mono);font-size:10px}
+/* one country chip: the name never carries colour, the number always does */
+.ctrychip{display:inline-flex;align-items:baseline;gap:6px;transform:translate(-50%,-50%);white-space:nowrap;
+  background:var(--glass);border:1px solid var(--bd);border-radius:var(--r-full);padding:3px 9px;
+  backdrop-filter:blur(8px);box-shadow:0 1px 6px rgba(0,0,0,.3);cursor:pointer;font-size:11.5px}
+.ctrychip:hover{border-color:var(--acc)}
+.ctrychip .cn{font-weight:600;color:var(--t1)}
+.ctrychip .cv{font-family:var(--mono);font-size:10.5px;font-weight:600}
+.ctrychip .cv em{font-style:normal;font-weight:400;opacity:.7;margin-left:2px;font-size:9px}
+.ctrychip .cvsep{color:var(--t3);opacity:.5;margin:0 1px}
+.ctrychip .cv.none{color:var(--t3);font-weight:400}
+
+/* ---------- glass chrome ---------- */
+.glass{background:var(--glass);border:1px solid var(--glass-bd);backdrop-filter:blur(14px);
+       -webkit-backdrop-filter:blur(14px);box-shadow:var(--sh)}
+#topleft{position:fixed;top:14px;left:14px;z-index:1100;width:min(440px,calc(100vw - var(--panel-w) - 44px));
+  display:flex;flex-direction:column;gap:8px}
+#search{position:relative}
+#search input{width:100%;padding:11px 40px 11px 40px;border-radius:var(--r-lg);background:var(--glass);
+  border:1px solid var(--glass-bd);font-size:14px;color:var(--t1);box-shadow:var(--sh);backdrop-filter:blur(14px)}
+#search input::placeholder{color:var(--t3)}
+#search .mag{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--t3);pointer-events:none}
+#search .clr{position:absolute;right:8px;top:50%;transform:translateY(-50%);background:none;border:0;cursor:pointer;
+  color:var(--t3);padding:6px;border-radius:var(--r-sm);display:none}
+#search .clr:hover{color:var(--t1);background:var(--s3)}
+#results{border-radius:var(--r-md);overflow:hidden;max-height:min(360px,60vh);overflow-y:auto;display:none}
+#results.on{display:block}
+.res{display:flex;align-items:center;gap:10px;padding:9px 12px;cursor:pointer;border-bottom:1px solid var(--bd)}
+.res:last-child{border-bottom:0}
+.res:hover,.res[aria-selected="true"]{background:var(--s2)}
+.res .rn{font-weight:500;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.res .rt{font-family:var(--mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--t3);flex:none}
+.sw{width:10px;height:10px;border-radius:50%;flex:none;display:inline-block}
+#chips{display:flex;flex-wrap:wrap;gap:6px}
+.chipb{display:inline-flex;align-items:center;gap:7px;padding:6px 11px;border-radius:var(--r-full);
+  cursor:pointer;font-size:12.5px;font-weight:500;color:var(--t2);transition:all var(--dur) var(--ease)}
+.chipb[aria-pressed="true"]{color:var(--t1);border-color:var(--bd2)}
+.chipb[aria-pressed="false"] .sw{opacity:.3}
+.chipb[aria-pressed="false"]{opacity:.7}
+.chipb:hover{color:var(--t1)}
+.chipb .n{font-family:var(--mono);font-size:10.5px;color:var(--t3)}
+
+/* ---------- right panel ---------- */
+#panel{position:fixed;top:0;right:0;bottom:0;width:var(--panel-w);z-index:1100;display:flex;flex-direction:column;
+  background:var(--s1);border-left:1px solid var(--bd);transition:transform var(--dur) var(--ease)}
+#panel.closed{transform:translateX(100%)}
+#panel-tab{position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:1101;width:22px;height:64px;
+  border-radius:var(--r-md) 0 0 var(--r-md);border:1px solid var(--bd);border-right:0;background:var(--glass);
+  cursor:pointer;color:var(--t2);display:none;align-items:center;justify-content:center}
+#panel.closed ~ #panel-tab{display:flex}
+.phead{display:flex;align-items:center;gap:10px;padding:14px 16px;border-bottom:1px solid var(--bd)}
+.brand{display:flex;align-items:baseline;gap:8px;flex:1;min-width:0}
+.brand b{font-size:16px;font-weight:700;letter-spacing:-.02em}
+.brand span{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--t3)}
+.ib{width:32px;height:32px;border-radius:var(--r-md);border:1px solid var(--bd);background:var(--s2);cursor:pointer;
+    color:var(--t2);display:inline-flex;align-items:center;justify-content:center;flex:none}
+.ib:hover{background:var(--s3);color:var(--t1)}
+.pbody{flex:1;overflow-y:auto;overflow-x:hidden;min-height:0}
+.pbody::-webkit-scrollbar{width:8px}.pbody::-webkit-scrollbar-thumb{background:var(--s3);border-radius:4px}
+
+/* selection card */
+#sel{margin:12px 12px 4px;border-radius:var(--r-lg);background:var(--s2);border:1px solid var(--bd2);overflow:hidden}
+#sel[hidden]{display:none}
+.selh{display:flex;align-items:flex-start;gap:10px;padding:14px 14px 10px}
+.selh .kind{font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px;font-weight:500}
+.selh h2{margin:0;font-size:16px;font-weight:600;letter-spacing:-.01em;line-height:1.25}
+.selh .sub{color:var(--t3);font-size:12px;margin-top:3px}
+.selh .x{margin-left:auto}
+.selb{padding:0 14px 14px}
+.kv{display:grid;grid-template-columns:104px 1fr;gap:6px 12px;font-size:12.5px;margin:8px 0 12px}
+.kv dt{color:var(--t3);font-family:var(--mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding-top:2px}
+.kv dd{margin:0;color:var(--t1)}
+.tag{display:inline-flex;align-items:center;gap:4px;font-family:var(--mono);font-size:9.5px;letter-spacing:.05em;
+     text-transform:uppercase;padding:2px 6px;border-radius:3px;border:1px solid var(--bd2);color:var(--t2);white-space:nowrap}
+.tag.site{color:var(--c-site-t);border-color:var(--c-site)} .tag.dem{color:var(--c-dem-t);border-color:var(--c-dem)}
+.tag.con{color:var(--c-con-t);border-color:var(--c-con)}   .tag.cap{color:var(--c-cap-t);border-color:var(--c-cap)}
+.tag.off{color:var(--c-off-t);border-color:var(--c-off)}   .tag.good{color:var(--good);border-color:var(--good)}
+.cf{font-family:var(--mono);font-size:9.5px;padding:2px 6px;border-radius:3px;white-space:nowrap}
+.cf1{background:rgba(76,192,138,.15);color:var(--good);border:1px solid var(--good)}
+.cf2{background:var(--s3);color:var(--t1);border:1px solid var(--bd2)}
+.cf3{color:var(--t2);border:1px solid var(--bd2)}
+.cf4{color:var(--t3);border:1px dashed var(--bd2)}
+.cf5{color:var(--t3);border:1px dotted var(--bd2);font-style:italic}
+.approx{background:rgba(224,162,39,.12);border-left:3px solid var(--warn);padding:8px 10px;font-size:12px;
+        color:var(--t2);border-radius:0 var(--r-sm) var(--r-sm) 0;margin:8px 0}
+.mini{display:flex;gap:8px;align-items:baseline;padding:7px 0;border-top:1px solid var(--bd);font-size:12.5px}
+.mini:first-of-type{border-top:0}
+.mini .mn{flex:1;min-width:0;color:var(--t1)}
+.mini .mn small{display:block;color:var(--t3);font-size:11.5px;line-height:1.35;margin-top:1px}
+.mini .mv{font-family:var(--mono);font-size:11.5px;color:var(--t2);white-space:nowrap}
+.mini.click{cursor:pointer}.mini.click:hover .mn{color:var(--acct)}
+.subh{font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--t3);
+      margin:14px 0 6px;font-weight:500}
+.btnrow{display:flex;gap:8px;margin-top:12px}
+.btn{flex:1;padding:8px 10px;border-radius:var(--r-md);border:1px solid var(--bd2);background:var(--s3);cursor:pointer;
+     font-size:12.5px;font-weight:500;color:var(--t1);text-align:center}
+.btn:hover{border-color:var(--acct)}
+.btn.primary{background:var(--acc);border-color:var(--acc);color:#fff}
+.srcs{margin:0;padding:0;list-style:none}
+.srcs li{font-size:11.5px;padding:4px 0;word-break:break-all;line-height:1.35}
+.dash{color:var(--t3)}
+
+/* sections */
+details.sec{border-top:1px solid var(--bd)}
+details.sec summary{list-style:none;display:flex;align-items:center;gap:10px;padding:13px 16px;cursor:pointer;user-select:none}
+details.sec summary::-webkit-details-marker{display:none}
+details.sec summary h2{margin:0;font-size:13px;font-weight:600;letter-spacing:.01em;flex:1}
+details.sec summary .ssum{font-family:var(--mono);font-size:10.5px;color:var(--t3)}
+details.sec summary .chev{transition:transform var(--dur)}
+details.sec[open] summary .chev{transform:rotate(180deg)}
+.secb{padding:2px 16px 16px}
+.kpis{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+.kpi{background:var(--s2);border:1px solid var(--bd);border-radius:var(--r-md);padding:10px 11px}
+.kpi .v{font-size:20px;font-weight:700;letter-spacing:-.025em;line-height:1.05;font-variant-numeric:tabular-nums}
+.kpi .l{font-size:11px;color:var(--t3);margin-top:4px;line-height:1.3}
+.kpi .s{font-size:10px;color:var(--t3);margin-top:3px;line-height:1.3;opacity:.8}
+.kpi.dim .v{color:var(--t3)}
+.mstrip{display:flex;flex-wrap:wrap;gap:4px 14px;margin:9px 0 0;font-size:11px;color:var(--t3);font-family:var(--mono)}
+.mstrip b{color:var(--t2);font-weight:600}
+.scope{display:inline-flex;background:var(--s2);border:1px solid var(--bd);border-radius:var(--r-full);padding:2px;gap:2px}
+.scope button{background:none;border:0;border-radius:var(--r-full);padding:3px 10px;cursor:pointer;font-size:10.5px;
+  font-family:var(--mono);color:var(--t3);font-weight:500}
+.scope button[aria-pressed="true"]{background:var(--s3);color:var(--t1)}
+.lgrule{display:flex;gap:10px;align-items:center;font-size:10.5px;color:var(--t3);margin:2px 0 8px;flex-wrap:wrap}
+.lgrule span{display:inline-flex;align-items:center;gap:4px}
+.lgrule i{width:8px;height:8px;border-radius:2px;display:block}
+.lgscale{display:flex;align-items:center;gap:8px;margin:8px 0 0;padding-top:8px;border-top:1px solid var(--bd)}
+.lgscale label{font-size:11px;color:var(--t3);flex:none}
+.lgscale input{flex:1;min-width:0;accent-color:var(--acc)}
+.lgscale .v{font-family:var(--mono);font-size:10px;color:var(--t3);flex:none;min-width:32px;text-align:right}
+.kpi.live .v{color:var(--good)} .kpi.build .v{color:var(--c-site-t)} .kpi.dem .v{color:var(--c-dem-t)}
+.lrow{display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid var(--bd)}
+.lrow:last-child{border-bottom:0}
+.lrow .sw{width:12px;height:12px}
+.lrow .lname{flex:1;font-weight:500;font-size:13px}
+.lrow .ln{font-family:var(--mono);font-size:10.5px;color:var(--t3)}
+.lrow.off .lname{color:var(--t3)}.lrow.off .sw{opacity:.3}
+.eye{width:28px;height:28px;border-radius:var(--r-sm);border:0;background:none;cursor:pointer;color:var(--t2);
+     display:inline-flex;align-items:center;justify-content:center}
+.eye:hover{background:var(--s3);color:var(--t1)}
+.eye[aria-pressed="false"]{color:var(--t3)}
+.seg{display:flex;background:var(--s2);border:1px solid var(--bd);border-radius:var(--r-md);padding:2px;gap:2px;margin:6px 0 4px 22px}
+.seg button{flex:1;background:none;border:0;border-radius:6px;padding:5px 6px;cursor:pointer;font-size:11.5px;
+            color:var(--t3);font-weight:500;white-space:nowrap}
+.seg button[aria-pressed="true"]{background:var(--s3);color:var(--t1)}
+.fgrp{margin:0 0 9px 5px;padding:2px 0 2px 16px;border-left:2px solid var(--bd2)}
+.lrow.hasf{border-bottom:0;padding-bottom:2px}
+.frow{display:flex;align-items:center;gap:8px;margin:6px 0 0}
+.frow>span.fl{font-size:11.5px;color:var(--t3);flex:none;min-width:58px}
+.frow select{flex:1;min-width:0;background:var(--s2);border:1px solid var(--bd);border-radius:var(--r-md);
+  color:var(--t1);font-family:inherit;font-size:11.5px;font-weight:500;padding:5px 24px 5px 8px;cursor:pointer;
+  -webkit-appearance:none;appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--t3) 50%),linear-gradient(135deg,var(--t3) 50%,transparent 50%);
+  background-position:calc(100% - 13px) 12px,calc(100% - 9px) 12px;background-size:4px 4px;background-repeat:no-repeat}
+.frow select:hover{border-color:var(--bd2)}
+.frow select:focus-visible{outline:2px solid var(--acc);outline-offset:1px}
+.frow .fn{font-family:var(--mono);font-size:10.5px;color:var(--t3);flex:none;min-width:30px;text-align:right}
+.arclab{display:inline-block;transform:translate(-50%,-50%);background:var(--glass);border:1px solid var(--c-con);border-radius:var(--r-sm);padding:2px 6px;
+  font-size:10px;line-height:1.35;color:var(--t1);white-space:nowrap;backdrop-filter:blur(8px);pointer-events:none;
+  box-shadow:0 1px 5px rgba(0,0,0,.28)}
+.arclab b{color:var(--c-con-t);font-weight:600}
+.arclab i{display:block;font-style:normal;font-family:var(--mono);font-size:9px;color:var(--t3)}
+.hint{font-size:11.5px;color:var(--t3);line-height:1.45;margin:6px 0 0}
+.gap{display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid var(--bd);cursor:pointer}
+.gap:last-child{border-bottom:0}
+.gap:hover .gn{color:var(--acct)}
+.gap .gn{flex:1;min-width:0;font-weight:500;font-size:13px}
+.gap .gn small{display:block;color:var(--t3);font-weight:400;font-size:11.5px}
+.gap .gv{font-family:var(--mono);font-size:12px;color:var(--c-dem-t);font-weight:500;white-space:nowrap}
+.gap .noloc{font-family:var(--mono);font-size:9.5px;color:var(--t3);border:1px dashed var(--bd2);padding:1px 5px;border-radius:3px}
+.loop{padding:9px 0;border-bottom:1px solid var(--bd);cursor:pointer;font-size:12.5px;line-height:1.5}
+.loop:last-child{border-bottom:0}
+.loop:hover{color:var(--acct)}
+.loop b{font-weight:600}
+.loop .arr{color:var(--c-cap-t)}
+.prow{display:grid;grid-template-columns:82px 1fr 92px;gap:8px;align-items:center;padding:5px 0;border-bottom:1px solid var(--bd)}
+.prow:last-child{border-bottom:0}
+.prow .pg{font-size:12px;font-weight:600}.prow .pg small{display:block;font-weight:400;color:var(--t3);font-family:var(--mono);font-size:9.5px}
+.track{position:relative;height:14px}
+.rng{position:absolute;height:6px;top:4px;background:var(--c-px);opacity:.45;border-radius:3px}
+.med{position:absolute;width:8px;height:8px;border-radius:50%;background:var(--c-px-t);top:3px;border:1.5px solid var(--s1)}
+.prow .pv{text-align:right;font-family:var(--mono);font-size:10.5px;color:var(--t2);white-space:nowrap}
+.prow .pv small{display:block;color:var(--t3);font-size:9.5px;margin-top:2px}
+table.ct{width:100%;border-collapse:collapse;font-size:12px}
+table.ct th{text-align:left;font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--t3);font-weight:500;padding:6px 4px;border-bottom:1px solid var(--bd2)}
+table.ct td{padding:6px 4px;border-bottom:1px solid var(--bd);color:var(--t2)}
+table.ct td.r{text-align:right;font-variant-numeric:tabular-nums;font-family:var(--mono);font-size:11.5px}
+table.ct td.n{color:var(--t1);font-weight:500}
+.bar{height:6px;background:var(--s3);border-radius:3px;overflow:hidden;display:flex}
+.bar i{display:block;height:100%}
+.pfoot{padding:12px 16px;border-top:1px solid var(--bd);font-family:var(--mono);font-size:10px;color:var(--t3);line-height:1.6}
+
+/* ---------- floating tools ---------- */
+#tools{position:fixed;right:calc(var(--panel-w) + 14px);top:50%;transform:translateY(-50%);z-index:1050;
+       display:flex;flex-direction:column;gap:6px;transition:right var(--dur) var(--ease)}
+body.panel-closed #tools{right:14px}
+#tools .ib{width:38px;height:38px;border-radius:var(--r-md);background:var(--glass);border:1px solid var(--glass-bd);
+  color:var(--t1);box-shadow:var(--sh);backdrop-filter:blur(14px)}
+#tools .ib[aria-pressed="true"]{background:var(--acc);border-color:var(--acc);color:#fff}
+#legend{position:fixed;left:14px;bottom:44px;z-index:1050;border-radius:var(--r-lg);padding:12px 14px;
+  max-height:min(62vh,520px);overflow:auto;max-width:300px;
+        width:250px;font-size:12px;color:var(--t2)}
+#legend h3{margin:0 0 8px;font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--t3);font-weight:500;display:flex;align-items:center}
+#legend h3 button{margin-left:auto;background:none;border:0;color:var(--t3);cursor:pointer;font-size:12px}
+.lg{display:flex;align-items:center;gap:8px;padding:3px 0}
+.lg .dot{width:12px;height:12px;border-radius:50%;flex:none;border:2px solid transparent}
+.lg .line{width:20px;height:0;border-top:2px solid;flex:none}
+.lgs{margin:0 0 8px}.lgs:last-child{margin-bottom:0}
+.lgt{display:flex;align-items:center;gap:6px;font-family:var(--mono);font-size:9px;letter-spacing:.07em;
+  text-transform:uppercase;color:var(--t2);margin:0 0 3px;white-space:nowrap}
+.lgt .sw{width:9px;height:9px;border-radius:2px;flex:none}
+.lgt .n{margin-left:auto;color:var(--t3);letter-spacing:0}
+.lg{font-size:11.5px;color:var(--t2);line-height:1.35;align-items:flex-start}
+.lg .dot,.lg .line{margin-top:3px}
+.lg .edot{margin-top:5px}
+.lg .edot{width:6px;height:6px;border-radius:50%;flex:none;margin-left:-6px}
+.sizekey{display:flex;align-items:flex-end;gap:6px;margin:8px 0 2px}
+.sizekey i{display:block;border-radius:50%;background:var(--c-site);opacity:.55;border:1.5px solid var(--c-site-t)}
+#legend-show{position:fixed;left:14px;bottom:44px;z-index:1050;display:none;padding:7px 12px;border-radius:var(--r-full);cursor:pointer;font-size:12px;color:var(--t2)}
+#pill{position:fixed;left:50%;bottom:12px;transform:translateX(calc(-50% - var(--panel-w)/2));z-index:1050;
+      padding:9px 16px;border-radius:var(--r-full);font-size:12.5px;color:var(--t2);white-space:nowrap;
+      transition:transform var(--dur) var(--ease)}
+body.panel-closed #pill{transform:translateX(-50%)}
+#pill b{color:var(--t1);font-weight:600;font-variant-numeric:tabular-nums}
+#pill .sep{margin:0 8px;color:var(--t3)}
+
+/* ---------- presentation mode ---------- */
+body.present #topleft,body.present #panel,body.present #tools{display:none}
+body.present #pill{transform:translateX(-50%);font-size:15px;padding:12px 22px}
+body.present #legend{transform:scale(1.25);transform-origin:bottom left}
+body.present #present-exit{display:flex}
+#present-exit{position:fixed;top:14px;right:14px;z-index:1200;display:none;padding:8px 14px;border-radius:var(--r-full);
+  cursor:pointer;font-size:12.5px;color:var(--t1)}
+
+@media (max-width:820px){
+  :root{--panel-w:min(384px,92vw)}
+  #topleft{width:calc(100vw - 28px)}
+  #tools{right:14px}
+  #pill{transform:translateX(-50%);max-width:calc(100vw - 28px);overflow:hidden;text-overflow:ellipsis}
+  #legend{width:210px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+__RIVALS_CSS__
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-eyeoff" viewBox="0 0 24 24"><path d="M3 3l18 18M10.6 10.6a2 2 0 0 0 2.8 2.8M9.9 5.1A10.5 10.5 0 0 1 12 5c6.5 0 10 7 10 7a17 17 0 0 1-3.2 4.2M6.6 6.6A16 16 0 0 0 2 12s3.5 7 10 7c1.3 0 2.5-.3 3.6-.7"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8v10a1 1 0 0 1-1 1h-5v-7h-6v7H4a1 1 0 0 1-1-1z"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5zM3 13l9 5 9-5M3 17l9 5 9-5"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+  <symbol id="i-panel" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M15 4v16"/></symbol>
+</defs></svg>
+
+<div id="tabscrim" aria-hidden="true"></div>
+<nav id="tabs" class="tabbar" aria-label="View">
+  <button data-tab="map" aria-pressed="true">Market map</button>
+  <button data-tab="rivals" aria-pressed="false">Who else is doing this</button>
+</nav>
+<div id="map" role="application" aria-label="Map of compute supply and demand"></div>
+<main id="rivals" aria-label="Competitor analysis"></main>
+
+<div id="topleft">
+  <div id="search">
+    <svg class="ic mag"><use href="#i-search"/></svg>
+    <input id="q" type="search" placeholder="Search companies, sites, deals…" autocomplete="off" aria-label="Search">
+    <button class="clr" id="q-clear" aria-label="Clear search"><svg class="ic" style="width:14px;height:14px"><use href="#i-x"/></svg></button>
+    <div id="results" class="glass" role="listbox"></div>
+  </div>
+  <div id="chips"></div>
+</div>
+
+<aside id="panel" aria-label="Control panel">
+  <div class="phead">
+    <div class="brand"><b>ComputeX</b><span>Market Graph</span></div>
+    <button class="ib" id="btn-theme" aria-label="Switch light or dark"><svg class="ic"><use href="#i-sun"/></svg></button>
+    <button class="ib" id="btn-collapse" aria-label="Collapse panel"><svg class="ic"><use href="#i-panel"/></svg></button>
+  </div>
+  <div class="pbody">
+    <div id="sel" hidden></div>
+    <details class="sec" id="sec-market" open>
+      <summary><h2>The market</h2><span class="ssum" id="sum-market"></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
+      <div class="secb" id="market"></div>
+    </details>
+    <details class="sec" id="sec-layers" open>
+      <summary><h2>Layers</h2><span class="ssum" id="sum-layers"></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
+      <div class="secb" id="layers"></div>
+    </details>
+    <details class="sec" id="sec-match">
+      <summary><h2>Who to call</h2><span class="ssum" id="sum-match"></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
+      <div class="secb" id="match"></div>
+    </details>
+    <details class="sec" id="sec-circles">
+      <summary><h2>Circles</h2><span class="ssum" id="sum-circles"></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
+      <div class="secb" id="circles"></div>
+    </details>
+    <details class="sec" id="sec-prices">
+      <summary><h2>Prices</h2><span class="ssum" id="sum-prices"></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
+      <div class="secb" id="prices"></div>
+    </details>
+    <details class="sec" id="sec-live">
+      <summary><h2>Running vs being built</h2><span class="ssum" id="sum-live"></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
+      <div class="secb" id="live"></div>
+    </details>
+    <details class="sec" id="sec-data">
+      <summary><h2>How to read this</h2><span class="ssum" id="sum-data"></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
+      <div class="secb" id="datasec"></div>
+    </details>
+  </div>
+  <div class="pfoot" id="pfoot"></div>
+</aside>
+<button id="panel-tab" aria-label="Open panel"><svg class="ic" style="transform:rotate(-90deg)"><use href="#i-chev"/></svg></button>
+
+<div id="tools">
+  <button class="ib" id="t-present" title="Presentation mode (P)" aria-label="Presentation mode"><svg class="ic"><use href="#i-play"/></svg></button>
+  <button class="ib" id="t-apac" title="Fit Asia-Pacific (Home)" aria-label="Fit Asia-Pacific"><svg class="ic"><use href="#i-home"/></svg></button>
+  <button class="ib" id="t-world" title="Fit everything" aria-label="Fit everything"><svg class="ic"><use href="#i-globe"/></svg></button>
+  <button class="ib" id="t-base" title="Switch basemap" aria-label="Switch basemap"><svg class="ic"><use href="#i-layers"/></svg></button>
+  <button class="ib" id="t-zin" title="Zoom in" aria-label="Zoom in"><svg class="ic"><use href="#i-plus"/></svg></button>
+  <button class="ib" id="t-zout" title="Zoom out" aria-label="Zoom out"><svg class="ic"><use href="#i-minus"/></svg></button>
+</div>
+<div id="legend" class="glass"></div>
+<button id="legend-show" class="glass">▦ Legend</button>
+<div id="pill" class="glass"></div>
+<button id="present-exit" class="glass">Exit presentation · Esc</button>
+
+<script>__LEAFLET_JS__</script>
+<script id="dataset" type="application/json">__DATA__</script>
+<script>
+"use strict";
+/* ============ data ============ */
+const DATA = JSON.parse(document.getElementById("dataset").textContent);
+const DEALS = DATA.deals.filter(d => !d.is_restatement), ALLDEALS = DATA.deals, SITES = DATA.sites;
+const ENT = {}; DATA.entities.forEach(e => ENT[e.entity_id] = e);
+const PRICES = DATA.prices, COV = DATA.coverage, CAP = DATA.apac_capacity || [];
+const CTRY = DATA.country_summary || []; const CT = {}; CTRY.forEach(c => CT[c.country] = c);
+const CAPROW = {}; CAP.forEach(c => CAPROW[c.country] = c);
+const APAC_TOTAL = CAPROW["APAC total"] || null;
+const bld = c => (c.official_uc_mw != null ? c.official_uc_mw : c.building_mw) || 0;
+const DEAL = {}; DATA.deals.forEach(d => DEAL[d.deal_id] = d);
+const SITE = {}; SITES.forEach(s => SITE[s.site_id] = s);
+const bucketOf = s => s === "live" ? "live" : (s === "under_construction" || s === "phased") ? "building" : "planned";
+const host = u => { try { return new URL(u).hostname.replace(/^www\./,""); } catch(e){ return u; } };
+/* one source line for any record: "reuters.com ↗ · 12 Aug 2026" (link) or plain text for tooltips */
+const srcA = (r, plain) => { const u = (r.source_urls||[])[0]; if (!u) return ""; const when = r.announced_date || r.commissioned || r.captured_at || "";
+  return plain ? `<span class="tt-src">${esc(host(u))}${when?" · "+esc(when):""}</span>`
+               : `<a class="src" href="${esc(u)}" target="_blank" rel="noopener" title="${esc(u)}">${esc(host(u))} ↗</a>${when?`<span class="when"> · ${esc(when)}</span>`:""}`; };
+const whoName = id => { const e = ENT[id]; return !e || e.is_placeholder ? "Undisclosed" : e.name; };
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const NF = new Intl.NumberFormat("en-US");
+const nf = n => n == null ? "—" : NF.format(Math.round(n));
+const nf1 = n => n == null ? "—" : Number(n).toLocaleString("en-US",{maximumFractionDigits:1});
+const mwf = n => n == null ? "—" : (Math.abs(n) < 100 ? nf1(n) : nf(n)) + " MW";
+const kf = n => n == null ? "—" : n >= 1e6 ? (n/1e6).toFixed(1)+"M" : n >= 1e3 ? (n/1e3).toFixed(n>=1e4?0:1)+"k" : nf(n);
+const usd = v => v == null ? "—" : v >= 1e9 ? "$"+(v/1e9).toLocaleString("en-US",{maximumFractionDigits:1})+"bn"
+  : v >= 1e6 ? "$"+(v/1e6).toLocaleString("en-US",{maximumFractionDigits:0})+"m" : "$"+nf(v);
+const ename = id => (ENT[id] && ENT[id].name) || "—";
+const dash = '<span class="dash">—</span>';
+
+const DT = {D1:"Compute contract",D2:"Chip purchase",D3:"Chip rental",D4:"Building lease",D5:"Power deal",
+  D6:"New data centre",D7:"Stated need",D8:"Borrowing",D9:"Investment",D10:"Guarantee",D11:"Swap or barter",
+  D12:"Marketplace trade",D13:"Futures and hedges",D14:"Second-hand sale",D15:"Someone offloading",
+  D16:"Partnership",D17:"Rule change"};
+const CONF = {T1:"Regulatory filing",T2:"Company announcement",T3:"Named journalist, credible outlet",T4:"Rumour or analyst estimate",T5:"Our own inference"};
+const cf = c => c ? `<span class="cf cf${c.slice(1)}" title="${esc(CONF[c]||"")}">${esc(c)}</span>` : dash;
+const APAC = new Set(["Singapore","Malaysia","Indonesia","India","Japan","South Korea","Taiwan","Thailand","Vietnam","Philippines","Australia","New Zealand","Hong Kong","China","Macau"]);
+
+/* company location: HQ if we have it, else null */
+const locOf = id => { const e = ENT[id]; return e && e.hq_lat != null ? [e.hq_lat, e.hq_lng] : null; };
+/* deal geometry: the provider end prefers a named site if we can find one */
+const siteByName = {}; SITES.forEach(s => { if (s.name) siteByName[s.name.toLowerCase()] = s; });
+function dealEnds(d){
+  let a = locOf(d.from_id), b = locOf(d.to_id);
+  if (d.site) { const s = siteByName[String(d.site).toLowerCase()]; if (s && s.lat != null) a = [s.lat, s.lng]; }
+  return a && b && (a[0] !== b[0] || a[1] !== b[1]) ? [a, b] : null;
+}
+/* demand records: one per company with a stated-need gap */
+const GAPS = DATA.demand_gaps.map(g => ({...g, loc: locOf(g.entity_id)}));
+const OFFLOADS = DEALS.filter(d => d.deal_type === "D15").map(d => ({...d, loc: locOf(d.from_id) || locOf(d.to_id)}));
+const CONTRACTS = DEALS.filter(d => d.deal_type === "D1").map(d => ({...d, ends: dealEnds(d)}));
+const CAPITAL = DEALS.filter(d => ["D8","D9","D10"].includes(d.deal_type)).map(d => ({...d, ends: dealEnds(d)}));
+/* every demand-side company: anyone who stated a need (D7) or bought compute (D1) */
+const DEMAND = (() => {
+  const m = {};
+  DEALS.forEach(d => {
+    if (!["D7","D1"].includes(d.deal_type) || !d.to_id || (ENT[d.to_id]||{}).is_placeholder) return;
+    const r = m[d.to_id] = m[d.to_id] || {entity_id:d.to_id, name:ename(d.to_id), needs:[], contracts:[], stated_mw:0, contracted_mw:0, stated_usd:0, loc:locOf(d.to_id)};
+    if (d.deal_type==="D7") { r.needs.push(d); r.stated_mw += d.mw||0; r.stated_usd += d.usd_value||0; }
+    else { r.contracts.push(d); r.contracted_mw += d.mw||0; }
+  });
+  Object.values(m).forEach(r => { r.needs.sort((a,b)=>(b.announced_date||"").localeCompare(a.announced_date||"")); r.contracts.sort((a,b)=>(b.usd_value||b.mw||0)-(a.usd_value||a.mw||0));
+    r.size_mw = Math.max(r.stated_mw, r.contracted_mw); r.latest = r.needs[0] || r.contracts[0]; });
+  return Object.values(m).sort((a,b)=>b.size_mw-a.size_mw);
+})();
+const YEAR = s => { const m = /20(\d\d)/.exec(String(s||"")); return m ? 2000 + +m[1] : null; };
+function dStatus(d){
+  if (d.deal_type==="D7") { const y = YEAR(d.by_when); return (y && y > 2028) ? "plan" : "stated"; }
+  if (d.deal_type==="D1") return d.status==="operational" ? "running" : ["cancelled","resized","expired"].includes(d.status) ? "changed" : "signed";
+  return "other";
+}
+const DSTAT = {stated:"stated need", plan:"long-range plan", signed:"signed, waiting", running:"running", changed:"changed", other:""};
+const HYPER = /microsoft|google|alphabet|amazon|aws|meta platforms|oracle|alibaba|tencent|bytedance|apple inc/i;
+const LAB = /openai|anthropic|\bxai\b|x\.ai|space exploration|mistral|cohere|superintelligence|thinking machines|reflection ai|sakana|sarvam|krutrim|perplexity|character\.ai|inflection|poolside|moonshot|zhipu|\breka\b|ai21|aleph alpha|luma|runway|midjourney|stability ai|hugging face|together ai|fireworks|baseten|deepseek|preferred networks|noetra|frontia|ai lab|frontier lab|foundation model/i;
+const GOV = /ministry|government|govt\b|\bnational ai|agency|authority|indiaai|meity|\bmeti\b|nedo|msit|nipa|imda|govtech|riken|nchc|nstc|cyberport|humain|g42|sovereign|republic of|department of|research institute|university|\bstate of|public sector|\bnasa\b|\bdoe\b/i;
+function buyerType(x){ const e = ENT[x.entity_id]||{}; const s = e.name+" "+(e.one_line||""); if (HYPER.test(e.name)) return "cloud"; if (GOV.test(s)) return "gov"; if (LAB.test(s)) return "lab"; return "ent"; }
+DEMAND.forEach(x => {
+  x.contracted_usd = x.contracts.reduce((a,d)=>a+(d.usd_value||0),0);
+  x.buckets = new Set([...x.needs, ...x.contracts].map(dStatus));
+  const gap = DATA.demand_gaps.find(g=>g.entity_id===x.entity_id);
+  x.gap = gap ? gap.gap_mw : 0;
+  if (x.gap > 0 || (x.needs.some(d=>dStatus(d)==="stated") && !x.contracts.length)) x.buckets.add("open");
+  x.who = buyerType(x);
+});
+const demandVisible = x => (S.demStatus==="all" || x.buckets.has(S.demStatus)) && (S.demWho==="all" || x.who===S.demWho);
+const conBucket = d => d.status==="operational" ? "running"
+  : ["cancelled","resized","expired"].includes(d.status) ? "changed" : "pending";
+const conVisible = d => !!d.ends && (S.conStatus==="all" || conBucket(d)===S.conStatus);
+const DEM = {}; DEMAND.forEach(r => DEM[r.entity_id] = r);
+
+/* ============ layers vocabulary ============ */
+const LAYERS = [
+  {id:"country",name:"Supply & demand by country",col:"--c-ctry",tcol:"--t2",on:true, desc:"One circle per country. Hover the name for who is supplying and who needs compute there."},
+  {id:"sites",  name:"Supply · data centres",   col:"--c-site", tcol:"--c-site-t", on:true,  desc:"Each site. Bigger means more megawatts. Solid means running, faint means only announced."},
+  {id:"demand", name:"Demand · companies",       col:"--c-dem",  tcol:"--c-dem-t",  on:true,  desc:"Every company that has said it needs compute or has bought it. Bigger means more."},
+  {id:"contracts",name:"Contracts · who buys from whom",col:"--c-con",tcol:"--c-con-t",on:true,  desc:"One curve per compute contract, drawn from the seller to the buyer. Thicker means a bigger deal."},
+  {id:"capital",name:"Capital · who funds whom",col:"--c-cap",  tcol:"--c-cap-t",  on:false, desc:"Loans, investments and guarantees. Lender to borrower."},
+  {id:"offload",name:"Supply for sale",         col:"--c-off",  tcol:"--c-off-t",  on:false, desc:"Companies trying to sell compute they already hold."},
+  {id:"prices", name:"Price by city",           col:"--c-px",   tcol:"--c-px-t",   on:false, desc:"The same Azure machine, priced per hour in six Asian cities."}
+];
+const S = {
+  on: Object.assign({labels:false, arclabels:true}, Object.fromEntries(LAYERS.map(l => [l.id, l.on]))),
+  siteStatus:"all",            // all | live | building | planned
+  demStatus:"all",             // all | open | signed | running | plan
+  conStatus:"all",             // all | pending | running | changed
+  ctryMetric:"building",       // building | running | demand  (one number per country, never three)
+  scope:"apac",             // apac | world
+  tab:"map",                   // map | rivals
+  demWho:"all",                // all | lab | cloud | gov | ent
+  scale:1,                     // circle size multiplier
+  base:"dark", theme:"dark", sel:null, hover:null, present:false, panelOpen:true,
+  legendOpen:true, q:""
+};
+const cssv = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+
+/* ============ hash state ============ */
+function readHash(){
+  const h = location.hash.replace(/^#/, ""); if (!h) return;
+  for (const kv of h.split("&")) {
+    const i = kv.indexOf("="); if (i < 0) continue;
+    const k = kv.slice(0,i), v = decodeURIComponent(kv.slice(i+1));
+    if (k === "off") v.split(",").filter(Boolean).forEach(id => { if (id in S.on) S.on[id] = false; });
+    if (k === "on")  v.split(",").filter(Boolean).forEach(id => { if (id in S.on) S.on[id] = true; });
+    if (k === "status") S.siteStatus = v;
+    if (k === "dstatus") S.demStatus = v;
+    if (k === "dwho") S.demWho = v;
+    if (k === "cstatus") S.conStatus = v;
+    if (k === "cmetric") S.ctryMetric = v;
+    if (k === "scope") S.scope = v;
+    if (k === "tab") S.tab = v;
+    if (k === "base") S.base = v;
+    if (k === "theme") S.theme = v;
+    if (k === "sel") S.sel = v;
+    if (k === "q") S.q = v;
+  }
+}
+function writeHash(){
+  const off = LAYERS.filter(l => l.on && !S.on[l.id]).map(l => l.id);
+  const on  = LAYERS.filter(l => !l.on && S.on[l.id]).map(l => l.id);
+  const p = ["v=2"];
+  if (off.length) p.push("off=" + off.join(","));
+  if (on.length)  p.push("on=" + on.join(","));
+  if (S.siteStatus !== "all") p.push("status=" + S.siteStatus);
+  if (S.demStatus !== "all") p.push("dstatus=" + S.demStatus);
+  if (S.demWho !== "all") p.push("dwho=" + S.demWho);
+  if (S.conStatus !== "all") p.push("cstatus=" + S.conStatus);
+  if (S.ctryMetric !== "building") p.push("cmetric=" + S.ctryMetric);
+  if (S.scope !== "apac") p.push("scope=" + S.scope);
+  if (S.tab !== "map") p.push("tab=" + S.tab);
+  if (S.base !== "dark") p.push("base=" + S.base);
+  if (S.theme !== "dark") p.push("theme=" + S.theme);
+  if (S.sel) p.push("sel=" + encodeURIComponent(S.sel));
+  if (S.q) p.push("q=" + encodeURIComponent(S.q));
+  history.replaceState(null, "", "#" + p.join("&"));
+}
+
+/* ============ map ============ */
+const map = L.map("map", {zoomControl:false, preferCanvas:true, worldCopyJump:true, minZoom:2, maxZoom:15});
+const ESRI = "https://server.arcgisonline.com/ArcGIS/rest/services/";
+const tl = (p, o) => L.tileLayer(ESRI + p + "/MapServer/tile/{z}/{y}/{x}", Object.assign({maxZoom:16, attribution:"Esri, HERE, Garmin, © OpenStreetMap contributors"}, o||{}));
+const BASES = {
+  dark:  [tl("Canvas/World_Dark_Gray_Base"),  tl("Canvas/World_Dark_Gray_Reference",{pane:"shadowPane"})],
+  light: [tl("Canvas/World_Light_Gray_Base"), tl("Canvas/World_Light_Gray_Reference",{pane:"shadowPane"})],
+  sat:   [tl("World_Imagery",{maxZoom:18,attribution:"Esri, Maxar, Earthstar Geographics"}), tl("Reference/World_Boundaries_and_Places",{pane:"shadowPane"})]
+};
+let baseOn = null;
+function syncBaseLabels(){
+  if (!baseOn || baseOn.length < 2) return;
+  const ref = baseOn[1];                       // the Esri place-name layer
+  const want = !S.on.country;                  // our own chips replace it while country is on
+  if (want && !map.hasLayer(ref)) ref.addTo(map);
+  if (!want && map.hasLayer(ref)) map.removeLayer(ref);
+}
+function setBase(b){
+  if (baseOn) baseOn.forEach(l => map.removeLayer(l));
+  S.base = BASES[b] ? b : "dark";
+  baseOn = BASES[S.base]; baseOn.forEach(l => l.addTo(map));
+  syncBaseLabels();
+  writeHash();
+}
+map.createPane("arcs");    map.getPane("arcs").style.zIndex = 420;
+map.createPane("country"); map.getPane("country").style.zIndex = 380;
+map.createPane("demand");  map.getPane("demand").style.zIndex = 450;
+map.createPane("hi");      map.getPane("hi").style.zIndex = 470;
+const canvas = L.canvas({padding:.5});                 // site circles: many, small, cheap on canvas
+const arcSvg = L.svg({pane:"arcs", padding:.5});       // arcs: few, long, and canvas cannot place them
+
+/* curved line between two points: a shallow arc so overlapping routes stay readable */
+function arcPts(a, b, bend){
+  const [y1,x1] = a, [y2,x2] = b, n = 28, pts = [];
+  const mx = (x1+x2)/2, my = (y1+y2)/2, dx = x2-x1, dy = y2-y1;
+  const len = Math.hypot(dx,dy) || 1, k = (bend == null ? .18 : bend) * len;
+  const cx = mx - dy/len*k, cy = my + dx/len*k;
+  for (let i=0;i<=n;i++){ const t=i/n, u=1-t;
+    pts.push([u*u*y1 + 2*u*t*cy + t*t*y2, u*u*x1 + 2*u*t*cx + t*t*x2]); }
+  return pts;
+}
+let POP = null;
+function openPopup(latlng, html){
+  if (POP) map.closePopup(POP);
+  POP = L.popup({maxWidth:1200, minWidth:300, className:"cxpop", autoPanPadding:[24,24], closeButton:true})
+    .setLatLng(latlng).setContent(`<div class="ppwrap">${html}<span class="ppgrip"></span></div>`).openOn(map);
+  const w = POP.getElement() && POP.getElement().querySelector(".ppwrap");
+  if (w && window.ResizeObserver) {
+    new ResizeObserver(() => {                       // remember whatever size the user drags to
+      if (!w.style.width && !w.offsetWidth) return;
+      try { localStorage.setItem("cx.pp", w.offsetWidth + "x" + w.offsetHeight); } catch(e){}
+      document.documentElement.style.setProperty("--pp-w", w.offsetWidth + "px");
+      document.documentElement.style.setProperty("--pp-h", w.offsetHeight + "px");
+      POP.update();
+    }).observe(w);
+  }
+}
+const popRow = (title, sub, val, r) => `<div class="prow2"><div class="pr-l"><b>${title}</b>${sub?`<small>${sub}</small>`:""}${r?`<div class="pr-src">${srcA(r)}</div>`:""}</div><div class="pr-v">${val||""}</div></div>`;
+const popFoot = (selId, r) => `<div class="pr-btns"><button class="btn primary" data-sel="${esc(selId)}">Full details</button>${(r&&(r.source_urls||[])[0])?`<a class="btn" href="${esc(r.source_urls[0])}" target="_blank" rel="noopener">Source ↗</a>`:""}</div>`;
+const G = {};   // layer groups by id
+const MK = {sites:{}, demand:{}, contracts:{}, capital:{}, offload:{}};   // id -> marker
+const STATUS_FILL = {live:.78, under_construction:.42, phased:.42, permitted:.22, announced:.16, cancelled:.05};
+const statusBucket = s => s === "live" ? "live" : (s === "under_construction" || s === "phased") ? "building" : "planned";
+
+function siteRadius(mw, z){ const base = mw ? Math.sqrt(mw) * .62 : 3.5; return Math.max(4, Math.min(30, base)) * (z >= 7 ? 1.25 : 1) * S.scale; }
+const LABELS = L.layerGroup();
+function buildSites(){
+  LABELS.clearLayers(); if (!map.hasLayer(LABELS)) LABELS.addTo(map);
+  const g = L.markerClusterGroup({
+    maxClusterRadius: z => z >= 12 ? 5 : z >= 10 ? 12 : z >= 8 ? 24 : z >= 6 ? 38 : 52,
+    spiderfyOnMaxZoom: true, spiderfyDistanceMultiplier: 1.6,
+    showCoverageOnHover:false, animate:false, chunkedLoading:true,
+    zoomToBoundsOnClick:false,          // handled below so the body zooms and the badge lists
+    iconCreateFunction: c => {
+      const ms = c.getAllChildMarkers(); const mw = ms.reduce((a,m)=>a+(m.options.mw||0),0);
+      const live = ms.reduce((a,m)=>a+(m.options.live?m.options.mw||0:0),0);
+      const size = Math.max(40, Math.min(70, 34 + Math.sqrt(mw||1)*1.4));
+      const pct = mw ? Math.round(live/mw*100) : 0;
+      return L.divIcon({className:"", iconSize:[size,size], html:`<div class="cl" style="width:${size}px;height:${size}px;
+        background:conic-gradient(${cssv('--c-site-t')} ${pct}%, ${cssv('--c-site')} ${pct}% 100%);">
+        <div style="background:var(--glass);border-radius:50%;width:${size-8}px;height:${size-8}px;display:flex;align-items:center;justify-content:center;flex-direction:column">
+        <span>${mw?kf(mw):ms.length}</span><span style="font-size:8.5px;font-weight:500;opacity:.8">${mw?"MW":"sites"}</span></div>
+        <span class="cl-n">${ms.length}</span><span class="cl-list" title="List all ${ms.length} sites with their sources">&#9776;</span></div>`});
+    }});
+  g.on("clustermouseover", e => {
+    const ms = e.propagatedFrom.getAllChildMarkers(); const mw = ms.reduce((a,m)=>a+(m.options.mw||0),0);
+    const live = ms.reduce((a,m)=>a+(m.options.live?m.options.mw||0:0),0);
+    const rows = ms.map(m=>SITE[m.options.sid]).filter(Boolean).sort((a,b)=>(b.it_load_mw||0)-(a.it_load_mw||0));
+    const list = rows.slice(0,8).map(s=>`<div class="tt-row"><span>${esc(s.operator||"Undisclosed operator")} · ${esc(s.name)}</span><span class="tt-k">${s.it_load_mw!=null?mwf(s.it_load_mw):"MW n/p"} · ${esc((s.status||"?").replace(/_/g," "))}</span></div>`).join("");
+    e.propagatedFrom.bindTooltip(`<b>Supply here: ${ms.length} sites · ${mwf(mw)}</b><div class="tt-sub">${mwf(live)} running</div>${list}${rows.length>8?`<div class="tt-sub">+${rows.length-8} more</div>`:""}<div class="tt-sub">Click to zoom in and split them &middot; click the &#9776; badge for the full list with sources</div>`,{direction:"top",offset:[0,-8],className:"tt-wide"}).openTooltip();
+  });
+  g.on("clusterclick", e => {
+    const cl = e.propagatedFrom;
+    const t = e.originalEvent && e.originalEvent.target;
+    const wantsList = t && t.closest && t.closest(".cl-list");
+    CLUSTER_ZOOM = cl;
+    if (!wantsList) {
+      // the expected gesture: zoom in until this group comes apart
+      const b = cl.getBounds();
+      if (b.getNorthEast().equals(b.getSouthWest())) { cl.spiderfy(); return; }
+      map.fitBounds(b, {padding:[70,70], maxZoom:15});
+      return;
+    }
+    const rows = cl.getAllChildMarkers().map(m => SITE[m.options.sid]).filter(Boolean)
+                   .sort((a,b) => (b.it_load_mw||0) - (a.it_load_mw||0));
+    openPopup(cl.getLatLng(), clusterPopup(rows));
+  });
+  SITES.forEach(s => {
+    if (s.lat == null) return;
+    const b = statusBucket(s.status);
+    if (S.siteStatus !== "all" && b !== S.siteStatus) return;
+    const approx = s.loc_precision !== "exact";
+    const m = L.circleMarker([s.lat,s.lng], {renderer:canvas, radius:siteRadius(s.it_load_mw, map.getZoom()),
+      color: cssv("--c-site-t"), weight: s.status==="live"?2:1.4, opacity: approx?.75:1, dashArray: approx?"3 3":null,
+      fillColor: cssv("--c-site"), fillOpacity: STATUS_FILL[s.status] ?? .12, mw:s.it_load_mw||0, live:s.status==="live", sid:s.site_id});
+    m.bindTooltip(`<b>Supply · ${esc(s.operator||"Undisclosed operator")}</b><div class="tt-sub">${esc(s.name)} · ${esc([s.city,s.country].filter(Boolean).join(", "))}</div>
+      <div class="tt-k">${s.it_load_mw!=null?mwf(s.it_load_mw):"MW not published"} · ${esc((s.status||"status unknown").replace(/_/g," "))}${approx?" · "+(s.loc_precision==="country"?"country-level pin":"city-level pin"):""}</div>${srcA(s,true)}`,{direction:"top",offset:[0,-6]});
+    m.on("click", () => openPopup([s.lat,s.lng], sitePopup(s)));
+    m.on("mouseover", () => { if (S.sel!=="site:"+s.site_id){ m.setStyle({weight:3}); m.setRadius(siteRadius(s.it_load_mw,map.getZoom())*1.2);} m.bringToFront(); });
+    m.on("mouseout",  () => { if (S.sel!=="site:"+s.site_id){ m.setStyle({weight:s.status==="live"?2:1.4}); m.setRadius(siteRadius(s.it_load_mw,map.getZoom()));} });
+    MK.sites[s.site_id] = m; g.addLayer(m);
+    if (S.on.labels && (s.it_load_mw||0) >= 300) LABELS.addLayer(L.marker([s.lat,s.lng],{interactive:false,icon:L.divIcon({className:"ctrylabel",iconSize:null,iconAnchor:[-10,8],
+      html:`<div style="white-space:nowrap">${esc(s.name)}</div>`})}));
+  });
+  return g;
+}
+let CLUSTER_ZOOM = null;
+function clusterPopup(rows){
+  const mw = rows.reduce((a,s) => a + (s.it_load_mw||0), 0);
+  const by = b => rows.filter(s => bucketOf(s.status) === b);
+  const sum = b => by(b).reduce((a,s) => a + (s.it_load_mw||0), 0);
+  const place = rows[0] ? [rows[0].city, rows[0].country].filter(Boolean).join(", ") : "";
+  const row = s => `<div class="prow2"><div class="pr-l">
+      <b>${esc(s.name)}</b><small>${esc(s.operator||"Undisclosed operator")}${s.city?" · "+esc(s.city):""} · ${esc((s.status||"status unknown").replace(/_/g," "))}</small>
+      <div class="pr-src">${srcA(s)||'<span class="dash">no source recorded</span>'}</div></div>
+      <div class="pr-v">${s.it_load_mw!=null?mwf(s.it_load_mw):'<span class="dash">not published</span>'}
+      <div><button class="lnk" data-sel="site:${esc(s.site_id)}">open</button></div></div></div>`;
+  return `<div class="pp"><div class="pp-kind" style="color:var(--c-site-t)">Supply · ${rows.length} sites here</div>
+    <h3>${esc(place || "This cluster")}</h3>
+    <div class="pp-sub">Every site in this cluster, biggest first. Each row links to the page it came from.${rows.some(s=>s.loc_scattered)?" Pins we know only to the city are spread out slightly so you can tell them apart.":""}</div>
+    <div class="pp-kpis"><div><b style="color:var(--c-site-t)">${mwf(mw)}</b><small>total IT load</small></div>
+      <div><b>${mwf(sum("live"))}</b><small>running now</small></div>
+      <div><b>${mwf(sum("building"))}</b><small>being built</small></div></div>
+    <div class="pp-h">All ${rows.length} sites</div>${rows.map(row).join("")}
+    <div class="pr-btns"><button class="btn primary" data-act="clzoom">Zoom in to separate them</button></div></div>`;
+}
+function sitePopup(s){
+  const at = DEALS.filter(d => d.site && s.name && d.site.toLowerCase()===s.name.toLowerCase());
+  return `<div class="pp"><div class="pp-kind" style="color:var(--c-site-t)">Supply · data centre</div>
+    <h3>${esc(s.name)}</h3><div class="pp-sub">${esc(s.operator||"Undisclosed operator")} · ${esc([s.city,s.country].filter(Boolean).join(", ")||"location not stated")}</div>
+    <div class="pp-tags"><span class="tag ${s.status==="live"?"good":""}">${esc((s.status||"status unknown").replace(/_/g," "))}</span>${s.loc_precision!=="exact"?`<span class="tag">${({country:"country-level pin",state:"region-level pin"})[s.loc_precision]||"city-level pin"}</span>`:""}${s.loc_scattered?`<span class="tag">nudged apart from ${s.loc_scattered-1} more</span>`:""}</div>
+    ${popRow("IT load", s.it_load_mw_raw&&String(s.it_load_mw_raw)!==String(s.it_load_mw)?"as reported: "+esc(s.it_load_mw_raw):"", s.it_load_mw!=null?mwf(s.it_load_mw):'<span class="dash">not published</span>')}
+    ${s.owner?popRow("Owner","",esc(s.owner)):""}${s.power_source?popRow("Power","",esc(s.power_source)):""}
+    ${(s.chips_installed||[]).length?popRow("Chips","",s.chips_installed.map(esc).join(", ")):""}
+    ${at.length?`<div class="pp-h">Deals at this site</div>${at.slice(0,4).map(d=>popRow(esc(whoName(d.from_id))+" → "+esc(whoName(d.to_id)), esc(d.headline), d.usd_value!=null?usd(d.usd_value):(d.mw?mwf(d.mw):""), d)).join("")}`:""}
+    ${s.loc_note?`<p class="hint" style="margin:8px 0 0">${esc(s.loc_note)}</p>`:""}
+    <div class="pp-src">${srcA(s)||'<span class="dash">no source recorded</span>'}</div>
+    ${popFoot("site:"+s.site_id, s)}</div>`;
+}
+/* One number per country, never three. The name is always neutral; the number always carries
+   the colour of what it measures -- teal for supply, amber for demand -- so the map has one
+   rule to learn. Labels are placed largest-first and any that would collide is dropped. */
+const cRun = c => (c.official_live_mw ?? c.live_mw) || 0;
+const cBld = c => c._mw != null ? c._mw : bld(c);
+const cDem = c => c.demand_near_mw || 0;
+const CMETRIC = {
+  all:      {label:"Everything",   col:"--c-site-t", get:c => cRun(c) + cBld(c) + cDem(c)},
+  building: {label:"Being built",  col:"--c-site-t", get:c => cBld(c)},
+  running:  {label:"Running now",  col:"--c-site-t", get:c => cRun(c)},
+  demand:   {label:"Demand",       col:"--c-dem-t",  get:c => cDem(c)}
+};
+/* In "Everything" mode a chip carries up to three figures. Colour still means one thing --
+   teal is supply, amber is demand -- and the running / being-built split is carried by the
+   word after the number, never by a second shade. */
+function chipValue(c){
+  if (S.ctryMetric !== "all")
+    return `<span class="cv" style="color:var(${CMETRIC[S.ctryMetric].col})">${mwf(CMETRIC[S.ctryMetric].get(c))}</span>`;
+  const bits = [];
+  if (cRun(c)) bits.push(`<span class="cv" style="color:var(--c-site-t)">${mwf(cRun(c))}<em>on</em></span>`);
+  if (cBld(c)) bits.push(`<span class="cv" style="color:var(--c-site-t)">${mwf(cBld(c))}<em>building</em></span>`);
+  if (cDem(c)) bits.push(`<span class="cv" style="color:var(--c-dem-t)">${mwf(cDem(c))}<em>demand</em></span>`);
+  return bits.join('<span class="cvsep">·</span>');
+}
+let CTRYLAB = null, REMAINDER = null;
+function rebuildCountryLabels(){
+  if (CTRYLAB) { map.removeLayer(CTRYLAB); CTRYLAB = null; }
+  if (!S.on.country) return;
+  const m = CMETRIC[S.ctryMetric] || CMETRIC.building;
+  const b = map.getBounds(), placed = [];
+  CTRYLAB = L.layerGroup();
+  const sz = map.getSize();
+  const blocked = (x, y) => (x < 580 && y < 240)                                  // search + chips
+      || (S.legendOpen && x < 360 && y > sz.y - 300)                              // the key
+      || (x > sz.x - 90);                                                          // map buttons
+  const extra = (REMAINDER && S.ctryMetric === "building") ? [REMAINDER] : [];
+  const rows = CTRY.concat(extra).filter(c => c.lat != null && b.contains([c.lat, c.lng]))
+                   .sort((x,y) => (y._pri||0) - (x._pri||0) || m.get(y) - m.get(x));
+  for (const c of rows) {
+    if (placed.length >= (S.ctryMetric === "all" ? 11 : 16)) break;
+    const v = m.get(c);
+    if (!v) continue;
+    const pt = map.latLngToContainerPoint([c.lat, c.lng]);
+    const y  = pt.y - (c._r || 14) - 14;                       // sit above the ring
+    const nv = S.ctryMetric === "all" ? [cRun(c), cBld(c), cDem(c)].filter(Boolean).length : 1;
+    const w  = c.country.length * 6.6 + 20 + nv * 62;           // estimated chip width
+    if (blocked(pt.x, y)) continue;
+    if (placed.some(q => Math.abs(q.x - pt.x) < (q.w + w)/2 + 4 && Math.abs(q.y - y) < 22)) continue;
+    placed.push({x:pt.x, y, w});
+    const val = chipValue(c);
+    const mk = L.marker([c.lat, c.lng], {pane:"markerPane", interactive:true, icon:L.divIcon({
+      className:"", iconSize:null, iconAnchor:[0,0],
+      html:`<span class="ctrychip" style="margin-top:${-(c._r||14)-14}px;display:inline-flex"><span class="cn">${esc(c.country)}</span>${val}</span>`})});
+    mk.bindTooltip(c._hover || countryHover(c), {direction:"top", offset:[0,-((c._r||14)+26)], className:"tt-wide"});
+    if (!c._hover) mk.on("click", () => openPopup([c.lat, c.lng], countryPopup(c)));
+    else mk.on("click", () => { $("sec-live").open = true; if (!S.panelOpen) togglePanel(true); });
+    CTRYLAB.addLayer(mk);
+  }
+  CTRYLAB.addTo(map);
+}
+function buildCountry(){
+  const g = L.layerGroup();
+  const tot = c => (c.official_live_mw||c.live_mw||0) + bld(c) + c.planned_mw + (c.demand_near_mw||0);
+  const max = Math.max(...CTRY.map(tot), 1);
+  CTRY.forEach(c => {
+    if (c.lat == null || !tot(c) && !c.site_count && !c.companies.length) return;
+    const r = (12 + Math.sqrt(tot(c)/max) * 46) * S.scale;
+    const live = c.official_live_mw ?? c.live_mw;
+    // The ring itself answers the hover. Previously only the text label did, so every country
+    // whose label lost the collision test -- and every country with no figure to print -- was
+    // silently dead to the pointer.
+    const ring = L.circleMarker([c.lat,c.lng], {pane:"country", radius:r, color:cssv("--c-ctry"), weight:1.2, opacity:.7, dashArray:"2 4",
+      fillColor:cssv("--c-ctry"), fillOpacity:.12, interactive:true});
+    ring.bindTooltip(() => countryHover(c), {sticky:true, className:"tt-wide"});
+    ring.on("click", () => openPopup([c.lat,c.lng], countryPopup(c)));
+    ring.on("mouseover", () => ring.setStyle({weight:2, opacity:1, fillOpacity:.2}));
+    ring.on("mouseout",  () => ring.setStyle({weight:1.2, opacity:.7, fillOpacity:.12}));
+    g.addLayer(ring);
+    c._r = r;
+  });
+  if (APAC_TOTAL && APAC_TOTAL.under_construction_mw) {
+    const attributed = CAP.filter(c => c.country !== "APAC total" && c.under_construction_mw != null).reduce((a,c)=>a+c.under_construction_mw, 0);
+    const rest = Math.round(APAC_TOTAL.under_construction_mw - attributed);
+    if (rest > 0) {
+      const r = (12 + Math.sqrt(rest/max) * 46) * S.scale, at = [12.0, 132.0];
+      const rring = L.circleMarker(at, {pane:"country", radius:r, color:cssv("--c-site-t"), weight:1.4, opacity:.8, dashArray:"4 4", fillColor:cssv("--c-site"), fillOpacity:.10, interactive:true});
+      rring.bindTooltip(`<b>${mwf(APAC_TOTAL.under_construction_mw)} being built across Asia-Pacific</b><div class="tt-sub">${esc(host(APAC_TOTAL.uc_source||""))} · includes mainland China</div><div class="tt-k">${mwf(rest)} of it is not split by country</div><div class="tt-sub">click for the full table</div>`,{sticky:true,className:"tt-wide"});
+      rring.on("click", () => { $("sec-live").open = true; if (!S.panelOpen) togglePanel(true); });
+      g.addLayer(rring);
+      REMAINDER = {country:"Rest of APAC", lat:at[0], lng:at[1], _r:r, _mw:rest, _pri:1, _hover:
+        `<b>${mwf(APAC_TOTAL.under_construction_mw)} being built across Asia-Pacific</b><div class="tt-sub">${esc(host(APAC_TOTAL.uc_source||""))} · includes mainland China</div>
+         <div class="tt-k">${mwf(attributed)} of it is broken down by country</div><div class="tt-k">${mwf(rest)} is not: mainland China plus sub-markets with no published split</div>`};
+      const lab = L.marker(at,{pane:"markerPane",interactive:false,icon:L.divIcon({className:"",iconSize:null,iconAnchor:[0,0],html:""})});
+      lab.bindTooltip(`<b>${mwf(APAC_TOTAL.under_construction_mw)} being built across Asia-Pacific</b><div class="tt-sub">${esc(host(APAC_TOTAL.uc_source||""))} · includes mainland China</div>
+        <div class="tt-k">${mwf(attributed)} of it is broken down by country (the labels on the map)</div><div class="tt-k">${mwf(rest)} is not: mainland China plus sub-markets with no published split</div><div class="tt-sub">click for the full table</div>`,{direction:"top",offset:[0,-r],className:"tt-wide"});
+      lab.on("click", () => { $("sec-live").open = true; document.querySelector(".pbody").scrollTop = $("sec-live").offsetTop - 60; if (!S.panelOpen) togglePanel(true); });
+      g.addLayer(lab);
+    }
+  }
+  return g;
+}
+function countryHover(c){
+  const sites = c.sites.map(id=>SITE[id]).filter(Boolean).sort((a,b)=>(b.it_load_mw||0)-(a.it_load_mw||0)).slice(0,6);
+  const dem = c.demand_deals.map(id=>DEAL[id]).filter(Boolean).sort((a,b)=>(b.mw||0)-(a.mw||0)).slice(0,5);
+  return `<b>${esc(c.country)}</b><div class="tt-sub">${mwf(c.official_live_mw??c.live_mw)} running · ${mwf(bld(c))} being built · ${mwf(c.demand_near_mw)} demand by 2028</div>
+    <div class="tt-h">Supply · top sites</div>${sites.length?sites.map(s=>`<div class="tt-row"><span>${esc(s.operator||"Undisclosed")} · ${esc(s.name)}</span><span class="tt-k">${s.it_load_mw!=null?mwf(s.it_load_mw):"n/p"}</span></div>`).join(""):'<div class="tt-sub">none found</div>'}
+    <div class="tt-h">Demand · who needs compute here</div>${dem.length?dem.map(d=>`<div class="tt-row"><span>${esc(whoName(d.to_id))}</span><span class="tt-k">${d.mw?mwf(d.mw):(d.usd_value?usd(d.usd_value):esc(String(d.quantity_raw||"").slice(0,16)))}</span></div>`).join(""):'<div class="tt-sub">nobody has stated a need here</div>'}
+    <div class="tt-sub">click for the full lists with sources</div>`;
+}
+function countryPopup(c){
+  const sitesHere = c.sites.map(id=>SITE[id]).filter(Boolean).sort((a,b)=>(b.it_load_mw||0)-(a.it_load_mw||0));
+  const grp = b => sitesHere.filter(s=>bucketOf(s.status)===b);
+  const dem = c.demand_deals.map(id=>DEAL[id]).filter(Boolean).sort((a,b)=>(b.mw||0)-(a.mw||0));
+  const sup = c.supply_deals.map(id=>DEAL[id]).filter(Boolean).sort((a,b)=>(b.usd_value||b.mw||0)-(a.usd_value||a.mw||0));
+  const sRow = s => popRow(esc(s.operator||"Undisclosed operator")+" · "+esc(s.name), esc((s.status||"").replace(/_/g," "))+(s.loc_precision!=="exact"?" · "+(s.loc_precision==="country"?"country-level":"city-level"):""), s.it_load_mw!=null?mwf(s.it_load_mw):"MW n/p", s);
+  const dRow = d => popRow(esc(whoName(d.to_id)), esc(d.need_plain||d.headline)+(d.by_when?" · by "+esc(d.by_when):""), d.mw?mwf(d.mw):(d.usd_value!=null?usd(d.usd_value):esc(String(d.quantity_raw||"").slice(0,18))), d);
+  const cRow = d => popRow(esc(whoName(d.from_id))+" → "+esc(whoName(d.to_id)), esc(d.headline), d.usd_value!=null?usd(d.usd_value):(d.mw?mwf(d.mw):""), d);
+  return `<div class="pp"><div class="pp-kind">Country</div><h3>${esc(c.country)}</h3>
+    <div class="pp-kpis"><div><b style="color:var(--good)">${kf(c.official_live_mw??c.live_mw)}</b><small>MW running</small></div><div><b style="color:var(--c-site-t)">${kf(bld(c))}</b><small>MW being built</small></div><div><b style="color:var(--c-dem-t)">${kf(c.demand_near_mw)}</b><small>MW demand by 2028</small></div></div>
+    ${c.official_uc_mw!=null?`<div class="pp-none">Being built is the market figure (${srcA({source_urls:[(CAPROW[c.country]||{}).uc_source||""]})||"source on file"}). The named sites below add up to ${mwf(c.building_mw)}; the rest is not named site by site in any public source.</div>`:""}
+    <div class="pp-h">Supply being built · ${grp("building").length}</div>${grp("building").slice(0,6).map(sRow).join("")||'<div class="pp-none">nothing under construction found</div>'}
+    <div class="pp-h">Demand · who needs compute here · ${dem.length}</div>${dem.slice(0,6).map(dRow).join("")||'<div class="pp-none">nobody has stated a need here</div>'}
+    <div class="pp-h">Supply → demand contracts · ${sup.length}</div>${sup.slice(0,5).map(cRow).join("")||'<div class="pp-none">none found</div>'}
+    <div class="pp-h">Supply running · ${grp("live").length}</div>${grp("live").slice(0,5).map(sRow).join("")||'<div class="pp-none">none verified</div>'}
+    ${c.official_source?`<div class="pp-src">Official total: ${srcA({source_urls:[c.official_source]})}</div>`:""}
+    ${popFoot("country:"+c.country)}</div>`;
+}
+function buildDemand(){
+  const g = L.layerGroup();
+  const max = Math.max(...DEMAND.map(x=>x.size_mw||0), 1);
+  DEMAND.forEach(x => {
+    if (!x.loc || !demandVisible(x)) return;
+    const r = (7 + Math.sqrt((x.size_mw||1)/max) * 26) * S.scale;
+    const gap = DATA.demand_gaps.find(gp=>gp.entity_id===x.entity_id);
+    const m = L.circleMarker(x.loc, {pane:"demand", radius:r, color:cssv("--c-dem-t"), weight:gap?2.5:1.5, fillColor:cssv("--c-dem"), fillOpacity:gap?.5:.3});
+    const l = x.latest;
+    m.bindTooltip(`<b>Demand · ${esc(x.name)}</b><div class="tt-sub">${esc((l&&(l.need_plain||l.headline))||"")}</div>
+      <div class="tt-k">${x.stated_mw?mwf(x.stated_mw)+" stated":""}${x.contracted_mw?" · "+mwf(x.contracted_mw)+" signed":""}${gap?" · "+mwf(gap.gap_mw)+" still open":""}</div>${l?srcA(l,true):""}<div class="tt-sub">click for every need with its source</div>`,{direction:"top",offset:[0,-r],className:"tt-wide"});
+    m.on("click", () => openPopup(x.loc, demandPopup(x)));
+    MK.demand[x.entity_id] = m; g.addLayer(m);
+  });
+  return g;
+}
+const amt = d => d.mw ? mwf(d.mw) : d.usd_value!=null ? usd(d.usd_value) : d.quantity_raw ? esc(String(d.quantity_raw).slice(0,22)) : "amount not stated";
+const short = (s, n) => { s = String(s||""); if (s.length <= n) return s; const cut = s.slice(0, n); return cut.slice(0, cut.lastIndexOf(" ")) + "…"; };
+const WHO = {lab:"AI lab", cloud:"Big cloud", gov:"Government / public", ent:"Enterprise"};
+function needRow(d, who){
+  const st = dStatus(d); const tag = DSTAT[st] ? `<span class="tag ${st==="running"?"good":st==="stated"?"dem":""}">${esc(DSTAT[st])}</span>` : "";
+  const sub = [d.purpose&&d.purpose!=="unknown"?"for "+esc(d.purpose):"", d.by_when?"by "+esc(d.by_when):"", who?"from "+esc(who):""].filter(Boolean).join(" · ");
+  return `<div class="prow2"><div class="pr-l"><b>${amt(d)}</b> <span class="pr-what">${esc(short(d.need_plain||d.headline, 110))}</span><small>${tag} ${sub}</small><div class="pr-src">${srcA(d)}</div></div></div>`;
+}
+function demandPopup(x){
+  const e = ENT[x.entity_id]||{};
+  const stated = x.stated_mw ? mwf(x.stated_mw) : x.stated_usd ? usd(x.stated_usd) : (x.needs.length ? "no number" : "—");
+  const signed = x.contracted_mw ? mwf(x.contracted_mw) : x.contracted_usd ? usd(x.contracted_usd) : "none";
+  const open = x.gap ? mwf(x.gap) : (x.needs.length && !x.contracts.length) ? "all of it" : "none we can see";
+  return `<div class="pp"><div class="pp-kind" style="color:var(--c-dem-t)">Demand · ${esc(WHO[x.who]||"company")}</div><h3>${esc(x.name)}</h3>
+    <div class="pp-sub">${esc([e.hq_city,e.hq_country].filter(Boolean).join(", ")||"")}${e.hq_precision==="deal-country"?" · placed where its deals are":""}</div>
+    <div class="pp-kpis"><div><b style="color:var(--c-dem-t)">${stated}</b><small>demand stated</small></div><div><b>${signed}</b><small>signed so far</small></div><div><b style="color:${x.gap?"var(--c-dem-t)":"var(--t3)"}">${open}</b><small>still open</small></div></div>
+    <div class="pp-h">Demand stated in public · ${x.needs.length}</div>${x.needs.slice(0,6).map(d=>needRow(d)).join("")||'<div class="pp-none">no public statement, only contracts</div>'}
+    <div class="pp-h">Contracts signed · ${x.contracts.length}</div>${x.contracts.slice(0,5).map(d=>needRow(d, whoName(d.from_id))).join("")||'<div class="pp-none">no contract found</div>'}
+    ${popFoot("ent:"+x.entity_id, x.latest)}</div>`;
+}
+function arcWeight(d){ return d.usd_value ? d.usd_value : (d.mw||0) * 1e7; }
+function buildArcs(list, key, colVar, dashed, bend){
+  const g = L.layerGroup();
+  const vals = list.map(d=>d.usd_value||0).filter(Boolean); const max = Math.max(...vals, 1);
+  list.forEach(d => {
+    if (!d.ends) return;
+    const w = 1.2 + (d.usd_value ? Math.sqrt(d.usd_value/max)*4.5 : 0);
+    const line = L.polyline(arcPts(d.ends[0], d.ends[1], bend), {pane:"arcs", renderer:arcSvg, color:cssv(colVar), weight:w, opacity:.62, dashArray:dashed?"5 5":null});
+    line.bindTooltip(`<b>${esc(ename(d.from_id))} → ${esc(ename(d.to_id))}</b><div class="tt-sub">${esc(d.headline)}</div>
+      <div class="tt-k">${esc(DT[d.deal_type])}${d.usd_value?" · "+usd(d.usd_value):""}${d.quantity_raw?" · "+esc(d.quantity_raw).slice(0,60):""}</div>${srcA(d,true)}`,{sticky:true});
+    line.on("click", () => select("deal:"+d.deal_id));
+    line.on("mouseover", () => line.setStyle({opacity:1, weight:w+1.5}));
+    line.on("mouseout",  () => { if (S.sel!=="deal:"+d.deal_id) line.setStyle({opacity:.62, weight:w}); });
+    // small dot at the receiving end so direction is visible without arrowheads
+    const dot = L.circleMarker(d.ends[1], {pane:"arcs", renderer:arcSvg, radius:3, color:cssv(colVar), weight:1, fillColor:cssv(colVar), fillOpacity:1, interactive:false});
+    MK[key][d.deal_id] = line; g.addLayer(line); g.addLayer(dot);
+  });
+  return g;
+}
+let ARCLAB = null;
+function rebuildArcLabels(){
+  if (ARCLAB) { map.removeLayer(ARCLAB); ARCLAB = null; }
+  if (!S.on.contracts || !S.on.arclabels) return;
+  const b = map.getBounds();
+  const cand = CONTRACTS.filter(conVisible).map(d => ({d, p: arcPts(d.ends[0], d.ends[1], .18)[14]}))
+    .filter(o => b.contains(o.p)).sort((x,y) => arcWeight(y.d) - arcWeight(x.d));
+  const placed = []; ARCLAB = L.layerGroup();
+  for (const o of cand) {
+    if (placed.length >= 10) break;
+    const pt = map.latLngToContainerPoint(o.p);
+    if (placed.some(q => Math.abs(q.x-pt.x) < 150 && Math.abs(q.y-pt.y) < 28)) continue;
+    placed.push(pt);
+    const d = o.d;
+    const money = d.mw ? mwf(d.mw) : d.usd_value ? usd(d.usd_value) : (d.quantity_raw ? short(String(d.quantity_raw),20) : "");
+    ARCLAB.addLayer(L.marker(o.p, {pane:"arcs", interactive:false, icon:L.divIcon({className:"", iconSize:null, iconAnchor:[0,0],
+      html:`<span class="arclab"><b>${esc(short(ename(d.from_id),18))} &rarr; ${esc(short(ename(d.to_id),18))}</b>${money?`<i>${esc(money)}</i>`:""}</span>`})}));
+  }
+  ARCLAB.addTo(map);
+}
+function buildOffload(){
+  const g = L.layerGroup();
+  OFFLOADS.forEach(d => {
+    if (!d.loc) return;
+    const m = L.circleMarker(d.loc, {pane:"demand", radius:9, color:cssv("--c-off-t"), weight:2.5, fillColor:cssv("--c-off"), fillOpacity:.35, dashArray:"2 3"});
+    m.bindTooltip(`<b>Supply for sale · ${esc(whoName(d.from_id))}</b><div class="tt-sub">${esc(d.headline)}</div><div class="tt-k">${d.usd_value?usd(d.usd_value):""}${d.mw?" · "+mwf(d.mw):""}</div>${srcA(d,true)}`,{direction:"top",offset:[0,-9],className:"tt-wide"});
+    m.on("click", () => select("deal:"+d.deal_id));
+    MK.offload[d.deal_id] = m; g.addLayer(m);
+  });
+  return g;
+}
+const AZ_REGION = {southeastasia:["Singapore",1.29,103.85], eastasia:["Hong Kong",22.32,114.17], japaneast:["Tokyo",35.68,139.69],
+  koreacentral:["Seoul",37.57,126.98], centralindia:["Pune",18.52,73.86], australiaeast:["Sydney",-33.87,151.21]};
+function buildPrices(){
+  const g = L.layerGroup();
+  const ref = (PRICES.azure_apac_regional||[]).find(r => /H100|H200/.test(r.sku)) || (PRICES.azure_apac_regional||[])[0];
+  if (!ref) return g;
+  const vals = Object.values(ref.regions); const lo = Math.min(...vals), hi = Math.max(...vals);
+  Object.entries(ref.regions).forEach(([reg, price]) => {
+    const R = AZ_REGION[reg]; if (!R) return;
+    const t = hi > lo ? (price-lo)/(hi-lo) : 0;
+    const m = L.circleMarker([R[1],R[2]], {pane:"demand", radius:10+t*16, color:cssv("--c-px-t"), weight:2, fillColor:cssv("--c-px"), fillOpacity:.25+t*.4});
+    m.bindTooltip(`<b>${esc(R[0])}</b><div class="tt-k">$${price.toFixed(2)}/hr · ${esc(ref.sku)}</div><div class="tt-sub">${((price/lo-1)*100).toFixed(0)}% above the cheapest Asian region</div>`,{direction:"top",offset:[0,-12]});
+    g.addLayer(m);
+    g.addLayer(L.marker([R[1],R[2]],{pane:"demand",interactive:false,icon:L.divIcon({className:"",iconSize:null,iconAnchor:[-(12+t*16),9],
+      html:`<span class="pxlabel"><b>$${price.toFixed(0)}</b>/hr ${esc(R[0])}</span>`})}));
+  });
+  return g;
+}
+function rebuild(id){
+  if (G[id]) { map.removeLayer(G[id]); delete G[id]; }
+  if (!S.on[id]) {
+    if (id === "contracts") rebuildArcLabels();
+    if (id === "country") { rebuildCountryLabels(); syncBaseLabels(); }
+    return;
+  }
+  Object.keys(MK[id]||{}).forEach(k => delete MK[id][k]);
+  G[id] = id==="sites" ? buildSites() : id==="country" ? buildCountry() : id==="demand" ? buildDemand()
+        : id==="contracts" ? buildArcs(CONTRACTS.filter(conVisible),"contracts","--c-con",false,.18)
+        : id==="capital"   ? buildArcs(CAPITAL,"capital","--c-cap",true,-.18)
+        : id==="offload"   ? buildOffload() : id==="prices" ? buildPrices() : null;
+  if (G[id]) G[id].addTo(map);
+  if (id==="contracts") rebuildArcLabels();
+  if (id==="country") { rebuildCountryLabels(); syncBaseLabels(); }
+}
+function rebuildAll(){ LAYERS.forEach(l => { if (l.id !== "labels") rebuild(l.id); }); }
+
+/* ============ panel: market KPIs ============ */
+function visibleSites(){ return SITES.filter(s => s.lat != null && (S.siteStatus==="all" || statusBucket(s.status)===S.siteStatus)); }
+const REG = new Set((DATA.regional_deals||[]).map(x => typeof x === "string" ? x : x.deal_id));
+const inScope = d => S.scope === "world" || (d.map_countries||[]).some(c => APAC.has(c));
+const NEEDS = DEALS.filter(d => d.deal_type === "D7" && !REG.has(d.deal_id));
+const DEMBY = {}; DEMAND.forEach(x => DEMBY[x.entity_id] = x);
+const HORIZON = new Date().getFullYear() + 5;
+function marketNumbers(){
+  const apac = S.scope !== "world";
+  const needs = NEEDS.filter(inScope);
+  const mw = rows => rows.reduce((a,d) => a + (d.mw||0), 0);
+  const ourSites = b => SITES.filter(s => bucketOf(s.status) === b && (!apac || APAC.has(s.country)))
+                            .reduce((a,s) => a + (s.it_load_mw||0), 0);
+  const building = apac && APAC_TOTAL && APAC_TOTAL.under_construction_mw ? APAC_TOTAL.under_construction_mw : ourSites("building");
+  const running  = apac && APAC_TOTAL && APAC_TOTAL.live_mw ? APAC_TOTAL.live_mw : ourSites("live");
+  const forSale  = OFFLOADS.filter(inScope);
+  const gaps     = GAPS.filter(g => { const x = DEMBY[g.entity_id]; return x && (S.scope === "world" || (x.needs||[]).some(inScope)); });
+  const pending  = CONTRACTS.filter(d => ["announced","signed","in_progress"].includes(d.status) && inScope(d));
+  const soon     = needs.filter(d => { const y = YEAR(d.by_when); return y && y <= HORIZON; });
+  const nodate   = needs.filter(d => !YEAR(d.by_when));
+  return {apac, building, running, forSale, gaps, pending, soon, nodate,
+    forSaleMw: mw(forSale), forSaleUsd: forSale.reduce((a,d)=>a+(d.usd_value||0),0),
+    gapMw: gaps.reduce((a,g)=>a+(g.gap_mw||0),0), pendingMw: mw(pending), soonMw: mw(soon), nodateMw: mw(nodate)};
+}
+function renderMarket(){
+  const n = marketNumbers(), where = n.apac ? "Asia-Pacific" : "worldwide";
+  const tile = (cls, val, label, sub) =>
+    `<div class="kpi ${cls}"><div class="v">${val}</div><div class="l">${label}</div>${sub?`<div class="s">${sub}</div>`:""}</div>`;
+  const none = t => `<span style="font-size:14px;font-weight:600">${t}</span>`;
+  $("market").innerHTML = `
+    <div style="display:flex;align-items:center;justify-content:space-between;margin:0 0 9px">
+      <span style="font-size:11px;color:var(--t3)">Everything below is ${where}</span>
+      <span class="scope" role="group" aria-label="Which market">
+        <button data-scope="apac" aria-pressed="${n.apac}">Asia</button>
+        <button data-scope="world" aria-pressed="${!n.apac}">World</button></span>
+    </div>
+    <div class="kpis">
+      ${tile("build", kf(n.building), "MW supply being built", n.apac ? "market figure, C&amp;W" : `${nf(SITES.filter(s=>bucketOf(s.status)==="building").length)} sites`)}
+      ${n.forSaleMw
+        ? tile("", kf(n.forSaleMw), "MW supply looking for a buyer",
+            `${nf(n.forSale.length)} offers${n.forSaleUsd?" · "+usd(n.forSaleUsd):""}`)
+        : n.forSale.length
+          ? tile("", nf(n.forSale.length), "reports of supply looking for a buyer",
+              "none of them publishes a megawatt figure")
+          : tile("dim", none("none found"), "supply looking for a buyer", "nothing found in this market yet")}
+      ${tile("dem", kf(n.gapMw), "MW demand waiting for supply", `${nf(n.gaps.length)} companies, no contract found`)}
+    </div>
+    <div class="kpis" style="margin-top:8px">
+      ${tile("dem", kf(n.pendingMw), "MW signed but not delivered", `${nf(n.pending.length)} contracts awarded`)}
+      ${tile("dem", kf(n.soonMw), `MW demand due by ${HORIZON}`, `${nf(n.soon.length)} needs carrying a date`)}
+      ${tile("dem", kf(n.nodateMw), "MW demand with no date yet", `${nf(n.nodate.length)} needs stated without a deadline`)}
+    </div>
+    <div class="mstrip">
+      <span>we have dated <b>${nf(n.soon.length)}</b> of <b>${nf(n.soon.length + n.nodate.length)}</b> stated needs</span>
+      <span>supply running <b>${kf(n.running)}</b> MW, already sold</span>
+      ${(()=>{ const h=(PRICES.by_gpu||[]).find(r=>r.gpu==="H100"); return h?`<span>same H100, cheapest to dearest <b>${h.spread}×</b></span>`:""; })()}
+    </div>`;
+  $("sum-market").textContent = `${nf(visibleSites().length)} sites on map`;
+}
+
+/* ============ panel: layers ============ */
+function counts(){
+  return {sites: visibleSites().length, country: CTRY.length,
+    demand: DEMAND.filter(g=>g.loc&&demandVisible(g)).length, contracts: CONTRACTS.filter(conVisible).length,
+    capital: CAPITAL.filter(d=>d.ends).length, offload: OFFLOADS.filter(d=>d.loc).length,
+    prices: (PRICES.azure_apac_regional||[]).length?6:0};
+}
+const fsel = (f, label, opts, cur, n) => `<div class="frow"><span class="fl">${label}</span>
+  <select data-f="${f}" aria-label="${label}">${opts.map(([k,t])=>`<option value="${k}"${cur===k?" selected":""}>${t}</option>`).join("")}</select>
+  <span class="fn">${n==null?"":nf(n)}</span></div>`;
+const fchk = (id, on, label) => `<div class="frow"><label style="display:flex;align-items:center;gap:7px;cursor:pointer;font-size:11.5px;color:var(--t3)">
+  <input type="checkbox" id="${id}"${on?" checked":""} style="accent-color:var(--acc)"><span>${label}</span></label></div>`;
+function renderLayers(){
+  const c = counts();
+  $("layers").innerHTML = LAYERS.map(l => `
+    <div class="lrow${S.on[l.id]?"":" off"}${S.on[l.id]&&["sites","demand","contracts"].includes(l.id)?" hasf":""}" data-lrow="${l.id}">
+      ${l.col?`<span class="sw" style="background:var(${l.col})"></span>`:`<span class="sw" style="background:none;border:1px solid var(--bd2)"></span>`}
+      <span class="lname" title="${esc(l.desc)}">${esc(l.name)}</span>
+      <span class="ln">${nf(c[l.id])}</span>
+      <button class="eye" data-layer="${l.id}" aria-pressed="${S.on[l.id]}" aria-label="Toggle ${esc(l.name)}">
+        <svg class="ic"><use href="${S.on[l.id]?"#i-eye":"#i-eyeoff"}"/></svg></button>
+    </div>
+    ${!S.on[l.id]||!["country","sites","demand","contracts"].includes(l.id)?"":`<div class="fgrp" style="border-left-color:var(${l.col})">`+(
+      l.id==="country"?fsel("cmetric","Show",[["all","All — supply and demand"],["building","Being built"],["running","Running now"],["demand","Demand by 2028"]],S.ctryMetric,c.country)
+    : l.id==="sites"?fsel("status","Show",[["all","All sites"],["live","Running now"],["building","Being built"],["planned","Only announced"]],S.siteStatus,c.sites)
+        +fchk("siteNames",S.on.labels,"Name the biggest sites")
+    : l.id==="demand"?fsel("dstatus","Show",[["all","All demand"],["open","Not signed yet"],["signed","Signed, waiting for delivery"],["running","Contract running"],["plan","Long-range plans (after 2028)"]],S.demStatus,c.demand)
+        +fsel("dwho","Who",[["all","Everyone"],["lab","AI labs"],["cloud","Big clouds"],["gov","Governments"],["ent","Enterprises"]],S.demWho)
+    : l.id==="contracts"?fsel("cstatus","Show",[["all","All contracts"],["pending","Signed, not delivered"],["running","Delivered, running"],["changed","Cut back or cancelled"]],S.conStatus,c.contracts)
+        +fchk("arcNames",S.on.arclabels,"Name the 10 biggest deals")
+    : "")+`</div>`}`).join("");
+  $("sum-layers").textContent = LAYERS.filter(l=>S.on[l.id]).length + " on";
+  const sn = $("siteNames"); if (sn) sn.addEventListener("change", e => { S.on.labels = e.target.checked; rebuild("sites"); });
+  const an = $("arcNames"); if (an) an.addEventListener("change", e => { S.on.arclabels = e.target.checked; rebuild("contracts"); });
+  renderChips();
+}
+function renderChips(){
+  $("chips").innerHTML = LAYERS.filter(l => ["sites","demand","contracts","capital","offload","prices"].includes(l.id)).map(l =>
+    `<button class="chipb glass" data-chip="${l.id}" aria-pressed="${S.on[l.id]}"><span class="sw" style="background:var(${l.col})"></span>${esc(l.name)}</button>`).join("");
+}
+
+/* ============ panel: match board ============ */
+function renderMatch(){
+  $("match").innerHTML = `<p class="hint" style="margin:0 0 6px">The same companies as the <b style="color:var(--c-dem-t)">Demand</b> layer, ranked by how much they still need. Click a name to find it on the map.</p>` +
+    GAPS.map(g => { const x = DEM[g.entity_id]; const l = x && x.latest; return `<div class="gap" data-sel="ent:${esc(g.entity_id)}">
+      <span class="sw" style="background:var(--c-dem)"></span>
+      <span class="gn">${esc(g.name)}<small>${esc((l&&l.need_plain)||("stated "+kf(g.stated_h100e)+" H100e · signed "+kf(g.contracted_h100e)))}</small>${l?`<small>${srcA(l)}</small>`:""}</span>
+      ${g.loc?"":'<span class="noloc" title="No location found, so it is not drawn">no pin</span>'}
+      <span class="gv">${mwf(g.gap_mw)}</span></div>`; }).join("") +
+    `<div class="subh">Every company with demand · ${DEMAND.filter(demandVisible).length}${S.demStatus!=="all"||S.demWho!=="all"?" (filtered)":""}</div>` +
+    DEMAND.filter(demandVisible).map(x => `<div class="gap" data-sel="ent:${esc(x.entity_id)}"><span class="sw" style="background:var(--c-dem);opacity:.6"></span>
+      <span class="gn">${esc(x.name)}<small>${esc((x.latest&&(x.latest.need_plain||x.latest.headline))||"")}</small>${x.latest?`<small>${srcA(x.latest)}</small>`:""}</span>
+      <span class="gv" style="color:var(--t2)">${x.size_mw?mwf(x.size_mw):(x.stated_usd?usd(x.stated_usd):"")}</span></div>`).join("");
+  $("sum-match").textContent = nf(GAPS.length) + " open · " + nf(DEMAND.length) + " total";
+}
+/* ============ panel: circles ============ */
+function renderCircles(){
+  $("circles").innerHTML = `<p class="hint" style="margin:0 0 6px">Money that leaves a company and comes back through someone else. Click one to draw it.</p>` +
+    DATA.circular_loops.map((l,i) => { const ids=[l.a,l.b,l.c].filter(Boolean);
+      return `<div class="loop" data-loop="${i}">${ids.map(ename).map(esc).join(' <span class="arr">→</span> ')} <span class="arr">→</span> ${esc(ename(ids[0]))}</div>`; }).join("");
+  $("sum-circles").textContent = nf(DATA.circular_loops.length);
+}
+/* ============ panel: prices ============ */
+function renderPrices(){
+  const rows = (PRICES.by_gpu||[]).filter(r=>r.n>=3).slice(0,9); const max = Math.max(...rows.map(r=>r.max),1);
+  $("prices").innerHTML = `<p class="hint" style="margin:0 0 8px">Cheapest to dearest price per hour for the same chip, from different sellers, on ${esc((PRICES.captured_at_utc||"").slice(0,10))}. The bar is the range; the dot on it is the <b>median</b> — the middle offer, listed as “mid”.</p>` +
+    rows.map(r=>`<div class="prow"><div class="pg">${esc(r.gpu)}<small>${r.n} offers · ${r.spread}×</small></div>
+      <div class="track"><div class="rng" style="left:${r.min/max*100}%;width:${Math.max((r.max-r.min)/max*100,1)}%"></div>
+      <div class="med" style="left:calc(${r.median/max*100}% - 4px)" title="Median (the middle offer): $${r.median.toFixed(2)}/hr"></div></div>
+      <div class="pv">$${r.min.toFixed(2)}–${r.max.toFixed(2)}<small>mid $${r.median.toFixed(2)}</small></div></div>`).join("") +
+    `<p class="hint">Turn on <b>Price by city</b> to see one Azure machine priced in six Asian cities.</p>`;
+  const h = rows.find(r=>r.gpu==="H100"); $("sum-prices").textContent = h ? `H100 ${h.spread}×` : "";
+}
+/* ============ panel: live vs planned ============ */
+function renderLive(){
+  const rows = CAP.filter(c => c.country !== "APAC total").slice().sort((a,b)=>(b.live_mw||0)-(a.live_mw||0));
+  const tot = rows.reduce((a,c)=>a+(c.live_mw||0),0), uc = rows.reduce((a,c)=>a+(c.under_construction_mw||0),0), pl = rows.reduce((a,c)=>a+(c.planned_mw||0),0);
+  const region = APAC_TOTAL ? APAC_TOTAL.under_construction_mw : null; const rest = region ? Math.round(region - uc) : null;
+  const ours = SITES.filter(s => APAC.has(s.country) && bucketOf(s.status)==="building").reduce((a,s)=>a+(s.it_load_mw||0),0);
+  $("live").innerHTML = `
+    <div class="kpis"><div class="kpi live"><div class="v">${kf(tot)}</div><div class="l">MW running now</div></div>
+      <div class="kpi build"><div class="v">${region?kf(region):kf(uc)}</div><div class="l">MW being built${region?" (region total)":""}</div></div>
+      <div class="kpi"><div class="v">${kf(pl)}</div><div class="l">MW announced only</div></div></div>
+    <p class="hint">The "5 GW" people quote for Asia is the <b>being built</b> figure: ${region?mwf(region):"about 4.8 GW"} under construction across Asia-Pacific
+    (Cushman &amp; Wakefield, H1 2026). It includes mainland China. ${region?`${mwf(uc)} of it is broken down by country below; ${mwf(rest)} is not (mainland China plus a few sub-markets with no published split), drawn as the dashed circle in the South China Sea.`:""}
+    Our own research has found ${mwf(ours)} of it as named sites, the teal circles.</p>
+    <table class="ct"><thead><tr><th>Country</th><th style="text-align:right">Running</th><th style="text-align:right">Being built</th><th style="text-align:right">Announced</th><th>Sure?</th></tr></thead><tbody>
+    ${rows.map(c=>`<tr><td class="n">${esc(c.country)}</td><td class="r">${c.live_mw!=null?nf(c.live_mw):"—"}</td>
+      <td class="r">${c.under_construction_mw!=null?nf(c.under_construction_mw):'<span title="no published figure">—</span>'}</td><td class="r">${c.planned_mw!=null?nf(c.planned_mw):"—"}</td>
+      <td>${cf(c.confidence)}</td></tr>`).join("")}
+    ${rest!=null&&rest>0?`<tr><td class="n" style="color:var(--t3)">Not split by country</td><td class="r">—</td><td class="r">${nf(rest)}</td><td class="r">—</td><td>${cf("T3")}</td></tr>`:""}
+    <tr style="font-weight:600"><td class="n">Total</td><td class="r">${nf(tot)}</td><td class="r">${nf(region||uc)}</td><td class="r">${nf(pl)}</td><td></td></tr>
+    </tbody></table>
+    <p class="hint">Running and being built are IT load, the power that reaches the computers. A building's grid connection runs 20 to 40% higher. Click any country for the sites and sources.</p>`;
+  $("sum-live").textContent = (region?kf(region):kf(uc)) + " MW building";
+}
+
+/* ============ panel: data & method ============ */
+function renderData(){
+  const mix = COV.confidence_mix, tot = Object.values(mix).reduce((a,b)=>a+b,0);
+  const nohq = DATA.entities.filter(e=>!e.is_placeholder&&e.deal_count>0&&e.hq_precision==="deal-country").length;
+  $("datasec").innerHTML = `
+    <div class="subh" style="margin-top:4px">How much to trust each deal</div>
+    <div class="bar">${["T1","T2","T3","T4","T5"].map((k,i)=>`<i style="width:${(mix[k]||0)/tot*100}%;background:${["var(--good)","var(--t1)","var(--t2)","var(--t3)","var(--s3)"][i]}" title="${k}: ${mix[k]||0}"></i>`).join("")}</div>
+    <div class="mini"><span class="mn">${cf("T1")} Official filing. Solid.</span><span class="mv">${nf(mix.T1||0)}</span></div>
+    <div class="mini"><span class="mn">${cf("T2")} The company said it itself.</span><span class="mv">${nf(mix.T2||0)}</span></div>
+    <div class="mini"><span class="mn">${cf("T3")} A named reporter at a real outlet.</span><span class="mv">${nf(mix.T3||0)}</span></div>
+    <div class="mini"><span class="mn">${cf("T4")} Rumour or an analyst's guess.</span><span class="mv">${nf(mix.T4||0)}</span></div>
+    <div class="subh">Where the pins are exact and where they are not</div>
+    <div class="mini"><span class="mn">Sites at the exact building</span><span class="mv">${nf(SITES.filter(s=>s.loc_precision==="exact").length)}</span></div>
+    <div class="mini"><span class="mn">Sites placed at their city</span><span class="mv">${nf(SITES.filter(s=>s.loc_precision==="city").length)}</span></div>
+    <div class="mini"><span class="mn">Sites placed at their country</span><span class="mv">${nf(SITES.filter(s=>s.loc_precision==="country").length)}</span></div>
+    <div class="mini"><span class="mn">Companies at their head office</span><span class="mv">${nf(DATA.entities.filter(e=>e.hq_precision==="city"||e.hq_precision==="country").length)}</span></div>
+    <div class="mini"><span class="mn">Companies placed where their deals are</span><span class="mv">${nf(nohq)}</span></div>
+    <p class="hint">Everything is on the map. Each pin sits at the finest level its source supports &mdash; the building where a source gives one, otherwise the city, otherwise the region &mdash; and the card names which. Where several sites are known only to the same city they are nudged a kilometre or two apart so you can click them separately; the card says when that has happened. The point is who and how much, not the exact street.</p>
+    <div class="subh">What is still blank</div>
+    <div class="mini"><span class="mn">Sites with no megawatt figure published</span><span class="mv">${nf(SITES.filter(s=>s.it_load_mw==null).length)} of ${nf(SITES.length)}</span></div>
+    <div class="mini"><span class="mn">Deals with no dollar value published</span><span class="mv">${nf(COV.deals_total-COV.deals_with_usd)} of ${nf(COV.deals_total)}</span></div>
+    <div class="mini"><span class="mn">Same deal announced twice, hidden from totals</span><span class="mv">${nf(COV.restatements)}</span></div>
+    <div class="mini"><span class="mn">Companies that appeared under several names, merged</span><span class="mv">${nf(COV.entities_merged)}</span></div>
+    <div class="subh">Our rules</div>
+    <div class="subh">Supply or demand?</div>
+    <p class="hint" style="margin:0 0 6px">We label the <b>deal</b>, not the company. "Y will supply 5 MW to X" is one
+      sentence containing both: Y is supply, X is demand, and it is the same 5 MW seen from two ends. Most real players
+      are both — Nvidia sells chips and rents cloud; Yotta buys GPUs and rents them out. Tagging companies would force
+      us to pick one and be wrong half the time.</p>
+    <p class="hint" style="margin:0 0 6px">So the question we actually answer is <b>whether the compute is still
+      available</b>. <b style="color:var(--c-dem-t)">Open demand</b> is someone who said they need it with no contract we
+      can find. <b style="color:var(--c-site-t)">Open supply</b> is capacity with no buyer named. Those two are the call
+      list. Everything in between is <b>matched</b> — not business, but it is where the price comes from.</p>
+    <p class="hint" style="margin:0 0 8px">Four rules keep the totals straight: one announcement is one record however
+      many outlets carry it; a need belongs to whoever needs it, not to the chip vendor they buy from; megawatts are
+      counted once at the site, never again on the deals that claim them; and a regional figure is never added into a
+      country.</p>
+    <div class="subh">Numbers</div>
+    <p class="hint" style="margin:0">We never invent a number. A blank is better than a guess. Every deal links to the page that says it.
+    Each deal is counted once, even if four companies announced it. If a source gives a number we use it; we only estimate when nobody does, and we mark it.
+    Mainland China is left out on purpose.</p>
+    <div class="subh">Turning GPUs into megawatts</div>
+    <p class="hint" style="margin:0">We treat 1 MW as ${nf(1000/DATA.conversion_table.kw_per_h100e)} H100-class GPUs. Newer chips count for more:
+    ${Object.entries(DATA.conversion_table.h100_equivalents).filter(([k])=>["H100","H200","B200","B300","GB200","GB300","A100","MI300X"].includes(k)).map(([k,v])=>`${k} ${v}`).join(" · ")}. These are our own factors and can be changed.</p>`;
+  $("sum-data").textContent = `${nf(new Set(ALLDEALS.flatMap(d=>d.source_urls||[])).size)} sources`;
+}
+
+/* ============ selection ============ */
+let HI = null;   // highlight group
+function clearHi(){ if (HI){ map.removeLayer(HI); HI=null; } }
+function select(id, opts){
+  opts = opts || {};
+  S.sel = id; clearHi();
+  const [kind, key] = [id.split(":")[0], id.slice(id.indexOf(":")+1)];
+  let html = "", focus = null;
+  if (kind === "site") {
+    const s = SITES.find(x=>x.site_id===key); if (!s) return;
+    const at = DEALS.filter(d => d.site && s.name && d.site.toLowerCase()===s.name.toLowerCase());
+    const b = statusBucket(s.status);
+    html = card("Data centre", "site", s.name, `${esc(s.operator||"operator not stated")} · ${esc([s.city,s.country].filter(Boolean).join(", ")||"location not stated")}`, `
+      <dl class="kv">
+        <dt>IT load</dt><dd class="num">${s.it_load_mw!=null?mwf(s.it_load_mw):'<span class="dash">not published</span>'}${s.it_load_mw_raw&&String(s.it_load_mw_raw)!==String(s.it_load_mw)?` <span class="dash">(${esc(s.it_load_mw_raw)})</span>`:""}</dd>
+        <dt>Status</dt><dd><span class="tag ${b==="live"?"good":""}">${esc((s.status||"unknown").replace(/_/g," "))}</span>${s.commissioned?` <span class="dash">since ${esc(s.commissioned)}</span>`:""}</dd>
+        <dt>Owner</dt><dd>${s.owner?esc(s.owner):dash}</dd>
+        <dt>Power</dt><dd>${s.power_source?esc(s.power_source):dash}</dd>
+        <dt>Chips</dt><dd>${(s.chips_installed||[]).length?s.chips_installed.map(c=>`<span class="tag">${esc(c)}</span>`).join(" "):dash}</dd>
+        <dt>Phase</dt><dd>${s.phase_note?esc(s.phase_note):dash}</dd>
+      </dl>
+      ${s.loc_precision==="country"?`<div class="approx">Placed at ${esc(s.country)} only. No city was stated anywhere.</div>`:s.loc_precision!=="exact"?`<div class="approx">Placed at ${esc(s.city||s.country)}, not the exact building.</div>`:""}
+      ${s.notes?`<p class="hint" style="margin:6px 0 0">${esc(s.notes).slice(0,600)}</p>`:""}
+      ${at.length?`<div class="subh">Deals at this site</div>${at.map(miniDeal).join("")}`:""}
+      ${s.operator_id&&ENT[s.operator_id]?`<div class="btnrow"><button class="btn" data-sel="ent:${esc(s.operator_id)}">Open ${esc(ename(s.operator_id))}</button></div>`:""}
+      <div class="subh">Where this came from</div>${srcs(s.source_urls)}`);
+    if (s.lat != null) focus = [s.lat, s.lng];
+    if (MK.sites[key]) { MK.sites[key].setStyle({weight:3.5, color:"#fff"}); }
+  } else if (kind === "ent") {
+    const e = ENT[key]; if (!e) return;
+    const mine = DEALS.filter(d => d.from_id===key || d.to_id===key);
+    const sites = SITES.filter(s => s.operator_id===key);
+    const gap = GAPS.find(g=>g.entity_id===key);
+    const byT = {}; mine.forEach(d => (byT[d.deal_type]=byT[d.deal_type]||[]).push(d));
+    const loops = DATA.circular_loops.filter(l=>[l.a,l.b,l.c].includes(key));
+    html = card("Company", gap?"dem":"con", e.name, `${esc([e.hq_city,e.hq_country].filter(Boolean).join(", ")||"headquarters not found")}${e.listed_ticker?" · "+esc(e.listed_ticker):""}`, `
+      ${e.one_line?`<p class="hint" style="margin:0 0 8px;color:var(--t2)">${esc(e.one_line)}</p>`:""}
+      <div>${(e.roles||[]).map(r=>`<span class="tag">${esc(r)}</span>`).join(" ")||'<span class="dash">no role derived yet</span>'}</div>
+      ${DEM[key]?`<dl class="kv" style="margin-top:12px"><dt>Demand stated</dt><dd class="num">${DEM[key].stated_mw?mwf(DEM[key].stated_mw):(DEM[key].stated_usd?usd(DEM[key].stated_usd):"—")}</dd><dt>Signed</dt><dd class="num">${DEM[key].contracted_mw?mwf(DEM[key].contracted_mw):"—"}</dd>
+        <dt>Still open</dt><dd class="num" style="color:var(--c-dem-t);font-weight:600">${gap?mwf(gap.gap_mw):"none we can see"}</dd></dl>`:""}
+      ${(e.aliases||[]).length>1?`<p class="hint">Also written as ${esc(e.aliases.slice(0,4).join(" · "))}. Merged into one company.</p>`:""}
+      ${e.hq_lat==null?`<div class="approx">No location found at all, so this company has no pin. Its deals still show below.</div>`:e.hq_precision==="deal-country"?`<div class="approx">We could not find its head office, so it is placed in ${esc(e.map_country||"the country its deals are in")}, where its deals are.</div>`:e.hq_precision==="country"?`<div class="approx">Placed at country level only.</div>`:""}
+      ${loops.length?`<div class="approx" style="border-color:var(--c-cap)">Part of ${loops.length} money loop${loops.length>1?"s":""}. See Circles.</div>`:""}
+      ${Object.entries(byT).sort((a,b)=>b[1].length-a[1].length).map(([t,ds])=>`<div class="subh">${esc(DT[t]||t)} · ${ds.length}</div>${ds.map(d=>miniDeal(d,key)).join("")}`).join("")}
+      ${sites.length?`<div class="subh">Sites · ${sites.length}</div>${sites.map(s=>`<div class="mini click" data-sel="site:${esc(s.site_id)}"><span class="mn">${esc(s.name)}<small>${esc([s.city,s.country].filter(Boolean).join(", "))} · ${esc((s.status||"").replace(/_/g," "))}</small></span><span class="mv">${s.it_load_mw!=null?mwf(s.it_load_mw):"MW n/p"}</span></div>`).join("")}`:""}
+      <div class="btnrow"><button class="btn primary" data-act="showdeals">Draw its deals</button>${e.website?`<a class="btn" href="${esc(e.website)}" target="_blank" rel="noopener">Website ↗</a>`:""}</div>
+      ${(e.source_urls||[]).length?`<div class="subh">Where this came from</div>${srcs(e.source_urls)}`:""}`);
+    if (e.hq_lat != null) focus = [e.hq_lat, e.hq_lng];
+    if (opts.drawDeals) drawDeals(key);
+  } else if (kind === "deal") {
+    const d = ALLDEALS.find(x=>x.deal_id===key); if (!d) return;
+    const rest = ALLDEALS.filter(x=>x.same_underlying_as===d.deal_id);
+    html = card(DT[d.deal_type]||"Deal", ["D8","D9","D10"].includes(d.deal_type)?"cap":d.deal_type==="D15"?"off":d.deal_type==="D7"?"dem":"con", d.headline,
+      `${cf(d.confidence)} <span class="tag">${esc((d.binding_status||"").replace(/_/g," "))}</span> ${d.announced_date?`<span class="dash">${esc(d.announced_date)}</span>`:""}`, `
+      <dl class="kv">
+        <dt>Provides</dt><dd><a href="#" data-sel="ent:${esc(d.from_id||"")}">${esc(ename(d.from_id))}</a></dd>
+        <dt>Receives</dt><dd><a href="#" data-sel="ent:${esc(d.to_id||"")}">${esc(ename(d.to_id))}</a></dd>
+        <dt>Size</dt><dd>${d.quantity_raw?esc(d.quantity_raw):dash}${d.h100e?`<div class="dash" style="font-size:11.5px">≈ ${kf(d.h100e)} H100e · ${d.mw?mwf(d.mw):""} <span title="${esc(d.h100e_basis||"")}">(our conversion)</span></div>`:""}</dd>
+        <dt>Value</dt><dd class="num">${d.usd_value!=null?usd(d.usd_value):dash}</dd>
+        <dt>Term</dt><dd>${d.term_start||d.term_end?esc([d.term_start,d.term_end].filter(Boolean).join(" to ")):dash}${d.term_years?` <span class="dash">(${d.term_years} yr)</span>`:""}</dd>
+        <dt>Where</dt><dd>${(d.geography||[]).length?esc(d.geography.join(", ")):dash}</dd>
+        <dt>Site</dt><dd>${d.site?esc(d.site):dash}</dd>
+        <dt>Chips</dt><dd>${(d.chip_skus||[]).length?d.chip_skus.map(c=>`<span class="tag">${esc(c)}</span>`).join(" "):dash}</dd>
+        <dt>Status</dt><dd>${esc((d.status||"").replace(/_/g," "))||dash}</dd>
+      </dl>
+      ${d.notes?`<p class="hint" style="margin:0 0 6px">${esc(d.notes).slice(0,700)}</p>`:""}
+      ${rest.length?`<div class="approx">Also announced ${rest.length} more time${rest.length>1?"s":""} by other parties. Those copies are hidden from totals.</div>`:""}
+      <div class="subh">Where this came from</div>${srcs(d.source_urls)}`);
+    const ends = dealEnds(d); if (ends) focus = ends;
+    const line = MK.contracts[key] || MK.capital[key]; if (line) line.setStyle({opacity:1, weight:5, color:"#fff"});
+  } else if (kind === "country") {
+    const c = CT[key]; if (!c) return;
+    const sitesHere = c.sites.map(id=>SITE[id]).filter(Boolean).sort((a,b)=>(b.it_load_mw||0)-(a.it_load_mw||0));
+    const grp = b => sitesHere.filter(s=>bucketOf(s.status)===b);
+    const dl = ids => ids.map(id=>DEAL[id]).filter(Boolean).sort((a,b)=>(b.usd_value||b.mw||0)-(a.usd_value||a.mw||0));
+    const supply = dl(c.supply_deals), demand = dl(c.demand_deals), money = dl(c.money_deals);
+    const siteRow = s => `<div class="mini click" data-sel="site:${esc(s.site_id)}"><span class="mn">${esc(s.operator||"Undisclosed operator")} · ${esc(s.name)}<small>${s.commissioned?"since "+esc(s.commissioned)+" · ":""}${s.loc_precision!=="exact"?(s.loc_precision==="country"?"country-level":"city-level"):"exact site"}</small><small>${srcA(s)}</small></span><span class="mv">${s.it_load_mw!=null?mwf(s.it_load_mw):"MW n/p"}</span></div>`;
+    const dealRow = d => `<div class="mini click" data-sel="deal:${esc(d.deal_id)}"><span class="mn"><b>${esc(whoName(d.from_id))}</b> → <b>${esc(whoName(d.to_id))}</b><small>${esc(d.headline)}</small><small>${srcA(d)}</small></span><span class="mv">${d.usd_value!=null?usd(d.usd_value):d.mw?mwf(d.mw):(d.quantity_raw?esc(String(d.quantity_raw).slice(0,18)):"")}</span>${cf(d.confidence)}</div>`;
+    const askRow = d => `<div class="mini click" data-sel="deal:${esc(d.deal_id)}"><span class="mn"><b>${esc(whoName(d.to_id))}</b><small>${esc(d.need_plain||d.headline)}${d.by_when?" · by "+esc(d.by_when):""}</small><small>${srcA(d)}</small></span><span class="mv">${d.mw?mwf(d.mw):d.usd_value!=null?usd(d.usd_value):(d.quantity_raw?esc(String(d.quantity_raw).slice(0,18)):"")}</span>${cf(d.confidence)}</div>`;
+    const sec = (title, rows, empty) => `<div class="subh">${title}</div>${rows.length?rows.join(""):`<p class="hint" style="margin:0">${empty}</p>`}`;
+    const live = c.official_live_mw ?? c.live_mw;
+    html = card("Country", "site", c.country, `${nf(c.companies.length)} companies · ${nf(c.site_count)} sites`, `
+      <div class="kpis" style="margin-top:4px">
+        <div class="kpi live"><div class="v">${kf(live)}</div><div class="l">MW supply running</div></div>
+        <div class="kpi build"><div class="v">${kf(bld(c))}</div><div class="l">MW supply being built</div></div>
+        <div class="kpi dem"><div class="v">${kf(c.demand_near_mw)}</div><div class="l">MW demand by 2028</div></div>
+      </div>
+      ${c.official_live_mw!=null?`<p class="hint">Official market figure for running is ${mwf(c.official_live_mw)}${c.official_uc_mw!=null?`, being built ${mwf(c.official_uc_mw)}`:""}${c.official_planned_mw!=null?`, announced ${mwf(c.official_planned_mw)}`:""} ${cf(c.official_conf)}. Our own site list below adds up to ${mwf(c.live_mw)} on, ${mwf(c.building_mw)} building, ${mwf(c.planned_mw)} announced.</p>`:`<p class="hint">Numbers are from the sites we found. No official market total for this country yet.</p>`}
+      ${sec(`Supply being built · ${grp("building").length} sites, ${mwf(c.building_mw)}`, grp("building").map(siteRow), "Nothing under construction that we know of.")}
+      ${sec(`Demand · who needs compute here · ${demand.length}`, demand.map(askRow), "Nobody has publicly said they need compute here.")}
+      ${sec(`Supply → demand contracts here · ${supply.length}`, supply.slice(0,20).map(dealRow), "No supply deals found here.")}
+      ${sec(`Supply running · ${grp("live").length} sites, ${mwf(c.live_mw)}`, grp("live").map(siteRow), "No site we can verify as running.")}
+      ${sec(`Supply only announced · ${grp("planned").length} sites, ${mwf(c.planned_mw)}`, grp("planned").slice(0,15).map(siteRow), "No announced-only sites.")}
+      ${money.length?sec(`Capital coming in · ${money.length}`, money.slice(0,10).map(dealRow), ""):""}
+      <div class="subh">Companies involved here · ${c.companies.length}</div>
+      <div style="display:flex;flex-wrap:wrap;gap:5px">${c.companies.map(id=>ENT[id]).filter(e=>e&&!e.is_placeholder).sort((a,b)=>b.deal_count-a.deal_count).map(e=>`<button class="tag" data-sel="ent:${esc(e.entity_id)}" style="cursor:pointer;text-transform:none;letter-spacing:0;font-family:var(--font);font-size:11.5px">${esc(e.name)}</button>`).join("")}</div>
+      ${c.official_source?`<div class="subh">Where the official number came from</div>${srcs([c.official_source].filter(u=>/^https?:/.test(u)))}`:""}`);
+    focus = [c.lat, c.lng];
+  }
+  const el = $("sel"); el.innerHTML = html; el.hidden = false;
+  if (!S.panelOpen) togglePanel(true);
+  document.querySelector(".pbody").scrollTop = 0;
+  if (focus && !opts.noFly) {
+    if (Array.isArray(focus[0])) map.flyToBounds(L.latLngBounds(focus).pad(.35), {duration:.5, maxZoom:6});
+    else map.flyTo(focus, Math.max(map.getZoom(), 5), {duration:.5});
+  }
+  writeHash();
+}
+function card(kind, cls, title, sub, body){
+  return `<div class="selh"><div><div class="kind tag ${cls}">${esc(kind)}</div><h2>${esc(title)}</h2><div class="sub">${sub}</div></div>
+    <button class="ib x" data-act="closesel" aria-label="Close"><svg class="ic"><use href="#i-x"/></svg></button></div><div class="selb">${body}</div>`;
+}
+function miniDeal(d, me){
+  const other = me ? (d.from_id===me ? d.to_id : d.from_id) : null;
+  let dir = me ? (d.from_id===me ? "to " : "from ") : "";
+  if (me && d.deal_type==="D7" && !d.from_id) dir = "stated publicly";
+  const who = dir==="stated publicly" ? "" : `<b>${esc(other?ename(other):ename(d.from_id)+" → "+ename(d.to_id))}</b>`;
+  return `<div class="mini click" data-sel="deal:${esc(d.deal_id)}"><span class="mn">${dir}${who}<small>${esc(d.need_plain||d.headline)}</small><small>${srcA(d)}</small></span>
+    <span class="mv">${d.usd_value!=null?usd(d.usd_value):(d.mw?mwf(d.mw):"")}</span>${cf(d.confidence)}</div>`;
+}
+function srcs(urls){
+  if (!urls || !urls.length) return '<p class="hint" style="margin:0">No source recorded.</p>';
+  return `<ul class="srcs">${urls.slice(0,6).map(u=>{ let h=u; try{h=new URL(u).hostname.replace(/^www\./,"");}catch(e){}
+    return `<li><a href="${esc(u)}" target="_blank" rel="noopener">${esc(h)} ↗</a> <span class="dash">${esc(u.slice(0,70))}${u.length>70?"…":""}</span></li>`;}).join("")}</ul>`;
+}
+function closeSel(){ S.sel=null; $("sel").hidden=true; $("sel").innerHTML=""; clearHi(); rebuild("contracts"); rebuild("capital"); rebuild("sites"); writeHash(); }
+function drawDeals(eid){
+  clearHi(); const g = L.layerGroup(); const e = ENT[eid];
+  DEALS.filter(d=>d.from_id===eid||d.to_id===eid).forEach(d => {
+    const ends = dealEnds(d); if (!ends) return;
+    const col = ["D8","D9","D10"].includes(d.deal_type) ? "--c-cap-t" : d.deal_type==="D15" ? "--c-off-t" : "--c-con-t";
+    g.addLayer(L.polyline(arcPts(ends[0],ends[1],.18),{pane:"hi",color:"#fff",weight:6,opacity:.55,interactive:false}));
+    const l = L.polyline(arcPts(ends[0],ends[1],.18),{pane:"hi",color:cssv(col),weight:3,opacity:1});
+    l.bindTooltip(`<b>${esc(ename(d.from_id))} → ${esc(ename(d.to_id))}</b><div class="tt-sub">${esc(d.headline)}</div>`,{sticky:true});
+    l.on("click",()=>select("deal:"+d.deal_id)); g.addLayer(l);
+    g.addLayer(L.circleMarker(ends[1],{pane:"hi",radius:4,color:"#fff",weight:1,fillColor:cssv(col),fillOpacity:1,interactive:false}));
+  });
+  if (e && e.hq_lat!=null) g.addLayer(L.circleMarker([e.hq_lat,e.hq_lng],{pane:"hi",radius:9,color:"#fff",weight:2.5,fillColor:cssv("--acc"),fillOpacity:.9,interactive:false}));
+  HI = g.addTo(map);
+  try { const b = g.getBounds(); if (b.isValid()) map.flyToBounds(b.pad(.25),{duration:.6,maxZoom:6}); } catch(err){}
+}
+function drawLoop(i){
+  const l = DATA.circular_loops[i]; if (!l) return;
+  clearHi(); const ids=[l.a,l.b,l.c].filter(Boolean); const g = L.layerGroup();
+  ids.forEach((a,k) => { const b = ids[(k+1)%ids.length]; const pa=locOf(a), pb=locOf(b); if(!pa||!pb) return;
+    g.addLayer(L.polyline(arcPts(pa,pb,.22),{pane:"hi",color:"#fff",weight:7,opacity:.55,interactive:false}));
+    g.addLayer(L.polyline(arcPts(pa,pb,.22),{pane:"hi",color:cssv("--c-cap-t"),weight:3.5,opacity:1}));
+    g.addLayer(L.circleMarker(pa,{pane:"hi",radius:8,color:"#fff",weight:2,fillColor:cssv("--c-cap"),fillOpacity:1}).bindTooltip(`<b>${esc(ename(a))}</b>`,{permanent:true,direction:"top",offset:[0,-8],className:"ctrylabel",interactive:false})); });
+  HI = g.addTo(map);
+  try { const b = g.getBounds(); if (b.isValid()) map.flyToBounds(b.pad(.3),{duration:.6,maxZoom:5}); } catch(err){}
+  const missing = ids.filter(a=>!locOf(a)).map(ename);
+  $("sel").hidden=false; $("sel").innerHTML = card("Money loop","cap", ids.map(ename).join(" → ")+" → "+ename(ids[0]), "capital out, capacity back", `
+    ${ids.map((a,k)=>{ const b=ids[(k+1)%ids.length]; const d=DEALS.find(x=>(x.from_id===a&&x.to_id===b)||(x.from_id===b&&x.to_id===a)); return d?miniDeal(d):""; }).join("")}
+    ${missing.length?`<div class="approx">${esc(missing.join(", "))} has no headquarters pin, so that leg is not drawn.</div>`:""}
+    <p class="hint">Nobody labelled this. It falls out of the deal list by following money out and payment back.</p>`);
+  S.sel = "loop:"+i; if (!S.panelOpen) togglePanel(true); writeHash();
+}
+
+/* ============ search ============ */
+const INDEX = [
+  ...DATA.entities.filter(e=>!e.is_placeholder&&e.deal_count>0).map(e=>({t:DEM[e.entity_id]?"demand":"company",n:e.name,a:(e.aliases||[]).join(" "),id:"ent:"+e.entity_id,c:DEM[e.entity_id]?"--c-dem":"--c-con"})),
+  ...SITES.map(s=>({t:"site",n:s.name,a:[s.operator,s.city,s.country].filter(Boolean).join(" "),id:"site:"+s.site_id,c:"--c-site"})),
+  ...DEALS.map(d=>({t:"deal",n:d.headline,a:ename(d.from_id)+" "+ename(d.to_id),id:"deal:"+d.deal_id,c:["D8","D9","D10"].includes(d.deal_type)?"--c-cap":"--c-con"})),
+  ...CTRY.filter(c=>c.country!=="APAC total").map(c=>({t:"country",n:c.country,a:"",id:"country:"+c.country,c:"--c-ctry"}))
+];
+function search(q){
+  const r = $("results"); q = q.trim().toLowerCase();
+  $("q-clear").style.display = q ? "block" : "none";
+  if (!q) { r.classList.remove("on"); r.innerHTML=""; return; }
+  const words = q.split(/\s+/);
+  const hits = INDEX.map(x=>{ const hay=(x.n+" "+x.a).toLowerCase(); let sc=0; for (const w of words){ if(!hay.includes(w)) return null; sc += x.n.toLowerCase().startsWith(w)?3:x.n.toLowerCase().includes(w)?2:1; } return {x,sc}; })
+    .filter(Boolean).sort((a,b)=>b.sc-a.sc || a.x.n.length-b.x.n.length).slice(0,12);
+  r.innerHTML = hits.length ? hits.map((h,i)=>`<div class="res" role="option" data-sel="${esc(h.x.id)}" aria-selected="${i===0}"><span class="sw" style="background:var(${h.x.c})"></span><span class="rn">${esc(h.x.n)}</span><span class="rt">${esc(h.x.t)}</span></div>`).join("")
+    : `<div class="res"><span class="rn" style="color:var(--t3)">Nothing matches “${esc(q)}”</span></div>`;
+  r.classList.add("on");
+}
+
+/* ============ legend & pill ============ */
+__RIVALS_DATA__
+__RIVALS_RENDER__
+function renderLegend(){
+  const c = counts(), out = [];
+  const sec = (col, title, n, rows) => `<div class="lgs"><div class="lgt"><span class="sw" style="background:var(${col})"></span>${title}${n==null?"":`<span class="n">${nf(n)}</span>`}</div>${rows.filter(Boolean).join("")}</div>`;
+  const row = (sw, txt) => `<div class="lg">${sw}<span>${txt}</span></div>`;
+  const dot = st => `<span class="dot" style="${st}"></span>`;
+  const line = st => `<span class="line" style="${st}"></span>`;
+
+  if (S.on.country) out.push(sec("--c-ctry","By country",c.country,[
+    row(dot("border:1.5px dashed var(--c-ctry)"),`Showing <b>${(CMETRIC[S.ctryMetric]||CMETRIC.building).label.toLowerCase()}</b>. A ring with no number has none. Hover any ring for its full lists.`)]));
+
+  if (S.on.sites) out.push(sec("--c-site","Supply · data centres",c.sites,[
+    row(dot("background:var(--c-site);border-color:var(--c-site-t)"),"<b>Solid</b> — running now"),
+    row(dot("background:var(--c-site);opacity:.2;border-color:var(--c-site-t)"),"<b>Faint</b> — announced only, not built yet"),
+    row(dot("border:2px dashed var(--c-site-t)"),"<b>Dashed edge</b> — pinned to the city, not the building"),
+    `<div class="sizekey"><i style="width:8px;height:8px"></i><i style="width:15px;height:15px"></i><i style="width:26px;height:26px"></i><span style="font-size:11px;color:var(--t3);margin-left:5px">10 → 600+ MW · hover one for the list</span></div>`]));
+
+  if (S.on.demand) out.push(sec("--c-dem","Demand · companies",c.demand,[
+    row(dot("background:var(--c-dem);border-color:var(--c-dem-t)"),"<b>Size</b> — how much they have asked for"),
+    row(dot("background:var(--c-dem);border:2.5px solid var(--c-dem-t)"),"<b>Thick edge</b> — some still unsigned, still open to us")]));
+
+  if (S.on.contracts) out.push(sec("--c-con","Contracts",c.contracts,[
+    row(line("border-color:var(--c-con)")+`<span class="edot" style="background:var(--c-con)"></span>`,"One curve per contract, <b>seller → buyer</b>. Dot marks the buyer."),
+    row(line("border-color:var(--c-con);border-top-width:4px"),"<b>Thicker</b> — bigger deal. The 10 biggest are named.")]));
+
+  if (S.on.capital) out.push(sec("--c-cap","Capital",c.capital,[
+    row(line("border-color:var(--c-cap);border-top-style:dashed")+`<span class="edot" style="background:var(--c-cap)"></span>`,"Loan, investment or guarantee, <b>lender → borrower</b>")]));
+
+  if (S.on.offload) out.push(sec("--c-off","Supply for sale",c.offload,[
+    row(dot("border:2px dashed var(--c-off-t)"),"Compute a company is trying to resell")]));
+
+  if (S.on.prices) out.push(sec("--c-px","Price by city",c.prices,[
+    row(dot("background:var(--c-px);border-color:var(--c-px-t)"),"One Azure machine, price per hour. Bigger = dearer.")]));
+
+  const circleOn = ["country","sites","demand","offload","prices"].some(k => S.on[k]);
+  $("legend").innerHTML = `<h3>Key<button id="legend-hide" aria-label="Hide legend">✕</button></h3>` +
+    (out.length ? `<div class="lgrule"><span><i style="background:var(--c-site)"></i>teal = supply</span>
+       <span><i style="background:var(--c-dem)"></i>amber = demand</span>
+       <span><i style="background:var(--t2)"></i>white = names</span></div>` : "") +
+    (out.join("") || '<div class="lg" style="color:var(--t3)">All layers are off.</div>') +
+    (circleOn ? `<div class="lgscale"><label for="scale">Circle size</label>
+       <input type="range" id="scale" min="50" max="220" step="10" value="${Math.round(S.scale*100)}" aria-label="Circle size">
+       <span class="v" id="scaleval">${Math.round(S.scale*100)}%</span></div>` : "");
+  const sl = $("scale");
+  if (sl) sl.addEventListener("input", e => {
+    S.scale = +e.target.value/100; $("scaleval").textContent = e.target.value + "%";
+    try { localStorage.setItem("cx.scale", String(S.scale)); } catch(err){}
+    rebuild("sites"); rebuild("demand"); rebuild("country");
+  });
+  $("legend").style.display = S.legendOpen ? "block" : "none";
+  $("legend-show").style.display = S.legendOpen ? "none" : "block";
+}
+function renderPill(){
+  const vs = visibleSites(); const mw = vs.reduce((a,s)=>a+(s.it_load_mw||0),0);
+  const bits = [];
+  if (S.on.sites) bits.push(`supply <b>${nf(vs.length)}</b> sites · <b>${kf(mw)}</b> MW`);
+  if (S.on.demand) { const dv = DEMAND.filter(demandVisible); const ids = new Set(dv.map(x=>x.entity_id));
+    bits.push(`demand <b>${nf(dv.length)}</b> companies · <b>${kf(GAPS.filter(g=>ids.has(g.entity_id)).reduce((a,g)=>a+g.gap_mw,0))}</b> MW open`); }
+  if (S.on.contracts) bits.push(`<b>${nf(CONTRACTS.filter(conVisible).length)}</b> contracts`);
+  if (S.on.capital) bits.push(`<b>${nf(CAPITAL.filter(d=>d.ends).length)}</b> money flows`);
+  $("pill").innerHTML = bits.join('<span class="sep">·</span>') || `<b>${nf(DEALS.length)}</b> deals · <b>${nf(SITES.length)}</b> sites`;
+}
+function renderAllPanels(){ renderMarket(); renderLayers(); renderMatch(); renderCircles(); renderPrices(); renderLive(); renderData(); renderLegend(); renderPill();
+  $("pfoot").innerHTML = `${nf(COV.deals_total)} deals · ${nf(COV.entities_total)} companies · ${nf(COV.sites_total)} sites · ${nf(CTRY.length)} countries`; }
+
+/* ============ events ============ */
+function togglePanel(open){ S.panelOpen = open==null ? !S.panelOpen : open; $("panel").classList.toggle("closed", !S.panelOpen); document.body.classList.toggle("panel-closed", !S.panelOpen); setTimeout(()=>map.invalidateSize(),180); }
+function setTheme(t){ S.theme=t; document.documentElement.dataset.theme=t; try{localStorage.setItem("cx.theme",t);}catch(e){}
+  if (t==="light" && S.base==="dark") setBase("light"); if (t==="dark" && S.base==="light") setBase("dark"); rebuildAll(); renderLegend(); writeHash(); }
+function setPresent(on){ S.present=on; document.body.classList.toggle("present",on); setTimeout(()=>map.invalidateSize(),50); }
+document.addEventListener("click", ev => {
+  const t = ev.target;
+  const eye = t.closest("[data-layer]"); if (eye){ const id=eye.dataset.layer; S.on[id]=!S.on[id]; rebuild(id); renderLayers(); renderLegend(); renderPill(); writeHash(); return; }
+  const ds = t.closest("[data-dstatus]"); if (ds){ S.demStatus=ds.dataset.dstatus; rebuild("demand"); renderLayers(); renderMatch(); renderPill(); writeHash(); return; }
+  const dw = t.closest("[data-dwho]"); if (dw){ S.demWho=dw.dataset.dwho; rebuild("demand"); renderLayers(); renderMatch(); renderPill(); writeHash(); return; }
+  const tb = t.closest("[data-tab]"); if (tb){ setTab(tb.dataset.tab); return; }
+  const sc = t.closest("[data-scope]"); if (sc){ S.scope=sc.dataset.scope; renderMarket(); writeHash(); return; }
+  const chip = t.closest("[data-chip]"); if (chip){ const id=chip.dataset.chip; S.on[id]=!S.on[id]; rebuild(id); renderLayers(); renderLegend(); renderPill(); writeHash(); return; }
+  const st = t.closest("[data-status]"); if (st){ S.siteStatus=st.dataset.status; rebuild("sites"); renderLayers(); renderMarket(); renderPill(); writeHash(); return; }
+  const sel = t.closest("[data-sel]"); if (sel){ ev.preventDefault(); if (sel.dataset.sel.endsWith(":")) return; select(sel.dataset.sel); $("results").classList.remove("on"); return; }
+  const lp = t.closest("[data-loop]"); if (lp){ drawLoop(+lp.dataset.loop); return; }
+  if (t.closest("[data-act='clzoom']")) { if (CLUSTER_ZOOM) { map.closePopup();
+    const b = CLUSTER_ZOOM.getBounds();
+    if (b.getNorthEast().equals(b.getSouthWest())) CLUSTER_ZOOM.spiderfy();
+    else map.fitBounds(b, {padding:[70,70], maxZoom:15}); } return; }
+  if (t.closest("[data-act='closesel']")) { closeSel(); return; }
+  if (t.closest("[data-act='showdeals']")) { if (S.sel&&S.sel.startsWith("ent:")) drawDeals(S.sel.slice(4)); return; }
+  if (t.closest("#btn-collapse")) { togglePanel(false); return; }
+  if (t.closest("#panel-tab")) { togglePanel(true); return; }
+  if (t.closest("#btn-theme")) { setTheme(S.theme==="dark"?"light":"dark"); return; }
+  if (t.closest("#t-present")) { setPresent(true); return; }
+  if (t.closest("#present-exit")) { setPresent(false); return; }
+  if (t.closest("#t-apac")) { fitApac(); return; }
+  if (t.closest("#t-world")) { fitAll(); return; }
+  if (t.closest("#t-base")) { setBase(S.base==="dark"?"light":S.base==="light"?"sat":"dark"); return; }
+  if (t.closest("#t-zin")) { map.zoomIn(); return; }
+  if (t.closest("#t-zout")) { map.zoomOut(); return; }
+  if (t.closest("#legend-hide")) { S.legendOpen=false; renderLegend(); return; }
+  if (t.closest("#legend-show")) { S.legendOpen=true; renderLegend(); return; }
+  if (t.closest("#q-clear")) { $("q").value=""; S.q=""; search(""); writeHash(); return; }
+  if (!t.closest("#search")) $("results").classList.remove("on");
+});
+document.addEventListener("change", ev => {
+  const sel = ev.target.closest ? ev.target.closest("select[data-f]") : null;
+  if (!sel) return;
+  const v = sel.value;
+  if (sel.dataset.f==="cmetric"){ S.ctryMetric=v; rebuildCountryLabels(); }
+  else if (sel.dataset.f==="status"){ S.siteStatus=v; rebuild("sites"); renderMarket(); }
+  else if (sel.dataset.f==="dstatus"){ S.demStatus=v; rebuild("demand"); renderMatch(); }
+  else if (sel.dataset.f==="dwho"){ S.demWho=v; rebuild("demand"); renderMatch(); }
+  else if (sel.dataset.f==="cstatus"){ S.conStatus=v; rebuild("contracts"); }
+  renderLayers(); renderLegend(); renderPill(); writeHash();
+});
+let qt=null; $("q").addEventListener("input", e => { clearTimeout(qt); qt=setTimeout(()=>{ S.q=e.target.value; search(S.q); writeHash(); },120); });
+$("q").addEventListener("keydown", e => {
+  const items=[...document.querySelectorAll("#results .res[data-sel]")]; let i=items.findIndex(x=>x.getAttribute("aria-selected")==="true");
+  if (e.key==="ArrowDown"){ e.preventDefault(); i=Math.min(items.length-1,i+1); items.forEach((x,k)=>x.setAttribute("aria-selected",k===i)); }
+  if (e.key==="ArrowUp"){ e.preventDefault(); i=Math.max(0,i-1); items.forEach((x,k)=>x.setAttribute("aria-selected",k===i)); }
+  if (e.key==="Enter" && items[i]) { select(items[i].dataset.sel); $("results").classList.remove("on"); }
+  if (e.key==="Escape") { $("results").classList.remove("on"); e.target.blur(); }
+});
+document.addEventListener("keydown", e => {
+  if (e.target.tagName==="INPUT") return;
+  if (e.key==="Escape") { if (S.present) setPresent(false); else if (S.sel) closeSel(); }
+  if (e.key==="/") { e.preventDefault(); $("q").focus(); }
+  if (e.key.toLowerCase()==="p") setPresent(!S.present);
+  if (e.key.toLowerCase()==="h") fitApac();
+});
+map.on("zoomend", () => { Object.values(MK.sites).forEach(m => m.setRadius(siteRadius(m.options.mw, map.getZoom()))); });
+map.on("moveend", () => { rebuildArcLabels(); rebuildCountryLabels(); });
+function fitApac(){ const pts = SITES.filter(s=>s.lat!=null&&APAC.has(s.country)).map(s=>[s.lat,s.lng]); if (pts.length) map.fitBounds(L.latLngBounds(pts).pad(.08)); else map.setView([8,105],3); }
+function fitAll(){ const pts = SITES.filter(s=>s.lat!=null).map(s=>[s.lat,s.lng]); if (pts.length) map.fitBounds(L.latLngBounds(pts).pad(.05)); }
+
+/* ============ init ============ */
+(function init(){
+  try { const th=localStorage.getItem("cx.theme"); if (th) S.theme=th; const sc=parseFloat(localStorage.getItem("cx.scale")); if (sc>0) S.scale=sc; } catch(e){}
+  readHash();
+  document.documentElement.dataset.theme = S.theme;
+  if (S.theme==="light" && S.base==="dark") S.base="light";
+  setBase(S.base);
+  fitApac();
+  rebuildAll();
+  renderAllPanels();
+  if (S.q) { $("q").value=S.q; }
+  if (S.sel) { if (S.sel.startsWith("loop:")) drawLoop(+S.sel.slice(5)); else select(S.sel,{noFly:false}); }
+  setTab(S.tab);
+  console.log("ComputeX map ready:", COV.deals_total, "deals,", SITES.filter(s=>s.lat!=null).length, "sites placed,", GAPS.filter(g=>g.loc).length, "demand pins,", CONTRACTS.filter(d=>d.ends).length, "contract arcs");
+})();
+</script>
+</body>
+</html>
