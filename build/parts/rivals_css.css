@@ -145,8 +145,19 @@ table.cmp td{color:var(--t2)}
 .gl{display:grid;grid-template-columns:1fr 1fr;gap:0 26px}
 .gl div{padding:10px 0;border-bottom:1px solid var(--bd);font-size:var(--fs-4);line-height:1.55;color:var(--t2)}
 .gl div b{color:var(--t1);font-weight:650;display:block;font-size:var(--fs-3);margin-bottom:2px}
+/* a sideways-scrolling block needs to say so on a touchscreen; there is no scrollbar to see */
+.swipe{display:none;font-size:var(--fs-2);color:var(--t3);margin:0 0 8px}
 .rvfoot{margin-top:44px;padding-top:18px;border-top:1px solid var(--bd);font-size:var(--fs-2);line-height:1.65;color:var(--t3);max-width:74ch}
 @media (max-width:860px){ .lanes,.sw2,.gl,.ppl{grid-template-columns:1fr} .sw2 .c:first-child{border-right:0;border-bottom:1px solid var(--bd)}
+  /* The timeline is a fixed 2024-2027 canvas with absolutely placed milestone labels. Squeeze
+     it below ~520px and the labels collide and run off the edge, so it scrolls sideways
+     instead -- the same answer as the comparison table, and it keeps every milestone. */
+  .tl{overflow-x:auto;overflow-y:hidden;scrollbar-width:none;-webkit-overflow-scrolling:touch;
+      margin:6px -16px 8px;padding:26px 16px 4px}
+  .tl::-webkit-scrollbar{display:none}
+  .tl .yrs,.tlrow{min-width:540px}
+  .rv h1{font-size:var(--fs-6)}
+  .swipe{display:block}
   .rv{padding:70px 16px 70px} .tlrow .nm{width:96px;font-size:var(--fs-3)}
   .prow3{grid-template-columns:1fr;gap:2px;padding:11px 0}
   .blk,.co .top,.unk{padding-left:15px;padding-right:15px} .corr{margin-left:15px;margin-right:15px}

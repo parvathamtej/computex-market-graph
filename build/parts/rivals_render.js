@@ -12,7 +12,8 @@ function jg(html){
   });
 }
 /* The tooltip lives on <body>, not inside the card, so no parent can clip it. */
-let TIP = null, TIPFOR = null;
+let TIP = null, TIPFOR = null, LASTPT = matchMedia("(pointer:fine)").matches ? "mouse" : "touch";
+const fineP = () => LASTPT === "mouse";
 function tipShow(el){
   if (!TIP){ TIP = document.createElement("div"); TIP.className = "jtip"; document.body.appendChild(TIP); }
   TIPFOR = el;
@@ -135,6 +136,7 @@ function renderRivals(){
     <p class="sub">Silicon Data was first by a year. Stoa is the newest, and the only one in the other lane.
       Each bar runs from founding to today.</p>
     <div class="tl"><div class="yrs"><span>2024</span><span>2025</span><span>2026</span><span>2027</span></div>${tl}</div>
+    <p class="swipe">Swipe the chart sideways to reach 2026 and 2027.</p>
 
     <h2><span class="num">03</span>The four, one at a time</h2>
     <p class="sub">Same six questions asked of each, in the same order, so they can be read side by side.
@@ -142,6 +144,7 @@ function renderRivals(){
     ${cos}
 
     <h2><span class="num">04</span>Side by side</h2>
+    <p class="swipe">Swipe the table sideways for all four columns.</p>
     ${tbl}
 
     <h2><span class="num">05</span>What this means for us</h2>
@@ -166,14 +169,25 @@ function renderRivals(){
       on it.</p>
   </div>`;
 
-  /* jargon tooltip wiring — hover, keyboard focus and tap all work */
-  el.addEventListener("mouseover", e => { const j = e.target.closest(".j"); if (j) tipShow(j); });
-  el.addEventListener("mouseout",  e => { const j = e.target.closest(".j"); if (j) tipHide(); });
-  el.addEventListener("focusin",   e => { const j = e.target.closest(".j"); if (j) tipShow(j); });
-  el.addEventListener("focusout",  () => tipHide());
-  el.addEventListener("click",     e => { const j = e.target.closest(".j");
-    if (j) { e.preventDefault(); TIPFOR === j ? tipHide() : tipShow(j); } else tipHide(); });
+  /* Jargon wiring. A touchscreen emits a synthetic mouseover before the click, so the naive
+     version showed the tooltip on hover and then the tap immediately toggled it back off --
+     the word simply did nothing on a phone. Branch on the real pointer type instead: hover
+     drives it for a mouse, tap drives it for a finger, and the two never both fire. */
+  el.addEventListener("pointerdown", e => { LASTPT = e.pointerType || "mouse"; }, true);
+  el.addEventListener("mouseover", e => { if (!fineP()) return; const j = e.target.closest(".j"); if (j) tipShow(j); });
+  el.addEventListener("mouseout",  e => { if (!fineP()) return; const j = e.target.closest(".j"); if (j) tipHide(); });
+  el.addEventListener("focusin",   e => { if (!fineP()) return; const j = e.target.closest(".j"); if (j) tipShow(j); });
+  el.addEventListener("focusout",  () => { if (fineP()) tipHide(); });
+  el.addEventListener("click", e => {
+    const j = e.target.closest(".j");
+    if (!j) { tipHide(); return; }
+    if (fineP()) return;                       // the hover handlers already own this
+    e.preventDefault();
+    TIPFOR === j ? tipHide() : tipShow(j);     // tap the same word again to dismiss
+  });
+  document.addEventListener("pointerdown", e => { if (!e.target.closest(".j") && !fineP()) tipHide(); });
   el.addEventListener("scroll", () => tipHide(), true);
+  addEventListener("scroll", () => tipHide(), true);
   addEventListener("resize", tipHide);
 }
 function setTab(t){
