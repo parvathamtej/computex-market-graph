@@ -693,6 +693,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
   --mono:'IBM Plex Mono',ui-monospace,'SF Mono',Menlo,Consolas,monospace;
   /* dark is the primary theme for a map tool: pins read best on a dark ground */
   --bg:#0B0D10; --s1:#16191F; --s2:#1E2229; --s3:#262B33;
+  --cl-disc:rgba(16,19,25,.88); --cl-disc-h:rgba(28,33,42,.95);
+  --dur-fast:150ms; --dur-med:250ms; --ease-out:cubic-bezier(0,0,.2,1);
   --bd:rgba(255,255,255,.08); --bd2:rgba(255,255,255,.16);
   --t1:#ECEEF2; --t2:#A8B0BF; --t3:#8B93A3;
   --glass:rgba(22,25,31,.88); --glass-bd:rgba(255,255,255,.09);
@@ -705,12 +707,13 @@ svg.leaflet-image-layer.leaflet-interactive path {
   --c-off:#CC5555;   --c-off-t:#F08A8A;
   --c-px:#3390CC;    --c-px-t:#75BDF0;
   --c-ctry:#6B7A8C;
-  --acc:var(--c-con); --acct:var(--c-con-t);
+  --acc:#E3E7ED; --acct:#AFBACA; --acc-ink:#11151B;   /* chrome is achromatic: colour is reserved for data */
   --good:#4CC08A; --warn:#E0A227;
   color-scheme:dark;
 }
 :root[data-theme="light"]{
   --bg:#F3F5F7; --s1:#FFFFFF; --s2:#EEF1F4; --s3:#E3E8ED;
+  --cl-disc:rgba(255,255,255,.95); --cl-disc-h:rgba(255,255,255,1);
   --bd:rgba(10,20,30,.10); --bd2:rgba(10,20,30,.20);
   --t1:#0F151B; --t2:#46525E; --t3:#6E7B88;
   --glass:rgba(255,255,255,.92); --glass-bd:rgba(10,20,30,.10);
@@ -718,6 +721,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   --c-site:#0F7F71; --c-site-t:#0B6B5F; --c-dem:#9A6E0E; --c-dem-t:#7E5A0B;
   --c-con:#C22B78; --c-con-t:#A0205F; --c-cap:#6A55C9; --c-cap-t:#5442A6;
   --c-off:#C13F3F; --c-off-t:#A03030; --c-px:#2076B0; --c-px-t:#185E8E; --c-ctry:#7A8896;
+  --acc:#2B3440; --acct:#3E4A5A; --acc-ink:#FFFFFF;
   --good:#1E7F55; --warn:#9A6E0E; color-scheme:light;
 }
 *{box-sizing:border-box}
@@ -759,10 +763,18 @@ a{color:var(--acct);text-decoration:none}a:hover{text-decoration:underline}
 .cxpop .ppwrap::-webkit-resizer{background:transparent}
 .pp .lnk{background:none;border:0;color:var(--acct);cursor:pointer;font:inherit;font-size:10.5px;padding:2px 0;text-decoration:underline}
 .pp .lnk:hover{color:var(--t1)}
+/* Cluster donut: the number is the COUNT, magnitude rides on the ring weight and disc size.
+   One number in the middle beats two competing for it. */
+.dcl{position:relative;display:flex;align-items:center;justify-content:center;width:100%;height:100%;cursor:zoom-in}
+.dcl svg{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+.dcl .cdisc{fill:var(--cl-disc)}
+.dcl b{position:relative;z-index:1;color:var(--t1);font-weight:700;font-variant-numeric:tabular-nums;line-height:1;letter-spacing:-.02em}
+.dcl:hover .cdisc{fill:var(--cl-disc-h)}
 .cl{position:relative;cursor:zoom-in}
-.cl-list{position:absolute;right:-4px;bottom:-4px;width:20px;height:20px;border-radius:50%;
-  background:var(--s1);border:1px solid var(--bd2);color:var(--t2);font-size:11px;line-height:18px;
-  text-align:center;cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,.4)}
+.cl-list{position:absolute;right:-3px;bottom:-3px;width:19px;height:19px;border-radius:50%;z-index:2;
+  background:var(--s1);border:1px solid var(--bd2);color:var(--t3);font-size:10.5px;line-height:17px;
+  text-align:center;cursor:pointer;box-shadow:var(--sh-sm,0 1px 3px rgba(0,0,0,.35));
+  transition:background var(--dur-fast) var(--ease-out),color var(--dur-fast) var(--ease-out)}
 .cl-list:hover{background:var(--acc);color:#fff;border-color:var(--acc)}
 .cl-n{position:absolute;left:-3px;top:-3px;min-width:17px;height:17px;padding:0 4px;border-radius:9px;
   background:var(--s1);border:1px solid var(--bd2);color:var(--t3);font-family:var(--mono);font-size:9.5px;
@@ -916,6 +928,18 @@ details.sec[open] summary .chev{transform:rotate(180deg)}
 .kpi{background:var(--s2);border:1px solid var(--bd);border-radius:var(--r-md);padding:10px 11px}
 .kpi .v{font-size:20px;font-weight:700;letter-spacing:-.025em;line-height:1.05;font-variant-numeric:tabular-nums}
 .kpi .l{font-size:11px;color:var(--t3);margin-top:4px;line-height:1.3}
+/* Six identical tiles is a grid, not a hierarchy -- nothing is emphasised so nothing reads as
+   the headline. The two numbers this business turns on get the weight; the rest are context
+   and lose their boxes entirely, which also gives the row somewhere to breathe. */
+.kpis.lead{grid-template-columns:1fr 1fr;gap:8px}
+.kpis.lead .kpi{padding:13px 14px;background:var(--s2)}
+.kpis.lead .kpi .v{font-size:31px;letter-spacing:-.035em}
+.kpis.lead .kpi .l{font-size:12px;color:var(--t2);margin-top:5px}
+.kpis.rest{grid-template-columns:1fr 1fr;gap:0 16px;margin-top:2px}
+.kpis.rest .kpi{background:none;border:0;border-top:1px solid var(--bd);border-radius:0;padding:9px 0 8px}
+.kpis.rest .kpi .v{font-size:15px;font-weight:650}
+.kpis.rest .kpi .l{font-size:11px;margin-top:2px}
+.kpis.rest .kpi .s{display:none}
 .kpi .s{font-size:10px;color:var(--t3);margin-top:3px;line-height:1.3;opacity:.8}
 .kpi.dim .v{color:var(--t3)}
 .mstrip{display:flex;flex-wrap:wrap;gap:4px 14px;margin:9px 0 0;font-size:11px;color:var(--t3);font-family:var(--mono)}
@@ -941,6 +965,21 @@ details.sec[open] summary .chev{transform:rotate(180deg)}
 .eye{width:28px;height:28px;border-radius:var(--r-sm);border:0;background:none;cursor:pointer;color:var(--t2);
      display:inline-flex;align-items:center;justify-content:center}
 .eye:hover{background:var(--s3);color:var(--t1)}
+/* Motion. Everything used to snap between states with no transition at all, which is what
+   made the whole thing feel machine-assembled rather than built. 150ms is below the
+   threshold where a control feels laggy and above the one where it feels like a glitch. */
+@media (prefers-reduced-motion:no-preference){
+  .eye,.chipb,.seg button,.frow select,.lrow,.gap,.res,.prow2,.loop,.tabbar button,
+  .btn,.lnk,.ctrychip,.cl-list,.kpi,.sec>summary{
+    transition:background var(--dur-fast) var(--ease-out),
+               border-color var(--dur-fast) var(--ease-out),
+               color var(--dur-fast) var(--ease-out),
+               opacity var(--dur-fast) var(--ease-out),
+               transform var(--dur-fast) var(--ease-out)}
+  .chipb:active,.btn:active,.tabbar button:active{transform:translateY(1px)}
+  .ctrychip:hover{transform:translate(-50%,-50%) scale(1.04)}
+  #panel{transition:transform var(--dur-med) var(--ease-out)}
+}
 .eye[aria-pressed="false"]{color:var(--t3)}
 .seg{display:flex;background:var(--s2);border:1px solid var(--bd);border-radius:var(--r-md);padding:2px;gap:2px;margin:6px 0 4px 22px}
 .seg button{flex:1;background:none;border:0;border-radius:6px;padding:5px 6px;cursor:pointer;font-size:11.5px;
@@ -1470,55 +1509,72 @@ const MK = {sites:{}, demand:{}, contracts:{}, capital:{}, offload:{}};   // id 
 const STATUS_FILL = {live:.78, under_construction:.42, phased:.42, permitted:.22, announced:.16, cancelled:.05};
 const statusBucket = s => s === "live" ? "live" : (s === "under_construction" || s === "phased") ? "building" : "planned";
 
-function siteRadius(mw, z){ const base = mw ? Math.sqrt(mw) * .62 : 3.5; return Math.max(4, Math.min(30, base)) * (z >= 7 ? 1.25 : 1) * S.scale; }
-const LABELS = L.layerGroup();
-function buildSites(){
-  LABELS.clearLayers(); if (!map.hasLayer(LABELS)) LABELS.addTo(map);
+/* ONE clustering behaviour for every point layer.
+   Modelled on the Arrivio demand map, which settled these choices over 67 commits:
+     - a donut carrying the COUNT, because that is what a cluster is; magnitude rides on the
+       ring weight and the disc size, not on a second number crowding the middle
+     - animate:true, so you WATCH the group come apart instead of it blinking out of existence
+     - a click that zooms to the group's bounds, and sub-clusters that behave identically
+       all the way down to single pins
+   Previously only the supply layer clustered at all; demand and resale were plain layer groups,
+   which is why nothing split on those categories. */
+function makeCluster(key, colVar, band, unitFn){
   const g = L.markerClusterGroup({
-    maxClusterRadius: z => z >= 12 ? 5 : z >= 10 ? 12 : z >= 8 ? 24 : z >= 6 ? 38 : 52,
-    spiderfyOnMaxZoom: true, spiderfyDistanceMultiplier: 1.6,
-    showCoverageOnHover:false, animate:false, chunkedLoading:true,
-    zoomToBoundsOnClick:false,          // handled below so the body zooms and the badge lists
+    maxClusterRadius: 55,
+    showCoverageOnHover: false,
+    animate: true, animateAddingMarkers: false,
+    spiderfyOnMaxZoom: true, spiderfyDistanceMultiplier: 1.7,
+    zoomToBoundsOnClick: false,       // handled below, so the list badge can share the icon
+    chunkedLoading: true,
     iconCreateFunction: c => {
-      const ms = c.getAllChildMarkers(); const mw = ms.reduce((a,m)=>a+(m.options.mw||0),0);
-      const live = ms.reduce((a,m)=>a+(m.options.live?m.options.mw||0:0),0);
-      const size = Math.max(40, Math.min(70, 34 + Math.sqrt(mw||1)*1.4));
-      const pct = mw ? Math.round(live/mw*100) : 0;
-      return L.divIcon({className:"", iconSize:[size,size], html:`<div class="cl" style="width:${size}px;height:${size}px;
-        background:conic-gradient(${cssv('--c-site-t')} ${pct}%, ${cssv('--c-site')} ${pct}% 100%);">
-        <div style="background:var(--glass);border-radius:50%;width:${size-8}px;height:${size-8}px;display:flex;align-items:center;justify-content:center;flex-direction:column">
-        <span>${mw?kf(mw):ms.length}</span><span style="font-size:8.5px;font-weight:500;opacity:.8">${mw?"MW":"sites"}</span></div>
-        <span class="cl-n">${ms.length}</span><span class="cl-list" title="List all ${ms.length} sites with their sources">&#9776;</span></div>`});
-    }});
+      const ms = c.getAllChildMarkers();
+      const n = c.getChildCount();
+      const v = ms.reduce((a,m) => a + (m.options.val||0), 0);
+      const tier = v < band[0] ? 0 : v < band[1] ? 1 : 2;
+      const size = Math.round([38,46,54][tier] * S.scale);
+      const ring = [2.5,3.5,4.5][tier];
+      const r = size/2 - ring;
+      const fs = Math.max(12, Math.round(size * 0.32));
+      return L.divIcon({className:"", iconSize:[size,size], html:
+        `<div class="dcl"><svg viewBox="0 0 ${size} ${size}"><circle class="cdisc" cx="${size/2}" cy="${size/2}" r="${r}"
+           stroke="${cssv(colVar)}" stroke-width="${ring}"/></svg><b style="font-size:${fs}px">${n}</b>
+         <span class="cl-list" title="List all ${n} with their sources">&#9776;</span></div>`});
+    }
+  });
   g.on("clustermouseover", e => {
-    const ms = e.propagatedFrom.getAllChildMarkers(); const mw = ms.reduce((a,m)=>a+(m.options.mw||0),0);
-    const live = ms.reduce((a,m)=>a+(m.options.live?m.options.mw||0:0),0);
-    const rows = ms.map(m=>SITE[m.options.sid]).filter(Boolean).sort((a,b)=>(b.it_load_mw||0)-(a.it_load_mw||0));
-    const list = rows.slice(0,8).map(s=>`<div class="tt-row"><span>${esc(s.operator||"Undisclosed operator")} · ${esc(s.name)}</span><span class="tt-k">${s.it_load_mw!=null?mwf(s.it_load_mw):"MW n/p"} · ${esc((s.status||"?").replace(/_/g," "))}</span></div>`).join("");
-    e.propagatedFrom.bindTooltip(`<b>Supply here: ${ms.length} sites · ${mwf(mw)}</b><div class="tt-sub">${mwf(live)} running</div>${list}${rows.length>8?`<div class="tt-sub">+${rows.length-8} more</div>`:""}<div class="tt-sub">Click to zoom in and split them &middot; click the &#9776; badge for the full list with sources</div>`,{direction:"top",offset:[0,-8],className:"tt-wide"}).openTooltip();
+    const cl = e.propagatedFrom, ms = cl.getAllChildMarkers();
+    const v = ms.reduce((a,m) => a + (m.options.val||0), 0);
+    cl.bindTooltip(unitFn(ms.length, v) + '<div class="tt-sub">Click to zoom in and split · &#9776; for the full list</div>',
+      {direction:"top", offset:[0,-10], className:"tt-wide"}).openTooltip();
   });
   g.on("clusterclick", e => {
     const cl = e.propagatedFrom;
     const t = e.originalEvent && e.originalEvent.target;
-    const wantsList = t && t.closest && t.closest(".cl-list");
-    CLUSTER_ZOOM = cl;
-    if (!wantsList) {
-      // the expected gesture: zoom in until this group comes apart
-      const b = cl.getBounds();
-      if (b.getNorthEast().equals(b.getSouthWest())) { cl.spiderfy(); return; }
-      map.fitBounds(b, {padding:[70,70], maxZoom:15});
-      return;
-    }
-    const rows = cl.getAllChildMarkers().map(m => SITE[m.options.sid]).filter(Boolean)
-                   .sort((a,b) => (b.it_load_mw||0) - (a.it_load_mw||0));
-    openPopup(cl.getLatLng(), clusterPopup(rows));
+    CLUSTER_ZOOM = cl; CLUSTER_KEY = key;
+    if (t && t.closest && t.closest(".cl-list")) { openPopup(cl.getLatLng(), clusterList(key, cl)); return; }
+    splitCluster(cl);
   });
+  return g;
+}
+/* Zoom to the group's own bounds. If every member sits on one point there is nothing to zoom
+   into, so fan them out instead -- either way the click always does something visible. */
+function splitCluster(cl){
+  const b = cl.getBounds();
+  if (b.getNorthEast().equals(b.getSouthWest())) { cl.spiderfy(); return; }
+  map.fitBounds(b, {padding:[70,70], maxZoom:15, animate:true});
+}
+function siteRadius(mw, z){ const base = mw ? Math.sqrt(mw) * .62 : 3.5; return Math.max(4, Math.min(30, base)) * (z >= 7 ? 1.25 : 1) * S.scale; }
+const LABELS = L.layerGroup();
+function buildSites(){
+  LABELS.clearLayers(); if (!map.hasLayer(LABELS)) LABELS.addTo(map);
+  const g = makeCluster("sites", "--c-site-t", [300, 1200],
+    (n, v) => `<b>${nf(n)} supply site${n>1?"s":""} here</b><div class="tt-k">${mwf(v)} between them</div>`);
   SITES.forEach(s => {
     if (s.lat == null) return;
     const b = statusBucket(s.status);
     if (S.siteStatus !== "all" && b !== S.siteStatus) return;
     const approx = s.loc_precision !== "exact";
-    const m = L.circleMarker([s.lat,s.lng], {renderer:canvas, radius:siteRadius(s.it_load_mw, map.getZoom()),
+    const m = L.circleMarker([s.lat,s.lng], {renderer:canvas, val:s.it_load_mw||0, radius:siteRadius(s.it_load_mw, map.getZoom()),
       color: cssv("--c-site-t"), weight: s.status==="live"?2:1.4, opacity: approx?.75:1, dashArray: approx?"3 3":null,
       fillColor: cssv("--c-site"), fillOpacity: STATUS_FILL[s.status] ?? .12, mw:s.it_load_mw||0, live:s.status==="live", sid:s.site_id});
     m.bindTooltip(`<b>Supply · ${esc(s.operator||"Undisclosed operator")}</b><div class="tt-sub">${esc(s.name)} · ${esc([s.city,s.country].filter(Boolean).join(", "))}</div>
@@ -1532,7 +1588,46 @@ function buildSites(){
   });
   return g;
 }
-let CLUSTER_ZOOM = null;
+let CLUSTER_ZOOM = null, CLUSTER_KEY = null;
+const OFF = {}; OFFLOADS.forEach(d => OFF[d.deal_id] = d);
+function clusterList(key, cl){
+  const ms = cl.getAllChildMarkers();
+  if (key === "demand") {
+    const rows = ms.map(m => DEM[m.options.eid]).filter(Boolean).sort((a,b) => (b.size_mw||0)-(a.size_mw||0));
+    const mw = rows.reduce((a,x) => a + (x.size_mw||0), 0);
+    const open = rows.reduce((a,x) => a + (x.gap||0), 0);
+    return `<div class="pp"><div class="pp-kind" style="color:var(--c-dem-t)">Demand &middot; ${rows.length} companies here</div>
+      <h3>${esc(rows[0] ? [ (ENT[rows[0].entity_id]||{}).hq_city, (ENT[rows[0].entity_id]||{}).hq_country ].filter(Boolean).join(", ") : "This cluster")}</h3>
+      <div class="pp-sub">Everyone in this group who has asked for compute, biggest first. Each row links to its source.</div>
+      <div class="pp-kpis"><div><b style="color:var(--c-dem-t)">${mwf(mw)}</b><small>asked for</small></div>
+        <div><b>${open?mwf(open):"none"}</b><small>still unsigned</small></div>
+        <div><b>${nf(rows.length)}</b><small>companies</small></div></div>
+      <div class="pp-h">All ${rows.length}</div>${rows.map(x => {
+        const l = x.latest;
+        return `<div class="prow2"><div class="pr-l"><b>${esc(x.name)}</b><small>${esc(short((l&&(l.need_plain||l.headline))||"no public statement", 120))}</small>
+          <div class="pr-src">${l?srcA(l):'<span class="dash">no source recorded</span>'}</div></div>
+          <div class="pr-v">${x.size_mw?mwf(x.size_mw):'<span class="dash">n/p</span>'}
+          <div><button class="lnk" data-sel="ent:${esc(x.entity_id)}">open</button></div></div></div>`; }).join("")}
+      <div class="pr-btns"><button class="btn primary" data-act="clzoom">Zoom in to separate them</button></div></div>`;
+  }
+  if (key === "offload") {
+    const rows = ms.map(m => OFF[m.options.did]).filter(Boolean).sort((a,b) => (b.mw||0)-(a.mw||0));
+    const mw = rows.reduce((a,d) => a + (d.mw||0), 0);
+    return `<div class="pp"><div class="pp-kind" style="color:var(--c-off-t)">Supply for sale &middot; ${rows.length} here</div>
+      <h3>Compute looking for a buyer</h3>
+      <div class="pp-sub">Holders trying to place capacity they already own. Each row links to its source.</div>
+      ${mw?`<div class="pp-kpis"><div><b style="color:var(--c-off-t)">${mwf(mw)}</b><small>where a size is published</small></div>
+        <div><b>${nf(rows.length)}</b><small>offers</small></div></div>`:""}
+      <div class="pp-h">All ${rows.length}</div>${rows.map(d =>
+        `<div class="prow2"><div class="pr-l"><b>${esc(whoName(d.from_id))}</b><small>${esc(short(d.headline,120))}</small>
+         <div class="pr-src">${srcA(d)||'<span class="dash">no source recorded</span>'}</div></div>
+         <div class="pr-v">${d.mw?mwf(d.mw):(d.quantity_raw?esc(short(String(d.quantity_raw),16)):'<span class="dash">n/p</span>')}
+         <div><button class="lnk" data-sel="deal:${esc(d.deal_id)}">open</button></div></div></div>`).join("")}
+      <div class="pr-btns"><button class="btn primary" data-act="clzoom">Zoom in to separate them</button></div></div>`;
+  }
+  const rows = ms.map(m => SITE[m.options.sid]).filter(Boolean).sort((a,b) => (b.it_load_mw||0)-(a.it_load_mw||0));
+  return clusterPopup(rows);
+}
 function clusterPopup(rows){
   const mw = rows.reduce((a,s) => a + (s.it_load_mw||0), 0);
   const by = b => rows.filter(s => bucketOf(s.status) === b);
@@ -1590,9 +1685,24 @@ function chipValue(c){
   return bits.join('<span class="cvsep">·</span>');
 }
 let CTRYLAB = null, REMAINDER = null;
+const CTRY_MAX_ZOOM = 6;      // past this a country ring is bigger than the screen; the sites take over
+function zoomToCountry(c){
+  const own = SITES.filter(s => s.country === c.country && s.lat != null);
+  if (own.length > 1) { map.fitBounds(L.latLngBounds(own.map(s => [s.lat, s.lng])), {padding:[80,80], maxZoom:9, animate:true}); return; }
+  map.flyTo([c.lat, c.lng], Math.max(map.getZoom()+2, 6), {duration:.8});
+}
+/* A country ring is a world-level aggregate. Once you are inside the country it is just a huge
+   circle sitting on top of the detail, so it steps aside and the sites and companies take over.
+   The layer stays "on" -- zoom back out and it returns. */
+function syncCountryZoom(){
+  if (!G.country) return;
+  const show = S.on.country && map.getZoom() <= CTRY_MAX_ZOOM;
+  if (show && !map.hasLayer(G.country)) G.country.addTo(map);
+  if (!show && map.hasLayer(G.country)) map.removeLayer(G.country);
+}
 function rebuildCountryLabels(){
   if (CTRYLAB) { map.removeLayer(CTRYLAB); CTRYLAB = null; }
-  if (!S.on.country) return;
+  if (!S.on.country || map.getZoom() > CTRY_MAX_ZOOM) return;
   const m = CMETRIC[S.ctryMetric] || CMETRIC.building;
   const b = map.getBounds(), placed = [];
   CTRYLAB = L.layerGroup();
@@ -1618,7 +1728,7 @@ function rebuildCountryLabels(){
     const mk = L.marker([c.lat, c.lng], {pane:"markerPane", interactive:true, icon:L.divIcon({
       className:"", iconSize:null, iconAnchor:[0,0],
       html:`<span class="ctrychip" style="margin-top:${-(c._r||14)-14}px;display:inline-flex"><span class="cn">${esc(c.country)}</span>${val}</span>`})});
-    mk.bindTooltip(c._hover || countryHover(c), {direction:"top", offset:[0,-((c._r||14)+26)], className:"tt-wide"});
+    mk.bindTooltip((c._hover || countryHover(c)) + '<div class="tt-sub">Click the ring to zoom in &middot; click this label for the full card</div>', {direction:"top", offset:[0,-((c._r||14)+26)], className:"tt-wide"});
     if (!c._hover) mk.on("click", () => openPopup([c.lat, c.lng], countryPopup(c)));
     else mk.on("click", () => { $("sec-live").open = true; if (!S.panelOpen) togglePanel(true); });
     CTRYLAB.addLayer(mk);
@@ -1639,7 +1749,8 @@ function buildCountry(){
     const ring = L.circleMarker([c.lat,c.lng], {pane:"country", radius:r, color:cssv("--c-ctry"), weight:1.2, opacity:.7, dashArray:"2 4",
       fillColor:cssv("--c-ctry"), fillOpacity:.12, interactive:true});
     ring.bindTooltip(() => countryHover(c), {sticky:true, className:"tt-wide"});
-    ring.on("click", () => openPopup([c.lat,c.lng], countryPopup(c)));
+    // Same grammar as a cluster: the circle drills in, the label opens the detail.
+    ring.on("click", () => zoomToCountry(c));
     ring.on("mouseover", () => ring.setStyle({weight:2, opacity:1, fillOpacity:.2}));
     ring.on("mouseout",  () => ring.setStyle({weight:1.2, opacity:.7, fillOpacity:.12}));
     g.addLayer(ring);
@@ -1693,13 +1804,14 @@ function countryPopup(c){
     ${popFoot("country:"+c.country)}</div>`;
 }
 function buildDemand(){
-  const g = L.layerGroup();
+  const g = makeCluster("demand", "--c-dem-t", [500, 3000],
+    (n, v) => `<b>${nf(n)} compan${n>1?"ies":"y"} needing compute</b><div class="tt-k">${v?mwf(v)+" between them":"amounts not published"}</div>`);
   const max = Math.max(...DEMAND.map(x=>x.size_mw||0), 1);
   DEMAND.forEach(x => {
     if (!x.loc || !demandVisible(x)) return;
     const r = (7 + Math.sqrt((x.size_mw||1)/max) * 26) * S.scale;
     const gap = DATA.demand_gaps.find(gp=>gp.entity_id===x.entity_id);
-    const m = L.circleMarker(x.loc, {pane:"demand", radius:r, color:cssv("--c-dem-t"), weight:gap?2.5:1.5, fillColor:cssv("--c-dem"), fillOpacity:gap?.5:.3});
+    const m = L.circleMarker(x.loc, {pane:"demand", val:x.size_mw||0, eid:x.entity_id, radius:r, color:cssv("--c-dem-t"), weight:gap?2.5:1.5, fillColor:cssv("--c-dem"), fillOpacity:gap?.5:.3});
     const l = x.latest;
     m.bindTooltip(`<b>Demand · ${esc(x.name)}</b><div class="tt-sub">${esc((l&&(l.need_plain||l.headline))||"")}</div>
       <div class="tt-k">${x.stated_mw?mwf(x.stated_mw)+" stated":""}${x.contracted_mw?" · "+mwf(x.contracted_mw)+" signed":""}${gap?" · "+mwf(gap.gap_mw)+" still open":""}</div>${l?srcA(l,true):""}<div class="tt-sub">click for every need with its source</div>`,{direction:"top",offset:[0,-r],className:"tt-wide"});
@@ -1768,10 +1880,11 @@ function rebuildArcLabels(){
   ARCLAB.addTo(map);
 }
 function buildOffload(){
-  const g = L.layerGroup();
+  const g = makeCluster("offload", "--c-off-t", [200, 900],
+    (n, v) => `<b>${nf(n)} resale offer${n>1?"s":""} here</b><div class="tt-k">${v?mwf(v)+" between them":"sizes not published"}</div>`);
   OFFLOADS.forEach(d => {
     if (!d.loc) return;
-    const m = L.circleMarker(d.loc, {pane:"demand", radius:9, color:cssv("--c-off-t"), weight:2.5, fillColor:cssv("--c-off"), fillOpacity:.35, dashArray:"2 3"});
+    const m = L.circleMarker(d.loc, {pane:"demand", val:d.mw||0, did:d.deal_id, radius:9, color:cssv("--c-off-t"), weight:2.5, fillColor:cssv("--c-off"), fillOpacity:.35, dashArray:"2 3"});
     m.bindTooltip(`<b>Supply for sale · ${esc(whoName(d.from_id))}</b><div class="tt-sub">${esc(d.headline)}</div><div class="tt-k">${d.usd_value?usd(d.usd_value):""}${d.mw?" · "+mwf(d.mw):""}</div>${srcA(d,true)}`,{direction:"top",offset:[0,-9],className:"tt-wide"});
     m.on("click", () => select("deal:"+d.deal_id));
     MK.offload[d.deal_id] = m; g.addLayer(m);
@@ -1810,7 +1923,7 @@ function rebuild(id){
         : id==="offload"   ? buildOffload() : id==="prices" ? buildPrices() : null;
   if (G[id]) G[id].addTo(map);
   if (id==="contracts") rebuildArcLabels();
-  if (id==="country") { rebuildCountryLabels(); syncBaseLabels(); }
+  if (id==="country") { rebuildCountryLabels(); syncBaseLabels(); syncCountryZoom(); }
 }
 function rebuildAll(){ LAYERS.forEach(l => { if (l.id !== "labels") rebuild(l.id); }); }
 
@@ -1850,21 +1963,17 @@ function renderMarket(){
         <button data-scope="apac" aria-pressed="${n.apac}">Asia</button>
         <button data-scope="world" aria-pressed="${!n.apac}">World</button></span>
     </div>
-    <div class="kpis">
+    <div class="kpis lead">
       ${tile("build", kf(n.building), "MW supply being built", n.apac ? "market figure, C&amp;W" : `${nf(SITES.filter(s=>bucketOf(s.status)==="building").length)} sites`)}
-      ${n.forSaleMw
-        ? tile("", kf(n.forSaleMw), "MW supply looking for a buyer",
-            `${nf(n.forSale.length)} offers${n.forSaleUsd?" · "+usd(n.forSaleUsd):""}`)
-        : n.forSale.length
-          ? tile("", nf(n.forSale.length), "reports of supply looking for a buyer",
-              "none of them publishes a megawatt figure")
-          : tile("dim", none("none found"), "supply looking for a buyer", "nothing found in this market yet")}
       ${tile("dem", kf(n.gapMw), "MW demand waiting for supply", `${nf(n.gaps.length)} companies, no contract found`)}
     </div>
-    <div class="kpis" style="margin-top:8px">
-      ${tile("dem", kf(n.pendingMw), "MW signed but not delivered", `${nf(n.pending.length)} contracts awarded`)}
-      ${tile("dem", kf(n.soonMw), `MW demand due by ${HORIZON}`, `${nf(n.soon.length)} needs carrying a date`)}
-      ${tile("dem", kf(n.nodateMw), "MW demand with no date yet", `${nf(n.nodate.length)} needs stated without a deadline`)}
+    <div class="kpis rest">
+      ${tile("dem", kf(n.soonMw), `demand due by ${HORIZON}`)}
+      ${tile("dem", kf(n.nodateMw), "demand with no date yet")}
+      ${tile("dem", kf(n.pendingMw), "signed, not delivered")}
+      ${n.forSaleMw ? tile("", kf(n.forSaleMw), "looking for a buyer")
+        : n.forSale.length ? tile("", nf(n.forSale.length), "reports of supply for sale")
+        : tile("dim", "&mdash;", "supply for sale, none found")}
     </div>
     <div class="mstrip">
       <span>we have dated <b>${nf(n.soon.length)}</b> of <b>${nf(n.soon.length + n.nodate.length)}</b> stated needs</span>
@@ -2430,7 +2539,8 @@ function renderLegend(){
   const line = st => `<span class="line" style="${st}"></span>`;
 
   if (S.on.country) out.push(sec("--c-ctry","By country",c.country,[
-    row(dot("border:1.5px dashed var(--c-ctry)"),`Showing <b>${(CMETRIC[S.ctryMetric]||CMETRIC.building).label.toLowerCase()}</b>. A ring with no number has none. Hover any ring for its full lists.`)]));
+    row(dot("border:1.5px dashed var(--c-ctry)"),`Showing <b>${(CMETRIC[S.ctryMetric]||CMETRIC.building).label.toLowerCase()}</b>. A ring with no number has none.`),
+    row(dot("border:1.5px dashed var(--c-ctry);opacity:.45"),`Click a ring to zoom into that country. Once you are inside it, the rings step aside and the sites take over.`)]));
 
   if (S.on.sites) out.push(sec("--c-site","Supply · data centres",c.sites,[
     row(dot("background:var(--c-site);border-color:var(--c-site-t)"),"<b>Solid</b> — running now"),
@@ -2502,10 +2612,7 @@ document.addEventListener("click", ev => {
   const st = t.closest("[data-status]"); if (st){ S.siteStatus=st.dataset.status; rebuild("sites"); renderLayers(); renderMarket(); renderPill(); writeHash(); return; }
   const sel = t.closest("[data-sel]"); if (sel){ ev.preventDefault(); if (sel.dataset.sel.endsWith(":")) return; select(sel.dataset.sel); $("results").classList.remove("on"); return; }
   const lp = t.closest("[data-loop]"); if (lp){ drawLoop(+lp.dataset.loop); return; }
-  if (t.closest("[data-act='clzoom']")) { if (CLUSTER_ZOOM) { map.closePopup();
-    const b = CLUSTER_ZOOM.getBounds();
-    if (b.getNorthEast().equals(b.getSouthWest())) CLUSTER_ZOOM.spiderfy();
-    else map.fitBounds(b, {padding:[70,70], maxZoom:15}); } return; }
+  if (t.closest("[data-act='clzoom']")) { if (CLUSTER_ZOOM) { map.closePopup(); splitCluster(CLUSTER_ZOOM); } return; }
   if (t.closest("[data-act='closesel']")) { closeSel(); return; }
   if (t.closest("[data-act='showdeals']")) { if (S.sel&&S.sel.startsWith("ent:")) drawDeals(S.sel.slice(4)); return; }
   if (t.closest("#btn-collapse")) { togglePanel(false); return; }
@@ -2551,6 +2658,7 @@ document.addEventListener("keydown", e => {
 });
 map.on("zoomend", () => { Object.values(MK.sites).forEach(m => m.setRadius(siteRadius(m.options.mw, map.getZoom()))); });
 map.on("moveend", () => { rebuildArcLabels(); rebuildCountryLabels(); });
+map.on("zoomend", () => { syncCountryZoom(); rebuildCountryLabels(); });
 function fitApac(){ const pts = SITES.filter(s=>s.lat!=null&&APAC.has(s.country)).map(s=>[s.lat,s.lng]); if (pts.length) map.fitBounds(L.latLngBounds(pts).pad(.08)); else map.setView([8,105],3); }
 function fitAll(){ const pts = SITES.filter(s=>s.lat!=null).map(s=>[s.lat,s.lng]); if (pts.length) map.fitBounds(L.latLngBounds(pts).pad(.05)); }
 
