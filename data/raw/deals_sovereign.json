@@ -1,0 +1,652 @@
+[
+ {
+  "deal_id": "indiaai-mission-cabinet-approval-2024-03",
+  "deal_type": "D7",
+  "from_entity": "meity-india",
+  "to_entity": "indiaai-mission",
+  "headline": "India's Cabinet approved the IndiaAI Mission with a five-year budget of Rs 10,371.92 crore and a target of more than 10,000 GPUs.",
+  "notes": "Budget stated only in INR (Rs 10,371.92 crore; the March 2024 Cabinet release says 'over Rs 10,300 crore'); no official USD figure published, so usd_value is null. Seven pillars, of which 'IndiaAI Compute Capacity' is the compute pillar. The 10,000 GPU figure is the original compute target and has since been exceeded.",
+  "source_urls": [
+   "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2012375&reg=48&lang=2",
+   "https://www.pib.gov.in/PressNoteDetails.aspx?ModuleId=3&NoteId=156786&lang=1&reg=3"
+  ],
+  "geography": [
+   "India"
+  ],
+  "mw": 14.3,
+  "h100e": 10000,
+  "h100e_basis": "10,000 GPUs, chip unstated, treated as 1.0",
+  "quantity_raw": "over 10,000 GPUs; budget outlay of Rs 10,371.92 crore over five years",
+  "quantity_value": 10000,
+  "quantity_unit": "GPUs",
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2024-03-07",
+  "term_start": "2024-03",
+  "term_years": 5,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "indiaai-compute-empanelment-tranche1-2025-01",
+  "deal_type": "D1",
+  "from_entity": "indiaai-empanelled-csps",
+  "to_entity": "indiaai-mission",
+  "headline": "MeitY empanelled ten Indian cloud providers and brought 18,693 GPUs onto the IndiaAI compute portal, well above the 10,000 originally sought.",
+  "notes": "Ten qualified bidders named by MeitY: CMS Computers India, Ctrls Datacenters, E2E Networks, Jio Platforms, Locuz Enterprise Solutions, NxtGen Datacenter and Cloud Technologies, Orient Technologies, Tata Communications, Vensysco Technologies, Yotta Data Services. Request for Empanelment published 2024-08-16; bid submission deadline 2024-11-28; commercial bids opened 2025-01-22. Empanelment validity 36 months with an option to extend 12 months (hence term_years=3). PIB reports 7,200 units as 'MI 200 300' - an AMD Instinct MI-series block whose exact SKU is ambiguous in the source, so it is deliberately omitted from chip_skus rather than guessed. DOUBLE-COUNT RISK: this GPU count is superseded by the later 38,000-GPU figure, which includes it.",
+  "source_urls": [
+   "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2097709",
+   "https://indiaai.gov.in/article/meity-accelerates-empanelment-of-agencies-to-provide-ai-compute-and-services-for-the-indiaai-mission"
+  ],
+  "geography": [
+   "India"
+  ],
+  "mw": 28.74,
+  "h100e": 20095.0,
+  "h100e_basis": "18,693 GPUs x 1.07 (H100/H200)",
+  "quantity_raw": "18,693 GPUs, including 12,896 H100, 1,480 H200, and 7,200 MI 200 300 units",
+  "quantity_value": 18693,
+  "quantity_unit": "GPUs",
+  "status": "operational",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2025-01-30",
+  "term_start": "2025-01",
+  "term_years": 3,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "indiaai-published-gpu-hour-rate-2025-01",
+  "deal_type": "D12",
+  "from_entity": "indiaai-empanelled-csps",
+  "to_entity": "indiaai-mission",
+  "headline": "India published a government reference price for GPU time: about Rs 115.85 per GPU hour, and Rs 150 per hour for high-end compute.",
+  "notes": "UNIT IS INR PER GPU-HOUR (quantity_unit left null because the schema enum has no price unit; the number is a price, not a volume). Verbatim from PIB: 'The cost per GPU hour is approximately Rs 115.85, significantly lower than the global benchmark of $2.5-$3 per hour. High-end computing will be available at Rs 150 per hour, with a 40% government subsidy reducing the cost to less than Rs 100 per hour for common Compute access.' This is the discovered tender rate before subsidy. India is, on the sources found here, the only government publishing an explicit per-GPU-hour reference price for a national compute programme.",
+  "source_urls": [
+   "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2097709"
+  ],
+  "geography": [
+   "India"
+  ],
+  "quantity_raw": "approximately Rs 115.85 per GPU hour; high-end computing at Rs 150 per hour",
+  "quantity_value": 115.85,
+  "status": "operational",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2025-01-30",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "indiaai-subsidised-gpu-hour-rate-2025-12",
+  "deal_type": "D12",
+  "from_entity": "indiaai-mission",
+  "to_entity": "indiaai-empanelled-csps",
+  "headline": "India's government price for subsidised GPU access was stated as Rs 65 per hour in December 2025.",
+  "notes": "UNIT IS INR PER GPU-HOUR. Verbatim from PIB: 'over 38,000 GPUs have been onboarded. These GPUs are available at a subsidized rate of just Rs 65 per hour.' Note the tension with the February 2026 PIB statement of 'subsidised rates under Rs.100' and the January 2025 statement of 'less than Rs 100 per hour' after a 40% subsidy - the government has published at least three different subsidised figures (Rs 65, 'under Rs 100', 'less than Rs 100'). Rs 65 is the lowest published and appears to apply to the cheapest GPU class rather than to all SKUs; the source does not say which SKU.",
+  "source_urls": [
+   "https://www.pib.gov.in/PressNoteDetails.aspx?ModuleId=3&NoteId=156786&lang=1&reg=3"
+  ],
+  "geography": [
+   "India"
+  ],
+  "quantity_raw": "subsidized rate of just Rs 65 per hour",
+  "quantity_value": 65,
+  "status": "operational",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2025-12-30",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "indiaai-compute-portal-capacity-2026-02",
+  "deal_type": "D1",
+  "from_entity": "indiaai-empanelled-csps",
+  "to_entity": "indiaai-mission",
+  "headline": "India's IndiaAI Compute Portal offers 38,000 GPUs and 1,050 TPUs at subsidised rates under Rs 100 an hour.",
+  "notes": "Compute-as-a-service model. Also states a secure national GPU cluster of 3,000 next-generation GPUs for sovereign applications, and that startups receive support for up to 25% of compute costs. A separate PIB release dated 2026-03-25 states 'more than 38 thousand GPUs for common compute facility have been onboarded through the AI compute portal'. DOUBLE-COUNT RISK: supersedes and includes the 18,693 GPUs of tranche 1.",
+  "source_urls": [
+   "https://www.pib.gov.in/PressNoteDetails.aspx?ModuleId=3&NoteId=157204&reg=3&lang=1",
+   "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2245069&reg=3&lang=1"
+  ],
+  "geography": [
+   "India"
+  ],
+  "mw": 54.34,
+  "h100e": 38000,
+  "h100e_basis": "38,000 GPUs, chip unstated, treated as 1.0",
+  "quantity_raw": "38,000 GPUs and 1,050 TPUs at subsidised rates under Rs.100",
+  "quantity_value": 38000,
+  "quantity_unit": "GPUs",
+  "status": "operational",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-02-04",
+  "captured_at": "2026-09-02",
+  "is_restatement": true,
+  "same_underlying_as": "indiaai-compute-empanelment-tranche1-2025-01"
+ },
+ {
+  "deal_id": "indiaai-sovereign-gpu-cluster-3000-2026-02",
+  "deal_type": "D7",
+  "from_entity": "meity-india",
+  "to_entity": "indiaai-mission",
+  "headline": "India is standing up a secure national GPU cluster of 3,000 next-generation GPUs reserved for sovereign applications.",
+  "notes": "Source does not name the operator, the site, the chip SKU or a delivery date. Kept separate from the 38,000-GPU shared portal because the source describes it as a dedicated sovereign cluster.",
+  "source_urls": [
+   "https://www.pib.gov.in/PressNoteDetails.aspx?ModuleId=3&NoteId=157204&reg=3&lang=1"
+  ],
+  "geography": [
+   "India"
+  ],
+  "mw": 4.29,
+  "h100e": 3000,
+  "h100e_basis": "3,000 GPUs, chip unstated, treated as 1.0",
+  "quantity_raw": "A secure national GPU cluster with 3,000 next-generation GPUs",
+  "quantity_value": 3000,
+  "quantity_unit": "GPUs",
+  "status": "announced",
+  "confidence": "T1",
+  "binding_status": "non_binding",
+  "announced_date": "2026-02-04",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "e2e-networks-meity-gpu-hours-2025-09",
+  "deal_type": "D1",
+  "from_entity": "e2e-networks",
+  "to_entity": "indiaai-mission",
+  "headline": "E2E Networks won a Rs 177 crore MeitY order to supply about 13 million H200 and H100 GPU hours over 360 days.",
+  "notes": "Contract value stated only in INR (approximately Rs 177 crore), so usd_value is null. GPUs to be provided with InfiniBand on a single fabric. The capacity was allocated by MeitY to Gnani AI, a foundation-model developer, as end user. Term reported as 360 days, recorded as term_years=1. An implied price of roughly Rs 136 per GPU-hour follows from dividing the two published figures, but neither party published a rate, so no rate is asserted here.",
+  "source_urls": [
+   "https://www.business-standard.com/markets/capital-market-news/e2e-networks-jumps-after-receiving-order-worth-rs-177-cr-from-meity-125090300234_1.html"
+  ],
+  "geography": [
+   "India"
+  ],
+  "quantity_raw": "1,29,94,560 GPU hours (12,994,560) of H200 SXM and H100 SXM, order worth approximately Rs 177 crore, 360 days",
+  "quantity_value": 12994560,
+  "quantity_unit": "GPU_hours",
+  "status": "signed",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2025-09-03",
+  "term_start": "2025-09",
+  "term_years": 1,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "indiaai-gpu-tender-round2-2025-05",
+  "deal_type": "D7",
+  "from_entity": "meity-india",
+  "headline": "India ran a second IndiaAI GPU tender seeking about 15,000 more GPUs, shortlisting a group of bidders including AWS, Oracle and Google Cloud partners.",
+  "notes": "Bidders reported as shortlisted: Amazon Web Services, Oracle, Google Cloud, Sify Digital Services, Netmagic IT Services, Vensysco Technologies, Cyfuture India, Yotta Data Services, Locuz Enterprise Solutions and Ishan Infotech. The source headlines 'seven companies' but names more than seven, so the exact shortlist count is unreliable. Reported partnering: Vensysco and Locuz with AWS, Ishan Infotech with Oracle, NTT-Netmagic with Google Cloud. Technical presentations were set for 2025-05-14. to_entity is null because the award was not made to a single named party in this source. No award value or per-GPU-hour rate published for this round in a source found here.",
+  "source_urls": [
+   "https://inc42.com/buzz/indiaai-mission-govt-shortlists-7-companies-for-second-round-of-gpu-tender/"
+  ],
+  "geography": [
+   "India"
+  ],
+  "mw": 21.45,
+  "h100e": 15000,
+  "h100e_basis": "15,000 GPUs, chip unstated, treated as 1.0",
+  "quantity_raw": "15,000 GPUs sought in round two",
+  "quantity_value": 15000,
+  "quantity_unit": "GPUs",
+  "status": "in_progress",
+  "confidence": "T3",
+  "binding_status": "non_binding",
+  "announced_date": "2025-05-07",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "meti-ai-compute-subsidy-2024",
+  "deal_type": "D7",
+  "from_entity": "meti-japan",
+  "headline": "Japan's METI committed 72.5 billion yen to subsidise five companies building GPU cloud capacity for AI developers.",
+  "notes": "UNIT IS JAPANESE YEN (quantity_unit null because the schema enum has no JPY option; usd_value left null because no USD figure was published). Legal basis: Economic Security Promotion Act. Named recipients and allocations: SAKURA Internet about 50.1bn yen; KDDI about 10.24bn yen; Highreso and Highreso Kagawa jointly about 7.70bn yen; RUTILEA and AI Fukushima jointly about 2.56bn yen; GMO Internet Group about 1.93bn yen. All five deliver GPU cloud services as computational resources for AI developers. METI is to convene a study group with the five companies and AIST. announced_date is approximate to the year only (source states the initiative was approved and started in 2024); the exact announcement day was not found on a primary source.",
+  "source_urls": [
+   "https://oecd.ai/en/dashboards/policy-initiatives/meti-subsidies-for-ai-computational-resources-under-the-economic-security-promotion-act"
+  ],
+  "geography": [
+   "Japan"
+  ],
+  "quantity_raw": "72.5 billion yen total across five projects",
+  "quantity_value": 72500000000,
+  "status": "in_progress",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2024-01-01",
+  "term_start": "2024-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "geniac-programme-japan",
+  "deal_type": "D7",
+  "from_entity": "meti-japan",
+  "to_entity": "nedo-japan",
+  "headline": "Japan's GENIAC programme, run by METI with NEDO, buys computing resources for selected domestic foundation-model developers.",
+  "notes": "Generative AI Accelerator Challenge. METI's English page states GENIAC 'provides support for the provision of computing resources, assists in demonstration projects for data utilization, organizes matching events, and facilitates collaboration with global tech companies.' No budget figure, GPU count or per-hour rate is published on the METI GENIAC pages found here, so all quantity fields are null. Selected developers listed by METI include ABEJA, AIdeaLab, AI inside, Airion, Degas, Direava, Sakana AI, Preferred Networks, Elith, Epigenetic AI, biomy, Sansan, Sherpa and Company, DubGuild. METI's Japanese page records subsequent cycles: 2026-05-14 selections for manufacturing-data AI-readiness and robot foundation models, 2026-05-29 launch of GENIAC-PRIZE 2026, and 2026-07-02 selection of the data-ecosystem R&D implementation structure. announced_date is METI's original GENIAC launch announcement date. CAUTION: several English-language METI press-release URLs circulating for GENIAC cycle announcements in 2026 return 404; only the two policy pages cited here were verified live.",
+  "source_urls": [
+   "https://www.meti.go.jp/english/policy/mono_info_service/geniac/index.html",
+   "https://www.meti.go.jp/policy/mono_info_service/geniac/index.html"
+  ],
+  "geography": [
+   "Japan"
+  ],
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2024-02-02",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "abci-3-aist-h200",
+  "deal_type": "D1",
+  "from_entity": "nvidia",
+  "to_entity": "aist-japan",
+  "headline": "Japan's AIST runs the ABCI 3.0 supercomputer with 6,128 Nvidia H200 GPUs.",
+  "notes": "GPU count taken from the OECD.AI policy-initiative record on METI's AI computational resources subsidies, which references ABCI 3.0 separately from the five subsidised GPU cloud projects. announced_date is the date of the original ABCI 3.0 announcement as widely reported; no primary AIST page was fetched to confirm it, so treat the date as lower confidence than the GPU count.",
+  "source_urls": [
+   "https://oecd.ai/en/dashboards/policy-initiatives/meti-subsidies-for-ai-computational-resources-under-the-economic-security-promotion-act"
+  ],
+  "geography": [
+   "Japan"
+  ],
+  "site": "ABCI 3.0",
+  "mw": 10.08,
+  "h100e": 7047.2,
+  "h100e_basis": "6,128 GPUs x 1.15 (H200)",
+  "quantity_raw": "6,128 NVIDIA H200 GPUs",
+  "quantity_value": 6128,
+  "quantity_unit": "GPUs",
+  "status": "operational",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2024-07-11",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "softbank-sakai-ai-datacentre-2024-06",
+  "deal_type": "D6",
+  "from_entity": "sharp-corporation",
+  "to_entity": "softbank-corp",
+  "headline": "SoftBank Corp. is converting Sharp's former Sakai plant in Osaka into a large-scale AI data centre.",
+  "notes": "Only the fact and the site are recorded. The SoftBank press page was fetched live and its title confirms 'SoftBank Corp. to Construct Large-scale AI Data Center that Utilizes Sharp Sakai Plant', but the body text did not render through this fetch, so no megawatt figure, GPU count or purchase price is asserted. Widely reported figures of roughly $673-676m for the property acquisition were NOT confirmed against a primary source and are therefore omitted rather than recorded.",
+  "source_urls": [
+   "https://www.softbank.jp/en/corp/news/press/sbkk/2024/20240607_01/"
+  ],
+  "geography": [
+   "Japan"
+  ],
+  "site": "Sharp Sakai Plant, Osaka",
+  "status": "announced",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2024-06-07",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "korea-msit-national-gpu-programme-2025-07",
+  "deal_type": "D1",
+  "from_entity": "msit-korea",
+  "headline": "South Korea's MSIT put about 1.46 trillion won into 13,000 high-performance GPUs hosted by NHN Cloud, Naver Cloud and Kakao.",
+  "notes": "Provider split as recorded by OECD.AI: NHN Cloud 7,656 B200 (6,120 government-owned); Naver Cloud 3,056 H200 (2,296 government-allocated); Kakao 2,424 B200 (2,040 government-operated). Over 10,000 GPUs designated for government-led initiatives. Supplementary budget allocated May 2025; providers chosen by public bidding; Naver Cloud full-scale service expected by end-2025, Kakao partial beta before year-end. to_entity is null because capacity went to three named providers at once - see notes for the split. announced_date is month-precision only (July 2025); day not stated.",
+  "source_urls": [
+   "https://oecd.ai/en/dashboards/policy-initiatives/south-korea-national-ai-gpu-infrastructure-initiative-1"
+  ],
+  "geography": [
+   "South Korea"
+  ],
+  "mw": 31.14,
+  "h100e": 21775.0,
+  "h100e_basis": "13,000 GPUs x 1.68 (B200/H200)",
+  "usd_value": 1100000000,
+  "quantity_raw": "13,000 high-performance GPUs; KRW 1.46 trillion (approximately USD 1.1 billion)",
+  "quantity_value": 13000,
+  "quantity_unit": "GPUs",
+  "status": "in_progress",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2025-07-01",
+  "term_start": "2025-07",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "nvidia-korea-260k-gpus-2025-10",
+  "deal_type": "D2",
+  "from_entity": "nvidia",
+  "headline": "Nvidia announced it would supply 260,000 GPUs to South Korea, split between the government and Samsung, SK, Hyundai and Naver.",
+  "notes": "Announced at the APEC summit in South Korea. Allocation as reported: Ministry of Science and ICT 50,000 units (deployed at the National AI Computing Center, Naver Cloud, NHN Cloud and Kakao facilities); Samsung Electronics 50,000; SK Group 50,000; Hyundai Motor Group 50,000; Naver Cloud over 60,000. Note the components sum to more than 260,000, so the sub-allocations are not mutually exclusive or are not all incremental. Value is an estimate (14.8 trillion won, reported as USD 7.8-10.4bn at a per-unit cost of $30,000-$40,000), so usd_value is left null rather than picking a point in the range. to_entity null - multiple named recipients.",
+  "source_urls": [
+   "https://www.lightreading.com/ai-machine-learning/south-korea-to-boost-ai-infrastructure-with-260-000-nvidia-chips"
+  ],
+  "geography": [
+   "South Korea"
+  ],
+  "mw": 817.96,
+  "h100e": 572000.0,
+  "h100e_basis": "260,000 GPUs x 2.20 (B200)",
+  "quantity_raw": "260,000 GPUs; estimated 14.8 trillion Korean won (USD 7.8-10.4 billion)",
+  "quantity_value": 260000,
+  "quantity_unit": "GPUs",
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "non_binding",
+  "announced_date": "2025-10-31",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "korea-msit-government-gpu-allocation-2025-10",
+  "deal_type": "D7",
+  "from_entity": "nvidia",
+  "to_entity": "msit-korea",
+  "headline": "Fifty thousand of the 260,000 Nvidia GPUs announced for South Korea are earmarked for the science ministry.",
+  "notes": "Government share of the October 2025 Nvidia-Korea announcement; to be deployed at the National AI Computing Center and at Naver Cloud, NHN Cloud and Kakao facilities. DOUBLE-COUNT RISK: subset of deal nvidia-korea-260k-gpus-2025-10.",
+  "source_urls": [
+   "https://www.lightreading.com/ai-machine-learning/south-korea-to-boost-ai-infrastructure-with-260-000-nvidia-chips"
+  ],
+  "geography": [
+   "South Korea"
+  ],
+  "mw": 157.3,
+  "h100e": 110000.0,
+  "h100e_basis": "50,000 GPUs x 2.20 (B200)",
+  "quantity_raw": "Ministry of Science and ICT (MSIT): 50,000 units",
+  "quantity_value": 50000,
+  "quantity_unit": "GPUs",
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "non_binding",
+  "announced_date": "2025-10-31",
+  "captured_at": "2026-09-02",
+  "is_restatement": true,
+  "same_underlying_as": "nvidia-korea-260k-gpus-2025-10"
+ },
+ {
+  "deal_id": "korea-national-ai-budget-2026",
+  "deal_type": "D7",
+  "from_entity": "msit-korea",
+  "headline": "South Korea set a 9.9 trillion won national AI budget for 2026 and targets 52,000 GPUs by 2028 and 260,000 by 2030.",
+  "notes": "Announced by the Presidential Council on National Artificial Intelligence Strategy; 47.7% of the 2026 budget is for new initiatives. National AI Action Plan contains 98 initiatives. Korea's Basic Act on AI takes effect 22 January. Government GPU procurement is described by the minister as a 'priming pump' for private-sector build. quantity_value records the 2028 GPU target; the 2030 target of 260,000 is in quantity_raw. announced_date is approximate to the month - the Korea Herald piece reports the council announcement without a precise date visible in the fetched text; treat the day as unreliable.",
+  "source_urls": [
+   "https://www.koreaherald.com/article/10636733"
+  ],
+  "geography": [
+   "South Korea"
+  ],
+  "mw": 74.36,
+  "h100e": 52000,
+  "h100e_basis": "52,000 GPUs, chip unstated, treated as 1.0",
+  "usd_value": 6700000000,
+  "quantity_raw": "9.9 trillion won ($6.7 billion) budget for 2026; 52,000 high-performance GPUs by 2028, 260,000 by 2030",
+  "quantity_value": 52000,
+  "quantity_unit": "GPUs",
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2025-12-01",
+  "term_start": "2026-01",
+  "term_end": "2030-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "singapore-dc-cfa2-allocation-2026-08",
+  "deal_type": "D6",
+  "from_entity": "imda-singapore",
+  "headline": "Singapore provisionally allocated 200 MW of new data centre capacity to four operators in its second Data Centre Call for Application.",
+  "notes": "Run jointly by the Singapore Economic Development Board and IMDA as DC-CFA2. The award is described as 'provisionally allocated', hence binding_status conditional. The four operators are NOT named in the IMDA factsheet metadata that was retrievable; the page body did not render through this fetch, so to_entity is null rather than guessed. This is a power-capacity allocation, not a GPU award - Singapore does not publish a GPU-hour rate. Related IMDA activity: Singapore Standard SS 726:2026 on liquid cooling in tropical data centres, published 2026-08-27.",
+  "source_urls": [
+   "https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/four-data-centre-proposals-selected-as-part-of-second-data-centre-call-for-application",
+   "https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches"
+  ],
+  "geography": [
+   "Singapore"
+  ],
+  "mw": 200,
+  "h100e": 139860.1,
+  "h100e_basis": "200 MW / 1.43 kW per H100e",
+  "quantity_raw": "200 megawatts (MW) of new capacity to four data centre (DC) operators",
+  "quantity_value": 200,
+  "quantity_unit": "MW",
+  "status": "announced",
+  "confidence": "T1",
+  "binding_status": "conditional",
+  "announced_date": "2026-08-21",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "malaysia-strategic-trade-permit-ai-chips-2025-07",
+  "deal_type": "D17",
+  "from_entity": "miti-malaysia",
+  "headline": "Malaysia now requires a strategic trade permit and 30 days' notice to export, tranship or transit US-origin high-performance AI chips.",
+  "notes": "Effective 2025-07-14. Legal basis: Strategic Trade Act 2010, applied through a Catch-All Control provision placing the items on the Strategic Items List. Requirements: a Strategic Trade Permit before export, plus a minimum 30-day advance notification before exporting, transhipping or transiting. MITI said violators face strict legal action under the STA 2010 or related laws. The directive does not enumerate specific ECCNs or chip models in this source. PRACTICAL EFFECT: a Malaysian re-export of US-origin AI chips now needs both a US licence (see the worldwide 3A090.a requirement) and a Malaysian permit. Primary MITI pages could not be reached from this network; this record rests on a single trade-press account and should be upgraded to T1 against MITI's own directive before being relied on.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/malaysian-govt-introduces-export-license-and-30-day-notification-requirement-for-export-of-us-ai-chips/"
+  ],
+  "geography": [
+   "Malaysia"
+  ],
+  "status": "operational",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2025-07-14",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "bis-ai-diffusion-framework-2025-01",
+  "deal_type": "D17",
+  "from_entity": "bis-us-commerce",
+  "headline": "The US published the AI Diffusion rule, sorting the world into a licence-free top tier, a capped middle and a denied tier.",
+  "notes": "Federal Register citation 90 FR 4544, document 2025-00636, published 2025-01-15, effective 2025-01-13, general compliance date 2025-05-15 with some provisions to 2026-01-15. UNIT IS TOTAL PROCESSING PERFORMANCE (TPP), a cumulative installed-base cap, not an annual figure. Top tier (Supplement No. 5 to Part 740, paragraph (a)) included, from Asia-Pacific: Australia, Japan, New Zealand, Republic of Korea and Taiwan. India, Singapore, Malaysia, Indonesia, Thailand, Vietnam and the Philippines were NOT in the top tier and fell under the per-country TPP cap.",
+  "source_urls": [
+   "https://www.federalregister.gov/documents/2025/01/15/2025-00636/framework-for-artificial-intelligence-diffusion"
+  ],
+  "geography": [
+   "United States",
+   "Global"
+  ],
+  "quantity_raw": "per-country allocation of 790,000,000 TPP for the period from 2025 to 2027",
+  "quantity_value": 790000000,
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2025-01-15",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "bis-ai-diffusion-nonenforcement-2025-05",
+  "deal_type": "D17",
+  "from_entity": "bis-us-commerce",
+  "headline": "The US Commerce Department announced it would not enforce the AI Diffusion rule and would replace it, but as of September 2026 the rule text is still in the regulations.",
+  "notes": "BIS announced on 2025-05-13 that it had instructed enforcement officials not to enforce the AI Diffusion Rule, and said it 'plans to publish a regulation formalizing the rescission and will issue a replacement rule in the future'. CRITICAL AND EASILY MISSED: a Federal Register search of all BIS documents from 2025-05-01 to 2026-09-02 returns no rule formalising that rescission, and the eCFR text current to 2026-08-31 still contains Supplement No. 5 to Part 740 (Artificial Intelligence Authorization Countries), License Exception AIA at 15 CFR 740.27, and the 790,000,000 TPP per-country allocations at 15 CFR 742.6(b)(10)(iii)(B). So the framework remains codified law while being formally unenforced. Anyone relying on either state alone will get the legality of an APAC deal wrong. Text verified against the eCFR snapshot for 2026-08-31 retrieved through the eCFR versioner API (https://www.ecfr.gov/api/versioner/v1/full/2026-08-31/title-15.xml?part=740 and ...?part=742). The canonical eCFR HTML section URLs are cited alongside; they returned a bot-block redirect from this network, not a 404.",
+  "source_urls": [
+   "https://www.bis.gov/press-release/department-commerce-announces-rescission-biden-era-artificial-intelligence-diffusion-rule-strengthens",
+   "https://www.ecfr.gov/current/title-15/part-740/appendix-Supplement No. 5 to Part 740",
+   "https://www.ecfr.gov/current/title-15/part-740/section-740.27",
+   "https://www.ecfr.gov/api/versioner/v1/full/2026-08-31/title-15.xml?part=740"
+  ],
+  "geography": [
+   "United States",
+   "Global"
+  ],
+  "status": "announced",
+  "confidence": "T1",
+  "binding_status": "non_binding",
+  "announced_date": "2025-05-13",
+  "captured_at": "2026-09-02",
+  "is_restatement": true,
+  "same_underlying_as": "bis-ai-diffusion-framework-2025-01",
+  "to_entity": null
+ },
+ {
+  "deal_id": "ear-worldwide-licence-datacentre-ai-chips-2026-08",
+  "deal_type": "D17",
+  "from_entity": "bis-us-commerce",
+  "headline": "A US export licence is required worldwide for top-end datacentre AI chips, and the only licence-free route covers Australia, Japan, Korea, Taiwan and New Zealand - not India, Singapore or the rest of Southeast Asia.",
+  "notes": "STATE OF THE RULES as of the eCFR text current to 2026-08-31 - this is the record that decides whether an APAC match is legal. (1) 15 CFR 742.6(a)(6)(iii)(A): a licence is required to export, reexport or transfer ECCN 3A090.a, 4A090.a and the corresponding .z entries 'to or within any destination worldwide'. (2) License Exception ACA (15 CFR 740.8) authorises such items worldwide EXCEPT Macau/Country Group D:5 - but expressly EXCLUDES 'items designed or marketed for use in a datacenter and meeting the parameters of 3A090.a', so it does not help for datacentre GPUs. (3) License Exception AIA (15 CFR 740.27) does cover datacentre 3A090.a, but only to entities located in Supplement No. 5(a) destinations, which in Asia-Pacific are Australia, Japan, New Zealand, Republic of Korea and Taiwan, and only if the entity is not headquartered outside that list. (4) Consequence: for INDIA, SINGAPORE, MALAYSIA, INDONESIA, THAILAND, VIETNAM and the PHILIPPINES there is a licence requirement for datacentre-class 3A090.a with NO available licence exception. (5) Licence review policy, 742.6(b)(10)(iii): presumption of approval for Supplement 5(a) countries; for all other destinations presumption of approval only up to the 790,000,000 TPP per-country allocation for 2025-2027, and a POLICY OF DENIAL once that allocation is exhausted. BIS was to publish progress at bis.gov/advanced-compute-resources, but that page reads only 'Coming soon!' as of 2026-09-02, so no country's remaining headroom is public. (6) 742.6(a)(6)(iii)(B): lower-tier 3A090.b needs a licence to the UAE and to Country Groups D:1/D:4/D:5 excluding A:5/A:6 - in Asia-Pacific that catches China, Macau, North Korea and VIETNAM. Text verified against the eCFR snapshot for 2026-08-31 retrieved through the eCFR versioner API (https://www.ecfr.gov/api/versioner/v1/full/2026-08-31/title-15.xml?part=740 and ...?part=742). The canonical eCFR HTML section URLs are cited alongside; they returned a bot-block redirect from this network, not a 404.",
+  "source_urls": [
+   "https://www.ecfr.gov/current/title-15/part-742/section-742.6",
+   "https://www.ecfr.gov/current/title-15/part-740/section-740.8",
+   "https://www.ecfr.gov/current/title-15/part-740/section-740.27",
+   "https://www.ecfr.gov/current/title-15/part-740/appendix-Supplement No. 5 to Part 740",
+   "https://www.ecfr.gov/current/title-15/part-740/appendix-Supplement No. 1 to Part 740",
+   "https://www.ecfr.gov/api/versioner/v1/full/2026-08-31/title-15.xml?part=740",
+   "https://www.ecfr.gov/api/versioner/v1/full/2026-08-31/title-15.xml?part=742"
+  ],
+  "geography": [
+   "Global",
+   "Asia"
+  ],
+  "quantity_raw": "worldwide licence requirement for ECCN 3A090.a and 4A090.a and corresponding .z items",
+  "status": "operational",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-08-31",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "ear-country-groups-apac-2026-08",
+  "deal_type": "D17",
+  "from_entity": "bis-us-commerce",
+  "headline": "Where each Asia-Pacific country sits in the US export control country groups as of August 2026.",
+  "notes": "From Supplement No. 1 to Part 740, eCFR text current to 2026-08-31. GROUP A:5 (closest tier): Australia, India, Japan, South Korea, New Zealand, and the United Arab Emirates (added July 2026). GROUP A:6: Singapore, Taiwan. NEITHER A NOR D - i.e. only Country Group B: Malaysia, Indonesia, Thailand, Philippines. GROUP D:1 (national security): China, North Korea, Macau, VIETNAM. GROUP D:3 (chemical and biological): China, North Korea, Macau, Saudi Arabia, Taiwan, Vietnam. GROUP D:4 (missile technology): China, North Korea, Macau, Saudi Arabia. GROUP D:5 (US arms embargoed): China, North Korea. GROUP E:1: North Korea. IMPORTANT NUANCE: A:5/A:6 membership is NOT the same as AI chip eligibility. India is A:5 but is absent from Supplement No. 5, so it gets no AI licence exception; Taiwan is only A:6 but IS in Supplement No. 5, so it does. Saudi Arabia sits in D:3 and D:4 but not D:1 or D:5. Separately, 742.6(b)(8) gives India a general policy of approval for licence applications for civil or military end uses, which does not displace the advanced-computing rules in 742.6(a)(6). Text verified against the eCFR snapshot for 2026-08-31 retrieved through the eCFR versioner API (https://www.ecfr.gov/api/versioner/v1/full/2026-08-31/title-15.xml?part=740 and ...?part=742). The canonical eCFR HTML section URLs are cited alongside; they returned a bot-block redirect from this network, not a 404.",
+  "source_urls": [
+   "https://www.ecfr.gov/current/title-15/part-740/appendix-Supplement No. 1 to Part 740",
+   "https://www.ecfr.gov/api/versioner/v1/full/2026-08-31/title-15.xml?part=740"
+  ],
+  "geography": [
+   "Asia"
+  ],
+  "status": "operational",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-08-31",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "bis-h200-china-licence-policy-2026-01",
+  "deal_type": "D17",
+  "from_entity": "bis-us-commerce",
+  "headline": "The US moved H200-class chips for China and Macau from presumed denial to case-by-case review, subject to a 50% cap and third-party testing.",
+  "notes": "Final rule, Federal Register citation 91 FR 1684, document 2026-00789, published and effective 2026-01-15; announced by BIS 2026-01-13. UNIT IS A PERCENTAGE CAP, not a volume. Covers the Nvidia H200 and equivalents (BIS names the AMD MI325X) and less advanced chips, provided they were commercially available in the US at publication. Exporter must certify sufficient US supply, that production for China will not divert foundry capacity from US end users, that the recipient has adequate security and export compliance procedures including customer screening, and that the item has passed independent third-party testing in the United States. Follows the President's 2025-12-08 announcement. RELEVANCE TO APAC MATCHING: it loosens China only; it does not change the worldwide licence requirement that governs sales into India or Southeast Asia.",
+  "source_urls": [
+   "https://www.federalregister.gov/documents/2026/01/15/2026-00789/revision-to-license-review-policy-for-advanced-computing-commodities",
+   "https://www.bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china"
+  ],
+  "geography": [
+   "China",
+   "Macau",
+   "United States"
+  ],
+  "quantity_raw": "aggregate shipments to China and Macau not more than 50% of the total quantity shipped to US customers for domestic use",
+  "quantity_value": 50,
+  "status": "operational",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-01-13",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "bis-uae-country-group-a5-2026-07",
+  "deal_type": "D17",
+  "from_entity": "bis-us-commerce",
+  "to_entity": "g42",
+  "headline": "The US moved the UAE into its closest export-control tier and named G42 and Core42 as able to receive AI chips without a licence.",
+  "notes": "Final rule, Federal Register citation 91 FR 43034, document 2026-14132, published 2026-07-14, effective 2026-07-10. BIS removed the UAE from Country Groups D:3 and D:4 and added it to A:5, and made License Exception STA available. Consistent with the May 2025 US-UAE Artificial Intelligence Cooperation framework, the UAE Government and approved commercial entities get licence-free access to advanced computing items. Supplement No. 8 to Part 740 names the approved UAE consignees: Group 42 Holding Ltd d/b/a G42 including G42 Cloud Technology LLC, and Core42 Technology Projects LLC - both authorised for 'Advanced Computing Items Consistent with 742.6(a)(6)(iii)(A)-(B)' at 91 FR 43038, 7/10/2026. The same supplement lists US firms authorised for the UAE: Amazon.com, Apple, Google, Meta Platforms, Microsoft, OpenAI Group PBC, Oracle and X.AI. WHY THIS MATTERS FOR ASIA: the UAE now has a licence-free lane that India, Singapore and Southeast Asia do not, so it competes for the same supply on better terms. The UAE reaffirmed a commitment to matching investments in US AI infrastructure.",
+  "source_urls": [
+   "https://www.federalregister.gov/documents/2026/07/14/2026-14132/enhanced-favorable-treatment-for-the-united-arab-emirates-under-the-export-administration",
+   "https://www.bis.gov/press-release/department-commerce-eases-export-controls-uae",
+   "https://www.ecfr.gov/api/versioner/v1/full/2026-08-31/title-15.xml?part=740"
+  ],
+  "geography": [
+   "United Arab Emirates",
+   "United States"
+  ],
+  "status": "operational",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-07-10",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "bis-entity-list-affiliates-rule-2025-09",
+  "deal_type": "D17",
+  "from_entity": "bis-us-commerce",
+  "headline": "Any company at least 50% owned by an Entity-Listed or Military End User-Listed firm is now automatically restricted too.",
+  "notes": "Interim final rule published in the Federal Register 2025-09-30, document 2025-19001, 'Expansion of End-User Controls to Cover Affiliates of Certain Listed Entities'. Restrictions immediately effective with some exceptions up to 60 days after publication. Significant minority ownership by a listed company is a red flag triggering additional due diligence. Licence review policy for listed parties is generally a presumption of denial. UNIT IS AN OWNERSHIP PERCENTAGE. WHY IT MATTERS IN APAC: many Southeast Asian and Indian colocation and cloud counterparties have opaque or minority Chinese shareholdings; this rule converts an ownership fact into an automatic licence requirement, so counterparty screening now has to run the cap table, not just the name.",
+  "source_urls": [
+   "https://www.bis.gov/press-release/department-commerce-expands-entity-list-cover-affiliates-listed-entities",
+   "https://www.federalregister.gov/documents/2025/09/30/2025-19001/expansion-of-end-user-controls-to-cover-affiliates-of-certain-listed-entities"
+  ],
+  "geography": [
+   "Global"
+  ],
+  "quantity_raw": "at least 50 percent owned by one or more entities on the Entity List or the MEU List",
+  "quantity_value": 50,
+  "status": "operational",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2025-09-29",
+  "captured_at": "2026-09-02",
+  "is_restatement": false,
+  "to_entity": null
+ },
+ {
+  "deal_id": "bis-applied-materials-korea-diversion-penalty-2026-02",
+  "deal_type": "D17",
+  "from_entity": "bis-us-commerce",
+  "to_entity": "applied-materials",
+  "headline": "Applied Materials paid a $252m penalty for shipping controlled equipment through its Korean arm to an Entity-Listed Chinese customer.",
+  "notes": "Settlement with Applied Materials Inc. and Applied Materials Korea, Ltd. The second-highest penalty ever imposed by BIS, and twice the transaction value, the statutory maximum. In 2021 and 2022 AMAT shipped ion implanters to AMK in Korea for assembly and then onward to China without a licence, after the Chinese customer was placed on the Entity List in 2020. AMAT also agreed to repeated export compliance audits and annual certifications, and the responsible compliance and executive staff left the company. THE APAC LESSON: transiting through an A:5 ally does not launder a shipment; the enforcement risk attaches to the final destination. Investigated by BIS Office of Export Enforcement Boston Field Office and Homeland Security Investigations.",
+  "source_urls": [
+   "https://www.bis.gov/press-release/applied-materials-pay-252-million-penalty-bis-illegally-exporting-semiconductor-manufacturing-equipment"
+  ],
+  "geography": [
+   "United States",
+   "South Korea",
+   "China"
+  ],
+  "usd_value": 252000000,
+  "quantity_raw": "penalty of approximately $252 million; value of merchandise illegally shipped approximately $126 million",
+  "quantity_value": 252000000,
+  "quantity_unit": "USD",
+  "status": "operational",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-02-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ }
+]

@@ -1,0 +1,1622 @@
+[
+ {
+  "deal_id": "coreweave-ddtl-1-0-2023-07",
+  "deal_type": "D8",
+  "from_entity": "undisclosed-lender-syndicate",
+  "to_entity": "coreweave",
+  "headline": "CoreWeave's first GPU-backed delayed draw term loan, up to $2.3bn, matures March 2028.",
+  "notes": "Borrower CoreWeave Compute Acquisition Co. II, LLC. Facility size $2.3bn per Q2-2026 10-Q MD&A; $1,300m outstanding at 2026-06-30 (down from $1,553m at 2025-12-31) at a 15% effective interest rate \u2014 the highest-cost facility in the CoreWeave stack. Recourse debt, guaranteed by CoreWeave, Inc. Announced_date is month-level only (10-Q says 'In July 2023'); day set to 01. Collateral: assets underlying contributed customer contracts and pledged contractual cash flows.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 2300000000,
+  "quantity_raw": "up to $2.3 billion in delayed draw term loans",
+  "quantity_value": 2300000000,
+  "quantity_unit": "USD",
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2023-07-01",
+  "term_start": "2023-07",
+  "term_end": "2028-03",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "coreweave-ddtl-2-0-2024-05",
+  "deal_type": "D8",
+  "from_entity": "undisclosed-lender-syndicate",
+  "to_entity": "coreweave",
+  "headline": "CoreWeave's $7.6bn GPU-backed term loan, maturing August 2030.",
+  "notes": "Borrower CoreWeave Compute Acquisition Co. IV, LLC. $3,190m outstanding at 2026-06-30 (down from $5,037m at 2025-12-31 \u2014 amortising fast), 11% effective rate. Recourse, parent-guaranteed. Day of announced_date set to 01; 10-Q states 'In May 2024'.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 7600000000,
+  "quantity_raw": "up to $7.6 billion in delayed draw term loans",
+  "quantity_value": 7600000000,
+  "quantity_unit": "USD",
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2024-05-01",
+  "term_start": "2024-05",
+  "term_end": "2030-08",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "coreweave-ddtl-2-1-2025-09",
+  "deal_type": "D8",
+  "from_entity": "undisclosed-lender-syndicate",
+  "to_entity": "coreweave",
+  "headline": "A $3bn new tranche added to CoreWeave's second GPU loan, maturing March 2031.",
+  "notes": "Amendment to the DDTL 2.0 Facility creating a new tranche and extending the draw period to March 2026. $3,000m outstanding at 2026-06-30, 9% effective rate. Recourse. Day of announced_date set to 01; 10-Q states 'In September 2025'.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 3000000000,
+  "quantity_raw": "new tranche of delayed draw term loan facility up to $3.0 billion",
+  "quantity_value": 3000000000,
+  "quantity_unit": "USD",
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2025-09-01",
+  "term_start": "2025-09",
+  "term_end": "2031-03",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "coreweave-ddtl-3-0-2025-07",
+  "deal_type": "D8",
+  "from_entity": "undisclosed-lender-syndicate",
+  "to_entity": "coreweave",
+  "headline": "CoreWeave's $2.6bn third GPU-backed term loan, maturing August 2030.",
+  "notes": "Borrowers CoreWeave Compute Acquisition Co. V, LLC and Co. VII, LLC. $2,215m outstanding at 2026-06-30 (up from $340m), 9% effective rate. Recourse, parent-guaranteed.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000033/crwv-20250728.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 2600000000,
+  "quantity_raw": "up to $2.6 billion in delayed draw term loans",
+  "quantity_value": 2600000000,
+  "quantity_unit": "USD",
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2025-07-28",
+  "term_start": "2025-07",
+  "term_end": "2030-08",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "coreweave-ddtl-4-0-2026-03",
+  "deal_type": "D8",
+  "from_entity": "blackstone-credit-insurance",
+  "to_entity": "coreweave",
+  "headline": "CoreWeave's $8.5bn non-recourse GPU loan \u2014 the first investment-grade-rated GPU-backed financing \u2014 matures March 2032.",
+  "notes": "Borrower CoreWeave Compute Acquisition Co. VIII, LLC ('CCAC VIII'). Initial borrowing capacity ~$7.5bn, expandable to $8.5bn; draws available through the 2027-06-30 commitment termination date. Floating tranche SOFR+2.25% (or ABR+1.25%); fixed tranche Treasury+2.00% (approx 5.9%). At 2026-06-30: $1.4bn floating + $1.5bn fixed drawn; $2,837m carried, 7% effective rate. Rated A3 (Moody's) / A(low) (DBRS). Anchor investor Blackstone Credit & Insurance; MUFG and Morgan Stanley co-structuring agents and joint bookrunners; Goldman Sachs and JPMorgan additional coordinating lead arrangers. COLLATERAL: perfected first-priority pledge of the equity of CCAC VIII plus substantially all its assets \u2014 $3.3bn of non-current assets (mainly property and equipment) and $155m of current assets at 2026-06-30. NON-RECOURSE to CoreWeave, Inc. except customary carve-out guarantees. COVENANTS: debt-sizing limits tied to depreciable cost of computing equipment and projected debt service coverage; must hedge >=95% of anticipated floating borrowings; power cost hedging required; restricted cash equal to forward-looking three-month coverage of interest, principal, swap settlements and opex. Undrawn fee 0.50%/yr. $151m deferred financing costs capitalised.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000129/ex991.htm",
+   "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Closes-Landmark-8-5-Billion-Financing-Facility-Achieving-First-Investment-Grade-Rated-GPU-backed-Financing/default.aspx"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 8500000000,
+  "quantity_raw": "$8.5 billion delayed draw term loan facility",
+  "quantity_value": 8500000000,
+  "quantity_unit": "USD",
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-03-30",
+  "term_start": "2026-03",
+  "term_end": "2032-03",
+  "term_years": 6,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "coreweave-ddtl-5-0-2026-05",
+  "deal_type": "D8",
+  "from_entity": "morgan-stanley",
+  "to_entity": "coreweave",
+  "headline": "CoreWeave's $3.1bn GPU loan priced at SOFR+4.50%, maturing late 2031.",
+  "notes": "Borrower CoreWeave Financing DDTL V, LLC ('CFD V'). SOFR+4.50% after pricing tightened 50bp in syndication. Rated Ba2 (Moody's) / BB+ (Fitch). Morgan Stanley Senior Funding administrative agent; Morgan Stanley and MUFG joint lead arrangers and bookrunners. Draw period to 2026-09-30; monthly principal repayment begins November 2026. MATURITY DISCREPANCY: the 10-Q debt table states a Nov 2031 maturity while the same note says 'expected final payment due in May 2031' \u2014 term_end set to the tabled maturity (2031-11). $1,101m outstanding at 2026-06-30, 9% effective rate. Collateral: first-priority pledge of subsidiary equity plus substantially all subsidiary assets; sizing constrained by depreciable cost of GPU servers. Unconditionally guaranteed by CoreWeave, Inc. Must swap >=95% of anticipated floating loans. CoreWeave says the deployment supports 'two large, non-investment grade customers'.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000236/crwv-20260515.htm",
+   "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Closes-3-1-Billion-Loan-Facility-Expanding-Access-to-Public-Markets-for-GPU-Backed-Financing/default.aspx"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 3100000000,
+  "quantity_raw": "$3.1 billion delayed draw term loan facility",
+  "quantity_value": 3100000000,
+  "quantity_unit": "USD",
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-05-15",
+  "term_start": "2026-05",
+  "term_end": "2031-11",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "coreweave-ddtl-5-5-2026-08",
+  "deal_type": "D8",
+  "from_entity": "jpmorgan",
+  "to_entity": "coreweave",
+  "headline": "CoreWeave's $2.6bn GPU loan at SOFR+5.50%, maturing 1 September 2031, with a 1.35x debt service coverage covenant.",
+  "notes": "Borrower CoreWeave Financing DDTL V-V, LLC. Agreement dated 2026-08-07; closing announced 2026-08-10 (after the 2026-06-30 balance sheet date, so not in the Q2 debt table). Exact maturity 2031-09-01. SOFR+5.50% (base-rate option +4.50%), 0.00% floor; undrawn fee 0.50%/yr. Commitment termination December 2026. COVENANT: debt service coverage ratio of at least 1.35x from the first full month after the earlier of commitments reducing to zero or 2026-12-31. Collateral: substantially all assets of the borrower and its subsidiaries plus a pledge of 100% of borrower equity; unconditionally guaranteed by CoreWeave, Inc. JPMorgan administrative agent; JPMorgan and MUFG joint lead arrangers and bookrunners; U.S. Bank collateral agent. Rated Ba2 (Moody's) / BB+ (Fitch). CoreWeave notes the ~5-year maturity 'extends beyond the average three-year length of underlying customer contracts' \u2014 i.e. explicit asset/liability tenor mismatch.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000357/crwv-20260807.htm",
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000357/ex991pr.htm",
+   "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Closes-2-6-Billion-Loan-Facility-Expanding-Financing-Flexibility-for-AI-Infrastructure/default.aspx"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 2600000000,
+  "quantity_raw": "$2.6 billion delayed draw term loan facility",
+  "quantity_value": 2600000000,
+  "quantity_unit": "USD",
+  "status": "signed",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-08-07",
+  "term_start": "2026-08",
+  "term_end": "2031-09",
+  "term_years": 5,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "coreweave-oem-financing-2026-06",
+  "deal_type": "D8",
+  "from_entity": "undisclosed-oem-vendors",
+  "to_entity": "coreweave",
+  "headline": "CoreWeave owes $5.1bn to its own equipment makers under vendor financing arrangements, much of it due within a year.",
+  "notes": "VENDOR FINANCING. Two buckets in the Q2-2026 10-Q debt table: recourse 'OEM and Software License Financing Arrangements' of $4,220m maturing Dec 2026 - Jul 2030 at an 11% effective rate, and non-recourse OEM arrangements of $882m maturing Aug 2026 - Aug 2028 at a 9% effective rate. usd_value is the sum ($5,102m); MD&A separately states the combined outstanding balance was '$5.1 billion'. Of this, $347m relates to software licence financing (vs $368m at 2025-12-31). OEMs are not named in the filing. term_end is the latest stated maturity across both buckets; the earliest is August 2026 \u2014 i.e. some of this is already rolling. Weighted-average rate on the short-term OEM instruments was 9%.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 5102000000,
+  "quantity_raw": "outstanding balance of $5.1 billion",
+  "quantity_value": 5102000000,
+  "quantity_unit": "USD",
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-08-12",
+  "term_end": "2030-07",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "coreweave-revolver-2025-11",
+  "deal_type": "D8",
+  "from_entity": "undisclosed-bank-syndicate",
+  "to_entity": "coreweave",
+  "headline": "CoreWeave's $2.5bn revolving credit line, extended to November 2029.",
+  "notes": "Amended November 2025 to increase capacity to $2.5bn, modify covenant metrics and extend maturity to November 2029. Nil drawn at 2026-06-30 (the $1.0bn drawn at 2025-12-31 was repaid in April 2026); $2.0bn remaining capacity after $533m of letters of credit (mostly supporting data centre lease obligations, expiring on various dates through 2037). Secured by pledges of certain assets. 0.25%/yr undrawn fee. Day of announced_date set to 01.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 2500000000,
+  "quantity_raw": "$2.5 billion",
+  "quantity_value": 2500000000,
+  "quantity_unit": "USD",
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2025-11-01",
+  "term_start": "2025-11",
+  "term_end": "2029-11",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "coreweave-magnetar-loan",
+  "deal_type": "D8",
+  "from_entity": "magai-ventures",
+  "to_entity": "coreweave",
+  "headline": "A $189m obligation CoreWeave owes MagAI Ventures under a capacity agreement, due January 2029.",
+  "notes": "The 'Magnetar Loan' in CoreWeave's debt table: 12% effective rate, Jan 2029 maturity, $189m at 2026-06-30 (down from $273m) after a $100m partial settlement paid to MagAI Ventures in June 2026 under the MagAI Capacity Agreement as amended. Remaining obligation consists of the unused refundable deposit plus accrued redemption premiums. This is a customer prepayment recharacterised as debt \u2014 a compute buyer effectively lending to its provider. announced_date is the 10-Q filing date.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 189000000,
+  "quantity_raw": "$189 million",
+  "quantity_value": 189000000,
+  "quantity_unit": "USD",
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-08-12",
+  "term_end": "2029-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "coreweave-2030-senior-notes",
+  "deal_type": "D8",
+  "from_entity": "bond-investors",
+  "to_entity": "coreweave",
+  "headline": "CoreWeave's 2030 Senior Notes: $2.00bn maturing 2030-06.",
+  "notes": "UNSECURED \u2014 not GPU- or data-centre-collateralised; included because it sits in the same refinancing wall. Rate: 10% effective. Issued May 2025, $2.0bn principal. Unsecured. Carrying amounts per the Q2-2026 10-Q debt table; announced_date is the 10-Q filing date, not the issue date.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 2000000000,
+  "quantity_raw": "$2,000,000,000",
+  "quantity_value": 2000000000,
+  "quantity_unit": "USD",
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-08-12",
+  "term_end": "2030-06",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "coreweave-2031-9pct-senior-notes",
+  "deal_type": "D8",
+  "from_entity": "bond-investors",
+  "to_entity": "coreweave",
+  "headline": "CoreWeave's 2031 9.00% Senior Notes: $1.75bn maturing 2031-02.",
+  "notes": "UNSECURED \u2014 not GPU- or data-centre-collateralised; included because it sits in the same refinancing wall. Rate: 9.00% coupon / 10% effective. Issued July 2025, $1.8bn principal ($1,750m carried). Unsecured. Carrying amounts per the Q2-2026 10-Q debt table; announced_date is the 10-Q filing date, not the issue date.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 1750000000,
+  "quantity_raw": "$1,750,000,000",
+  "quantity_value": 1750000000,
+  "quantity_unit": "USD",
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-08-12",
+  "term_end": "2031-02",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "coreweave-2031-975-senior-notes",
+  "deal_type": "D8",
+  "from_entity": "bond-investors",
+  "to_entity": "coreweave",
+  "headline": "CoreWeave's 2031 9.75% Senior Notes: $2.75bn maturing 2031-10.",
+  "notes": "UNSECURED \u2014 not GPU- or data-centre-collateralised; included because it sits in the same refinancing wall. Rate: 9.750% coupon / 10% effective. Issued April 2026, $2.8bn principal ($2,750m carried), due 2031-10-01. $27m issuance costs capitalised. Unsecured. Carrying amounts per the Q2-2026 10-Q debt table; announced_date is the 10-Q filing date, not the issue date.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 2750000000,
+  "quantity_raw": "$2,750,000,000",
+  "quantity_value": 2750000000,
+  "quantity_unit": "USD",
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-08-12",
+  "term_end": "2031-10",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "coreweave-2032-9625-senior-notes",
+  "deal_type": "D8",
+  "from_entity": "bond-investors",
+  "to_entity": "coreweave",
+  "headline": "CoreWeave's 2032 9.625% Senior Notes: $1.25bn maturing 2032-07.",
+  "notes": "UNSECURED \u2014 not GPU- or data-centre-collateralised; included because it sits in the same refinancing wall. Rate: 9.625% coupon / 10% effective. Issued June 2026, $1.3bn principal ($1,250m carried), due 2032-07-15. $20m issuance costs. Unsecured. Carrying amounts per the Q2-2026 10-Q debt table; announced_date is the 10-Q filing date, not the issue date.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 1250000000,
+  "quantity_raw": "$1,250,000,000",
+  "quantity_value": 1250000000,
+  "quantity_unit": "USD",
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-08-12",
+  "term_end": "2032-07",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "coreweave-2032-eur-senior-notes",
+  "deal_type": "D8",
+  "from_entity": "bond-investors",
+  "to_entity": "coreweave",
+  "headline": "CoreWeave's 2032 EUR Senior Notes: $2.28bn maturing 2032-07.",
+  "notes": "UNSECURED \u2014 not GPU- or data-centre-collateralised; included because it sits in the same refinancing wall. Rate: 8.500% coupon / 9% effective. Issued June 2026, EUR 2.0bn principal, carried at $2,279m, due 2032-07-15. Hedged with cross-currency interest rate swaps designated as a fair value hedge. $41m issuance costs. Unsecured. usd_value is the USD carrying amount at 2026-06-30, not a fixed USD principal. Carrying amounts per the Q2-2026 10-Q debt table; announced_date is the 10-Q filing date, not the issue date.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 2279000000,
+  "quantity_raw": "$2,279,000,000",
+  "quantity_value": 2279000000,
+  "quantity_unit": "USD",
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-08-12",
+  "term_end": "2032-07",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "coreweave-2031-convertible-notes",
+  "deal_type": "D8",
+  "from_entity": "bond-investors",
+  "to_entity": "coreweave",
+  "headline": "CoreWeave's 2031 Convertible Senior Notes: $2.59bn maturing 2031-12.",
+  "notes": "UNSECURED \u2014 not GPU- or data-centre-collateralised; included because it sits in the same refinancing wall. Rate: 1.75% coupon / 2% effective. Issued December 2025, $2.6bn principal ($2,588m carried). Unsecured convertible. Carrying amounts per the Q2-2026 10-Q debt table; announced_date is the 10-Q filing date, not the issue date.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 2588000000,
+  "quantity_raw": "$2,588,000,000",
+  "quantity_value": 2588000000,
+  "quantity_unit": "USD",
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-08-12",
+  "term_end": "2031-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "coreweave-2032-convertible-notes",
+  "deal_type": "D8",
+  "from_entity": "bond-investors",
+  "to_entity": "coreweave",
+  "headline": "CoreWeave's 2032 Convertible Senior Notes: $4.00bn maturing 2032-10.",
+  "notes": "UNSECURED \u2014 not GPU- or data-centre-collateralised; included because it sits in the same refinancing wall. Rate: 1.75% coupon / 2% effective. Issued April 2026, $4.0bn principal, due 2032-10-01. Initial conversion rate 8.3612 shares per $1,000 (approx $119.60/share). Capped calls bought for $492m with a $230.00 cap price. Not redeemable before 2029-10-08. Unsecured convertible. Carrying amounts per the Q2-2026 10-Q debt table; announced_date is the 10-Q filing date, not the issue date.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 4000000000,
+  "quantity_raw": "$4,000,000,000",
+  "quantity_value": 4000000000,
+  "quantity_unit": "USD",
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-08-12",
+  "term_end": "2032-10",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "coreweave-total-debt-2026-06",
+  "deal_type": "D8",
+  "from_entity": "various-lenders",
+  "to_entity": "coreweave",
+  "headline": "CoreWeave owed $35.6bn in total at 30 June 2026, with $10.6bn of it falling due by the end of 2027.",
+  "notes": "ROLL-UP RECORD \u2014 DO NOT SUM WITH THE INDIVIDUAL CoreWeave FACILITY RECORDS ABOVE (double count). Total future contractual principal payments at 2026-06-30 were $35,551m, laddered as: remaining 2026 $4,413m; 2027 $6,184m; 2028 $4,416m; 2029 $2,421m; 2030 $3,221m; thereafter $14,896m. Split: total recourse debt net $31,405m (of which $6,235m current) and total non-recourse debt net $3,663m (of which $1,278m current). Debt of bankruptcy-remote SPV subsidiaries was secured by $18.2bn of non-current assets and $2.6bn of current assets at 2026-06-30, up from $12.7bn and $1.8bn at 2025-12-31. Contractual interest expense was $592m in Q2-2026 alone ($1,075m for the half). Separately CoreWeave carried $16.3bn of operating lease liabilities and had $10.0bn of undrawn availability. In compliance with all DDTL covenants at 2026-06-30.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 35551000000,
+  "quantity_raw": "$35.6 billion",
+  "quantity_value": 35551000000,
+  "quantity_unit": "USD",
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-08-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "lambda-tlb-926m-2026-08",
+  "deal_type": "D8",
+  "from_entity": "morgan-stanley",
+  "to_entity": "lambda",
+  "headline": "Lambda borrowed $926m against GPU servers, repayable in full by the end of 2030.",
+  "notes": "Priced at SOFR+3.00%, issued at 99.5% of principal (0.5 point OID). Exact maturity 2030-12-31. Fully amortising on a schedule aligned to contracted cash flows and the useful life of the GPU infrastructure \u2014 unusually conservative for the sector. Rated Baa2 by Moody's; described as the first investment-grade-rated term loan B by a private neocloud. COLLATERAL: the GPU servers and related infrastructure funded by the transaction plus the cash flows they generate. Backed by contracts with an investment-grade customer that Lambda does not name. Morgan Stanley lead arranger and administrative agent; MUFG joint bookrunner; Citizens Bank, Credit Agricole and Wells Fargo documentation agents.",
+  "source_urls": [
+   "https://lambda.ai/blog/lambda-closes-926-million-senior-secured-term-loan-b-facility",
+   "https://lambda.ai/blog/lambda-prices-926-million-senior-secured-term-loan-b-facility"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 926000000,
+  "quantity_raw": "$926 million senior secured term loan B facility",
+  "quantity_value": 926000000,
+  "quantity_unit": "USD",
+  "status": "signed",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2026-08-27",
+  "term_start": "2026-08",
+  "term_end": "2030-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "lambda-credit-facility-1bn-2026-05",
+  "deal_type": "D8",
+  "from_entity": "undisclosed-lender-syndicate",
+  "to_entity": "lambda",
+  "headline": "Lambda raised a $1bn senior secured credit facility in May 2026.",
+  "notes": "Referenced by Lambda as 'a $1 billion senior secured credit facility announced in May' 2026, preceding the $926m term loan B. NO MATURITY DATE, INTEREST RATE, LENDER LIST OR COLLATERAL DESCRIPTION FOUND \u2014 Lambda is private and does not file consolidated debt schedules. Day of announced_date set to 01. Do not assume this is GPU-collateralised; it is described only as 'senior secured'.",
+  "source_urls": [
+   "https://lambda.ai/blog/lambda-closes-926-million-senior-secured-term-loan-b-facility",
+   "https://capacityglobal.com/news/coreweaves-debt-hits-35bn/"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 1000000000,
+  "quantity_raw": "$1 billion senior secured credit facility",
+  "quantity_value": 1000000000,
+  "quantity_unit": "USD",
+  "status": "signed",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2026-05-01",
+  "term_start": "2026-05",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "nebius-secured-775m-2026-07",
+  "deal_type": "D8",
+  "from_entity": "mufg",
+  "to_entity": "nebius",
+  "headline": "Nebius borrowed $775m against its GPUs and one investment-grade customer contract, due 31 October 2030.",
+  "notes": "Nebius's first secured debt financing. SOFR+2.50%; exact maturity 2030-10-31. COLLATERAL: deployed GPU infrastructure and the contracted cash flows from an agreement with an investment-grade customer (not named in the release). ADVANCE RATE: the facility 'covers more than 100% of the capital expenditure required to deploy the underlying GPU infrastructure' \u2014 i.e. an effective LTV above 100% of capex, the most aggressive advance rate found in this slice. MUFG structuring agent, sole bookrunner and underwriter; ABN AMRO, Bank of America, Deutsche Bank and HSBC mandated lead arrangers; Citi, Credit Agricole CIB, ING and Morgan Stanley senior lead arrangers; Goldman Sachs in the syndicate. Nebius says it holds more than $40bn of additional contracted revenue from investment-grade customers including Microsoft and Meta available to securitise.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1513845/000110465926084452/tm2620683d1_ex99-1.htm",
+   "https://nebius.com/newsroom/nebius-raises-775-million-in-first-secured-debt-financing-to-accelerate-global-buildout"
+  ],
+  "geography": [
+   "Netherlands",
+   "United States"
+  ],
+  "usd_value": 775000000,
+  "quantity_raw": "$775 million",
+  "quantity_value": 775000000,
+  "quantity_unit": "USD",
+  "status": "signed",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-07-17",
+  "term_start": "2026-07",
+  "term_end": "2030-10",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "iren-hardware3-3-6bn-2026-05",
+  "deal_type": "D8",
+  "from_entity": "goldman-sachs",
+  "to_entity": "iren",
+  "headline": "IREN raised $3.6bn against GPUs and its Microsoft contract, all due 31 December 2031.",
+  "notes": "Borrower/issuer IE US Hardware 3 LLC, a wholly owned IREN subsidiary. Two instruments under a Common Terms Agreement: (i) ~$1.5bn delayed draw term loan at term SOFR+2.25% with a 0.40%/yr commitment fee, Goldman Sachs Bank USA and JPMorgan joint lead arrangers and bookrunners, CSC Delaware Trust administrative agent; (ii) $2.1bn of 5.96% senior notes due 2031-12-31. Both mature 2031-12-31 or earlier if the final Microsoft service fee is paid. Draw period to 2027-05-29. COLLATERAL: all assets of Hardware 3 including the GPUs bought to service the Microsoft Contract dated 2025-11-02, a pledge of 100% of Hardware 3 equity, and the cash flows from the Microsoft Contract. COVENANTS: debt service coverage ratio of at least 1.05:1.00 tested quarterly with equity cure rights; mandatory prepayment if DSCR falls below 1.10:1.00 for six consecutive months, if projected DSCR for tranches 3 and 4 would be below 1.20:1.00, or if the LOAN-TO-COST RATIO EXCEEDS 65%. Parent gives a limited guarantee covering any shortfall attributable to a GPU tranche Microsoft does not accept or terminates, to the extent not recovered by remarketing the GPUs. Interest rate and power hedges with JPMorgan and J. Aron (Goldman) at 85-105% of the amortisation profile.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1878848/000114036126023427/ef20075181_8k.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Childress, Texas",
+  "usd_value": 3600000000,
+  "quantity_raw": "aggregate financing of approximately $3.6 billion",
+  "quantity_value": 3600000000,
+  "quantity_unit": "USD",
+  "status": "signed",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-05-29",
+  "term_start": "2026-05",
+  "term_end": "2031-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "iren-blueowl-2-4bn-2026-08",
+  "deal_type": "D8",
+  "from_entity": "blue-owl-capital",
+  "to_entity": "iren",
+  "headline": "Blue Owl funds led $2.4bn of GPU-backed financing for IREN's Blackwell Ultra buildout.",
+  "notes": "Split $1.2bn senior secured term loan plus $1.2bn senior secured notes, led by funds managed by Blue Owl Capital. Described as asset-backed GPU financing over air-cooled NVIDIA Accelerated Computing Infrastructure including NVIDIA Blackwell Ultra GPUs at IREN's Mackenzie site. Funds equipment purchases in tranches over a defined draw period. NO INTEREST RATE OR MATURITY DATE DISCLOSED in the announcement \u2014 a material gap given this is one of the largest single GPU-collateralised deals of 2026. chip_skus set to GB300 as the Blackwell Ultra data-centre SKU; the release says only 'Blackwell Ultra'.",
+  "source_urls": [
+   "https://www.prnewswire.com/news-releases/blue-owl-managed-funds-lead-2-4-billion-ai-factory-financing-for-iren-302863057.html"
+  ],
+  "geography": [
+   "Canada"
+  ],
+  "site": "Mackenzie, British Columbia",
+  "usd_value": 2400000000,
+  "quantity_raw": "$2.4 billion",
+  "quantity_value": 2400000000,
+  "quantity_unit": "USD",
+  "status": "signed",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2026-08-28",
+  "term_start": "2026-08",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "terawulf-wulf-compute-3-2bn-2025-10",
+  "deal_type": "D8",
+  "from_entity": "bond-investors",
+  "to_entity": "terawulf",
+  "headline": "TeraWulf sold $3.2bn of 7.75% data-centre bonds due 2030, part-secured by a Google warrant pledge.",
+  "notes": "Issuer WULF Compute LLC, a wholly owned TeraWulf subsidiary; guarantors La Lupa Data LLC, Akela Data Holdings LLC and Akela Data LLC. Priced at par 2025-10-16, closing expected 2025-10-23. Morgan Stanley bookrunner. COLLATERAL: first-priority liens on substantially all assets of WULF Compute and the guarantors, all equity interests held by TeraWulf Brookings LLC, a designated Fluidstack USA I Inc. lockbox account, and \u2014 until the Data Center Expansion completes \u2014 A PLEDGE BY GOOGLE LLC OF WARRANTS TO PURCHASE TERAWULF COMMON STOCK. Proceeds fund the Lake Mariner expansion. term_end month is inferred as 2030-12 only in the sense that the release states 'due 2030' without a day/month; treat the month as unverified and the year as stated.",
+  "source_urls": [
+   "https://investors.terawulf.com/news-events/press-releases/detail/119/terawulf-inc-announces-pricing-of-3-2-billion-of-senior"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Lake Mariner, Barker, New York",
+  "usd_value": 3200000000,
+  "quantity_raw": "$3.2 billion of 7.750% senior secured notes due 2030",
+  "quantity_value": 3200000000,
+  "quantity_unit": "USD",
+  "status": "in_progress",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2025-10-16",
+  "term_start": "2025-10",
+  "term_end": "2030-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "terawulf-flash-compute-1-275bn-2025-12",
+  "deal_type": "D8",
+  "from_entity": "bond-investors",
+  "to_entity": "flash-compute-jv",
+  "headline": "The TeraWulf-Fluidstack joint venture sold $1.275bn of 8% notes due 2030, with Google backstopping $1.8bn of the underlying lease.",
+  "notes": "Issuer 'Flash Compute', the TeraWulf/Fluidstack 168 MW AI compute JV. 8.0% coupon paid semi-annually, due 2030. Collateral reported as a building valued at $1.36bn. Mandatory amortisation from lease commencement: $19m in 2026 rising to $85m by 2031, taking debt from $1.275bn down to a reported $700m over five years. GOOGLE BACKSTOPS $1.8bn OF THE LEASE OBLIGATIONS and receives warrants over roughly 41 million WULF shares (about 8% of pro forma equity); the backstop fee is reported to start at $1.3bn and decline to $742m by 2031. Month of term_end not stated beyond the year 2030.",
+  "source_urls": [
+   "https://finance.yahoo.com/news/terawulf-fluidstack-joint-venture-plans-143846626.html",
+   "https://investors.terawulf.com/news-events/press-releases/detail/121/terawulf-expands-strategic-partnership-with-fluidstack-through-new-168-mw-ai-compute-joint-venture"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 1275000000,
+  "quantity_raw": "$1.275 billion in senior secured notes",
+  "quantity_value": 1275000000,
+  "quantity_unit": "USD",
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2025-12-18",
+  "term_start": "2025-12",
+  "term_end": "2030-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "applied-digital-computeco3-1-59bn-2026-06",
+  "deal_type": "D8",
+  "from_entity": "bond-investors",
+  "to_entity": "applied-digital",
+  "headline": "Applied Digital sold $1.59bn of 7% notes due 2031 secured on a single North Dakota data centre building.",
+  "notes": "Issuer APLD ComputeCo 3 LLC; guarantors APLD ELN-04 HoldCo LLC, APLD ELN-04 LLC and APLD ELN-04 LandCo LLC. Priced 2026-06-09, closing on or around 2026-06-16. Rule 144A / Reg S. COLLATERAL: first-priority liens on substantially all assets of APLD ComputeCo 3 and the guarantors (excluding certain excluded property) and all equity interests of APLD ComputeCo 3. Proceeds fund 150 MW of critical IT load at the fourth building (ELN-04) at Polaris Forge 1. Only the year 2031 is stated for maturity; term_end month is not verified.",
+  "source_urls": [
+   "https://ir.applieddigital.com/news-events/press-releases/detail/156/applied-digital-announces-pricing-of-1-59-billion-of-senior-secured-notes-to-fund-the-fourth-building-at-polaris-forge-1",
+   "https://www.globenewswire.com/news-release/2026/06/09/3309382/0/en/Applied-Digital-Announces-Pricing-of-1-59-Billion-of-Senior-Secured-Notes-to-fund-the-Fourth-Building-at-Polaris-Forge-1.html"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Polaris Forge 1, Ellendale, North Dakota",
+  "usd_value": 1590000000,
+  "quantity_raw": "$1.59 billion of 7.000% senior secured notes due 2031",
+  "quantity_value": 1590000000,
+  "quantity_unit": "USD",
+  "status": "in_progress",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2026-06-09",
+  "term_start": "2026-06",
+  "term_end": "2031-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "cipher-stingray-810m-2025-11",
+  "deal_type": "D8",
+  "from_entity": "bond-investors",
+  "to_entity": "cipher-digital",
+  "headline": "Cipher issued $810m of 6% data-centre notes due 2031.",
+  "notes": "LOW CONFIDENCE ON DETAIL. Listed by Octus as 'Cipher Digital (Stingray) $810M 6% 2031' in its Q1-26 AI infrastructure debt review. Cipher filed several 8-Ks referencing senior secured notes in November 2025 (e.g. accession 0000950103-25-015073) but I did not open the pricing exhibit, so coupon, exact maturity and collateral are unverified against the filing. announced_date aligned to the 2025-11-20 Cipher 8-K date; term_end month not stated.",
+  "source_urls": [
+   "https://octus.com/resources/articles/sector-insights-tech-hardware-ai-infrastructure-quarterly-q126/"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 810000000,
+  "quantity_raw": "$810M 6% 2031",
+  "quantity_value": 810000000,
+  "quantity_unit": "USD",
+  "status": "in_progress",
+  "confidence": "T4",
+  "binding_status": "binding",
+  "announced_date": "2025-11-20",
+  "term_start": "2025-11",
+  "term_end": "2031-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "galaxy-helios-ii-3-5bn-2026-07",
+  "deal_type": "D8",
+  "from_entity": "bond-investors",
+  "to_entity": "galaxy-digital",
+  "headline": "Galaxy raised $3.5bn of secured notes due 2031 against a Texas data centre leased entirely to CoreWeave.",
+  "notes": "Issuer Galaxy Helios Data Centers II LLC; subsidiary guarantor Galaxy Helios II LLC. Only the issuer, the subsidiary guarantor and the 400 MW utility / 260 MW critical IT project on the 196-acre property provide credit support \u2014 a ring-fenced project financing. Rule 144A / Reg S. CoreWeave has contracted the full critical IT load on a 15-year base lease with two 5-year extensions; the marketing deck cites $10.4bn of minimum contracted lease payments over the initial term with minimum rent commencement targeted for Q2 2027. Coupon not disclosed in the sources reviewed. Only the year 2031 is stated for maturity. NOTE THE CHAIN: Galaxy's bondholders are ultimately exposed to CoreWeave's credit, and CoreWeave's own bonds are rated Ba2/BB+.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000068/launch8-kexhibit99172226.htm",
+   "https://finance.yahoo.com/technology/ai/articles/galaxy-digital-plans-3-507-143713956.html"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Helios Phase II, Dickens County, Texas",
+  "usd_value": 3507000000,
+  "quantity_raw": "$3.507 billion in senior secured notes",
+  "quantity_value": 3507000000,
+  "quantity_unit": "USD",
+  "status": "announced",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-07-22",
+  "term_start": "2026-07",
+  "term_end": "2031-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "galaxy-helios-i-1-4bn-2025-08",
+  "deal_type": "D8",
+  "from_entity": "undisclosed-lender-syndicate",
+  "to_entity": "galaxy-digital",
+  "headline": "Galaxy's $1.4bn Helios construction loan runs only 36 months \u2014 one of the shortest maturities in the sector.",
+  "notes": "36-MONTH TERM from August 2025, so term_end is derived as 2028-08 from the stated tenor rather than a stated date. Secured at 80% LOAN TO COST, with Galaxy contributing $350m of equity. COLLATERAL: all assets associated with the first phase of the Helios buildout. Lenders not named in the release; no interest rate disclosed. CoreWeave has committed to the full 800 MW of approved capacity across three phases on 15-year agreements. A three-year construction loan against a 15-year lease is a classic refinancing-risk structure.",
+  "source_urls": [
+   "https://www.prnewswire.com/news-releases/galaxy-closes-1-4-billion-project-financing-facility-to-accelerate-helios-ai-datacenter-development-302530804.html"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Helios, Dickens County, Texas",
+  "usd_value": 1400000000,
+  "quantity_raw": "$1.4 billion project financing facility",
+  "quantity_value": 1400000000,
+  "quantity_unit": "USD",
+  "status": "in_progress",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2025-08-15",
+  "term_start": "2025-08",
+  "term_end": "2028-08",
+  "term_years": 3,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "nscale-narvik-790m-2026-05",
+  "deal_type": "D8",
+  "from_entity": "dnb",
+  "to_entity": "nscale",
+  "headline": "Nordic banks and Norway's export agency lent Nscale $790m for its Narvik AI campus.",
+  "notes": "Committed by ABN AMRO, DNB, Eksfin (Export Finance Norway), Nordea and SEB, with an additional $790m uncommitted accordion. Supports a 115 MW expansion at Narvik. NO INTEREST RATE, MATURITY OR COLLATERAL DESCRIPTION DISCLOSED. from_entity set to DNB as one named lender; the facility is a club/syndicate and no single agent is identified in the release.",
+  "source_urls": [
+   "https://www.nscale.com/press-releases/nscale-secures-790-million-norway",
+   "https://www.datacenterdynamics.com/en/news/nscale-secures-790m-in-financing-for-norway-data-center-project/"
+  ],
+  "geography": [
+   "Norway"
+  ],
+  "site": "Narvik, Norway",
+  "usd_value": 790000000,
+  "quantity_raw": "$790 million",
+  "quantity_value": 790000000,
+  "quantity_unit": "USD",
+  "status": "signed",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2026-05-11",
+  "term_start": "2026-05",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "crusoe-brookfield-750m-2025-06",
+  "deal_type": "D8",
+  "from_entity": "brookfield",
+  "to_entity": "crusoe",
+  "headline": "Brookfield's infrastructure debt platform gave Crusoe a $750m credit facility.",
+  "notes": "Provided by Brookfield Asset Management through its infrastructure debt platform, to scale Crusoe's AI factories and cloud platform. NO INTEREST RATE, MATURITY DATE OR COLLATERAL DISCLOSED \u2014 Crusoe is private. Brookfield is separately one of the six partners in Nvidia's $500bn financing platform initiative.",
+  "source_urls": [
+   "https://www.crusoe.ai/resources/newsroom/crusoe-secures-usd750-million-credit-facility-from-brookfield-to-accelerate"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 750000000,
+  "quantity_raw": "$750 million",
+  "quantity_value": 750000000,
+  "quantity_unit": "USD",
+  "status": "signed",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2025-06-11",
+  "term_start": "2025-06",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "crusoe-blueowl-abilene-11-6bn-2025-05",
+  "deal_type": "D8",
+  "from_entity": "blue-owl-capital",
+  "to_entity": "crusoe",
+  "headline": "Crusoe raised $11.6bn of debt and equity for the Abilene campus that OpenAI occupies.",
+  "notes": "Second phase of a $15bn joint venture between Crusoe, Blue Owl Capital's Real Assets platform and Primary Digital Infrastructure at the Lancium Clean Campus. DEBT/EQUITY SPLIT NOT DISCLOSED, so this record mixes both \u2014 do not treat the full $11.6bn as debt. Phase 2 is six buildings totalling 1.2 GW, construction from March 2025, energisation expected mid-2026; each building designed for up to 50,000 NVIDIA GB200 NVL72s. Tenant is OpenAI via the Stargate project. No maturity or rate disclosed.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/crusoe-secures-116bn-in-debt-and-equity-for-openais-stargate-data-center-campus-in-abilene-texas/",
+   "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-and-primary-digital-infrastructure-enter-joint-venture"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Abilene, Texas (Lancium Clean Campus)",
+  "usd_value": 11600000000,
+  "quantity_raw": "$11.6 billion in debt and equity",
+  "quantity_value": 11600000000,
+  "quantity_unit": "USD",
+  "status": "in_progress",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2025-05-21",
+  "term_start": "2025-05",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "sharonai-usdai-500m-2026-01",
+  "deal_type": "D8",
+  "from_entity": "usd-ai",
+  "to_entity": "sharonai",
+  "headline": "SharonAI won approval for a $500m on-chain, non-recourse loan secured only on its GPUs.",
+  "notes": "Approved (not drawn) facility from USD.AI, a blockchain-native GPU credit protocol developed by Permian Labs. ASSET-BACKED AND NON-RECOURSE: credit is secured solely against verified GPU assets converted into standardised on-chain collateral, not the corporate balance sheet, and funded with stablecoin liquidity. SharonAI expected to begin drawing in Q1 CY2026 to fund $65m of initial GPU deployments. USD.AI states it has approved more than US$1.2bn in guidance and non-recourse facilities across operators including QumulusAI and Quantum Solutions. NO INTEREST RATE, MATURITY OR LTV DISCLOSED. Separately, SharonAI's August 2026 prospectus says it is targeting asset-level debt at a 70-80% loan-to-value ratio of capex to fund $733m (ESDS contract) and $468m (Global Technology Customer contract) of capex, with NO BINDING FINANCING ARRANGEMENTS FINALISED as of that prospectus \u2014 a live financing-risk disclosure.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/2068385/000182912626000444/sharonai_ex99-1.htm"
+  ],
+  "geography": [
+   "Australia"
+  ],
+  "usd_value": 500000000,
+  "quantity_raw": "debt facility of up to US$500 million",
+  "quantity_value": 500000000,
+  "quantity_unit": "USD",
+  "status": "announced",
+  "confidence": "T1",
+  "binding_status": "conditional",
+  "announced_date": "2026-01-22",
+  "term_start": "2026-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "whitefiber-iceland-20m-2026-03",
+  "deal_type": "D8",
+  "from_entity": "landsbankinn",
+  "to_entity": "whitefiber",
+  "headline": "WhiteFiber's Icelandic subsidiary borrowed against its GPU servers on a two-year term.",
+  "notes": "Borrower WhiteFiber Iceland ehf.; guaranteed by WhiteFiber, Inc. and WhiteFiber AI, Inc. Three-month CME Term SOFR + 4.25% margin with a 0% floor. INITIAL MATURITY TWO YEARS FROM 2026-03-25, extendable by up to two more years for a maximum four-year term \u2014 term_end is the initial maturity. Quarterly principal repayments start three months after first drawdown, balance due at maturity. COLLATERAL: first-ranking security over 100% of the equity in WhiteFiber Iceland ehf., designated GPU servers, CPU servers, InfiniBand switches and equipment accessories, and material assets acquired later (secured within 60 days). Up to two drawdowns, $5m minimum each; $18m drawn on 2026-04-24. Small but a clean example of short-tenor GPU collateral lending.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/2042022/000121390026088026/ea0300877-10q_whitefiber.htm"
+  ],
+  "geography": [
+   "Iceland"
+  ],
+  "usd_value": 20000000,
+  "quantity_raw": "borrowings of up to $20 million",
+  "quantity_value": 20000000,
+  "quantity_unit": "USD",
+  "status": "in_progress",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-03-25",
+  "term_start": "2026-03",
+  "term_end": "2028-03",
+  "term_years": 2,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "fluidstack-macquarie-10bn",
+  "deal_type": "D8",
+  "from_entity": "macquarie",
+  "to_entity": "fluidstack",
+  "headline": "Fluidstack is reported to have won lender approval for over $10bn of loans collateralised by Nvidia GPUs.",
+  "notes": "LOW CONFIDENCE / UNCONFIRMED BY THE COMPANY. Originally reported by The Information as lender approval (including Macquarie) for over $10bn of GPU-collateralised borrowing capacity; Capacity explicitly flags it as 'per sector analysis, unconfirmed by company'. Fluidstack and Macquarie did jointly announce a European GPU financing deal (Fluidstack blog, 2025-04) but without a public size, rate, maturity or collateral schedule. Fluidstack is private and files nothing. announced_date is the date of the Sacra/Friedman-era reporting window rather than a company announcement \u2014 treat as approximate. DO NOT ADD TO HARD DEBT TOTALS.",
+  "source_urls": [
+   "https://davefriedman.substack.com/p/neoclouds-hold-more-than-20-billion",
+   "https://capacityglobal.com/news/coreweaves-debt-hits-35bn/",
+   "https://www.fluidstack.io/about-us/blog/fluidstack-and-macquarie-announce-gpu-financing-deal-to-power-ai-labs-across-europe"
+  ],
+  "geography": [
+   "United Kingdom",
+   "Europe"
+  ],
+  "usd_value": 10000000000,
+  "quantity_raw": "over $10 billion in loans collateralized by Nvidia GPUs",
+  "quantity_value": 10000000000,
+  "quantity_unit": "USD",
+  "status": "announced",
+  "confidence": "T4",
+  "binding_status": "speculative",
+  "announced_date": "2026-04-27",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "riot-morgan-stanley-573m-2026",
+  "deal_type": "D8",
+  "from_entity": "morgan-stanley",
+  "to_entity": "riot-platforms",
+  "headline": "Morgan Stanley provided Riot $573m of interim financing to buy long-lead equipment for a frontier AI lab lease.",
+  "notes": "Interim (bridge) financing from Morgan Stanley to fund procurement of long-lead equipment and hold delivery milestones for a signed 191 MW, 20-year lease with an unnamed 'leading frontier AI lab' worth $9.1bn of initial contract revenue ($16.1bn with both 5-year extensions). Riot's Q2-2026 deck also states an 'IG-Backstop in Finalization' \u2014 an investment-grade backstop of the lease obligations still being negotiated as of 2026-08-10. NO RATE OR MATURITY DISCLOSED; interim facilities of this type are typically refinanced on rent commencement, targeted December 2027.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1167419/000110465926093406/riot-20260810xex99d2.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Rockdale Campus, Texas",
+  "usd_value": 573000000,
+  "quantity_raw": "up to $573 million",
+  "quantity_value": 573000000,
+  "quantity_unit": "USD",
+  "status": "signed",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-08-10",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "yondr-jk1-715m",
+  "deal_type": "D8",
+  "from_entity": "bond-investors",
+  "to_entity": "yondr",
+  "headline": "Yondr issued $715m of 6.875% data-centre notes due 2031.",
+  "notes": "Listed by Octus as 'Yondr JK 1 LLC $715M 6.875% 2031' among data-centre secured bonds outstanding at end-June 2026. Issuer entity Yondr JK 1 LLC. Collateral, tenant, exact maturity date and issue date not established. announced_date is the Octus reporting date, not an issue date.",
+  "source_urls": [
+   "https://octus.com/resources/articles/sector-insights-tech-hardware-ai-infrastructure-quarterly-q126/"
+  ],
+  "usd_value": 715000000,
+  "quantity_raw": "$715M 6.875% 2031",
+  "quantity_value": 715000000,
+  "quantity_unit": "USD",
+  "status": "in_progress",
+  "confidence": "T4",
+  "binding_status": "binding",
+  "announced_date": "2026-06-30",
+  "term_end": "2031-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "elk-grove-village-900m",
+  "deal_type": "D8",
+  "from_entity": "bond-investors",
+  "to_entity": "elk-grove-village-property",
+  "headline": "A $900m 7.5% secured bond due 2031 against an Elk Grove Village data centre property.",
+  "notes": "Listed by Octus as 'Elk Grove Village Property $900M 7.5% 2031'. Sponsor, tenant, exact maturity date and issue date not established. announced_date is the Octus reporting date.",
+  "source_urls": [
+   "https://octus.com/resources/articles/sector-insights-tech-hardware-ai-infrastructure-quarterly-q126/"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Elk Grove Village, Illinois",
+  "usd_value": 900000000,
+  "quantity_raw": "$900M 7.5% 2031",
+  "quantity_value": 900000000,
+  "quantity_unit": "USD",
+  "status": "in_progress",
+  "confidence": "T4",
+  "binding_status": "binding",
+  "announced_date": "2026-06-30",
+  "term_end": "2031-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "polardc-750m-eur",
+  "deal_type": "D8",
+  "from_entity": "bond-investors",
+  "to_entity": "polardc",
+  "headline": "PolarDC issued EUR 750m of floating-rate data-centre debt.",
+  "notes": "Listed by Octus as 'PolarDC (HIG-owned) EUR750M floating'. Amount is in euros, so usd_value is left null rather than converted; quantity_value is the euro figure and quantity_unit is therefore not strictly USD \u2014 flagged here to avoid a false currency read. Maturity, spread and collateral not established. announced_date is the Octus reporting date.",
+  "source_urls": [
+   "https://octus.com/resources/articles/sector-insights-tech-hardware-ai-infrastructure-quarterly-q126/"
+  ],
+  "quantity_raw": "EUR 750M floating",
+  "quantity_value": 750000000,
+  "quantity_unit": "USD",
+  "status": "in_progress",
+  "confidence": "T4",
+  "binding_status": "binding",
+  "announced_date": "2026-06-30",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "meta-hyperion-blueowl-27bn-2025-10",
+  "deal_type": "D8",
+  "from_entity": "pimco",
+  "to_entity": "beignet-investor-jv",
+  "headline": "A Blue Owl-led vehicle raised $27bn of 2049 bonds to build Meta's Hyperion campus, keeping the debt off Meta's balance sheet.",
+  "notes": "THE LARGEST SINGLE DATA-CENTRE FINANCING FOUND. JV owned 80% by Blue Owl Capital funds and 20% by Meta; total development cost approximately $27bn for buildings and long-lived power, cooling and connectivity infrastructure. Blue Owl contributed approximately $7bn of cash; Meta took an approximately $3bn one-time distribution. Meta's press release does not state the note amount, coupon or maturity; Sascha Steffen's credit analysis reports $27.3bn of fully amortising senior secured notes due 2049 at a 6.58% yield with ~$2.5bn of equity, rated A+ by S&P, anchored by PIMCO (~$18bn) and BlackRock (>$3bn). quantity_value uses the $27.3bn note figure; Meta's own '$27 billion' refers to development cost. This is an INVESTMENT-GRADE, 24-YEAR, FULLY AMORTISING structure \u2014 the opposite end of the risk spectrum from the 2-5 year neocloud GPU loans, and it is only possible because Meta stands behind it (see the separate residual value guarantee record).",
+  "source_urls": [
+   "https://www.prnewswire.com/news-releases/meta-announces-joint-venture-with-funds-managed-by-blue-owl-capital-to-develop-hyperion-data-center-302590584.html",
+   "https://www.sascha-steffen.de/updates/nvidia-500bn-ai-financing-credit-risk"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Hyperion, Richland Parish, Louisiana",
+  "usd_value": 27300000000,
+  "quantity_raw": "approximately $27 billion",
+  "quantity_value": 27300000000,
+  "quantity_unit": "USD",
+  "status": "in_progress",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2025-10-21",
+  "term_start": "2025-10",
+  "term_end": "2049-12",
+  "term_years": 24,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "nvidia-500bn-financing-platforms-2026-08",
+  "deal_type": "D10",
+  "from_entity": "nvidia",
+  "to_entity": "ai-compute-financing-platforms",
+  "headline": "Nvidia signed up six of the world's largest asset managers to mobilise over $500bn of third-party capital for buying Nvidia compute.",
+  "notes": "MEMORANDA OF UNDERSTANDING ONLY \u2014 the release states 'These partnerships remain subject to execution of the final agreements', so binding_status is non_binding. Partners: Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR. Purpose is 'dedicated pools of capital at significant scale at attractive rates' feeding 'independent compute financing platforms'. NO PER-PARTNER ALLOCATION HAS BEEN DISCLOSED. Nvidia's contribution is the compute itself plus the argument that its GPUs are 'fungible and transferable' collateral whose life is extended by CUDA. Sascha Steffen's analysis describes the mechanics as insurance general-account capital flowing through SPVs to neoclouds and project vehicles, repaid from offtake contracts with hyperscalers or AI labs. THIS IS THE KEYSTONE OF THE CIRCULARITY: capital raised to buy the product of the company organising the capital.",
+  "source_urls": [
+   "https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital",
+   "https://www.blackstone.com/news/press/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital/",
+   "https://www.apollo.com/insights-news/pressreleases/2026/08/nvidia-partners-with-apollo"
+  ],
+  "usd_value": 500000000000,
+  "quantity_raw": "over $500 billion of third-party capital",
+  "quantity_value": 500000000000,
+  "quantity_unit": "USD",
+  "status": "announced",
+  "confidence": "T2",
+  "binding_status": "non_binding",
+  "announced_date": "2026-08-10",
+  "term_start": "2026-08",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "nvidia-125bn-backstop-option",
+  "deal_type": "D10",
+  "from_entity": "nvidia",
+  "to_entity": "ai-compute-financing-platforms",
+  "headline": "Nvidia is reported to retain an option to backstop up to $125bn \u2014 a quarter \u2014 of the deals done through its financing platforms.",
+  "notes": "ANALYST CHARACTERISATION, NOT A COMPANY DISCLOSURE. Sascha Steffen's credit analysis states 'Nvidia retains an option to backstop up to $125 billion (25% of potential deals)' within the $500bn platform framework. I could not corroborate this figure in Nvidia's own release, which does not mention a backstop at all. same_underlying_as points to the platform announcement \u2014 this is a term of that arrangement, not a separate commitment, so DO NOT SUM WITH IT.",
+  "source_urls": [
+   "https://www.sascha-steffen.de/updates/nvidia-500bn-ai-financing-credit-risk"
+  ],
+  "usd_value": 125000000000,
+  "quantity_raw": "up to $125 billion (25% of potential deals)",
+  "quantity_value": 125000000000,
+  "quantity_unit": "USD",
+  "status": "announced",
+  "confidence": "T4",
+  "binding_status": "non_binding",
+  "announced_date": "2026-08-10",
+  "term_start": "2026-08",
+  "captured_at": "2026-09-02",
+  "is_restatement": true,
+  "same_underlying_as": "nvidia-500bn-financing-platforms-2026-08"
+ },
+ {
+  "deal_id": "nvidia-coreweave-residual-capacity-backstop-2025-09",
+  "deal_type": "D10",
+  "from_entity": "nvidia",
+  "to_entity": "coreweave",
+  "headline": "Nvidia is contractually obliged to buy any cloud capacity CoreWeave cannot sell, right through to April 2032.",
+  "notes": "THE CLEANEST DOCUMENTED VENDOR BACKSTOP IN THE SECTOR, and it is in an 8-K. Order form dated 2025-09-09 under the CoreWeave-NVIDIA Master Services Agreement of 2023-04-10, initial value $6.3bn. 'In instances where the Company's datacenter capacity is not fully utilized by its own customers, NVIDIA is obligated to purchase the residual unsold capacity through April 13, 2032', subject to delivery and availability requirements. Either party may terminate on 30 days' notice for breach, or on the other's bankruptcy if not dismissed within 90 days. The 8-K expressly notes NVIDIA also supplies CoreWeave's GPUs and is a CoreWeave stockholder \u2014 supplier, customer of last resort and shareholder simultaneously. Exact end date 2032-04-13. [Same announcement as nvidia-coreweave-backstop-6-3b-2025-09, kept once so the amount is not counted twice.]",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000047/crwv-20250909.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 6300000000,
+  "quantity_raw": "initial value of $6.3 billion",
+  "quantity_value": 6300000000,
+  "quantity_unit": "USD",
+  "status": "signed",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2025-09-09",
+  "term_start": "2025-09",
+  "term_end": "2032-04",
+  "term_years": 6.6,
+  "captured_at": "2026-09-02",
+  "is_restatement": true,
+  "same_underlying_as": "nvidia-coreweave-backstop-6-3b-2025-09"
+ },
+ {
+  "deal_id": "nvidia-openai-ohio-backstop-2026-08",
+  "deal_type": "D10",
+  "from_entity": "nvidia",
+  "to_entity": "openai",
+  "headline": "Nvidia agreed to backstop financing for a giant OpenAI data centre in Ohio, after cutting the size of its commitment under investor pressure.",
+  "notes": "FIGURES CONFLICT ACROSS SOURCES \u2014 RECORD WITH CARE. Semafor and CNBC on 2026-08-17 report Nvidia providing 'up to $105 billion to backstop a new OpenAI data center in Ohio'. Reporting of the Wall Street Journal the same day says Nvidia CUT the guarantee from an original $250bn to less than $120bn after 'investors had pushed back on the scale of Nvidia's financial commitment, worried the company was putting too much of its own balance sheet behind efforts to stimulate demand for its AI chips', and that the restructured deal backstops only the opening phase covering approximately five gigawatts, with funding for the rest decided later. quantity_value uses the $105bn figure; the $250bn original and the '<$120bn' revised figure are both attested and may refer to different scopes. Goldman Sachs is advising SB Energy and Morgan Stanley is advising Nvidia. The stated purpose of the backstop is to let the project borrow more cheaply because creditors have greater assurance the money is there. This is the single largest reported vendor guarantee in the dataset and the clearest instance of a chip maker underwriting its own customer's demand. [Same announcement as nvidia-openai-ohio-guarantee-2026-08, kept once so the amount is not counted twice.]",
+  "source_urls": [
+   "https://www.semafor.com/article/08/17/2026/nvidia-to-offer-105-billion-backstop-for-openai-data-center",
+   "https://www.cnbc.com/2026/08/17/nvidia-financing-open-ai-data-center-ohio.html",
+   "https://finance.yahoo.com/technology/ai/articles/nvidia-cuts-openai-ohio-data-114517517.html"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Ohio",
+  "usd_value": 105000000000,
+  "quantity_raw": "up to $105 billion",
+  "quantity_value": 105000000000,
+  "quantity_unit": "USD",
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "conditional",
+  "announced_date": "2026-08-17",
+  "term_start": "2026-08",
+  "captured_at": "2026-09-02",
+  "is_restatement": true,
+  "same_underlying_as": "nvidia-openai-ohio-guarantee-2026-08"
+ },
+ {
+  "deal_id": "nvidia-sharonai-backstop-2026-06",
+  "deal_type": "D10",
+  "from_entity": "nvidia",
+  "to_entity": "sharonai",
+  "headline": "Nvidia guaranteed SharonAI a minimum revenue on 40,000 GPUs for six years, worth $4.88bn.",
+  "notes": "Analyst reporting (SemiAnalysis), corroborated in outline by Capacity which confirms a 'six-year, 40,000-GPU deployment in Australia' where 'Nvidia guarantees a minimum utilisation floor on deployed GPUs... and shares in the resulting cloud revenue in return'. SemiAnalysis puts the total backstop value at $4.88bn, implying roughly $2.33/GPU-hour average over six years. STRUCTURE: a take-or-pay minimum revenue guarantee with pre-agreed annual price levels; the neocloud keeps 100% of rental revenue up to the backstop level and splits the excess with Nvidia (SemiAnalysis illustrates a 40% share to Nvidia). Terms are negotiated individually so schedules differ by operator. announced_date is month-level (June 2026); day set to 01. Not found in SharonAI's SEC filings, which is why confidence is T4.",
+  "source_urls": [
+   "https://newsletter.semianalysis.com/p/nvidia-gpu-debt-backstop-unleashes",
+   "https://capacityglobal.com/news/nvidia-now-agrees-to-rent-back-unused-gpu-capacity-from-neocloud-operators-if-customer-demand-falls-short/"
+  ],
+  "geography": [
+   "Australia"
+  ],
+  "usd_value": 4880000000,
+  "quantity_raw": "$4.88B total backstop value on 40,000 GB300 GPUs",
+  "quantity_value": 4880000000,
+  "quantity_unit": "USD",
+  "status": "announced",
+  "confidence": "T4",
+  "binding_status": "binding",
+  "announced_date": "2026-06-01",
+  "term_start": "2026-06",
+  "term_years": 6,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "nvidia-firmus-backstop-2026-06",
+  "deal_type": "D10",
+  "from_entity": "nvidia",
+  "to_entity": "firmus",
+  "headline": "Nvidia backstopped Firmus's 360MW Indonesian cluster, expected to generate $25-30bn of customer revenue over six years.",
+  "notes": "360 MW cluster in Batam, Indonesia; Capacity describes 'up to 170,000 GPUs across a 360MW facility'. SemiAnalysis reports expected customer revenue of $25-30bn over six years under the Nvidia backstop structure. usd_value left NULL because the $25-30bn is expected revenue, not the size of Nvidia's guarantee, which is not disclosed. SemiAnalysis separately notes Firmus's Australian project used a $10bn facility led by Blackstone (Tactical Opportunities, Credit and Insurance) with Coatue support \u2014 a distinct transaction I could not verify independently.",
+  "source_urls": [
+   "https://newsletter.semianalysis.com/p/nvidia-gpu-debt-backstop-unleashes",
+   "https://capacityglobal.com/news/nvidia-now-agrees-to-rent-back-unused-gpu-capacity-from-neocloud-operators-if-customer-demand-falls-short/"
+  ],
+  "geography": [
+   "Indonesia"
+  ],
+  "site": "Batam, Indonesia",
+  "quantity_raw": "expected $25B-$30B customer revenue over six years",
+  "status": "announced",
+  "confidence": "T4",
+  "binding_status": "binding",
+  "announced_date": "2026-06-29",
+  "term_start": "2026-06",
+  "term_years": 6,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "google-fluidstack-terawulf-lease-backstop-2025-12",
+  "deal_type": "D10",
+  "from_entity": "google",
+  "to_entity": "fluidstack",
+  "headline": "Google backstopped $1.8bn of Fluidstack's lease obligations to TeraWulf's joint venture, taking warrants over 8% of TeraWulf in return.",
+  "notes": "Google backstops $1.8bn of Fluidstack's lease obligations to the Flash Compute JV and receives warrants over approximately 41 million WULF shares, roughly 8% of pro forma equity. The backstop fee is reported to start at $1.3bn and decline to $742m by 2031. Google's credit is what makes the JV's $1.275bn 8% notes financeable \u2014 Google is not the tenant but is the reason the bonds price. Separately, Google pledged warrants to purchase TeraWulf common stock as collateral for the earlier $3.2bn WULF Compute notes.",
+  "source_urls": [
+   "https://finance.yahoo.com/news/terawulf-fluidstack-joint-venture-plans-143846626.html",
+   "https://investors.terawulf.com/news-events/press-releases/detail/121/terawulf-expands-strategic-partnership-with-fluidstack-through-new-168-mw-ai-compute-joint-venture"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 1800000000,
+  "quantity_raw": "backstop $1.8 billion of the lease obligations",
+  "quantity_value": 1800000000,
+  "quantity_unit": "USD",
+  "status": "signed",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2025-12-18",
+  "term_start": "2025-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "google-fluidstack-cipher-lease-backstop-2025-11",
+  "deal_type": "D10",
+  "from_entity": "google",
+  "to_entity": "fluidstack",
+  "headline": "Google's backstop of Fluidstack's leases at Cipher's Texas site reached $1.73bn.",
+  "notes": "Filed as an 8-K exhibit by Cipher Mining. Google expanded its backstop of Fluidstack's lease obligations by a further $333m, taking the TOTAL BACKSTOP TO $1.73 BILLION, explicitly 'in support of project-related debt'. The trigger was a third transaction: an additional 39 MW of critical IT load (56 MW gross) at Barber Lake on a 10-year HPC colocation agreement worth ~$830m of contracted revenue (~$2.0bn with two 5-year extensions), taking Fluidstack to the entire 300 MW at the site and ~$3.8bn of contracted revenue across the partnership (~$9.0bn with all extensions). Cipher had committed financing in place and planned ~$118m of additional equity. Expected delivery by January 2027. Project cost approximately $9-10m per MW of critical IT load; expected site NOI margin 85-90%.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1819989/000095010325015073/dp237633_ex9901.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Barber Lake, Colorado City, Texas",
+  "usd_value": 1730000000,
+  "quantity_raw": "increasing total backstop to $1.73 billion",
+  "quantity_value": 1730000000,
+  "quantity_unit": "USD",
+  "status": "signed",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2025-11-20",
+  "term_start": "2025-11",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "meta-hyperion-residual-value-guarantee-2025-10",
+  "deal_type": "D10",
+  "from_entity": "meta",
+  "to_entity": "beignet-investor-jv",
+  "headline": "Meta gave a 16-year residual value guarantee on the Hyperion campus, which is what makes the $27bn of bonds investment grade.",
+  "notes": "Meta provided 'a residual value guarantee for the first 16 years of operations whereby Meta would make a capped cash payment to the joint venture based on the then-current value of the campus if certain conditions are met following a non-renewal or termination of a lease'. THE GUARANTEE IS CAPPED but the cap amount is not disclosed, so usd_value is null. term_end is derived as 16 years from the October 2025 announcement and is therefore approximate \u2014 the 16 years run from the start of operations, which had not begun at announcement. This is the mechanism that converts a merchant data-centre risk into an A+ rated 2049 bond.",
+  "source_urls": [
+   "https://www.prnewswire.com/news-releases/meta-announces-joint-venture-with-funds-managed-by-blue-owl-capital-to-develop-hyperion-data-center-302590584.html"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Hyperion, Richland Parish, Louisiana",
+  "quantity_raw": "residual value guarantee for the first 16 years of operations",
+  "status": "signed",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2025-10-21",
+  "term_start": "2025-10",
+  "term_end": "2041-10",
+  "term_years": 16,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "iren-parent-guarantee-microsoft-shortfall-2026-05",
+  "deal_type": "D10",
+  "from_entity": "iren",
+  "to_entity": "iren-hardware3",
+  "headline": "IREN's parent guarantees any shortfall if Microsoft refuses or terminates a tranche of GPUs, but only after the GPUs are remarketed.",
+  "notes": "Limited Parent Guarantees dated 2026-05-29 between IREN Limited and the collateral agent. Covers (a) performance by IE US Development Holdings 3 Inc. as manager under a managed services agreement, and (b) any shortfall in Hardware 3's payment obligations attributable to a Microsoft-rejected or terminated GPU tranche, TO THE EXTENT NOT SATISFIED THROUGH HARDWARE 3'S RIGHT TO DISPOSE OF OR REMARKET THE RELEVANT GPU INFRASTRUCTURE. That remarketing carve-out is the interesting part for a compute broker: a rejected Microsoft tranche puts second-hand GB-class GPUs on the market before the parent guarantee is called. Uncapped in the filing, so usd_value is null. Parent does NOT guarantee Hardware 3's obligations generally. IREN also temporarily guarantees the interest rate and power hedges until they transition to a secured hedge structure.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1878848/000114036126023427/ef20075181_8k.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Childress, Texas",
+  "quantity_raw": "any shortfall in Hardware 3's payment obligations attributable to a tranche of GPU services that Microsoft does not accept or terminates",
+  "status": "signed",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-05-29",
+  "term_start": "2026-05",
+  "term_end": "2031-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": true,
+  "same_underlying_as": "iren-hardware3-3-6bn-2026-05"
+ },
+ {
+  "deal_id": "amd-openai-warrant-2025-10",
+  "deal_type": "D10",
+  "from_entity": "amd",
+  "to_entity": "openai",
+  "headline": "AMD handed OpenAI a warrant over up to 160 million of its own shares, vesting as OpenAI deploys 6 gigawatts of AMD chips.",
+  "notes": "AMD's equivalent of the Nvidia-OpenAI circularity, but inverted: instead of the chip maker investing in the customer, the chip maker gives the customer equity in itself as a purchase incentive. Warrant over up to 160 million AMD shares; AMD's release does not state the exercise price (widely reported elsewhere as $0.01 per share, which I did not verify in a primary source, so it is not recorded in a field). VESTING: first tranche on the initial 1 GW deployment, further tranches as purchases scale to 6 GW, and additionally conditional on AMD achieving certain share-price targets and OpenAI achieving technical and commercial milestones. Initial 1 GW deployment begins in the second half of 2026. quantity_unit left null because the quantity is shares, which is not in the schema's unit list.",
+  "source_urls": [
+   "https://ir.amd.com/news-events/press-releases/detail/1260/amd-and-openai-announce-strategic-partnership-to-deploy-6-gigawatts-of-amd-gpus",
+   "https://openai.com/index/openai-amd-strategic-partnership/"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "quantity_raw": "warrant for up to 160 million shares of AMD common stock",
+  "quantity_value": 160000000,
+  "status": "signed",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2025-10-06",
+  "term_start": "2025-10",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "nvidia-openai-100bn-loi-2025-09",
+  "deal_type": "D9",
+  "from_entity": "nvidia",
+  "to_entity": "openai",
+  "headline": "Nvidia said it intends to invest up to $100bn in OpenAI, released a gigawatt at a time as OpenAI deploys Nvidia systems.",
+  "notes": "LETTER OF INTENT, NOT A CLOSED INVESTMENT \u2014 the release says the parties 'look forward to finalizing the details of this new phase of strategic partnership in the coming weeks'. 'NVIDIA intends to invest up to $100 billion in OpenAI progressively as each gigawatt is deployed', against at least 10 GW of NVIDIA systems, first gigawatt targeted for H2 2026 on the Vera Rubin platform. THE CANONICAL CIRCULAR LOOP: Nvidia funds OpenAI, OpenAI buys Nvidia systems, the revenue returns to Nvidia. A separate tracker reports the investment was subsequently finalised at $30bn as part of a roughly $110bn OpenAI round in February 2026, but I could not corroborate that in a primary source and have recorded it only in this note.",
+  "source_urls": [
+   "https://nvidianews.nvidia.com/news/openai-and-nvidia-announce-strategic-partnership-to-deploy-10gw-of-nvidia-systems"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 100000000000,
+  "quantity_raw": "up to $100 billion",
+  "quantity_value": 100000000000,
+  "quantity_unit": "USD",
+  "status": "announced",
+  "confidence": "T2",
+  "binding_status": "LOI",
+  "announced_date": "2025-09-22",
+  "term_start": "2025-09",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "nvidia-coreweave-equity-2bn-2026-01",
+  "deal_type": "D9",
+  "from_entity": "nvidia",
+  "to_entity": "coreweave",
+  "headline": "Nvidia bought $2bn of CoreWeave stock at $87.20 a share.",
+  "notes": "CONFIRMED IN COREWEAVE'S 10-Q: 'In January 2026, we entered into a securities purchase agreement with NVIDIA Corporation for a private placement of approximately 23 million shares of our Class A common stock at a purchase price of $87.20 per share, for aggregate gross proceeds of $2.0 billion.' Nvidia's release frames it alongside CoreWeave's intent to build more than 5 gigawatts of AI factories by 2030 and to adopt Nvidia CPU and storage platforms. Reported to take Nvidia's CoreWeave stake to about 13% (up from 1.2% in 2023 and 7% at the March 2025 IPO). Nvidia is simultaneously CoreWeave's chip supplier, a shareholder, and \u2014 under the $6.3bn order form \u2014 the buyer of last resort for CoreWeave's unsold capacity.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+   "https://nvidianews.nvidia.com/news/nvidia-and-coreweave-strengthen-collaboration-to-accelerate-buildout-of-ai-factories"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 2000000000,
+  "quantity_raw": "$2.0 billion",
+  "quantity_value": 2000000000,
+  "quantity_unit": "USD",
+  "status": "operational",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-01-26",
+  "term_start": "2026-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "nvidia-nebius-equity-2bn-2026-03",
+  "deal_type": "D9",
+  "from_entity": "nvidia",
+  "to_entity": "nebius",
+  "headline": "Nvidia invested $2bn in Nebius, one of its own cloud customers.",
+  "notes": "Announced 2026-03-11; Nebius stock rose 16% on the news. Nvidia had previously disclosed only a $33m Nebius stake in its Q4-2025 13F. In July 2026 Nvidia disclosed a stake reported at 9.3% of Nebius, on which the stock rose again. The FORM of the $2bn (primary equity, convertible, or secondary purchase) is not established in the sources I could reach \u2014 CNBC blocked direct fetch. Nebius is simultaneously borrowing $775m against Nvidia GPUs (see nebius-secured-775m-2026-07).",
+  "source_urls": [
+   "https://www.cnbc.com/2026/03/11/nebius-nvidia-ai-cloud.html",
+   "https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom"
+  ],
+  "geography": [
+   "Netherlands"
+  ],
+  "usd_value": 2000000000,
+  "quantity_raw": "$2 billion",
+  "quantity_value": 2000000000,
+  "quantity_unit": "USD",
+  "status": "operational",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2026-03-11",
+  "term_start": "2026-03",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "nvidia-nscale-equity-2026-03",
+  "deal_type": "D9",
+  "from_entity": "nvidia",
+  "to_entity": "nscale",
+  "headline": "Nvidia joined a $2bn funding round for Nscale at a $14.6bn valuation.",
+  "notes": "usd_value is left NULL because $2bn is the size of the whole round, not Nvidia's cheque \u2014 NVIDIA'S OWN CONTRIBUTION IS NOT DISCLOSED in the sources reached. Valuation $14.6bn. Nscale's customer is Microsoft (200,000 GB300 GPUs contracted). A separate tracker reports an earlier GBP 500 million Nvidia SAFE into Nscale in October 2025, which I could not corroborate in a primary source. Nscale was also reported in August 2026 to be pursuing a ~$3bn US IPO.",
+  "source_urls": [
+   "https://www.cnbc.com/2026/03/09/nscale-ai-data-center-nvidia-raise.html",
+   "https://mlq.ai/news/nscale-raises-2-billion-series-c-funding-at-146-billion-valuation-with-nvidia-participation/"
+  ],
+  "geography": [
+   "United Kingdom"
+  ],
+  "quantity_raw": "$2 Billion Series C Funding at $14.6 Billion Valuation with Nvidia Participation",
+  "quantity_value": 2000000000,
+  "quantity_unit": "USD",
+  "status": "operational",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2026-03-09",
+  "term_start": "2026-03",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "nvidia-anthropic-equity-2025-11",
+  "deal_type": "D9",
+  "from_entity": "nvidia",
+  "to_entity": "anthropic",
+  "headline": "Nvidia and Microsoft together committed up to $15bn to Anthropic, which committed to buy $30bn of Azure compute.",
+  "notes": "JOINT RECORD \u2014 the $15bn is the COMBINED Microsoft + Nvidia commitment and Axios explicitly does not break it down. Widely reported (and stated by a funding tracker) as up to $10bn from Nvidia and up to $5bn from Microsoft, but I could not confirm the split in a source I could fetch, so from_entity is set to nvidia with microsoft named here rather than splitting the amount across two records and risking a double count. Anthropic agreed to purchase up to 1 gigawatt of Azure compute capacity and a similar amount of compute using Nvidia's latest chips; the $30bn Azure commitment figure is widely reported but not confirmed in the two sources cited. Anthropic valued in the range of $350bn. THE LOOP: Nvidia and Microsoft fund Anthropic; Anthropic spends it on Azure capacity running Nvidia chips.",
+  "source_urls": [
+   "https://www.axios.com/2025/11/18/anthropic-microsoft-nvidia-15-billion",
+   "https://www.cnbc.com/2025/11/18/anthropic-ai-azure-microsoft-nvidia.html"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 15000000000,
+  "quantity_raw": "up to $15 billion combined (Microsoft and Nvidia)",
+  "quantity_value": 15000000000,
+  "quantity_unit": "USD",
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2025-11-18",
+  "term_start": "2025-11",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "microsoft-anthropic-equity-2025-11",
+  "deal_type": "D9",
+  "from_entity": "microsoft",
+  "to_entity": "anthropic",
+  "headline": "Microsoft took an equity stake in Anthropic alongside its Azure compute deal, and booked $3.2bn of gains on it by mid-2026.",
+  "notes": "usd_value deliberately NULL to avoid double counting against nvidia-anthropic-equity-2025-11, which carries the combined $15bn. Microsoft's share is widely reported as up to $5bn but unconfirmed in the sources cited. Microsoft logged $3.2bn of income from the Anthropic investment in the quarter reported 2026-07-29, against a mixed result on OpenAI. CIRCULARITY: Microsoft invests in Anthropic; Anthropic commits to buy Azure compute from Microsoft; Microsoft books the equity gain.",
+  "source_urls": [
+   "https://www.axios.com/2025/11/18/anthropic-microsoft-nvidia-15-billion",
+   "https://techcrunch.com/2026/07/29/microsoft-logs-3-2b-from-anthropic-investment-but-openai-was-a-mixed-bag/"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "quantity_raw": "part of a combined $15 billion investment with Nvidia",
+  "quantity_unit": "USD",
+  "status": "operational",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2025-11-18",
+  "term_start": "2025-11",
+  "captured_at": "2026-09-02",
+  "is_restatement": true,
+  "same_underlying_as": "nvidia-anthropic-equity-2025-11"
+ },
+ {
+  "deal_id": "nvidia-xai-equity-2025-10",
+  "deal_type": "D9",
+  "from_entity": "nvidia",
+  "to_entity": "xai",
+  "headline": "Nvidia committed up to $2bn of equity to xAI's $20bn raise.",
+  "notes": "SINGLE SECONDARY SOURCE, LOW CONFIDENCE. A funding tracker reports 'Nvidia equity investment: up to $2 billion' within a $20bn xAI round in October 2025. I could not reach a primary or first-tier source to corroborate the amount, structure or close. Day of announced_date set to 01 (month-level only). Treat the amount as unverified.",
+  "source_urls": [
+   "https://aifundingtracker.com/nvidia-startup-investments/"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 2000000000,
+  "quantity_raw": "up to $2 billion",
+  "quantity_value": 2000000000,
+  "quantity_unit": "USD",
+  "status": "announced",
+  "confidence": "T4",
+  "binding_status": "binding",
+  "announced_date": "2025-10-01",
+  "term_start": "2025-10",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "nvidia-2026-equity-programme",
+  "deal_type": "D9",
+  "from_entity": "nvidia",
+  "to_entity": "various-ai-companies",
+  "headline": "Nvidia's equity investments across the AI sector topped $40bn in 2026, most of it into its own customers.",
+  "notes": "ROLL-UP RECORD \u2014 DO NOT SUM WITH THE INDIVIDUAL NVIDIA D9 RECORDS (double count). CNBC reported in May 2026 that Nvidia's 2026 AI equity investments topped $40bn, led by the OpenAI stake. Nvidia separately disclosed a $21bn SpaceX stake, which is not a compute-supply circularity and is excluded from this slice. I could not fetch the CNBC article body (403), so the headline figure is taken from the article title and the corroborating Yahoo headline; the composition is not verified.",
+  "source_urls": [
+   "https://www.cnbc.com/2026/05/09/nvidia-embraces-ai-investor-topping-40-billion-in-equity-bets-2026.html",
+   "https://finance.yahoo.com/sectors/technology/articles/nvidias-ai-investment-bets-top-120016038.html"
+  ],
+  "usd_value": 40000000000,
+  "quantity_raw": "topping $40 billion in equity bets 2026",
+  "quantity_value": 40000000000,
+  "quantity_unit": "USD",
+  "status": "in_progress",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2026-05-09",
+  "term_start": "2026-01",
+  "term_end": "2026-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "google-anthropic-increase-2026",
+  "deal_type": "D9",
+  "from_entity": "google",
+  "to_entity": "anthropic",
+  "headline": "Google agreed to increase its investment in Anthropic, its own TPU customer.",
+  "notes": "INCOMPLETE RECORD \u2014 RECORDED AS A KNOWN GAP RATHER THAN A FACT. A headline states 'Google to increase Anthropic investment' alongside an OpenAI/Microsoft partnership shake-up, but I could not fetch the article body or establish the amount, date, structure or whether it closed. Amazon's and Google's cumulative Anthropic investments (widely reported at $8bn and several billion respectively from 2023-2025) could not be verified to a current figure within this research budget. These are two of the most important circular edges in the sector and they remain UNVERIFIED here. Do not use this record for quantitative analysis.",
+  "source_urls": [
+   "https://www.msn.com/en-us/money/other/google-to-increase-anthropic-investment-openai-microsoft-shake-up-partnership/ar-AA21P5RT"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "status": "announced",
+  "confidence": "T4",
+  "binding_status": "non_binding",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "nvidia-coreweave-13f-stake-2025",
+  "deal_type": "D9",
+  "from_entity": "nvidia",
+  "to_entity": "coreweave",
+  "headline": "Nvidia's pre-existing CoreWeave stake was worth $896.7m when first disclosed in a 13F.",
+  "notes": "Nvidia's Q1-2025 13F filing revealed a CoreWeave stake valued at $896.7m. This is a MARKET VALUE OF AN EXISTING HOLDING, not a new cash investment \u2014 do not add it to the $2bn January 2026 primary placement. announced_date is the approximate 13F filing window for Q1-2025 and is not verified to the day.",
+  "source_urls": [
+   "https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "usd_value": 896700000,
+  "quantity_raw": "a CoreWeave stake worth $896.7 million",
+  "quantity_value": 896700000,
+  "quantity_unit": "USD",
+  "status": "operational",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2025-05-15",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "nvidia-openai-ohio-guarantee-cut-2026-08",
+  "deal_type": "D10",
+  "from_entity": "nvidia",
+  "to_entity": "openai",
+  "headline": "Nvidia cut its guarantee for OpenAI's Ohio data centre from $250bn to under $120bn after investors objected.",
+  "notes": "THE CLOSEST THING TO A DISTRESS SIGNAL FOUND IN THIS SLICE \u2014 a vendor guarantee being resized under capital-markets pressure rather than a borrower default. Reporting of the Wall Street Journal, 2026-08-17: the guarantee was cut from an original $250bn to less than $120bn because 'investors had pushed back on the scale of Nvidia's financial commitment, worried the company was putting too much of its own balance sheet behind efforts to stimulate demand for its AI chips'. Nvidia will now backstop only the opening phase covering approximately five gigawatts, with any decision on funding the rest deferred. Goldman Sachs advising SB Energy, Morgan Stanley advising Nvidia. status set to 'resized'. SAME UNDERLYING ARRANGEMENT as nvidia-openai-ohio-backstop-2026-08 \u2014 do not sum.",
+  "source_urls": [
+   "https://finance.yahoo.com/technology/ai/articles/nvidia-cuts-openai-ohio-data-114517517.html"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Ohio",
+  "usd_value": 120000000000,
+  "quantity_raw": "cut from $250 billion to less than $120 billion",
+  "quantity_value": 120000000000,
+  "quantity_unit": "USD",
+  "status": "resized",
+  "confidence": "T3",
+  "binding_status": "conditional",
+  "announced_date": "2026-08-17",
+  "term_start": "2026-08",
+  "captured_at": "2026-09-02",
+  "is_restatement": true,
+  "same_underlying_as": "nvidia-openai-ohio-backstop-2026-08"
+ },
+ {
+  "deal_id": "neocloud-gpu-backed-debt-market-2026",
+  "deal_type": "D8",
+  "from_entity": "various-lenders",
+  "to_entity": "neocloud-sector",
+  "headline": "More than $20bn of loans were outstanding against Nvidia GPUs, and non-investment-grade AI infrastructure debt had passed $125bn.",
+  "notes": "MARKET-SIZE CONTEXT RECORD \u2014 DO NOT SUM WITH ANY FACILITY RECORD. Two different measures: (1) PitchBook via Dave Friedman, over $20bn of loans specifically collateralised by NVIDIA GPUs, with BlackRock, Blackstone, PIMCO, Carlyle, JPMorgan and Macquarie named as lenders but not mapped to facilities; (2) Octus, $125bn of non-investment-grade AI infrastructure debt outstanding at end-June 2026. usd_value uses the broader $125bn figure. PRICING: Octus reports CoreWeave's unsecured curve at approximately 620bp OAS against 292bp for the single-B high yield index \u2014 CoreWeave pays roughly double the index spread. Data-centre secured bonds trade at a weighted-average 226-389bp OAS depending on tenant credit quality, i.e. the market prices these overwhelmingly off the TENANT, not the asset. Capacity separately notes CoreWeave's quarterly interest expense doubled year-on-year and that neither Lambda nor Fluidstack disclose consolidated debt on a comparable schedule, so the true sector total is unobservable.",
+  "source_urls": [
+   "https://davefriedman.substack.com/p/neoclouds-hold-more-than-20-billion",
+   "https://octus.com/resources/articles/sector-insights-tech-hardware-ai-infrastructure-quarterly-q126/"
+  ],
+  "usd_value": 125000000000,
+  "quantity_raw": "over $20 billion in outstanding loans collateralized by NVIDIA GPUs; $125 billion non-IG AI infrastructure debt",
+  "quantity_value": 125000000000,
+  "quantity_unit": "USD",
+  "status": "in_progress",
+  "confidence": "T4",
+  "binding_status": "binding",
+  "announced_date": "2026-06-30",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ }
+]

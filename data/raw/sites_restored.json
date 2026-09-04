@@ -1,0 +1,4065 @@
+[
+ {
+  "site_id": "ytl-johor-data-center-park-kulai",
+  "name": "YTL Green Data Center Park (YTL Johor Data Center Park)",
+  "operator": "YTL Data Center Holdings Pte. Ltd.",
+  "operator_id": "ytl-power-international-berhad",
+  "owner": "YTL Power International Berhad",
+  "country": "Malaysia",
+  "city": "Kulai, Johor",
+  "status": "live",
+  "it_load_mw": 600,
+  "it_load_mw_raw": "AI data centre (GB200 NVL72) operational from 31 Oct 2025, MW not stated by the company; analyst commentary on the Q4 FY2026 Bursa results puts about 150 MW of colocation plus a 20 MW AI hall in operation by June 2026",
+  "power_source": "500 MW solar plant plus TNB grid",
+  "chips_installed": [
+   "GB200"
+  ],
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/",
+   "https://w.media/ytl-power-completes-nvidia-powered-ai-data-centre-in-johor/",
+   "https://theedgemalaysia.com/node/815134",
+   "https://theedgemalaysia.com/node/776142",
+   "https://dragonleong.substack.com/p/ytl-power-q4-fy2026-big-jump-in-data"
+  ],
+  "notes": "YTL AI Cloud, hosted here, was commissioned October 2025 on liquid-cooled NVIDIA GB200 NVL72. RM10bn (US$2.38bn) total YTL AI programme, half data centre infrastructure and half AI solutions. Full campus capacity expected within two years of the November 2025 announcement. GDS and Sea are named as other tenants of the park. The 600MW directory figure and the 298MW/1,000MW company figures are different measures (built-out ceiling vs contracted) and should not be summed. | LIVE VERIFIED: The Edge (31 Oct 2025) confirms the NVIDIA-powered AI data centre 'is now operational'. The 150 MW / 20 MW operational split is from an independent analyst reading of the Q4 FY2026 results (T4) and is deliberately not placed in it_load_mw; the YTL Power Bursa quarterly report is the T1 check. Existing record carries the 600 MW park ceiling; this record marks the live status and date.",
+  "lat": 1.72034,
+  "lng": 103.59333,
+  "loc_precision": "city",
+  "loc_note": "Asked for Kulai, Johor, Malaysia. Matched Kulai, Johor, Malaysia (city level, OSM rank 12). Not the building. Nudged about 6.0 km inside the city to separate it from the 11 other sites we know only to the same city.",
+  "city_lat": 1.6667,
+  "city_lng": 103.6,
+  "loc_scattered": 12
+ },
+ {
+  "site_id": "ytl-johor-data-center-1",
+  "name": "YTL Johor Data Center 1",
+  "operator": "YTL Data Center Holdings Pte. Ltd.",
+  "operator_id": "ytl-power-international-berhad",
+  "owner": "YTL Power International Berhad",
+  "country": "Malaysia",
+  "city": "Kulai, Johor",
+  "it_load_mw": 72,
+  "it_load_mw_raw": "72 MW",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/ytl-johor-data-center-1/"
+  ],
+  "notes": "Directory listing gives location only as 'within Kulai, 30km from Singapore 81000 Kulai'. Status not stated by the source.",
+  "lat": 1.63411,
+  "lng": 103.55686,
+  "loc_precision": "city",
+  "loc_note": "Asked for Kulai, Johor, Malaysia. Matched Kulai, Johor, Malaysia (city level, OSM rank 12). Not the building. Nudged about 6.0 km inside the city to separate it from the 11 other sites we know only to the same city.",
+  "city_lat": 1.6667,
+  "city_lng": 103.6,
+  "loc_scattered": 12
+ },
+ {
+  "site_id": "ytl-johor-data-center-2",
+  "name": "YTL Johor Data Center 2",
+  "operator": "YTL Data Center Holdings Pte. Ltd.",
+  "operator_id": "ytl-power-international-berhad",
+  "owner": "YTL Power International Berhad",
+  "country": "Malaysia",
+  "city": "Kulai, Johor",
+  "it_load_mw": 20,
+  "it_load_mw_raw": "20 MW",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/ytl-johor-data-center-2/"
+  ],
+  "notes": "Directory listing only.",
+  "lat": 1.66004,
+  "lng": 103.54634,
+  "loc_precision": "city",
+  "loc_note": "Asked for Kulai, Johor, Malaysia. Matched Kulai, Johor, Malaysia (city level, OSM rank 12). Not the building. Nudged about 6.0 km inside the city to separate it from the 11 other sites we know only to the same city.",
+  "city_lat": 1.6667,
+  "city_lng": 103.6,
+  "loc_scattered": 12
+ },
+ {
+  "site_id": "ytl-johor-data-center-3",
+  "name": "YTL Johor Data Center 3",
+  "operator": "YTL Data Center Holdings Pte. Ltd.",
+  "operator_id": "ytl-power-international-berhad",
+  "owner": "YTL Power International Berhad",
+  "country": "Malaysia",
+  "city": "Kulai, Johor",
+  "it_load_mw": 80,
+  "it_load_mw_raw": "80 MW",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/ytl-johor-data-center-3/"
+  ],
+  "notes": "80MW figure comes from the directory page title; the campus list page did not restate it.",
+  "lat": 1.68775,
+  "lng": 103.55019,
+  "loc_precision": "city",
+  "loc_note": "Asked for Kulai, Johor, Malaysia. Matched Kulai, Johor, Malaysia (city level, OSM rank 12). Not the building. Nudged about 6.0 km inside the city to separate it from the 11 other sites we know only to the same city.",
+  "city_lat": 1.6667,
+  "city_lng": 103.6,
+  "loc_scattered": 12
+ },
+ {
+  "site_id": "ytl-johor-data-center-6",
+  "name": "YTL Johor Data Center 6",
+  "operator": "YTL Data Center Holdings Pte. Ltd.",
+  "operator_id": "ytl-power-international-berhad",
+  "owner": "YTL Power International Berhad",
+  "country": "Malaysia",
+  "city": "Kulai, Johor",
+  "it_load_mw": 40,
+  "it_load_mw_raw": "40 MW",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/"
+  ],
+  "notes": "Directory listing only.",
+  "lat": 1.70982,
+  "lng": 103.56739,
+  "loc_precision": "city",
+  "loc_note": "Asked for Kulai, Johor, Malaysia. Matched Kulai, Johor, Malaysia (city level, OSM rank 12). Not the building. Nudged about 6.0 km inside the city to separate it from the 11 other sites we know only to the same city.",
+  "city_lat": 1.6667,
+  "city_lng": 103.6,
+  "loc_scattered": 12
+ },
+ {
+  "site_id": "ytl-sedenak-tech-park-west",
+  "name": "YTL Sedenak Tech Park West campus (unnamed)",
+  "operator": "YTL Data Center Holdings Pte. Ltd.",
+  "operator_id": "ytl-power-international-berhad",
+  "owner": "YTL Power International Berhad / SIPP Power Sdn Bhd",
+  "country": "Malaysia",
+  "city": "Sedenak, Johor",
+  "status": "announced",
+  "it_load_mw_raw": "Described as a gigawatt data centre campus in headline reporting; no MW/GW figure disclosed in the announcement",
+  "source_urls": [
+   "https://theedgemalaysia.com/node/815134"
+  ],
+  "notes": "Announced 19 August 2026. Name, capacity, investment and timeline all undisclosed. The 'gigawatt' descriptor appears in the headline but is not supported by a stated figure in the body, so it_load_mw is left null.",
+  "lat": 1.71266,
+  "lng": 103.52573,
+  "loc_precision": "exact",
+  "loc_note": "Asked for Sedenak, Johor, Malaysia. Matched Sedenak, Kulai, Johor, 81030, Malaysia (exact level, OSM rank 19). Not the building."
+ },
+ {
+  "site_id": "tm-nxera-iskandar-puteri",
+  "name": "TM Nxera Iskandar Puteri data centre campus",
+  "operator": "TM Nxera",
+  "operator_id": "tm-nxera",
+  "owner": "Telekom Malaysia / Singtel Nxera joint venture",
+  "country": "Malaysia",
+  "city": "Iskandar Puteri, Johor",
+  "status": "under_construction",
+  "it_load_mw": 200,
+  "it_load_mw_raw": "280MW electricity supply agreement supporting 200MW of AI data centre capacity; directory lists 'up to 200' MW",
+  "power_source": "Grid supply from Tenaga Nasional Berhad under a 280MW electricity supply agreement",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/tm-nxera-signs-280mw-electrical-supply-agreement-with-tnb-to-power-malaysian-data-center-campus/",
+   "https://www.datacentermap.com/malaysia/johor-bahru/"
+  ],
+  "notes": "Address given by the directory as 'Jln Kampung Lalang 79100 Iskandar Puteri'. The 280MW is the grid supply figure; 200MW is the AI IT capacity figure. Liquid cooling stated.",
+  "lat": 1.49228,
+  "lng": 103.59278,
+  "loc_precision": "city",
+  "loc_note": "Asked for Iskandar Puteri, Johor, Malaysia. Matched Iskandar Puteri, Johor Bahru, Johor, Malaysia (city level, OSM rank 14). Not the building. Nudged about 5.1 km inside the city to separate it from the 6 other sites we know only to the same city.",
+  "city_lat": 1.4523,
+  "city_lng": 103.6145,
+  "loc_scattered": 7
+ },
+ {
+  "site_id": "stt-johor-campus",
+  "name": "STT Johor Campus (STT Johor 1)",
+  "operator": "ST Telemedia Global Data Centres",
+  "operator_id": "st-telemedia-global-data-centres",
+  "owner": "ST Telemedia Global Data Centres",
+  "country": "Malaysia",
+  "city": "Gelang Patah, Johor",
+  "it_load_mw": 120,
+  "it_load_mw_raw": "120 MW",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/"
+  ],
+  "notes": "Address: within Nusa Cemerlang Industrial Park, 81550 Gelang Patah. DOUBLE-COUNT RISK: the directory carries two entries at 120MW for what appears to be the same campus.",
+  "lat": 1.46905,
+  "lng": 103.54082,
+  "loc_precision": "city",
+  "loc_note": "Asked for Gelang Patah, Johor, Malaysia. Matched Gelang Patah, Iskandar Puteri, Johor Bahru, Johor, 81550, Malaysia (city level, OSM rank 18). Not the building. Nudged about 5.6 km inside the city to separate it from the 7 other sites we know only to the same city.",
+  "city_lat": 1.4494,
+  "city_lng": 103.5873,
+  "loc_scattered": 8
+ },
+ {
+  "site_id": "vantage-johor",
+  "name": "Vantage Johor",
+  "operator": "Vantage Data Centers",
+  "operator_id": "vantage-data-centers",
+  "owner": "Vantage Data Centers",
+  "country": "Malaysia",
+  "city": "Sedenak, Johor",
+  "it_load_mw": 300,
+  "it_load_mw_raw": "300 MW",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/"
+  ],
+  "notes": "Address: Sedenak Tech Park, Jalan Digital Utama, 82100 Johor.",
+  "lat": 1.71266,
+  "lng": 103.52573,
+  "loc_precision": "exact",
+  "loc_note": "Asked for Sedenak, Johor, Malaysia. Matched Sedenak, Kulai, Johor, 81030, Malaysia (exact level, OSM rank 19). Not the building."
+ },
+ {
+  "site_id": "princeton-digital-jh2",
+  "name": "Princeton Digital JH2",
+  "operator": "Princeton Digital Group",
+  "operator_id": "princeton-digital-group",
+  "owner": "Princeton Digital Group",
+  "country": "Malaysia",
+  "city": "Kulai, Johor",
+  "it_load_mw": 300,
+  "it_load_mw_raw": "300 MW",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/"
+  ],
+  "notes": "Address: within Eco Business Park at Mukim Senai, Johor, 81400 Kulai.",
+  "lat": 1.61691,
+  "lng": 103.57894,
+  "loc_precision": "city",
+  "loc_note": "Asked for Kulai, Johor, Malaysia. Matched Kulai, Johor, Malaysia (city level, OSM rank 12). Not the building. Nudged about 6.0 km inside the city to separate it from the 11 other sites we know only to the same city.",
+  "city_lat": 1.6667,
+  "city_lng": 103.6,
+  "loc_scattered": 12
+ },
+ {
+  "site_id": "princeton-digital-jh1",
+  "name": "Princeton Digital JH1",
+  "operator": "Princeton Digital Group",
+  "operator_id": "princeton-digital-group",
+  "owner": "Princeton Digital Group",
+  "country": "Malaysia",
+  "city": "Bukit Batu, Johor",
+  "it_load_mw_raw": "not stated",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/"
+  ],
+  "notes": "Address: Jl. Digital Utama, 81000 Bukit Batu.",
+  "lat": 1.7291,
+  "lng": 103.62193,
+  "loc_precision": "city",
+  "loc_note": "Asked for Bukit Batu, Johor, Malaysia. Matched Bukit Batu, Kulai, Johor, 81000, Malaysia (city level, OSM rank 18). Not the building."
+ },
+ {
+  "site_id": "zdata-johor-gp3",
+  "name": "ZDATA Johor GP3",
+  "operator": "ZDATA Technologies Co., Ltd.",
+  "operator_id": "zdata-technologies-co-ltd",
+  "owner": "ZDATA Technologies Co., Ltd.",
+  "country": "Malaysia",
+  "city": "Gelang Patah, Johor",
+  "it_load_mw": 300,
+  "it_load_mw_raw": "300 MW",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/computility-technology-johor/"
+  ],
+  "notes": "Address: Jalan Bayu 4, Nusajaya Industrial Park 2, 79250 Gelang Patah. The directory URL slug refers to 'Computility Technology Johor', which appears to be an alternative or former name for the same facility.",
+  "lat": 1.49615,
+  "lng": 103.56833,
+  "loc_precision": "city",
+  "loc_note": "Asked for Gelang Patah, Johor, Malaysia. Matched Gelang Patah, Iskandar Puteri, Johor Bahru, Johor, 81550, Malaysia (city level, OSM rank 18). Not the building. Nudged about 5.6 km inside the city to separate it from the 7 other sites we know only to the same city.",
+  "city_lat": 1.4494,
+  "city_lng": 103.5873,
+  "loc_scattered": 8
+ },
+ {
+  "site_id": "msfusion-kota-tinggi",
+  "name": "MSFusion Sdn Bhd data centre",
+  "operator": "MegaSpeed",
+  "operator_id": "megaspeed",
+  "owner": "MegaSpeed",
+  "country": "Malaysia",
+  "city": "Kota Tinggi, Johor",
+  "it_load_mw": 300,
+  "it_load_mw_raw": "300 MW",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/"
+  ],
+  "notes": "Address: Bandar Cemerlang Industrial Park, 81800 Kota Tinggi.",
+  "lat": 1.71461,
+  "lng": 103.89263,
+  "loc_precision": "city",
+  "loc_note": "Asked for Kota Tinggi, Johor, Malaysia. Matched Kota Tinggi, Johor, Malaysia (city level, OSM rank 18). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": 1.7337,
+  "city_lng": 103.9007,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "empyrion-digital-my1",
+  "name": "Empyrion Digital MY1",
+  "operator": "Empyrion Digital",
+  "operator_id": "empyrion-digital",
+  "owner": "Empyrion Digital",
+  "country": "Malaysia",
+  "city": "Gelang Patah, Johor",
+  "it_load_mw": 200,
+  "it_load_mw_raw": "200 MW",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/"
+  ],
+  "notes": "Address: i-TechValley Industrial Park, Persiaran Bioteknologi, 79200 Gelang Patah.",
+  "lat": 1.46837,
+  "lng": 103.63406,
+  "loc_precision": "city",
+  "loc_note": "Asked for Gelang Patah, Johor, Malaysia. Matched Gelang Patah, Iskandar Puteri, Johor Bahru, Johor, 81550, Malaysia (city level, OSM rank 18). Not the building. Nudged about 5.6 km inside the city to separate it from the 7 other sites we know only to the same city.",
+  "city_lat": 1.4494,
+  "city_lng": 103.5873,
+  "loc_scattered": 8
+ },
+ {
+  "site_id": "digital-halo-jhb1",
+  "name": "Digital Halo JHB1",
+  "operator": "Digital Halo Data Center",
+  "operator_id": "digital-halo-data-center",
+  "owner": "Digital Halo Data Center",
+  "country": "Malaysia",
+  "city": "Iskandar Puteri, Johor",
+  "it_load_mw": 150,
+  "it_load_mw_raw": "150 MW",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/"
+  ],
+  "notes": "Address: within Nusa Cemerlang Industrial Park, 81550 Iskandar Puteri.",
+  "lat": 1.42223,
+  "lng": 103.58035,
+  "loc_precision": "city",
+  "loc_note": "Asked for Iskandar Puteri, Johor, Malaysia. Matched Iskandar Puteri, Johor Bahru, Johor, Malaysia (city level, OSM rank 14). Not the building. Nudged about 5.1 km inside the city to separate it from the 6 other sites we know only to the same city.",
+  "city_lat": 1.4523,
+  "city_lng": 103.6145,
+  "loc_scattered": 7
+ },
+ {
+  "site_id": "airtrunk-jhb3",
+  "name": "AirTrunk Johor Bahru JHB3",
+  "operator": "AirTrunk",
+  "operator_id": "airtrunk-operating-pty-ltd",
+  "owner": "AirTrunk",
+  "country": "Malaysia",
+  "city": "Iskandar Puteri, Johor",
+  "it_load_mw": 138,
+  "it_load_mw_raw": "138+ MW",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/"
+  ],
+  "notes": "Directory states '138+', so 138 is a floor not a point estimate.",
+  "lat": 1.4942,
+  "lng": 103.63222,
+  "loc_precision": "city",
+  "loc_note": "Asked for Iskandar Puteri, Johor, Malaysia. Matched Iskandar Puteri, Johor Bahru, Johor, Malaysia (city level, OSM rank 14). Not the building. Nudged about 5.1 km inside the city to separate it from the 6 other sites we know only to the same city.",
+  "city_lat": 1.4523,
+  "city_lng": 103.6145,
+  "loc_scattered": 7
+ },
+ {
+  "site_id": "airtrunk-jhb4",
+  "name": "AirTrunk Johor Bahru JHB4",
+  "operator": "AirTrunk",
+  "operator_id": "airtrunk-operating-pty-ltd",
+  "owner": "AirTrunk",
+  "country": "Malaysia",
+  "city": "Iskandar Puteri, Johor",
+  "it_load_mw": 142,
+  "it_load_mw_raw": "142+ MW",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/"
+  ],
+  "notes": "Directory states '142+', so 142 is a floor not a point estimate. AirTrunk JHB1 and JHB2 are also listed but with no MW figure.",
+  "lat": 1.46458,
+  "lng": 103.65832,
+  "loc_precision": "city",
+  "loc_note": "Asked for Iskandar Puteri, Johor, Malaysia. Matched Iskandar Puteri, Johor Bahru, Johor, Malaysia (city level, OSM rank 14). Not the building. Nudged about 5.1 km inside the city to separate it from the 6 other sites we know only to the same city.",
+  "city_lat": 1.4523,
+  "city_lng": 103.6145,
+  "loc_scattered": 7
+ },
+ {
+  "site_id": "airtrunk-jhb1",
+  "name": "AirTrunk Johor Bahru JHB1",
+  "operator": "AirTrunk",
+  "operator_id": "airtrunk-operating-pty-ltd",
+  "owner": "AirTrunk",
+  "country": "Malaysia",
+  "city": "Johor Bahru, Johor",
+  "status": "live",
+  "it_load_mw": 50,
+  "it_load_mw_raw": "over 50MW of capacity in the initial phase; 150+ MW at full build",
+  "power_source": "Grid (TNB) plus 1MW+ solar-ready roof; PUE 1.15 design",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/",
+   "https://airtrunk.com/airtrunk-opens-ai-ready-data-centre-in-malaysia-accelerating-innovation-and-the-energy-transition/",
+   "https://www.digitalnewsasia.com/business/airtrunk-launches-ai-ready-hyperscale-data-centre-johor-bahru"
+  ],
+  "notes": "Directory listing with no capacity figure. | LIVE VERIFIED: Company release of 30 July 2024 states the site 'commenced operations' with 'over 50MW' in the initial phase. First AirTrunk site with direct-to-chip liquid cooling, described as AI-ready; tenants are unnamed 'global tier one technology companies'. it_load_mw is the live initial phase, not the 150 MW design figure. Basis of the MW figure (IT vs facility) not stated by the company.",
+  "lat": 1.5001,
+  "lng": 103.78262,
+  "loc_precision": "city",
+  "loc_note": "Asked for Johor Bahru, Johor, Malaysia. Matched Johor Bahru, Johor, 80730, Malaysia (city level, OSM rank 16). Not the building. Nudged about 5.1 km inside the city to separate it from the 6 other sites we know only to the same city.",
+  "city_lat": 1.4582,
+  "city_lng": 103.7649,
+  "loc_scattered": 7
+ },
+ {
+  "site_id": "airtrunk-jhb2",
+  "name": "AirTrunk Johor Bahru JHB2",
+  "operator": "AirTrunk",
+  "operator_id": "airtrunk-operating-pty-ltd",
+  "owner": "AirTrunk",
+  "country": "Malaysia",
+  "city": "Johor Bahru, Johor",
+  "it_load_mw_raw": "not stated",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/"
+  ],
+  "notes": "Directory listing with no capacity figure.",
+  "lat": 1.47048,
+  "lng": 103.80872,
+  "loc_precision": "city",
+  "loc_note": "Asked for Johor Bahru, Johor, Malaysia. Matched Johor Bahru, Johor, 80730, Malaysia (city level, OSM rank 16). Not the building. Nudged about 5.1 km inside the city to separate it from the 6 other sites we know only to the same city.",
+  "city_lat": 1.4582,
+  "city_lng": 103.7649,
+  "loc_scattered": 7
+ },
+ {
+  "site_id": "bdc-my06-sedenak",
+  "name": "Bridge Data Centres MY06",
+  "operator": "Bridge Data Centres",
+  "operator_id": "bridge-data-centres",
+  "owner": "Bridge Data Centres",
+  "country": "Malaysia",
+  "city": "Kulai, Johor",
+  "it_load_mw": 100,
+  "it_load_mw_raw": "100 MW",
+  "source_urls": [
+   "https://datacentermap.com/malaysia/johor/bdc-my06"
+  ],
+  "notes": "Address: 17 Jalan Digital 7, Sedenak Tech Park, 81000 Kulai. Bridge Data Centres held roughly 32% of Malaysia's built IT capacity as of December 2024 per DCD.",
+  "lat": 1.71649,
+  "lng": 103.62106,
+  "loc_precision": "city",
+  "loc_note": "Asked for Kulai, Johor, Malaysia. Matched Kulai, Johor, Malaysia (city level, OSM rank 12). Not the building. Nudged about 6.0 km inside the city to separate it from the 11 other sites we know only to the same city.",
+  "city_lat": 1.6667,
+  "city_lng": 103.6,
+  "loc_scattered": 12
+ },
+ {
+  "site_id": "racks-central-johor-campus",
+  "name": "Racks Central Johor Campus (RCJM1/RCJM2A/RCJM2B/RCJM3)",
+  "operator": "Racks Central Pte Ltd",
+  "operator_id": "racks-central-pte-ltd",
+  "owner": "Racks Central Pte Ltd",
+  "country": "Malaysia",
+  "city": "Pasir Gudang, Johor",
+  "status": "announced",
+  "it_load_mw": 90,
+  "it_load_mw_raw": "RCJM1 listed at 90 MW; first phase electricity supply agreement with TNB for 100 MW",
+  "power_source": "Grid supply from Tenaga Nasional Berhad; 100MW phase-1 electricity supply agreement signed 22 April 2026, plus MoUs with renewable energy suppliers",
+  "source_urls": [
+   "https://www.rackscentral.com/news/tnb-and-racks-central-sign-electricity-supply-agreement-for-johor-ai-data-center-campus",
+   "https://www.datacentermap.com/malaysia/johor-bahru/"
+  ],
+  "notes": "Address: Iskandar Halal Park, Jl Felda Cahaya Baru, 81700 Pasir Gudang. The directory lists four separate RCJM buildings plus a 'Racks Central Johor Campus' entry; collapsed here into one campus record to avoid double counting. Designed for high-density AI workloads.",
+  "lat": 1.49534,
+  "lng": 103.9207,
+  "loc_precision": "city",
+  "loc_note": "Asked for Pasir Gudang, Johor, Malaysia. Matched Pasir Gudang, Johor Bahru, Johor, 81700, Malaysia (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "epoch-digital-emy1",
+  "name": "Epoch Digital EMY1",
+  "operator": "Epoch Digital",
+  "operator_id": "epoch-digital",
+  "owner": "Epoch Digital",
+  "country": "Malaysia",
+  "city": "Gelang Patah, Johor",
+  "it_load_mw": 120,
+  "it_load_mw_raw": "120 MW",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/"
+  ],
+  "notes": "Address: Nusa Cemerlang Industrial Park, 81550 Gelang Patah.",
+  "lat": 1.42975,
+  "lng": 103.63378,
+  "loc_precision": "city",
+  "loc_note": "Asked for Gelang Patah, Johor, Malaysia. Matched Gelang Patah, Iskandar Puteri, Johor Bahru, Johor, 81550, Malaysia (city level, OSM rank 18). Not the building. Nudged about 5.6 km inside the city to separate it from the 7 other sites we know only to the same city.",
+  "city_lat": 1.4494,
+  "city_lng": 103.5873,
+  "loc_scattered": 8
+ },
+ {
+  "site_id": "dayone-nusajaya-tech-park",
+  "name": "DayOne Nusajaya Tech Park campus (NTP1/NTP2/NTP3)",
+  "operator": "DayOne",
+  "operator_id": "dayone",
+  "owner": "DayOne",
+  "country": "Malaysia",
+  "city": "Iskandar Puteri, Johor",
+  "status": "live",
+  "it_load_mw": 208.5,
+  "it_load_mw_raw": "390 MW total capacity in service across DayOne's two Johor campuses (Nusajaya Tech Park and Kempas Tech Park); not broken down by building",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/",
+   "https://dayonedc.com/market/johor"
+  ],
+  "notes": "Address: 3, Lingkaran, Jl Teknologi Perintis 1, 79200 Iskandar Puteri. 208.5MW is the sum of the three named buildings. DOUBLE-COUNT RISK with the campus-header entry. | LIVE VERIFIED: Operator's own market page. The 390 MW in-service figure covers NTP plus Kempas, so it cannot be assigned to this campus alone; it_load_mw left null to avoid inflating a per-site total. 'Operational since 2023' gives no month, so commissioned is null. Do not sum with the directory-derived 208.5 MW in sites_apac.json.",
+  "lat": 1.40686,
+  "lng": 103.61672,
+  "loc_precision": "city",
+  "loc_note": "Asked for Iskandar Puteri, Johor, Malaysia. Matched Iskandar Puteri, Johor Bahru, Johor, Malaysia (city level, OSM rank 14). Not the building. Nudged about 5.1 km inside the city to separate it from the 6 other sites we know only to the same city.",
+  "city_lat": 1.4523,
+  "city_lng": 103.6145,
+  "loc_scattered": 7
+ },
+ {
+  "site_id": "dayone-gerbang-nusajaya",
+  "name": "DayOne Gerbang Nusajaya",
+  "operator": "DayOne",
+  "operator_id": "dayone",
+  "owner": "DayOne",
+  "country": "Malaysia",
+  "city": "Iskandar Puteri, Johor",
+  "it_load_mw_raw": "not stated",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/"
+  ],
+  "notes": "Address: Jl. Tanjung Kupang, 81550 Iskandar Puteri.",
+  "lat": 1.4257,
+  "lng": 103.65142,
+  "loc_precision": "city",
+  "loc_note": "Asked for Iskandar Puteri, Johor, Malaysia. Matched Iskandar Puteri, Johor Bahru, Johor, Malaysia (city level, OSM rank 14). Not the building. Nudged about 5.1 km inside the city to separate it from the 6 other sites we know only to the same city.",
+  "city_lat": 1.4523,
+  "city_lng": 103.6145,
+  "loc_scattered": 7
+ },
+ {
+  "site_id": "dayone-kempas-tech-park",
+  "name": "DayOne Kempas Tech Park",
+  "operator": "DayOne",
+  "operator_id": "dayone",
+  "owner": "DayOne",
+  "country": "Malaysia",
+  "city": "Johor Bahru, Johor",
+  "it_load_mw_raw": "not stated",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/"
+  ],
+  "notes": "Address: 81330, Jalan Kempas Lama, 81300 Johor.",
+  "lat": 1.41276,
+  "lng": 103.76712,
+  "loc_precision": "city",
+  "loc_note": "Asked for Johor Bahru, Johor, Malaysia. Matched Johor Bahru, Johor, 80730, Malaysia (city level, OSM rank 16). Not the building. Nudged about 5.1 km inside the city to separate it from the 6 other sites we know only to the same city.",
+  "city_lat": 1.4582,
+  "city_lng": 103.7649,
+  "loc_scattered": 7
+ },
+ {
+  "site_id": "gdc-sedenak-sdk1",
+  "name": "GDC Sedenak SDK1",
+  "operator": "Global Data Centre (GDC)",
+  "operator_id": "global-data-centre-gdc",
+  "owner": "Global Data Centre (GDC)",
+  "country": "Malaysia",
+  "city": "Kulai, Johor",
+  "it_load_mw": 21,
+  "it_load_mw_raw": "21 MW",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/"
+  ],
+  "notes": "Address: Sedenak Tech Park, Persiaran Digital Perdana, 82100 Kulai.",
+  "lat": 1.69929,
+  "lng": 103.64314,
+  "loc_precision": "city",
+  "loc_note": "Asked for Kulai, Johor, Malaysia. Matched Kulai, Johor, Malaysia (city level, OSM rank 12). Not the building. Nudged about 6.0 km inside the city to separate it from the 11 other sites we know only to the same city.",
+  "city_lat": 1.6667,
+  "city_lng": 103.6,
+  "loc_scattered": 12
+ },
+ {
+  "site_id": "gdc-sedenak-sdk2",
+  "name": "GDC Sedenak SDK2",
+  "operator": "Global Data Centre (GDC)",
+  "operator_id": "global-data-centre-gdc",
+  "owner": "Global Data Centre (GDC)",
+  "country": "Malaysia",
+  "city": "Kulai, Johor",
+  "it_load_mw": 25,
+  "it_load_mw_raw": "25 MW",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/"
+  ],
+  "notes": "Address: Sedenak Tech Park, Persiaran Digital Perdana, 82100 Kulai.",
+  "lat": 1.67336,
+  "lng": 103.65366,
+  "loc_precision": "city",
+  "loc_note": "Asked for Kulai, Johor, Malaysia. Matched Kulai, Johor, Malaysia (city level, OSM rank 12). Not the building. Nudged about 6.0 km inside the city to separate it from the 11 other sites we know only to the same city.",
+  "city_lat": 1.6667,
+  "city_lng": 103.6,
+  "loc_scattered": 12
+ },
+ {
+  "site_id": "keppel-dc-johor-1",
+  "name": "Keppel DC Johor 1",
+  "operator": "Keppel Data Centres",
+  "operator_id": "keppel-data-centres",
+  "owner": "Keppel Data Centres",
+  "country": "Malaysia",
+  "city": "Sedenak, Johor",
+  "it_load_mw_raw": "not stated",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/"
+  ],
+  "notes": "Address: Sedenak Tech Park, 82100 Johor.",
+  "lat": 1.71266,
+  "lng": 103.52573,
+  "loc_precision": "exact",
+  "loc_note": "Asked for Sedenak, Johor, Malaysia. Matched Sedenak, Kulai, Johor, 81030, Malaysia (exact level, OSM rank 19). Not the building."
+ },
+ {
+  "site_id": "equinix-jh1",
+  "name": "Equinix JH1",
+  "operator": "Equinix",
+  "operator_id": "equinix-inc",
+  "owner": "Equinix",
+  "country": "Malaysia",
+  "city": "Johor",
+  "it_load_mw_raw": "not stated",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/"
+  ],
+  "notes": "Address: No.2 & 6, Jalan Teknologi Perintis 1/3, Taman Teknologi, 79200 Johor.",
+  "lat": 2.02288,
+  "lng": 103.31146,
+  "loc_precision": "city",
+  "loc_note": "Asked for Johor, Malaysia. Matched Johor, Malaysia (city level, OSM rank 8). Not the building."
+ },
+ {
+  "site_id": "equinix-jh2",
+  "name": "Equinix JH2",
+  "operator": "Equinix",
+  "operator_id": "equinix-inc",
+  "owner": "Equinix",
+  "country": "Malaysia",
+  "city": "Gelang Patah, Johor",
+  "it_load_mw_raw": "not stated",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/"
+  ],
+  "notes": "Address: PTD 5225 Jl. Teknologi Perintis 2/1, 79200 Gelang Patah.",
+  "lat": 1.40265,
+  "lng": 103.60627,
+  "loc_precision": "city",
+  "loc_note": "Asked for Gelang Patah, Johor, Malaysia. Matched Gelang Patah, Iskandar Puteri, Johor Bahru, Johor, 81550, Malaysia (city level, OSM rank 18). Not the building. Nudged about 5.6 km inside the city to separate it from the 7 other sites we know only to the same city.",
+  "city_lat": 1.4494,
+  "city_lng": 103.5873,
+  "loc_scattered": 8
+ },
+ {
+  "site_id": "microsoft-nusa-cemerlang",
+  "name": "Microsoft Nusa Cemerlang Industrial Park",
+  "operator": "Microsoft",
+  "operator_id": "microsoft-corporation",
+  "owner": "Microsoft",
+  "country": "Malaysia",
+  "city": "Gelang Patah, Johor",
+  "it_load_mw_raw": "not stated",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/"
+  ],
+  "notes": "Address: Nusa Cemerlang Industrial Park, 81550 Gelang Patah.",
+  "lat": 1.40293,
+  "lng": 103.56765,
+  "loc_precision": "city",
+  "loc_note": "Asked for Gelang Patah, Johor, Malaysia. Matched Gelang Patah, Iskandar Puteri, Johor Bahru, Johor, 81550, Malaysia (city level, OSM rank 18). Not the building. Nudged about 5.6 km inside the city to separate it from the 7 other sites we know only to the same city.",
+  "city_lat": 1.4494,
+  "city_lng": 103.5873,
+  "loc_scattered": 8
+ },
+ {
+  "site_id": "microsoft-kulai",
+  "name": "Microsoft Kulai",
+  "operator": "Microsoft",
+  "operator_id": "microsoft-corporation",
+  "owner": "Microsoft",
+  "country": "Malaysia",
+  "city": "Kulai, Johor",
+  "it_load_mw_raw": "not stated",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/"
+  ],
+  "notes": "Address: within Eco Business Park VI, 81000 Kulai.",
+  "lat": 1.61306,
+  "lng": 103.60667,
+  "loc_precision": "city",
+  "loc_note": "Asked for Kulai, Johor, Malaysia. Matched Kulai, Johor, Malaysia (city level, OSM rank 12). Not the building. Nudged about 6.0 km inside the city to separate it from the 11 other sites we know only to the same city.",
+  "city_lat": 1.6667,
+  "city_lng": 103.6,
+  "loc_scattered": 12
+ },
+ {
+  "site_id": "stack-jhb01-campus",
+  "name": "STACK Infrastructure JHB01 campus (JHB01A/JHB01B)",
+  "operator": "STACK INFRASTRUCTURE",
+  "operator_id": "stack-infrastructure",
+  "owner": "STACK INFRASTRUCTURE",
+  "country": "Malaysia",
+  "city": "Gelang Patah, Johor",
+  "it_load_mw_raw": "not stated",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/"
+  ],
+  "notes": "Address: Jalan Silc 1/5, 81550 Gelang Patah.",
+  "lat": 1.43043,
+  "lng": 103.54054,
+  "loc_precision": "city",
+  "loc_note": "Asked for Gelang Patah, Johor, Malaysia. Matched Gelang Patah, Iskandar Puteri, Johor Bahru, Johor, 81550, Malaysia (city level, OSM rank 18). Not the building. Nudged about 5.6 km inside the city to separate it from the 7 other sites we know only to the same city.",
+  "city_lat": 1.4494,
+  "city_lng": 103.5873,
+  "loc_scattered": 8
+ },
+ {
+  "site_id": "digital-edge-johor-bcip",
+  "name": "Digital Edge Johor BCIP",
+  "operator": "Digital Edge DC",
+  "operator_id": "digital-edge-dc",
+  "owner": "Digital Edge DC",
+  "country": "Malaysia",
+  "city": "Kota Tinggi, Johor",
+  "it_load_mw_raw": "not stated",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/"
+  ],
+  "notes": "Address: within Bandar Cemerlang Industrial Park, 81800 Kota Tinggi.",
+  "lat": 1.75279,
+  "lng": 103.90877,
+  "loc_precision": "city",
+  "loc_note": "Asked for Kota Tinggi, Johor, Malaysia. Matched Kota Tinggi, Johor, Malaysia (city level, OSM rank 18). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": 1.7337,
+  "city_lng": 103.9007,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "k2-kulai",
+  "name": "K2 Data Centres Kulai",
+  "operator": "K2 Data Centres",
+  "operator_id": "k2-data-centres",
+  "owner": "K2 Data Centres",
+  "country": "Malaysia",
+  "city": "Kulai, Johor",
+  "it_load_mw_raw": "not stated",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/"
+  ],
+  "notes": "Address: PTD 31493, Jl Digital 8, 82100 Kulai.",
+  "lat": 1.62358,
+  "lng": 103.63261,
+  "loc_precision": "city",
+  "loc_note": "Asked for Kulai, Johor, Malaysia. Matched Kulai, Johor, Malaysia (city level, OSM rank 12). Not the building. Nudged about 6.0 km inside the city to separate it from the 11 other sites we know only to the same city.",
+  "city_lat": 1.6667,
+  "city_lng": 103.6,
+  "loc_scattered": 12
+ },
+ {
+  "site_id": "global-switch-johor",
+  "name": "Global Switch Johor",
+  "operator": "Global Switch",
+  "operator_id": "global-switch",
+  "owner": "Global Switch",
+  "country": "Malaysia",
+  "city": "Kulai, Johor",
+  "it_load_mw_raw": "not stated",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/"
+  ],
+  "notes": "Address: within Kulai, Johor, Malaysia 82100 Kulai.",
+  "lat": 1.64565,
+  "lng": 103.64981,
+  "loc_precision": "city",
+  "loc_note": "Asked for Kulai, Johor, Malaysia. Matched Kulai, Johor, Malaysia (city level, OSM rank 12). Not the building. Nudged about 6.0 km inside the city to separate it from the 11 other sites we know only to the same city.",
+  "city_lat": 1.6667,
+  "city_lng": 103.6,
+  "loc_scattered": 12
+ },
+ {
+  "site_id": "damac-digital-jhb01",
+  "name": "DAMAC Digital JHB01",
+  "operator": "DAMAC Digital",
+  "operator_id": "damac-digital",
+  "owner": "DAMAC Digital",
+  "country": "Malaysia",
+  "city": "Gelang Patah, Johor",
+  "it_load_mw_raw": "not stated",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/"
+  ],
+  "notes": "Address: 2, Persiaran Mega, 81550 Gelang Patah.",
+  "lat": 1.49587,
+  "lng": 103.60695,
+  "loc_precision": "city",
+  "loc_note": "Asked for Gelang Patah, Johor, Malaysia. Matched Gelang Patah, Iskandar Puteri, Johor Bahru, Johor, 81550, Malaysia (city level, OSM rank 18). Not the building. Nudged about 5.6 km inside the city to separate it from the 7 other sites we know only to the same city.",
+  "city_lat": 1.4494,
+  "city_lng": 103.5873,
+  "loc_scattered": 8
+ },
+ {
+  "site_id": "brightray-my-01",
+  "name": "BrightRay MY-01",
+  "operator": "BRIGHTRAY",
+  "operator_id": "brightray",
+  "owner": "BRIGHTRAY",
+  "country": "Malaysia",
+  "city": "Sedenak, Johor",
+  "it_load_mw_raw": "not stated",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/"
+  ],
+  "notes": "Address: Sedenak Tech Park, 82100 Johor. Single-site operator in Johor.",
+  "lat": 1.71266,
+  "lng": 103.52573,
+  "loc_precision": "exact",
+  "loc_note": "Asked for Sedenak, Johor, Malaysia. Matched Sedenak, Kulai, Johor, 81030, Malaysia (exact level, OSM rank 19). Not the building."
+ },
+ {
+  "site_id": "open-dc-jb1",
+  "name": "Open DC JB1",
+  "operator": "Open DC",
+  "operator_id": "open-dc",
+  "owner": "Open DC",
+  "country": "Malaysia",
+  "city": "Johor Bahru, Johor",
+  "it_load_mw": 20,
+  "it_load_mw_raw": "20 MW",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/open-dc-jb1/"
+  ],
+  "notes": "Address: Level 16, Menara MSC Cyberport, No. 5, Jalan Bukit Meldrum, Tanjung Puteri, 80300 Johor Bahru. 20MW from the directory page title; the campus list page gave no figure.",
+  "lat": 1.42813,
+  "lng": 103.73075,
+  "loc_precision": "city",
+  "loc_note": "Asked for Johor Bahru, Johor, Malaysia. Matched Johor Bahru, Johor, 80730, Malaysia (city level, OSM rank 16). Not the building. Nudged about 5.1 km inside the city to separate it from the 6 other sites we know only to the same city.",
+  "city_lat": 1.4582,
+  "city_lng": 103.7649,
+  "loc_scattered": 7
+ },
+ {
+  "site_id": "open-dc-jb2",
+  "name": "Open DC JB2",
+  "operator": "Open DC",
+  "operator_id": "open-dc",
+  "owner": "Open DC",
+  "country": "Malaysia",
+  "city": "Johor Bahru, Johor",
+  "it_load_mw_raw": "not stated",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/"
+  ],
+  "notes": "Address: 65, Jalan Trus, 80000 Johor Bahru.",
+  "lat": 1.46615,
+  "lng": 103.72009,
+  "loc_precision": "city",
+  "loc_note": "Asked for Johor Bahru, Johor, Malaysia. Matched Johor Bahru, Johor, 80730, Malaysia (city level, OSM rank 16). Not the building. Nudged about 5.1 km inside the city to separate it from the 6 other sites we know only to the same city.",
+  "city_lat": 1.4582,
+  "city_lng": 103.7649,
+  "loc_scattered": 7
+ },
+ {
+  "site_id": "vads-johor-sites",
+  "name": "VADS Berhad Johor sites (Iskandar Puteri, Johor Bahru, Cyberport, Medini)",
+  "operator": "VADS Berhad",
+  "operator_id": "vads-berhad",
+  "owner": "Telekom Malaysia",
+  "country": "Malaysia",
+  "city": "Johor Bahru / Iskandar Puteri / Nusajaya, Johor",
+  "it_load_mw_raw": "not stated",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/"
+  ],
+  "notes": "Addresses: Lingkaran No.2 Jln Teknologi Perintis 1, 79250 Iskandar Puteri; Ibusawat Telekom Johor Bahru, Jalan Abdullah Ibrahim, 80672; Menara MSC Cyberport 5, Jalan Bukit Meldrum, 80300; Seri Medini No 7, Persiaran Ledang Height, 81560 Nusajaya. Legacy telco colocation, not AI-scale.",
+  "lat": 1.49818,
+  "lng": 103.74318,
+  "loc_precision": "city",
+  "loc_note": "Asked for Johor Bahru, Malaysia. Matched Johor Bahru, Johor, 80730, Malaysia (city level, OSM rank 16). Not the building. Nudged about 5.1 km inside the city to separate it from the 6 other sites we know only to the same city.",
+  "city_lat": 1.4582,
+  "city_lng": 103.7649,
+  "loc_scattered": 7
+ },
+ {
+  "site_id": "tm-iskandar-puteri-ipdc",
+  "name": "TM Iskandar Puteri Data Centre (IPDC)",
+  "operator": "TM Global",
+  "operator_id": "tm-nxera",
+  "owner": "Telekom Malaysia",
+  "country": "Malaysia",
+  "city": "Iskandar Puteri, Johor",
+  "it_load_mw_raw": "not stated",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/"
+  ],
+  "notes": "Address: 2, Lingkaran, Jalan Teknologi Perintis 1, 79250 Iskandar Puteri. Distinct from the newer TM Nxera campus.",
+  "lat": 1.46025,
+  "lng": 103.56969,
+  "loc_precision": "city",
+  "loc_note": "Asked for Iskandar Puteri, Johor, Malaysia. Matched Iskandar Puteri, Johor Bahru, Johor, Malaysia (city level, OSM rank 14). Not the building. Nudged about 5.1 km inside the city to separate it from the 6 other sites we know only to the same city.",
+  "city_lat": 1.4523,
+  "city_lng": 103.6145,
+  "loc_scattered": 7
+ },
+ {
+  "site_id": "bitdeer-johor-bahru-ai",
+  "name": "Bitdeer Johor Bahru AI data centre",
+  "operator": "Bitdeer Technologies Group",
+  "operator_id": "bitdeer-technologies-group",
+  "owner": "leased (landlord not named)",
+  "country": "Malaysia",
+  "city": "Johor Bahru, Johor",
+  "status": "under_construction",
+  "it_load_mw": 21.7,
+  "it_load_mw_raw": "21.7 MW IT capacity",
+  "chips_installed": [
+   "GB300"
+  ],
+  "source_urls": [
+   "https://ir.bitdeer.com/news-releases/news-release-details/bitdeer-announces-june-2026-production-and-operations-update"
+  ],
+  "notes": "Planned to support 128 NVIDIA GB300 NVL72 systems. Disclosed in Bitdeer's SEC-filed monthly operations update, so T1. Exact street address not disclosed.",
+  "lat": 1.4316,
+  "lng": 103.80182,
+  "loc_precision": "city",
+  "loc_note": "Asked for Johor Bahru, Johor, Malaysia. Matched Johor Bahru, Johor, 80730, Malaysia (city level, OSM rank 16). Not the building. Nudged about 5.1 km inside the city to separate it from the 6 other sites we know only to the same city.",
+  "city_lat": 1.4582,
+  "city_lng": 103.7649,
+  "loc_scattered": 7
+ },
+ {
+  "site_id": "bitdeer-cyberjaya-ai",
+  "name": "Bitdeer Cyberjaya AI cloud data centre",
+  "operator": "Bitdeer Technologies Group",
+  "operator_id": "bitdeer-technologies-group",
+  "owner": "leased (landlord not named)",
+  "country": "Malaysia",
+  "city": "Cyberjaya, Selangor",
+  "status": "live",
+  "it_load_mw": 2,
+  "it_load_mw_raw": "2 MW online AI Cloud (Q2 2026 results); 9.5 MW A102 in progress for Q4 2026 / Q1 2027",
+  "chips_installed": [
+   "GB200"
+  ],
+  "source_urls": [
+   "https://ir.bitdeer.com/news-releases/news-release-details/bitdeer-announces-june-2026-production-and-operations-update",
+   "https://www.investing.com/news/company-news/bitdeer-ai-sells-out-95mw-malaysia-data-center-capacity-93CH-4883209",
+   "https://ir.bitdeer.com/news-releases/news-release-details/bitdeer-reports-unaudited-financial-results-second-quarter-2026",
+   "https://ir.bitdeer.com/news-releases/news-release-details/bitdeer-announces-december-2025-production-and-operations-update",
+   "https://www.globenewswire.com/news-release/2026/08/31/3353668/0/en/bitdeer-ai-announces-sell-out-of-its-9-5mw-a102-malaysia-data-center-with-total-expected-ai-cloud-revenue-of-over-800-million.html"
+  ],
+  "notes": "A102 is described as a liquid-cooled multi-customer facility for rack-scale NVIDIA GB300 NVL72. The energisation date differs between the June 2026 operations update (Q4 2026) and later coverage (Q1 2027); both recorded, neither reconciled. The 9.5MW is fully contracted under 5-year offtakes. | LIVE VERIFIED: Q2 2026 results (10 Aug 2026) list 'Cyberjaya, Malaysia 2 Online AI Cloud'. December 2025 update: 8 GB200 systems deployed and tested in Malaysia in December 2025, cloud service launched January 2026. Exact energisation month of the 2 MW not stated, so commissioned is null. it_load_mw is the live 2 MW only (the existing record carries 11.5 MW including A102).",
+  "lat": 2.93389,
+  "lng": 101.64556,
+  "loc_precision": "city",
+  "loc_note": "Asked for Cyberjaya, Selangor, Malaysia. Matched Cyberjaya, Sepang, Selangor, Malaysia (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "neutradc-nxera-batam-btm1",
+  "name": "NeutraDC Nxera Batam (BTM-1)",
+  "operator": "NeutraDC",
+  "operator_id": "neutradc",
+  "owner": "Telkom Indonesia",
+  "country": "Indonesia",
+  "city": "Batam",
+  "status": "live",
+  "it_load_mw": 51,
+  "it_load_mw_raw": "51 MW IT load, starting with 17 MW in its initial phase",
+  "source_urls": [
+   "https://www.datacentermap.com/indonesia/batam/neutradc-hdc-batam/",
+   "https://www.datacentermap.com/indonesia/batam/"
+  ],
+  "notes": "Address: Kabil Integrated Industrial Estate (KIIE), Jl. Hang Kesturi, 29465 Batam. BTM-1 topped off October 2025.",
+  "lat": 1.09644,
+  "lng": 103.98475,
+  "loc_precision": "city",
+  "loc_note": "Asked for Batam, Indonesia. Matched Batam, Riau Islands, Indonesia (city level, OSM rank 12). Not the building. Nudged about 6.0 km inside the city to separate it from the 8 other sites we know only to the same city.",
+  "city_lat": 1.1031,
+  "city_lng": 104.0384,
+  "loc_scattered": 9
+ },
+ {
+  "site_id": "dayone-kabil-tech-park-batam",
+  "name": "DayOne Kabil Tech Park / Firmus Batam AI Factory campus",
+  "operator": "DayOne (landlord); Firmus Technologies (AI factory operator)",
+  "operator_id": "dayone-landlord-firmus-technologies-ai-factory-operator",
+  "owner": "DayOne",
+  "country": "Indonesia",
+  "city": "Batam",
+  "status": "announced",
+  "it_load_mw": 360,
+  "it_load_mw_raw": "360MW total campus capacity at the DayOne facility in Batam; 450MW power purchase agreement with PLN Batam",
+  "power_source": "450 MW power purchase agreement with PLN Batam",
+  "chips_installed": [
+   "GB300",
+   "Vera Rubin"
+  ],
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/firmus-to-deploy-170000-gpu-cluster-in-batam-indonesia/",
+   "https://www.datacentermap.com/indonesia/batam/",
+   "https://digitalinasia.com/southeast-asia-ai-data-centre-boom/"
+  ],
+  "notes": "170,000 GPUs planned, described as Grace Blackwell, Vera Rubin and Vera AI chips. Announced June 2026. Firmus estimates $25bn-$30bn in committed offtake over the first six years. Address: within Kabil Integrated Industrial Estate, 29467 Kota Batam. The 450MW PPA exceeds the 360MW campus figure; treat the two as different measures (grid contract vs IT campus).",
+  "lat": 1.05998,
+  "lng": 104.071,
+  "loc_precision": "city",
+  "loc_note": "Asked for Batam, Indonesia. Matched Batam, Riau Islands, Indonesia (city level, OSM rank 12). Not the building. Nudged about 6.0 km inside the city to separate it from the 8 other sites we know only to the same city.",
+  "city_lat": 1.1031,
+  "city_lng": 104.0384,
+  "loc_scattered": 9
+ },
+ {
+  "site_id": "gdc-batam-btm1",
+  "name": "GDC Batam (BTM1)",
+  "operator": "Global Data Centre (GDC)",
+  "operator_id": "global-data-centre-gdc",
+  "owner": "Global Data Centre (GDC)",
+  "country": "Indonesia",
+  "city": "Batam",
+  "it_load_mw": 200,
+  "it_load_mw_raw": "200 MW hyperscale data center",
+  "source_urls": [
+   "https://www.datacentermap.com/indonesia/batam/"
+  ],
+  "notes": "Address: Jl. Perumahan Cemara Park, Belian, 29465 Batam.",
+  "lat": 1.06351,
+  "lng": 104.00158,
+  "loc_precision": "city",
+  "loc_note": "Asked for Batam, Indonesia. Matched Batam, Riau Islands, Indonesia (city level, OSM rank 12). Not the building. Nudged about 6.0 km inside the city to separate it from the 8 other sites we know only to the same city.",
+  "city_lat": 1.1031,
+  "city_lng": 104.0384,
+  "loc_scattered": 9
+ },
+ {
+  "site_id": "bw-digital-ndp1-batam",
+  "name": "BW Digital NDP1",
+  "operator": "BW Digital",
+  "operator_id": "bw-digital",
+  "owner": "BW Digital",
+  "country": "Indonesia",
+  "city": "Batam",
+  "it_load_mw": 120,
+  "it_load_mw_raw": "120MW IT capacity",
+  "source_urls": [
+   "https://www.datacentermap.com/indonesia/batam/"
+  ],
+  "notes": "Address: Nongsa Digital Park, 29466 Batam.",
+  "lat": 1.09102,
+  "lng": 104.0911,
+  "loc_precision": "city",
+  "loc_note": "Asked for Batam, Indonesia. Matched Batam, Riau Islands, Indonesia (city level, OSM rank 12). Not the building. Nudged about 6.0 km inside the city to separate it from the 8 other sites we know only to the same city.",
+  "city_lat": 1.1031,
+  "city_lng": 104.0384,
+  "loc_scattered": 9
+ },
+ {
+  "site_id": "racks-central-rcbi-batam",
+  "name": "Racks Central RCBI",
+  "operator": "Racks Central Pte Ltd",
+  "operator_id": "racks-central-pte-ltd",
+  "owner": "Racks Central Pte Ltd",
+  "country": "Indonesia",
+  "city": "Batam",
+  "status": "announced",
+  "it_load_mw": 95,
+  "it_load_mw_raw": "95MW greenfield data center",
+  "source_urls": [
+   "https://www.datacentermap.com/indonesia/batam/"
+  ],
+  "notes": "Address: within Nongsa Digital Park, 29466 Batam.",
+  "lat": 1.13248,
+  "lng": 103.99302,
+  "loc_precision": "city",
+  "loc_note": "Asked for Batam, Indonesia. Matched Batam, Riau Islands, Indonesia (city level, OSM rank 12). Not the building. Nudged about 6.0 km inside the city to separate it from the 8 other sites we know only to the same city.",
+  "city_lat": 1.1031,
+  "city_lng": 104.0384,
+  "loc_scattered": 9
+ },
+ {
+  "site_id": "dayone-nongsa-digital-park-batam",
+  "name": "DayOne Nongsa Digital Park campus (NDP1/NDP2/NDP3)",
+  "operator": "DayOne",
+  "operator_id": "dayone",
+  "owner": "DayOne",
+  "country": "Indonesia",
+  "city": "Batam",
+  "it_load_mw": 216,
+  "it_load_mw_raw": "up to 72MW of capacity each for NDP1, NDP2 and NDP3",
+  "source_urls": [
+   "https://www.datacentermap.com/indonesia/batam/"
+  ],
+  "notes": "Address: Jl. Hang Lekiu, 29466 Batam. 216MW is the sum of the three buildings at their stated ceilings. DOUBLE-COUNT RISK with the campus-header entry.",
+  "lat": 1.04912,
+  "lng": 104.03565,
+  "loc_precision": "city",
+  "loc_note": "Asked for Batam, Indonesia. Matched Batam, Riau Islands, Indonesia (city level, OSM rank 12). Not the building. Nudged about 6.0 km inside the city to separate it from the 8 other sites we know only to the same city.",
+  "city_lat": 1.1031,
+  "city_lng": 104.0384,
+  "loc_scattered": 9
+ },
+ {
+  "site_id": "aesler-greenix-mark-1-batam",
+  "name": "AESLER-GREENIX Mark 1",
+  "operator": "PT. Aesler Group International Tbk",
+  "operator_id": "pt-aesler-group-international-tbk",
+  "owner": "PT. Aesler Group International Tbk",
+  "country": "Indonesia",
+  "city": "Batam",
+  "it_load_mw_raw": "part of an 88MW eco data center strategy",
+  "source_urls": [
+   "https://www.datacentermap.com/indonesia/batam/"
+  ],
+  "notes": "Address: Jl. Ahmad Yani, 29444 Batam. it_load_mw left null because 88MW is explicitly a strategy total rather than this site's load. Aesler is IDX-listed.",
+  "lat": 1.15289,
+  "lng": 104.05945,
+  "loc_precision": "city",
+  "loc_note": "Asked for Batam, Indonesia. Matched Batam, Riau Islands, Indonesia (city level, OSM rank 12). Not the building. Nudged about 6.0 km inside the city to separate it from the 8 other sites we know only to the same city.",
+  "city_lat": 1.1031,
+  "city_lng": 104.0384,
+  "loc_scattered": 9
+ },
+ {
+  "site_id": "range-idc-batam",
+  "name": "Range IDC Batam",
+  "operator": "Range IDC",
+  "operator_id": "range-idc",
+  "owner": "Range IDC",
+  "country": "Indonesia",
+  "city": "Batam",
+  "status": "announced",
+  "it_load_mw_raw": "Proposed US$5 billion AI data center project; no MW stated",
+  "source_urls": [
+   "https://www.datacentermap.com/indonesia/batam/"
+  ],
+  "notes": "Address: within Nongsa, Batam City, 29466 Batam. Only an investment figure is published, not a capacity.",
+  "lat": 1.15477,
+  "lng": 104.02252,
+  "loc_precision": "city",
+  "loc_note": "Asked for Batam, Indonesia. Matched Batam, Riau Islands, Indonesia (city level, OSM rank 12). Not the building. Nudged about 6.0 km inside the city to separate it from the 8 other sites we know only to the same city.",
+  "city_lat": 1.1031,
+  "city_lng": 104.0384,
+  "loc_scattered": 9
+ },
+ {
+  "site_id": "gaw-golden-digital-gateway-batam",
+  "name": "Golden Digital Gateway",
+  "operator": "Gaw Capital Partners",
+  "operator_id": "gaw-capital-partners",
+  "owner": "Gaw Capital Partners",
+  "country": "Indonesia",
+  "city": "Nongsa, Batam",
+  "it_load_mw_raw": "not stated",
+  "source_urls": [
+   "https://www.datacentermap.com/indonesia/batam/"
+  ],
+  "notes": "Address: Jl. Hang Lekiu No.KM 2, 29467 Nongsa.",
+  "lat": 1.13389,
+  "lng": 104.13397,
+  "loc_precision": "city",
+  "loc_note": "Asked for Nongsa, Batam, Indonesia. Matched Nongsa, Batam, Riau Islands, Indonesia (city level, OSM rank 14). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": 1.1148,
+  "city_lng": 104.1259,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "princeton-digital-bt1-batam",
+  "name": "Princeton Digital BT1",
+  "operator": "Princeton Digital Group",
+  "operator_id": "princeton-digital-group",
+  "owner": "Princeton Digital Group",
+  "country": "Indonesia",
+  "city": "Nongsa, Batam",
+  "it_load_mw_raw": "not stated",
+  "source_urls": [
+   "https://www.datacentermap.com/indonesia/batam/"
+  ],
+  "notes": "Address: Jl. Teluk Mata Ikan, 29465 Nongsa.",
+  "lat": 1.09571,
+  "lng": 104.11783,
+  "loc_precision": "city",
+  "loc_note": "Asked for Nongsa, Batam, Indonesia. Matched Nongsa, Batam, Riau Islands, Indonesia (city level, OSM rank 14). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": 1.1148,
+  "city_lng": 104.1259,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "batam-smaller-sites",
+  "name": "Batam smaller and single-site operators (IDC Batam, Nusantara DC Batam, Matrix BM1, neuCentrIX Batam, Omni DC, Neuviz Batam, WorldVuer Quantum AI DC, SM+ Batam SME14)",
+  "operator": "various single-site operators",
+  "operator_id": "various-single-site-operators",
+  "owner": "various",
+  "country": "Indonesia",
+  "city": "Batam",
+  "it_load_mw_raw": "no MW figures stated for any of these facilities",
+  "source_urls": [
+   "https://www.datacentermap.com/indonesia/batam/"
+  ],
+  "notes": "Addresses as listed: IDC Batam, Jl. Engku Putri Utara No.Kav.1, 29461; Nusantara Data Center Batam, Jl. Citra Lautan Teduh No.18, 29466; Matrix Data Center BM1, Jl. Citra Lautan Teduh, Tg. Bemban, 29466; neuCentrIX Batam, Jl. Laksamana Bintan, 29444; Omni DC, Jl. Perahu Dendang No. 1, Kp. Belian, 29444; Neuviz Batam, Jl. Jend. Sudirman, 29463 Sei Baloi; WorldVuer iByond Quantum AI Data Center, within Tunas Prima Industrial Estate, 29466; SM+ Batam SME14, Ruko Trafalgar Dutamas blok T1-3, Batam Center, 29433. Grouped to keep the file honest about what is actually known; split if any of them later publishes a capacity.",
+  "lat": 1.12771,
+  "lng": 104.08654,
+  "loc_precision": "city",
+  "loc_note": "Asked for Batam, Indonesia. Matched Batam, Riau Islands, Indonesia (city level, OSM rank 12). Not the building. Nudged about 6.0 km inside the city to separate it from the 8 other sites we know only to the same city.",
+  "city_lat": 1.1031,
+  "city_lng": 104.0384,
+  "loc_scattered": 9
+ },
+ {
+  "site_id": "digital-edge-jakarta-cgk",
+  "name": "Digital Edge Jakarta CGK Campus",
+  "operator": "Digital Edge",
+  "operator_id": "digital-edge",
+  "owner": "Digital Edge",
+  "country": "Indonesia",
+  "city": "Cikarang, Greater Jakarta",
+  "it_load_mw": 500,
+  "it_load_mw_raw": "500MW capacity, expandable to 1GW",
+  "source_urls": [
+   "https://www.datacentermap.com/indonesia/jakarta/"
+  ],
+  "notes": "Address: Greenland International Industrial Center (GIIC), 17530 Cikarang. Largest single Jakarta-area campus figure found.",
+  "lat": -6.25531,
+  "lng": 107.14507,
+  "loc_precision": "exact",
+  "loc_note": "Asked for Cikarang, Indonesia. Matched Cikarang, Jalan Yos Sudarso, Cikarang Kota, Cikarang, Kab Bekasi, West (exact level, OSM rank 30). Not the building."
+ },
+ {
+  "site_id": "princeton-digital-jc4-jakarta",
+  "name": "Princeton Digital JC4",
+  "operator": "Princeton Digital Group",
+  "operator_id": "princeton-digital-group",
+  "owner": "Princeton Digital Group",
+  "country": "Indonesia",
+  "city": "Cikarang, Greater Jakarta",
+  "status": "under_construction",
+  "it_load_mw": 240,
+  "it_load_mw_raw": "240MW hyperscale data center campus under development",
+  "source_urls": [
+   "https://www.datacentermap.com/indonesia/jakarta/"
+  ],
+  "notes": "Address: within GIIC, 17530 Cikarang.",
+  "lat": -6.25531,
+  "lng": 107.14507,
+  "loc_precision": "exact",
+  "loc_note": "Asked for Cikarang, Indonesia. Matched Cikarang, Jalan Yos Sudarso, Cikarang Kota, Cikarang, Kab Bekasi, West (exact level, OSM rank 30). Not the building."
+ },
+ {
+  "site_id": "edgeconnex-jakarta",
+  "name": "EdgeConneX Jakarta Campus",
+  "operator": "EdgeConneX",
+  "operator_id": "edgeconnex",
+  "owner": "EdgeConneX",
+  "country": "Indonesia",
+  "city": "Cikarang, Greater Jakarta",
+  "it_load_mw": 200,
+  "it_load_mw_raw": "up to 200 MW of power",
+  "source_urls": [
+   "https://www.datacentermap.com/indonesia/jakarta/"
+  ],
+  "notes": "Address: Jl. Mataram No.6a, 17530 Cikarang. 'Up to 200 MW of power' may be a grid figure rather than IT load.",
+  "lat": -6.25531,
+  "lng": 107.14507,
+  "loc_precision": "exact",
+  "loc_note": "Asked for Cikarang, Indonesia. Matched Cikarang, Jalan Yos Sudarso, Cikarang Kota, Cikarang, Kab Bekasi, West (exact level, OSM rank 30). Not the building."
+ },
+ {
+  "site_id": "stt-jakarta-campus",
+  "name": "STT Jakarta Campus",
+  "operator": "ST Telemedia Global Data Centres",
+  "operator_id": "st-telemedia-global-data-centres",
+  "owner": "ST Telemedia Global Data Centres",
+  "country": "Indonesia",
+  "city": "Cikarang, Greater Jakarta",
+  "it_load_mw": 72,
+  "it_load_mw_raw": "72MW hyperscale data center campus",
+  "source_urls": [
+   "https://www.datacentermap.com/indonesia/jakarta/"
+  ],
+  "notes": "Address: Greenland International Industrial Center, Cikarang. Directory describes it as designed for high-density AI workloads.",
+  "lat": -6.25531,
+  "lng": 107.14507,
+  "loc_precision": "exact",
+  "loc_note": "Asked for Cikarang, Indonesia. Matched Cikarang, Jalan Yos Sudarso, Cikarang Kota, Cikarang, Kab Bekasi, West (exact level, OSM rank 30). Not the building."
+ },
+ {
+  "site_id": "k2-jkt1-jakarta",
+  "name": "K2 Data Centres JKT 1",
+  "operator": "K2 Data Centres",
+  "operator_id": "k2-data-centres",
+  "owner": "K2 Data Centres",
+  "country": "Indonesia",
+  "city": "Cikarang, Greater Jakarta",
+  "it_load_mw": 20,
+  "it_load_mw_raw": "20 MW capacity",
+  "source_urls": [
+   "https://www.datacentermap.com/indonesia/jakarta/"
+  ],
+  "notes": "Address: Kota Deltamas, 17530 Cikarang. Tier III, indirect evaporative cooling.",
+  "lat": -6.25531,
+  "lng": 107.14507,
+  "loc_precision": "exact",
+  "loc_note": "Asked for Cikarang, Indonesia. Matched Cikarang, Jalan Yos Sudarso, Cikarang Kota, Cikarang, Kab Bekasi, West (exact level, OSM rank 30). Not the building."
+ },
+ {
+  "site_id": "bdx-west-java",
+  "name": "BDx West Java campus",
+  "operator": "BDx Data Centers",
+  "operator_id": "bdx-data-centers",
+  "owner": "BDx Data Centers",
+  "country": "Indonesia",
+  "city": "West Java",
+  "status": "announced",
+  "it_load_mw": 500,
+  "it_load_mw_raw": "500MW campus",
+  "source_urls": [
+   "https://digitalinasia.com/southeast-asia-ai-data-centre-boom/"
+  ],
+  "notes": "Only a capacity figure and province are published; no exact address, timeline or power arrangement found.",
+  "lat": -6.88919,
+  "lng": 107.64047,
+  "loc_precision": "city",
+  "loc_note": "Asked for West Java, Indonesia. Matched West Java, Indonesia (city level, OSM rank 8). Not the building."
+ },
+ {
+  "site_id": "jurong-island-low-carbon-dc-park",
+  "name": "Jurong Island Low-Carbon Data Centre Park",
+  "operator": "JTC Corporation",
+  "operator_id": "jtc-corporation",
+  "owner": "JTC Corporation (Singapore government)",
+  "country": "Singapore",
+  "city": "Jurong Island",
+  "status": "announced",
+  "it_load_mw": 700,
+  "it_load_mw_raw": "Up to 700 MW",
+  "power_source": "Low-carbon: at least 50% green energy required of tenants (biomethane, low-carbon ammonia, low-carbon hydrogen, and/or vertical building-integrated photovoltaics)",
+  "source_urls": [
+   "https://www.blackridgeresearch.com/blog/latest-list-upcoming-data-centers-singapore",
+   "https://technode.global/2026/08/21/singapore-allocates-200-mw-of-new-data-center-capacity-to-digital-realty-equinix-keppel-st-telemedia/"
+  ],
+  "notes": "This is the single most important Singapore supply record: it is where the country's post-moratorium capacity is being concentrated. Tenants must also hit Green Mark DC Platinum and deploy liquid cooling.",
+  "lat": 1.26853,
+  "lng": 103.67856,
+  "loc_precision": "city",
+  "loc_note": "Asked for Jurong Island, Singapore. Matched Jurong Island And Bukom, Western Islands, West Region, Singapore (city level, OSM rank 14). Not the building."
+ },
+ {
+  "site_id": "equinix-sg6",
+  "name": "Equinix SG6",
+  "operator": "Equinix",
+  "operator_id": "equinix-inc",
+  "owner": "Equinix",
+  "country": "Singapore",
+  "city": "Singapore",
+  "status": "under_construction",
+  "it_load_mw": 20,
+  "it_load_mw_raw": "20 MW",
+  "source_urls": [
+   "https://www.blackridgeresearch.com/blog/latest-list-upcoming-data-centers-singapore"
+  ],
+  "notes": "Q1 2027 target recorded as 2027-01; the source says 'Q1 2027' not a month. Features advanced liquid cooling for AI workloads. Exact address not published in the source.",
+  "lat": 1.30899,
+  "lng": 103.85997,
+  "loc_precision": "city",
+  "loc_note": "Asked for Singapore, Singapore. Matched Singapore (city level, OSM rank 15). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": 1.2899,
+  "city_lng": 103.8519,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "dayone-jurong-east-singapore",
+  "name": "DayOne Jurong East Campus",
+  "operator": "DayOne",
+  "operator_id": "dayone",
+  "owner": "DayOne",
+  "country": "Singapore",
+  "city": "Jurong East",
+  "status": "announced",
+  "it_load_mw": 20,
+  "it_load_mw_raw": "20 MW",
+  "source_urls": [
+   "https://www.blackridgeresearch.com/blog/latest-list-upcoming-data-centers-singapore"
+  ],
+  "notes": "Source gives year only, no month.",
+  "lat": 1.32042,
+  "lng": 103.73479,
+  "loc_precision": "city",
+  "loc_note": "Asked for Jurong East, Singapore. Matched Jurong East, West Region, Singapore (city level, OSM rank 12). Not the building."
+ },
+ {
+  "site_id": "keppel-dc-singapore-9",
+  "name": "Keppel DC Singapore 9",
+  "operator": "Keppel Data Centres",
+  "operator_id": "keppel-data-centres",
+  "owner": "Keppel",
+  "country": "Singapore",
+  "city": "Singapore",
+  "status": "under_construction",
+  "it_load_mw": 19,
+  "it_load_mw_raw": "19 MW",
+  "source_urls": [
+   "https://www.blackridgeresearch.com/blog/latest-list-upcoming-data-centers-singapore"
+  ],
+  "notes": "Located on Genting Lane; source says 'mid-2026', recorded as 2026-06.",
+  "lat": 1.27081,
+  "lng": 103.84383,
+  "loc_precision": "city",
+  "loc_note": "Asked for Singapore, Singapore. Matched Singapore (city level, OSM rank 15). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": 1.2899,
+  "city_lng": 103.8519,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "sify-mumbai-o3-rabale",
+  "name": "Sify Mumbai O3 Rabale",
+  "operator": "Sify Technologies Limited",
+  "operator_id": "sify-technologies-limited",
+  "owner": "Sify Infinit Spaces",
+  "country": "India",
+  "city": "Navi Mumbai (Rabale)",
+  "it_load_mw": 377,
+  "it_load_mw_raw": "377MW IT power capacity",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/sify-technologies-to-invest-5bn-in-indian-ai-data-center-expansion/",
+   "https://www.sifytechnologies.com/news/sify-announces-pay-per-use-colocation-pricing-at-all-nvidia-certified-ai-ready-hyperscale-data-center-campuses-across-india/"
+  ],
+  "notes": "Described as one of Sify's three 'AI-ready' data centres. NVIDIA DGX-Ready certified in 2024, supporting H100, H200, B200, GB200 NVL72 and GB300 NVL72 at up to 130 kW/rack. The 377MW figure is very large relative to India's total 1.6GW live capacity and likely represents an ultimate campus ceiling rather than energised load; flagged, not adjusted.",
+  "lat": 19.04989,
+  "lng": 73.02844,
+  "loc_precision": "city",
+  "loc_note": "Asked for Navi Mumbai, India. Matched Navi Mumbai, Thane Subdistrict, Thane, Maharashtra, India (city level, OSM rank 16). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": 19.0308,
+  "city_lng": 73.0199,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "sify-noida-02",
+  "name": "Sify Noida 02",
+  "operator": "Sify Technologies Limited",
+  "operator_id": "sify-technologies-limited",
+  "owner": "Sify Infinit Spaces",
+  "country": "India",
+  "city": "Noida",
+  "it_load_mw": 130,
+  "it_load_mw_raw": "130MW IT power capacity",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/sify-technologies-to-invest-5bn-in-indian-ai-data-center-expansion/",
+   "https://www.sifytechnologies.com/news/sify-announces-pay-per-use-colocation-pricing-at-all-nvidia-certified-ai-ready-hyperscale-data-center-campuses-across-india/"
+  ],
+  "notes": "NVIDIA DGX-Ready certified. Likely an ultimate campus ceiling rather than energised load.",
+  "lat": 28.57063,
+  "lng": 77.32721,
+  "loc_precision": "city",
+  "loc_note": "Asked for Noida, India. Matched Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "sify-chennai-02",
+  "name": "Sify Chennai 02",
+  "operator": "Sify Technologies Limited",
+  "operator_id": "sify-technologies-limited",
+  "owner": "Sify Infinit Spaces",
+  "country": "India",
+  "city": "Chennai",
+  "it_load_mw": 130,
+  "it_load_mw_raw": "130MW IT power capacity",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/sify-technologies-to-invest-5bn-in-indian-ai-data-center-expansion/",
+   "https://w.media/sify-inaugurates-ai-ready-dc-in-chennai/"
+  ],
+  "notes": "NVIDIA DGX-Ready certified. Likely an ultimate campus ceiling rather than energised load.",
+  "lat": 13.06461,
+  "lng": 80.26192,
+  "loc_precision": "city",
+  "loc_note": "Asked for Chennai, India. Matched Chennai, Tamil Nadu, India (city level, OSM rank 16). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": 13.0837,
+  "city_lng": 80.2702,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "yotta-nm1-navi-mumbai",
+  "name": "Yotta NM1, Panvel",
+  "operator": "Yotta Data Services Private Limited",
+  "operator_id": "yotta-data-services-private-limited",
+  "owner": "Hiranandani Group / Yotta",
+  "country": "India",
+  "city": "Panvel, Navi Mumbai",
+  "status": "live",
+  "it_load_mw": 36,
+  "it_load_mw_raw": "IT power capacity of 36 MW (Yotta blog); '50 MW of power' at inauguration (Yotta 2020 press release)",
+  "chips_installed": [
+   "H100",
+   "L40S",
+   "A100"
+  ],
+  "source_urls": [
+   "https://www.prnewswire.com/news-releases/yotta-data-services-receives-frost--sullivans-2026-indian-company-of-the-year-recognition-for-leadership-in-sovereign-ai-infrastructure-302806131.html",
+   "https://colocation.yotta.com/blog/inside-yotta-nm1-asias-largest-tier-iv-data-center/",
+   "https://yotta.com/press-releases/yotta-infrastructure-inaugurates-asias-largest-and-worlds-second-largest-uptime-institute-tier-iv-certified-data-center-yotta-nm1-at-navi-mumbai/",
+   "https://www.nvidia.com/en-us/case-studies/yotta-built-india-sovereign-ai-infrastructure-shakti-cloud/"
+  ],
+  "notes": "This is the Shakti Cloud production site. NVIDIA separately credits Yotta with over 20,000 Blackwell Ultra GPUs across Navi Mumbai and Greater Noida, which is a later and larger figure than the NM1-specific count. | LIVE VERIFIED: Inaugurated 7 July 2020 (Uptime Tier IV). 36 MW is Yotta's own IT-load statement; the 50 MW figure in the 2020 release is total power, which illustrates the IT-vs-facility gap. NVIDIA case study (Jan 2026) says Shakti Cloud has over 16,000 H100 with B200 incoming; not all 36 MW is GPU load. Existing record in sites_apac.json is live with MW null; this record supplies the MW and date.",
+  "lat": 19.04165,
+  "lng": 73.02843,
+  "loc_precision": "exact",
+  "loc_note": "Asked for Panvel, Navi Mumbai, India. Matched Sion-Panvel Highway, nerul, Nerul East, Navi Mumbai, Thane Subdistrict (exact level, OSM rank 26). Not the building."
+ },
+ {
+  "site_id": "yotta-nm2-navi-mumbai",
+  "name": "Yotta NM2, Navi Mumbai",
+  "operator": "Yotta Data Services Private Limited",
+  "operator_id": "yotta-data-services-private-limited",
+  "owner": "Hiranandani Group / Yotta",
+  "country": "India",
+  "city": "Navi Mumbai",
+  "status": "announced",
+  "it_load_mw": 75,
+  "it_load_mw_raw": "75 MW, scalable to 2 GW",
+  "chips_installed": [
+   "GB300",
+   "Vera Rubin"
+  ],
+  "source_urls": [
+   "https://www.prnewswire.com/news-releases/yotta-data-services-receives-frost--sullivans-2026-indian-company-of-the-year-recognition-for-leadership-in-sovereign-ai-infrastructure-302806131.html"
+  ],
+  "notes": "The '2 GW' scalability figure is a company aspiration, not permitted or contracted capacity. Part of Yotta's stated path to more than 80,000 next-generation GPUs by FY27-28.",
+  "lat": 19.01171,
+  "lng": 73.01136,
+  "loc_precision": "city",
+  "loc_note": "Asked for Navi Mumbai, India. Matched Navi Mumbai, Thane Subdistrict, Thane, Maharashtra, India (city level, OSM rank 16). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": 19.0308,
+  "city_lng": 73.0199,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "yotta-d2-greater-noida",
+  "name": "Yotta D2, Greater Noida",
+  "operator": "Yotta Data Services Private Limited",
+  "operator_id": "yotta-data-services-private-limited",
+  "owner": "Hiranandani Group / Yotta",
+  "country": "India",
+  "city": "Greater Noida, Delhi NCR",
+  "status": "announced",
+  "it_load_mw": 60,
+  "it_load_mw_raw": "60 MW, scalable to 250 MW",
+  "chips_installed": [
+   "B300"
+  ],
+  "source_urls": [
+   "https://www.prnewswire.com/news-releases/yotta-data-services-receives-frost--sullivans-2026-indian-company-of-the-year-recognition-for-leadership-in-sovereign-ai-infrastructure-302806131.html"
+  ],
+  "notes": "Part of the same FY27-28 80,000-GPU plan as NM2; the two site plans should not be added to the 20,000 Blackwell Ultra figure NVIDIA cites without checking for overlap.",
+  "lat": 28.46707,
+  "lng": 77.51376,
+  "loc_precision": "city",
+  "loc_note": "Asked for Greater Noida, India. Matched Greater Noida, Gautam Buddha Nagar, Uttar Pradesh, 210310, India (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "ctrls-chandanvelly-hyderabad",
+  "name": "CtrlS Chandanvelly campus",
+  "operator": "CtrlS Datacenters Limited",
+  "operator_id": "ctrls-datacenters-limited",
+  "owner": "CtrlS Datacenters Limited",
+  "country": "India",
+  "city": "Hyderabad, Telangana",
+  "status": "announced",
+  "it_load_mw": 600,
+  "it_load_mw_raw": "Over 600MW potential IT capacity; 250MW of sanctioned power secured for the first phase",
+  "power_source": "Dedicated gas-insulated substation expandable to 900MW; solar module facades; free-air, direct liquid and immersion cooling",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/ctrls-to-build-40-acre-data-center-campus-near-hyderabad-india/"
+  ],
+  "notes": "Address given only as Chandanvelly Industrial Park, Hyderabad. Announced 21 January 2025. This is one of the clearest Indian examples of power being secured ahead of build: 250MW sanctioned before construction. CtrlS's three existing Hyderabad sites are 4MW to 13MW each.",
+  "lat": 17.36059,
+  "lng": 78.47406,
+  "loc_precision": "city",
+  "loc_note": "Asked for Hyderabad, Telangana, India. Matched Hyderabad, Bahadurpura mandal, Hyderabad, Telangana, India (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "reliance-jamnagar-ai",
+  "name": "Reliance Intelligence Jamnagar AI data centre",
+  "operator": "Reliance Intelligence",
+  "operator_id": "reliance-intelligence",
+  "owner": "Reliance Industries Limited",
+  "country": "India",
+  "city": "Jamnagar, Gujarat",
+  "status": "under_construction",
+  "it_load_mw": 120,
+  "it_load_mw_raw": "120 MW expected by end-2026; the wider project is described as gigawatt-scale",
+  "power_source": "Stated to be powered entirely by Reliance's green energy",
+  "chips_installed": [
+   "GB300"
+  ],
+  "source_urls": [
+   "https://www.indiaaipulse.com/en/news/reliance-outlines-ai-push-at-2026-agm",
+   "https://www.datacenterdynamics.com/en/news/reliance-industries-to-build-gw-scale-ai-data-center-in-gujurat-india/"
+  ],
+  "notes": "The gigawatt-scale ambition dates from the September 2024 AGM; the 120MW/GB300 detail from the June 2026 AGM. GPU unit counts, total investment and exact site coordinates are all undisclosed. Reliance is NSE-listed so the annual report is the T1 check.",
+  "lat": 22.47324,
+  "lng": 70.05521,
+  "loc_precision": "city",
+  "loc_note": "Asked for Jamnagar, Gujarat, India. Matched Jamnagar, Jamnagar City Taluka, Jamnagar, Gujarat, 361001, India (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "lt-vyoma-chennai",
+  "name": "L&T Vyoma Data Center, Chennai",
+  "operator": "Larsen & Toubro Limited",
+  "operator_id": "larsen-toubro-limited",
+  "owner": "Larsen & Toubro Limited",
+  "country": "India",
+  "city": "Chennai",
+  "it_load_mw": 30,
+  "it_load_mw_raw": "initial Chennai expansion to 30 megawatts",
+  "chips_installed": [
+   "B200"
+  ],
+  "source_urls": [
+   "https://blogs.nvidia.com/blog/india-ai-mission-infrastructure-models/"
+  ],
+  "notes": "E2E Networks runs NVIDIA HGX B200 systems on its TIR platform inside this facility, so the chips are E2E's rather than L&T's.",
+  "lat": 13.10279,
+  "lng": 80.27848,
+  "loc_precision": "city",
+  "loc_note": "Asked for Chennai, India. Matched Chennai, Tamil Nadu, India (city level, OSM rank 16). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": 13.0837,
+  "city_lng": 80.2702,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "lt-mumbai-dc",
+  "name": "L&T Mumbai data centre",
+  "operator": "Larsen & Toubro Limited",
+  "operator_id": "larsen-toubro-limited",
+  "owner": "Larsen & Toubro Limited",
+  "country": "India",
+  "city": "Mumbai",
+  "status": "announced",
+  "it_load_mw": 40,
+  "it_load_mw_raw": "new Mumbai facility at 40 megawatts",
+  "source_urls": [
+   "https://blogs.nvidia.com/blog/india-ai-mission-infrastructure-models/"
+  ],
+  "notes": "L&T is described as targeting sovereign gigawatt-scale deployments over time; only the 40MW facility figure is stated.",
+  "lat": 19.055,
+  "lng": 72.8692,
+  "loc_precision": "city",
+  "loc_note": "Asked for Mumbai, India. Matched Mumbai, Mumbai Suburban District, Maharashtra, 400051, India (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "kddi-osaka-sakai",
+  "name": "KDDI Osaka Sakai Data Center",
+  "operator": "KDDI Corporation",
+  "operator_id": "kddi-corporation",
+  "owner": "KDDI Corporation",
+  "country": "Japan",
+  "city": "Sakai, Osaka",
+  "status": "live",
+  "it_load_mw_raw": "MW not disclosed; approximately 57,000 m2 cumulative floor space across four storeys",
+  "power_source": "100% renewable energy",
+  "chips_installed": [
+   "GB200"
+  ],
+  "source_urls": [
+   "https://newsroom.kddi.com/english/news/detail/kddi_nr-916_4323.html"
+  ],
+  "notes": "Runs NVIDIA GB200 NVL72 with direct liquid cooling alongside air cooling. Named users: Takeda Pharmaceutical (medical big data from April 2026), Medical Engineering Institute, Morgenrot, ELYZA. IMPORTANT: both KDDI and SoftBank acquired parts of the former Sharp Sakai site for AI data centres; do not merge the two records.",
+  "lat": 34.59279,
+  "lng": 135.4927,
+  "loc_precision": "city",
+  "loc_note": "Asked for Sakai, Osaka, Japan. Matched Sakai, Osaka Prefecture, 590-0078, Japan (city level, OSM rank 16). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": 34.5737,
+  "city_lng": 135.4829,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "softbank-sakai-osaka",
+  "name": "SoftBank Sakai AI data centre (former Sharp plant)",
+  "operator": "SoftBank Corp.",
+  "operator_id": "softbank-corp",
+  "owner": "SoftBank Corp.",
+  "country": "Japan",
+  "city": "Sakai, Osaka",
+  "status": "announced",
+  "it_load_mw_raw": "MW not disclosed",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/softbank-buys-former-sharp-factory-for-676m-to-build-ai-data-center-in-osaka-japan/",
+   "https://global.sharp/corporate/news/240607-a.html"
+  ],
+  "notes": "SEPARATE from the KDDI Osaka Sakai data centre, though both reuse the former Sharp Sakai LCD plant. Reported purchase prices vary between $673m and $676m across outlets. Sharp's own June 2024 release confirms SoftBank Corp. will construct a large-scale AI data centre utilising the Sakai plant.",
+  "lat": 34.55461,
+  "lng": 135.4731,
+  "loc_precision": "city",
+  "loc_note": "Asked for Sakai, Osaka, Japan. Matched Sakai, Osaka Prefecture, 590-0078, Japan (city level, OSM rank 16). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": 34.5737,
+  "city_lng": 135.4829,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "sakura-ishikari",
+  "name": "SAKURA internet Ishikari Data Center",
+  "operator": "SAKURA internet Inc.",
+  "operator_id": "sakura-internet-inc",
+  "owner": "SAKURA internet Inc.",
+  "country": "Japan",
+  "city": "Ishikari, Hokkaido",
+  "status": "live",
+  "it_load_mw_raw": "MW not stated in the sources captured",
+  "power_source": "HVDC power supply; integrates the Ishikari Photovoltaic Power Station; expected to be fully renewable-powered by 2027",
+  "chips_installed": [
+   "H100",
+   "B200"
+  ],
+  "source_urls": [
+   "https://www.datacentermap.com/japan/sapporo/sakura-internet-ishikari-data-center/",
+   "https://www.datacenterdynamics.com/en/news/japans-sakura-internet-looks-to-buy-10000-gpus-a-year/",
+   "https://nvidianews.nvidia.com/news/japan-cloud-leaders-build-nvidia-ai-infrastructure-to-transform-industries",
+   "https://www.sakura.ad.jp/corporate/en/information/2025/08/14/1968220602/"
+  ],
+  "notes": "Address: 1-chome-714 Shinkochuo, 061-3242 Ishikari, Japan. This is the home of the Koukaryoku generative-AI cloud. GPU counts across sources are inconsistent in vintage (2,000 vs 4,000 vs 10,800) and should not be summed.",
+  "lat": 43.19079,
+  "lng": 141.32706,
+  "loc_precision": "city",
+  "loc_note": "Asked for Ishikari, Hokkaido, Japan. Matched Ishikari, Ishikari Subprefecture, Hokkaido Prefecture, Hokkaido Region (city level, OSM rank 16). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": 43.1717,
+  "city_lng": 141.316,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "sakura-hokkaido-new",
+  "name": "SAKURA internet new Hokkaido data centre",
+  "operator": "SAKURA internet Inc.",
+  "operator_id": "sakura-internet-inc",
+  "owner": "SAKURA internet Inc.",
+  "country": "Japan",
+  "city": "Hokkaido",
+  "status": "under_construction",
+  "it_load_mw_raw": "MW not stated",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/japans-sakura-internet-looks-to-buy-10000-gpus-a-year/"
+  ],
+  "notes": "Exact municipality not stated beyond Hokkaido. May overlap with the Ishikari expansion; treated as separate because DCD describes it as a separate facility under construction.",
+  "lat": 43.45198,
+  "lng": 142.81978,
+  "loc_precision": "city",
+  "loc_note": "Asked for Hokkaido, Japan. Matched Hokkaido Prefecture, Hokkaido Region, Japan (city level, OSM rank 8). Not the building."
+ },
+ {
+  "site_id": "highreso-kagawa",
+  "name": "Highreso Kagawa data center",
+  "operator": "Highreso Inc.",
+  "operator_id": "highreso-inc",
+  "owner": "Highreso Inc.",
+  "country": "Japan",
+  "city": "Kagawa Prefecture",
+  "it_load_mw_raw": "MW not stated",
+  "chips_installed": [
+   "H200"
+  ],
+  "source_urls": [
+   "https://nvidianews.nvidia.com/news/japan-cloud-leaders-build-nvidia-ai-infrastructure-to-transform-industries",
+   "https://www.sakura.ad.jp/corporate/en/information/2025/08/14/1968220601/"
+  ],
+  "notes": "The 1,600 GPU figure covers both Highreso sites, so it must not be counted twice. Home of the GPUSOROBAN service.",
+  "lat": 34.24801,
+  "lng": 134.05866,
+  "loc_precision": "city",
+  "loc_note": "Asked for Kagawa Prefecture, Japan. Matched Kagawa Prefecture, Japan (city level, OSM rank 8). Not the building."
+ },
+ {
+  "site_id": "highreso-ishikawa",
+  "name": "Highreso Ishikawa data center",
+  "operator": "Highreso Inc.",
+  "operator_id": "highreso-inc",
+  "owner": "Highreso Inc.",
+  "country": "Japan",
+  "city": "Ishikawa Prefecture",
+  "it_load_mw_raw": "MW not stated",
+  "chips_installed": [
+   "H200"
+  ],
+  "source_urls": [
+   "https://www.sakura.ad.jp/corporate/en/information/2025/08/14/1968220601/"
+  ],
+  "notes": "Named in the KDDI/SAKURA/Highreso reciprocal-supply agreement as one of Highreso's two facilities.",
+  "lat": 36.98906,
+  "lng": 136.81628,
+  "loc_precision": "city",
+  "loc_note": "Asked for Ishikawa Prefecture, Japan. Matched Ishikawa Prefecture, Japan (city level, OSM rank 8). Not the building."
+ },
+ {
+  "site_id": "rutilea-okuma",
+  "name": "RUTILEA Okuma facility",
+  "operator": "RUTILEA, Inc.",
+  "operator_id": "rutilea-inc",
+  "owner": "RUTILEA, Inc.",
+  "country": "Japan",
+  "city": "Okuma, Fukushima",
+  "status": "live",
+  "it_load_mw_raw": "MW not stated",
+  "chips_installed": [
+   "H100"
+  ],
+  "source_urls": [
+   "https://nvidianews.nvidia.com/news/japan-cloud-leaders-build-nvidia-ai-infrastructure-to-transform-industries"
+  ],
+  "notes": "More than 1,000 NVIDIA Hopper GPUs. Chip listed as H100 because NVIDIA says 'Hopper' without specifying H100 vs H200; treat the SKU as uncertain.",
+  "lat": 37.38131,
+  "lng": 140.95871,
+  "loc_precision": "city",
+  "loc_note": "Asked for Okuma, Fukushima, Japan. Matched Okuma, Futaba County, Fukushima Prefecture, Japan (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "sk-aws-ulsan",
+  "name": "SK-AWS Ulsan AI Data Center",
+  "operator": "SK Group (SK Telecom / SK Broadband) with AWS",
+  "operator_id": "sk-group-sk-telecom-sk-broadband-with-aws",
+  "owner": "SK Group / AWS",
+  "country": "South Korea",
+  "city": "Ulsan",
+  "status": "under_construction",
+  "it_load_mw": 103,
+  "it_load_mw_raw": "41MW by November 2027, expanding to 103MW by February 2029, with potential future expansion to 1GW",
+  "power_source": "Site selected for access to large-scale electricity with SK Gas's LNG combined heat and power plant nearby",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/sk-group-and-aws-to-build-ai-data-center-in-ulsan-south-korea/",
+   "https://news.sktelecom.com/en/1960",
+   "https://www.datacentermap.com/south-korea/ulsan/amazon-aws-ulsan/"
+  ],
+  "notes": "Located at the Mipo National Industrial Complex, Ulsan. Inauguration June 2025, groundbreaking August 2025. Investment figures reported: 7 trillion won ($5.11bn) total national investment, AWS roughly $4bn, SK Telecom/SK Broadband 3.4 trillion won ($2.5bn) in AI by 2028. Described as the largest domestic data centre in South Korea. GPU models not disclosed.",
+  "lat": 35.53917,
+  "lng": 129.31191,
+  "loc_precision": "city",
+  "loc_note": "Asked for Ulsan, South Korea. Matched Ulsan, South Korea (city level, OSM rank 8). Not the building."
+ },
+ {
+  "site_id": "national-grid-cloud-computing-center-tainan",
+  "name": "National Grid Cloud Computing Center (Nano 4 / Crystal26)",
+  "operator": "National Center for High-performance Computing",
+  "operator_id": "national-center-for-high-performance-computing",
+  "owner": "Taiwan government",
+  "country": "Taiwan",
+  "city": "Tainan",
+  "status": "live",
+  "it_load_mw": 15,
+  "it_load_mw_raw": "15MW of IT capacity",
+  "chips_installed": [
+   "H200",
+   "GB200"
+  ],
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/taiwan-launches-data-center-with-ai-cluster/",
+   "https://www.asus.com/business/resources/casestudies/nano4-taiwan-liquid-cooled-ai-supercomputer/"
+  ],
+  "notes": "Located in Tainan Science Park. Nano 4: 1,760 NVIDIA H200 GPUs plus 144 Blackwell chips in GB200 NVL72 configuration, 2.214MW draw, part of the Crystal26 system ranked 29th on the Top500. Launched 12 December 2025. Built by ASUS with liquid cooling.",
+  "lat": 22.99123,
+  "lng": 120.18498,
+  "loc_precision": "city",
+  "loc_note": "Asked for Tainan, Taiwan. Matched Tainan, Taiwan (city level, OSM rank 8). Not the building."
+ },
+ {
+  "site_id": "chunghwa-lunping-taoyuan",
+  "name": "Chunghwa Telecom Lunping IDC, Taoyuan",
+  "operator": "Chunghwa Telecom Co., Ltd.",
+  "operator_id": "chunghwa-telecom-co-ltd",
+  "owner": "Chunghwa Telecom Co., Ltd.",
+  "country": "Taiwan",
+  "city": "Taoyuan",
+  "status": "live",
+  "it_load_mw": 36,
+  "it_load_mw_raw": "up to 36MW to its total IDC capacity upon full build-out",
+  "source_urls": [
+   "https://www.rcrwireless.com/20260806/carriers/chunghwa-ai-infra"
+  ],
+  "notes": "Source says operations began 'during Q2' 2026; recorded as 2026-06 as the end of that quarter, which is an approximation of the month only, not of the fact. Chunghwa is TWSE-listed so its quarterly filings are the T1 check.",
+  "lat": 24.993,
+  "lng": 121.301,
+  "loc_precision": "city",
+  "loc_note": "Asked for Taoyuan, Taiwan. Matched Taoyuan City, Taiwan (city level, OSM rank 8). Not the building."
+ },
+ {
+  "site_id": "chunghwa-taichung-idc",
+  "name": "Chunghwa Telecom Taichung data centre",
+  "operator": "Chunghwa Telecom Co., Ltd.",
+  "operator_id": "chunghwa-telecom-co-ltd",
+  "owner": "Chunghwa Telecom Co., Ltd.",
+  "country": "Taiwan",
+  "city": "Taichung",
+  "status": "under_construction",
+  "it_load_mw_raw": "not disclosed",
+  "source_urls": [
+   "https://www.rcrwireless.com/20260806/carriers/chunghwa-ai-infra"
+  ],
+  "notes": "An MoU was signed in July 2026 with the Taiwan Stock Exchange for dedicated colocation capacity at this site. Capacity, investment and chips all undisclosed.",
+  "lat": 24.16316,
+  "lng": 120.64783,
+  "loc_precision": "city",
+  "loc_note": "Asked for Taichung, Taiwan. Matched Taichung, Taiwan (city level, OSM rank 8). Not the building."
+ },
+ {
+  "site_id": "nextdc-s7-eastern-creek",
+  "name": "NEXTDC S7 Eastern Creek (OpenAI Stargate Sydney campus)",
+  "operator": "NEXTDC Limited",
+  "operator_id": "nextdc-limited",
+  "owner": "NEXTDC Limited",
+  "country": "Australia",
+  "city": "Eastern Creek, Sydney, NSW",
+  "status": "announced",
+  "it_load_mw": 612,
+  "it_load_mw_raw": "612MW of capacity",
+  "power_source": "Dedicated on-site substation included in the proposal; sourcing not disclosed",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/australian-stargate-data-center-in-sydney-will-offer-612mw-of-capacity/",
+   "https://baxtel.com/data-center/openai-stargate-sydney-campus",
+   "https://www.nextdc.com/news/building-the-next-generation-of-sovereign-ai-infrastructure-in-australia"
+  ],
+  "notes": "Largest single announced site in this dataset. Land: 255,135 sqm (Baxtel says 258,000 sqm) acquired October 2024 for A$353m (US$244m). Development submitted mid-March 2026, assessed as a State Significant Development by NSW; an Environmental Impact Statement is in preparation. OpenAI signed an MoU in December 2025 with an option to scale. Reported as a A$7bn / US$4.6bn development. COORDINATES: -33.81, 150.83 are Baxtel's published map coordinates for Eastern Creek NSW 2766, precise only to two decimal places (roughly 1km); they are a locality centroid, not a surveyed building position.",
+  "lat": -33.82499,
+  "lng": 150.84029,
+  "loc_precision": "city",
+  "loc_note": "Asked for Eastern Creek, Sydney, NSW, Australia. Matched Eastern Creek, Sydney, New South Wales, 2766, Australia (city level, OSM rank 18). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": -33.8059,
+  "city_lng": 150.85,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "nextdc-m3-melbourne",
+  "name": "NEXTDC M3, Melbourne",
+  "operator": "NEXTDC Limited",
+  "operator_id": "nextdc-limited",
+  "owner": "NEXTDC Limited",
+  "country": "Australia",
+  "city": "Melbourne, VIC",
+  "status": "live",
+  "it_load_mw_raw": "MW not stated in the sources captured",
+  "source_urls": [
+   "https://certifiedstrategic.com/neoclouds/sharon-ai"
+  ],
+  "notes": "Sharon AI has up to 54MW of contracted Australian capacity across the NEXTDC estate; the M3-specific share is not broken out.",
+  "lat": -37.83339,
+  "lng": 144.95299,
+  "loc_precision": "city",
+  "loc_note": "Asked for Melbourne, VIC, Australia. Matched Melbourne, Victoria, Australia (city level, OSM rank 16). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": -37.8143,
+  "city_lng": 144.9632,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "firmus-southgate-bell-bay",
+  "name": "Firmus Project Southgate Bell Bay, Tasmania",
+  "operator": "Firmus Technologies",
+  "operator_id": "firmus-technologies",
+  "owner": "Firmus Technologies",
+  "country": "Australia",
+  "city": "George Town / Bell Bay, Tasmania",
+  "status": "announced",
+  "it_load_mw": 288,
+  "it_load_mw_raw": "approximately 288 MW",
+  "power_source": "Three 220 kV TasNetworks transmission lines into a grid fed largely by hydro, wind and solar",
+  "source_urls": [
+   "https://firmus.co/project-southgate-faqs"
+  ],
+  "notes": "Address: Lot 1 East Tamar Highway, Long Reach, on the former Gunns Pulp Mill site at Bell Bay. Direct-to-chip liquid cooling via the Firmus HyperCube; water use stated at up to 99% less than a typical data centre, with cooling water needed only on days above 26C, roughly 10 days a year. Over 115 permanent staff planned.",
+  "lat": -41.10502,
+  "lng": 146.82385,
+  "loc_precision": "city",
+  "loc_note": "Asked for George Town, Australia. Matched George Town, Tasmania, 7253, Australia (city level, OSM rank 18). Not the building."
+ },
+ {
+  "site_id": "firmus-southgate-st-leonards",
+  "name": "Firmus Project Southgate, St Leonards, Tasmania",
+  "operator": "Firmus Technologies",
+  "operator_id": "firmus-technologies",
+  "owner": "Firmus Technologies",
+  "country": "Australia",
+  "city": "St Leonards, Tasmania",
+  "status": "under_construction",
+  "it_load_mw": 300,
+  "it_load_mw_raw": "Stage 2: 300MW subject to approvals; Stage 1a and 1b MW not published",
+  "power_source": "Tasmanian grid, largely hydro, wind and solar",
+  "chips_installed": [
+   "GB300"
+  ],
+  "source_urls": [
+   "https://baxtel.com/data-center/firmus-project-southgate",
+   "https://firmus.co/newsroom/firmus-signs-multi-year-agreement-with-global-hyperscale-customer-at-project-southgate"
+  ],
+  "notes": "Address: 23 Killafaddy Rd, St Leonards, Tasmania. Stage 1a investment stated at AU$2.1bn (US$1.37bn). A Tasmanian facility of roughly 36,800 GB300 GPUs is expected to complete in late 2026. COORDINATES: -41.45, 147.2 are Baxtel's published map coordinates, precise only to two decimal places; they locate the locality, not a surveyed building. NOTE: Firmus uses 'Project Southgate' for several Tasmanian and mainland sites (Bell Bay, Wesley Vale, St Leonards, Melbourne); these are separate records and the name alone does not identify a site.",
+  "lat": -41.45691,
+  "lng": 147.19933,
+  "loc_precision": "city",
+  "loc_note": "Asked for St Leonards, Tasmania, Australia. Matched St Leonards, Launceston, Tasmania, Australia (city level, OSM rank 18). Not the building."
+ },
+ {
+  "site_id": "firmus-melbourne-ai-factory",
+  "name": "Firmus Melbourne AI factory (Project Southgate first deployment)",
+  "operator": "Firmus Technologies",
+  "operator_id": "firmus-technologies",
+  "owner": "Firmus Technologies",
+  "country": "Australia",
+  "city": "Melbourne, VIC",
+  "status": "announced",
+  "it_load_mw_raw": "MW not disclosed",
+  "chips_installed": [
+   "GB300"
+  ],
+  "source_urls": [
+   "https://firmus.co/newsroom/firmus-signs-multi-year-agreement-with-global-hyperscale-customer-at-project-southgate"
+  ],
+  "notes": "Announced 2 March 2026 as the first deployment of Project Southgate. Customer described only as 'a leading global technology company'. Multi-billion dollar contract value, exact figure and term undisclosed.",
+  "lat": -37.79521,
+  "lng": 144.97341,
+  "loc_precision": "city",
+  "loc_note": "Asked for Melbourne, VIC, Australia. Matched Melbourne, Victoria, Australia (city level, OSM rank 16). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": -37.8143,
+  "city_lng": 144.9632,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "firmus-tailem-bend-sa",
+  "name": "Firmus Tailem Bend AI Factory campus",
+  "operator": "Firmus Technologies",
+  "operator_id": "firmus-technologies",
+  "owner": "Firmus Technologies",
+  "country": "Australia",
+  "city": "Tailem Bend, South Australia",
+  "status": "announced",
+  "it_load_mw_raw": "MW not disclosed per site; 600MW of firm power contracted across the South Australian first phase, with 2.7GW planned for SA expansion overall",
+  "power_source": "600 MW of firm electricity from Gunvor Group under a 12-year agreement, linked to 1.2 GW of new renewable generation and 1.5 GWh of new battery storage by 2032",
+  "source_urls": [
+   "https://firmus.co/newsroom/firmus-secures-600-mw-energy-supply-agreement-in-south-australia-linked-to-1-2-gw-of-new-renewable-generation-and-battery-storage"
+  ],
+  "notes": "Announced June 2026. Firming includes the Koolunga BESS near Brinkworth at 200 MW / 800 MWh, more than half of initial firming capacity. Firmus commits to demand response for up to 220 hours a year during peak wholesale prices. The 600MW and 2.7GW figures cover both SA campuses and must not be attributed to this site alone.",
+  "lat": -35.25293,
+  "lng": 139.45338,
+  "loc_precision": "city",
+  "loc_note": "Asked for Tailem Bend, South Australia, Australia. Matched Tailem Bend, South Australia, 5260, Australia (city level, OSM rank 18). Not the building."
+ },
+ {
+  "site_id": "firmus-stirling-north-sa",
+  "name": "Firmus Stirling North AI Factory campus",
+  "operator": "Firmus Technologies",
+  "operator_id": "firmus-technologies",
+  "owner": "Firmus Technologies",
+  "country": "Australia",
+  "city": "Stirling North, South Australia",
+  "status": "announced",
+  "it_load_mw_raw": "MW not disclosed per site",
+  "power_source": "Covered by the same 600 MW Gunvor firm supply agreement",
+  "source_urls": [
+   "https://firmus.co/newsroom/firmus-secures-600-mw-energy-supply-agreement-in-south-australia-linked-to-1-2-gw-of-new-renewable-generation-and-battery-storage"
+  ],
+  "notes": "See Tailem Bend record; the 600MW/2.7GW figures are shared across both sites.",
+  "lat": -32.51699,
+  "lng": 137.83981,
+  "loc_precision": "city",
+  "loc_note": "Asked for Stirling North, South Australia, Australia. Matched Stirling North, South Australia, 5710, Australia (city level, OSM rank 18). Not the building."
+ },
+ {
+  "site_id": "resetdata-ai-f1-melbourne",
+  "name": "ResetData AI Factory AI-F1",
+  "operator": "ResetData",
+  "operator_id": "resetdata",
+  "owner": "ResetData / Centuria Capital Group",
+  "country": "Australia",
+  "city": "Docklands, Melbourne, VIC",
+  "status": "live",
+  "it_load_mw": 1.25,
+  "it_load_mw_raw": "1.25 MW initial deployment; directory page title says 1.5 MW",
+  "chips_installed": [
+   "H200"
+  ],
+  "source_urls": [
+   "https://www.datacentermap.com/australia/melbourne/resetdata-ai-factory-ai-f1/",
+   "https://www.techtimes.com/articles/324256/20260813/centuria-locks-165m-gpu-debt-72mw-power-sovereign-ai-pipeline-moves-two-years-closer.htm"
+  ],
+  "notes": "Address: 818 Bourke Street, Docklands, VIC 3008. Liquid immersion cooling claimed at PUE 1.02-1.10 and 100+ kW rack densities, versus 15-20 kW air-cooled. 1.25MW and 1.5MW both appear in the same source; the smaller figure is used and the discrepancy flagged. Very small by MW but genuinely AI-dense.",
+  "lat": -37.81754,
+  "lng": 144.93949,
+  "loc_precision": "city",
+  "loc_note": "Asked for Docklands, Melbourne, VIC, Australia. Matched Docklands, Melbourne, Victoria, 3008, Australia (city level, OSM rank 18). Not the building."
+ },
+ {
+  "site_id": "viettel-cu-chi-hcmc",
+  "name": "Viettel Cu Chi data centre, Ho Chi Minh City",
+  "operator": "Viettel IDC",
+  "operator_id": "viettel-idc",
+  "owner": "Viettel Group",
+  "country": "Vietnam",
+  "city": "Cu Chi, Ho Chi Minh City",
+  "status": "under_construction",
+  "it_load_mw": 140,
+  "it_load_mw_raw": "140MW",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/viettel-breaks-ground-on-data-center-in-ho-chi-minh-city-vietnam/"
+  ],
+  "notes": "Located in Tan Phu Trung Industrial Park, roughly 25km from central Ho Chi Minh City. PUE target below 1.4, Uptime Tier III. Vietnam's largest data centre project. Investment not disclosed and no AI-specific capability stated in the source, so chips_installed left empty.",
+  "lat": 10.97442,
+  "lng": 106.4949,
+  "loc_precision": "city",
+  "loc_note": "Asked for Cu Chi, Ho Chi Minh City, Vietnam. Matched C\u1ee7 Chi, X\u00e3 T\u00e2n An H\u1ed9i, Ho Chi Minh City, Vietnam (city level, OSM rank 18). Not the building."
+ },
+ {
+  "site_id": "dayone-chonburi-tech-park",
+  "name": "DayOne Chonburi Tech Park",
+  "operator": "DayOne",
+  "operator_id": "dayone",
+  "owner": "DayOne",
+  "country": "Thailand",
+  "city": "Chonburi",
+  "status": "announced",
+  "it_load_mw": 120,
+  "it_load_mw_raw": "120MW",
+  "source_urls": [
+   "https://digitalinasia.com/southeast-asia-ai-data-centre-boom/"
+  ],
+  "notes": "No exact address, timeline or power arrangement published in the source.",
+  "lat": 13.18571,
+  "lng": 101.12108,
+  "loc_precision": "state",
+  "loc_note": "Asked for Chonburi, Thailand. Matched Chon Buri Province, Thailand (state level, OSM rank 8). Not the building."
+ },
+ {
+  "site_id": "bridge-data-centres-eec-thailand",
+  "name": "Bridge Data Centres Eastern Economic Corridor campus",
+  "operator": "Bridge Data Centres",
+  "operator_id": "bridge-data-centres",
+  "owner": "Bridge Data Centres",
+  "country": "Thailand",
+  "city": "Eastern Economic Corridor",
+  "status": "announced",
+  "it_load_mw": 200,
+  "it_load_mw_raw": "200MW planned campus",
+  "source_urls": [
+   "https://digitalinasia.com/southeast-asia-ai-data-centre-boom/"
+  ],
+  "notes": "No exact address or timeline published.",
+  "lat": 13.79972,
+  "lng": 100.55073,
+  "loc_precision": "exact",
+  "loc_note": "Asked for Corridor, Thailand. Matched Clock Tower Corridor, Chatuchak Subdistrict, Chatuchak District, Bangk (exact level, OSM rank 26). Not the building."
+ },
+ {
+  "site_id": "siam-ai-thailand-dc",
+  "name": "SIAM.AI Cloud sovereign AI data centre",
+  "operator": "SIAM.AI CLOUD",
+  "operator_id": "siam-ai-cloud",
+  "owner": "SIAM.AI CLOUD",
+  "country": "Thailand",
+  "city": "Bangkok (company registered address); site location not disclosed",
+  "status": "announced",
+  "it_load_mw": 100,
+  "it_load_mw_raw": "100MW data center (from the Nikkei Asia headline)",
+  "chips_installed": [
+   "H200",
+   "GB200"
+  ],
+  "source_urls": [
+   "https://asia.nikkei.com/business/technology/artificial-intelligence/nvidia-partner-siam-ai-chases-digital-sovereignty-with-100mw-data-center",
+   "https://siam.ai/nvidia-thailand-sovereign-ai/"
+  ],
+  "notes": "WEAK SOURCING: the Nikkei article is blocked by robots.txt, so only its headline ('100MW data center') could be read; nothing in the body was verified. The chip list is from SIAM.AI's own roadmap page (H200 and GB200 Grace Blackwell), not from a confirmed installation. A separate Bangkok Post report of a B70bn Thai AI infrastructure investment by Siam.AI could not be fetched. Treat this record as the weakest in the file.",
+  "lat": 13.75249,
+  "lng": 100.49351,
+  "loc_precision": "city",
+  "loc_note": "Asked for Bangkok, Thailand. Matched Bangkok, Thailand (city level, OSM rank 8). Not the building."
+ },
+ {
+  "site_id": "sunevision-mega-idc-tko",
+  "name": "SUNeVision MEGA IDC, Tseung Kwan O",
+  "operator": "SUNeVision Holdings Ltd",
+  "operator_id": "sunevision-holdings-ltd",
+  "owner": "Sun Hung Kai Properties",
+  "country": "Hong Kong",
+  "city": "Tseung Kwan O, Hong Kong",
+  "status": "live",
+  "it_load_mw": 50,
+  "it_load_mw_raw": "Phase One 50MW power capacity (live); over 180MW upon full completion of three phases",
+  "power_source": "Seven on-premise 132kV 75MVA transformers across Phases One and Two",
+  "source_urls": [
+   "https://www.shkp.com/en-US/media/press-releases/20250327",
+   "https://realestateasia.com/industrial/news/hong-kong-data-centre-pipeline-hits-517mw",
+   "https://www.malaymail.com/news/money/mediaoutreach/2025/03/27/sunevision-initiates-mega-idc-phase-two-development/371408"
+  ],
+  "notes": "Total MEGA IDC investment stated at over HK$15bn. Described as an AI-ready data centre with 5.7m slab-to-slab height. Hong Kong's largest data centre. SUNeVision is HKEX-listed so its interim/annual reports are the T1 check. | LIVE VERIFIED: SHKP release of 27 March 2025 says Phase One 'launched successfully last year' (2024); month not stated, so commissioned is null. it_load_mw here is the live Phase One only; the existing 'phased' record carries the 180 MW full-build figure. 'Power capacity' is the company's term; IT-load basis not confirmed.",
+  "lat": 22.32872,
+  "lng": 114.20254,
+  "loc_precision": "city",
+  "loc_note": "Pinned to Tseung Kwan O, Hong Kong, Hong Kong, not the building. Matched: Hong Kong, China Nudged about 2.9 km inside the city to separate it from the 2 other sites we know only to the same city.",
+  "city_lat": 22.3492,
+  "city_lng": 114.1858,
+  "loc_scattered": 3
+ },
+ {
+  "site_id": "flow-tk7-tk8-central-tokyo",
+  "name": "FLOW Digital Infrastructure TK7/TK8 campus",
+  "operator": "FLOW Digital Infrastructure",
+  "operator_id": "flow-digital-infrastructure",
+  "owner": "PAG (FLOW Digital Infrastructure)",
+  "country": "Japan",
+  "city": "Central Tokyo (near Otemachi/Toyosu clusters; ward not stated)",
+  "status": "under_construction",
+  "it_load_mw": 30,
+  "it_load_mw_raw": "30MW combined campus; TK7 6MW IT load",
+  "source_urls": [
+   "https://www.flowdigital.com/en/resources/newsroom/flow-digital-infrastructure-announces-new-data-center-central-tokyo",
+   "https://www.datacenterdynamics.com/en/news/pags-flow-breaks-ground-on-tokyo-data-center-campus/"
+  ],
+  "notes": "Company announcement 29 Jul 2025 (T2) says construction underway; DCD headline 'breaks ground'. Captured 2026-09-03 while sourcing Japan under-construction capacity.",
+  "lat": 35.69026,
+  "lng": 139.75388,
+  "loc_precision": "exact",
+  "loc_note": "Asked for Central Tokyo, Japan. Matched National Archives of Japan, Shuto Expressway Inner Circular Route, Kit (exact level, OSM rank 30). Not the building."
+ },
+ {
+  "site_id": "china-telecom-global-tko-idc",
+  "name": "China Telecom Global TKO IDC",
+  "operator": "China Telecom Global",
+  "operator_id": "china-telecom-global",
+  "owner": "China Telecom Global",
+  "country": "Hong Kong",
+  "city": "Tseung Kwan O, Hong Kong",
+  "status": "under_construction",
+  "it_load_mw": 56,
+  "it_load_mw_raw": "56MW",
+  "source_urls": [
+   "https://realestateasia.com/industrial/news/hong-kong-data-centre-pipeline-hits-517mw"
+  ],
+  "notes": "Listed by JLL (via Real Estate Asia, 22 Sep 2025) among Hong Kong's 517 MW under construction. T4 (analyst report via trade press); no operator disclosure checked. Captured 2026-09-03.",
+  "lat": 22.37285,
+  "lng": 114.19661,
+  "loc_precision": "city",
+  "loc_note": "Pinned to Tseung Kwan O, Hong Kong, Hong Kong, not the building. Matched: Hong Kong, China Nudged about 2.9 km inside the city to separate it from the 2 other sites we know only to the same city.",
+  "city_lat": 22.3492,
+  "city_lng": 114.1858,
+  "loc_scattered": 3
+ },
+ {
+  "site_id": "vantage-tsuen-wan-west-hk",
+  "name": "Vantage Tsuen Wan West",
+  "operator": "Vantage Data Centers",
+  "operator_id": "vantage-data-centers",
+  "owner": "Vantage Data Centers",
+  "country": "Hong Kong",
+  "city": "Tsuen Wan, Hong Kong",
+  "status": "under_construction",
+  "it_load_mw": 48,
+  "it_load_mw_raw": "48MW",
+  "source_urls": [
+   "https://realestateasia.com/industrial/news/hong-kong-data-centre-pipeline-hits-517mw"
+  ],
+  "notes": "Listed by JLL (via Real Estate Asia, 22 Sep 2025) among Hong Kong's 517 MW under construction. T4; not cross-checked with Vantage. Captured 2026-09-03.",
+  "lat": 22.34603,
+  "lng": 114.15825,
+  "loc_precision": "city",
+  "loc_note": "Pinned to Tsuen Wan, Hong Kong, Hong Kong, not the building. Matched: Hong Kong, China Nudged about 2.9 km inside the city to separate it from the 2 other sites we know only to the same city.",
+  "city_lat": 22.3492,
+  "city_lng": 114.1858,
+  "loc_scattered": 3
+ },
+ {
+  "site_id": "lg-uplus-paju-aidc",
+  "name": "LG Uplus Paju AI Data Centre",
+  "operator": "LG Uplus",
+  "operator_id": "lg-group",
+  "owner": "LG Uplus",
+  "country": "South Korea",
+  "city": "Paju, Gyeonggi Province",
+  "status": "under_construction",
+  "it_load_mw": 200,
+  "it_load_mw_raw": "200 MW class facility spanning about 150,000 square meters",
+  "source_urls": [
+   "https://w.media/lg-uplus-to-invest-additional-us-910-million-for-paju-aidc-expansion/",
+   "https://www.techtimes.com/articles/323695/20260810/seoul-data-center-vacancy-hits-11-turning-citys-ai-market-queue.htm"
+  ],
+  "notes": "200 MW is the full campus figure, not the phase currently being built. Described by Tech Times (10 Aug 2026) as 'the largest AI data center project in the Seoul metropolitan area'. Captured 2026-09-03.",
+  "lat": 37.7599,
+  "lng": 126.78015,
+  "loc_precision": "city",
+  "loc_note": "Asked for Paju, Gyeonggi Province, South Korea. Matched Paju-si, Gyeonggi, South Korea (city level, OSM rank 12). Not the building."
+ },
+ {
+  "site_id": "stt-gdc-palava-mumbai",
+  "name": "ST Telemedia Global Data Centres Palava campus",
+  "operator": "ST Telemedia Global Data Centres India",
+  "operator_id": "st-telemedia-global-data-centres-india",
+  "owner": "ST Telemedia Global Data Centres",
+  "country": "India",
+  "city": "Palava (Dombivli), Mumbai Metropolitan Region",
+  "status": "under_construction",
+  "it_load_mw": 400,
+  "it_load_mw_raw": "400 MW campus, with an initial 50 MW phase under construction",
+  "source_urls": [
+   "https://www.knightfrank.co.uk/site-assets/research/report-pdfs/data-centres/data-centre-atlas-2026.pdf"
+  ],
+  "notes": "Knight Frank/DC Byte Data Centre Atlas 2026 (Mumbai section): 'ST Telemedia Global Data Centres is progressing a 400 MW campus in Palava, with an initial 50 MW phase under construction.' T4 (analyst report). The 400 MW is the campus envelope; only 50 MW is being built. Captured 2026-09-03.",
+  "lat": 19.16461,
+  "lng": 73.11278,
+  "loc_precision": "exact",
+  "loc_note": "Asked for Palava, India. Matched Palava Phase 2, Kalyan Subdistrict, Thane, Maharashtra, India (exact level, OSM rank 19). Not the building."
+ },
+ {
+  "site_id": "airtrunk-syd3-huntingwood",
+  "name": "AirTrunk SYD3",
+  "operator": "AirTrunk",
+  "operator_id": "airtrunk-operating-pty-ltd",
+  "owner": "AirTrunk (Blackstone)",
+  "country": "Australia",
+  "city": "Huntingwood (Blacktown LGA), Sydney, NSW",
+  "status": "under_construction",
+  "it_load_mw": 400,
+  "it_load_mw_raw": "400 MW (Renewmap); AirTrunk product page '400+ MW' across 42 data halls; original 2021 filing 320+ MW IT load across nine phases",
+  "source_urls": [
+   "https://itkservices3.com/background/data_centres_australia_top10_construction"
+  ],
+  "notes": "Renewmap May 2026 snapshot via ITK Research (11 May 2026): largest of 19 Australian sites under construction (1,853 MW total, full-campus basis). Address 51 Huntingwood Drive per ITK; lat/lng not verified. T4 secondary compilation. Captured 2026-09-03.",
+  "lat": -33.79797,
+  "lng": 150.88159,
+  "loc_precision": "city",
+  "loc_note": "Asked for Huntingwood , Sydney, NSW, Australia. Matched Huntingwood, Sydney, New South Wales, Australia (city level, OSM rank 18). Not the building."
+ },
+ {
+  "site_id": "cdc-laverton-north-campus",
+  "name": "CDC Data Centres Laverton (Campus One and Two)",
+  "operator": "CDC Data Centres",
+  "operator_id": "cdc-data-centres",
+  "owner": "CDC Data Centres (Infratil / Future Fund / CSC)",
+  "country": "Australia",
+  "city": "Laverton North, Melbourne, VIC",
+  "status": "under_construction",
+  "it_load_mw": 400,
+  "it_load_mw_raw": "Renewmap: Campus One 150 MW + Campus Two 300 MW; CDC markets a single campus of 'over 400 MW'",
+  "source_urls": [
+   "https://itkservices3.com/background/data_centres_australia_top10_construction"
+  ],
+  "notes": "Renewmap May 2026 snapshot via ITK Research. Treated as one site here to avoid double counting the two Renewmap rows. T4. Captured 2026-09-03.",
+  "lat": -37.83007,
+  "lng": 144.78695,
+  "loc_precision": "city",
+  "loc_note": "Asked for Laverton North, Melbourne, VIC, Australia. Matched Laverton North, Melbourne, Victoria, 3026, Australia (city level, OSM rank 18). Not the building."
+ },
+ {
+  "site_id": "stack-mel02-truganina",
+  "name": "Stack Infrastructure MEL02",
+  "operator": "Stack Infrastructure",
+  "operator_id": "stack-infrastructure",
+  "owner": "Stack Infrastructure (Blue Owl)",
+  "country": "Australia",
+  "city": "Truganina, Melbourne, VIC",
+  "status": "under_construction",
+  "it_load_mw": 252,
+  "it_load_mw_raw": "252 MW of IT capacity, single technical building; on-site 132 kV substation 300+ MW",
+  "source_urls": [
+   "https://itkservices3.com/background/data_centres_australia_top10_construction"
+  ],
+  "notes": "Renewmap May 2026 snapshot via ITK Research. T4. Captured 2026-09-03.",
+  "lat": -37.82799,
+  "lng": 144.71089,
+  "loc_precision": "city",
+  "loc_note": "Asked for Truganina, Melbourne, VIC, Australia. Matched Truganina, Melbourne, Victoria, Australia (city level, OSM rank 18). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": -37.8089,
+  "city_lng": 144.7211,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "stockland-edgeconnex-davis-road",
+  "name": "Stockland / EdgeConneX Davis Road",
+  "operator": "EdgeConneX",
+  "operator_id": "edgeconnex",
+  "owner": "Stockland and EdgeConneX (50:50 JV, March 2026)",
+  "country": "Australia",
+  "city": "Wetherill Park (Fairfield LGA), Sydney, NSW",
+  "status": "under_construction",
+  "it_load_mw": 132,
+  "it_load_mw_raw": "160 MW gross (Renewmap); SSD application: two 80 MW halls at 66 MW IT load each (~132 MW IT)",
+  "source_urls": [
+   "https://itkservices3.com/background/data_centres_australia_top10_construction"
+  ],
+  "notes": "Renewmap May 2026 snapshot via ITK Research; IT load taken from the planning application figures quoted by ITK (2 x 66 MW), gross 160 MW. T4. Captured 2026-09-03.",
+  "lat": -33.84833,
+  "lng": 150.90111,
+  "loc_precision": "city",
+  "loc_note": "Asked for Wetherill Park , Sydney, NSW, Australia. Matched Wetherill Park, Sydney, New South Wales, 2164, Australia (city level, OSM rank 18). Not the building."
+ },
+ {
+  "site_id": "cdc-eastern-creek-ec5-ec6",
+  "name": "CDC Data Centres Eastern Creek 5 and 6",
+  "operator": "CDC Data Centres",
+  "operator_id": "cdc-data-centres",
+  "owner": "CDC Data Centres",
+  "country": "Australia",
+  "city": "Eastern Creek, Sydney, NSW",
+  "status": "under_construction",
+  "it_load_mw": 108,
+  "it_load_mw_raw": "EC5 + EC6 = 108 MW IT load (CDC disclosure); Renewmap lists 79 MW each (158 MW gross)",
+  "source_urls": [
+   "https://itkservices3.com/background/data_centres_australia_top10_construction"
+  ],
+  "notes": "Renewmap May 2026 snapshot via ITK Research; the 108 MW IT figure is CDC's own combined disclosure as quoted by ITK. T4. Captured 2026-09-03.",
+  "lat": -33.78681,
+  "lng": 150.85971,
+  "loc_precision": "city",
+  "loc_note": "Asked for Eastern Creek, Sydney, NSW, Australia. Matched Eastern Creek, Sydney, New South Wales, 2766, Australia (city level, OSM rank 18). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": -33.8059,
+  "city_lng": 150.85,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "vantage-mel1-tullamarine",
+  "name": "Vantage MEL1",
+  "operator": "Vantage Data Centers",
+  "operator_id": "vantage-data-centers",
+  "owner": "Vantage Data Centers (DigitalBridge / Silver Lake)",
+  "country": "Australia",
+  "city": "Tullamarine, Melbourne, VIC",
+  "status": "under_construction",
+  "it_load_mw": 64,
+  "it_load_mw_raw": "64 MW of critical IT load across three buildings",
+  "source_urls": [
+   "https://itkservices3.com/background/data_centres_australia_top10_construction"
+  ],
+  "notes": "Renewmap May 2026 snapshot via ITK Research. T4. Captured 2026-09-03.",
+  "lat": -37.70466,
+  "lng": 144.87177,
+  "loc_precision": "city",
+  "loc_note": "Asked for Tullamarine, Melbourne, VIC, Australia. Matched Tullamarine, Melbourne, Victoria, 3043, Australia (city level, OSM rank 18). Not the building."
+ },
+ {
+  "site_id": "stack-mel01c-mel01d-truganina",
+  "name": "Stack Infrastructure MEL01C and MEL01D",
+  "operator": "Stack Infrastructure",
+  "operator_id": "stack-infrastructure",
+  "owner": "Stack Infrastructure (Blue Owl)",
+  "country": "Australia",
+  "city": "Truganina, Melbourne, VIC",
+  "status": "under_construction",
+  "it_load_mw": 108,
+  "it_load_mw_raw": "54 MW each for MEL01C and MEL01D (Renewmap lists only MEL01D at 54 MW)",
+  "source_urls": [
+   "https://itkservices3.com/background/data_centres_australia_top10_construction"
+  ],
+  "notes": "Renewmap May 2026 snapshot via ITK Research; ITK notes MEL01C (also 54 MW, also under construction) is missing from the Renewmap snapshot. T4. Captured 2026-09-03.",
+  "lat": -37.78981,
+  "lng": 144.73131,
+  "loc_precision": "city",
+  "loc_note": "Asked for Truganina, Melbourne, VIC, Australia. Matched Truganina, Melbourne, Victoria, Australia (city level, OSM rank 18). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": -37.8089,
+  "city_lng": 144.7211,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "iren-canal-flats",
+  "name": "Canal Flats",
+  "operator": "IREN Limited",
+  "operator_id": "iren-limited",
+  "owner": "IREN Limited",
+  "country": "Canada",
+  "city": "Canal Flats, British Columbia",
+  "status": "live",
+  "it_load_mw": 30,
+  "it_load_mw_raw": "30MW total planned power capacity (gross MW)",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/iren-20260630.htm"
+  ],
+  "notes": "From the IREN FY2026 10-K table of announced data centre projects and total planned power capacity (gross MW) as of 30 June 2026. Gross utility capacity, not critical IT load.",
+  "lat": 50.15969,
+  "lng": -115.80769,
+  "loc_precision": "city",
+  "loc_note": "Asked for Canal Flats, British Columbia, Canada. Matched Canal Flats, Regional District of East Kootenay, British Columbia, V0B (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "iren-prince-george",
+  "name": "Prince George",
+  "operator": "IREN Limited",
+  "operator_id": "iren-limited",
+  "owner": "IREN Limited",
+  "country": "Canada",
+  "city": "Prince George, British Columbia",
+  "status": "under_construction",
+  "it_load_mw": 50,
+  "it_load_mw_raw": "50MW total planned power capacity (gross MW)",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/iren-20260630.htm"
+  ],
+  "notes": "From the IREN FY2026 10-K table of announced data centre projects and total planned power capacity (gross MW) as of 30 June 2026. Gross utility capacity, not critical IT load.",
+  "lat": 53.91286,
+  "lng": -122.74537,
+  "loc_precision": "city",
+  "loc_note": "Asked for Prince George, British Columbia, Canada. Matched Prince George, Regional District of Fraser-Fort George, British Columb (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "iren-mackenzie",
+  "name": "Mackenzie",
+  "operator": "IREN Limited",
+  "operator_id": "iren-limited",
+  "owner": "IREN Limited",
+  "country": "Canada",
+  "city": "Mackenzie, British Columbia",
+  "status": "under_construction",
+  "it_load_mw": 80,
+  "it_load_mw_raw": "80MW total planned power capacity (gross MW)",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/iren-20260630.htm"
+  ],
+  "notes": "From the IREN FY2026 10-K table of announced data centre projects and total planned power capacity (gross MW) as of 30 June 2026. Gross utility capacity, not critical IT load.",
+  "lat": 55.3244,
+  "lng": -123.09261,
+  "loc_precision": "city",
+  "loc_note": "Asked for Mackenzie, British Columbia, Canada. Matched Mackenzie, Regional District of Fraser-Fort George, British Columbia,  (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "iren-childress",
+  "name": "Childress (Horizon 1-4)",
+  "operator": "IREN Limited",
+  "operator_id": "iren-limited",
+  "owner": "IREN Limited",
+  "country": "United States",
+  "city": "Childress, Texas",
+  "status": "phased",
+  "it_load_mw": 750,
+  "it_load_mw_raw": "750MW total planned power capacity (gross MW)",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/iren-20260630.htm"
+  ],
+  "notes": "From the IREN FY2026 10-K table of announced data centre projects and total planned power capacity (gross MW) as of 30 June 2026. Gross utility capacity, not critical IT load.",
+  "lat": 34.53879,
+  "lng": -100.19701,
+  "loc_precision": "city",
+  "loc_note": "Asked for Childress, Texas, United States. Matched Childress County, Texas, 79201, United States (city level, OSM rank 12). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": 34.5197,
+  "city_lng": -100.2068,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "iren-sweetwater-1",
+  "name": "Sweetwater 1",
+  "operator": "IREN Limited",
+  "operator_id": "iren-limited",
+  "owner": "IREN Limited",
+  "country": "United States",
+  "city": "Sweetwater, Texas",
+  "status": "under_construction",
+  "it_load_mw": 1400,
+  "it_load_mw_raw": "1400MW total planned power capacity (gross MW)",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/iren-20260630.htm"
+  ],
+  "notes": "From the IREN FY2026 10-K table of announced data centre projects and total planned power capacity (gross MW) as of 30 June 2026. Gross utility capacity, not critical IT load.",
+  "lat": 32.49009,
+  "lng": -100.39634,
+  "loc_precision": "city",
+  "loc_note": "Asked for Sweetwater, Texas, United States. Matched Sweetwater, Nolan County, Texas, 79556, United States (city level, OSM rank 16). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": 32.471,
+  "city_lng": -100.4059,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "iren-sweetwater-2",
+  "name": "Sweetwater 2",
+  "operator": "IREN Limited",
+  "operator_id": "iren-limited",
+  "owner": "IREN Limited",
+  "country": "United States",
+  "city": "Sweetwater, Texas",
+  "status": "announced",
+  "it_load_mw": 600,
+  "it_load_mw_raw": "600MW total planned power capacity (gross MW)",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/iren-20260630.htm"
+  ],
+  "notes": "From the IREN FY2026 10-K table of announced data centre projects and total planned power capacity (gross MW) as of 30 June 2026. Gross utility capacity, not critical IT load.",
+  "lat": 32.45191,
+  "lng": -100.41546,
+  "loc_precision": "city",
+  "loc_note": "Asked for Sweetwater, Texas, United States. Matched Sweetwater, Nolan County, Texas, 79556, United States (city level, OSM rank 16). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": 32.471,
+  "city_lng": -100.4059,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "iren-kiowa",
+  "name": "Kiowa",
+  "operator": "IREN Limited",
+  "operator_id": "iren-limited",
+  "owner": "IREN Limited",
+  "country": "United States",
+  "city": "Kiowa, Oklahoma",
+  "status": "announced",
+  "it_load_mw": 1600,
+  "it_load_mw_raw": "1600MW total planned power capacity (gross MW)",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/iren-20260630.htm"
+  ],
+  "notes": "From the IREN FY2026 10-K table of announced data centre projects and total planned power capacity (gross MW) as of 30 June 2026. Gross utility capacity, not critical IT load.",
+  "lat": 34.94251,
+  "lng": -99.01991,
+  "loc_precision": "city",
+  "loc_note": "Asked for Kiowa, Oklahoma, United States. Matched Kiowa County, Oklahoma, United States (city level, OSM rank 12). Not the building."
+ },
+ {
+  "site_id": "iren-badajoz",
+  "name": "Badajoz",
+  "operator": "IREN Limited",
+  "operator_id": "iren-limited",
+  "owner": "IREN Limited",
+  "country": "Spain",
+  "city": "Badajoz, Extremadura",
+  "status": "announced",
+  "it_load_mw": 300,
+  "it_load_mw_raw": "300MW total planned power capacity (gross MW)",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/iren-20260630.htm"
+  ],
+  "notes": "From the IREN FY2026 10-K table of announced data centre projects and total planned power capacity (gross MW) as of 30 June 2026. Gross utility capacity, not critical IT load.",
+  "lat": 38.87819,
+  "lng": -6.97011,
+  "loc_precision": "city",
+  "loc_note": "Asked for Badajoz, Extremadura, Spain. Matched Badajoz, Extremadura, Spain (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "iren-childress-horizon-1",
+  "name": "Horizon 1",
+  "operator": "IREN Limited",
+  "operator_id": "iren-limited",
+  "owner": "IREN Limited",
+  "country": "United States",
+  "city": "Childress, Texas",
+  "status": "live",
+  "it_load_mw": 50,
+  "it_load_mw_raw": "50MW liquid-cooled",
+  "chips_installed": [
+   "GB300"
+  ],
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/iren-20260630.htm",
+   "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000051/irenreportsfy26results.htm"
+  ],
+  "notes": "Delivered to Microsoft under the $9.7bn contract. Horizon 2-4 under construction. Sits inside the 750MW Childress campus recorded separately - do not double count.",
+  "lat": 34.50061,
+  "lng": -100.21659,
+  "loc_precision": "city",
+  "loc_note": "Asked for Childress, Texas, United States. Matched Childress County, Texas, 79201, United States (city level, OSM rank 12). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": 34.5197,
+  "city_lng": -100.2068,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "iren-bundey",
+  "name": "Bundey",
+  "operator": "IREN Limited",
+  "operator_id": "iren-limited",
+  "owner": "IREN Limited",
+  "country": "Australia",
+  "city": "Bundey, South Australia",
+  "status": "announced",
+  "it_load_mw": 800,
+  "it_load_mw_raw": "800MW",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/iren-20260630.htm"
+  ],
+  "notes": "Listed for completeness of IREN's estate; Asia-Pacific is covered by another researcher in this project.",
+  "lat": -33.88718,
+  "lng": 139.27109,
+  "loc_precision": "city",
+  "loc_note": "Asked for Bundey, South Australia, Australia. Matched Bundey, South Australia, Australia (city level, OSM rank 18). Not the building."
+ },
+ {
+  "site_id": "corz-denton",
+  "name": "Denton",
+  "operator": "Core Scientific, Inc.",
+  "operator_id": "core-scientific-inc",
+  "owner": "Core Scientific, Inc.",
+  "country": "United States",
+  "city": "Denton, Texas",
+  "status": "under_construction",
+  "it_load_mw": 260,
+  "it_load_mw_raw": "~260 MW",
+  "source_urls": [
+   "https://www.investing.com/news/company-news/core-scientific-q1-fy2026-slides-10b-ai-contracts-3-gw-pipeline-93CH-4665996",
+   "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000014/core-20260630.htm"
+  ],
+  "notes": "~260MW contracted to CoreWeave; on track for midyear 2026 completion. Part of the 590MW CoreWeave take-or-pay portfolio. Each site is a separate ring-fenced subsidiary guarantor of Core Scientific's senior secured notes.",
+  "lat": 33.18388,
+  "lng": -97.14134,
+  "loc_precision": "city",
+  "loc_note": "Asked for Denton, Texas, United States. Matched Denton County, Texas, United States (city level, OSM rank 12). Not the building."
+ },
+ {
+  "site_id": "corz-dalton",
+  "name": "Dalton",
+  "operator": "Core Scientific, Inc.",
+  "operator_id": "core-scientific-inc",
+  "owner": "Core Scientific, Inc.",
+  "country": "United States",
+  "city": "Dalton, Georgia",
+  "status": "phased",
+  "it_load_mw": 175,
+  "it_load_mw_raw": "~175 MW",
+  "source_urls": [
+   "https://www.investing.com/news/company-news/core-scientific-q1-fy2026-slides-10b-ai-contracts-3-gw-pipeline-93CH-4665996",
+   "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000014/core-20260630.htm"
+  ],
+  "notes": "~175MW contracted to CoreWeave; Phase 1 (30MW) delivered, full completion targeted early 2027. Part of the 590MW CoreWeave take-or-pay portfolio. Each site is a separate ring-fenced subsidiary guarantor of Core Scientific's senior secured notes.",
+  "lat": 34.76919,
+  "lng": -84.97025,
+  "loc_precision": "city",
+  "loc_note": "Asked for Dalton, Georgia, United States. Matched Dalton, Whitfield County, Georgia, United States (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "corz-muskogee",
+  "name": "Muskogee",
+  "operator": "Core Scientific, Inc.",
+  "operator_id": "core-scientific-inc",
+  "owner": "Core Scientific, Inc.",
+  "country": "United States",
+  "city": "Muskogee, Oklahoma",
+  "status": "under_construction",
+  "it_load_mw": 70,
+  "it_load_mw_raw": "~70 MW",
+  "source_urls": [
+   "https://www.investing.com/news/company-news/core-scientific-q1-fy2026-slides-10b-ai-contracts-3-gw-pipeline-93CH-4665996",
+   "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000014/core-20260630.htm"
+  ],
+  "notes": "~70MW contracted to CoreWeave; on track for midyear 2026 delivery. Part of the 590MW CoreWeave take-or-pay portfolio. Each site is a separate ring-fenced subsidiary guarantor of Core Scientific's senior secured notes.",
+  "lat": 35.68209,
+  "lng": -95.38287,
+  "loc_precision": "city",
+  "loc_note": "Asked for Muskogee, Oklahoma, United States. Matched Muskogee County, Oklahoma, United States (city level, OSM rank 12). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": 35.663,
+  "city_lng": -95.3928,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "corz-marble",
+  "name": "Marble",
+  "operator": "Core Scientific, Inc.",
+  "operator_id": "core-scientific-inc",
+  "owner": "Core Scientific, Inc.",
+  "country": "United States",
+  "city": "Marble, North Carolina",
+  "status": "live",
+  "it_load_mw": 65,
+  "it_load_mw_raw": "~65 MW",
+  "source_urls": [
+   "https://www.investing.com/news/company-news/core-scientific-q1-fy2026-slides-10b-ai-contracts-3-gw-pipeline-93CH-4665996",
+   "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000014/core-20260630.htm"
+  ],
+  "notes": "~65MW contracted to CoreWeave; fully operational. Part of the 590MW CoreWeave take-or-pay portfolio. Each site is a separate ring-fenced subsidiary guarantor of Core Scientific's senior secured notes.",
+  "lat": 35.17509,
+  "lng": -83.92491,
+  "loc_precision": "exact",
+  "loc_note": "Asked for Marble, North Carolina, United States. Matched Marble, Cherokee County, North Carolina, 28905, United States (exact level, OSM rank 20). Not the building."
+ },
+ {
+  "site_id": "corz-austin",
+  "name": "Austin",
+  "operator": "Core Scientific, Inc.",
+  "operator_id": "core-scientific-inc",
+  "owner": "Core Scientific, Inc.",
+  "country": "United States",
+  "city": "Austin, Texas",
+  "status": "live",
+  "it_load_mw": 20,
+  "it_load_mw_raw": "~20 MW",
+  "source_urls": [
+   "https://www.investing.com/news/company-news/core-scientific-q1-fy2026-slides-10b-ai-contracts-3-gw-pipeline-93CH-4665996",
+   "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000014/core-20260630.htm"
+  ],
+  "notes": "~20MW contracted to CoreWeave; fully operational. Part of the 590MW CoreWeave take-or-pay portfolio. Each site is a separate ring-fenced subsidiary guarantor of Core Scientific's senior secured notes.",
+  "lat": 30.27113,
+  "lng": -97.7437,
+  "loc_precision": "city",
+  "loc_note": "Asked for Austin, Texas, United States. Matched Austin, Travis County, Texas, United States (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "corz-hunt-county",
+  "name": "Hunt County",
+  "operator": "Core Scientific, Inc.",
+  "operator_id": "core-scientific-inc",
+  "owner": "Core Scientific, Inc.",
+  "country": "United States",
+  "city": "Hunt County, Texas",
+  "status": "announced",
+  "it_load_mw": 285,
+  "it_load_mw_raw": "285 MW acquisition",
+  "source_urls": [
+   "https://www.investing.com/news/company-news/core-scientific-q1-fy2026-slides-10b-ai-contracts-3-gw-pipeline-93CH-4665996"
+  ],
+  "notes": "Part of Core Scientific's stated 3.0GW leasable pipeline. No tenant announced.",
+  "lat": 33.11616,
+  "lng": -96.08089,
+  "loc_precision": "city",
+  "loc_note": "Asked for Hunt County, Texas, United States. Matched Hunt County, Texas, United States (city level, OSM rank 12). Not the building."
+ },
+ {
+  "site_id": "corz-polaris-muskogee",
+  "name": "Polaris (Muskogee acquisition)",
+  "operator": "Core Scientific, Inc.",
+  "operator_id": "core-scientific-inc",
+  "owner": "Polaris DS LLC",
+  "country": "United States",
+  "city": "Muskogee, Oklahoma",
+  "status": "announced",
+  "it_load_mw": 440,
+  "it_load_mw_raw": "up to 440 MW of gross utility power capacity",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000014/core-20260630.htm",
+   "https://www.investing.com/news/company-news/core-scientific-q1-fy2026-slides-10b-ai-contracts-3-gw-pipeline-93CH-4665996"
+  ],
+  "notes": "Acquisition for ~$421m cash agreed, $120m in escrow at 30 June 2026, expected to close Q3 2026. Price rises $40m if a further 40MW of firm capacity is secured before 31 December 2026. Q1 2026 investor slides described this as a 330MW acquisition; the 10-Q states up to 440MW gross utility power.",
+  "lat": 35.64391,
+  "lng": -95.40273,
+  "loc_precision": "city",
+  "loc_note": "Asked for Muskogee, Oklahoma, United States. Matched Muskogee County, Oklahoma, United States (city level, OSM rank 12). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": 35.663,
+  "city_lng": -95.3928,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "apld-polaris-forge-1",
+  "name": "Polaris Forge 1",
+  "operator": "Applied Digital Corporation",
+  "operator_id": "applied-digital-corporation",
+  "owner": "Applied Digital Corporation",
+  "country": "United States",
+  "city": "Ellendale, North Dakota",
+  "status": "phased",
+  "it_load_mw": 400,
+  "it_load_mw_raw": "400 MW of contracted critical IT load across three buildings",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1144879/000114487926000048/apld-20260531.htm"
+  ],
+  "notes": "Entirely leased to CoreWeave (~$11.0bn over 15 years). Direct-to-chip liquid cooled. Leases restructured into CoreWeave Compute Acquisition Co. VIII, LLC on 30 March 2026.",
+  "lat": 45.98361,
+  "lng": -98.53872,
+  "loc_precision": "city",
+  "loc_note": "Asked for Ellendale, North Dakota, United States. Matched Ellendale, Ellendale Township, Dickey County, North Dakota, 58436, Uni (city level, OSM rank 16). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": 46.0027,
+  "city_lng": -98.5271,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "apld-polaris-forge-2",
+  "name": "Polaris Forge 2",
+  "operator": "Applied Digital Corporation",
+  "operator_id": "applied-digital-corporation",
+  "owner": "Applied Digital Corporation",
+  "country": "United States",
+  "city": "Harwood, North Dakota",
+  "status": "under_construction",
+  "it_load_mw": 200,
+  "it_load_mw_raw": "200 MW of critical IT load",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1144879/000114487926000048/apld-20260531.htm"
+  ],
+  "notes": "Ground broken 18 August 2025. 15-year lease with an unnamed US-based investment-grade hyperscaler signed 22 October 2025, ~$5.0bn. Initial capacity H2 2026, full capacity early 2027. ~$3bn campus.",
+  "lat": 46.97941,
+  "lng": -96.88064,
+  "loc_precision": "city",
+  "loc_note": "Asked for Harwood, North Dakota, United States. Matched Harwood, Cass County, North Dakota, United States (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "apld-polaris-forge-3",
+  "name": "Polaris Forge 3",
+  "operator": "Applied Digital Corporation",
+  "operator_id": "applied-digital-corporation",
+  "owner": "Applied Digital Corporation",
+  "country": "United States",
+  "status": "under_construction",
+  "it_load_mw": 300,
+  "it_load_mw_raw": "300 MW critical IT load across two buildings",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1144879/000114487926000048/apld-20260531.htm"
+  ],
+  "notes": "Located in Applied Digital's 'northern United States region'; exact city not disclosed in the 10-K. Two ~15-year leases with a high investment-grade hyperscaler, ~$7.5bn. Delivery H2 2027 to H2 2028.",
+  "lat": 39.78053,
+  "lng": -100.47906,
+  "loc_precision": "country",
+  "loc_note": "Asked for United States. Matched United States (country level, OSM rank 4). Not the building. Nudged about 2.9 km inside the city to separate it from the 2 other sites we know only to the same city.",
+  "city_lat": 39.7837,
+  "city_lng": -100.4459,
+  "loc_scattered": 3
+ },
+ {
+  "site_id": "apld-delta-forge-1",
+  "name": "Delta Forge 1",
+  "operator": "Applied Digital Corporation",
+  "operator_id": "applied-digital-corporation",
+  "owner": "Applied Digital Corporation",
+  "country": "United States",
+  "status": "under_construction",
+  "it_load_mw": 300,
+  "it_load_mw_raw": "300 MW critical IT load",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1144879/000114487926000048/apld-20260531.htm"
+  ],
+  "notes": "Ground broken 22 January 2026 in 'a strategic southern U.S. market'; exact city not disclosed. Two ~15-year leases with a second US investment-grade hyperscaler signed 23 April 2026, ~$7.5bn. Initial operations expected mid-calendar 2027.",
+  "lat": 39.80735,
+  "lng": -100.43289,
+  "loc_precision": "country",
+  "loc_note": "Asked for United States. Matched United States (country level, OSM rank 4). Not the building. Nudged about 2.9 km inside the city to separate it from the 2 other sites we know only to the same city.",
+  "city_lat": 39.7837,
+  "city_lng": -100.4459,
+  "loc_scattered": 3
+ },
+ {
+  "site_id": "apld-delta-forge-2",
+  "name": "Delta Forge 2",
+  "operator": "Applied Digital Corporation",
+  "operator_id": "applied-digital-corporation",
+  "owner": "Applied Digital Corporation",
+  "country": "United States",
+  "status": "under_construction",
+  "it_load_mw": 210,
+  "it_load_mw_raw": "210 MW critical IT load, single building",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1144879/000114487926000048/apld-20260531.htm"
+  ],
+  "notes": "Southern region; exact city not disclosed in the 10-K. ~15-year lease with a high investment-grade hyperscaler, ~$5.2bn, delivery H1 2028.",
+  "lat": 39.76322,
+  "lng": -100.42575,
+  "loc_precision": "country",
+  "loc_note": "Asked for United States. Matched United States (country level, OSM rank 4). Not the building. Nudged about 2.9 km inside the city to separate it from the 2 other sites we know only to the same city.",
+  "city_lat": 39.7837,
+  "city_lng": -100.4459,
+  "loc_scattered": 3
+ },
+ {
+  "site_id": "apld-jamestown",
+  "name": "Jamestown hosting site",
+  "operator": "Applied Digital Corporation",
+  "operator_id": "applied-digital-corporation",
+  "owner": "Applied Digital Corporation",
+  "country": "United States",
+  "city": "Jamestown, North Dakota",
+  "status": "live",
+  "it_load_mw": 106,
+  "it_load_mw_raw": "106 MW facility",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1144879/000114487926000048/apld-20260531.htm"
+  ],
+  "notes": "Legacy crypto-mining hosting, single customer, contract with roughly 18 months remaining as of July 2026.",
+  "lat": 46.91054,
+  "lng": -98.70844,
+  "loc_precision": "city",
+  "loc_note": "Asked for Jamestown, North Dakota, United States. Matched Jamestown, Midway Township, Stutsman County, North Dakota, United Stat (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "apld-ellendale-hosting",
+  "name": "Ellendale hosting site",
+  "operator": "Applied Digital Corporation",
+  "operator_id": "applied-digital-corporation",
+  "owner": "Applied Digital Corporation",
+  "country": "United States",
+  "city": "Ellendale, North Dakota",
+  "status": "live",
+  "it_load_mw": 180,
+  "it_load_mw_raw": "180 MW facility",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1144879/000114487926000048/apld-20260531.htm"
+  ],
+  "notes": "Legacy crypto-mining hosting. Combined with Jamestown gives ~286MW of hosting capacity. Distinct from the Polaris Forge 1 HPC campus at the same town.",
+  "lat": 46.02179,
+  "lng": -98.51548,
+  "loc_precision": "city",
+  "loc_note": "Asked for Ellendale, North Dakota, United States. Matched Ellendale, Ellendale Township, Dickey County, North Dakota, 58436, Uni (city level, OSM rank 16). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": 46.0027,
+  "city_lng": -98.5271,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "wulf-lake-mariner",
+  "name": "Lake Mariner",
+  "operator": "TeraWulf Inc.",
+  "operator_id": "terawulf-inc",
+  "owner": "TeraWulf Inc.",
+  "country": "United States",
+  "city": "Barker, New York",
+  "status": "phased",
+  "it_load_mw": 102,
+  "it_load_mw_raw": "81 MW operating at 30 June 2026; 102 MW after CB-3 completion in early July 2026; 336 MW under construction (CB-4 and CB-5)",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000166/wulf-20260630.htm",
+   "https://investors.terawulf.com/news-events/press-releases/detail/114/terawulf-announces-fluidstack-expansion-with-160-mw-cb-5-lease-at-lake-mariner"
+  ],
+  "notes": "Leased to Fluidstack under 10-year AI hosting agreements with Google backstop. Completion of CB-3 unlocked $600m of Google credit support. New York State announced a moratorium in July 2026 on data centres using 50MW or more, which is a live risk to further expansion here.",
+  "lat": 43.30861,
+  "lng": -78.56589,
+  "loc_precision": "city",
+  "loc_note": "Asked for Barker, New York, United States. Matched Village of Barker, Town of Somerset, Niagara County, New York, United  (city level, OSM rank 16). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": 43.3277,
+  "city_lng": -78.5548,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "wulf-lake-hawkeye",
+  "name": "Lake Hawkeye",
+  "operator": "TeraWulf Inc.",
+  "operator_id": "terawulf-inc",
+  "owner": "TeraWulf Inc.",
+  "country": "United States",
+  "city": "Barker, New York",
+  "status": "announced",
+  "it_load_mw": 320,
+  "it_load_mw_raw": "~320 MW critical IT load potential from future redevelopment",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000166/wulf-20260630.htm"
+  ],
+  "notes": "Redevelopment potential adjacent to Lake Mariner; not contracted.",
+  "lat": 43.34679,
+  "lng": -78.54371,
+  "loc_precision": "city",
+  "loc_note": "Asked for Barker, New York, United States. Matched Village of Barker, Town of Somerset, Niagara County, New York, United  (city level, OSM rank 16). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": 43.3277,
+  "city_lng": -78.5548,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "wulf-justified-hawesville",
+  "name": "Justified Data Campus",
+  "operator": "TeraWulf Inc.",
+  "operator_id": "terawulf-inc",
+  "owner": "TeraWulf Inc.",
+  "country": "United States",
+  "city": "Hawesville, Kentucky",
+  "status": "under_construction",
+  "it_load_mw": 401,
+  "it_load_mw_raw": "approximately 401 MW of critical IT capacity; ~480 MW gross power capacity",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000166/wulf-20260630.htm",
+   "https://investors.terawulf.com/news-events/press-releases/detail/142/terawulf-announces-anthropic-lease-at-justified-data-campus-and-sale-of-majority-interest-in-abernathy-joint-venture-to-fluidstack"
+  ],
+  "notes": "Wholly leased to Anthropic on a 20-year lease worth ~$19bn. Initial capacity H2 2027, full 401MW by early 2028.",
+  "lat": 37.90006,
+  "lng": -86.75499,
+  "loc_precision": "city",
+  "loc_note": "Asked for Hawesville, Kentucky, United States. Matched Hawesville, Hancock County, Kentucky, United States (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "wulf-muskie",
+  "name": "Muskie Data Campus",
+  "operator": "TeraWulf Inc.",
+  "operator_id": "terawulf-inc",
+  "owner": "TeraWulf Inc.",
+  "country": "United States",
+  "city": "Kentucky",
+  "status": "announced",
+  "it_load_mw_raw": "contracted electric service of up to 1 GW",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000166/wulf-20260630.htm"
+  ],
+  "notes": "Acquired May 2026. Initial electric service expected Q4 2028. Critical IT load not yet stated, so it_load_mw left null.",
+  "lat": 37.55351,
+  "lng": -85.16528,
+  "loc_precision": "city",
+  "loc_note": "Asked for Kentucky, United States. Matched Kentucky, United States (city level, OSM rank 8). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": 37.5726,
+  "city_lng": -85.1551,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "wulf-chesapeake",
+  "name": "Chesapeake Data Campus",
+  "operator": "TeraWulf Inc.",
+  "operator_id": "terawulf-inc",
+  "owner": "TeraWulf Inc.",
+  "country": "United States",
+  "city": "Maryland",
+  "status": "announced",
+  "it_load_mw": 210,
+  "it_load_mw_raw": "210 MW operational capacity, potential scaling up to 1 GW",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000166/wulf-20260630.htm"
+  ],
+  "notes": "Data centre operations contemplated for 2030. No tenant announced.",
+  "lat": 39.51624,
+  "lng": -76.93821,
+  "loc_precision": "city",
+  "loc_note": "Asked for Maryland, United States. Matched Maryland, United States (city level, OSM rank 8). Not the building."
+ },
+ {
+  "site_id": "wulf-abernathy",
+  "name": "Abernathy AI campus",
+  "operator": "Fluidstack Ltd",
+  "operator_id": "fluidstack",
+  "owner": "Fluidstack-led investor group",
+  "country": "United States",
+  "city": "Abernathy, Texas",
+  "status": "under_construction",
+  "it_load_mw": 168,
+  "it_load_mw_raw": "168 MW critical IT load (240 MW gross)",
+  "source_urls": [
+   "https://investors.terawulf.com/news-events/press-releases/detail/121/terawulf-expands-strategic-partnership-with-fluidstack-through-new-168-mw-ai-compute-joint-venture",
+   "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000166/wulf-20260630.htm"
+  ],
+  "notes": "Formed October 2025 as a TeraWulf/Fluidstack JV (TeraWulf 51%). TeraWulf sold its entire 50.1% interest to a Fluidstack-led investor group for ~$530m in July 2026, so the operator is now Fluidstack. $9.5bn/25-year lease with a $1.3bn Google backstop. H2 2026 delivery. Project cost $8-10m per critical IT MW.",
+  "lat": 33.83238,
+  "lng": -101.84302,
+  "loc_precision": "city",
+  "loc_note": "Asked for Abernathy, Texas, United States. Matched Abernathy, Hale County, Texas, 79311, United States (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "cifr-odessa",
+  "name": "Odessa Facility",
+  "operator": "Cipher Mining Inc.",
+  "operator_id": "cipher-digital-inc",
+  "owner": "Cipher Mining Inc.",
+  "country": "United States",
+  "city": "Odessa, Texas",
+  "status": "live",
+  "it_load_mw": 207,
+  "it_load_mw_raw": "207 MW site",
+  "power_source": "Fixed-price power purchase agreement with its electricity provider",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000041/cifr-20260630.htm"
+  ],
+  "notes": "Wholly owned bitcoin mining data centre; not yet converted to AI.",
+  "lat": 31.84571,
+  "lng": -102.36769,
+  "loc_precision": "city",
+  "loc_note": "Asked for Odessa, Texas, United States. Matched Odessa, Ector County, Texas, United States (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "cifr-black-pearl",
+  "name": "Black Pearl Facility",
+  "operator": "Cipher Mining Inc.",
+  "operator_id": "cipher-digital-inc",
+  "owner": "Cipher Mining Inc.",
+  "country": "United States",
+  "city": "Wink, Texas",
+  "status": "under_construction",
+  "it_load_mw": 300,
+  "it_load_mw_raw": "300 MW data center",
+  "power_source": "Grid",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000041/cifr-20260630.htm",
+   "https://www.investing.com/news/company-news/cipher-digital-q2-2026-slides-show-114b-pipeline-amid-earnings-miss-93CH-4834719"
+  ],
+  "notes": "Being retrofitted from bitcoin mining for an HPC tenant, phased delivery from 2026. First capacity delivered two months ahead of schedule in August 2026.",
+  "lat": 31.7534,
+  "lng": -103.15583,
+  "loc_precision": "city",
+  "loc_note": "Asked for Wink, Texas, United States. Matched Wink, Winkler County, Texas, United States (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "cifr-barber-lake",
+  "name": "Barber Lake Facility",
+  "operator": "Cipher Mining Inc.",
+  "operator_id": "cipher-digital-inc",
+  "owner": "Cipher Mining Inc.",
+  "country": "United States",
+  "city": "Colorado City, Texas",
+  "status": "under_construction",
+  "it_load_mw": 224,
+  "it_load_mw_raw": "168 MW of Critical IT Load plus an additional 56 MW agreement",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000041/cifr-20260630.htm",
+   "https://investors.cipherdigital.com/static-files/382f9061-a211-487f-9c57-2131f6c06bd8",
+   "https://www.sec.gov/Archives/edgar/data/1819989/000095010325015073/dp237633_ex9901.htm"
+  ],
+  "notes": "Built for Fluidstack USA II Inc. under 10-year hosting agreements totalling ~$3bn plus the 56MW expansion, with a $1.4bn Google backstop. Expected commencement September/October 2026.",
+  "lat": 32.39303,
+  "lng": -100.86351,
+  "loc_precision": "city",
+  "loc_note": "Asked for Colorado City, Texas, United States. Matched Colorado City, Mitchell County, Texas, 79512, United States (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "cifr-stingray",
+  "name": "Stingray",
+  "operator": "Cipher Mining Inc.",
+  "operator_id": "cipher-digital-inc",
+  "owner": "Cipher Mining Inc.",
+  "country": "United States",
+  "city": "Texas",
+  "status": "under_construction",
+  "source_urls": [
+   "https://www.investing.com/news/company-news/cipher-digital-q2-2026-slides-show-114b-pipeline-amid-earnings-miss-93CH-4834719"
+  ],
+  "notes": "Fully financed $810 million project targeting first-half 2027 delivery. MW not disclosed in the sources reviewed.",
+  "lat": 31.28299,
+  "lng": -98.53616,
+  "loc_precision": "city",
+  "loc_note": "Asked for Texas, United States. Matched Texas, United States (city level, OSM rank 8). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": 31.2639,
+  "city_lng": -98.5456,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "cifr-colchis",
+  "name": "Colchis",
+  "operator": "Cipher Mining Inc.",
+  "operator_id": "cipher-digital-inc",
+  "owner": "Cipher Mining Inc. (~95%) joint venture",
+  "country": "United States",
+  "city": "West Texas",
+  "status": "announced",
+  "it_load_mw_raw": "1 GW direct connect with American Electric Power",
+  "power_source": "American Electric Power direct connect",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/aws-signs-300mw-hosting-deal-to-lease-capacity-from-cipher-mining/"
+  ],
+  "notes": "620-acre site, target energization 2028. 1GW figure is the power agreement, not critical IT load, so it_load_mw is left null.",
+  "lat": 26.17171,
+  "lng": -98.1628,
+  "loc_precision": "exact",
+  "loc_note": "Asked for West Texas, United States. Matched West Texas, San Juan South Estates Colonia, San Juan, Hidalgo County,  (exact level, OSM rank 26). Not the building."
+ },
+ {
+  "site_id": "hut8-beacon-point",
+  "name": "Beacon Point",
+  "operator": "Hut 8 Corp.",
+  "operator_id": "hut-8-corp",
+  "owner": "Hut 8 Corp.",
+  "country": "United States",
+  "city": "Nueces County, Texas",
+  "status": "under_construction",
+  "it_load_mw": 704,
+  "it_load_mw_raw": "704 MW total contracted critical IT capacity (approximately 1 GW utility capacity); Phase 1 352 MW and Phase 2 352 MW",
+  "power_source": "AEP Texas",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090025/hut-20260630x10q.htm",
+   "https://www.prnewswire.com/news-releases/hut-8-fully-commercializes-1-gw-beacon-point-ai-data-center-campus-with-second-352-mw-it-lease-bringing-campus-level-base-term-contract-value-to-19-6-billion-302829514.html"
+  ],
+  "notes": "Campus-level base-term contract value ~$19.6bn. Initial energization Q1 2027; Phase 2 initial data hall delivery Q2 2028. Financed by the Beacon Point Notes.",
+  "lat": 27.71538,
+  "lng": -97.61999,
+  "loc_precision": "city",
+  "loc_note": "Asked for Nueces County, Texas, United States. Matched Nueces County, Texas, United States (city level, OSM rank 12). Not the building."
+ },
+ {
+  "site_id": "hut8-river-bend",
+  "name": "River Bend",
+  "operator": "Hut 8 Corp.",
+  "operator_id": "hut-8-corp",
+  "owner": "Hut 8 Corp.",
+  "country": "United States",
+  "city": "Louisiana",
+  "status": "under_construction",
+  "it_load_mw": 245,
+  "it_load_mw_raw": "245 megawatts of critical IT capacity supported by 330 megawatts of utility capacity",
+  "power_source": "Entergy Louisiana",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090025/hut-20260630x10q.htm",
+   "https://canada.hut8.com/resources/press-releases/hut-8-signs-15-year-245-mw-ai-data-center-lease-at-river-bend-campus-with-total-contract-value-of-usd7-0-billion"
+  ],
+  "notes": "Leased to Fluidstack for 15 years, $7.0bn base term, backstopped by Google. Right of first offer on up to 1,000MW more. Initial data hall completion Q2 2027. Financed by the River Bend Notes.",
+  "lat": 30.87039,
+  "lng": -92.00713,
+  "loc_precision": "city",
+  "loc_note": "Asked for Louisiana, United States. Matched Louisiana, United States (city level, OSM rank 8). Not the building."
+ },
+ {
+  "site_id": "hut8-vega",
+  "name": "Vega",
+  "operator": "Hut 8 Corp.",
+  "operator_id": "hut-8-corp",
+  "owner": "Hut 8 Corp.",
+  "country": "United States",
+  "city": "Amarillo, Texas",
+  "status": "live",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090025/hut-20260630x10q.htm"
+  ],
+  "notes": "ASIC Compute site primarily occupied by American Bitcoin miners; not AI capacity. MW not broken out per site in the Q2 2026 10-Q.",
+  "lat": 35.20729,
+  "lng": -101.83712,
+  "loc_precision": "city",
+  "loc_note": "Asked for Amarillo, Texas, United States. Matched Amarillo, Potter County, Texas, United States (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "hut8-salt-creek",
+  "name": "Salt Creek",
+  "operator": "Hut 8 Corp.",
+  "operator_id": "hut-8-corp",
+  "owner": "Hut 8 Corp.",
+  "country": "United States",
+  "city": "Orla, Texas",
+  "status": "live",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090025/hut-20260630x10q.htm"
+  ],
+  "notes": "ASIC Compute site primarily occupied by American Bitcoin miners; not AI capacity. MW not broken out per site in the Q2 2026 10-Q.",
+  "lat": 31.82501,
+  "lng": -103.90901,
+  "loc_precision": "exact",
+  "loc_note": "Asked for Orla, Texas, United States. Matched Orla, Reeves County, Texas, 79770, United States (exact level, OSM rank 19). Not the building."
+ },
+ {
+  "site_id": "hut8-alpha",
+  "name": "Alpha",
+  "operator": "Hut 8 Corp.",
+  "operator_id": "hut-8-corp",
+  "owner": "Hut 8 Corp.",
+  "country": "United States",
+  "city": "Niagara Falls, New York",
+  "status": "live",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090025/hut-20260630x10q.htm"
+  ],
+  "notes": "ASIC Compute site primarily occupied by American Bitcoin miners; not AI capacity. MW not broken out per site in the Q2 2026 10-Q.",
+  "lat": 43.08484,
+  "lng": -79.07018,
+  "loc_precision": "exact",
+  "loc_note": "Asked for Niagara Falls, New York, United States. Matched Niagara Falls, City of Niagara Falls, Niagara County, New York, United (exact level, OSM rank 20). Not the building."
+ },
+ {
+  "site_id": "hut8-medicine-hat",
+  "name": "Medicine Hat",
+  "operator": "Hut 8 Corp.",
+  "operator_id": "hut-8-corp",
+  "owner": "Hut 8 Corp.",
+  "country": "Canada",
+  "city": "Medicine Hat, Alberta",
+  "status": "live",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090025/hut-20260630x10q.htm"
+  ],
+  "notes": "ASIC Compute site primarily occupied by American Bitcoin miners; not AI capacity. MW not broken out per site in the Q2 2026 10-Q.",
+  "lat": 50.04303,
+  "lng": -110.67902,
+  "loc_precision": "city",
+  "loc_note": "Asked for Medicine Hat, Alberta, Canada. Matched Medicine Hat, Alberta, Canada (city level, OSM rank 12). Not the building."
+ },
+ {
+  "site_id": "hut8-drumheller",
+  "name": "Drumheller",
+  "operator": "Hut 8 Corp.",
+  "operator_id": "hut-8-corp",
+  "owner": "Hut 8 Corp.",
+  "country": "Canada",
+  "city": "Drumheller, Alberta",
+  "status": "live",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090025/hut-20260630x10q.htm"
+  ],
+  "notes": "ASIC Compute site primarily occupied by American Bitcoin miners; not AI capacity. MW not broken out per site in the Q2 2026 10-Q.",
+  "lat": 51.4016,
+  "lng": -112.61852,
+  "loc_precision": "city",
+  "loc_note": "Asked for Drumheller, Alberta, Canada. Matched Drumheller, Alberta, Canada (city level, OSM rank 12). Not the building."
+ },
+ {
+  "site_id": "hut8-king-mountain",
+  "name": "King Mountain",
+  "operator": "Hut 8 Corp.",
+  "operator_id": "hut-8-corp",
+  "owner": "50% joint venture",
+  "country": "United States",
+  "city": "McCamey, Texas",
+  "status": "live",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090025/hut-20260630x10q.htm"
+  ],
+  "notes": "ASIC Compute site held through a 50% joint venture. MW not disclosed.",
+  "lat": 31.13154,
+  "lng": -102.22233,
+  "loc_precision": "city",
+  "loc_note": "Asked for McCamey, Texas, United States. Matched McCamey, Upton County, Texas, 79752, United States (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "glxy-helios",
+  "name": "Helios",
+  "operator": "Galaxy Digital Inc.",
+  "operator_id": "galaxy-digital-inc",
+  "owner": "Galaxy Digital Inc.",
+  "country": "United States",
+  "city": "West Texas",
+  "status": "phased",
+  "it_load_mw": 526,
+  "it_load_mw_raw": "526 MW of critical IT load leased across Phases I-III; Phase I 133 MW (200 MW gross) delivered",
+  "source_urls": [
+   "https://www.prnewswire.com/news-releases/galaxy-completes-phase-i-of-its-helios-data-center-campus-delivering-133-megawatts-of-critical-it-load-to-coreweave-302818664.html",
+   "https://www.prnewswire.com/news-releases/galaxy-completes-ercot-interconnection-studies-and-secures-approval-for-additional-830-megawatts-at-helios-data-center-campus-doubling-total-approved-power-capacity-to-over-1-6-gigawatts-302662509.html"
+  ],
+  "notes": "2,200-acre campus, formerly a Galaxy bitcoin mine. Over 1.6GW of approved ERCOT power with potential to scale to 3.6GW. Every contracted megawatt is leased to a single tenant, CoreWeave, on 15-year terms with two five-year extensions.",
+  "lat": 26.17171,
+  "lng": -98.1628,
+  "loc_precision": "exact",
+  "loc_note": "Asked for West Texas, United States. Matched West Texas, San Juan South Estates Colonia, San Juan, Hidalgo County,  (exact level, OSM rank 26). Not the building."
+ },
+ {
+  "site_id": "riot-rockdale",
+  "name": "Rockdale Facility",
+  "operator": "Riot Platforms, Inc.",
+  "operator_id": "riot-platforms-inc",
+  "owner": "Riot Platforms, Inc.",
+  "country": "United States",
+  "city": "Rockdale, Texas",
+  "status": "phased",
+  "it_load_mw": 241,
+  "it_load_mw_raw": "241 MW of contracted critical IT load (AMD 50 MW plus 191 MW frontier AI lab); site provides up to ~700 MW of developed capacity for Bitcoin Mining and data center leasing",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1167419/000110465926093448/riot-20260630x10q.htm",
+   "https://www.riotplatforms.com/riot-platforms-reports-second-quarter-2026-financial-results-and-strategic-highlights/"
+  ],
+  "notes": "AMD lease has expansion potential to 200MW total. The 191MW frontier AI lab lease delivers 96MW by December 2027 and the full 191MW by June 2028. Riot bought the underlying land in 2025, ending its ground lease.",
+  "lat": 30.65494,
+  "lng": -97.00582,
+  "loc_precision": "city",
+  "loc_note": "Asked for Rockdale, Texas, United States. Matched Rockdale, Milam County, Texas, 76567, United States (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "riot-corsicana",
+  "name": "Corsicana Facility",
+  "operator": "Riot Platforms, Inc.",
+  "operator_id": "riot-platforms-inc",
+  "owner": "Riot Platforms, Inc.",
+  "country": "United States",
+  "city": "Corsicana, Texas",
+  "status": "under_construction",
+  "it_load_mw_raw": "up to approximately 400 MW of developed capacity today; approximately 1 GW expected on completion for high-density compute",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1167419/000110465926093448/riot-20260630x10q.htm",
+   "https://blockspace.media/insight/riot-platforms-signs-ai-lease-rockdale-2026/"
+  ],
+  "notes": "An LOI for a 1GW AI facility was announced with Q2 2026 results; counterparty not disclosed. Critical IT load for AI use not yet stated, so it_load_mw is null.",
+  "lat": 32.09382,
+  "lng": -96.46467,
+  "loc_precision": "city",
+  "loc_note": "Asked for Corsicana, Texas, United States. Matched Corsicana, Navarro County, Texas, United States (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "riot-kentucky",
+  "name": "Kentucky Facility",
+  "operator": "Riot Platforms, Inc.",
+  "operator_id": "riot-platforms-inc",
+  "owner": "Riot Platforms, Inc.",
+  "country": "United States",
+  "city": "Kentucky",
+  "status": "live",
+  "it_load_mw_raw": "approximately 192 MW of developed capacity",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1167419/000110465926093448/riot-20260630x10q.htm"
+  ],
+  "notes": "Bitcoin mining capacity; no AI tenant announced. Figure is developed capacity, not critical IT load.",
+  "lat": 37.59169,
+  "lng": -85.14492,
+  "loc_precision": "city",
+  "loc_note": "Asked for Kentucky, United States. Matched Kentucky, United States (city level, OSM rank 8). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": 37.5726,
+  "city_lng": -85.1551,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "keel-panther-creek",
+  "name": "Panther Creek",
+  "operator": "Keel Infrastructure Corp. (formerly Bitfarms Ltd.)",
+  "operator_id": "keel-infrastructure-corp-formerly-bitfarms-ltd",
+  "owner": "Keel Infrastructure Corp. (formerly Bitfarms Ltd.)",
+  "country": "United States",
+  "city": "Carbon County, Pennsylvania",
+  "status": "under_construction",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1812477/000181247726000023/keel-20260630.htm",
+   "https://www.datacenterdynamics.com/en/news/bitfarms-converts-debt-into-project-financing-to-develop-pennsylvania-data-center/"
+  ],
+  "notes": "Bitcoin mining ceased and assets accelerated-depreciated during 2026 as the sites are converted to liquid-cooled HPC/AI. No AI tenant publicly named. MW for AI use not disclosed. Panther Creek development is backed by a $300m Macquarie project financing plus a $50m draw and a partnership with T5 Data Centers.",
+  "lat": 40.89085,
+  "lng": -75.72129,
+  "loc_precision": "city",
+  "loc_note": "Asked for Carbon County, Pennsylvania, United States. Matched Carbon County, Pennsylvania, United States (city level, OSM rank 12). Not the building."
+ },
+ {
+  "site_id": "keel-scrubgrass",
+  "name": "Scrubgrass",
+  "operator": "Keel Infrastructure Corp. (formerly Bitfarms Ltd.)",
+  "operator_id": "keel-infrastructure-corp-formerly-bitfarms-ltd",
+  "owner": "Keel Infrastructure Corp. (formerly Bitfarms Ltd.)",
+  "country": "United States",
+  "city": "Venango County, Pennsylvania",
+  "status": "under_construction",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1812477/000181247726000023/keel-20260630.htm",
+   "https://www.datacenterdynamics.com/en/news/bitfarms-converts-debt-into-project-financing-to-develop-pennsylvania-data-center/"
+  ],
+  "notes": "Bitcoin mining ceased and assets accelerated-depreciated during 2026 as the sites are converted to liquid-cooled HPC/AI. No AI tenant publicly named. MW for AI use not disclosed. Panther Creek development is backed by a $300m Macquarie project financing plus a $50m draw and a partnership with T5 Data Centers.",
+  "lat": 41.39961,
+  "lng": -79.77094,
+  "loc_precision": "city",
+  "loc_note": "Asked for Venango County, Pennsylvania, United States. Matched Venango County, Pennsylvania, United States (city level, OSM rank 12). Not the building."
+ },
+ {
+  "site_id": "keel-sharon",
+  "name": "Sharon",
+  "operator": "Keel Infrastructure Corp. (formerly Bitfarms Ltd.)",
+  "operator_id": "keel-infrastructure-corp-formerly-bitfarms-ltd",
+  "owner": "Keel Infrastructure Corp. (formerly Bitfarms Ltd.)",
+  "country": "United States",
+  "city": "Sharon, Pennsylvania",
+  "status": "under_construction",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1812477/000181247726000023/keel-20260630.htm",
+   "https://www.datacenterdynamics.com/en/news/bitfarms-converts-debt-into-project-financing-to-develop-pennsylvania-data-center/"
+  ],
+  "notes": "Bitcoin mining ceased and assets accelerated-depreciated during 2026 as the sites are converted to liquid-cooled HPC/AI. No AI tenant publicly named. MW for AI use not disclosed. Panther Creek development is backed by a $300m Macquarie project financing plus a $50m draw and a partnership with T5 Data Centers.",
+  "lat": 41.23295,
+  "lng": -80.50781,
+  "loc_precision": "city",
+  "loc_note": "Asked for Sharon, Pennsylvania, United States. Matched Sharon, Mercer County, Pennsylvania, 16146, United States (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "keel-washington",
+  "name": "Washington State site",
+  "operator": "Keel Infrastructure Corp. (formerly Bitfarms Ltd.)",
+  "operator_id": "keel-infrastructure-corp-formerly-bitfarms-ltd",
+  "owner": "Keel Infrastructure Corp. (formerly Bitfarms Ltd.)",
+  "country": "United States",
+  "city": "Washington",
+  "status": "under_construction",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1812477/000181247726000023/keel-20260630.htm",
+   "https://www.datacenterdynamics.com/en/news/bitfarms-converts-debt-into-project-financing-to-develop-pennsylvania-data-center/"
+  ],
+  "notes": "Bitcoin mining ceased and assets accelerated-depreciated during 2026 as the sites are converted to liquid-cooled HPC/AI. No AI tenant publicly named. MW for AI use not disclosed. Panther Creek development is backed by a $300m Macquarie project financing plus a $50m draw and a partnership with T5 Data Centers.",
+  "lat": 38.8951,
+  "lng": -77.03638,
+  "loc_precision": "city",
+  "loc_note": "Asked for Washington, United States. Matched Washington, District of Columbia, United States (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "crusoe-abilene",
+  "name": "Abilene AI factory campus (Stargate)",
+  "operator": "Crusoe Energy Systems LLC",
+  "operator_id": "crusoe-energy-systems",
+  "owner": "Crusoe Energy Systems LLC",
+  "country": "United States",
+  "city": "Abilene, Texas",
+  "status": "phased",
+  "it_load_mw": 1200,
+  "it_load_mw_raw": "Phase 1 200+ MW; expansion to 1.2 GW across 8 buildings and ~4 million sq ft",
+  "power_source": "Behind-the-meter natural gas turbines with battery storage, plus planned solar and wind",
+  "source_urls": [
+   "https://www.datacenterfrontier.com/hyperscale/article/55276169/crusoe-adds-45-gw-natural-gas-to-fuel-ai-expands-abilene-data-center-to-12-gw",
+   "https://www.datacenterdynamics.com/en/news/crusoe-secures-116bn-in-debt-and-equity-for-openais-stargate-data-center-campus-in-abilene-texas/"
+  ],
+  "notes": "Built for OpenAI with Oracle as facility development partner. Crusoe raised $11.6bn of debt and equity against it. Construction began June 2024.",
+  "lat": 32.46549,
+  "lng": -99.73804,
+  "loc_precision": "city",
+  "loc_note": "Asked for Abilene, Texas, United States. Matched Abilene, Taylor County, Texas, United States (city level, OSM rank 16). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": 32.4464,
+  "city_lng": -99.7476,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "crusoe-abilene-microsoft",
+  "name": "Abilene Microsoft campus",
+  "operator": "Crusoe Energy Systems LLC",
+  "operator_id": "crusoe-energy-systems",
+  "owner": "Crusoe Energy Systems LLC",
+  "country": "United States",
+  "city": "Abilene, Texas",
+  "status": "under_construction",
+  "it_load_mw": 900,
+  "it_load_mw_raw": "900 MW; total projected capacity across the full Abilene site 2.1 GW",
+  "power_source": "900MW on-site power plant with medium-voltage battery energy storage",
+  "source_urls": [
+   "https://www.crusoe.ai/resources/newsroom/crusoe-announces-new-900-mw-ai-factory-campus-in-abilene-texas-to-support-microsoft-ai-infrastructure"
+  ],
+  "notes": "Adjacent to the existing Stargate campus and recorded separately to avoid double counting. First building energized mid-2027.",
+  "lat": 32.42731,
+  "lng": -99.75716,
+  "loc_precision": "city",
+  "loc_note": "Asked for Abilene, Texas, United States. Matched Abilene, Taylor County, Texas, United States (city level, OSM rank 16). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": 32.4464,
+  "city_lng": -99.7476,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "crusoe-project-jade",
+  "name": "Project Jade",
+  "operator": "Crusoe Energy Systems LLC",
+  "operator_id": "crusoe-energy-systems",
+  "owner": "Crusoe Energy Systems LLC",
+  "country": "United States",
+  "city": "Laramie County, Wyoming (Terry Ranch Road, south of Cheyenne)",
+  "status": "permitted",
+  "it_load_mw": 1800,
+  "it_load_mw_raw": "1.8GW data center campus, eventually scaling to 10GW",
+  "power_source": "Natural gas: 2.7GW of on-site generation via BFC Power and Cheyenne Power Hub, built by Tallgrass",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/crusoe-gets-go-ahead-for-18gw-data-center-campus-and-power-plant-in-cheyenne-wyoming/"
+  ],
+  "notes": "Approved by Laramie County on 6 January 2026. First buildings electrified 2027. ~$7bn Tallgrass investment; total project cost reported as potentially reaching $50bn. No tenant announced.",
+  "lat": 41.27373,
+  "lng": -104.72682,
+  "loc_precision": "city",
+  "loc_note": "Asked for Laramie County, Wyoming, United States. Matched Laramie County, Wyoming, United States (city level, OSM rank 12). Not the building."
+ },
+ {
+  "site_id": "nscale-loughton",
+  "name": "Loughton",
+  "operator": "Nscale Global Holdings Ltd",
+  "operator_id": "nscale",
+  "owner": "Nscale Global Holdings Ltd",
+  "country": "United Kingdom",
+  "city": "Loughton, Essex",
+  "status": "under_construction",
+  "it_load_mw": 50,
+  "it_load_mw_raw": "50MW facility, scalable to 90MW",
+  "chips_installed": [
+   "GB300"
+  ],
+  "source_urls": [
+   "https://www.nscale.com/press-releases/nscale-microsoft-2025"
+  ],
+  "notes": "23,000 Nvidia GB300 for Microsoft, delivery from Q1 2027.",
+  "lat": 51.64671,
+  "lng": 0.05441,
+  "loc_precision": "exact",
+  "loc_note": "Asked for Loughton, Essex, United Kingdom. Matched Loughton, Debden Green, Epping Forest, Essex, England, United Kingdom (exact level, OSM rank 20). Not the building."
+ },
+ {
+  "site_id": "nscale-texas",
+  "name": "Nscale Texas campus",
+  "operator": "Nscale Global Holdings Ltd",
+  "operator_id": "nscale",
+  "owner": "Nscale Global Holdings Ltd",
+  "country": "United States",
+  "city": "Texas",
+  "status": "under_construction",
+  "it_load_mw": 240,
+  "it_load_mw_raw": "~240MW facility, scalable to 1.2GW",
+  "chips_installed": [
+   "GB300"
+  ],
+  "source_urls": [
+   "https://www.nscale.com/press-releases/nscale-microsoft-2025"
+  ],
+  "notes": "104,000 Nvidia GB300 for Microsoft, delivery from Q3 2026. Exact city not disclosed in the announcement.",
+  "lat": 31.24481,
+  "lng": -98.55504,
+  "loc_precision": "city",
+  "loc_note": "Asked for Texas, United States. Matched Texas, United States (city level, OSM rank 8). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": 31.2639,
+  "city_lng": -98.5456,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "nscale-sines",
+  "name": "Sines",
+  "operator": "Nscale Global Holdings Ltd",
+  "operator_id": "nscale",
+  "owner": "Nscale Global Holdings Ltd",
+  "country": "Portugal",
+  "city": "Sines",
+  "status": "under_construction",
+  "chips_installed": [
+   "GB300"
+  ],
+  "source_urls": [
+   "https://www.nscale.com/press-releases/nscale-microsoft-2025"
+  ],
+  "notes": "12,600 Nvidia GB300 for Microsoft, delivery from Q1 2026. MW not disclosed.",
+  "lat": 37.95655,
+  "lng": -8.86896,
+  "loc_precision": "city",
+  "loc_note": "Asked for Sines, Portugal. Matched Sines, Set\u00fabal, Portugal (city level, OSM rank 14). Not the building."
+ },
+ {
+  "site_id": "nscale-narvik",
+  "name": "Narvik (Aker-Nscale JV)",
+  "operator": "Nscale Global Holdings Ltd",
+  "operator_id": "nscale",
+  "owner": "Aker-Nscale joint venture",
+  "country": "Norway",
+  "city": "Narvik",
+  "status": "under_construction",
+  "chips_installed": [
+   "GB300"
+  ],
+  "source_urls": [
+   "https://www.nscale.com/press-releases/nscale-microsoft-2025",
+   "https://www.nscale.com/press-releases/nscale-microsoft-norway"
+  ],
+  "notes": "52,000 Nvidia GB300 for Microsoft via the Aker ASA joint venture. MW not disclosed.",
+  "lat": 68.43838,
+  "lng": 17.4272,
+  "loc_precision": "city",
+  "loc_note": "Asked for Narvik, Norway. Matched Narvik, Nordland, 8517, Norway (city level, OSM rank 18). Not the building."
+ },
+ {
+  "site_id": "nscale-monarch-wv",
+  "name": "Monarch Compute Campus",
+  "operator": "Nscale Global Holdings Ltd",
+  "operator_id": "nscale",
+  "owner": "Nscale Global Holdings Ltd",
+  "country": "United States",
+  "city": "Mason County, West Virginia",
+  "status": "announced",
+  "it_load_mw": 1350,
+  "it_load_mw_raw": "1.35 gigawatts, with 8GW potential scalability; 2,250-acre site",
+  "power_source": "Off-grid Caterpillar G3500 series natural gas generator sets, with carbon sequestration planned",
+  "chips_installed": [
+   "VR200"
+  ],
+  "source_urls": [
+   "https://thenextweb.com/news/nscale-west-virginia-monarch-microsoft-vera-rubin"
+  ],
+  "notes": "Subject of a Microsoft letter of intent, not a signed lease. ~430,000 Nvidia Vera Rubin NVL72 units planned. Deliveries from late 2027, 2GW operational targeted H1 2028.",
+  "lat": 38.7499,
+  "lng": -82.05246,
+  "loc_precision": "city",
+  "loc_note": "Asked for Mason County, West Virginia, United States. Matched Mason County, West Virginia, United States (city level, OSM rank 12). Not the building."
+ },
+ {
+  "site_id": "nebius-vineland",
+  "name": "DataOne / Vineland campus",
+  "operator": "Nebius Group N.V.",
+  "operator_id": "nebius-group-n-v",
+  "country": "United States",
+  "city": "Vineland, New Jersey",
+  "status": "phased",
+  "it_load_mw": 300,
+  "it_load_mw_raw": "300MW (Phase 1 from summer 2025)",
+  "chips_installed": [
+   "GB300"
+  ],
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/nebius-signs-3bn-deal-with-meta-says-current-available-capacity-is-sold-out-as-it-targets-25gw-by-end-of-2026/",
+   "https://www.datacenterdynamics.com/en/news/microsoft-to-get-100000-nvidia-gb300s-under-nebius-deal-has-signed-more-than-33bn-in-capacity-agreements-with-neoclouds/"
+  ],
+  "notes": "Site for the Microsoft GB300 deployment. Vineland planning board approved a Phase 2 expansion in August 2026. Nebius occupies the DataOne facility rather than owning it.",
+  "lat": 39.48628,
+  "lng": -75.02543,
+  "loc_precision": "city",
+  "loc_note": "Asked for Vineland, New Jersey, United States. Matched Vineland, Cumberland County, New Jersey, United States (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "nebius-mantsala",
+  "name": "Mantsala",
+  "operator": "Nebius Group N.V.",
+  "operator_id": "nebius-group-n-v",
+  "owner": "Nebius Group N.V.",
+  "country": "Finland",
+  "city": "Mantsala",
+  "status": "live",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/nebius-signs-3bn-deal-with-meta-says-current-available-capacity-is-sold-out-as-it-targets-25gw-by-end-of-2026/"
+  ],
+  "notes": "Nebius's original owned European data centre. MW not disclosed in the sources reviewed.",
+  "lat": 60.63534,
+  "lng": 25.31593,
+  "loc_precision": "city",
+  "loc_note": "Asked for Mantsala, Finland. Matched M\u00e4nts\u00e4l\u00e4, Helsinki sub-region, Uusimaa, Mainland Finland, Finland (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "nebius-longcross",
+  "name": "Longcross Park",
+  "operator": "Nebius Group N.V.",
+  "operator_id": "nebius-group-n-v",
+  "country": "United Kingdom",
+  "city": "Longcross, Surrey",
+  "status": "live",
+  "it_load_mw_raw": "4,000 Nvidia B300 GPUs",
+  "chips_installed": [
+   "B300"
+  ],
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/nebius-signs-3bn-deal-with-meta-says-current-available-capacity-is-sold-out-as-it-targets-25gw-by-end-of-2026/"
+  ],
+  "notes": "UK deployment. MW not disclosed.",
+  "lat": 51.38528,
+  "lng": -0.59508,
+  "loc_precision": "exact",
+  "loc_note": "Asked for Longcross, Surrey, United Kingdom. Matched Longcross, Burma Road, Chobham, Borough of Runnymede, Surrey, England, (exact level, OSM rank 30). Not the building."
+ },
+ {
+  "site_id": "nebius-kansas-city",
+  "name": "Patmos Kansas City",
+  "operator": "Nebius Group N.V.",
+  "operator_id": "nebius-group-n-v",
+  "owner": "Patmos",
+  "country": "United States",
+  "city": "Kansas City, Missouri",
+  "status": "live",
+  "it_load_mw": 5,
+  "it_load_mw_raw": "5MW",
+  "chips_installed": [
+   "H200"
+  ],
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/nebius-signs-3bn-deal-with-meta-says-current-available-capacity-is-sold-out-as-it-targets-25gw-by-end-of-2026/"
+  ],
+  "notes": "Nvidia H200 cluster in a third-party facility.",
+  "lat": 39.1001,
+  "lng": -94.57814,
+  "loc_precision": "city",
+  "loc_note": "Asked for Kansas City, Missouri, United States. Matched Kansas City, Jackson County, Missouri, United States (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "nebius-paris",
+  "name": "Equinix Paris",
+  "operator": "Nebius Group N.V.",
+  "operator_id": "nebius-group-n-v",
+  "owner": "Equinix",
+  "country": "France",
+  "city": "Paris",
+  "status": "live",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/nebius-signs-3bn-deal-with-meta-says-current-available-capacity-is-sold-out-as-it-targets-25gw-by-end-of-2026/"
+  ],
+  "notes": "Colocation footprint inside an Equinix facility. MW not disclosed.",
+  "lat": 48.85889,
+  "lng": 2.32004,
+  "loc_precision": "city",
+  "loc_note": "Asked for Paris, France. Matched Paris, Ile-de-France, Metropolitan France, France (city level, OSM rank 15). Not the building."
+ },
+ {
+  "site_id": "nebius-israel",
+  "name": "Israel national supercomputer",
+  "operator": "Nebius Group N.V.",
+  "operator_id": "nebius-group-n-v",
+  "country": "Israel",
+  "status": "under_construction",
+  "it_load_mw_raw": "$140 million facility",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/nebius-signs-3bn-deal-with-meta-says-current-available-capacity-is-sold-out-as-it-targets-25gw-by-end-of-2026/"
+  ],
+  "notes": "National supercomputer project. MW not disclosed.",
+  "lat": 30.81242,
+  "lng": 34.85948,
+  "loc_precision": "country",
+  "loc_note": "Asked for Israel. Matched Israel (country level, OSM rank 4). Not the building."
+ },
+ {
+  "site_id": "coreweave-kenilworth",
+  "name": "Kenilworth (NEST) campus",
+  "operator": "CoreWeave, Inc.",
+  "operator_id": "coreweave-inc",
+  "owner": "CoreWeave joint venture with a third-party infrastructure developer",
+  "country": "United States",
+  "city": "Kenilworth, New Jersey",
+  "status": "under_construction",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+  ],
+  "notes": "Multi-phase campus; the only data centre in which CoreWeave holds a real-property ownership stake - it leases all its other sites. JV formed June 2025. MW not disclosed in the 10-Q.",
+  "lat": 40.67714,
+  "lng": -74.28707,
+  "loc_precision": "city",
+  "loc_note": "Asked for Kenilworth, New Jersey, United States. Matched Kenilworth, Union County, New Jersey, 07033, United States (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "vultr-springfield-ohio",
+  "name": "Vultr Ohio AI supercluster",
+  "operator": "Vultr (Constant Company, LLC)",
+  "operator_id": "vultr-constant-company-llc",
+  "country": "United States",
+  "city": "Springfield, Ohio",
+  "status": "announced",
+  "it_load_mw": 50,
+  "it_load_mw_raw": "50MW",
+  "chips_installed": [
+   "MI355X"
+  ],
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/vultr-plans-50mw-amd-mi355x-cluster-in-springfield-ohio/"
+  ],
+  "notes": "$1 billion investment for 24,000 AMD Instinct MI355X GPUs, announced 2 December 2025.",
+  "lat": 39.9234,
+  "lng": -83.81014,
+  "loc_precision": "city",
+  "loc_note": "Asked for Springfield, Ohio, United States. Matched Springfield, Clark County, Ohio, United States (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "digitalocean-atl1",
+  "name": "ATL1",
+  "operator": "DigitalOcean Holdings, Inc.",
+  "operator_id": "digitalocean-holdings-inc",
+  "country": "United States",
+  "city": "Atlanta, Georgia",
+  "status": "live",
+  "source_urls": [
+   "https://www.digitalocean.com/blog/introducing-new-atlanta-data-center"
+  ],
+  "notes": "DigitalOcean's AI-optimised data centre serving GPU Droplets. MW not disclosed.",
+  "lat": 33.77359,
+  "lng": -84.38009,
+  "loc_precision": "city",
+  "loc_note": "Asked for Atlanta, Georgia, United States. Matched Atlanta, Fulton County, Georgia, United States (city level, OSM rank 16). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": 33.7545,
+  "city_lng": -84.3898,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "wyfi-nc1",
+  "name": "NC-1",
+  "operator": "WhiteFiber, Inc.",
+  "operator_id": "whitefiber-inc",
+  "owner": "Enovum NC-1 Venture LLC / WhiteFiber, Inc.",
+  "country": "United States",
+  "city": "North Carolina",
+  "status": "under_construction",
+  "it_load_mw_raw": "24 MW (gross) contracted by September 2025, 40 MW (gross) by April 2026, at least 99 MW (gross) within four years; management believes up to 200 MW (gross) may be supportable",
+  "power_source": "Duke Energy Carolinas",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/2042022/000121390026088026/ea0300877-10q_whitefiber.htm"
+  ],
+  "notes": "Former Unifi Manufacturing site. Nscale is the sole contracted tenant, under an approximately $865m ten-year services agreement. Figures are gross utility power, not critical IT load, so it_load_mw is left null.",
+  "lat": 35.67296,
+  "lng": -79.03929,
+  "loc_precision": "city",
+  "loc_note": "Asked for North Carolina, United States. Matched North Carolina, United States (city level, OSM rank 8). Not the building."
+ },
+ {
+  "site_id": "wyfi-mtl-1",
+  "name": "MTL-1",
+  "operator": "WhiteFiber, Inc. (Enovum)",
+  "operator_id": "whitefiber-inc-enovum",
+  "owner": "Enovum Data Centers Corp",
+  "country": "Canada",
+  "city": "Montreal, Quebec",
+  "status": "live",
+  "it_load_mw_raw": "4 MW (gross) Tier-3 HPC data center",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/2042022/000121390026088026/ea0300877-10q_whitefiber.htm"
+  ],
+  "notes": "Acquired with Enovum on 11 October 2024; fully operational and fully leased at acquisition. Leased rather than owned. Gross MW, not critical IT load.",
+  "lat": 45.50318,
+  "lng": -73.56981,
+  "loc_precision": "city",
+  "loc_note": "Asked for Montreal, Quebec, Canada. Matched Montreal, Urban agglomeration of Montreal, Montreal (administrative re (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "wyfi-mtl-2",
+  "name": "MTL-2",
+  "operator": "WhiteFiber, Inc. (Enovum)",
+  "operator_id": "whitefiber-inc-enovum",
+  "owner": "Enovum MTL II LP",
+  "country": "Canada",
+  "city": "Pointe-Claire, Quebec",
+  "status": "under_construction",
+  "it_load_mw_raw": "5 MW (gross) Tier-3 build-to-suit expansion",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/2042022/000121390026088026/ea0300877-10q_whitefiber.htm"
+  ],
+  "notes": "160,000 sq ft former encapsulation manufacturing facility. Real estate acquired 27 December 2024 for CAD 33.5m (~$23.3m) with ~$23.6m of development spend planned.",
+  "lat": 45.45668,
+  "lng": -73.80674,
+  "loc_precision": "city",
+  "loc_note": "Asked for Pointe-Claire, Quebec, Canada. Matched Pointe-Claire, Urban agglomeration of Montreal, Montreal (administrati (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "wyfi-mtl-3",
+  "name": "MTL-3",
+  "operator": "WhiteFiber, Inc. (Enovum)",
+  "operator_id": "whitefiber-inc-enovum",
+  "owner": "Enovum Saint-Jerome LP",
+  "country": "Canada",
+  "city": "Saint-Jerome, Quebec",
+  "status": "under_construction",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/2042022/000121390026088026/ea0300877-10q_whitefiber.htm"
+  ],
+  "notes": "Property acquired 8 May 2026 on exercise of a purchase option under the data centre lease, for CAD 24.2m (~$17.3m) plus CAD 1.4m of transaction costs. MW not disclosed. Mortgaged under the RBC-led syndicated credit facility.",
+  "lat": 45.77804,
+  "lng": -74.00333,
+  "loc_precision": "city",
+  "loc_note": "Asked for Saint-Jerome, Quebec, Canada. Matched Saint-J\u00e9r\u00f4me, La Rivi\u00e8re-du-Nord, Laurentides, Quebec, Canada (city level, OSM rank 16). Not the building."
+ },
+ {
+  "site_id": "wyfi-iceland",
+  "name": "WhiteFiber Iceland",
+  "operator": "WhiteFiber, Inc.",
+  "operator_id": "whitefiber-inc",
+  "country": "Iceland",
+  "status": "live",
+  "it_load_mw": 5.5,
+  "it_load_mw_raw": "contracts executed for 5.5 MW IT load",
+  "power_source": "100% renewable, mainly the Blanda hydro power station",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/2042022/000121390026088026/ea0300877-10q_whitefiber.htm"
+  ],
+  "notes": "Cloud services site.",
+  "lat": 64.98418,
+  "lng": -18.1059,
+  "loc_precision": "country",
+  "loc_note": "Asked for Iceland. Matched Iceland (country level, OSM rank 4). Not the building."
+ },
+ {
+  "site_id": "wyfi-atlanta",
+  "name": "WhiteFiber Atlanta",
+  "operator": "WhiteFiber, Inc.",
+  "operator_id": "whitefiber-inc",
+  "country": "United States",
+  "city": "Atlanta, Georgia",
+  "status": "live",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/2042022/000121390026088026/ea0300877-10q_whitefiber.htm"
+  ],
+  "notes": "Leased capacity for cloud services; leases commenced February 2026. MW not disclosed.",
+  "lat": 33.73541,
+  "lng": -84.39951,
+  "loc_precision": "city",
+  "loc_note": "Asked for Atlanta, Georgia, United States. Matched Atlanta, Fulton County, Georgia, United States (city level, OSM rank 16). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": 33.7545,
+  "city_lng": -84.3898,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "sakura-ishikari-container-dc",
+  "name": "SAKURA internet Ishikari container-type data centre (H200)",
+  "operator": "SAKURA internet Inc.",
+  "operator_id": "sakura-internet-inc",
+  "owner": "SAKURA internet Inc.",
+  "country": "Japan",
+  "city": "Ishikari, Hokkaido",
+  "status": "live",
+  "it_load_mw_raw": "approx. 3.5 MVA (facility apparent power); 40 racks across two containers; about 1,000 NVIDIA H200 GPUs",
+  "chips_installed": [
+   "H200"
+  ],
+  "source_urls": [
+   "https://www.sakura.ad.jp/corporate/en/information/2025/08/14/1968220602/"
+  ],
+  "notes": "Company release of 14 Aug 2025. Capacity is given in MVA not MW and as facility power, so it_load_mw is null. Up to five 8-GPU H200 servers per rack with DLC. This is separate from the existing 'sakura-ishikari' record, which covers the main campus buildings.",
+  "lat": 43.15261,
+  "lng": 141.30494,
+  "loc_precision": "city",
+  "loc_note": "Asked for Ishikari, Hokkaido, Japan. Matched Ishikari, Ishikari Subprefecture, Hokkaido Prefecture, Hokkaido Region (city level, OSM rank 16). Not the building. Nudged about 2.3 km inside the city to separate it from the 1 other sites we know only to the same city.",
+  "city_lat": 43.1717,
+  "city_lng": 141.316,
+  "loc_scattered": 2
+ },
+ {
+  "site_id": "viettel-hoa-lac-hanoi",
+  "name": "Viettel Hoa Lac Data Center",
+  "operator": "Viettel IDC",
+  "operator_id": "viettel-idc",
+  "owner": "Viettel Group",
+  "country": "Vietnam",
+  "city": "Hoa Lac, Hanoi",
+  "status": "live",
+  "it_load_mw": 30,
+  "it_load_mw_raw": "a capacity of 30MW, the largest in Vietnam",
+  "power_source": "Committed to renewable energy for 30% of consumption",
+  "source_urls": [
+   "https://www.prnewswire.com/apac/news-releases/viettel-opens-the-largest-data-center-in-vietnam-implementing-green-tech-ready-for-ai-development-302114285.html"
+  ],
+  "notes": "Company release of 11 April 2024. General colocation marketed as AI-ready; no GPU deployment stated. Basis of the 30 MW (IT vs facility) not stated. Distinct from the Viettel Cu Chi (HCMC) 140 MW campus already recorded as under construction.",
+  "lat": 21.0149,
+  "lng": 105.50301,
+  "loc_precision": "city",
+  "loc_note": "Asked for Hoa Lac, Hanoi, Vietnam. Matched Ho\u00e0 L\u1ea1c, H\u00e0 N\u1ed9i, Vietnam (city level, OSM rank 18). Not the building."
+ },
+ {
+  "site_id": "pldt-vitro-sta-rosa-laguna",
+  "name": "PLDT VITRO Sta. Rosa",
+  "operator": "ePLDT / VITRO Inc.",
+  "operator_id": "epldt-vitro-inc",
+  "owner": "PLDT Inc.",
+  "country": "Philippines",
+  "city": "Santa Rosa, Laguna",
+  "status": "live",
+  "it_load_mw_raw": "capacity of up to 50 MW (full build); live phase MW not stated",
+  "source_urls": [
+   "https://www.bworldonline.com/corporate/2025/04/24/667912/pldt-launches-sta-rosa-data-center-finalizes-12th-site-in-cavite/"
+  ],
+  "notes": "BusinessWorld report of 24 April 2025 on the launch. The energised MW of the first phase is not stated, so it_load_mw is null; do not use the 50 MW ceiling as live capacity. GPU model and count not disclosed.",
+  "lat": 14.3146,
+  "lng": 121.1137,
+  "loc_precision": "city",
+  "loc_note": "Asked for Santa Rosa, Laguna, Philippines. Matched Santa Rosa, Laguna, Calabarzon, Philippines (city level, OSM rank 12). Not the building."
+ }
+]

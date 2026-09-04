@@ -1,0 +1,2045 @@
+[
+ {
+  "deal_id": "singapore-dc-cfa2-call-2025-12",
+  "deal_type": "D17",
+  "from_entity": "Singapore Economic Development Board and Infocomm Media Development Authority",
+  "to_entity": "data centre operators in Singapore",
+  "headline": "Singapore replaced its data centre moratorium with a competitive call for applications, offering at least 200 MW of new capacity to operators that meet strict green-power and efficiency rules.",
+  "notes": "This is the mechanism that replaced Singapore's 2019-2022 data centre moratorium. DC-CFA2 opened 1 December 2025 with applications due 31 March 2026. Conditions: best-in-class energy and IT efficiency, at least 50% of power from green sources (biomethane, hydrogen, low-carbon ammonia, solar or novel fuel cells), and PUE below 1.3 for new builds. The 2023 DC-CFA pilot awarded 80MW across AirTrunk-ByteDance, Equinix, GDS and Microsoft. A separate government initiative targets unlocking 300MW through energy efficiency measures; that 300MW is a different pool from this 200MW and the two must not be summed.",
+  "source_urls": [
+   "https://www.morganlewis.com/pubs/2026/03/singapore-announces-data-center-capacity-allocation-call",
+   "https://www.datacenterdynamics.com/en/news/singapore-to-unlock-300mw-of-data-center-capacity-through-industry-energy-efficiency-initiatives/"
+  ],
+  "geography": [
+   "Singapore"
+  ],
+  "mw": 200,
+  "h100e": 139860.1,
+  "h100e_basis": "200 MW / 1.43 kW per H100e",
+  "quantity_raw": "at least 200 MW",
+  "quantity_value": 200,
+  "quantity_unit": "MW",
+  "status": "operational",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2025-12-01",
+  "term_start": "2025-12",
+  "term_end": "2026-03",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "singapore-dc-cfa2-award-digital-realty-2026-08",
+  "deal_type": "D5",
+  "from_entity": "Singapore Economic Development Board and Infocomm Media Development Authority",
+  "to_entity": "Digital Realty",
+  "headline": "Singapore provisionally allocated Digital Realty 50 MW of new data centre capacity on Jurong Island.",
+  "notes": "Explicitly described as a provisional allocation, hence binding_status conditional. Conditions: at least 50% green power (biomethane, low-carbon ammonia, low-carbon hydrogen, and/or vertical building-integrated photovoltaics), liquid cooling, 100% energy-efficient IT equipment, Green Mark DC Platinum, and siting on Jurong Island. Digital Realty is NYSE-listed so its filings are the T1 check.",
+  "source_urls": [
+   "https://technode.global/2026/08/21/singapore-allocates-200-mw-of-new-data-center-capacity-to-digital-realty-equinix-keppel-st-telemedia/",
+   "https://technode.global/2026/08/25/uss-digital-realty-gets-provisional-allocation-of-50-mw-of-capacity-to-develop-a-new-data-center-in-singapore/"
+  ],
+  "geography": [
+   "Singapore"
+  ],
+  "site": "Jurong Island Low-Carbon Data Centre Park",
+  "mw": 50,
+  "h100e": 34965.0,
+  "h100e_basis": "50 MW / 1.43 kW per H100e",
+  "quantity_raw": "50 MW",
+  "quantity_value": 50,
+  "quantity_unit": "MW",
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "conditional",
+  "announced_date": "2026-08-21",
+  "captured_at": "2026-09-02",
+  "is_restatement": true,
+  "same_underlying_as": "singapore-dc-cfa2-call-2025-12"
+ },
+ {
+  "deal_id": "singapore-dc-cfa2-award-equinix-2026-08",
+  "deal_type": "D5",
+  "from_entity": "Singapore Economic Development Board and Infocomm Media Development Authority",
+  "to_entity": "Equinix",
+  "headline": "Singapore allocated Equinix 50 MW of new data centre capacity on Jurong Island.",
+  "notes": "Same conditions as the other three awards. Equinix also won capacity in the 2023 DC-CFA pilot, so its Singapore total is larger than 50MW.",
+  "source_urls": [
+   "https://technode.global/2026/08/21/singapore-allocates-200-mw-of-new-data-center-capacity-to-digital-realty-equinix-keppel-st-telemedia/"
+  ],
+  "geography": [
+   "Singapore"
+  ],
+  "site": "Jurong Island Low-Carbon Data Centre Park",
+  "mw": 50,
+  "h100e": 34965.0,
+  "h100e_basis": "50 MW / 1.43 kW per H100e",
+  "quantity_raw": "50 MW",
+  "quantity_value": 50,
+  "quantity_unit": "MW",
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "conditional",
+  "announced_date": "2026-08-21",
+  "captured_at": "2026-09-02",
+  "is_restatement": true,
+  "same_underlying_as": "singapore-dc-cfa2-call-2025-12"
+ },
+ {
+  "deal_id": "singapore-dc-cfa2-award-keppel-2026-08",
+  "deal_type": "D5",
+  "from_entity": "Singapore Economic Development Board and Infocomm Media Development Authority",
+  "to_entity": "Keppel Data Centres",
+  "headline": "Singapore allocated Keppel Data Centres 50 MW of new data centre capacity on Jurong Island.",
+  "notes": "Same conditions as the other three awards.",
+  "source_urls": [
+   "https://technode.global/2026/08/21/singapore-allocates-200-mw-of-new-data-center-capacity-to-digital-realty-equinix-keppel-st-telemedia/"
+  ],
+  "geography": [
+   "Singapore"
+  ],
+  "site": "Jurong Island Low-Carbon Data Centre Park",
+  "mw": 50,
+  "h100e": 34965.0,
+  "h100e_basis": "50 MW / 1.43 kW per H100e",
+  "quantity_raw": "50 MW",
+  "quantity_value": 50,
+  "quantity_unit": "MW",
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "conditional",
+  "announced_date": "2026-08-21",
+  "captured_at": "2026-09-02",
+  "is_restatement": true,
+  "same_underlying_as": "singapore-dc-cfa2-call-2025-12"
+ },
+ {
+  "deal_id": "singapore-dc-cfa2-award-stt-gdc-2026-08",
+  "deal_type": "D5",
+  "from_entity": "Singapore Economic Development Board and Infocomm Media Development Authority",
+  "to_entity": "ST Telemedia Global Data Centres",
+  "headline": "Singapore allocated ST Telemedia Global Data Centres 50 MW of new data centre capacity on Jurong Island.",
+  "notes": "Same conditions as the other three awards. EDB and IMDA said they would review the need for another Call for Application in 18 to 24 months, i.e. roughly Q1 2028 to Q3 2028.",
+  "source_urls": [
+   "https://technode.global/2026/08/21/singapore-allocates-200-mw-of-new-data-center-capacity-to-digital-realty-equinix-keppel-st-telemedia/"
+  ],
+  "geography": [
+   "Singapore"
+  ],
+  "site": "Jurong Island Low-Carbon Data Centre Park",
+  "mw": 50,
+  "h100e": 34965.0,
+  "h100e_basis": "50 MW / 1.43 kW per H100e",
+  "quantity_raw": "50 MW",
+  "quantity_value": 50,
+  "quantity_unit": "MW",
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "conditional",
+  "announced_date": "2026-08-21",
+  "captured_at": "2026-09-02",
+  "is_restatement": true,
+  "same_underlying_as": "singapore-dc-cfa2-call-2025-12"
+ },
+ {
+  "deal_id": "tnb-tm-nxera-esa-280mw-2026-01",
+  "deal_type": "D5",
+  "from_entity": "Tenaga Nasional Berhad",
+  "to_entity": "TM Nxera",
+  "headline": "Malaysia's national utility agreed to supply 280 MW of grid power to TM Nxera's AI data centre campus in Johor.",
+  "notes": "280MW is the grid supply figure and 200MW the AI IT capacity it supports; do not treat them as additive. Initial phase 64MW with campus operations anticipated in 2026; ground broken July 2024. Both TNB and TM are Bursa-listed, so their announcements are the T1 check.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/tm-nxera-signs-280mw-electrical-supply-agreement-with-tnb-to-power-malaysian-data-center-campus/"
+  ],
+  "geography": [
+   "Malaysia"
+  ],
+  "site": "TM Nxera Iskandar Puteri data centre campus",
+  "mw": 280,
+  "h100e": 195804.2,
+  "h100e_basis": "280 MW / 1.43 kW per H100e",
+  "quantity_raw": "280MW total; 200MW AI data center capacity",
+  "quantity_value": 280,
+  "quantity_unit": "MW",
+  "status": "signed",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2026-01-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "tnb-racks-central-esa-100mw-2026-04",
+  "deal_type": "D5",
+  "from_entity": "Tenaga Nasional Berhad",
+  "to_entity": "Racks Central Pte Ltd",
+  "headline": "Malaysia's national utility agreed to supply 100 MW to the first phase of Racks Central's AI data centre campus in Johor.",
+  "notes": "Described as long-term but the term length is not stated. Additional phases planned but not detailed. Racks Central has separate MoUs with renewable energy suppliers. CEO Bobby Wee explicitly named 'reliable large-scale power' alongside proximity to Singapore as the reason for choosing Johor, which is the clearest statement in this dataset that power, not chips, is the siting constraint.",
+  "source_urls": [
+   "https://www.rackscentral.com/news/tnb-and-racks-central-sign-electricity-supply-agreement-for-johor-ai-data-center-campus"
+  ],
+  "geography": [
+   "Malaysia"
+  ],
+  "site": "Racks Central Johor Campus",
+  "mw": 100,
+  "h100e": 69930.1,
+  "h100e_basis": "100 MW / 1.43 kW per H100e",
+  "quantity_raw": "100 megawatts (MW), Phase 1",
+  "quantity_value": 100,
+  "quantity_unit": "MW",
+  "status": "signed",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2026-04-22",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "tnb-data-centre-esa-portfolio-7100mw",
+  "deal_type": "D5",
+  "from_entity": "Tenaga Nasional Berhad",
+  "to_entity": "49 data centre projects in Peninsular Malaysia",
+  "headline": "Malaysia's utility has signed electricity supply agreements totalling 7,100 MW with 49 data centre projects, but only about 850 MW had actually been energised by October 2025.",
+  "notes": "The single most important power number in this slice: contracted grid supply exceeds energised load by roughly 8x, so Malaysian MW pipeline figures should be discounted heavily. 7,100MW is more than a quarter of Peninsular Malaysia's roughly 27,000MW installed capacity. TNB allocated RM42.8bn (about $10bn) for grid upgrades from July 2025 through December 2027. Grid connection takes 12 months under the Green Lane Pathway versus 36 to 48 months standard. announced_date is a placeholder for the reporting period, not a specific announcement; the underlying figures are as of October 2025 and were reported in 2026. Aggregate figure: this will overlap with the individual TNB ESA records above.",
+  "source_urls": [
+   "https://bizruption.asia/asia-in-focus/malaysia-data-centre-grid-water-constraint-2026/",
+   "https://www.datacenterdynamics.com/en/analysis/the-past-present-and-future-of-johor/"
+  ],
+  "geography": [
+   "Malaysia"
+  ],
+  "mw": 7100,
+  "h100e": 4965035.0,
+  "h100e_basis": "7,100 MW / 1.43 kW per H100e",
+  "quantity_raw": "7,100 MW across 49 data centre projects; 850 MW of load actually energised by October 2025",
+  "quantity_value": 7100,
+  "quantity_unit": "MW",
+  "status": "in_progress",
+  "confidence": "T4",
+  "binding_status": "binding",
+  "announced_date": "2026-01-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "johor-water-cooled-expansion-deferral-2025-11",
+  "deal_type": "D17",
+  "from_entity": "Malaysian water regulator and Johor state authorities",
+  "to_entity": "data centre operators in Johor, Selangor and Negeri Sembilan",
+  "headline": "Malaysian authorities deferred water-cooled data centre expansion projects until at least mid-2027 because of drought pressure, having already approved less than a fifth of water applications.",
+  "notes": "Water, not power, is the harder near-term constraint in Johor on these numbers: demand of 808 million litres per day against 142 million litres of delivered supply, a 5.7x shortfall. announced_date set to the month stated; no exact day given. Single-source; would benefit from confirmation against a Malaysian regulator publication.",
+  "source_urls": [
+   "https://bizruption.asia/asia-in-focus/malaysia-data-centre-grid-water-constraint-2026/"
+  ],
+  "geography": [
+   "Malaysia"
+  ],
+  "quantity_raw": "less than 18% of applications approved from 101 data centres; 808 million litres per day required against 142 million litres delivered",
+  "status": "in_progress",
+  "confidence": "T4",
+  "binding_status": "binding",
+  "announced_date": "2025-11-01",
+  "term_start": "2025-11",
+  "term_end": "2027-06",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "johor-tier1-tier2-approval-halt-2025-12",
+  "deal_type": "D17",
+  "from_entity": "Johor state government",
+  "to_entity": "data centre developers in Johor",
+  "headline": "Johor stopped approving Tier 1 and Tier 2 data centres, requiring operators to use reclaimed water instead of municipal supply and to pay the full cost of grid and water upgrades themselves.",
+  "notes": "Shifts the cost of infrastructure upgrades from the state to developers, which materially changes Johor project economics. announced_date set to the month stated; no exact day given. Single-source.",
+  "source_urls": [
+   "https://bizruption.asia/asia-in-focus/malaysia-data-centre-grid-water-constraint-2026/"
+  ],
+  "geography": [
+   "Malaysia"
+  ],
+  "quantity_raw": "not quantified",
+  "status": "in_progress",
+  "confidence": "T4",
+  "binding_status": "binding",
+  "announced_date": "2025-12-01",
+  "term_start": "2025-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": true,
+  "same_underlying_as": "johor-water-cooled-expansion-deferral-2025-11"
+ },
+ {
+  "deal_id": "firmus-pln-batam-ppa-450mw",
+  "deal_type": "D5",
+  "from_entity": "PLN Batam",
+  "to_entity": "DayOne (for the Firmus Batam AI factory campus)",
+  "headline": "Batam's utility signed a 450 MW power purchase agreement underpinning the DayOne campus that will host Firmus's 170,000-GPU AI factory.",
+  "notes": "450MW grid supply against a 360MW campus IT figure; the two are different measures. Batam runs a separate grid from Java-Bali, which is a large part of why Singapore-adjacent AI load is going there rather than to Singapore or Johor. announced_date taken from the June 2026 announcement window; the exact signing date is not published.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/firmus-to-deploy-170000-gpu-cluster-in-batam-indonesia/",
+   "https://www.datacentermap.com/indonesia/batam/"
+  ],
+  "geography": [
+   "Indonesia"
+  ],
+  "site": "DayOne Kabil Tech Park, Batam",
+  "mw": 450,
+  "h100e": 314685.3,
+  "h100e_basis": "450 MW / 1.43 kW per H100e",
+  "quantity_raw": "450MW power purchase agreement with PLN Batam",
+  "quantity_value": 450,
+  "quantity_unit": "MW",
+  "status": "signed",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2026-06-29",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "firmus-gunvor-south-australia-600mw-2026-06",
+  "deal_type": "D5",
+  "from_entity": "Gunvor Group",
+  "to_entity": "Firmus Technologies",
+  "headline": "Gunvor agreed to supply Firmus with 600 MW of firm electricity in South Australia for twelve years, backed by 1.2 GW of new renewable generation and 1.5 GWh of new batteries.",
+  "notes": "This is the clearest example in the region of generation being built specifically for a data centre: 1.2GW of new renewables and 1.5GWh of batteries by 2032, including the Koolunga BESS near Brinkworth at 200MW/800MWh, which is more than half of initial firming. Firmus commits to demand response, cutting consumption for up to 220 hours a year at peak wholesale prices. Firmus states 2.7GW planned for South Australian expansion overall. announced_date set to the month stated; no exact day given.",
+  "source_urls": [
+   "https://firmus.co/newsroom/firmus-secures-600-mw-energy-supply-agreement-in-south-australia-linked-to-1-2-gw-of-new-renewable-generation-and-battery-storage"
+  ],
+  "geography": [
+   "Australia"
+  ],
+  "site": "Firmus Tailem Bend and Stirling North AI Factory campuses",
+  "mw": 600,
+  "h100e": 419580.4,
+  "h100e_basis": "600 MW / 1.43 kW per H100e",
+  "quantity_raw": "600 MW of firm electricity; 1.2 GW of new renewable generation and 1.5 GWh of new battery storage by 2032",
+  "quantity_value": 600,
+  "quantity_unit": "MW",
+  "status": "signed",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2026-06-01",
+  "term_start": "2026-06",
+  "term_years": 12,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "ytl-kulai-solar-500mw",
+  "deal_type": "D5",
+  "from_entity": "YTL Power International Berhad (self-supply)",
+  "to_entity": "YTL AI Cloud / YTL Green Data Center Park",
+  "headline": "YTL is building a 500 MW solar plant to power its Kulai AI data centre campus, with 600 MW of grid supply as backup.",
+  "notes": "Generation built specifically for a data centre. The '300 MW already built and commissioned on-site' phrasing is ambiguous in the source between data centre capacity and solar capacity; recorded verbatim rather than resolved. YTL Power is Bursa-listed so its annual report is the T1 check. announced_date set to the month of the report.",
+  "source_urls": [
+   "https://w.media/ytl-power-completes-nvidia-powered-ai-data-centre-in-johor/"
+  ],
+  "geography": [
+   "Malaysia"
+  ],
+  "site": "YTL Green Data Center Park, Kulai",
+  "mw": 500,
+  "h100e": 349650.3,
+  "h100e_basis": "500 MW / 1.43 kW per H100e",
+  "quantity_raw": "500 MW solar plant planned; 600 MW backup supply from the national grid; 300 MW already built and commissioned on site",
+  "quantity_value": 500,
+  "quantity_unit": "MW",
+  "status": "in_progress",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2025-11-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "ctrls-hyderabad-250mw-sanctioned-power",
+  "deal_type": "D5",
+  "from_entity": "Telangana power authorities",
+  "to_entity": "CtrlS Datacenters Limited",
+  "headline": "CtrlS secured 250 MW of sanctioned power for the first phase of its 40-acre Hyderabad campus, with a dedicated substation expandable to 900 MW.",
+  "notes": "One of the few Indian records where power was explicitly secured ahead of construction. The granting authority is not named in the source; 'Telangana power authorities' is a descriptive placeholder, not a verified counterparty name.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/ctrls-to-build-40-acre-data-center-campus-near-hyderabad-india/"
+  ],
+  "geography": [
+   "India"
+  ],
+  "site": "CtrlS Chandanvelly campus, Hyderabad",
+  "mw": 250,
+  "h100e": 174825.2,
+  "h100e_basis": "250 MW / 1.43 kW per H100e",
+  "quantity_raw": "250MW of sanctioned power capacity secured for the first phase; dedicated Gas Insulated Substation expandable to 900MW",
+  "quantity_value": 250,
+  "quantity_unit": "MW",
+  "status": "signed",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2025-01-21",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "centuria-resetdata-72mw-generation-2026-08",
+  "deal_type": "D5",
+  "from_entity": "Centuria Capital Group / ResetData (self-supply)",
+  "to_entity": "ResetData AI factories",
+  "headline": "Centuria and ResetData secured 72 MW of their own generation, expandable to 102 MW, to skip Australia's multi-year grid connection queue.",
+  "notes": "Explicitly framed as bypassing Australia's typical two-to-five-year grid interconnection queue, pulling deployment forward from 2030 to 2028. The source also says Australia has mandatory net-generator legislation for large AI data centres expected in early 2027; that is a forward-looking claim and is recorded separately. Centuria is ASX-listed so its announcements are the T1 check; this secondary source should be confirmed against them.",
+  "source_urls": [
+   "https://www.techtimes.com/articles/324256/20260813/centuria-locks-165m-gpu-debt-72mw-power-sovereign-ai-pipeline-moves-two-years-closer.htm"
+  ],
+  "geography": [
+   "Australia"
+  ],
+  "mw": 72,
+  "h100e": 50349.7,
+  "h100e_basis": "72 MW / 1.43 kW per H100e",
+  "quantity_raw": "72MW of dedicated generation units, expandable to 102MW total",
+  "quantity_value": 72,
+  "quantity_unit": "MW",
+  "status": "signed",
+  "confidence": "T4",
+  "binding_status": "binding",
+  "announced_date": "2026-08-13",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "australia-net-generator-requirement-2027",
+  "deal_type": "D17",
+  "from_entity": "Australian federal government",
+  "to_entity": "large-scale AI data centre operators in Australia",
+  "headline": "Australia is expected to require large AI data centres to be net generators of electricity, with legislation anticipated in early 2027.",
+  "notes": "SPECULATIVE. Described in a secondary source as 'legislation expected in early 2027'; no bill, department or reading was named and this was not confirmed against any Australian government source. Recorded because if real it reshapes the economics of every Australian AI data centre, but it should not be relied on without primary confirmation.",
+  "source_urls": [
+   "https://www.techtimes.com/articles/324256/20260813/centuria-locks-165m-gpu-debt-72mw-power-sovereign-ai-pipeline-moves-two-years-closer.htm"
+  ],
+  "geography": [
+   "Australia"
+  ],
+  "quantity_raw": "not quantified",
+  "status": "announced",
+  "confidence": "T4",
+  "binding_status": "speculative",
+  "announced_date": "2026-08-13",
+  "term_start": "2027-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "firmus-nvidia-batam-ai-factory-2026-06",
+  "deal_type": "D6",
+  "from_entity": "Firmus Technologies with NVIDIA and DayOne",
+  "to_entity": "Indonesia (Batam)",
+  "headline": "Firmus and NVIDIA will build a 360 MW AI factory campus in Batam holding 170,000 GPUs, the largest single AI compute build announced in Southeast Asia.",
+  "notes": "GPU rollout through 2027 and 2028; agreement runs through 2034. Chips described as Grace Blackwell, Vera Rubin and 'Vera AI'; recorded as GB300 and Vera Rubin, though the exact Grace Blackwell SKU is not stated. Firmus targets 1.3GW total in Indonesia over time and roughly 1.6GW globally by 2028. announced_date taken from the late-June 2026 announcement window.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/firmus-to-deploy-170000-gpu-cluster-in-batam-indonesia/",
+   "https://firmus.co/newsroom/firmus-to-build-170-000-gpu-ai-factor-y-campus-with-nvidia-for-global-ai-natives",
+   "https://techwireasia.com/2026/06/nvidia-firmus-batam-ai-data-centre/"
+  ],
+  "geography": [
+   "Indonesia"
+  ],
+  "site": "DayOne Kabil Tech Park, Batam",
+  "mw": 360,
+  "h100e": 251748.3,
+  "h100e_basis": "360 MW / 1.43 kW per H100e",
+  "quantity_raw": "170,000 GPUs at a 360MW campus",
+  "quantity_value": 360,
+  "quantity_unit": "MW",
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2026-06-29",
+  "term_start": "2026-06",
+  "term_end": "2034-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "firmus-nvidia-batam-offtake-30bn",
+  "deal_type": "D7",
+  "from_entity": "unnamed AI-native customers",
+  "to_entity": "Firmus Technologies",
+  "headline": "Firmus says it has between $25 billion and $30 billion of committed compute offtake for the Batam campus over its first six years.",
+  "notes": "usd_value left null because the figure is a $25bn-$30bn range and an estimate by Firmus itself, not a signed contract total. No customers are named. DOUBLE-COUNT RISK: this is the revenue side of the same underlying Batam project as firmus-nvidia-batam-ai-factory-2026-06.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/firmus-to-deploy-170000-gpu-cluster-in-batam-indonesia/",
+   "https://www.techtimes.com/articles/319367/20260630/firmus-taps-nvidia-170000-gpu-indonesia-campus-30b-compute-deal.htm"
+  ],
+  "geography": [
+   "Indonesia"
+  ],
+  "site": "DayOne Kabil Tech Park, Batam",
+  "quantity_raw": "between $25bn and $30bn in committed offtake agreements over the first six years",
+  "quantity_unit": "USD",
+  "status": "announced",
+  "confidence": "T4",
+  "binding_status": "non_binding",
+  "announced_date": "2026-06-29",
+  "term_years": 6,
+  "captured_at": "2026-09-02",
+  "is_restatement": true,
+  "same_underlying_as": "firmus-nvidia-batam-ai-factory-2026-06"
+ },
+ {
+  "deal_id": "openai-nextdc-sydney-mou-2025-12",
+  "deal_type": "D16",
+  "from_entity": "NEXTDC Limited",
+  "to_entity": "OpenAI",
+  "headline": "OpenAI signed a memorandum of understanding to take capacity at NEXTDC's proposed 612 MW Sydney AI campus, with an option to scale.",
+  "notes": "An MoU, not a contract: binding_status LOI. The 612MW figure is the campus, not OpenAI's booking, which is undisclosed. Development reported at A$7bn / US$4.6bn. Still in planning with an Environmental Impact Statement in preparation and assessment as a NSW State Significant Development; first phase projected ready for service H2 2027, expansions through 2031. announced_date set to the month stated. NEXTDC is ASX-listed so its announcements are the T1 check.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/australian-stargate-data-center-in-sydney-will-offer-612mw-of-capacity/",
+   "https://www.nextdc.com/news/building-the-next-generation-of-sovereign-ai-infrastructure-in-australia",
+   "https://baxtel.com/data-center/openai-stargate-sydney-campus"
+  ],
+  "geography": [
+   "Australia"
+  ],
+  "site": "NEXTDC S7 Eastern Creek",
+  "mw": 612,
+  "h100e": 427972.0,
+  "h100e_basis": "612 MW / 1.43 kW per H100e",
+  "quantity_raw": "612MW campus capacity; OpenAI capacity share not disclosed",
+  "quantity_value": 612,
+  "quantity_unit": "MW",
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "LOI",
+  "announced_date": "2025-12-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "nextdc-s7-eastern-creek-development-2026-03",
+  "deal_type": "D6",
+  "from_entity": "NEXTDC Limited",
+  "to_entity": "Australia (New South Wales)",
+  "headline": "NEXTDC lodged plans for a 612 MW, nine-building AI data centre campus at Eastern Creek in western Sydney.",
+  "notes": "Land of 255,135 sqm acquired October 2024 for A$353m (US$244m). Submitted mid-March 2026; announced_date approximates that to the 15th, and the day should not be relied on. Conditional on NSW planning approval.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/australian-stargate-data-center-in-sydney-will-offer-612mw-of-capacity/"
+  ],
+  "geography": [
+   "Australia"
+  ],
+  "site": "NEXTDC S7 Eastern Creek",
+  "mw": 612,
+  "h100e": 427972.0,
+  "h100e_basis": "612 MW / 1.43 kW per H100e",
+  "quantity_raw": "612MW of capacity across nine data center buildings and a substation",
+  "quantity_value": 612,
+  "quantity_unit": "MW",
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "conditional",
+  "announced_date": "2026-03-15",
+  "captured_at": "2026-09-02",
+  "is_restatement": true,
+  "same_underlying_as": "openai-nextdc-sydney-mou-2025-12"
+ },
+ {
+  "deal_id": "sk-aws-ulsan-ai-dc-2025-06",
+  "deal_type": "D6",
+  "from_entity": "SK Group (SK Telecom, SK Broadband) and Amazon Web Services",
+  "to_entity": "South Korea (Ulsan)",
+  "headline": "SK Group and AWS are building South Korea's largest data centre at Ulsan, reaching 103 MW and 60,000 GPUs, with a stated path to 1 GW.",
+  "notes": "usd_value 5.11bn is Korea's Ministry of Science figure for total national investment (7 trillion won); AWS is reported at roughly $4bn and SK Telecom/SK Broadband at 3.4 trillion won ($2.5bn) in AI by 2028, so these overlap and must not be summed. Sited at Mipo National Industrial Complex for access to large-scale electricity near SK Gas's LNG combined heat and power plant. Inauguration June 2025, groundbreaking August 2025. GPU models undisclosed.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/sk-group-and-aws-to-build-ai-data-center-in-ulsan-south-korea/",
+   "https://news.sktelecom.com/en/1960",
+   "https://www.kedglobal.com/tech,-media-telecom/newsView/ked202506160002"
+  ],
+  "geography": [
+   "South Korea"
+  ],
+  "site": "SK-AWS Ulsan AI Data Center",
+  "mw": 103,
+  "h100e": 72028.0,
+  "h100e_basis": "103 MW / 1.43 kW per H100e",
+  "usd_value": 5110000000,
+  "quantity_raw": "60,000 GPUs; 41MW by November 2027 expanding to 103MW by February 2029, with potential future expansion to 1GW",
+  "quantity_value": 103,
+  "quantity_unit": "MW",
+  "status": "in_progress",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2025-06-16",
+  "term_start": "2025-08",
+  "term_end": "2029-02",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "skt-kkr-ulsan-stake-sale-2026",
+  "deal_type": "D9",
+  "from_entity": "SK Telecom Co., Ltd.",
+  "to_entity": "KKR-led consortium",
+  "headline": "SK Telecom moved to sell a 49% stake in its Ulsan AI data centre to a KKR-led consortium.",
+  "notes": "WEAK: only the headline of this report was captured ('nears sale'), so the deal is not confirmed as signed and no value or date was verified. announced_date is a placeholder. SK Telecom is KRX-listed; a disclosure filing would settle this and should be checked before the record is used.",
+  "source_urls": [
+   "https://mlq.ai/news/sk-telecom-nears-sale-of-49-stake-in-ulsan-ai-data-center-to-kkr-led-consortium/"
+  ],
+  "geography": [
+   "South Korea"
+  ],
+  "site": "SK-AWS Ulsan AI Data Center",
+  "quantity_raw": "49% stake",
+  "quantity_value": 49,
+  "status": "announced",
+  "confidence": "T4",
+  "binding_status": "non_binding",
+  "announced_date": "2026-01-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": true,
+  "same_underlying_as": "sk-aws-ulsan-ai-dc-2025-06"
+ },
+ {
+  "deal_id": "skt-15gw-ai-dc-target-2035",
+  "deal_type": "D7",
+  "from_entity": "SK Telecom Co., Ltd.",
+  "to_entity": "market",
+  "headline": "SK Telecom set a target of 15 GW of AI data centre capacity by 2035.",
+  "notes": "A corporate ambition a decade out, not a contracted pipeline: binding_status speculative. For scale, 15GW alone would be more than half the entire 26.5GW APAC development pipeline that Cushman & Wakefield recorded for H1 2026. announced_date set to the month of reporting.",
+  "source_urls": [
+   "https://www.koreaherald.com/article/10798417",
+   "https://www.chinatechnews.com/2026/07/05/124918-sk-telecom-pursues-15gw-ai-data-center-buildout-aiming-to-become-asias-ai-infrastructure-hub"
+  ],
+  "geography": [
+   "South Korea"
+  ],
+  "mw": 15000.0,
+  "h100e": 10489510.5,
+  "h100e_basis": "15,000 MW / 1.43 kW per H100e",
+  "quantity_raw": "15 GW AI data center capacity by 2035",
+  "quantity_value": 15,
+  "quantity_unit": "GW",
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "speculative",
+  "announced_date": "2026-07-01",
+  "term_end": "2035-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "korea-nvidia-250k-gpu-programme-2025-10",
+  "deal_type": "D2",
+  "from_entity": "NVIDIA Corporation",
+  "to_entity": "South Korean government and industry",
+  "headline": "NVIDIA agreed to deploy more than a quarter of a million GPUs across South Korea's government, cloud providers and industrial groups.",
+  "notes": "PARENT RECORD: the individual Korean allocations below are components of this total and must not be added to it. Announced at the APEC Summit. chip_skus lists only the models NVIDIA actually named (RTX PRO 6000 Blackwell and Blackwell generally); GB300 is included because Blackwell Ultra is referenced, but per-recipient SKUs are largely undisclosed.",
+  "source_urls": [
+   "https://nvidianews.nvidia.com/news/south-korea-ai-infrastructure",
+   "https://www.datacenterdynamics.com/en/news/nvidia-to-deploy-more-than-250000-gpus-across-south-korea-with-samsung-sk-group-and-hyundai-all-announcing-ai-factories/"
+  ],
+  "geography": [
+   "South Korea"
+  ],
+  "mw": 580.94,
+  "h100e": 406250.0,
+  "h100e_basis": "250,000 GPUs x 1.62 (GB300/RTX PRO 6000)",
+  "quantity_raw": "over a quarter-million NVIDIA GPUs",
+  "quantity_value": 250000,
+  "quantity_unit": "GPUs",
+  "status": "announced",
+  "confidence": "T2",
+  "binding_status": "conditional",
+  "announced_date": "2025-10-30",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "korea-msit-national-ai-computing-50k-gpus",
+  "deal_type": "D2",
+  "from_entity": "NVIDIA Corporation",
+  "to_entity": "Korea Ministry of Science and ICT (National AI Computing Center)",
+  "headline": "Korea's science ministry will take up to 50,000 NVIDIA GPUs for the National AI Computing Center, starting with 13,000 Blackwell.",
+  "notes": "Operated through Naver Cloud, NHN Cloud and Kakao. 'Up to 50,000' is a ceiling, not a firm order. Component of the 250,000 total.",
+  "source_urls": [
+   "https://nvidianews.nvidia.com/news/south-korea-ai-infrastructure"
+  ],
+  "geography": [
+   "South Korea"
+  ],
+  "mw": 71.5,
+  "h100e": 50000,
+  "h100e_basis": "50,000 GPUs, chip unstated, treated as 1.0",
+  "quantity_raw": "up to 50,000 of the latest NVIDIA GPUs, with initial deployment of 13,000 NVIDIA Blackwell",
+  "quantity_value": 50000,
+  "quantity_unit": "GPUs",
+  "status": "announced",
+  "confidence": "T2",
+  "binding_status": "conditional",
+  "announced_date": "2025-10-30",
+  "captured_at": "2026-09-02",
+  "is_restatement": true,
+  "same_underlying_as": "korea-nvidia-250k-gpu-programme-2025-10"
+ },
+ {
+  "deal_id": "naver-cloud-60k-gpus-2025-10",
+  "deal_type": "D2",
+  "from_entity": "NVIDIA Corporation",
+  "to_entity": "NAVER Cloud Corp.",
+  "headline": "Naver Cloud will deploy over 60,000 NVIDIA GPUs, including RTX PRO 6000 Blackwell, for Korean industry AI models.",
+  "notes": "Largest single Korean provider allocation. Targeted at industry-specific models including shipbuilding and security. Component of the 250,000 total.",
+  "source_urls": [
+   "https://nvidianews.nvidia.com/news/south-korea-ai-infrastructure"
+  ],
+  "geography": [
+   "South Korea"
+  ],
+  "mw": 30.03,
+  "h100e": 21000.0,
+  "h100e_basis": "60,000 GPUs x 0.35 (RTX PRO 6000)",
+  "quantity_raw": "over 60,000 GPUs, including NVIDIA RTX PRO 6000 Blackwell",
+  "quantity_value": 60000,
+  "quantity_unit": "GPUs",
+  "status": "announced",
+  "confidence": "T2",
+  "binding_status": "conditional",
+  "announced_date": "2025-10-30",
+  "captured_at": "2026-09-02",
+  "is_restatement": true,
+  "same_underlying_as": "korea-nvidia-250k-gpu-programme-2025-10"
+ },
+ {
+  "deal_id": "samsung-electronics-50k-gpus-2025-10",
+  "deal_type": "D2",
+  "from_entity": "NVIDIA Corporation",
+  "to_entity": "Samsung Electronics",
+  "headline": "Samsung Electronics will deploy over 50,000 NVIDIA GPUs in an AI factory for semiconductor manufacturing.",
+  "notes": "Captive use for semiconductor manufacturing including cuLitho integration into Samsung's OPC lithography platform, not merchant compute supply. Component of the 250,000 total. Distinct from Samsung SDS, which sells GPU capacity commercially.",
+  "source_urls": [
+   "https://nvidianews.nvidia.com/news/south-korea-ai-infrastructure",
+   "https://www.datacenterdynamics.com/en/news/nvidia-to-deploy-more-than-250000-gpus-across-south-korea-with-samsung-sk-group-and-hyundai-all-announcing-ai-factories/"
+  ],
+  "geography": [
+   "South Korea"
+  ],
+  "mw": 71.5,
+  "h100e": 50000,
+  "h100e_basis": "50,000 GPUs, chip unstated, treated as 1.0",
+  "quantity_raw": "over 50,000 GPUs",
+  "quantity_value": 50000,
+  "quantity_unit": "GPUs",
+  "status": "announced",
+  "confidence": "T2",
+  "binding_status": "conditional",
+  "announced_date": "2025-10-30",
+  "captured_at": "2026-09-02",
+  "is_restatement": true,
+  "same_underlying_as": "korea-nvidia-250k-gpu-programme-2025-10"
+ },
+ {
+  "deal_id": "sk-group-50k-gpus-2025-10",
+  "deal_type": "D2",
+  "from_entity": "NVIDIA Corporation",
+  "to_entity": "SK Group",
+  "headline": "SK Group will deploy over 50,000 NVIDIA GPUs for an AI factory serving semiconductor R&D, production and cloud, expected online in late 2027.",
+  "notes": "POSSIBLE OVERLAP with the 60,000 GPUs planned for the SK-AWS Ulsan site; the sources do not say whether these are the same GPUs. Do not sum without resolving. Component of the 250,000 total.",
+  "source_urls": [
+   "https://nvidianews.nvidia.com/news/south-korea-ai-infrastructure",
+   "https://www.datacenterdynamics.com/en/news/nvidia-to-deploy-more-than-250000-gpus-across-south-korea-with-samsung-sk-group-and-hyundai-all-announcing-ai-factories/"
+  ],
+  "geography": [
+   "South Korea"
+  ],
+  "mw": 71.5,
+  "h100e": 50000,
+  "h100e_basis": "50,000 GPUs, chip unstated, treated as 1.0",
+  "quantity_raw": "over 50,000 NVIDIA GPUs",
+  "quantity_value": 50000,
+  "quantity_unit": "GPUs",
+  "status": "announced",
+  "confidence": "T2",
+  "binding_status": "conditional",
+  "announced_date": "2025-10-30",
+  "term_end": "2027-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": true,
+  "same_underlying_as": "korea-nvidia-250k-gpu-programme-2025-10"
+ },
+ {
+  "deal_id": "hyundai-50k-blackwell-2025-10",
+  "deal_type": "D2",
+  "from_entity": "NVIDIA Corporation",
+  "to_entity": "Hyundai Motor Group",
+  "headline": "Hyundai Motor Group will deploy 50,000 NVIDIA Blackwell GPUs under an investment of about $3 billion.",
+  "notes": "The only Korean allocation with a disclosed dollar figure, giving a rough $60,000 per Blackwell GPU implied all-in cost including facilities. Captive use for autonomous driving, smart factories and robotics. Component of the 250,000 total.",
+  "source_urls": [
+   "https://nvidianews.nvidia.com/news/south-korea-ai-infrastructure"
+  ],
+  "geography": [
+   "South Korea"
+  ],
+  "mw": 71.5,
+  "h100e": 50000,
+  "h100e_basis": "50,000 GPUs, chip unstated, treated as 1.0",
+  "usd_value": 3000000000,
+  "quantity_raw": "50,000 Blackwell GPUs with approximately $3 billion investment",
+  "quantity_value": 50000,
+  "quantity_unit": "GPUs",
+  "status": "announced",
+  "confidence": "T2",
+  "binding_status": "conditional",
+  "announced_date": "2025-10-30",
+  "captured_at": "2026-09-02",
+  "is_restatement": true,
+  "same_underlying_as": "korea-nvidia-250k-gpu-programme-2025-10"
+ },
+ {
+  "deal_id": "samsung-sds-b300-gpuaas-launch-2026-03",
+  "deal_type": "D3",
+  "from_entity": "Samsung SDS Co., Ltd.",
+  "to_entity": "Korean enterprises",
+  "headline": "Samsung SDS launched Korea's first NVIDIA B300 GPU subscription service for enterprise AI inference.",
+  "notes": "Pay-as-you-go subscription; no published per-hour price, so no rate is recorded. A token-billed serverless inference service with no separate infrastructure fee was slated for Q3 2026. Capacity and data centre location undisclosed. The Korea Times dates the debut 23 March and Samsung SDS's own newsroom 26 March; the company date is used.",
+  "source_urls": [
+   "https://www.samsungsds.com/us/news/gpu-260326.html",
+   "https://www.koreatimes.co.kr/business/tech-science/20260323/samsung-sds-debuts-koreas-1st-nvidia-b300-gpu-service-subscription"
+  ],
+  "geography": [
+   "South Korea"
+  ],
+  "quantity_raw": "not quantified; B300 with 288 GB memory per GPU and 8 TB/s bandwidth",
+  "status": "operational",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2026-03-26",
+  "term_start": "2026-03",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "samsung-sds-korea-national-ai-research-gpu",
+  "deal_type": "D1",
+  "from_entity": "Samsung SDS Co., Ltd.",
+  "to_entity": "Korean government national AI research programme",
+  "headline": "Samsung SDS was selected as the top supplier for a Korean government AI research GPU project, providing a B300-based cluster.",
+  "notes": "WEAK: identified from headline and title metadata only; the award value, GPU count and contract term were not verified, and announced_date is a placeholder. Samsung SDS is KRX-listed so a disclosure filing would settle this.",
+  "source_urls": [
+   "https://www.samsungsds.com/en/news/1295233_5252.html",
+   "https://theggnews.com/en-us/articles/27303"
+  ],
+  "geography": [
+   "South Korea"
+  ],
+  "quantity_raw": "not quantified",
+  "status": "announced",
+  "confidence": "T4",
+  "binding_status": "binding",
+  "announced_date": "2026-01-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "softbank-gpu-cloud-launch-2026-10",
+  "deal_type": "D3",
+  "from_entity": "SoftBank Corp.",
+  "to_entity": "Japanese enterprises and AI developers",
+  "headline": "SoftBank will launch a Japan-hosted AI Data Center GPU Cloud on NVIDIA GB200 NVL72 in October 2026, with a beta already open.",
+  "notes": "Runs on SoftBank's Infrinia AI Cloud OS offering Kubernetes-as-a-Service and Inference-as-a-Service. Capacity, data centre locations and pricing all undisclosed. Beta available from the 25 May 2026 announcement; general launch October 2026. SoftBank Corp. is TSE-listed.",
+  "source_urls": [
+   "https://www.softbank.jp/en/corp/news/press/sbkk/2026/20260525_01/"
+  ],
+  "geography": [
+   "Japan"
+  ],
+  "quantity_raw": "not quantified",
+  "status": "announced",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2026-05-25",
+  "term_start": "2026-10",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "softbank-sharp-sakai-acquisition-2025",
+  "deal_type": "D6",
+  "from_entity": "Sharp Corporation",
+  "to_entity": "SoftBank Corp.",
+  "headline": "SoftBank bought a former Sharp LCD factory in Osaka for about $676 million to convert into an AI data centre.",
+  "notes": "announced_date is Sharp's own 7 June 2024 release confirming SoftBank Corp. will construct a large-scale AI data centre using the Sakai plant; the purchase price was reported later. Values differ across outlets ($673m vs $676m), likely an FX artefact. CONFLATION RISK: KDDI separately acquired part of the same Sharp Sakai site in April 2025 for its own AI data centre; these are two different deals.",
+  "source_urls": [
+   "https://global.sharp/corporate/news/240607-a.html",
+   "https://www.datacenterdynamics.com/en/news/softbank-buys-former-sharp-factory-for-676m-to-build-ai-data-center-in-osaka-japan/",
+   "https://www.lightreading.com/data-centers/softbank-spends-673m-on-sakai-plant-in-osaka-for-new-ai-data-center"
+  ],
+  "geography": [
+   "Japan"
+  ],
+  "site": "SoftBank Sakai AI data centre (former Sharp plant)",
+  "usd_value": 676000000,
+  "quantity_raw": "$676m (reported between $673m and $676m)",
+  "quantity_unit": "USD",
+  "status": "signed",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2024-06-07",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "kddi-osaka-sakai-launch-2026-01",
+  "deal_type": "D6",
+  "from_entity": "KDDI Corporation",
+  "to_entity": "Japan (Osaka)",
+  "headline": "KDDI opened its Osaka Sakai AI data centre on 100% renewable power, running NVIDIA GB200 NVL72 with liquid cooling.",
+  "notes": "Repurposed from the Sharp Sakai plant acquired April 2025, reusing its high-capacity power and cooling. GPU cloud trials from opening day, general applications from 1 April 2026. MW capacity is not disclosed, which is a notable gap for a facility of this profile. KDDI is TSE-listed.",
+  "source_urls": [
+   "https://newsroom.kddi.com/english/news/detail/kddi_nr-916_4323.html"
+  ],
+  "geography": [
+   "Japan"
+  ],
+  "site": "KDDI Osaka Sakai Data Center",
+  "quantity_raw": "approximately 57,000 m2 cumulative floor space; MW not disclosed",
+  "status": "operational",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2026-01-22",
+  "term_start": "2026-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "kddi-takeda-osaka-sakai-2026-04",
+  "deal_type": "D1",
+  "from_entity": "KDDI Corporation",
+  "to_entity": "Takeda Pharmaceutical Company Limited",
+  "headline": "Takeda contracted KDDI's Osaka Sakai AI data centre for medical big data analysis from April 2026.",
+  "notes": "One of the few APAC records naming an actual compute customer. Other named users of the same facility are Medical Engineering Institute, Morgenrot (fluid analysis for manufacturing) and ELYZA (Japanese-made AI development). No capacity or value disclosed for any of them.",
+  "source_urls": [
+   "https://newsroom.kddi.com/english/news/detail/kddi_nr-916_4323.html"
+  ],
+  "geography": [
+   "Japan"
+  ],
+  "site": "KDDI Osaka Sakai Data Center",
+  "quantity_raw": "not quantified",
+  "status": "operational",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2026-01-22",
+  "term_start": "2026-04",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "kddi-sakura-highreso-gpu-reciprocity-2025-04",
+  "deal_type": "D16",
+  "from_entity": "KDDI Corporation, SAKURA internet Inc. and Highreso Inc.",
+  "to_entity": "each other",
+  "headline": "KDDI, Sakura Internet and Highreso agreed to let each other use their GPU capacity to absorb spikes in Japanese demand.",
+  "notes": "A basic agreement rather than a contract, hence non_binding. Covers KDDI's Osaka Sakai (GB200 NVL72), Sakura's Ishikari (Koukaryoku) and Highreso's Ishikawa and Kagawa sites (GPUSOROBAN). No GPU counts or commercial terms disclosed. Unusual as an explicit compute-pooling arrangement between competitors.",
+  "source_urls": [
+   "https://www.sakura.ad.jp/corporate/en/information/2025/08/14/1968220601/"
+  ],
+  "geography": [
+   "Japan"
+  ],
+  "quantity_raw": "not quantified",
+  "status": "signed",
+  "confidence": "T2",
+  "binding_status": "non_binding",
+  "announced_date": "2025-04-11",
+  "term_start": "2025-04",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "sakura-internet-10000-gpus-per-year",
+  "deal_type": "D7",
+  "from_entity": "NVIDIA Corporation",
+  "to_entity": "SAKURA internet Inc.",
+  "headline": "Sakura Internet said it wants to buy about 10,000 NVIDIA GPUs a year and needs 50,000 to 100,000 to meet current demand.",
+  "notes": "A demand signal, not an order: founder Kunihiro Tanaka's stated requirement, plus a claim of needing a million GPUs in ten years at current growth. Concrete elements: roughly 2,000 H100 installed at Ishikari, 8,000 more planned by December 2027, HGX B200 ordered in unspecified quantity, and a new Hokkaido facility for around 10,800 GPUs by 2027. announced_date approximates the reporting month. Sakura is TSE-listed. [Direction corrected: the need belongs to the buyer, not to the chip vendor.]",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/japans-sakura-internet-looks-to-buy-10000-gpus-a-year/"
+  ],
+  "geography": [
+   "Japan"
+  ],
+  "mw": 22.88,
+  "h100e": 16000.0,
+  "h100e_basis": "10,000 GPUs x 1.60 (H100/B200)",
+  "quantity_raw": "approximately 10,000 Nvidia GPUs annually; 'we need some 50,000 to 100,000 Nvidia GPUs to comfortably handle the demand we see today'",
+  "quantity_value": 10000,
+  "quantity_unit": "GPUs",
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "speculative",
+  "announced_date": "2024-11-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "sakura-ishikari-h100-deployment",
+  "deal_type": "D2",
+  "from_entity": "NVIDIA Corporation",
+  "to_entity": "SAKURA internet Inc.",
+  "headline": "Sakura Internet installed roughly 2,000 NVIDIA H100 at Ishikari and plans 8,000 more by the end of 2027.",
+  "notes": "GPU counts across sources are inconsistent in vintage: 2,000 installed, expanding to nearly 4,000 Hopper, with roughly 10,800 planned in total. These are snapshots of the same programme at different dates and must not be summed. announced_date approximates the reporting month.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/japans-sakura-internet-looks-to-buy-10000-gpus-a-year/",
+   "https://nvidianews.nvidia.com/news/japan-cloud-leaders-build-nvidia-ai-infrastructure-to-transform-industries"
+  ],
+  "geography": [
+   "Japan"
+  ],
+  "site": "SAKURA internet Ishikari Data Center",
+  "mw": 2.86,
+  "h100e": 2000.0,
+  "h100e_basis": "2,000 GPUs x 1.00 (H100)",
+  "quantity_raw": "approximately 2,000 Nvidia H100 Tensor Core GPUs installed; 8,000 additional units planned by December 2027",
+  "quantity_value": 2000,
+  "quantity_unit": "GPUs",
+  "status": "operational",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2024-11-01",
+  "term_end": "2027-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": true,
+  "same_underlying_as": "sakura-internet-10000-gpus-per-year"
+ },
+ {
+  "deal_id": "highreso-1600-gpus-japan",
+  "deal_type": "D2",
+  "from_entity": "NVIDIA Corporation",
+  "to_entity": "Highreso Inc.",
+  "headline": "Highreso is deploying 1,600 NVIDIA H200 GPUs across its Kagawa and Ishikawa data centres in Japan.",
+  "notes": "1,600 is the two-site total, not per site. Kagawa expected operational December 2024, the second facility 'next summer'. announced_date is the NVIDIA release date.",
+  "source_urls": [
+   "https://nvidianews.nvidia.com/news/japan-cloud-leaders-build-nvidia-ai-infrastructure-to-transform-industries"
+  ],
+  "geography": [
+   "Japan"
+  ],
+  "site": "Highreso Kagawa and Ishikawa data centers",
+  "mw": 2.63,
+  "h100e": 1840.0,
+  "h100e_basis": "1,600 GPUs x 1.15 (H200)",
+  "quantity_raw": "1,600 NVIDIA GPUs",
+  "quantity_value": 1600,
+  "quantity_unit": "GPUs",
+  "status": "operational",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2024-11-13",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "rutilea-1000-hopper-okuma",
+  "deal_type": "D2",
+  "from_entity": "NVIDIA Corporation",
+  "to_entity": "RUTILEA, Inc.",
+  "headline": "Rutilea runs more than 1,000 NVIDIA Hopper GPUs at its Okuma facility in Fukushima.",
+  "notes": "chip_skus left empty because NVIDIA says 'Hopper' without distinguishing H100 from H200. A genuine single-site operator worth tracking.",
+  "source_urls": [
+   "https://nvidianews.nvidia.com/news/japan-cloud-leaders-build-nvidia-ai-infrastructure-to-transform-industries"
+  ],
+  "geography": [
+   "Japan"
+  ],
+  "site": "RUTILEA Okuma facility",
+  "mw": 1.43,
+  "h100e": 1000,
+  "h100e_basis": "1,000 GPUs, chip unstated, treated as 1.0",
+  "quantity_raw": "more than 1,000 NVIDIA Hopper GPUs",
+  "quantity_value": 1000,
+  "quantity_unit": "GPUs",
+  "status": "operational",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2024-11-13",
+  "term_start": "2024-09",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "gmo-gpu-cloud-h200-launch",
+  "deal_type": "D3",
+  "from_entity": "GMO Internet Group, Inc.",
+  "to_entity": "Japanese customers",
+  "headline": "GMO Internet launched a GPU cloud built on NVIDIA H200 with Spectrum-X networking.",
+  "notes": "Full-stack H200 with NVIDIA Spectrum-X Ethernet and BlueField-3 DPUs, described as coming online in November 2024. GPU counts, MW and pricing all undisclosed.",
+  "source_urls": [
+   "https://nvidianews.nvidia.com/news/japan-cloud-leaders-build-nvidia-ai-infrastructure-to-transform-industries"
+  ],
+  "geography": [
+   "Japan"
+  ],
+  "quantity_raw": "not quantified",
+  "status": "operational",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2024-11-13",
+  "term_start": "2024-11",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "nchc-nano4-taiwan-cluster-2025-12",
+  "deal_type": "D2",
+  "from_entity": "NVIDIA Corporation (systems built by ASUS)",
+  "to_entity": "National Center for High-performance Computing",
+  "headline": "Taiwan's national HPC centre brought up the Nano 4 cluster with 1,760 NVIDIA H200 and 144 Blackwell chips in a new 15 MW Tainan data centre.",
+  "notes": "quantity_value 1904 is the arithmetic sum of the two stated counts (1,760 + 144), which is a simple addition of figures both given in the source, not an estimate. Part of the Crystal26 system ranked 29th on the Top500. Anchors Taiwan's sovereign AI programme, described as one of 'Ten New AI Infrastructure Projects'.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/taiwan-launches-data-center-with-ai-cluster/",
+   "https://www.asus.com/business/resources/casestudies/nano4-taiwan-liquid-cooled-ai-supercomputer/"
+  ],
+  "geography": [
+   "Taiwan"
+  ],
+  "site": "National Grid Cloud Computing Center, Tainan",
+  "mw": 4.97,
+  "h100e": 3474.8,
+  "h100e_basis": "1,904 GPUs x 1.82 (H200/GB200)",
+  "quantity_raw": "1,760 Nvidia H200 GPUs and 144 Blackwell chips (GB200 NVL72 configuration), drawing 2.214MW, inside a 15MW data center",
+  "quantity_value": 1904,
+  "quantity_unit": "GPUs",
+  "status": "operational",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2025-12-12",
+  "term_start": "2025-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "chunghwa-lunping-taoyuan-idc-2026",
+  "deal_type": "D6",
+  "from_entity": "Chunghwa Telecom Co., Ltd.",
+  "to_entity": "Taiwan (Taoyuan)",
+  "headline": "Chunghwa Telecom started operating a new Taoyuan data centre that will add up to 36 MW when fully built out.",
+  "notes": "Operations began 'during Q2' 2026; term_start recorded as 2026-04 as the start of that quarter. Investment and chips undisclosed. Chunghwa is TWSE-listed and NYSE-ADR, so filings are the T1 check.",
+  "source_urls": [
+   "https://www.rcrwireless.com/20260806/carriers/chunghwa-ai-infra"
+  ],
+  "geography": [
+   "Taiwan"
+  ],
+  "site": "Chunghwa Telecom Lunping IDC, Taoyuan",
+  "mw": 36,
+  "h100e": 25174.8,
+  "h100e_basis": "36 MW / 1.43 kW per H100e",
+  "quantity_raw": "up to 36MW to its total IDC capacity upon full build-out",
+  "quantity_value": 36,
+  "quantity_unit": "MW",
+  "status": "operational",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2026-08-06",
+  "term_start": "2026-04",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "chunghwa-twse-taichung-colocation-mou-2026-07",
+  "deal_type": "D16",
+  "from_entity": "Chunghwa Telecom Co., Ltd.",
+  "to_entity": "Taiwan Stock Exchange",
+  "headline": "Chunghwa Telecom signed an MoU with the Taiwan Stock Exchange for dedicated colocation capacity at its new Taichung data centre.",
+  "notes": "An MoU only. Capacity, term and value undisclosed. announced_date set to the month stated; no exact day given.",
+  "source_urls": [
+   "https://www.rcrwireless.com/20260806/carriers/chunghwa-ai-infra"
+  ],
+  "geography": [
+   "Taiwan"
+  ],
+  "site": "Chunghwa Telecom Taichung data centre",
+  "quantity_raw": "not quantified",
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "LOI",
+  "announced_date": "2026-07-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "sharon-ai-esds-1250m-2026",
+  "deal_type": "D1",
+  "from_entity": "Sharon AI, Inc.",
+  "to_entity": "ESDS Software Solution Limited",
+  "headline": "Sharon AI agreed to sell ESDS $1.25 billion of AI cloud capacity on about 8,000 NVIDIA B300 GPUs in an Australian data centre over five years.",
+  "notes": "Largest single named-customer compute contract in this slice. Revenue expected to start Q3 2026; delivery by 16 September 2026 per a secondary source. Deployment at one of Sharon AI's existing leased Australian facilities: Equinix SYD3 and SYD5 in Sydney or NEXTDC M3 in Melbourne. GPU count differs between sources (8,000 vs 8,200). announced_date approximated to the reporting month. Sharon AI is Nasdaq-listed, so its 6-K/8-K would be T1 and should override this.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/sharon-ai-signs-125bn-cloud-capacity-agreement-with-esds-software-solutions/",
+   "https://certifiedstrategic.com/neoclouds/sharon-ai"
+  ],
+  "geography": [
+   "Australia",
+   "India"
+  ],
+  "mw": 29.74,
+  "h100e": 20800.0,
+  "h100e_basis": "8,000 GPUs x 2.60 (B300)",
+  "usd_value": 1250000000,
+  "quantity_raw": "$1.25 billion over five years with an option to extend two more; 8,000 GPUs comprising Nvidia B300s (roughly 8,200 per a secondary source), plus 17.80PB VAST storage",
+  "quantity_value": 8000,
+  "quantity_unit": "GPUs",
+  "status": "signed",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2026-07-01",
+  "term_start": "2026-07",
+  "term_years": 5,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "firmus-hyperscaler-melbourne-gb300-2026-03",
+  "deal_type": "D1",
+  "from_entity": "Firmus Technologies",
+  "to_entity": "unnamed global technology company",
+  "headline": "Firmus signed a multi-year, multi-billion-dollar contract with an unnamed global technology company for about 18,400 NVIDIA GB300 GPUs in Melbourne.",
+  "notes": "Customer described only as 'a leading global technology company'; not named, so no to_entity match is possible. usd_value left null because only 'multi-billion' is stated. Described as the second major customer for Project Southgate. A separate Tasmanian facility of roughly 36,800 GB300 GPUs is expected to complete late 2026.",
+  "source_urls": [
+   "https://firmus.co/newsroom/firmus-signs-multi-year-agreement-with-global-hyperscale-customer-at-project-southgate"
+  ],
+  "geography": [
+   "Australia"
+  ],
+  "site": "Firmus Melbourne AI factory",
+  "mw": 76.3,
+  "h100e": 53360.0,
+  "h100e_basis": "18,400 GPUs x 2.90 (GB300)",
+  "quantity_raw": "approximately 18,400 NVIDIA GB300 GPUs; multi-billion dollar contract value",
+  "quantity_value": 18400,
+  "quantity_unit": "GPUs",
+  "status": "signed",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2026-03-02",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "sharon-ai-nvidia-6yr-40000-gb300",
+  "deal_type": "D16",
+  "from_entity": "NVIDIA Corporation",
+  "to_entity": "Sharon AI, Inc.",
+  "headline": "Sharon AI announced a six-year strategic compute collaboration with NVIDIA covering up to 40,000 GB300 GPUs in Australia.",
+  "notes": "'Up to 40,000' is a ceiling under a collaboration framework, not a firm order: binding_status conditional. A separate source refers to funding 56,000 NVIDIA GPUs across 132MW onshore, a larger figure that was not reconciled. announced_date approximated to the month; the press release date was not fully captured.",
+  "source_urls": [
+   "https://sharonai.com/press-releases/sharon-ai-announces-six-year-strategic-compute-collaboration-with-nvidia/",
+   "https://certifiedstrategic.com/neoclouds/sharon-ai",
+   "https://www.stocktitan.net/news/NVDA/sharon-ai-announces-six-year-strategic-compute-collaboration-with-e2pvuxororjd.html"
+  ],
+  "geography": [
+   "Australia"
+  ],
+  "mw": 165.88,
+  "h100e": 116000.0,
+  "h100e_basis": "40,000 GPUs x 2.90 (GB300)",
+  "quantity_raw": "up to 40,000 GB300 GPUs planned through the NVIDIA collaboration",
+  "quantity_value": 40000,
+  "quantity_unit": "GPUs",
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "conditional",
+  "announced_date": "2026-06-01",
+  "term_years": 6,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "sharon-ai-nextdc-54mw-lease",
+  "deal_type": "D4",
+  "from_entity": "NEXTDC Limited",
+  "to_entity": "Sharon AI, Inc.",
+  "headline": "Sharon AI has contracted up to 54 MW of Australian data centre capacity from NEXTDC, with a further 50 MW expansion agreement across NEXTDC's APAC estate.",
+  "notes": "The 54MW contracted and 50MW expansion figures come from a third-party index and may overlap; do not sum. Roughly 1,000 GPUs are live at NEXTDC M3 Melbourne. Both parties are listed (ASX:NXT, NASDAQ:SHAZ) so their filings should be checked as T1. announced_date approximated.",
+  "source_urls": [
+   "https://certifiedstrategic.com/neoclouds/sharon-ai"
+  ],
+  "geography": [
+   "Australia"
+  ],
+  "site": "NEXTDC M3 Melbourne and other NEXTDC facilities",
+  "mw": 54,
+  "h100e": 37762.2,
+  "h100e_basis": "54 MW / 1.43 kW per H100e",
+  "quantity_raw": "up to 54MW contracted Australian capacity via NEXTDC; separate 50MW expansion agreement across NEXTDC Australian and Asia-Pacific network",
+  "quantity_value": 54,
+  "quantity_unit": "MW",
+  "status": "signed",
+  "confidence": "T4",
+  "binding_status": "binding",
+  "announced_date": "2026-06-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "sharon-ai-new-zealand-contract-2026-07",
+  "deal_type": "D1",
+  "from_entity": "Sharon AI, Inc.",
+  "to_entity": "unnamed New Zealand counterparty",
+  "headline": "Sharon AI announced a US$1.32 billion AI cloud contract associated with expansion into New Zealand.",
+  "notes": "WEAK: a single passing mention in a third-party index, with no counterparty, GPU count, term or site. This is the only New Zealand supply record found in this pass and it is thinly sourced. Sharon AI is Nasdaq-listed so its filings would confirm or refute it.",
+  "source_urls": [
+   "https://certifiedstrategic.com/neoclouds/sharon-ai"
+  ],
+  "geography": [
+   "New Zealand"
+  ],
+  "usd_value": 1320000000,
+  "quantity_raw": "US$1.32bn AI cloud contract",
+  "quantity_unit": "USD",
+  "status": "announced",
+  "confidence": "T4",
+  "binding_status": "binding",
+  "announced_date": "2026-07-20",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "sharon-ai-strategic-financing-2026-06",
+  "deal_type": "D9",
+  "from_entity": "Situational Awareness and Oaktree Capital Management",
+  "to_entity": "Sharon AI, Inc.",
+  "headline": "Sharon AI raised US$1.6 billion of strategic financing to fund its Australian GPU build-out.",
+  "notes": "Instrument type (equity, debt or hybrid) not specified, so deal_type D9 is a best fit rather than a confirmed classification. Follows a Nasdaq IPO in February 2026 at US$30.00/share raising US$125m and a May 2026 convertible raise of roughly US$350m. All three should be confirmed against SEC filings.",
+  "source_urls": [
+   "https://certifiedstrategic.com/neoclouds/sharon-ai"
+  ],
+  "geography": [
+   "Australia"
+  ],
+  "usd_value": 1600000000,
+  "quantity_raw": "US$1.6bn strategic financing",
+  "quantity_unit": "USD",
+  "status": "signed",
+  "confidence": "T4",
+  "binding_status": "binding",
+  "announced_date": "2026-06-17",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "macquarie-centuria-gpu-bridge-165m-2026-08",
+  "deal_type": "D8",
+  "from_entity": "Macquarie Bank (Specialised and Asset Finance)",
+  "to_entity": "Centuria Capital Group / ResetData",
+  "headline": "Macquarie Bank lent A$165 million secured on GPUs to fund Centuria and ResetData's Australian AI factory build-out.",
+  "notes": "One of the clearest APAC examples of GPUs used as loan collateral. quantity_value 165000000 is in AUD despite quantity_unit USD, which the schema's unit list cannot express; usd_value carries the USD equivalent given in the source. Accompanied by a A$300m June 2026 equity raise (A$200m institutional placement plus A$100m accelerated entitlement offer at A$2.00). Centuria is ASX-listed; confirm against ASX announcements.",
+  "source_urls": [
+   "https://www.techtimes.com/articles/324256/20260813/centuria-locks-165m-gpu-debt-72mw-power-sovereign-ai-pipeline-moves-two-years-closer.htm"
+  ],
+  "geography": [
+   "Australia"
+  ],
+  "usd_value": 116000000,
+  "quantity_raw": "A$165 million (~$116 million USD) GPU bridge financing",
+  "quantity_value": 165000000,
+  "quantity_unit": "USD",
+  "status": "signed",
+  "confidence": "T4",
+  "binding_status": "binding",
+  "announced_date": "2026-08-13",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "resetdata-cdc-colocation-msa-7mw",
+  "deal_type": "D4",
+  "from_entity": "CDC Data Centres",
+  "to_entity": "ResetData",
+  "headline": "ResetData signed a master services agreement with CDC Data Centres for an initial 7 MW of colocation, expandable to 10 MW.",
+  "notes": "Specific CDC facilities not named. Single secondary source.",
+  "source_urls": [
+   "https://www.techtimes.com/articles/324256/20260813/centuria-locks-165m-gpu-debt-72mw-power-sovereign-ai-pipeline-moves-two-years-closer.htm"
+  ],
+  "geography": [
+   "Australia"
+  ],
+  "mw": 7,
+  "h100e": 4895.1,
+  "h100e_basis": "7 MW / 1.43 kW per H100e",
+  "quantity_raw": "initial 7MW allocation expandable to 10MW",
+  "quantity_value": 7,
+  "quantity_unit": "MW",
+  "status": "signed",
+  "confidence": "T4",
+  "binding_status": "binding",
+  "announced_date": "2026-08-13",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "digico-14mw-deals-2026",
+  "deal_type": "D1",
+  "from_entity": "DigiCo Infrastructure REIT",
+  "to_entity": "hyperscale, neocloud, enterprise and government customers (unnamed)",
+  "headline": "DigiCo signed 14 MW of new Australian data centre deals, lifting contracted capacity guidance to 41 MW by June 2026.",
+  "notes": "No customer names or individual deal sizes disclosed. A 9MW SYD1 project is being reshaped and expanded for high-density capacity by mid-2026; revenue expected from H2 FY2026. announced_date is a placeholder; the exact announcement date was not captured. DigiCo is ASX-listed so its results release is T1.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/australias-digico-infrastructure-reit-signs-14mw-of-data-center-deals/"
+  ],
+  "geography": [
+   "Australia"
+  ],
+  "site": "SYD1 Sydney, plus Brisbane and Adelaide",
+  "mw": 14,
+  "h100e": 9790.2,
+  "h100e_basis": "14 MW / 1.43 kW per H100e",
+  "quantity_raw": "14MW of new deals; Australian contracted IT capacity to grow to 41MW by June 2026 against a prior 27MW run-rate target; total billed IT capacity at least 85MW by July 2026",
+  "quantity_value": 14,
+  "quantity_unit": "MW",
+  "status": "signed",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2026-01-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "bitdeer-malaysia-9.5mw-offtake-800m",
+  "deal_type": "D1",
+  "from_entity": "Bitdeer Technologies Group",
+  "to_entity": "unnamed AI cloud customers",
+  "headline": "Bitdeer sold out 9.5 MW of Malaysian AI data centre capacity under five-year offtakes worth more than $800 million.",
+  "notes": "Striking unit economics: over $800m of revenue from 9.5MW over five years, i.e. roughly $17m per MW per year. Customer prepayments cover more than 50% of associated capex. Facility is liquid-cooled and multi-customer for rack-scale GB300 NVL72. Bitdeer targets 350MW of AI cloud capacity by Q1 2028. announced_date approximated to the reporting month; Bitdeer's SEC filings are the T1 check.",
+  "source_urls": [
+   "https://www.investing.com/news/company-news/bitdeer-ai-sells-out-95mw-malaysia-data-center-capacity-93CH-4883209"
+  ],
+  "geography": [
+   "Malaysia"
+  ],
+  "site": "Bitdeer Cyberjaya A102",
+  "mw": 9.5,
+  "h100e": 6643.4,
+  "h100e_basis": "10 MW / 1.43 kW per H100e",
+  "usd_value": 800000000,
+  "quantity_raw": "approximately 9.5MW at the A102 facility; 5-year offtake commitments with total expected revenue exceeding $800 million",
+  "quantity_value": 9.5,
+  "quantity_unit": "MW",
+  "status": "signed",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2026-08-01",
+  "term_years": 5,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "bitdeer-johor-10yr-lease-21.7mw",
+  "deal_type": "D4",
+  "from_entity": "unnamed landlord",
+  "to_entity": "Bitdeer Technologies Group",
+  "headline": "Bitdeer signed a ten-year lease on 21.7 MW of IT capacity in Johor Bahru to host 128 NVIDIA GB300 NVL72 systems.",
+  "notes": "T1: disclosed in Bitdeer's SEC-filed monthly production and operations update. Handover and energisation expected Q1 2027. Landlord not named. 128 GB300 NVL72 systems equals 9,216 Blackwell Ultra GPUs at 72 per rack, though the source states systems not GPUs so no GPU count is recorded. announced_date is the publication month of the June 2026 update.",
+  "source_urls": [
+   "https://ir.bitdeer.com/news-releases/news-release-details/bitdeer-announces-june-2026-production-and-operations-update"
+  ],
+  "geography": [
+   "Malaysia"
+  ],
+  "site": "Bitdeer Johor Bahru AI data centre",
+  "mw": 21.7,
+  "h100e": 15174.8,
+  "h100e_basis": "22 MW / 1.43 kW per H100e",
+  "quantity_raw": "21.7 MW IT capacity; 10-year lease signed; facility planned to support deployment of 128 NVIDIA GB300 NVL72 systems",
+  "quantity_value": 21.7,
+  "quantity_unit": "MW",
+  "status": "signed",
+  "confidence": "T1",
+  "binding_status": "binding",
+  "announced_date": "2026-07-01",
+  "term_years": 10,
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "e2e-networks-meity-order-2025-09",
+  "deal_type": "D1",
+  "from_entity": "E2E Networks Limited",
+  "to_entity": "India Ministry of Electronics and Information Technology (MeitY)",
+  "headline": "E2E Networks received a compute order worth about Rs 177 crore from India's IT ministry.",
+  "notes": "WEAK: headline-only verification; the article body was not read. quantity_value 1,770,000,000 is Rs 177 crore expressed in rupees, and quantity_unit USD is wrong but is the closest the schema allows for a currency amount; usd_value left null because no USD figure was published and converting would be an estimate. Almost certainly IndiaAI Mission compute empanelment. E2E is NSE-listed so the exchange filing is the T1 check. announced_date taken from the article URL date string.",
+  "source_urls": [
+   "https://www.business-standard.com/markets/capital-market-news/e2e-networks-jumps-after-receiving-order-worth-rs-177-cr-from-meity-125090300234_1.html"
+  ],
+  "geography": [
+   "India"
+  ],
+  "quantity_raw": "order worth Rs 177 cr",
+  "quantity_value": 1770000000,
+  "quantity_unit": "USD",
+  "status": "signed",
+  "confidence": "T4",
+  "binding_status": "binding",
+  "announced_date": "2025-09-03",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "gorilla-technology-yotta-india-2026-03",
+  "deal_type": "D16",
+  "from_entity": "Yotta Data Services Private Limited",
+  "to_entity": "Gorilla Technology Group Inc.",
+  "headline": "Gorilla Technology and Yotta signed an AI infrastructure agreement tied to India's sovereign AI build-out.",
+  "notes": "WEAK: headline-only verification; deal value, GPU count and scope not confirmed. Described as 'landmark' in a press release headline, which is promotional language, not evidence. Gorilla is Nasdaq-listed so its 6-K would settle this. announced_date taken from the release URL.",
+  "source_urls": [
+   "https://www.malaymail.com/news/money/mediaoutreach/2026/03/17/gorilla-technology-yotta-sign-landmark-ai-infrastructure-deal-establishing-major-position-in-indias-sovereign-ai-buildout/454700",
+   "https://www.barchart.com/story/news/769659/gorilla-technology-yotta-sign-landmark-ai-infrastructure-deal-establishing-major-position-in-india-s-sovereign-ai-buildout"
+  ],
+  "geography": [
+   "India"
+  ],
+  "quantity_raw": "not quantified in the sources captured",
+  "status": "announced",
+  "confidence": "T4",
+  "binding_status": "non_binding",
+  "announced_date": "2026-03-17",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "yotta-blackwell-ultra-20000-gpus",
+  "deal_type": "D2",
+  "from_entity": "NVIDIA Corporation",
+  "to_entity": "Yotta Data Services Private Limited",
+  "headline": "Yotta is deploying over 20,000 NVIDIA Blackwell Ultra GPUs across its Navi Mumbai and Greater Noida sites.",
+  "notes": "OVERLAP RISK with the 30,000 B300 Ultra planned for D2 Greater Noida and 36,000 GB300/Vera Rubin planned for NM2; these are different vintages of the same programme and must not be summed. Sold pay-per-use. announced_date is a placeholder; the NVIDIA blog post date was not captured.",
+  "source_urls": [
+   "https://blogs.nvidia.com/blog/india-ai-mission-infrastructure-models/"
+  ],
+  "geography": [
+   "India"
+  ],
+  "site": "Yotta NM1/NM2 Navi Mumbai and D2 Greater Noida",
+  "mw": 74.36,
+  "h100e": 52000.0,
+  "h100e_basis": "20,000 GPUs x 2.60 (B300)",
+  "quantity_raw": "over 20,000 NVIDIA Blackwell Ultra GPUs",
+  "quantity_value": 20000,
+  "quantity_unit": "GPUs",
+  "status": "in_progress",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2026-01-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "yotta-80000-gpus-fy2728-plan",
+  "deal_type": "D7",
+  "from_entity": "NVIDIA Corporation",
+  "to_entity": "Yotta Data Services Private Limited",
+  "headline": "Yotta plans to scale to more than 80,000 next-generation GPUs by FY2027-28, including B200, B300, GB300 and Vera Rubin.",
+  "notes": "A plan, not an order: binding_status speculative. Current operating estate is 8,192 H100 and 1,024 L40S at NM1, so this represents roughly a tenfold increase. The '2 GW' scalability at NM2 is an aspiration with no power contract behind it in any source found. term_end 2028-03 assumes the Indian fiscal year ends in March. [Direction corrected: the need belongs to the buyer, not to the chip vendor.]",
+  "source_urls": [
+   "https://www.prnewswire.com/news-releases/yotta-data-services-receives-frost--sullivans-2026-indian-company-of-the-year-recognition-for-leadership-in-sovereign-ai-infrastructure-302806131.html"
+  ],
+  "geography": [
+   "India"
+  ],
+  "site": "Yotta NM2 Navi Mumbai and D2 Greater Noida",
+  "mw": 248.82,
+  "h100e": 174000.0,
+  "h100e_basis": "80,000 GPUs x 2.18 (B200/B300/GB300)",
+  "quantity_raw": "more than 80,000 next-generation GPUs by FY27-28, including B200 and B300 GPUs; 30,000 B300 Ultra at Greater Noida D2 (60MW, scalable to 250MW) and 36,000 GB300/Vera Rubin at Navi Mumbai NM2 (75MW, scalable to 2GW)",
+  "quantity_value": 80000,
+  "quantity_unit": "GPUs",
+  "status": "announced",
+  "confidence": "T2",
+  "binding_status": "speculative",
+  "announced_date": "2026-06-23",
+  "term_end": "2028-03",
+  "captured_at": "2026-09-02",
+  "is_restatement": true,
+  "same_underlying_as": "yotta-blackwell-ultra-20000-gpus"
+ },
+ {
+  "deal_id": "sify-5bn-ai-dc-expansion",
+  "deal_type": "D6",
+  "from_entity": "Sify Technologies Limited",
+  "to_entity": "India (20 secondary markets)",
+  "headline": "Sify said it will invest $5 billion expanding Indian data centres and building AI inference facilities across 20 secondary markets.",
+  "notes": "No timeline, city list, MW allocation or chip detail disclosed, so binding_status speculative. Existing AI-ready capacity quoted at Noida 02 130MW, Mumbai O3 Rabale 377MW and Chennai 02 130MW. Sify is Nasdaq-listed so its 20-F is T1. announced_date approximated from the July 2025 reporting window.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/sify-technologies-to-invest-5bn-in-indian-ai-data-center-expansion/",
+   "https://www.nasdaq.com/articles/sify-technologies-expands-data-centers"
+  ],
+  "geography": [
+   "India"
+  ],
+  "usd_value": 5000000000,
+  "quantity_raw": "$5 billion",
+  "quantity_unit": "USD",
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "speculative",
+  "announced_date": "2025-07-19",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "sify-pay-per-use-ai-colocation",
+  "deal_type": "D3",
+  "from_entity": "Sify Technologies Limited",
+  "to_entity": "Indian and international AI customers",
+  "headline": "Sify began selling AI colocation by the hour at its NVIDIA-certified Indian campuses, supporting up to 130 kW per rack.",
+  "notes": "NO PRICE PUBLISHED despite the announcement being about pricing: hourly billing inclusive of hosting, power and infrastructure is described, but no rate per kW or per hour is given. quantity_unit 'racks' is used to carry the 130 kW/rack density figure, which the schema has no better unit for. Chennai and Noida newly certified; Navi Mumbai certified in 2024. announced_date is a placeholder; the release date was not captured.",
+  "source_urls": [
+   "https://www.sifytechnologies.com/news/sify-announces-pay-per-use-colocation-pricing-at-all-nvidia-certified-ai-ready-hyperscale-data-center-campuses-across-india/",
+   "https://www.nasdaq.com/press-release/sify-announces-pay-use-colocation-pricing-all-nvidia-certified-ai-ready-hyperscale"
+  ],
+  "geography": [
+   "India"
+  ],
+  "site": "Sify Chennai 02, Noida 02, Mumbai O3 Rabale",
+  "quantity_raw": "certified for up to 130 KW/rack capacity under NVIDIA's DGX-Ready Data Center program",
+  "quantity_value": 130,
+  "quantity_unit": "racks",
+  "status": "operational",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2026-01-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "reliance-jamnagar-120mw-gb300-2026",
+  "deal_type": "D6",
+  "from_entity": "Reliance Intelligence",
+  "to_entity": "India (Gujarat)",
+  "headline": "Reliance expects 120 MW of NVIDIA GB300 AI capacity running at Jamnagar by the end of 2026, on the way to a gigawatt-scale campus.",
+  "notes": "Stated at the 19 June 2026 AGM. GPU unit counts, investment and exact power arrangements are undisclosed; the site is said to run entirely on Reliance's green energy. The gigawatt ambition dates from the September 2024 AGM and remains unquantified. Reliance is NSE-listed so the annual report is T1.",
+  "source_urls": [
+   "https://www.indiaaipulse.com/en/news/reliance-outlines-ai-push-at-2026-agm",
+   "https://letsdatascience.com/news/reliance-intelligence-operationalises-120mw-ai-backbone-in-j-e028b01c",
+   "https://www.datacenterdynamics.com/en/news/reliance-industries-to-build-gw-scale-ai-data-center-in-gujurat-india/"
+  ],
+  "geography": [
+   "India"
+  ],
+  "site": "Reliance Intelligence Jamnagar AI data centre",
+  "mw": 120,
+  "h100e": 83916.1,
+  "h100e_basis": "120 MW / 1.43 kW per H100e",
+  "quantity_raw": "120 MW expected by end-2026; wider project described as gigawatt-scale",
+  "quantity_value": 120,
+  "quantity_unit": "MW",
+  "status": "in_progress",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2026-06-19",
+  "term_end": "2026-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "reliance-110bn-ai-investment-2026-02",
+  "deal_type": "D7",
+  "from_entity": "Reliance Industries Limited",
+  "to_entity": "market",
+  "headline": "Reliance announced a $110 billion AI investment plan.",
+  "notes": "WEAK: headline-only verification; the article body was not read, so the time horizon, breakdown between compute, energy and applications, and the share attributable to data centres are all unknown. A figure of this size against India's 1.6GW of live capacity should be treated as a corporate ambition until broken down in a filing. announced_date from the article URL.",
+  "source_urls": [
+   "https://techcrunch.com/2026/02/19/reliance-unveils-110b-ai-investment-plan-as-india-ramps-up-tech-ambitions/"
+  ],
+  "geography": [
+   "India"
+  ],
+  "usd_value": 110000000000,
+  "quantity_raw": "$110B AI investment plan",
+  "quantity_unit": "USD",
+  "status": "announced",
+  "confidence": "T4",
+  "binding_status": "speculative",
+  "announced_date": "2026-02-19",
+  "captured_at": "2026-09-02",
+  "is_restatement": true,
+  "same_underlying_as": "reliance-jamnagar-120mw-gb300-2026"
+ },
+ {
+  "deal_id": "indosat-zankore-1gw-ai-factory-2026-08",
+  "deal_type": "D6",
+  "from_entity": "Indosat Ooredoo Hutchison, Ooredoo Group, Nokia and NVIDIA",
+  "to_entity": "Indonesia and Asia-Pacific",
+  "headline": "Indosat and Ooredoo launched Zankore, a platform targeting 1 GW of NVIDIA AI factory capacity, with about 200 MW in the first half of 2027.",
+  "notes": "The 1 GW figure is a platform target; only the roughly 200MW first deployment in H1 2027 has a date. Runs NVIDIA GB300 NVL72 on the DSX architecture with MaxLPS, claimed to enable up to 40% more compute within the same power budget, which matters given Indonesian grid constraints. Ooredoo Group is lead investor and platform sponsor. No investment figure disclosed. Indosat is IDX-listed.",
+  "source_urls": [
+   "https://technode.global/2026/08/07/indonesias-indosat-jointly-launches-1gw-ai-factory-platform-zankore-with-qatars-ooredoo-finlands-nokia-us-nvidia/",
+   "https://www.nokia.com/newsroom/indosat-ooredoo-group-nokia-and-nvidia-launch-zankore-by-indosat-ready-to-serve-the-region-with-full-stack-ai-infra-platform/"
+  ],
+  "geography": [
+   "Indonesia"
+  ],
+  "mw": 1000.0,
+  "h100e": 699300.7,
+  "h100e_basis": "1,000 MW / 1.43 kW per H100e",
+  "quantity_raw": "1 GW of NVIDIA DSX AI Factory capacity; first deployment approximately 200 MW in H1 2027",
+  "quantity_value": 1,
+  "quantity_unit": "GW",
+  "status": "announced",
+  "confidence": "T2",
+  "binding_status": "conditional",
+  "announced_date": "2026-08-07",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "lintasarta-gpu-merdeka-launch",
+  "deal_type": "D3",
+  "from_entity": "Lintasarta (Indosat)",
+  "to_entity": "Indonesian customers",
+  "headline": "Indosat's Lintasarta launched GPU Merdeka, a sovereign Indonesian AI cloud on 8x NVIDIA H100 SXM servers.",
+  "notes": "No pricing published. Related to Indosat's earlier $200m Nvidia partnership and a planned AI data centre at Surakarta. Note the 20kW per rack figure: an order of magnitude below the 130kW Sify advertises and the 100kW+ ResetData claims, so this is AI capacity at fairly conventional density.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/indosats-lintasarta-launches-ai-cloud-gpu-merdeka-in-indonesia/"
+  ],
+  "geography": [
+   "Indonesia"
+  ],
+  "quantity_raw": "GPU servers with a configuration of 8x Nvidia H100 SXM Tensor Core GPUs, 3.35TBps bandwidth, up to 20kW per rack",
+  "status": "operational",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2024-08-21",
+  "term_start": "2024-08",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "sbtelecom-sczeus-robusthpc-sea-pact-2026-08",
+  "deal_type": "D16",
+  "from_entity": "SB Telecom Singapore, SC ZEUS Data Centers and Robust HPC Group",
+  "to_entity": "Southeast Asian markets",
+  "headline": "SoftBank's Singapore unit, SC ZEUS and Robust HPC formed an alliance to build AI factories across Malaysia, Thailand, Indonesia and Vietnam.",
+  "notes": "Effective 1 August 2026, announced 4 August. Roles: SC ZEUS does land, design, build and operate; Robust HPC does GPU cluster procurement and management; SB Telecom does data hall fit-out, ICT integration and connectivity. Technical spec includes liquid cooling and 800 VDC architecture. No MW, GPU count, investment or timeline disclosed, hence non_binding.",
+  "source_urls": [
+   "https://technode.global/2026/08/04/japans-softbank-telecom-unit-singapores-sc-zeus-malaysias-robust-hpc-sign-ai-data-center-pact-for-southeast-asia/"
+  ],
+  "geography": [
+   "Malaysia",
+   "Thailand",
+   "Indonesia",
+   "Vietnam"
+  ],
+  "quantity_raw": "not quantified",
+  "status": "signed",
+  "confidence": "T3",
+  "binding_status": "non_binding",
+  "announced_date": "2026-08-04",
+  "term_start": "2026-08",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "fpt-ai-factory-b300-expansion-2026-03",
+  "deal_type": "D2",
+  "from_entity": "NVIDIA Corporation",
+  "to_entity": "FPT Corporation",
+  "headline": "FPT will expand its AI Factory in Vietnam and Japan with NVIDIA HGX B300 systems, on top of existing H100 and H200 capacity.",
+  "notes": "B300 availability date explicitly unconfirmed by FPT, hence binding_status conditional. FPT reports 43 AI cloud services used by more than 18,000 engineers, scientists and business users. No GPU counts, MW or investment disclosed. FPT is HOSE-listed.",
+  "source_urls": [
+   "https://www.crnasia.com/news/2026/artificial-intelligence/fpt-ai-factory-to-be-powered-by-nvidia-hgx-b300-in-southeast",
+   "https://www.businesswire.com/news/home/20260326685242/en/FPT-AI-Factory-Accelerates-AI-Reasoning-Capabilities-across-Southeast-Asia-and-Japan-with-NVIDIA"
+  ],
+  "geography": [
+   "Vietnam",
+   "Japan"
+  ],
+  "quantity_raw": "not quantified; expanding from NVIDIA HGX H100 and HGX H200 to NVIDIA HGX B300 systems",
+  "status": "announced",
+  "confidence": "T2",
+  "binding_status": "conditional",
+  "announced_date": "2026-03-26",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "viettel-cu-chi-140mw-groundbreaking",
+  "deal_type": "D6",
+  "from_entity": "Viettel IDC",
+  "to_entity": "Vietnam (Ho Chi Minh City)",
+  "headline": "Viettel broke ground on Vietnam's largest data centre, a 140 MW, 10,000-rack facility at Cu Chi near Ho Chi Minh City.",
+  "notes": "Operational expected 2026, full completion before 2030. PUE target below 1.4, Uptime Tier III. Investment not disclosed. No AI-specific capability stated. announced_date is a placeholder for the groundbreaking; the exact date was not captured.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/viettel-breaks-ground-on-data-center-in-ho-chi-minh-city-vietnam/",
+   "https://www.telecomreviewasia.com/news/industry-news/13250-viettel-begins-construction-of-vietnams-largest-data-center/"
+  ],
+  "geography": [
+   "Vietnam"
+  ],
+  "site": "Viettel Cu Chi data centre",
+  "mw": 140,
+  "h100e": 97902.1,
+  "h100e_basis": "140 MW / 1.43 kW per H100e",
+  "quantity_raw": "140MW, approximately 10,000 racks, roughly 40,000 sqm on a 4-hectare site",
+  "quantity_value": 140,
+  "quantity_unit": "MW",
+  "status": "under_construction",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2025-04-01",
+  "term_end": "2030-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "viettel-560mw-2030-target",
+  "deal_type": "D7",
+  "from_entity": "Viettel IDC",
+  "to_entity": "market",
+  "headline": "Viettel plans to run 24 data centres totalling 560 MW by 2030, up from 15 sites and 87 MW today.",
+  "notes": "A 6.4x expansion of installed capacity in five years. The Cu Chi 140MW facility alone is 25% of the target. announced_date is a placeholder matching the groundbreaking coverage.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/viettel-breaks-ground-on-data-center-in-ho-chi-minh-city-vietnam/"
+  ],
+  "geography": [
+   "Vietnam"
+  ],
+  "mw": 560,
+  "h100e": 391608.4,
+  "h100e_basis": "560 MW / 1.43 kW per H100e",
+  "quantity_raw": "24 total data centers by 2030 with 560MW combined capacity, up from 15 data centers with 87MW combined",
+  "quantity_value": 560,
+  "quantity_unit": "MW",
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "speculative",
+  "announced_date": "2025-04-01",
+  "term_end": "2030-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": true,
+  "same_underlying_as": "viettel-cu-chi-140mw-groundbreaking"
+ },
+ {
+  "deal_id": "sunevision-mega-idc-phase-two-2025-03",
+  "deal_type": "D6",
+  "from_entity": "SUNeVision Holdings Ltd",
+  "to_entity": "Hong Kong (Tseung Kwan O)",
+  "headline": "SUNeVision started Phase Two of MEGA IDC, taking Hong Kong's largest data centre towards more than 180 MW across three phases.",
+  "notes": "Total MEGA IDC investment over HK$15bn. Seven on-premise 132kV 75MVA transformers across Phases One and Two. Phase Two completion scheduled 2026/2027; term_end recorded as the later bound. Described as AI-ready with 5.7m slab-to-slab height. SUNeVision is HKEX-listed.",
+  "source_urls": [
+   "https://www.shkp.com/en-US/media/press-releases/20250327"
+  ],
+  "geography": [
+   "Hong Kong"
+  ],
+  "site": "SUNeVision MEGA IDC, Tseung Kwan O",
+  "mw": 180,
+  "h100e": 125874.1,
+  "h100e_basis": "180 MW / 1.43 kW per H100e",
+  "quantity_raw": "Phase Two adds approximately 350,000 sq ft GFA; all three phases total 1.2 million sq ft and over 180MW of power capacity; Phase One delivered 500,000 sq ft and 50MW",
+  "quantity_value": 180,
+  "quantity_unit": "MW",
+  "status": "under_construction",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2025-03-27",
+  "term_end": "2027-12",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "equinix-hong-kong-ai-dc-2026-06",
+  "deal_type": "D6",
+  "from_entity": "Equinix",
+  "to_entity": "Hong Kong",
+  "headline": "Equinix opened an AI-ready Hong Kong data centre with direct connectivity to the Hong Kong-Shenzhen Innovation and Technology Park.",
+  "notes": "MAINLAND CHINA CONTEXT: the stated draw is direct connectivity to the Hong Kong-Shenzhen Innovation and Technology Park, i.e. Hong Kong supply positioned to serve mainland-adjacent demand. Capacity, MW and investment were not captured; the release was identified by title only. Equinix is Nasdaq-listed.",
+  "source_urls": [
+   "https://newsroom.equinix.com/2026-06-16-Equinix-Launches-AI-Ready-Data-Center-with-Direct-Connectivity-to-Hong-Kong-Shenzhen-Innovation-and-Technology-Park"
+  ],
+  "geography": [
+   "Hong Kong"
+  ],
+  "quantity_raw": "not quantified",
+  "status": "operational",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2026-06-16",
+  "term_start": "2026-06",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "apac-pipeline-26.5gw-h1-2026",
+  "deal_type": "D7",
+  "from_entity": "Asia-Pacific data centre developers collectively",
+  "to_entity": "market",
+  "headline": "The Asia-Pacific data centre development pipeline hit a record 26.5 GW in the first half of 2026, with power identified as the binding constraint.",
+  "notes": "CONTEXT RECORD, not a transaction. Cushman & Wakefield market-level figures. By market: Johor 3,088MW pipeline / 602MW under construction / 1,110MW operational; Sydney 2,134MW pipeline / 917MW operational; Bangkok 2,084MW pipeline / 859MW under construction / 134MW operational; Mumbai 1,726MW pipeline / 890MW operational; Jakarta 1,699MW pipeline / 395MW under construction. Southeast Asia is roughly 50% of APAC under-construction capacity. C&W state development is now 'power-constrained' and moving to markets that can provide power at scale. This is the parent figure the individual site records in this slice sit underneath. announced_date approximated to the publication month.",
+  "source_urls": [
+   "https://www.cushmanwakefield.com/en/singapore/news/2026/08/apac-dc-h1-2026",
+   "https://realestateasia.com/industrial/in-focus/apac-data-centre-pipeline-hits-all-time-high-265gw-in-h1"
+  ],
+  "geography": [
+   "Malaysia",
+   "Singapore",
+   "Indonesia",
+   "India",
+   "Japan",
+   "South Korea",
+   "Taiwan",
+   "Thailand",
+   "Vietnam",
+   "Philippines",
+   "Australia",
+   "New Zealand",
+   "Hong Kong"
+  ],
+  "mw": 26500.0,
+  "h100e": 18531468.5,
+  "h100e_basis": "26,500 MW / 1.43 kW per H100e",
+  "quantity_raw": "26.5 GW development pipeline; 4.8 GW under construction; 21.7 GW planned; 1.4 GW delivered operational in H1 2026",
+  "quantity_value": 26.5,
+  "quantity_unit": "GW",
+  "status": "in_progress",
+  "confidence": "T4",
+  "binding_status": "speculative",
+  "announced_date": "2026-08-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "india-pipeline-8.33gw-2026-06",
+  "deal_type": "D7",
+  "from_entity": "Indian data centre developers collectively",
+  "to_entity": "market",
+  "headline": "India's data centre pipeline reached 8.33 GW against 1.6 GW of live capacity, with only 0.32 GW actually under construction.",
+  "notes": "CONTEXT RECORD, not a transaction. Knight Frank India figures dated 20 June 2026. The gap between 0.32 GW under construction and 5.41 GW early-stage is the key discipline point: 65% of the Indian pipeline is early-stage and requires multi-year coordination with utilities and substations. Sify's three campuses alone (637MW claimed) would be a large share of India's 1.6GW live capacity, which is a reason to treat operator-claimed MW as ultimate ceilings.",
+  "source_urls": [
+   "https://letsdatascience.com/news/india-expands-data-centre-pipeline-to-833-gw-f72ff281"
+  ],
+  "geography": [
+   "India"
+  ],
+  "mw": 8330.0,
+  "h100e": 5825174.8,
+  "h100e_basis": "8,330 MW / 1.43 kW per H100e",
+  "quantity_raw": "8.33 GW total pipeline; 1.6 GW live; 0.32 GW under construction; 2.92 GW committed; 5.41 GW early-stage. Mumbai 3.75 GW, Hyderabad 1.93 GW",
+  "quantity_value": 8.33,
+  "quantity_unit": "GW",
+  "status": "in_progress",
+  "confidence": "T4",
+  "binding_status": "speculative",
+  "announced_date": "2026-06-20",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "e2e-networks-published-rate-card-2026",
+  "deal_type": "D12",
+  "from_entity": "E2E Networks Limited",
+  "to_entity": "open market",
+  "headline": "E2E Networks publishes on-demand GPU hourly prices ranging from $0.57 for an L4 to $6.50 for a B200.",
+  "notes": "Listed price, not a cleared trade; D12 is the closest available type for a published rate card. Per-minute billing. A third-party comparison dated Feb 2026 gives INR rates of Rs183/hr for H200 and Rs175/hr for H100 which cannot be reconciled with the USD card at any plausible FX rate, and a third source quotes 'H100 from $1.80/hr'; the company's own page is used. announced_date is the capture date. E2E is NSE-listed.",
+  "source_urls": [
+   "https://www.e2enetworks.com/pricing",
+   "https://acecloud.ai/blog/cloud-gpu-pricing-comparison/"
+  ],
+  "geography": [
+   "India"
+  ],
+  "quantity_raw": "B200 $6.50/hr, H200 $3.49/hr, H100 $2.90/hr, RTX PRO 6000 $1.90/hr, A100 80GB $2.10/hr, A100 40GB $1.98/hr, A40 $1.44/hr, A30 $1.35/hr, L40S $1.20/hr, L4 $0.57/hr, per GPU-hour excluding taxes",
+  "quantity_unit": "GPU_hours",
+  "status": "operational",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2026-09-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "jarvislabs-published-rate-card-2026",
+  "deal_type": "D12",
+  "from_entity": "Jarvislabs.ai",
+  "to_entity": "open market",
+  "headline": "Jarvislabs publishes on-demand GPU hourly prices from $0.41 for an A30 to $3.99 for an H200 SXM.",
+  "notes": "Listed price, not a cleared trade. Customers outside India are billed in USD. A third-party listing quotes Jarvis Labs at Rs270/hr for H100, which does not reconcile with $2.69/hr; the company page is used. announced_date is the capture date.",
+  "source_urls": [
+   "https://jarvislabs.ai/pricing"
+  ],
+  "geography": [
+   "India"
+  ],
+  "quantity_raw": "H200 SXM $3.99/hr, H100 SXM $2.69/hr, RTX Pro 6000 Blackwell $1.89/hr, A100 80GB $1.49/hr, A100 40GB $0.89/hr, L4 $0.44/hr, A30 $0.41/hr",
+  "quantity_unit": "GPU_hours",
+  "status": "operational",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2026-09-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "neevcloud-published-rate-card-2026",
+  "deal_type": "D12",
+  "from_entity": "NeevCloud",
+  "to_entity": "open market",
+  "headline": "NeevCloud publishes H200 GPU hourly prices from Rs179.91 on a one-year commitment to Rs231.17 on demand.",
+  "notes": "Listed price, not a cleared trade. Includes 20 vCPU, 192GB RAM, ephemeral NVMe, InfiniBand and DDoS protection; persistent storage billed separately. Only 22% discount between on-demand and a one-year commitment, which is a notably shallow term curve. Prices in INR only. announced_date is the capture date.",
+  "source_urls": [
+   "https://www.neevcloud.com/h200-gpu-cluster/"
+  ],
+  "geography": [
+   "India"
+  ],
+  "quantity_raw": "H200 on-demand Rs231.17/GPU/hour; 3-month Rs192.48/hr; 6-month Rs184.74/hr; 1-year Rs179.91/hr",
+  "quantity_unit": "GPU_hours",
+  "status": "operational",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2026-09-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "acecloud-published-rate-card-2026-02",
+  "deal_type": "D12",
+  "from_entity": "AceCloud",
+  "to_entity": "open market",
+  "headline": "AceCloud publishes GPU hourly prices in rupees from Rs23.01 for an A2 to Rs315.07 for an H100 HGX.",
+  "notes": "Listed price, not a cleared trade. The source explicitly states rates are from February 2026 and vary with exchange rates, data centre region and availability. No H200 or B200 in the published catalogue.",
+  "source_urls": [
+   "https://acecloud.ai/blog/cloud-gpu-pricing-comparison/"
+  ],
+  "geography": [
+   "India"
+  ],
+  "quantity_raw": "H100 HGX Rs315.07/hr, A100 Rs184.93/hr, L40S Rs123.29/hr, RTX 6000 Ada Rs84.28/hr, A30 Rs71.92/hr, RTX A6000 Rs59.08/hr, L4 Rs41.92/hr, A2 Rs23.01/hr",
+  "quantity_unit": "GPU_hours",
+  "status": "operational",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2026-02-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ },
+ {
+  "deal_id": "neysa-published-rate-card-2026",
+  "deal_type": "D12",
+  "from_entity": "Neysa",
+  "to_entity": "open market",
+  "headline": "Neysa publishes GPU hourly prices in rupees including a fractional 10GB H100 slice at Rs40 an hour.",
+  "notes": "Listed price, not a cleared trade, and published on the vendor's own comparison blog rather than a rate card page, so it is self-reported. ANOMALY: the H200 rate (Rs200) is below the H100 SXM rate (Rs275), which is the reverse of every other provider in this file and may indicate a promotional or differently-specified SKU. Fractional GPU access at Rs40/hr for a 10GB slice is unusual in this market. announced_date is the capture date.",
+  "source_urls": [
+   "https://neysa.ai/blog/top-10-ai-cloud-providers-in-india/"
+  ],
+  "geography": [
+   "India"
+  ],
+  "quantity_raw": "H100 SXM 80GB Rs275/hr, H200 141GB Rs200/hr, L40S 48GB Rs100/hr, L4 24GB Rs74.8/hr, H100 10GB fractional Rs40/hr",
+  "quantity_unit": "GPU_hours",
+  "status": "operational",
+  "confidence": "T2",
+  "binding_status": "binding",
+  "announced_date": "2026-09-01",
+  "captured_at": "2026-09-02",
+  "is_restatement": false
+ }
+]

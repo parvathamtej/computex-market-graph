@@ -1,0 +1,4440 @@
+[
+ {
+  "entity_id": "sify-technologies-limited",
+  "name": "Sify Technologies Limited",
+  "aliases": [
+   "Sify Infinit Spaces",
+   "Sify CloudInfinit"
+  ],
+  "hq_country": "India",
+  "hq_city": "Chennai",
+  "website": "https://www.sifytechnologies.com/",
+  "listed_ticker": "NASDAQ:SIFY",
+  "one_line": "Indian ICT and hyperscale data centre operator running NVIDIA-certified AI-ready campuses and the CloudInfinit +AI GPU cloud.",
+  "source_urls": [
+   "https://www.sifytechnologies.com/news/sify-announces-pay-per-use-colocation-pricing-at-all-nvidia-certified-ai-ready-hyperscale-data-center-campuses-across-india/",
+   "https://www.datacenterdynamics.com/en/news/sify-technologies-to-invest-5bn-in-indian-ai-data-center-expansion/"
+  ],
+  "notes": "Sify's own release names Chennai, Noida and Navi Mumbai as NVIDIA DGX-Ready certified campuses supporting H100, H200, B200, GB200 NVL72 and GB300 NVL72 at up to 130 kW/rack. It advertises hourly pay-per-use colocation but publishes no rate card, so no hourly price is recorded. NASDAQ-listed, so 20-F/6-K filings should be treated as T1 over website copy."
+ },
+ {
+  "entity_id": "e2e-networks-limited",
+  "name": "E2E Networks Limited",
+  "aliases": [
+   "E2E",
+   "E2E Cloud",
+   "TIR (E2E platform)",
+   "e2e-networks"
+  ],
+  "hq_country": "India",
+  "hq_city": "Delhi NCR",
+  "website": "https://www.e2enetworks.com/",
+  "listed_ticker": "NSE:E2E",
+  "one_line": "Listed Indian GPU cloud provider selling NVIDIA H100/H200/B200 capacity by the hour from Delhi NCR, Mumbai and Bengaluru.",
+  "source_urls": [
+   "https://www.e2enetworks.com/pricing",
+   "https://www.spheron.network/blog/gpu-cloud-india-2026/",
+   "https://blogs.nvidia.com/blog/india-ai-mission-infrastructure-models/",
+   "https://indiaai.gov.in/article/meity-accelerates-empanelment-of-agencies-to-provide-ai-compute-and-services-for-the-indiaai-mission"
+  ],
+  "notes": "Published on-demand USD per-GPU-hour rates as of this capture: B200 $6.50, H200 $3.49, H100 $2.90, RTX PRO 6000 $1.90, A100 80GB $2.10, A100 40GB $1.98, A40 $1.44, A30 $1.35, L40S $1.20, L4 $0.57 (ex-tax, per-minute billing). A separate third-party comparison dated Feb 2026 quotes INR rates H200 Rs183/hr and H100 Rs175/hr, which do not reconcile with the USD card; both are recorded but the company page is the stronger source. NSE-listed."
+ },
+ {
+  "entity_id": "yotta-data-services-private-limited",
+  "name": "Yotta Data Services Private Limited",
+  "aliases": [
+   "Yotta",
+   "Shakti Cloud",
+   "Yotta Shakti Cloud",
+   "Shakti-Cloud",
+   "Yotta Data Services",
+   "Yotta Infrastructure",
+   "yotta-data-services"
+  ],
+  "hq_country": "India",
+  "hq_city": "Navi Mumbai",
+  "website": "https://yotta.com/",
+  "one_line": "Hiranandani-backed Indian hyperscale data centre and sovereign GPU cloud operator; runs Shakti Cloud out of Navi Mumbai and Greater Noida.",
+  "source_urls": [
+   "https://www.prnewswire.com/news-releases/yotta-data-services-receives-frost--sullivans-2026-indian-company-of-the-year-recognition-for-leadership-in-sovereign-ai-infrastructure-302806131.html",
+   "https://blogs.nvidia.com/blog/india-ai-mission-infrastructure-models/",
+   "https://www.nvidia.com/en-us/case-studies/sarvam-sovereign-ai/",
+   "https://indiaai.gov.in/article/meity-accelerates-empanelment-of-agencies-to-provide-ai-compute-and-services-for-the-indiaai-mission"
+  ],
+  "notes": "IMPORTANT DISAMBIGUATION: Yotta Data Services (India, yotta.com, Shakti Cloud) is NOT the same company as 'Yotta Labs' (yottalabs.ai), a separate GPU marketplace that publishes its own USD rate card. Do not merge. Yotta Data Services does not publish a public hourly rate card; third-party surveys list it as quote-only."
+ },
+ {
+  "entity_id": "neevcloud",
+  "name": "NeevCloud",
+  "aliases": [
+   "Neev Cloud"
+  ],
+  "hq_country": "India",
+  "website": "https://www.neevcloud.com/",
+  "one_line": "Indian AI cloud selling NVIDIA GPU clusters by the hour with India-hosted infrastructure.",
+  "source_urls": [
+   "https://www.neevcloud.com/h200-gpu-cluster/"
+  ],
+  "notes": "Published H200 rates (INR per GPU-hour): Rs231.17 on-demand, Rs192.48 on 3-month commit, Rs184.74 on 6-month, Rs179.91 on 1-year. Price includes 20 vCPU, 192GB RAM, ephemeral NVMe, InfiniBand. States '100% India-Hosted' but names no city, so hq_city left null."
+ },
+ {
+  "entity_id": "jarvislabs-ai",
+  "name": "Jarvislabs.ai",
+  "aliases": [
+   "Jarvis Labs"
+  ],
+  "hq_country": "India",
+  "website": "https://jarvislabs.ai/",
+  "one_line": "Indian GPU cloud renting NVIDIA GPUs by the hour to ML developers, billed in USD outside India and INR inside.",
+  "source_urls": [
+   "https://jarvislabs.ai/pricing"
+  ],
+  "notes": "Published on-demand USD per-GPU-hour: H200 SXM $3.99, H100 SXM $2.69, RTX PRO 6000 Blackwell $1.89, A100 80GB $1.49, A100 40GB $0.89, A30 $0.41, L4 $0.44. Site states customers outside India are billed in USD. A separate Indian comparison lists Jarvis Labs at Rs270/hr for H100 and Rs100/hr for A100, which does not reconcile with the USD card at any plausible FX rate; both recorded, company page preferred."
+ },
+ {
+  "entity_id": "neysa",
+  "name": "Neysa",
+  "aliases": [
+   "Neysa Networks",
+   "Velocis AI Cloud"
+  ],
+  "hq_country": "India",
+  "hq_city": "Mumbai",
+  "website": "https://neysa.ai/",
+  "one_line": "Indian AI cloud offering GPU-as-a-Service and inference on NVIDIA and AMD accelerators via its Velocis platform.",
+  "source_urls": [
+   "https://neysa.ai/about-us",
+   "https://neysa.ai/blog/top-10-ai-cloud-providers-in-india/",
+   "https://neysa.ai/contact"
+  ],
+  "notes": "Own blog publishes Neysa rates in INR per hour: H100 SXM 80GB Rs275, H200 141GB Rs200, L40S 48GB Rs100, L4 24GB Rs74.8, H100 fractional (10GB) Rs40. The H200 rate being below the H100 SXM rate is unusual and may reflect a promotional or fractional SKU; flagged rather than corrected. About page claims 'backed by over $1Bn in funding' naming Blackstone and OTPP among investors; HQ city not stated on the page so left null."
+ },
+ {
+  "entity_id": "acecloud",
+  "name": "AceCloud",
+  "aliases": [
+   "Ace Cloud",
+   "Ace Cloud Hosting"
+  ],
+  "hq_country": "India",
+  "hq_city": "Gurugram",
+  "website": "https://acecloud.ai/",
+  "one_line": "Indian cloud provider renting NVIDIA GPUs by the hour in INR.",
+  "source_urls": [
+   "https://acecloud.ai/blog/cloud-gpu-pricing-comparison/",
+   "https://acecloud.ai/contact-us/"
+  ],
+  "notes": "Published INR per-GPU-hour rates dated Feb 2026: H100 HGX Rs315.07, A100 Rs184.93, L40S Rs123.29, RTX 6000 Ada Rs84.28, A30 Rs71.92, RTX A6000 Rs59.08, L4 Rs41.92, A2 Rs23.01. Page itself warns rates vary with FX and data centre region."
+ },
+ {
+  "entity_id": "krutrim",
+  "name": "Krutrim",
+  "aliases": [
+   "Ola Krutrim",
+   "Krutrim Cloud",
+   "Krutrim SI Designs",
+   "krutrim"
+  ],
+  "hq_country": "India",
+  "hq_city": "Bengaluru",
+  "website": "https://cloud.olakrutrim.com/",
+  "one_line": "Ola-founded Indian AI company offering GPU-as-a-service and sovereign cloud on NVIDIA hardware.",
+  "source_urls": [
+   "https://www.techjockey.com/detail/krutrim-cloud",
+   "https://officechai.com/startups/ola-launches-krutrim-cloud-with-nvidia-gpus-for-indian-developers/",
+   "https://techcrunch.com/2026/05/05/indias-first-genai-unicorn-shifts-to-cloud-services-as-ai-model-ambitions-face-reality/"
+  ],
+  "notes": "No public hourly rate card found: listing page states 'Price Available on Request'. HQ city Bengaluru taken from the Ola launch coverage, not from a filing."
+ },
+ {
+  "entity_id": "tata-communications-limited",
+  "name": "Tata Communications Limited",
+  "aliases": [
+   "Tata Comm",
+   "TCL",
+   "TataComm"
+  ],
+  "hq_country": "India",
+  "hq_city": "Mumbai",
+  "website": "https://www.tatacommunications.com/",
+  "listed_ticker": "NSE:TATACOMM",
+  "one_line": "Indian carrier and cloud operator offering GPU cloud capacity to Indian enterprises on request.",
+  "source_urls": [
+   "https://www.spheron.network/blog/gpu-cloud-india-2026/",
+   "https://indiaai.gov.in/article/meity-accelerates-empanelment-of-agencies-to-provide-ai-compute-and-services-for-the-indiaai-mission"
+  ],
+  "notes": "Third-party survey records Tata Communications as INR-billed with 'pricing on request' and no published hourly rate. No first-party GPU rate card verified in this pass; treat capacity claims as unconfirmed until an NSE filing is checked."
+ },
+ {
+  "entity_id": "ctrls-datacenters-limited",
+  "name": "CtrlS Datacenters Limited",
+  "aliases": [
+   "CtrlS",
+   "Ctrls",
+   "Ctrls Datacenters Ltd"
+  ],
+  "hq_country": "India",
+  "hq_city": "Hyderabad",
+  "website": "https://www.ctrls.in/",
+  "one_line": "Indian rated-4 data centre operator building large AI-capable campuses in Telangana and other Indian metros.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/ctrls-to-build-40-acre-data-center-campus-near-hyderabad-india/",
+   "https://indiaai.gov.in/article/meity-accelerates-empanelment-of-agencies-to-provide-ai-compute-and-services-for-the-indiaai-mission"
+  ],
+  "notes": "Reported as already operating three Hyderabad data centres of 4MW to 13MW before the Chandanvelly campus. No GPU rate card published."
+ },
+ {
+  "entity_id": "cyfuture-india-private-limited",
+  "name": "Cyfuture India Private Limited",
+  "aliases": [
+   "Cyfuture",
+   "Cyfuture Cloud"
+  ],
+  "hq_country": "India",
+  "hq_city": "Noida",
+  "website": "https://cyfuture.cloud/",
+  "one_line": "Indian cloud and data centre provider marketing AI/GPU cloud services.",
+  "source_urls": [
+   "https://cyfuture.com/blog/the-data-center-revolution-in-india-powering-a-trillion-dollar-digital-economy-in-2026/"
+  ],
+  "notes": "GPU pricing page returned 404 during this capture; no published hourly rate verified. HQ Noida is from company self-description on the cited blog, not a filing."
+ },
+ {
+  "entity_id": "reliance-intelligence",
+  "name": "Reliance Intelligence",
+  "aliases": [
+   "Reliance Industries",
+   "Reliance Jio",
+   "Jio",
+   "Jio Platforms",
+   "RIL",
+   "Reliance",
+   "Reliance Industries Limited",
+   "Reliance Intelligence Limited",
+   "Reliance Jio Platforms",
+   "Jio Platforms Limited",
+   "reliance-industries",
+   "reliance-intelligence"
+  ],
+  "hq_country": "India",
+  "hq_city": "Mumbai",
+  "website": "https://www.ril.com/",
+  "listed_ticker": "NSE:RELIANCE",
+  "one_line": "Reliance's AI arm, building a gigawatt-scale sovereign AI compute backbone at Jamnagar on NVIDIA GB300.",
+  "source_urls": [
+   "https://www.indiaaipulse.com/en/news/reliance-outlines-ai-push-at-2026-agm",
+   "https://www.datacenterdynamics.com/en/news/reliance-industries-to-build-gw-scale-ai-data-center-in-gujurat-india/",
+   "https://techcrunch.com/2026/02/19/reliance-unveils-110b-ai-investment-plan-as-india-ramps-up-tech-ambitions/",
+   "https://www.business-standard.com/companies/news/reliance-intelligence-bets-big-on-ai-with-jamnagar-compute-platform-126061901060_1.html",
+   "https://indiaai.gov.in/article/meity-accelerates-empanelment-of-agencies-to-provide-ai-compute-and-services-for-the-indiaai-mission"
+  ],
+  "notes": "Jio, Reliance Jio, Reliance Intelligence and Digital Connexion (Reliance/Brookfield/Digital Realty JV) are related but distinct vehicles; the Jamnagar AI build is attributed to Reliance Intelligence. NSE-listed parent, so annual report is the T1 source."
+ },
+ {
+  "entity_id": "esds-software-solution-limited",
+  "name": "ESDS Software Solution Limited",
+  "aliases": [
+   "ESDS",
+   "ESDS Software"
+  ],
+  "hq_country": "India",
+  "hq_city": "Nashik",
+  "website": "https://www.esds.co.in/",
+  "one_line": "Indian managed cloud provider; contracted $1.25bn of NVIDIA B300 capacity from Sharon AI in Australia.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/sharon-ai-signs-125bn-cloud-capacity-agreement-with-esds-software-solutions/",
+   "https://www.spheron.network/blog/gpu-cloud-india-2026/"
+  ],
+  "notes": "Third-party survey notes ESDS has limited H100 availability and no H200/B200 in catalogue, which sits oddly against a $1.25bn B300 offtake; flagged as a tension in the record, not resolved."
+ },
+ {
+  "entity_id": "larsen-toubro-limited",
+  "name": "Larsen & Toubro Limited",
+  "aliases": [
+   "L&T",
+   "L&T Cloudfiniti",
+   "L&T Vyoma",
+   "Larsen and Toubro",
+   "larsen-and-toubro"
+  ],
+  "hq_country": "India",
+  "hq_city": "Mumbai",
+  "website": "https://www.larsentoubro.com/",
+  "listed_ticker": "NSE:LT",
+  "one_line": "Indian engineering conglomerate building NVIDIA AI factory data centres in Chennai and Mumbai.",
+  "source_urls": [
+   "https://blogs.nvidia.com/blog/india-ai-mission-infrastructure-models/",
+   "https://finance.yahoo.com/news/l-t-partners-nvidia-gigawatt-112327818.html"
+  ],
+  "notes": "NVIDIA states an initial Chennai expansion to 30MW and a new Mumbai facility at 40MW, targeting gigawatt-scale over time. E2E Networks runs HGX B200 systems inside L&T's Vyoma data centre in Chennai."
+ },
+ {
+  "entity_id": "netweb-technologies-india-limited",
+  "name": "Netweb Technologies India Limited",
+  "aliases": [
+   "Netweb",
+   "Tyrone",
+   "Tyrone Camarero"
+  ],
+  "hq_country": "India",
+  "hq_city": "Faridabad",
+  "website": "https://netwebindia.com/",
+  "listed_ticker": "NSE:NETWEB",
+  "one_line": "Indian HPC/AI systems maker building NVIDIA GB200 NVL4-based Tyrone Camarero supercomputing systems in India.",
+  "source_urls": [
+   "https://blogs.nvidia.com/blog/india-ai-mission-infrastructure-models/"
+  ],
+  "notes": "Supply-side manufacturer rather than a compute seller; included because it is part of the Indian AI compute supply chain."
+ },
+ {
+  "entity_id": "sakura-internet-inc",
+  "name": "SAKURA internet Inc.",
+  "aliases": [
+   "Koukaryoku",
+   "Sakura no Kumo",
+   "SAKURA Internet Inc."
+  ],
+  "hq_country": "Japan",
+  "hq_city": "Osaka",
+  "website": "https://www.sakura.ad.jp/",
+  "listed_ticker": "TSE:3778",
+  "one_line": "Japanese cloud operator running the Ishikari data centre and the Koukaryoku generative-AI GPU cloud on NVIDIA hardware.",
+  "source_urls": [
+   "https://www.sakura.ad.jp/corporate/en/information/2025/08/14/1968220601/",
+   "https://www.datacenterdynamics.com/en/news/japans-sakura-internet-looks-to-buy-10000-gpus-a-year/",
+   "https://nvidianews.nvidia.com/news/japan-cloud-leaders-build-nvidia-ai-infrastructure-to-transform-industries",
+   "https://www.sakura.ad.jp/corporate/en/profile/",
+   "https://oecd.ai/en/dashboards/policy-initiatives/meti-subsidies-for-ai-computational-resources-under-the-economic-security-promotion-act"
+  ],
+  "notes": "TSE-listed; securities reports are the T1 source for GPU capex. No public per-hour rate card captured in this pass."
+ },
+ {
+  "entity_id": "gmo-internet-group-inc",
+  "name": "GMO Internet Group, Inc.",
+  "aliases": [
+   "GMO",
+   "GMO GPU Cloud"
+  ],
+  "hq_country": "Japan",
+  "hq_city": "Tokyo",
+  "website": "https://www.gmo.jp/en/",
+  "listed_ticker": "TSE:9449",
+  "one_line": "Japanese internet group running GMO GPU Cloud on NVIDIA H200 with Spectrum-X networking.",
+  "source_urls": [
+   "https://nvidianews.nvidia.com/news/japan-cloud-leaders-build-nvidia-ai-infrastructure-to-transform-industries",
+   "https://group.gmo/en/company-profile/outline/",
+   "https://oecd.ai/en/dashboards/policy-initiatives/meti-subsidies-for-ai-computational-resources-under-the-economic-security-promotion-act"
+  ],
+  "notes": "NVIDIA's release describes a full-stack H200 / Spectrum-X / BlueField-3 build. Ticker TSE:9449 is the GMO Internet Group listing; not re-verified against a filing in this pass."
+ },
+ {
+  "entity_id": "softbank-corp",
+  "name": "SoftBank Corp.",
+  "aliases": [
+   "SB Telecom",
+   "SB Telecom Singapore",
+   "Infrinia",
+   "SoftBank Corporation (Japan telecom)",
+   "softbank-corp"
+  ],
+  "hq_country": "Japan",
+  "hq_city": "Tokyo",
+  "website": "https://www.softbank.jp/en/corp/",
+  "listed_ticker": "TSE:9434",
+  "one_line": "Japanese telco building distributed AI data centres and launching an AI Data Center GPU Cloud on GB200 NVL72 under the Infrinia AI Cloud OS.",
+  "source_urls": [
+   "https://www.softbank.jp/en/corp/news/press/sbkk/2026/20260525_01/",
+   "https://www.datacenterdynamics.com/en/news/softbank-buys-former-sharp-factory-for-676m-to-build-ai-data-center-in-osaka-japan/",
+   "https://technode.global/2026/08/04/japans-softbank-telecom-unit-singapores-sc-zeus-malaysias-robust-hpc-sign-ai-data-center-pact-for-southeast-asia/",
+   "https://www.softbank.jp/en/sbnews/entry/20260512_01",
+   "https://www.softbank.jp/en/corp/news/press/sbkk/2024/20240607_01/"
+  ],
+  "notes": "Distinguish SoftBank Corp. (TSE:9434, the telco) from SoftBank Group Corp. (TSE:9984, the investor). The GPU cloud and the Sakai site sit with the telco. SB Telecom Singapore is the SEA subsidiary in the SC ZEUS / Robust HPC pact."
+ },
+ {
+  "entity_id": "kddi-corporation",
+  "name": "KDDI Corporation",
+  "aliases": [
+   "WAKONX",
+   "KDDI GPU Cloud"
+  ],
+  "hq_country": "Japan",
+  "hq_city": "Tokyo",
+  "website": "https://www.kddi.com/english/",
+  "listed_ticker": "TSE:9433",
+  "one_line": "Japanese telco operating the Osaka Sakai AI data centre and a GPU cloud on NVIDIA GB200 NVL72.",
+  "source_urls": [
+   "https://newsroom.kddi.com/english/news/detail/kddi_nr-916_4323.html",
+   "https://www.kddi.com/english/corporate/kddi/profile/",
+   "https://oecd.ai/en/dashboards/policy-initiatives/meti-subsidies-for-ai-computational-resources-under-the-economic-security-promotion-act"
+  ],
+  "notes": "Osaka Sakai opened 22 January 2026, 100% renewable-powered, repurposed from the Sharp Sakai plant. GPU cloud trials from 22 Jan 2026, general applications from 1 April 2026. No public hourly rate captured."
+ },
+ {
+  "entity_id": "highreso-inc",
+  "name": "Highreso Inc.",
+  "aliases": [
+   "GPUSOROBAN",
+   "GPU SOROBAN",
+   "Hi-Res",
+   "Highreso Kagawa",
+   "Highreso Co., Ltd."
+  ],
+  "hq_country": "Japan",
+  "hq_city": "Tokyo",
+  "website": "https://highreso.jp/",
+  "one_line": "Japanese low-cost GPU cloud operator (GPUSOROBAN) with NVIDIA H200 facilities in Ishikawa and Kagawa.",
+  "source_urls": [
+   "https://www.sakura.ad.jp/corporate/en/information/2025/08/14/1968220601/",
+   "https://nvidianews.nvidia.com/news/japan-cloud-leaders-build-nvidia-ai-infrastructure-to-transform-industries",
+   "https://highreso.jp/company/",
+   "https://oecd.ai/en/dashboards/policy-initiatives/meti-subsidies-for-ai-computational-resources-under-the-economic-security-promotion-act"
+  ],
+  "notes": "NVIDIA release states 1,600 NVIDIA GPUs across two Highreso facilities. Party to the April 2025 reciprocal-GPU-supply agreement with KDDI and SAKURA internet."
+ },
+ {
+  "entity_id": "rutilea-inc",
+  "name": "RUTILEA, Inc.",
+  "aliases": [
+   "AI Fukushima"
+  ],
+  "hq_country": "Japan",
+  "hq_city": "Kyoto",
+  "website": "https://rutilea.com/",
+  "one_line": "Japanese AI company operating an NVIDIA Hopper GPU facility at Okuma, Fukushima.",
+  "source_urls": [
+   "https://nvidianews.nvidia.com/news/japan-cloud-leaders-build-nvidia-ai-infrastructure-to-transform-industries",
+   "https://www.rutilea.com/en",
+   "https://oecd.ai/en/dashboards/policy-initiatives/meti-subsidies-for-ai-computational-resources-under-the-economic-security-promotion-act"
+  ],
+  "notes": "NVIDIA states more than 1,000 NVIDIA Hopper GPUs, Okuma facility operational from September 2024. HQ city Kyoto not re-verified in this pass."
+ },
+ {
+  "entity_id": "naver-cloud-corp",
+  "name": "NAVER Cloud Corp.",
+  "aliases": [
+   "NAVER Cloud Platform",
+   "NCP",
+   "Naver",
+   "NAVER",
+   "035420.KS",
+   "NAVER Corporation",
+   "naver"
+  ],
+  "hq_country": "South Korea",
+  "hq_city": "Seongnam",
+  "website": "https://www.ncloud.com/",
+  "listed_ticker": "KRX:035420",
+  "one_line": "Korean sovereign cloud provider deploying over 60,000 NVIDIA GPUs including RTX PRO 6000 Blackwell.",
+  "source_urls": [
+   "https://nvidianews.nvidia.com/news/south-korea-ai-infrastructure",
+   "https://www.datacenterdynamics.com/en/news/nvidia-to-deploy-more-than-250000-gpus-across-south-korea-with-samsung-sk-group-and-hyundai-all-announcing-ai-factories/",
+   "https://www.kedglobal.com/artificial-intelligence/newsView/ked202608040003",
+   "https://oecd.ai/en/dashboards/policy-initiatives/south-korea-national-ai-gpu-infrastructure-initiative-1"
+  ],
+  "notes": "Subsidiary of NAVER Corporation (KRX:035420); NAVER Cloud itself is not separately listed. One of three operators of Korea's National AI Computing Center alongside NHN Cloud and Kakao."
+ },
+ {
+  "entity_id": "nhn-cloud-corp",
+  "name": "NHN Cloud Corp.",
+  "aliases": [
+   "NHN",
+   "NHN \ud074\ub77c\uc6b0\ub4dc"
+  ],
+  "hq_country": "South Korea",
+  "hq_city": "Pangyo",
+  "website": "https://www.nhncloud.com/",
+  "one_line": "Korean cloud provider, one of three operators of the government National AI Computing Center GPU pool.",
+  "source_urls": [
+   "https://nvidianews.nvidia.com/news/south-korea-ai-infrastructure",
+   "https://company.nhncloud.com/about",
+   "https://oecd.ai/en/dashboards/policy-initiatives/south-korea-national-ai-gpu-infrastructure-initiative-1"
+  ],
+  "notes": "No individual GPU count disclosed in the NVIDIA release; only the joint 50,000-GPU national programme figure. HQ Pangyo not re-verified."
+ },
+ {
+  "entity_id": "kt-cloud-co-ltd",
+  "name": "kt cloud Co., Ltd.",
+  "aliases": [
+   "KT Corporation"
+  ],
+  "hq_country": "South Korea",
+  "hq_city": "Seoul",
+  "website": "https://cloud.kt.com/",
+  "one_line": "Korean cloud arm of KT Corporation offering GPU capacity with domestic data residency.",
+  "source_urls": [
+   "https://www.spheron.network/blog/top-gpu-providers-south-korea/"
+  ],
+  "notes": "Only a third-party mention as one of the Korean-domiciled options for data residency (alongside Naver Cloud and Samsung SDS). No GPU count, MW or hourly price verified in this pass. Parent KT Corp is KRX:030200 / NYSE:KT."
+ },
+ {
+  "entity_id": "kakao-corp",
+  "name": "Kakao Corp.",
+  "aliases": [
+   "Kakao Enterprise",
+   "Kakao Cloud"
+  ],
+  "hq_country": "South Korea",
+  "hq_city": "Jeju",
+  "website": "https://www.kakaocorp.com/",
+  "listed_ticker": "KRX:035720",
+  "one_line": "Korean internet group, one of three operators of the government National AI Computing Center GPU pool.",
+  "source_urls": [
+   "https://nvidianews.nvidia.com/news/south-korea-ai-infrastructure",
+   "https://oecd.ai/en/dashboards/policy-initiatives/south-korea-national-ai-gpu-infrastructure-initiative-1"
+  ],
+  "notes": "No individual GPU count disclosed. KRX ticker recorded from general knowledge of the listing, not re-verified against a filing in this pass."
+ },
+ {
+  "entity_id": "sk-telecom-co-ltd",
+  "name": "SK Telecom Co., Ltd.",
+  "aliases": [
+   "SKT",
+   "SK Broadband",
+   "SK Group",
+   "SK",
+   "SK Holdings",
+   "SK hynix (group)"
+  ],
+  "hq_country": "South Korea",
+  "hq_city": "Seoul",
+  "website": "https://www.sktelecom.com/",
+  "listed_ticker": "KRX:017670",
+  "one_line": "Korean telco building the Ulsan AI data centre with AWS and targeting 15 GW of AI data centre capacity by 2035.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/sk-group-and-aws-to-build-ai-data-center-in-ulsan-south-korea/",
+   "https://www.koreaherald.com/article/10798417",
+   "https://news.sktelecom.com/en/1960",
+   "https://openai.com/index/samsung-and-sk-join-stargate/",
+   "https://www.lightreading.com/ai-machine-learning/south-korea-to-boost-ai-infrastructure-with-260-000-nvidia-chips"
+  ],
+  "notes": "SK Group, SK Telecom, SK Broadband, SK hynix and SK Gas all appear in the Ulsan story; SK Telecom and SK Broadband are the named investors. Also KRX-listed with an ADR."
+ },
+ {
+  "entity_id": "samsung-sds-co-ltd",
+  "name": "Samsung SDS Co., Ltd.",
+  "aliases": [
+   "SDS"
+  ],
+  "hq_country": "South Korea",
+  "hq_city": "Seoul",
+  "website": "https://www.samsungsds.com/",
+  "listed_ticker": "KRX:018260",
+  "one_line": "Korean IT services arm of Samsung; first in Korea to sell NVIDIA B300 GPU capacity on a pay-as-you-go subscription.",
+  "source_urls": [
+   "https://www.samsungsds.com/us/news/gpu-260326.html",
+   "https://www.koreatimes.co.kr/business/tech-science/20260323/samsung-sds-debuts-koreas-1st-nvidia-b300-gpu-service-subscription"
+  ],
+  "notes": "B300 GPUaaS launched 26 March 2026 on a subscription model; a token-billed serverless inference service was slated for Q3 2026. No published per-hour price. Distinct from Samsung Electronics (KRX:005930), which separately committed over 50,000 GPUs to a semiconductor AI factory."
+ },
+ {
+  "entity_id": "chunghwa-telecom-co-ltd",
+  "name": "Chunghwa Telecom Co., Ltd.",
+  "aliases": [
+   "CHT",
+   "Chunghwa"
+  ],
+  "hq_country": "Taiwan",
+  "hq_city": "Taipei",
+  "website": "https://www.cht.com.tw/en/home/cht",
+  "listed_ticker": "TWSE:2412",
+  "one_line": "Taiwan's incumbent telco, expanding AI-capable internet data centre capacity in Taoyuan and Taichung.",
+  "source_urls": [
+   "https://www.rcrwireless.com/20260806/carriers/chunghwa-ai-infra"
+  ],
+  "notes": "TWSE-listed and NYSE-ADR (CHT); quarterly filings are the T1 source. Lunping, Taoyuan facility began operations in Q2 2026 and adds up to 36MW at full build-out."
+ },
+ {
+  "entity_id": "asustek-computer-inc",
+  "name": "ASUSTeK Computer Inc.",
+  "aliases": [
+   "ASUS",
+   "ASUSTeK",
+   "Taiwan Web Service",
+   "TWS",
+   "ASUS Cloud"
+  ],
+  "hq_country": "Taiwan",
+  "hq_city": "Taipei",
+  "website": "https://www.asus.com/",
+  "listed_ticker": "TWSE:2357",
+  "one_line": "Taiwanese systems maker; built the liquid-cooled Nano4 AI supercomputer for NCHC and co-developed the Taiwan Computing Cloud.",
+  "source_urls": [
+   "https://www.asus.com/business/resources/casestudies/nano4-taiwan-liquid-cooled-ai-supercomputer/",
+   "https://www.nchc.org.tw/Message/MessageView/297?mid=92&page=1"
+  ],
+  "notes": "Taiwan Web Service Corporation (TWS) is the ASUS-affiliated operator of Taiwan AI Cloud / TWCC. The exact corporate relationship between ASUS, TWS and NCHC was not verified in this pass."
+ },
+ {
+  "entity_id": "quanta-computer-inc",
+  "name": "Quanta Computer Inc.",
+  "aliases": [
+   "Quanta",
+   "QCT",
+   "Quanta Cloud Technology"
+  ],
+  "hq_country": "Taiwan",
+  "hq_city": "Taoyuan",
+  "website": "https://www.quantatw.com/",
+  "listed_ticker": "TWSE:2382",
+  "one_line": "Taiwanese ODM and cloud systems maker (QCT); co-developer of the Taiwan Computing Cloud platform.",
+  "source_urls": [
+   "https://www.nchc.org.tw/Message/MessageView/297?mid=92&page=1"
+  ],
+  "notes": "Named by NCHC as a joint developer of TWCC alongside ASUS and Taiwan Mobile. QCT is Quanta's cloud subsidiary."
+ },
+ {
+  "entity_id": "national-center-for-high-performance-computing",
+  "name": "National Center for High-performance Computing",
+  "aliases": [
+   "NCHC",
+   "TWCC",
+   "Taiwan Computing Cloud",
+   "Taiwania",
+   "Nano4",
+   "Taiwan NCHC",
+   "nchc"
+  ],
+  "hq_country": "Taiwan",
+  "hq_city": "Hsinchu",
+  "website": "https://www.nchc.org.tw/",
+  "one_line": "Taiwan's national HPC centre, operator of the Taiwania supercomputers, TWCC and the Nano4 NVIDIA cluster in Tainan.",
+  "source_urls": [
+   "https://www.nchc.org.tw/Message/MessageView/297?mid=92&page=1",
+   "https://www.datacenterdynamics.com/en/news/taiwan-launches-data-center-with-ai-cluster/",
+   "https://www.taipeitimes.com/News/front/archives/2025/01/12/2003830052"
+  ],
+  "notes": "NCHC headquarters Hsinchu with branches in Taichung and Tainan; the Cloud Compute Center sits in Tainan."
+ },
+ {
+  "entity_id": "bitdeer-technologies-group",
+  "name": "Bitdeer Technologies Group",
+  "aliases": [
+   "BTDR"
+  ],
+  "hq_country": "Singapore",
+  "hq_city": "Singapore",
+  "website": "https://www.bitdeer.com/",
+  "listed_ticker": "NASDAQ:BTDR",
+  "one_line": "Singapore-headquartered listed operator converting bitcoin-mining data centre capacity into liquid-cooled AI cloud sites in Malaysia and beyond.",
+  "source_urls": [
+   "https://ir.bitdeer.com/news-releases/news-release-details/bitdeer-announces-june-2026-production-and-operations-update",
+   "https://www.investing.com/news/company-news/bitdeer-ai-sells-out-95mw-malaysia-data-center-capacity-93CH-4883209"
+  ],
+  "notes": "Monthly production and operations updates filed with the SEC are T1. APAC AI footprint: Cyberjaya 2MW online, Cyberjaya 9.5MW pipeline (Q4 2026 energisation), Johor Bahru 21.7MW IT (Q1 2027). Also holds 100MW at Gedu and 500MW at Jigmeling in Bhutan, both currently crypto rather than AI."
+ },
+ {
+  "entity_id": "firmus-technologies",
+  "name": "Firmus Technologies",
+  "aliases": [
+   "Sustainable Metal Cloud",
+   "SMC",
+   "Firmus Australia",
+   "Project Southgate",
+   "Firmus HyperCube",
+   "firmus"
+  ],
+  "hq_country": "Singapore",
+  "hq_city": "Singapore",
+  "website": "https://firmus.co/",
+  "one_line": "Singapore/Australia AI infrastructure company building immersion- and direct-to-chip-cooled NVIDIA AI factories across Australia, Singapore and Indonesia.",
+  "source_urls": [
+   "https://firmus.co/newsroom/firmus-to-build-170-000-gpu-ai-factor-y-campus-with-nvidia-for-global-ai-natives",
+   "https://firmus.co/newsroom/firmus-secures-600-mw-energy-supply-agreement-in-south-australia-linked-to-1-2-gw-of-new-renewable-generation-and-battery-storage",
+   "https://firmus.co/project-southgate-faqs",
+   "https://newsletter.semianalysis.com/p/nvidia-gpu-debt-backstop-unleashes",
+   "https://capacityglobal.com/news/nvidia-now-agrees-to-rent-back-unused-gpu-capacity-from-neocloud-operators-if-customer-demand-falls-short/"
+  ],
+  "notes": "Founded 2019; developing roughly 1.6GW globally by 2028 per DCD. Sustainable Metal Cloud is the earlier/associated brand for the Singapore immersion-cooled compute business. Treat Firmus, Firmus Technologies, Firmus Australia and Sustainable Metal Cloud as one entity."
+ },
+ {
+  "entity_id": "sc-zeus-data-centers",
+  "name": "SC ZEUS Data Centers",
+  "aliases": [
+   "SC ZEUS",
+   "SC Zeus"
+  ],
+  "hq_country": "Singapore",
+  "hq_city": "Singapore",
+  "one_line": "Singapore data centre developer sourcing land and building core AI infrastructure across Southeast Asia.",
+  "source_urls": [
+   "https://technode.global/2026/08/04/japans-softbank-telecom-unit-singapores-sc-zeus-malaysias-robust-hpc-sign-ai-data-center-pact-for-southeast-asia/"
+  ],
+  "notes": "Role in the 1 August 2026 tripartite pact: land sourcing, design, building and operating core infrastructure. No website verified."
+ },
+ {
+  "entity_id": "robust-hpc-group",
+  "name": "Robust HPC Group",
+  "aliases": [
+   "RobustHPC"
+  ],
+  "hq_country": "Malaysia",
+  "hq_city": "Petaling Jaya",
+  "one_line": "Malaysian supercomputing firm procuring and running GPU clusters for Southeast Asian AI factories.",
+  "source_urls": [
+   "https://technode.global/2026/08/04/japans-softbank-telecom-unit-singapores-sc-zeus-malaysias-robust-hpc-sign-ai-data-center-pact-for-southeast-asia/",
+   "https://robusthpc.com/"
+  ],
+  "notes": "Role in the 1 August 2026 tripartite pact: GPU cluster procurement, setup and management."
+ },
+ {
+  "entity_id": "ytl-power-international-berhad",
+  "name": "YTL Power International Berhad",
+  "aliases": [
+   "YTL Power",
+   "YTL",
+   "YTL AI Cloud",
+   "YTL Data Center Holdings",
+   "YTL Green Data Center Park",
+   "SIPP Power",
+   "YTL Data Center Holdings Pte. Ltd."
+  ],
+  "hq_country": "Malaysia",
+  "hq_city": "Kuala Lumpur",
+  "website": "https://www.ytlpowerinternational.com/",
+  "listed_ticker": "BURSA:YTLPOWR",
+  "one_line": "Malaysian listed utility and data centre developer operating the Kulai Green Data Center Park and the NVIDIA-powered YTL AI Cloud.",
+  "source_urls": [
+   "https://theedgemalaysia.com/node/815134",
+   "https://w.media/ytl-power-completes-nvidia-powered-ai-data-centre-in-johor/",
+   "https://www.datacenterdynamics.com/en/news/nvidia-ytl-power-partner-for-43bn-ai-data-centers-in-malaysia/"
+  ],
+  "notes": "Bursa Malaysia-listed, so annual reports and Bursa announcements are T1. YTL Data Center Holdings Pte Ltd is the Singapore-domiciled data centre vehicle; SIPP Power Sdn Bhd is the entity acquiring the Sedenak land. Kulai campus reported at 298MW contracted capacity heading to 1,000MW."
+ },
+ {
+  "entity_id": "tm-nxera",
+  "name": "TM Nxera",
+  "aliases": [
+   "TM One",
+   "Telekom Malaysia",
+   "TM Global",
+   "Nxera",
+   "TM Nxera Iskandar Puteri"
+  ],
+  "hq_country": "Malaysia",
+  "hq_city": "Kuala Lumpur",
+  "website": "https://www.tm.com.my/",
+  "listed_ticker": "BURSA:TM",
+  "one_line": "Telekom Malaysia and Singtel Nxera joint venture building an AI-ready data centre campus at Iskandar Puteri, Johor.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/tm-nxera-signs-280mw-electrical-supply-agreement-with-tnb-to-power-malaysian-data-center-campus/"
+  ],
+  "notes": "TM One and TM Global are Telekom Malaysia business units that appear alongside TM Nxera in directories; treat as related but not identical. Parent TM is Bursa-listed."
+ },
+ {
+  "entity_id": "racks-central-pte-ltd",
+  "name": "Racks Central Pte Ltd",
+  "aliases": [
+   "RCJM",
+   "RCBI"
+  ],
+  "hq_country": "Singapore",
+  "hq_city": "Singapore",
+  "website": "https://www.rackscentral.com/",
+  "one_line": "Singapore data centre developer building AI campuses at Pasir Gudang in Johor and at Nongsa in Batam.",
+  "source_urls": [
+   "https://www.rackscentral.com/news/tnb-and-racks-central-sign-electricity-supply-agreement-for-johor-ai-data-center-campus",
+   "https://www.datacentermap.com/malaysia/johor-bahru/"
+  ],
+  "notes": "CEO Bobby Wee. Signed a 100MW phase-1 electricity supply agreement with TNB on 22 April 2026 and has separate MoUs with renewable suppliers."
+ },
+ {
+  "entity_id": "dayone",
+  "name": "DayOne",
+  "aliases": [
+   "DayOne Data Centers",
+   "Day One",
+   "GDS International"
+  ],
+  "hq_country": "Singapore",
+  "hq_city": "Singapore",
+  "website": "https://www.dayonedc.com/",
+  "one_line": "Pan-Asian hyperscale data centre developer with large campuses in Johor, Batam, Jakarta and Thailand.",
+  "source_urls": [
+   "https://www.datacentermap.com/indonesia/batam/",
+   "https://www.datacenterdynamics.com/en/news/firmus-to-deploy-170000-gpu-cluster-in-batam-indonesia/",
+   "https://digitalinasia.com/southeast-asia-ai-data-centre-boom/"
+  ],
+  "notes": "Landlord for Firmus's 360MW Batam AI campus at Kabil Tech Park, which carries a 450MW PPA with PLN Batam. Also listed at Nongsa Digital Park NDP1-NDP3 (up to 72MW each) and Nusajaya Tech Park NTP1-NTP3 (69.5MW each) in Johor. Frequently described as the international arm of GDS Holdings; that corporate relationship was not verified in this pass."
+ },
+ {
+  "entity_id": "pt-indosat-tbk-indosat-ooredoo-hutchison",
+  "name": "PT Indosat Tbk (Indosat Ooredoo Hutchison)",
+  "aliases": [
+   "Indosat",
+   "IOH",
+   "Indosat Ooredoo Hutchison",
+   "Lintasarta",
+   "GPU Merdeka",
+   "Zankore"
+  ],
+  "hq_country": "Indonesia",
+  "hq_city": "Jakarta",
+  "website": "https://indosatooredoohutchison.com/",
+  "listed_ticker": "IDX:ISAT",
+  "one_line": "Indonesian telco building sovereign AI compute; parent of Lintasarta's GPU Merdeka cloud and co-founder of the 1 GW Zankore AI factory platform.",
+  "source_urls": [
+   "https://technode.global/2026/08/07/indonesias-indosat-jointly-launches-1gw-ai-factory-platform-zankore-with-qatars-ooredoo-finlands-nokia-us-nvidia/",
+   "https://www.datacenterdynamics.com/en/news/indosats-lintasarta-launches-ai-cloud-gpu-merdeka-in-indonesia/"
+  ],
+  "notes": "Lintasarta (PT Aplikanusa Lintasarta) is the Indosat subsidiary operating GPU Merdeka on 8x H100 SXM servers. Zankore is the new 1 GW platform with Ooredoo Group as lead investor, Nokia and NVIDIA. IDX-listed."
+ },
+ {
+  "entity_id": "neutradc",
+  "name": "NeutraDC",
+  "aliases": [
+   "Telkom Data Ekosistem",
+   "Telin",
+   "NeutraDC Nxera Batam",
+   "Telkom Indonesia"
+  ],
+  "hq_country": "Indonesia",
+  "hq_city": "Jakarta",
+  "website": "https://www.neutradc.com/",
+  "one_line": "Telkom Indonesia's data centre arm, operating the Nxera Batam hyperscale campus.",
+  "source_urls": [
+   "https://www.datacentermap.com/indonesia/batam/neutradc-hdc-batam/",
+   "https://www.neutradc.com/data-center/batam"
+  ],
+  "notes": "Nxera Batam at Kabil Integrated Industrial Estate: 51MW ultimate IT load, 17MW initial phase, roughly 5 hectares, BTM-1 topped off October 2025. Parent Telkom Indonesia is IDX:TLKM / NYSE:TLK; NeutraDC itself is not separately listed."
+ },
+ {
+  "entity_id": "siam-ai-cloud",
+  "name": "SIAM.AI CLOUD",
+  "aliases": [
+   "Siam AI",
+   "SIAM.AI",
+   "SiamGPT"
+  ],
+  "hq_country": "Thailand",
+  "hq_city": "Bangkok",
+  "website": "https://siam.ai/",
+  "one_line": "Thailand's first NVIDIA Cloud Partner, selling sovereign GPU compute and building a large Thai AI data centre.",
+  "source_urls": [
+   "https://siam.ai/nvidia-thailand-sovereign-ai/",
+   "https://asia.nikkei.com/business/technology/artificial-intelligence/nvidia-partner-siam-ai-chases-digital-sovereignty-with-100mw-data-center"
+  ],
+  "notes": "CEO Ratanaphon Wongnapachant. Registered address 1252/1 True Tower 2, Pattanakarn Road, Suan Luang, Bangkok 10250. Roadmap includes H200 and GB200 Grace Blackwell. No public hourly rate card found. The Nikkei article is blocked by robots.txt; only its headline (100MW data centre) could be read."
+ },
+ {
+  "entity_id": "fpt-corporation",
+  "name": "FPT Corporation",
+  "aliases": [
+   "FPT Software",
+   "FPT AI Factory",
+   "FPT Smart Cloud"
+  ],
+  "hq_country": "Vietnam",
+  "hq_city": "Hanoi",
+  "website": "https://fpt.com/en",
+  "listed_ticker": "HOSE:FPT",
+  "one_line": "Vietnamese IT group operating the FPT AI Factory GPU cloud across Vietnam and Japan on NVIDIA HGX platforms.",
+  "source_urls": [
+   "https://www.crnasia.com/news/2026/artificial-intelligence/fpt-ai-factory-to-be-powered-by-nvidia-hgx-b300-in-southeast",
+   "https://fptsoftware.com/newsroom/news-and-press-releases/press-release/fpt-launches-fpt-ai-factory-to-accelerate-ai-development-in-japan"
+  ],
+  "notes": "Runs HGX H100 and HGX H200 today, expanding to HGX B300 with availability date unconfirmed. Reported 43 AI cloud services used by more than 18,000 users; FPT group 2025 revenue US$2.66bn. HOSE-listed."
+ },
+ {
+  "entity_id": "viettel-idc",
+  "name": "Viettel IDC",
+  "aliases": [
+   "Viettel",
+   "Viettel Group"
+  ],
+  "hq_country": "Vietnam",
+  "hq_city": "Hanoi",
+  "website": "https://viettelidc.com.vn/",
+  "one_line": "Data centre arm of Vietnam's military-owned telco Viettel, building the country's largest data centre at Cu Chi.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/viettel-breaks-ground-on-data-center-in-ho-chi-minh-city-vietnam/"
+  ],
+  "notes": "Reported as operating 15 data centres with 87MW combined, targeting 24 data centres and 560MW by 2030. State-owned, not listed."
+ },
+ {
+  "entity_id": "cmc-telecom",
+  "name": "CMC Telecom",
+  "aliases": [
+   "CMC",
+   "CMC Corporation",
+   "CMC Corp",
+   "cmc-corporation"
+  ],
+  "hq_country": "Vietnam",
+  "hq_city": "Hanoi",
+  "website": "https://cmctelecom.vn/",
+  "listed_ticker": "HOSE:CMG",
+  "one_line": "Vietnamese telco and data centre investor named among the country's main DC developers.",
+  "source_urls": [
+   "https://www.globenewswire.com/news-release/2026/01/14/3218469/28124/en/Vietnam-Data-Center-Market-Investment-Analysis-Report-2026-2031-Featuring-Key-DC-Investors-CMC-Edge-Centres-FPT-Hanoi-Telecom-NTT-DATA-ST-Telemedia-Viettel-IDC-VNPT-VNTT.html",
+   "https://en.vietnamplus.vn/vietnam-emerges-as-new-hotspot-for-ai-data-centre-investment-post332260.vnp"
+  ],
+  "notes": "Only verified as a named DC investor in a market-report release; no MW, GPU count or price verified. Parent CMC Corporation is HOSE:CMG; not re-verified here."
+ },
+ {
+  "entity_id": "nextdc-limited",
+  "name": "NEXTDC Limited",
+  "aliases": [
+   "NXT"
+  ],
+  "hq_country": "Australia",
+  "hq_city": "Brisbane",
+  "website": "https://www.nextdc.com/",
+  "listed_ticker": "ASX:NXT",
+  "one_line": "Australian listed colocation operator; landlord for Sharon AI and proposed developer of the 612MW S7 Eastern Creek campus with OpenAI as anchor.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/australian-stargate-data-center-in-sydney-will-offer-612mw-of-capacity/",
+   "https://www.nextdc.com/news/building-the-next-generation-of-sovereign-ai-infrastructure-in-australia",
+   "https://certifiedstrategic.com/neoclouds/sharon-ai"
+  ],
+  "notes": "ASX-listed; half-year and annual reports are T1 for contracted capacity. S7 land at Eastern Creek acquired October 2024 for A$353m."
+ },
+ {
+  "entity_id": "digico-infrastructure-reit",
+  "name": "DigiCo Infrastructure REIT",
+  "aliases": [
+   "DigiCo",
+   "DGT",
+   "DigiCo REIT"
+  ],
+  "hq_country": "Australia",
+  "hq_city": "Sydney",
+  "website": "https://digico.com/",
+  "listed_ticker": "ASX:DGT",
+  "one_line": "Australian listed data centre REIT with Sydney, Brisbane and Adelaide capacity leased to hyperscale, neocloud and government customers.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/australias-digico-infrastructure-reit-signs-14mw-of-data-center-deals/"
+  ],
+  "notes": "ASX-listed; results announcements are T1. Guided Australian contracted IT capacity to 41MW by June 2026 against a prior 27MW run-rate target, and total billed IT capacity to at least 85MW by July 2026."
+ },
+ {
+  "entity_id": "sharon-ai-inc",
+  "name": "Sharon AI, Inc.",
+  "aliases": [
+   "SHAZ"
+  ],
+  "hq_country": "Australia",
+  "hq_city": "Sydney",
+  "website": "https://sharonai.com/",
+  "listed_ticker": "NASDAQ:SHAZ",
+  "one_line": "Australian sovereign GPU neocloud listed on Nasdaq, deploying NVIDIA B200/B300/GB300 capacity in leased Australian data centres.",
+  "source_urls": [
+   "https://certifiedstrategic.com/neoclouds/sharon-ai",
+   "https://www.datacenterdynamics.com/en/news/sharon-ai-signs-125bn-cloud-capacity-agreement-with-esds-software-solutions/",
+   "https://sharonai.com/press-releases/sharon-ai-announces-six-year-strategic-compute-collaboration-with-nvidia/"
+  ],
+  "notes": "Founded 2021, CEO James Manning. Nasdaq IPO February 2026 at US$30.00/share raising US$125m. Leases at Equinix SYD3 and SYD5 and NEXTDC M3. Nasdaq filings are T1 and should override the third-party index used here."
+ },
+ {
+  "entity_id": "resetdata",
+  "name": "ResetData",
+  "aliases": [
+   "Reset Data",
+   "ResetData AI Factory"
+  ],
+  "hq_country": "Australia",
+  "hq_city": "Melbourne",
+  "website": "https://resetdata.ai/",
+  "one_line": "Australian liquid-immersion AI factory operator running NVIDIA H200 capacity in Melbourne, backed by Centuria.",
+  "source_urls": [
+   "https://www.datacentermap.com/australia/melbourne/resetdata-ai-factory-ai-f1/",
+   "https://www.techtimes.com/articles/324256/20260813/centuria-locks-165m-gpu-debt-72mw-power-sovereign-ai-pipeline-moves-two-years-closer.htm"
+  ],
+  "notes": "AI-F1 at 818 Bourke Street, Docklands, Melbourne, operational August 2025 on NVIDIA H200. Immersion cooling claimed at PUE 1.02-1.10 and 100+ kW racks."
+ },
+ {
+  "entity_id": "centuria-capital-group",
+  "name": "Centuria Capital Group",
+  "aliases": [
+   "Centuria",
+   "CNI"
+  ],
+  "hq_country": "Australia",
+  "hq_city": "Sydney",
+  "website": "https://centuria.com.au/",
+  "listed_ticker": "ASX:CNI",
+  "one_line": "Australian listed fund manager financing ResetData's AI factory build-out with GPU-secured debt and dedicated on-site generation.",
+  "source_urls": [
+   "https://www.techtimes.com/articles/324256/20260813/centuria-locks-165m-gpu-debt-72mw-power-sovereign-ai-pipeline-moves-two-years-closer.htm"
+  ],
+  "notes": "ASX-listed; the A$165m Macquarie GPU bridge facility and A$300m June 2026 equity raise should be confirmed against ASX announcements as T1."
+ },
+ {
+  "entity_id": "sunevision-holdings-ltd",
+  "name": "SUNeVision Holdings Ltd",
+  "aliases": [
+   "iAdvantage",
+   "MEGA IDC",
+   "Sun Hung Kai Properties"
+  ],
+  "hq_country": "Hong Kong",
+  "hq_city": "Hong Kong",
+  "website": "https://www.sunevision.com/",
+  "listed_ticker": "HKEX:1686",
+  "one_line": "Hong Kong's largest data centre operator, building the three-phase MEGA IDC at Tseung Kwan O for AI workloads.",
+  "source_urls": [
+   "https://www.shkp.com/en-US/media/press-releases/20250327"
+  ],
+  "notes": "Subsidiary of Sun Hung Kai Properties (HKEX:0016). MEGA IDC total investment stated at over HK$15bn; Phase One delivered 500,000 sq ft and 50MW; all three phases to reach 1.2m sq ft and over 180MW."
+ },
+ {
+  "entity_id": "airtrunk-operating-pty-ltd",
+  "name": "AirTrunk Operating Pty Ltd",
+  "aliases": [
+   "AirTrunk"
+  ],
+  "hq_country": "Australia",
+  "hq_city": "Sydney",
+  "website": "https://airtrunk.com/",
+  "one_line": "APAC hyperscale data centre platform with campuses in Australia, Japan, Singapore, Hong Kong, Malaysia and India.",
+  "source_urls": [
+   "https://www.datacentermap.com/malaysia/johor-bahru/",
+   "https://www.morganlewis.com/pubs/2026/03/singapore-announces-data-center-capacity-allocation-call"
+  ],
+  "notes": "Part of an AirTrunk-ByteDance consortium that won capacity in Singapore's 2023 DC-CFA pilot. Johor sites JHB1-JHB4 listed, with JHB3 at 138+MW and JHB4 at 142+MW. Ownership (Blackstone-led) not re-verified in this pass."
+ },
+ {
+  "entity_id": "keppel-data-centres",
+  "name": "Keppel Data Centres",
+  "aliases": [
+   "Keppel",
+   "Keppel DC",
+   "Keppel DC REIT"
+  ],
+  "hq_country": "Singapore",
+  "hq_city": "Singapore",
+  "website": "https://www.keppeldatacentres.com/",
+  "one_line": "Singapore data centre developer; one of four winners of Singapore's 2026 200MW capacity allocation.",
+  "source_urls": [
+   "https://technode.global/2026/08/21/singapore-allocates-200-mw-of-new-data-center-capacity-to-digital-realty-equinix-keppel-st-telemedia/",
+   "https://www.blackridgeresearch.com/blog/latest-list-upcoming-data-centers-singapore"
+  ],
+  "notes": "Part of Keppel Ltd (SGX:BN4); Keppel DC REIT (SGX:AJBU) is a separate listed vehicle. Also holds Keppel DC Johor 1 at Sedenak Tech Park."
+ },
+ {
+  "entity_id": "st-telemedia-global-data-centres",
+  "name": "ST Telemedia Global Data Centres",
+  "aliases": [
+   "STT GDC",
+   "ST Telemedia GDC",
+   "STT",
+   "STT Johor",
+   "STT Jakarta"
+  ],
+  "hq_country": "Singapore",
+  "hq_city": "Singapore",
+  "website": "https://www.sttelemediagdc.com/",
+  "one_line": "Singapore-headquartered data centre platform with campuses across Singapore, Johor, Indonesia, India and Thailand.",
+  "source_urls": [
+   "https://technode.global/2026/08/21/singapore-allocates-200-mw-of-new-data-center-capacity-to-digital-realty-equinix-keppel-st-telemedia/",
+   "https://www.datacentermap.com/malaysia/johor-bahru/",
+   "https://www.datacentermap.com/indonesia/jakarta/"
+  ],
+  "notes": "One of four winners of Singapore's August 2026 200MW allocation. STT Johor Campus / STT Johor 1 listed at 120MW; STT Jakarta campus at 72MW."
+ },
+ {
+  "entity_id": "equinix-inc",
+  "name": "Equinix, Inc.",
+  "aliases": [
+   "Equinix"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Redwood City",
+  "website": "https://www.equinix.com/",
+  "listed_ticker": "NASDAQ:EQIX",
+  "one_line": "Global colocation operator; won 50MW in Singapore's 2026 allocation and hosts Sharon AI GPU capacity in Sydney.",
+  "source_urls": [
+   "https://technode.global/2026/08/21/singapore-allocates-200-mw-of-new-data-center-capacity-to-digital-realty-equinix-keppel-st-telemedia/",
+   "https://newsroom.equinix.com/2026-06-16-Equinix-Launches-AI-Ready-Data-Center-with-Direct-Connectivity-to-Hong-Kong-Shenzhen-Innovation-and-Technology-Park"
+  ],
+  "notes": "Included because of APAC supply relevance, not as an APAC-headquartered provider. Also won capacity in Singapore's 2023 DC-CFA pilot."
+ },
+ {
+  "entity_id": "digital-realty-trust-inc",
+  "name": "Digital Realty Trust, Inc.",
+  "aliases": [
+   "Digital Realty",
+   "DLR",
+   "Digital Connexion"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Austin",
+  "website": "https://www.digitalrealty.com/",
+  "listed_ticker": "NYSE:DLR",
+  "one_line": "Global data centre REIT; won 50MW in Singapore's 2026 allocation and is a Digital Connexion JV partner with Reliance and Brookfield in India.",
+  "source_urls": [
+   "https://technode.global/2026/08/25/uss-digital-realty-gets-provisional-allocation-of-50-mw-of-capacity-to-develop-a-new-data-center-in-singapore/",
+   "https://www.datacenterdynamics.com/en/news/reliance-industries-to-build-gw-scale-ai-data-center-in-gujurat-india/",
+   "https://www.niftytrader.in/markets/india-biggest-datacentre-reliance-jv-1gw/"
+  ],
+  "notes": "Included for APAC supply relevance. The Singapore allocation is described as provisional."
+ },
+ {
+  "entity_id": "tenaga-nasional-berhad",
+  "name": "Tenaga Nasional Berhad",
+  "aliases": [
+   "TNB",
+   "Tenaga",
+   "Tenaga Nasional"
+  ],
+  "hq_country": "Malaysia",
+  "hq_city": "Kuala Lumpur",
+  "website": "https://www.tnb.com.my/",
+  "listed_ticker": "BURSA:TENAGA",
+  "one_line": "Malaysia's national utility and the gatekeeper of Peninsular Malaysia's data centre grid connection queue.",
+  "source_urls": [
+   "https://bizruption.asia/asia-in-focus/malaysia-data-centre-grid-water-constraint-2026/",
+   "https://www.datacenterdynamics.com/en/news/tm-nxera-signs-280mw-electrical-supply-agreement-with-tnb-to-power-malaysian-data-center-campus/",
+   "https://www.datacenterdynamics.com/en/analysis/the-past-present-and-future-of-johor/"
+  ],
+  "notes": "Reported to have signed electricity supply agreements with 49 data centre projects totalling 7,100MW, against roughly 850MW of load actually energised by October 2025 and roughly 27,000MW of Peninsular installed capacity. RM42.8bn (about $10bn) allocated for grid upgrades July 2025 to December 2027. Bursa-listed, so its annual report is T1."
+ },
+ {
+  "entity_id": "pln-batam",
+  "name": "PLN Batam",
+  "aliases": [
+   "PT PLN Batam",
+   "b'right PLN Batam"
+  ],
+  "hq_country": "Indonesia",
+  "hq_city": "Batam",
+  "website": "https://www.plnbatam.com/",
+  "one_line": "Batam's electricity utility, counterparty to the 450MW PPA underpinning DayOne's Kabil Tech Park AI campus.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/firmus-to-deploy-170000-gpu-cluster-in-batam-indonesia/",
+   "https://www.datacentermap.com/indonesia/batam/"
+  ],
+  "notes": "Subsidiary of PT PLN (Persero). Batam operates a separate grid from the Java-Bali system, which is part of why it is attracting Singapore-adjacent AI load."
+ },
+ {
+  "entity_id": "gunvor-group",
+  "name": "Gunvor Group",
+  "hq_country": "Switzerland",
+  "hq_city": "Geneva",
+  "website": "https://gunvorgroup.com/",
+  "one_line": "Commodity trading house supplying 600MW of firm power to Firmus's South Australian AI campuses under a 12-year agreement.",
+  "source_urls": [
+   "https://firmus.co/newsroom/firmus-secures-600-mw-energy-supply-agreement-in-south-australia-linked-to-1-2-gw-of-new-renewable-generation-and-battery-storage"
+  ],
+  "notes": "Included as the power counterparty in an APAC compute deal, not as an APAC entity."
+ },
+ {
+  "entity_id": "openai",
+  "name": "OpenAI",
+  "aliases": [
+   "Stargate",
+   "OpenAI for Australia",
+   "OpenAI Group PBC",
+   "Open AI",
+   "openai"
+  ],
+  "hq_country": "United States",
+  "hq_city": "San Francisco",
+  "website": "https://openai.com/",
+  "one_line": "AI developer; signed an MoU with NEXTDC to anchor a proposed A$7bn Sydney AI campus.",
+  "source_urls": [
+   "https://www.nextdc.com/news/building-the-next-generation-of-sovereign-ai-infrastructure-in-australia",
+   "https://baxtel.com/data-center/openai-stargate-sydney-campus",
+   "https://nvidianews.nvidia.com/news/openai-and-nvidia-announce-strategic-partnership-to-deploy-10gw-of-nvidia-systems",
+   "https://ir.amd.com/news-events/press-releases/detail/1260/amd-and-openai-announce-strategic-partnership-to-deploy-6-gigawatts-of-amd-gpus",
+   "https://openai.com/index/next-chapter-of-microsoft-openai-partnership/",
+   "https://openai.com/index/announcing-the-stargate-project/",
+   "https://www.coreweave.com/news/coreweave-expands-agreement-with-openai-by-up-to-6-5b"
+  ],
+  "notes": "Included as the demand-side counterparty in the largest single announced APAC campus deal."
+ },
+ {
+  "entity_id": "nvidia-corporation",
+  "name": "NVIDIA Corporation",
+  "aliases": [
+   "NVDA",
+   "nvidia"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Santa Clara",
+  "website": "https://www.nvidia.com/",
+  "listed_ticker": "NASDAQ:NVDA",
+  "one_line": "Chip supplier and, increasingly, an equity and offtake counterparty across APAC AI factory projects.",
+  "source_urls": [
+   "https://nvidianews.nvidia.com/news/south-korea-ai-infrastructure",
+   "https://nvidianews.nvidia.com/news/japan-cloud-leaders-build-nvidia-ai-infrastructure-to-transform-industries",
+   "https://blogs.nvidia.com/blog/india-ai-mission-infrastructure-models/",
+   "https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital",
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000047/crwv-20250909.htm",
+   "https://www.reuters.com/business/media-telecom/nvidia-invest-15-billion-sb-energy-under-openai-data-center-deal-2026-08-17/",
+   "https://www.datacenterfrontier.com/hyperscale/article/55394688/nvidias-reported-50b-lease-and-the-nuclear-powered-ai-factory",
+   "https://nvidianews.nvidia.com/news/meta-builds-ai-infrastructure-with-nvidia",
+   "https://www.lightreading.com/ai-machine-learning/south-korea-to-boost-ai-infrastructure-with-260-000-nvidia-chips",
+   "https://capacityglobal.com/news/nvidia-now-agrees-to-rent-back-unused-gpu-capacity-from-neocloud-operators-if-customer-demand-falls-short/"
+  ],
+  "notes": "Included because nearly every APAC compute supply record has NVIDIA as the from_entity for chips."
+ },
+ {
+  "entity_id": "gorilla-technology-group-inc",
+  "name": "Gorilla Technology Group Inc.",
+  "hq_country": "United Kingdom",
+  "hq_city": "London",
+  "website": "https://gorilla-technology.com/",
+  "listed_ticker": "NASDAQ:GRRR",
+  "one_line": "Listed edge-AI and video analytics firm that signed an AI infrastructure agreement with Yotta for India's sovereign AI build-out.",
+  "source_urls": [
+   "https://www.barchart.com/story/news/769659/gorilla-technology-yotta-sign-landmark-ai-infrastructure-deal-establishing-major-position-in-india-s-sovereign-ai-buildout"
+  ],
+  "notes": "Only the headline and lede of the announcement were readable in this pass; deal value and scope not verified. HQ listed as London in company materials but not re-verified here."
+ },
+ {
+  "entity_id": "coreweave-inc",
+  "name": "CoreWeave, Inc.",
+  "aliases": [
+   "CRWV",
+   "Atlantic Crypto Corp",
+   "CoreWeave Compute Acquisition Co. II/IV/V/VII/VIII, LLC",
+   "CCAC VIII",
+   "CoreWeave Financing DDTL V, LLC",
+   "CFD V",
+   "CoreWeave Financing DDTL V-V, LLC",
+   "Atlantic Crypto",
+   "coreweave"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Livingston, New Jersey",
+  "website": "https://coreweave.com",
+  "listed_ticker": "NASDAQ:CRWV",
+  "one_line": "The largest GPU cloud provider and by far the largest GPU-backed borrower, with $35.6bn of debt at 30 June 2026.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+   "https://www.coreweave.com/news/coreweave-expands-agreement-with-openai-by-up-to-6-5b",
+   "https://coreweave.com/news/coreweave-and-meta-announce-21-billion-expanded-ai-infrastructure-agreement",
+   "https://www.coreweave.com/news/coreweave-announces-partnership-with-foundation-model-company-poolside-to-deliver-ai-cloud-services",
+   "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Second-Quarter-2026-Results/default.aspx"
+  ],
+  "notes": "CIK 0001769628. Formerly Atlantic Crypto Corp (filings through 2019-10-03). Registered address 290 W Mt. Pleasant Ave., Suite 4100, Livingston, NJ 07039. Borrows through a ladder of named SPVs (CCAC II/IV/V/VII/VIII, CoreWeave Financing DDTL V and V-V) \u2014 always match a facility to its SPV, not just to 'CoreWeave'."
+ },
+ {
+  "entity_id": "lambda",
+  "name": "Lambda",
+  "aliases": [
+   "Lambda Cloud",
+   "Lambda Labs, Inc.",
+   "lambda",
+   "lambda-labs"
+  ],
+  "hq_country": "United States",
+  "hq_city": "San Jose",
+  "website": "https://lambda.ai",
+  "one_line": "Private GPU cloud provider; first private neocloud to get an investment-grade-rated term loan B.",
+  "source_urls": [
+   "https://lambda.ai/blog/lambda-closes-926-million-senior-secured-term-loan-b-facility",
+   "https://finance.yahoo.com/technology/ai/articles/anthropic-signs-35-billion-cloud-111829800.html",
+   "https://lambda.ai/contact",
+   "https://lambda.ai/blog/lambda-announces-multibillion-dollar-agreement-with-microsoft-to-deploy-ai-infrastructure-powered-by-tens-of-thousands-of-nvidia-gpus",
+   "https://sacra.com/research/lambda-ipo/"
+  ],
+  "notes": "Private \u2014 files no consolidated debt schedule, so its true leverage is unobservable. CEO Michel Combes. Commonly written 'Lambda Labs' in press but the company brands as 'Lambda'."
+ },
+ {
+  "entity_id": "nebius-group-n-v",
+  "name": "Nebius Group N.V.",
+  "aliases": [
+   "Nebius",
+   "NBIS",
+   "Nebius Group",
+   "Yandex N.V.",
+   "nebius"
+  ],
+  "hq_country": "Netherlands",
+  "hq_city": "Amsterdam",
+  "website": "https://nebius.com",
+  "listed_ticker": "NASDAQ:NBIS",
+  "one_line": "European-domiciled AI cloud provider borrowing against GPUs and hyperscaler contracts.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1513845/000110465926084452/tm2620683d1_ex99-1.htm",
+   "https://nebius.com/newsroom/nebius-announces-multi-billion-dollar-agreement-with-microsoft-for-ai-infrastructure",
+   "https://nebius.com/newsroom/nebius-reports-second-quarter-2026-financial-results",
+   "https://assets.nebius.com/assets/a6ecfd85-a6cb-4967-8ef7-9a25bd261f9c/SHLQ226.pdf"
+  ],
+  "notes": "SEC CIK 0001513845; files 6-K as a foreign private issuer. Says it holds more than $40bn of contracted revenue from investment-grade customers including Microsoft and Meta available to securitise. Nvidia disclosed a stake reported at 9.3% in July 2026."
+ },
+ {
+  "entity_id": "iren-limited",
+  "name": "IREN Limited",
+  "aliases": [
+   "Iris Energy",
+   "IE US Hardware 3 LLC",
+   "IE US Development Holdings 3 Inc.",
+   "Hardware 3",
+   "IE US Hardware 3",
+   "Iris Energy Limited",
+   "iren",
+   "iren-hardware3"
+  ],
+  "hq_country": "Australia",
+  "hq_city": "Sydney",
+  "website": "https://iren.com",
+  "listed_ticker": "NASDAQ:IREN",
+  "one_line": "Bitcoin miner turned AI data centre operator, financing GPUs against a Microsoft contract.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1878848/000114036126023427/ef20075181_8k.htm",
+   "https://www.techrepublic.com/article/news-microsoft-iren-deal/",
+   "https://www.sec.gov/cgi-bin/browse-edgar?company=iris+energy&type=10-K&action=getcompany",
+   "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000051/irenreportsfy26results.htm"
+  ],
+  "notes": "SEC CIK 0001878848. Formerly Iris Energy. Borrows through IE US Hardware 3 LLC. Sites include Childress, Texas and Mackenzie, British Columbia. Fiscal year ends 30 June."
+ },
+ {
+  "entity_id": "terawulf-inc",
+  "name": "TeraWulf Inc.",
+  "aliases": [
+   "WULF",
+   "WULF Compute LLC",
+   "TeraWulf Brookings LLC",
+   "La Lupa Data LLC",
+   "Akela Data Holdings LLC",
+   "Akela Data LLC",
+   "Tera Wulf",
+   "terawulf"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Easton",
+  "website": "https://terawulf.com",
+  "listed_ticker": "NASDAQ:WULF",
+  "one_line": "Bitcoin miner turned AI hosting operator whose bonds are part-secured by a Google warrant pledge.",
+  "source_urls": [
+   "https://investors.terawulf.com/news-events/press-releases/detail/119/terawulf-inc-announces-pricing-of-3-2-billion-of-senior",
+   "https://investors.terawulf.com/news-events/press-releases/detail/142/terawulf-announces-anthropic-lease-at-justified-data-campus-and-sale-of-majority-interest-in-abernathy-joint-venture-to-fluidstack",
+   "https://www.sec.gov/cgi-bin/browse-edgar?company=terawulf&type=10-K&action=getcompany",
+   "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000162/a_wulfearningsreleaseq22026.htm"
+  ],
+  "notes": "SEC CIK 0001083301. Lake Mariner campus at Barker, New York. Its Fluidstack hosting agreements are backstopped by Google, which holds warrants over TeraWulf stock."
+ },
+ {
+  "entity_id": "applied-digital-corporation",
+  "name": "Applied Digital Corporation",
+  "aliases": [
+   "APLD",
+   "APLD ComputeCo 3 LLC",
+   "APLD ELN-04 HoldCo LLC",
+   "APLD ELN-04 LLC",
+   "APLD ELN-04 LandCo LLC",
+   "Applied Blockchain",
+   "applied-digital"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Dallas",
+  "website": "https://www.applieddigital.com",
+  "listed_ticker": "NASDAQ:APLD",
+  "one_line": "AI data centre developer funding individual buildings with ring-fenced secured bonds.",
+  "source_urls": [
+   "https://ir.applieddigital.com/news-events/press-releases/detail/156/applied-digital-announces-pricing-of-1-59-billion-of-senior-secured-notes-to-fund-the-fourth-building-at-polaris-forge-1",
+   "https://www.applieddigital.com/contact",
+   "https://ir.applieddigital.com/news-events/press-releases/detail/148/applied-digital-reports-fiscal-third-quarter-2026-results"
+  ],
+  "notes": "Polaris Forge 1 campus at Ellendale, North Dakota. Finances one building at a time through a dedicated ComputeCo SPV \u2014 a template other developers are copying."
+ },
+ {
+  "entity_id": "cipher-digital-inc",
+  "name": "Cipher Digital Inc.",
+  "aliases": [
+   "Cipher Mining",
+   "Cipher Mining Inc.",
+   "CIFR",
+   "Cipher Digital (Stingray)",
+   "cipher-digital",
+   "cipher-mining"
+  ],
+  "hq_country": "United States",
+  "hq_city": "New York",
+  "website": "https://www.ciphermining.com",
+  "listed_ticker": "NASDAQ:CIFR",
+  "one_line": "Data centre developer leasing its Texas capacity to Fluidstack under Google-backstopped agreements.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1819989/000095010325015073/dp237633_ex9901.htm",
+   "https://www.investing.com/news/company-news/cipher-digital-q2-2026-slides-show-114b-pipeline-amid-earnings-miss-93CH-4834719"
+  ],
+  "notes": "SEC CIK 0001819989. RENAMED from Cipher Mining Inc. to Cipher Digital Inc. during 2026 \u2014 SEC filings switch name around February 2026 under the same CIK and CIFR ticker. Barber Lake site at Colorado City, Texas (300 MW, fully leased to Fluidstack). CEO Tyler Page."
+ },
+ {
+  "entity_id": "galaxy-digital-inc",
+  "name": "Galaxy Digital Inc.",
+  "aliases": [
+   "GLXY",
+   "Galaxy",
+   "Galaxy Helios Data Centers II LLC",
+   "Galaxy Helios II LLC",
+   "galaxy-digital"
+  ],
+  "hq_country": "United States",
+  "hq_city": "New York",
+  "website": "https://www.galaxy.com",
+  "listed_ticker": "NASDAQ:GLXY",
+  "one_line": "Crypto financial firm converting its Helios campus in Texas into data centres leased to CoreWeave.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000068/launch8-kexhibit99172226.htm",
+   "https://www.sec.gov/cgi-bin/browse-edgar?company=galaxy+digital+inc&type=10-K&action=getcompany",
+   "https://www.prnewswire.com/news-releases/galaxy-completes-phase-i-of-its-helios-data-center-campus-delivering-133-megawatts-of-critical-it-load-to-coreweave-302818664.html"
+  ],
+  "notes": "SEC CIK 0001859392. Helios campus in Dickens County, Texas, 800 MW approved, fully committed to CoreWeave on 15-year leases. Bondholders in Galaxy's project SPVs are ultimately exposed to CoreWeave's Ba2/BB+ credit."
+ },
+ {
+  "entity_id": "crusoe-energy-systems",
+  "name": "Crusoe Energy Systems",
+  "aliases": [
+   "Crusoe",
+   "Crusoe AI",
+   "Crusoe Energy Systems LLC",
+   "crusoe"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Denver, Colorado",
+  "website": "https://www.crusoe.ai",
+  "one_line": "Private energy-first AI data centre developer; builder of OpenAI's Abilene Stargate campus.",
+  "source_urls": [
+   "https://www.crusoe.ai/resources/newsroom/crusoe-secures-usd750-million-credit-facility-from-brookfield-to-accelerate",
+   "https://www.crusoe.ai/resources/newsroom/crusoe-announces-new-900-mw-ai-factory-campus-in-abilene-texas-to-support-microsoft-ai-infrastructure",
+   "https://www.datacenterfrontier.com/hyperscale/article/55276169/crusoe-adds-45-gw-natural-gas-to-fuel-ai-expands-abilene-data-center-to-12-gw"
+  ],
+  "notes": "Private. CEO Chase Lochmiller. Abilene, Texas campus built on the Lancium Clean Campus in JV with Blue Owl Capital and Primary Digital Infrastructure. No public debt schedule."
+ },
+ {
+  "entity_id": "nscale",
+  "name": "Nscale",
+  "aliases": [
+   "Nscale Global Holdings Ltd",
+   "Arkon Energy (former parent)",
+   "nscale"
+  ],
+  "hq_country": "United Kingdom",
+  "hq_city": "London",
+  "website": "https://www.nscale.com",
+  "one_line": "UK neocloud building sovereign AI capacity in Norway and the US, contracted to Microsoft.",
+  "source_urls": [
+   "https://www.nscale.com/press-releases/nscale-secures-790-million-norway",
+   "https://techcrunch.com/2026/08/26/anthropic-continues-compute-gobbling-streak-in-45-billion-deal-with-nscale/",
+   "https://www.datacenterdynamics.com/en/news/microsofts-neocloud-spending-surpasses-60bn/",
+   "https://www.nscale.com/press-releases/singtel-and-nscale-unlock-gpu-capacity-globally-to-accelerate-ai-adoption",
+   "https://www.nscale.com/press-releases/nscale-microsoft-2025",
+   "https://techfundingnews.com/nscale-eyes-us-ipo-after-revealing-51b-ai-contract-backlog/"
+  ],
+  "notes": "ALIAS WARNING: Nscale / NScale / Nscale Global Holdings are ONE entity. Narvik, Norway campus. Contracted with Microsoft for 200,000 NVIDIA GB300 GPUs. Nvidia participated in a $2bn round at a $14.6bn valuation in March 2026; reported to be pursuing a US IPO in August 2026."
+ },
+ {
+  "entity_id": "fluidstack",
+  "name": "Fluidstack",
+  "aliases": [
+   "Fluidstack USA I Inc.",
+   "Fluidstack Ltd",
+   "fluidstack.io",
+   "fluidstack"
+  ],
+  "hq_country": "United Kingdom",
+  "hq_city": "London",
+  "website": "https://www.fluidstack.io",
+  "one_line": "London neocloud that leases third-party data centre capacity, with its lease obligations backstopped by Google.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1819989/000095010325015073/dp237633_ex9901.htm",
+   "https://www.fluidstack.io/about-us/blog/fluidstack-and-macquarie-announce-gpu-financing-deal-to-power-ai-labs-across-europe",
+   "https://www.datacenterdynamics.com/en/news/anthropic-plans-50bn-us-data-center-spend-starting-with-fluidstack-sites-in-texas-and-new-york/",
+   "https://fortune.com/crypto/2025/09/25/google-fluidstack-cipher-mining-bitcoin-miner-ai-data-centers/",
+   "https://app.dealroom.co/news/note/fluidstack-raises-750m-at-7b-as-google-and-anthropic-anchor-its-ai-data-centre-push",
+   "https://canada.hut8.com/resources/press-releases/hut-8-signs-15-year-245-mw-ai-data-center-lease-at-river-bend-campus-with-total-contract-value-of-usd7-0-billion"
+  ],
+  "notes": "ALIAS WARNING: Fluidstack / FluidStack are ONE entity; the US contracting entity is Fluidstack USA I Inc. Private, discloses no debt. Its whole credit story is that GOOGLE BACKSTOPS ITS LEASES \u2014 $1.73bn at Cipher's Barber Lake and $1.8bn at the TeraWulf JV \u2014 which is what lets its landlords issue bonds."
+ },
+ {
+  "entity_id": "sharonai-holdings-inc",
+  "name": "SharonAI Holdings, Inc.",
+  "aliases": [
+   "Sharon AI",
+   "SHAZ",
+   "sharonai"
+  ],
+  "hq_country": "Australia",
+  "hq_city": "North Sydney",
+  "website": "https://www.sharonai.com",
+  "listed_ticker": "OTC:SHAZ",
+  "one_line": "Australian neocloud financing GPUs through on-chain non-recourse credit.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/2068385/000182912626000444/sharonai_ex99-1.htm",
+   "https://www.sharonai.com/contact"
+  ],
+  "notes": "SEC CIK 0002068385, warrants SHAZW. Co-founder and Chairman James Manning. Nasdaq listing February 2026 raised ~$125m gross; $350m convertible senior notes May 2026; $1.6bn strategic financing June 2026; cash of ~$1.86bn at 2026-06-30. Targeting 70-80% loan-to-value asset-level debt with NO BINDING ARRANGEMENTS finalised as of its August 2026 prospectus."
+ },
+ {
+  "entity_id": "whitefiber-inc",
+  "name": "WhiteFiber, Inc.",
+  "aliases": [
+   "WYFI",
+   "WhiteFiber Iceland ehf.",
+   "WhiteFiber HPC",
+   "Enovum",
+   "Enovum Data Centers",
+   "whitefiber"
+  ],
+  "hq_country": "United States",
+  "hq_city": "New York",
+  "website": "https://www.whitefiber.com",
+  "listed_ticker": "NASDAQ:WYFI",
+  "one_line": "Small-cap AI infrastructure operator with GPU-secured bank debt in Iceland and Canada.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/2042022/000121390026088026/ea0300877-10q_whitefiber.htm",
+   "https://www.sec.gov/cgi-bin/browse-edgar?company=whitefiber&type=10-K&action=getcompany"
+  ],
+  "notes": "SEC CIK 0002042022. Related to Bit Digital. Useful as a fully documented small-scale example of GPU collateral: the Landsbankinn facility takes security over named GPU servers, CPU servers and InfiniBand switches."
+ },
+ {
+  "entity_id": "riot-platforms-inc",
+  "name": "Riot Platforms, Inc.",
+  "aliases": [
+   "Riot",
+   "RIOT",
+   "Riot Blockchain",
+   "riot-platforms"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Castle Rock",
+  "website": "https://www.riotplatforms.com",
+  "listed_ticker": "NASDAQ:RIOT",
+  "one_line": "Bitcoin miner converting its Rockdale, Texas campus to AI leases with AMD and a frontier AI lab.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1167419/000110465926093406/riot-20260810xex99d2.htm",
+   "https://finance.yahoo.com/technology/ai/articles/riot-platforms-soars-17-9-130537358.html",
+   "https://www.sec.gov/cgi-bin/browse-edgar?company=riot+platforms&type=10-K&action=getcompany",
+   "https://www.riotplatforms.com/riot-platforms-reports-second-quarter-2026-financial-results-and-strategic-highlights/"
+  ],
+  "notes": "SEC CIK 0001167419. Rockdale and Corsicana campuses in Texas. Signed a 191 MW, 20-year, $9.1bn lease with an unnamed 'leading frontier AI lab' and delivered 25 MW to AMD in May 2026. Subsidiaries ESS Metron and E4A provide vertically integrated electrical equipment."
+ },
+ {
+  "entity_id": "yondr",
+  "name": "Yondr",
+  "aliases": [
+   "Yondr JK 1 LLC",
+   "yondr"
+  ],
+  "one_line": "Data centre developer whose Yondr JK 1 LLC SPV issued $715m of 2031 secured notes.",
+  "source_urls": [
+   "https://octus.com/resources/articles/sector-insights-tech-hardware-ai-infrastructure-quarterly-q126/"
+  ],
+  "notes": "MINIMAL RECORD. Known only from an Octus listing of outstanding AI infrastructure bonds. HQ, ownership and the tenant behind Yondr JK 1 LLC are not established."
+ },
+ {
+  "entity_id": "polardc",
+  "name": "PolarDC",
+  "aliases": [
+   "Polar DC",
+   "polardc"
+  ],
+  "one_line": "H.I.G.-owned data centre platform with EUR 750m of floating-rate debt outstanding.",
+  "source_urls": [
+   "https://octus.com/resources/articles/sector-insights-tech-hardware-ai-infrastructure-quarterly-q126/"
+  ],
+  "notes": "MINIMAL RECORD. Described by Octus as 'PolarDC (HIG-owned)'. Country, sites and tenants not established."
+ },
+ {
+  "entity_id": "elk-grove-village-property",
+  "name": "Elk Grove Village Property",
+  "aliases": [
+   "elk-grove-village-property"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Elk Grove Village, Illinois",
+  "one_line": "A single data centre property in Illinois financed with $900m of 7.5% notes due 2031.",
+  "source_urls": [
+   "https://octus.com/resources/articles/sector-insights-tech-hardware-ai-infrastructure-quarterly-q126/"
+  ],
+  "notes": "MINIMAL RECORD \u2014 this is a financing vehicle name from an Octus bond listing, not a verified corporate entity. Sponsor and tenant unknown."
+ },
+ {
+  "entity_id": "flash-compute",
+  "name": "Flash Compute",
+  "aliases": [
+   "TeraWulf Fluidstack JV",
+   "flash-compute-jv"
+  ],
+  "hq_country": "United States",
+  "one_line": "The 168 MW TeraWulf-Fluidstack joint venture that issued $1.275bn of 8% notes due 2030.",
+  "source_urls": [
+   "https://investors.terawulf.com/news-events/press-releases/detail/121/terawulf-expands-strategic-partnership-with-fluidstack-through-new-168-mw-ai-compute-joint-venture",
+   "https://finance.yahoo.com/news/terawulf-fluidstack-joint-venture-plans-143846626.html"
+  ],
+  "notes": "JV between TeraWulf and Fluidstack. Its bonds are financeable because Google backstops $1.8bn of Fluidstack's lease obligations to it. Legal form and exact ownership split not established."
+ },
+ {
+  "entity_id": "meta-blue-owl-hyperion-joint-venture",
+  "name": "Meta / Blue Owl Hyperion joint venture",
+  "aliases": [
+   "Beignet Investor LLC",
+   "Hyperion JV",
+   "Hyperion data center JV",
+   "beignet-investor-jv"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Richland Parish, Louisiana",
+  "one_line": "The off-balance-sheet vehicle, 80% Blue Owl and 20% Meta, that owns Meta's Hyperion campus.",
+  "source_urls": [
+   "https://www.prnewswire.com/news-releases/meta-announces-joint-venture-with-funds-managed-by-blue-owl-capital-to-develop-hyperion-data-center-302590584.html"
+  ],
+  "notes": "NAME CAUTION: Meta's press release does not name the JV entity; 'Beignet Investor LLC' is the name used in secondary reporting of the bond issue and is recorded here as an alias only. Approximately $27bn of development cost; Blue Owl funds 80%, Meta 20%; Blue Owl contributed ~$7bn cash and Meta took a ~$3bn distribution. Meta gives a capped 16-year residual value guarantee."
+ },
+ {
+  "entity_id": "neocloud-sector-aggregate",
+  "name": "Neocloud sector (aggregate)",
+  "aliases": [
+   "neoclouds",
+   "GPU cloud sector",
+   "neocloud-sector"
+  ],
+  "one_line": "Placeholder counterparty for market-level aggregates, not a real company.",
+  "source_urls": [
+   "https://davefriedman.substack.com/p/neoclouds-hold-more-than-20-billion"
+  ],
+  "notes": "SYNTHETIC ENTITY used only by the market-size context record. Do not treat as a counterparty."
+ },
+ {
+  "entity_id": "advanced-micro-devices-inc",
+  "name": "Advanced Micro Devices, Inc.",
+  "aliases": [
+   "AMD",
+   "amd"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Santa Clara, California",
+  "website": "https://www.amd.com",
+  "listed_ticker": "NASDAQ:AMD",
+  "one_line": "Nvidia's main GPU rival, which gave OpenAI a warrant over 160 million of its own shares as a purchase incentive.",
+  "source_urls": [
+   "https://ir.amd.com/news-events/press-releases/detail/1260/amd-and-openai-announce-strategic-partnership-to-deploy-6-gigawatts-of-amd-gpus",
+   "https://openai.com/index/openai-amd-strategic-partnership/",
+   "https://www.cnbc.com/2026/07/22/amd-anthropic-ai-chip-investment.html",
+   "https://ir.amd.com/news-events/press-releases/detail/1279/amd-and-meta-announce-expanded-strategic-partnership-to-deploy-6-gigawatts-of-amd-gpus",
+   "https://www.riotplatforms.com/riot-platforms-reports-second-quarter-2026-financial-results-and-strategic-highlights/"
+  ],
+  "notes": "AMD's circularity runs the opposite way to Nvidia's: rather than investing in the customer, it issued the customer equity in itself, vesting against 6 GW of deployments and AMD share-price targets. AMD is also a data centre TENANT \u2014 it leases 50 MW from Riot Platforms at Rockdale."
+ },
+ {
+  "entity_id": "microsoft-corporation",
+  "name": "Microsoft Corporation",
+  "aliases": [
+   "MSFT",
+   "Microsoft Azure",
+   "Azure",
+   "microsoft",
+   "Microsoft"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Redmond, Washington",
+  "website": "https://www.microsoft.com",
+  "listed_ticker": "NASDAQ:MSFT",
+  "one_line": "Hyperscaler that invests in the AI labs and neoclouds that then buy its cloud capacity or sell it theirs.",
+  "source_urls": [
+   "https://www.axios.com/2025/11/18/anthropic-microsoft-nvidia-15-billion",
+   "https://techcrunch.com/2026/07/29/microsoft-logs-3-2b-from-anthropic-investment-but-openai-was-a-mixed-bag/",
+   "https://blogs.microsoft.com/blog/2025/10/28/the-next-chapter-of-the-microsoft-openai-partnership/",
+   "https://www.datacenterdynamics.com/en/news/microsofts-neocloud-spending-surpasses-60bn/",
+   "https://www.cfodive.com/news/microsoft-holds-line-ai-spending-plans/826648/",
+   "https://www.datacenterdynamics.com/en/news/microsoft-to-get-100000-nvidia-gb300s-under-nebius-deal-has-signed-more-than-33bn-in-capacity-agreements-with-neoclouds/"
+  ],
+  "notes": "Investor in OpenAI and Anthropic; customer of Nscale (200,000 GB300) and IREN (Childress GPU services) and Nebius. Booked $3.2bn of income from its Anthropic stake in the quarter reported 2026-07-29. Microsoft's exact OpenAI ownership after the 2025 restructuring was NOT VERIFIED in this research."
+ },
+ {
+  "entity_id": "google-llc",
+  "name": "Google LLC",
+  "aliases": [
+   "Alphabet",
+   "GOOGL",
+   "Alphabet Inc.",
+   "google"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Mountain View, California",
+  "website": "https://www.google.com",
+  "listed_ticker": "NASDAQ:GOOGL",
+  "one_line": "Hyperscaler whose lease backstops and warrant pledges are what make several neocloud bond issues financeable.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1819989/000095010325015073/dp237633_ex9901.htm",
+   "https://investors.terawulf.com/news-events/press-releases/detail/119/terawulf-inc-announces-pricing-of-3-2-billion-of-senior"
+  ],
+  "notes": "Backstops Fluidstack's lease obligations \u2014 $1.73bn at Cipher's Barber Lake and $1.8bn at the TeraWulf/Fluidstack JV \u2014 and pledged warrants over TeraWulf stock as collateral for the $3.2bn WULF Compute notes, taking warrants over ~41m WULF shares (~8%) in return. Also an Anthropic investor. Google's credit, not the operator's, is often the real security."
+ },
+ {
+  "entity_id": "meta-platforms-inc",
+  "name": "Meta Platforms, Inc.",
+  "aliases": [
+   "Meta",
+   "Facebook",
+   "META",
+   "Meta Superintelligence Labs",
+   "meta"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Menlo Park, California",
+  "website": "https://www.meta.com",
+  "listed_ticker": "NASDAQ:META",
+  "one_line": "Hyperscaler that moved its largest data centre off balance sheet using a JV, $27bn of bonds and a residual value guarantee.",
+  "source_urls": [
+   "https://www.prnewswire.com/news-releases/meta-announces-joint-venture-with-funds-managed-by-blue-owl-capital-to-develop-hyperion-data-center-302590584.html",
+   "https://fortune.com/2026/04/29/meta-zuckerberg-145-billion-ai-spending-roi/",
+   "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050596/meta-06302026xexhibit991.htm",
+   "https://nebius.com/newsroom/nebius-signs-new-ai-infrastructure-agreement-with-meta"
+  ],
+  "notes": "Holds 20% of the Hyperion JV and gives a capped 16-year residual value guarantee that converts merchant data centre risk into an A+ rated 2049 bond. Also named by Nebius as an investment-grade contracted customer."
+ },
+ {
+  "entity_id": "anthropic-pbc",
+  "name": "Anthropic PBC",
+  "aliases": [
+   "Anthropic",
+   "anthropic"
+  ],
+  "hq_country": "United States",
+  "hq_city": "San Francisco, California",
+  "website": "https://www.anthropic.com",
+  "one_line": "AI lab funded by Microsoft, Nvidia, Amazon and Google, each of which also sells it compute.",
+  "source_urls": [
+   "https://www.axios.com/2025/11/18/anthropic-microsoft-nvidia-15-billion",
+   "https://www.cnbc.com/2025/11/18/anthropic-ai-azure-microsoft-nvidia.html",
+   "https://www.anthropic.com/news/anthropic-amazon-compute",
+   "https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm",
+   "https://investors.terawulf.com/news-events/press-releases/detail/142/terawulf-announces-anthropic-lease-at-justified-data-campus-and-sale-of-majority-interest-in-abernathy-joint-venture-to-fluidstack"
+  ],
+  "notes": "Received a combined up-to-$15bn commitment from Microsoft and Nvidia announced 2025-11-18, valued in the range of $350bn, agreeing to purchase up to 1 GW of Azure capacity and a similar amount of Nvidia-chip compute. AMAZON'S AND GOOGLE'S CURRENT INVESTMENT TOTALS WERE NOT VERIFIED in this research and are a known gap."
+ },
+ {
+  "entity_id": "xai",
+  "name": "xAI",
+  "aliases": [
+   "X.AI",
+   "X.AI Corp",
+   "Grok",
+   "x.ai",
+   "xai"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Palo Alto",
+  "website": "https://x.ai",
+  "one_line": "AI lab reported to have taken up to $2bn of equity from Nvidia in a $20bn round.",
+  "source_urls": [
+   "https://aifundingtracker.com/nvidia-startup-investments/",
+   "https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm",
+   "https://x.ai/news/grok-goes-global"
+  ],
+  "notes": "LOW-CONFIDENCE RECORD. The Nvidia investment is reported only by a secondary funding tracker and is unverified. HQ city not established."
+ },
+ {
+  "entity_id": "blackstone-credit-insurance",
+  "name": "Blackstone Credit & Insurance",
+  "aliases": [
+   "Blackstone",
+   "BXCI",
+   "Blackstone Inc.",
+   "Blackstone Credit and Insurance",
+   "Blackstone Tactical Opportunities",
+   "blackstone-credit-insurance"
+  ],
+  "hq_country": "United States",
+  "hq_city": "New York",
+  "website": "https://www.blackstone.com",
+  "listed_ticker": "NYSE:BX",
+  "one_line": "Anchor investor in the first investment-grade GPU-backed loan and a partner in Nvidia's $500bn platform.",
+  "source_urls": [
+   "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Closes-Landmark-8-5-Billion-Financing-Facility-Achieving-First-Investment-Grade-Rated-GPU-backed-Financing/default.aspx",
+   "https://www.blackstone.com/news/press/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital/"
+  ],
+  "notes": "Anchor investor in CoreWeave's $8.5bn A3-rated DDTL 4.0. One of six partners in Nvidia's >$500bn financing platform MOUs. Also reported by SemiAnalysis to have led a $10bn facility for a Firmus project via Tactical Opportunities and Credit & Insurance."
+ },
+ {
+  "entity_id": "blue-owl-capital-inc",
+  "name": "Blue Owl Capital Inc.",
+  "aliases": [
+   "Blue Owl",
+   "OWL",
+   "Blue Owl Real Assets",
+   "blue-owl-capital"
+  ],
+  "hq_country": "United States",
+  "hq_city": "New York",
+  "website": "https://www.blueowl.com",
+  "listed_ticker": "NYSE:OWL",
+  "one_line": "The most active private-credit lender to AI infrastructure, from Meta's Hyperion to IREN's GPUs.",
+  "source_urls": [
+   "https://www.prnewswire.com/news-releases/blue-owl-managed-funds-lead-2-4-billion-ai-factory-financing-for-iren-302863057.html",
+   "https://www.prnewswire.com/news-releases/meta-announces-joint-venture-with-funds-managed-by-blue-owl-capital-to-develop-hyperion-data-center-302590584.html"
+  ],
+  "notes": "Holds 80% of Meta's Hyperion JV, led $2.4bn of GPU-backed financing for IREN, and is Crusoe's JV partner on the $15bn Abilene campus. Its Real Assets platform is the vehicle for the data centre JVs."
+ },
+ {
+  "entity_id": "brookfield-asset-management",
+  "name": "Brookfield Asset Management",
+  "aliases": [
+   "Brookfield",
+   "Brookfield Corporation",
+   "Brookfield Infrastructure",
+   "brookfield"
+  ],
+  "hq_country": "Canada",
+  "hq_city": "Toronto",
+  "website": "https://www.brookfield.com",
+  "listed_ticker": "NYSE:BAM",
+  "one_line": "Infrastructure investor lending to AI data centre developers and a partner in Nvidia's financing platform.",
+  "source_urls": [
+   "https://www.crusoe.ai/resources/newsroom/crusoe-secures-usd750-million-credit-facility-from-brookfield-to-accelerate",
+   "https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital",
+   "https://www.niftytrader.in/markets/india-biggest-datacentre-reliance-jv-1gw/"
+  ],
+  "notes": "Provided Crusoe a $750m credit facility through its infrastructure debt platform in June 2025 and is one of six partners in Nvidia's >$500bn platform MOUs."
+ },
+ {
+  "entity_id": "pimco",
+  "name": "PIMCO",
+  "aliases": [
+   "Pacific Investment Management Company",
+   "pimco"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Newport Beach, California",
+  "website": "https://www.pimco.com",
+  "one_line": "The largest reported buyer of the Hyperion data centre bonds.",
+  "source_urls": [
+   "https://www.sascha-steffen.de/updates/nvidia-500bn-ai-financing-credit-risk",
+   "https://www.prnewswire.com/news-releases/meta-announces-joint-venture-with-funds-managed-by-blue-owl-capital-to-develop-hyperion-data-center-302590584.html"
+  ],
+  "notes": "Meta's release confirms a portion of Blue Owl's capital was funded through a private securities offering 'to PIMCO and select bond investors'. The ~$18bn anchor figure is from a secondary credit analysis (T4), not from Meta."
+ },
+ {
+  "entity_id": "macquarie-group",
+  "name": "Macquarie Group",
+  "aliases": [
+   "Macquarie Asset Management",
+   "macquarie"
+  ],
+  "hq_country": "Australia",
+  "hq_city": "Sydney",
+  "website": "https://www.macquarie.com",
+  "one_line": "Australian bank named as a GPU-backed lender to Fluidstack across Europe.",
+  "source_urls": [
+   "https://www.fluidstack.io/about-us/blog/fluidstack-and-macquarie-announce-gpu-financing-deal-to-power-ai-labs-across-europe",
+   "https://davefriedman.substack.com/p/neoclouds-hold-more-than-20-billion"
+  ],
+  "notes": "Announced a European GPU financing deal with Fluidstack and is the named lender in reports of over $10bn of approved GPU-collateralised borrowing capacity for Fluidstack \u2014 the latter UNCONFIRMED by either company."
+ },
+ {
+  "entity_id": "morgan-stanley",
+  "name": "Morgan Stanley",
+  "aliases": [
+   "MS",
+   "Morgan Stanley Senior Funding, Inc.",
+   "morgan-stanley"
+  ],
+  "hq_country": "United States",
+  "hq_city": "New York",
+  "website": "https://www.morganstanley.com",
+  "listed_ticker": "NYSE:MS",
+  "one_line": "The most frequently recurring arranger in GPU-backed lending across CoreWeave, Lambda, TeraWulf and Riot.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+   "https://lambda.ai/blog/lambda-closes-926-million-senior-secured-term-loan-b-facility"
+  ],
+  "notes": "Roles found: co-structuring agent and joint bookrunner on CoreWeave DDTL 4.0; administrative agent and joint lead arranger on CoreWeave DDTL 5.0; lead arranger and administrative agent on Lambda's $926m term loan B; bookrunner on TeraWulf's $3.2bn notes; provider of Riot's $573m interim facility; senior lead arranger on Nebius's $775m; adviser to Nvidia on the OpenAI Ohio backstop."
+ },
+ {
+  "entity_id": "mufg-bank-ltd",
+  "name": "MUFG Bank, Ltd.",
+  "aliases": [
+   "MUFG",
+   "Mitsubishi UFJ Financial Group",
+   "Mitsubishi UFJ",
+   "mufg"
+  ],
+  "hq_country": "Japan",
+  "hq_city": "Tokyo",
+  "website": "https://www.mufg.jp",
+  "one_line": "The single most consistent bank agent across GPU-backed facilities in 2026.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+   "https://www.sec.gov/Archives/edgar/data/1513845/000110465926084452/tm2620683d1_ex99-1.htm"
+  ],
+  "notes": "Roles found: administrative agent on CoreWeave DDTL 4.0 and co-structuring agent/joint bookrunner; joint lead arranger on CoreWeave DDTL 5.0 and DDTL 5.5; joint bookrunner on Lambda's $926m term loan B; structuring agent, sole bookrunner and underwriter on Nebius's $775m facility. If any single institution is systemically exposed to GPU collateral, the evidence points here."
+ },
+ {
+  "entity_id": "jpmorgan-chase-bank-n-a",
+  "name": "JPMorgan Chase Bank, N.A.",
+  "aliases": [
+   "JPMorgan",
+   "JP Morgan",
+   "JPMorgan Chase",
+   "J.P. Morgan",
+   "JPM",
+   "JPMorgan Chase & Co.",
+   "jpmorgan",
+   "jpmorgan-chase"
+  ],
+  "hq_country": "United States",
+  "hq_city": "New York",
+  "website": "https://www.jpmorgan.com",
+  "listed_ticker": "NYSE:JPM",
+  "one_line": "Lead arranger and administrative agent on several of the largest GPU loans.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000357/crwv-20260807.htm",
+   "https://www.sec.gov/Archives/edgar/data/1878848/000114036126023427/ef20075181_8k.htm",
+   "https://www.aol.com/news/jpmorgan-spend-almost-20-billion-000403027.html"
+  ],
+  "notes": "Roles found: administrative agent and joint lead arranger on CoreWeave's $2.6bn DDTL 5.5; additional coordinating lead arranger on CoreWeave DDTL 4.0; joint lead arranger and bookrunner on IREN's $1.5bn DDTL; interest rate hedge counterparty to IREN. Also named among GPU-backed lenders in PitchBook's sector tally."
+ },
+ {
+  "entity_id": "goldman-sachs",
+  "name": "Goldman Sachs",
+  "aliases": [
+   "GS",
+   "Goldman Sachs Bank USA",
+   "J. Aron & Company LLC",
+   "goldman-sachs"
+  ],
+  "hq_country": "United States",
+  "hq_city": "New York",
+  "website": "https://www.goldmansachs.com",
+  "listed_ticker": "NYSE:GS",
+  "one_line": "Arranger, hedge counterparty and one of six partners in Nvidia's $500bn financing platform.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1878848/000114036126023427/ef20075181_8k.htm",
+   "https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital"
+  ],
+  "notes": "Roles found: joint lead arranger and bookrunner on IREN's $1.5bn DDTL; hedge counterparty via J. Aron & Company; additional coordinating lead arranger on CoreWeave DDTL 4.0; syndicate member on Nebius's $775m; adviser to SB Energy on the OpenAI Ohio project; partner in Nvidia's >$500bn platform MOUs."
+ },
+ {
+  "entity_id": "dnb-bank-asa",
+  "name": "DNB Bank ASA",
+  "aliases": [
+   "DNB",
+   "DNB Bank",
+   "dnb"
+  ],
+  "hq_country": "Norway",
+  "hq_city": "Oslo",
+  "website": "https://www.dnb.no",
+  "one_line": "Norwegian bank in the club that financed Nscale's Narvik campus.",
+  "source_urls": [
+   "https://www.nscale.com/press-releases/nscale-secures-790-million-norway"
+  ],
+  "notes": "One of five lenders \u2014 ABN AMRO, DNB, Eksfin (Export Finance Norway), Nordea and SEB \u2014 committing $790m to Nscale's Narvik data centre, with a further $790m uncommitted accordion. Recorded as the from_entity for that facility because no single agent is named."
+ },
+ {
+  "entity_id": "landsbankinn-hf",
+  "name": "Landsbankinn hf.",
+  "aliases": [
+   "Landsbankinn",
+   "landsbankinn"
+  ],
+  "hq_country": "Iceland",
+  "hq_city": "Reykjavik",
+  "website": "https://www.landsbankinn.is",
+  "one_line": "Icelandic bank lending against GPU servers to WhiteFiber's local subsidiary.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/2042022/000121390026088026/ea0300877-10q_whitefiber.htm"
+  ],
+  "notes": "Lender on a $20m secured term loan to WhiteFiber Iceland ehf. at three-month CME Term SOFR + 4.25%, secured over named GPU and CPU servers and InfiniBand switches. Small, but one of the most explicitly documented GPU security packages in the dataset."
+ },
+ {
+  "entity_id": "usd-ai",
+  "name": "USD.AI",
+  "aliases": [
+   "USDai",
+   "Permian Labs",
+   "USD.AI Protocol",
+   "usd-ai"
+  ],
+  "website": "https://usd.ai",
+  "one_line": "A blockchain-native credit protocol that lends stablecoins against tokenised GPU collateral.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/2068385/000182912626000444/sharonai_ex99-1.htm"
+  ],
+  "notes": "Developed by Permian Labs. Dual-token model: USDai stablecoin and sUSDai yield-bearing counterpart. Approved more than US$1.2bn in guidance and non-recourse facilities across operators including SharonAI ($500m), QumulusAI and Quantum Solutions. Isolates risk at the infrastructure level by securing credit solely against verified GPU assets rather than corporate balance sheets. Co-founder and COO of Permian Labs: Conor Moore. HQ not established."
+ },
+ {
+  "entity_id": "magai-ventures",
+  "name": "MagAI Ventures",
+  "aliases": [
+   "MagAI",
+   "Magnetar",
+   "Magnetar Capital",
+   "magai-ventures"
+  ],
+  "one_line": "Counterparty to CoreWeave's 'Magnetar Loan', a capacity prepayment accounted for as debt.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+  ],
+  "notes": "ALIAS CAUTION: CoreWeave's 10-Q calls the instrument the 'Magnetar Loan' but names the counterparty 'MagAI Ventures' under the 'MagAI Capacity Agreement'. The relationship to Magnetar Capital is implied by the instrument name but NOT STATED in the filing. $189m outstanding at 2026-06-30 at a 12% effective rate, due January 2029, after a $100m partial settlement in June 2026."
+ },
+ {
+  "entity_id": "bond-investors-unspecified",
+  "name": "Bond investors (unspecified)",
+  "aliases": [
+   "bond-investors"
+  ],
+  "one_line": "Placeholder for anonymous 144A/Reg S note purchasers.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+  ],
+  "notes": "SYNTHETIC ENTITY. Used where a secured or unsecured note issue was sold to qualified institutional buyers who are not individually disclosed. Not a real counterparty."
+ },
+ {
+  "entity_id": "undisclosed-lender-syndicate",
+  "name": "Undisclosed lender syndicate",
+  "aliases": [
+   "undisclosed-lender-syndicate"
+  ],
+  "one_line": "Placeholder where a facility's lenders are not named.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+  ],
+  "notes": "SYNTHETIC ENTITY. Used for CoreWeave DDTL 1.0/2.0/2.1/3.0, Lambda's May 2026 facility and Galaxy's $1.4bn project financing, where the filings and releases say only 'various lenders'."
+ },
+ {
+  "entity_id": "undisclosed-bank-syndicate",
+  "name": "Undisclosed bank syndicate",
+  "aliases": [
+   "undisclosed-bank-syndicate"
+  ],
+  "one_line": "Placeholder for CoreWeave's unnamed revolving credit lenders.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+  ],
+  "notes": "SYNTHETIC ENTITY."
+ },
+ {
+  "entity_id": "undisclosed-oem-vendors",
+  "name": "Undisclosed OEM vendors",
+  "aliases": [
+   "undisclosed-oem-vendors"
+  ],
+  "one_line": "Placeholder for the equipment makers financing CoreWeave's hardware.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+  ],
+  "notes": "SYNTHETIC ENTITY. CoreWeave's 10-Q refers only to 'various agreements with original equipment manufacturers' and 'a software license vendor' without naming them. Identifying these OEMs is a high-value open question: $5.1bn of vendor financing sits behind them."
+ },
+ {
+  "entity_id": "various-lenders-aggregate",
+  "name": "Various lenders (aggregate)",
+  "aliases": [
+   "various-lenders"
+  ],
+  "one_line": "Placeholder counterparty for market-level roll-up records.",
+  "source_urls": [
+   "https://davefriedman.substack.com/p/neoclouds-hold-more-than-20-billion"
+  ],
+  "notes": "SYNTHETIC ENTITY. Used only by roll-up records. Do not treat as a counterparty."
+ },
+ {
+  "entity_id": "various-ai-companies-aggregate",
+  "name": "Various AI companies (aggregate)",
+  "aliases": [
+   "various-ai-companies"
+  ],
+  "one_line": "Placeholder investee for Nvidia's 2026 equity programme roll-up.",
+  "source_urls": [
+   "https://www.cnbc.com/2026/05/09/nvidia-embraces-ai-investor-topping-40-billion-in-equity-bets-2026.html"
+  ],
+  "notes": "SYNTHETIC ENTITY. Do not treat as a counterparty."
+ },
+ {
+  "entity_id": "ai-compute-infrastructure-financing-platforms",
+  "name": "AI compute infrastructure financing platforms",
+  "aliases": [
+   "ai-compute-financing-platforms"
+  ],
+  "one_line": "The independent capital vehicles Nvidia is establishing with six asset managers.",
+  "source_urls": [
+   "https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital"
+  ],
+  "notes": "NOT YET INCORPORATED ENTITIES. Nvidia's August 2026 release describes 'independent compute financing platforms' to be created with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR under memoranda of understanding still 'subject to execution of the final agreements'. No individual platform has been named or capitalised publicly."
+ },
+ {
+  "entity_id": "space-exploration-technologies-corp",
+  "name": "Space Exploration Technologies Corp.",
+  "aliases": [
+   "SpaceX",
+   "SpaceX/xAI",
+   "SPCX",
+   "SpaceXAI",
+   "SpaceX (xAI)",
+   "spacex"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Starbase",
+  "website": "https://www.spacex.com",
+  "listed_ticker": "SPCX",
+  "one_line": "Launch, satellite and, since absorbing xAI, AI compute company operating the Colossus data centres and selling capacity to third parties.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm",
+   "https://www.datacenterdynamics.com/en/news/spacex-earnings-2gw-of-compute-by-year-end-aiming-for-10-20gw-by-end-of-2027/"
+  ],
+  "notes": "SEC CIK 0001181412; filed Form S-1 on 2026-05-20 (file number 333-296070). The S-1 describes xAI's COLOSSUS and COLOSSUS II as SpaceX assets and discloses the Anthropic and Google cloud services agreements. In this dataset compute contracts are booked against spacex, not xai, because SpaceX is the contracting and filing entity."
+ },
+ {
+  "entity_id": "alphabet-inc-google-llc",
+  "name": "Alphabet Inc. / Google LLC",
+  "aliases": [
+   "Google",
+   "Alphabet",
+   "Google Cloud",
+   "Google DeepMind",
+   "Google LLC"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Mountain View",
+  "website": "https://about.google",
+  "listed_ticker": "NASDAQ:GOOGL",
+  "one_line": "Search and cloud company; simultaneously one of the largest sellers of AI compute and, since 2026, a large buyer of it.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1181412/000162828026041150/spacexagreementfwp.htm",
+   "https://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services",
+   "https://www.investing.com/news/transcripts/earnings-call-transcript-alphabet-beats-q2-2026-estimates-shares-fall-on-capex-surge-93CH-4807140",
+   "https://www.datacenterdynamics.com/en/news/cryptominer-terawulf-secures-200mw-lease-with-fluidstack-google-to-take-stake-in-company/"
+  ],
+  "notes": "Google Cloud is treated here as part of the google entity rather than as a separate counterparty. Notable as a BUYER: $920m a month to SpaceX for xAI capacity from October 2026, plus backstops of Fluidstack's leases at Cipher Mining and TeraWulf."
+ },
+ {
+  "entity_id": "amazon-com-inc",
+  "name": "Amazon.com, Inc.",
+  "aliases": [
+   "Amazon",
+   "AWS",
+   "Amazon Web Services",
+   "Amazon Web Services, Inc.",
+   "amazon",
+   "aws"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Seattle",
+  "website": "https://www.aboutamazon.com",
+  "listed_ticker": "NASDAQ:AMZN",
+  "one_line": "Cloud provider and Anthropic's largest compute supplier and investor; designer of the Trainium and Graviton chips.",
+  "source_urls": [
+   "https://www.aboutamazon.com/news/company-news/amazon-invests-additional-5-billion-anthropic-ai",
+   "https://openai.com/index/aws-and-openai-partnership/",
+   "https://fortune.com/2026/07/30/andy-jassy-amazon-capex-demand-aws-pga-tour/",
+   "https://www.datacenterdynamics.com/en/news/aws-signs-300mw-hosting-deal-to-lease-capacity-from-cipher-mining/"
+  ],
+  "notes": "AWS is treated here as part of the amazon entity. Sells to both Anthropic (over $100bn over a decade) and OpenAI ($38bn). We found no material record of Amazon buying third-party AI capacity, so it appears in this file only as a seller and investor."
+ },
+ {
+  "entity_id": "apple-inc",
+  "name": "Apple Inc.",
+  "aliases": [
+   "apple"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Cupertino",
+  "website": "https://www.apple.com",
+  "listed_ticker": "NASDAQ:AAPL",
+  "one_line": "Consumer devices company running Apple Intelligence on Private Cloud Compute, extended onto Google Cloud in 2026.",
+  "source_urls": [
+   "https://www.ciodive.com/news/apple-teams-up-google-nvidia-expand-private-cloud-capabilities/822431/"
+  ],
+  "notes": "The largest AI-deploying company with NO publicly disclosed compute capacity contract of any size. Its June 2026 Google Cloud arrangement was announced without dollars, chips counts, capacity or term. Reported Gemini-for-Siri licensing of about $1bn a year is a model licence, not compute, and is excluded from the deal file."
+ },
+ {
+  "entity_id": "oracle-corporation",
+  "name": "Oracle Corporation",
+  "aliases": [
+   "Oracle Cloud Infrastructure",
+   "OCI",
+   "oracle"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Austin",
+  "website": "https://www.oracle.com",
+  "listed_ticker": "NYSE:ORCL",
+  "one_line": "Enterprise software and cloud company; OpenAI's largest single contracted compute supplier through Stargate.",
+  "source_urls": [
+   "https://openai.com/index/stargate-advances-with-partnership-with-oracle/",
+   "https://www.datacenterdynamics.com/en/news/openai-signs-300bn-cloud-deal-with-oracle-report/",
+   "https://www.fool.com/earnings/call-transcripts/2026/06/10/oracle-orcl-q4-2026-earnings-call-transcript/"
+  ],
+  "notes": "The OpenAI-Oracle arrangement has been stated at least three ways - 4.5GW, about $30bn a year from 2028, and $300bn over five years from 2027 - which is the most commonly double counted set of numbers in the market."
+ },
+ {
+  "entity_id": "broadcom-inc",
+  "name": "Broadcom Inc.",
+  "aliases": [
+   "AVGO",
+   "broadcom"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Palo Alto",
+  "website": "https://www.broadcom.com",
+  "listed_ticker": "NASDAQ:AVGO",
+  "one_line": "Semiconductor and networking company co-developing OpenAI's custom accelerators and Anthropic's next-generation TPUs with Google.",
+  "source_urls": [
+   "https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-announce-strategic-collaboration-deploy-10",
+   "https://www.sec.gov/Archives/edgar/data/1730168/000119312526144028/d87999d8k.htm"
+  ]
+ },
+ {
+  "entity_id": "hut-8-corp",
+  "name": "Hut 8 Corp.",
+  "aliases": [
+   "Hut8",
+   "Hut 8 Mining",
+   "HUT",
+   "hut-8"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Miami",
+  "website": "https://hut8.com",
+  "listed_ticker": "NASDAQ:HUT",
+  "one_line": "Data centre developer whose 1GW Beacon Point campus in Nueces County, Texas is leased to a tenant reported to be Nvidia and operated for Anthropic by Lambda.",
+  "source_urls": [
+   "https://www.prnewswire.com/news-releases/hut-8-fully-commercializes-1-gw-beacon-point-ai-data-center-campus-with-second-352-mw-it-lease-bringing-campus-level-base-term-contract-value-to-19-6-billion-302829514.html"
+  ],
+  "notes": "The Beacon Point stack - Hut 8 landlord, Nvidia lessee, Lambda operator, Anthropic customer - is the clearest example in this dataset of one physical campus generating three separately announced multi-billion-dollar 'deals'."
+ },
+ {
+  "entity_id": "volta",
+  "name": "Volta",
+  "aliases": [
+   "volta"
+  ],
+  "hq_country": "Norway",
+  "one_line": "AI cloud startup founded in 2026, part of Nvidia's Cloud Partner programme, building a 133MW Norwegian site with Bitdeer for Anthropic.",
+  "source_urls": [
+   "https://techcrunch.com/2026/08/04/anthropic-signs-10-billion-deal-with-ai-cloud-startup-volta/"
+  ],
+  "notes": "Very little is public: headquarters city, website and legal name were not stated in the reporting, so those fields are null."
+ },
+ {
+  "entity_id": "buzz-hpc",
+  "name": "BUZZ HPC",
+  "aliases": [
+   "BUZZ High Performance Computing",
+   "Buzz High Performance Computing",
+   "buzz-hpc"
+  ],
+  "hq_country": "Canada",
+  "hq_city": "Toronto",
+  "website": "https://buzzhpc.ai",
+  "one_line": "High performance computing subsidiary of HIVE Digital Technologies, supplying GPU capacity to Cohere on Bell Canada infrastructure.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/buzz-hpc-signs-220m-cloud-deal-with-bell-ai-and-cohere/"
+  ]
+ },
+ {
+  "entity_id": "sb-energy",
+  "name": "SB Energy",
+  "aliases": [
+   "SoftBank Energy",
+   "sb-energy"
+  ],
+  "hq_country": "United States",
+  "hq_city": "San Francisco",
+  "website": "https://sbenergy.com",
+  "one_line": "SoftBank-owned energy and data centre developer building and owning OpenAI's 8 IT-gigawatt Ohio campus.",
+  "source_urls": [
+   "https://www.axios.com/2026/08/17/openai-nvidia-ohio-data-center-sb-energy"
+  ],
+  "notes": "Nvidia took a $1.5bn equity stake as part of the Ohio arrangement."
+ },
+ {
+  "entity_id": "mistral-ai",
+  "name": "Mistral AI",
+  "aliases": [
+   "Mistral AI SAS",
+   "mistral-ai"
+  ],
+  "hq_country": "France",
+  "hq_city": "Paris",
+  "website": "https://mistral.ai",
+  "one_line": "European frontier AI lab pursuing sovereign compute, targeting 1GW of European capacity by 2030.",
+  "source_urls": [
+   "https://venturebeat.com/infrastructure/mistral-ai-wants-to-build-1-gigawatt-of-european-compute-by-2030-and-lock-in-customers-now"
+  ],
+  "notes": "Funds compute partly through five-year 'European Compute Unit' commitments sold to enterprises such as Amadeus, ASML, Capgemini and CMA CGM, and partly through debt (EUR 830m for its Essonne site)."
+ },
+ {
+  "entity_id": "cohere-inc",
+  "name": "Cohere Inc.",
+  "aliases": [
+   "cohere"
+  ],
+  "hq_country": "Canada",
+  "hq_city": "Toronto",
+  "website": "https://cohere.com",
+  "one_line": "Enterprise-focused AI lab whose compute footprint is orders of magnitude smaller than the US frontier labs.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/buzz-hpc-signs-220m-cloud-deal-with-bell-ai-and-cohere/"
+  ],
+  "notes": "Its largest disclosed compute contract is $220m over three years for 2,304 GPUs at 6.5MW."
+ },
+ {
+  "entity_id": "safe-superintelligence-inc",
+  "name": "Safe Superintelligence Inc.",
+  "aliases": [
+   "SSI",
+   "safe-superintelligence"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Palo Alto",
+  "website": "https://ssi.inc",
+  "one_line": "Ilya Sutskever's research lab, which uses Google Cloud TPUs and has disclosed nothing further about its compute.",
+  "source_urls": [
+   "https://techcrunch.com/2025/04/09/ilya-sutskever-taps-google-cloud-to-power-his-ai-startups-research"
+  ],
+  "notes": "No value, chip count, term, site or subsequent compute announcement has ever been made public. The largest information gap in this slice relative to the company's valuation."
+ },
+ {
+  "entity_id": "thinking-machines-lab",
+  "name": "Thinking Machines Lab",
+  "aliases": [
+   "TML",
+   "thinking-machines-lab"
+  ],
+  "hq_country": "United States",
+  "hq_city": "San Francisco",
+  "website": "https://thinkingmachines.ai",
+  "one_line": "Mira Murati's AI lab, whose first cloud agreement was a multibillion-dollar non-exclusive Google Cloud deal for GB300 capacity.",
+  "source_urls": [
+   "https://techcrunch.com/2026/04/22/exclusive-google-deepens-thinking-machines-lab-ties-with-new-multi-billion-dollar-deal/"
+  ]
+ },
+ {
+  "entity_id": "perplexity-ai-inc",
+  "name": "Perplexity AI, Inc.",
+  "aliases": [
+   "Comet",
+   "perplexity"
+  ],
+  "hq_country": "United States",
+  "hq_city": "San Francisco",
+  "website": "https://www.perplexity.ai",
+  "one_line": "AI answer engine buying capacity from AWS, Microsoft and CoreWeave.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/perplexity-signs-750m-cloud-agreement-with-microsoft/",
+   "https://www.axios.com/2026/03/04/perplexity-coreweave-data-center-nvidia"
+  ],
+  "notes": "Describes AWS as its preferred infrastructure provider but has not disclosed the value of its AWS commitment, so no AWS record exists in this file."
+ },
+ {
+  "entity_id": "elevenlabs",
+  "name": "ElevenLabs",
+  "aliases": [
+   "Eleven Labs",
+   "elevenlabs"
+  ],
+  "hq_country": "United States",
+  "hq_city": "New York",
+  "website": "https://elevenlabs.io",
+  "one_line": "Voice and audio AI company running on Google Cloud with Nvidia Blackwell GPUs.",
+  "source_urls": [
+   "https://www.googlecloudpresscorner.com/2026-02-26-ElevenLabs-Partners-with-Google-Cloud-for-Cloud-Services-and-the-Latest-NVIDIA-Blackwell-GPUs,1"
+  ],
+  "notes": "Also London."
+ },
+ {
+  "entity_id": "reflection-ai",
+  "name": "Reflection AI",
+  "aliases": [
+   "reflection-ai"
+  ],
+  "hq_country": "United States",
+  "hq_city": "New York",
+  "website": "https://reflection.ai",
+  "one_line": "AI startup that signed a compute contract of more than $1 billion with Nebius through 2029.",
+  "source_urls": [
+   "https://www.thestar.com.my/tech/tech-news/2026/07/14/ai-startup-reflection-signs-over-1-billion-computing-deal-with-nebius",
+   "https://www.datacenterdynamics.com/en/news/spacex-earnings-2gw-of-compute-by-year-end-aiming-for-10-20gw-by-end-of-2027/"
+  ],
+  "notes": "Included as evidence that the tier below the frontier labs is now writing billion-dollar capacity contracts."
+ },
+ {
+  "entity_id": "tesla-inc",
+  "name": "Tesla, Inc.",
+  "aliases": [
+   "TSLA",
+   "Tesla Motors",
+   "tesla"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Austin",
+  "website": "https://www.tesla.com",
+  "listed_ticker": "NASDAQ:TSLA",
+  "one_line": "Carmaker and AI company that cancelled its Dojo custom supercomputer programme in 2025 and shifted to Nvidia, AMD and Samsung silicon.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/musks-tesla-ends-dojo-supercomputer-effort-shifts-compute-to-nvidia-and-samsung-report/",
+   "https://www.fool.com/earnings/call-transcripts/2026/08/05/tesla-tsla-q2-2026-earnings-call-transcript/"
+  ]
+ },
+ {
+  "entity_id": "alibaba-group-holding-limited",
+  "name": "Alibaba Group Holding Limited",
+  "aliases": [
+   "Alibaba Cloud",
+   "Aliyun",
+   "BABA",
+   "alibaba"
+  ],
+  "hq_country": "China",
+  "hq_city": "Hangzhou",
+  "website": "https://www.alibabagroup.com",
+  "listed_ticker": "NYSE:BABA",
+  "one_line": "Chinese cloud and commerce group; the largest disclosed AI infrastructure budget outside the US and also Moonshot AI's compute supplier.",
+  "source_urls": [
+   "https://home.alibabagroup.com/en-US/document-1830678592242057216",
+   "https://www.datacenterdynamics.com/en/news/alibaba-considers-increasing-ai-data-center-capex-spend-to-69bn-over-three-years-report/"
+  ]
+ },
+ {
+  "entity_id": "bytedance-ltd",
+  "name": "ByteDance Ltd.",
+  "aliases": [
+   "TikTok",
+   "Volcano Engine",
+   "Doubao",
+   "TikTok owner",
+   "bytedance"
+  ],
+  "hq_country": "China",
+  "hq_city": "Beijing",
+  "website": "https://www.bytedance.com",
+  "one_line": "Private Chinese technology group with the largest unverifiable AI capital spending plans in the dataset.",
+  "source_urls": [
+   "https://www.scmp.com/tech/article/3352906/bytedance-raises-2026-capex-least-25-amid-ai-boom-rising-memory-costs-sources-say"
+  ],
+  "notes": "Publishes nothing. Circulating 2026 capex figures - RMB 160bn, over RMB 200bn, up to $70bn - come from different unnamed-source reports and cannot be reconciled."
+ },
+ {
+  "entity_id": "tencent-holdings-limited",
+  "name": "Tencent Holdings Limited",
+  "aliases": [
+   "Tencent Cloud",
+   "0700.HK",
+   "tencent"
+  ],
+  "hq_country": "China",
+  "hq_city": "Shenzhen",
+  "website": "https://www.tencent.com",
+  "listed_ticker": "HKEX:0700",
+  "one_line": "Chinese technology group whose AI capital spending fell about 24% year on year because it could not obtain GPUs.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/tencents-capex-down-24-yoy-due-to-lack-of-access-to-gpus/"
+  ],
+  "notes": "A rare case where the binding constraint on demand is supply, not budget."
+ },
+ {
+  "entity_id": "baidu-inc",
+  "name": "Baidu, Inc.",
+  "aliases": [
+   "Kunlunxin",
+   "Kunlun",
+   "BIDU",
+   "baidu"
+  ],
+  "hq_country": "China",
+  "hq_city": "Beijing",
+  "website": "https://www.baidu.com",
+  "listed_ticker": "NASDAQ:BIDU",
+  "one_line": "Chinese search and AI company running largely on its own Kunlun accelerators.",
+  "source_urls": [
+   "https://finance.yahoo.com/technology/ai/articles/baidu-announces-second-quarter-2026-090000454.html"
+  ]
+ },
+ {
+  "entity_id": "moonshot-ai",
+  "name": "Moonshot AI",
+  "aliases": [
+   "Kimi",
+   "Beijing Yuezhi Technology",
+   "moonshot-ai"
+  ],
+  "hq_country": "China",
+  "hq_city": "Beijing",
+  "website": "https://www.moonshot.cn",
+  "one_line": "Chinese frontier lab behind the Kimi models, accessing about 20,000 Nvidia chips through Alibaba.",
+  "source_urls": [
+   "https://www.aol.com/articles/moonshot-nvidia-chip-cluster-alibaba-150851000.html"
+  ],
+  "notes": "In August 2026 was reported to be negotiating revenue-sharing arrangements with Microsoft, Amazon and Google to host Kimi K3 on Western clouds - a demand pattern that inverts the usual direction."
+ },
+ {
+  "entity_id": "samsung-electronics-co-ltd",
+  "name": "Samsung Electronics Co., Ltd.",
+  "aliases": [
+   "Samsung",
+   "005930.KS",
+   "Samsung Electronics",
+   "samsung-electronics"
+  ],
+  "hq_country": "South Korea",
+  "hq_city": "Suwon",
+  "website": "https://www.samsung.com",
+  "listed_ticker": "KRX:005930",
+  "one_line": "Korean chipmaker and manufacturer taking over 50,000 Nvidia GPUs for a semiconductor AI factory.",
+  "source_urls": [
+   "https://nvidianews.nvidia.com/news/south-korea-ai-infrastructure",
+   "https://openai.com/index/samsung-and-sk-join-stargate/",
+   "https://www.lightreading.com/ai-machine-learning/south-korea-to-boost-ai-infrastructure-with-260-000-nvidia-chips"
+  ],
+  "notes": "Also holds a reported $16.5bn manufacturing agreement with Tesla for AI5/AI6 chips."
+ },
+ {
+  "entity_id": "ministry-of-science-and-ict-republic-of-korea",
+  "name": "Ministry of Science and ICT, Republic of Korea",
+  "aliases": [
+   "MSIT",
+   "Ministry of Science and ICT",
+   "Korean government",
+   "NIPA",
+   "Korea Ministry of Science and ICT",
+   "Ministry of Science and ICT (Republic of Korea)",
+   "korea-ministry-science-ict",
+   "msit-korea"
+  ],
+  "hq_country": "South Korea",
+  "hq_city": "Sejong",
+  "website": "https://www.msit.go.kr",
+  "one_line": "Korean government body procuring over 50,000 Nvidia GPUs for a National AI Computing Center under a 260,000-GPU national plan.",
+  "source_urls": [
+   "https://nvidianews.nvidia.com/news/south-korea-ai-infrastructure",
+   "https://www.koreaherald.com/article/10678398",
+   "https://www.koreatimes.co.kr/business/tech-science/20260818/lg-ai-research-sk-telecom-upstage-survive-next-cut-in-national-ai-model-project",
+   "https://oecd.ai/en/dashboards/policy-initiatives/south-korea-national-ai-gpu-infrastructure-initiative-1",
+   "https://www.koreaherald.com/article/10636733"
+  ],
+  "notes": "DUPLICATE of msit-korea kept only because deals_demand.json uses this id; merge the two."
+ },
+ {
+  "entity_id": "european-commission",
+  "name": "European Commission",
+  "aliases": [
+   "EU",
+   "European Union",
+   "EU Commission",
+   "EC",
+   "european-commission"
+  ],
+  "hq_country": "Belgium",
+  "hq_city": "Brussels",
+  "website": "https://commission.europa.eu",
+  "one_line": "EU executive offering EUR 10 billion for seven AI gigafactories, a demand signal with no counterparty attached.",
+  "source_urls": [
+   "https://www.wsls.com/business/2026/07/30/eu-lays-out-114-billion-for-7-ai-gigafactories-as-it-aims-to-catch-up-with-us-and-china/"
+  ]
+ },
+ {
+  "entity_id": "sakana-ai",
+  "name": "Sakana AI",
+  "aliases": [
+   "Sakana AI K.K.",
+   "sakana-ai"
+  ],
+  "hq_country": "Japan",
+  "hq_city": "Tokyo",
+  "website": "https://sakana.ai",
+  "one_line": "Tokyo AI research lab building nature-inspired foundation models and the Fugu orchestration system.",
+  "source_urls": [
+   "https://sakana.ai/fugu-release/",
+   "https://sakana.ai/nedo-grant/"
+  ],
+  "notes": "NO COMPUTE CONTRACT FOUND. Sakana has an Nvidia relationship through Nemotron model integration but has never disclosed a capacity contract, GPU count or compute budget. Listed here so the gap is explicit rather than silent."
+ },
+ {
+  "entity_id": "sarvam-ai",
+  "name": "Sarvam AI",
+  "aliases": [
+   "sarvam-ai"
+  ],
+  "hq_country": "India",
+  "hq_city": "Bengaluru",
+  "website": "https://www.sarvam.ai",
+  "one_line": "Indian AI lab building sovereign foundation models, backed by Nvidia.",
+  "source_urls": [
+   "https://www.financialexpress.com/artificial-intelligence/sarvam-ai-set-for-fresh-74-million-round-nvidia-to-lead-the-extended-series-b-round/4309686/",
+   "https://www.nvidia.com/en-us/case-studies/sarvam-sovereign-ai/"
+  ],
+  "notes": "NO COMPUTE CONTRACT FOUND. Nvidia led an extended Series B of about $74m in August 2026 and Sarvam announced plans for a trillion-parameter model, but no capacity contract, provider or GPU allocation has been disclosed."
+ },
+ {
+  "entity_id": "cerebras-systems-inc",
+  "name": "Cerebras Systems Inc.",
+  "aliases": [
+   "cerebras"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Sunnyvale",
+  "website": "https://www.cerebras.ai",
+  "one_line": "Maker of wafer-scale AI chips; sells 750MW of inference capacity to OpenAI.",
+  "source_urls": [
+   "https://www.cerebras.ai/blog/openai-partners-with-cerebras-to-bring-high-speed-inference-to-the-mainstream"
+  ]
+ },
+ {
+  "entity_id": "group-42-holding-ltd",
+  "name": "Group 42 Holding Ltd",
+  "aliases": [
+   "G42",
+   "G42 Cloud",
+   "G42 Cloud Technology LLC",
+   "Group 42 Holding Ltd d/b/a G42",
+   "g42"
+  ],
+  "hq_country": "United Arab Emirates",
+  "hq_city": "Abu Dhabi",
+  "website": "https://www.g42.ai",
+  "one_line": "Abu Dhabi AI holding company building Stargate UAE for OpenAI; licensed by the US to receive AI chips.",
+  "source_urls": [
+   "https://openai.com/index/introducing-stargate-uae/",
+   "https://www.federalregister.gov/documents/2026/07/14/2026-14132/enhanced-favorable-treatment-for-the-united-arab-emirates-under-the-export-administration",
+   "https://www.ecfr.gov/current/title-15/part-740/appendix-Supplement No. 8 to Part 740"
+  ]
+ },
+ {
+  "entity_id": "humain",
+  "name": "HUMAIN",
+  "aliases": [
+   "humain"
+  ],
+  "hq_country": "Saudi Arabia",
+  "hq_city": "Riyadh",
+  "website": "https://www.humain.ai",
+  "one_line": "Saudi Public Investment Fund company building 6.6GW of AI data centres, hosting xAI and Luma and buying Nvidia, AMD and Qualcomm chips.",
+  "source_urls": [
+   "https://nvidianews.nvidia.com/news/humain-and-nvidia-announce-strategic-partnership-to-build-ai-factories-of-the-future-in-saudi-arabia"
+  ]
+ },
+ {
+  "entity_id": "poolside-ai",
+  "name": "Poolside AI",
+  "aliases": [
+   "poolside"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Palo Alto",
+  "website": "https://poolside.ai",
+  "one_line": "Coding-model start-up planning a 2GW Texas campus whose CoreWeave anchor deal collapsed in 2026.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/poolside-seeks-partners-for-data-center-in-texas-after-coreweave-deal-falls-apart/"
+  ],
+  "notes": "Also has a Paris presence; HQ per company filings should be verified."
+ },
+ {
+  "entity_id": "luma-ai-inc",
+  "name": "Luma AI, Inc.",
+  "aliases": [
+   "luma-ai"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Palo Alto",
+  "website": "https://lumalabs.ai",
+  "one_line": "Video and world-model lab; raised $900m from HUMAIN and will train on HUMAIN's 2GW Project Halo.",
+  "source_urls": [
+   "https://www.businesswire.com/news/home/20251119678010/en/Luma-AI-Raises-%24900-Million-Series-C-Led-by-HUMAIN-And-Partners-on-2-Gigawatt-AI-Supercluster-in-Saudi-Arabia"
+  ]
+ },
+ {
+  "entity_id": "groq-inc",
+  "name": "Groq, Inc.",
+  "aliases": [
+   "GroqCloud",
+   "groq"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Mountain View",
+  "website": "https://groq.com",
+  "one_line": "Inference cloud company; after licensing its chip technology to Nvidia it is buying capacity toward 200MW by end-2027.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/groq-secures-650m-in-new-growth-capital-for-ai-cloud-expansion/"
+  ]
+ },
+ {
+  "entity_id": "together-computer-inc",
+  "name": "Together Computer, Inc.",
+  "aliases": [
+   "Together AI",
+   "Together",
+   "Together.ai",
+   "together-ai"
+  ],
+  "hq_country": "United States",
+  "hq_city": "San Francisco",
+  "website": "https://www.together.ai",
+  "one_line": "Inference and GPU cloud company that rents capacity from Hypertec, Rumble and IBM to resell.",
+  "source_urls": [
+   "https://www.theregister.com/off-prem/2026/08/11/together-ai-embraces-the-competition-with-240m-ibm-cloud-deal/5286400",
+   "https://www.together.ai/blog/together-ai-announcing-305m-series-b"
+  ]
+ },
+ {
+  "entity_id": "rumble-inc",
+  "name": "Rumble Inc.",
+  "aliases": [
+   "Rumble Cloud",
+   "rumble"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Longboat Key",
+  "website": "https://rumble.com",
+  "listed_ticker": "NASDAQ:RUM",
+  "one_line": "Video platform that now hosts Nvidia B300 GPUs and rents them to Together AI.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/together-ai-taps-rumble-for-nvidia-blackwell-gpu-capacity/"
+  ]
+ },
+ {
+  "entity_id": "international-business-machines-corporation",
+  "name": "International Business Machines Corporation",
+  "aliases": [
+   "IBM",
+   "IBM Cloud",
+   "ibm"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Armonk",
+  "website": "https://www.ibm.com",
+  "listed_ticker": "NYSE:IBM",
+  "one_line": "Enterprise IT company selling Nvidia B300 cloud capacity to Together AI.",
+  "source_urls": [
+   "https://www.theregister.com/off-prem/2026/08/11/together-ai-embraces-the-competition-with-240m-ibm-cloud-deal/5286400"
+  ]
+ },
+ {
+  "entity_id": "snowflake-inc",
+  "name": "Snowflake Inc.",
+  "aliases": [
+   "snowflake"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Bozeman",
+  "website": "https://www.snowflake.com",
+  "listed_ticker": "NYSE:SNOW",
+  "one_line": "Cloud data platform that committed $6bn to AWS over five years for AI and Graviton compute.",
+  "source_urls": [
+   "https://www.snowflake.com/en/news/press-releases/snowflake-expands-aws-collaboration-with-6b-commitment-to-accelerate-enterprise-agentic-ai-adoption/"
+  ]
+ },
+ {
+  "entity_id": "magic-ai-inc",
+  "name": "Magic AI, Inc.",
+  "aliases": [
+   "magic.dev",
+   "magic-dev"
+  ],
+  "hq_country": "United States",
+  "hq_city": "San Francisco",
+  "website": "https://magic.dev",
+  "one_line": "Coding-model lab with Google Cloud H100 and GB200 supercomputers.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/gen-ai-startup-magic-partners-with-google-cloud-closes-320m-funding-round/"
+  ]
+ },
+ {
+  "entity_id": "zhipu-ai",
+  "name": "Zhipu AI",
+  "aliases": [
+   "Z.ai",
+   "Beijing Zhipu Huazhang Technology",
+   "Knowledge Atlas",
+   "zhipu-ai"
+  ],
+  "hq_country": "China",
+  "hq_city": "Beijing",
+  "website": "https://www.zhipuai.cn",
+  "listed_ticker": "HKEX:2513",
+  "one_line": "Chinese large-model lab listed in Hong Kong in January 2026 to fund model R&D.",
+  "source_urls": [
+   "https://www.caixinglobal.com/2025-12-30/zhipu-ai-seeks-up-to-640-million-in-hong-kong-ipo-102398696.html"
+  ],
+  "notes": "Ticker as reported at listing; verify."
+ },
+ {
+  "entity_id": "eli-lilly-and-company",
+  "name": "Eli Lilly and Company",
+  "aliases": [
+   "Lilly",
+   "Eli Lilly",
+   "eli-lilly"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Indianapolis",
+  "website": "https://www.lilly.com",
+  "listed_ticker": "NYSE:LLY",
+  "one_line": "Drug maker installing over 1,000 Nvidia B300 GPUs for drug discovery.",
+  "source_urls": [
+   "https://investor.lilly.com/news-releases/news-release-details/lilly-partners-nvidia-build-industrys-most-powerful-ai"
+  ]
+ },
+ {
+  "entity_id": "mizuho-bank-ltd",
+  "name": "Mizuho Bank, Ltd.",
+  "aliases": [
+   "Mizuho",
+   "Mizuho Financial Group",
+   "mizuho"
+  ],
+  "hq_country": "Japan",
+  "hq_city": "Tokyo",
+  "website": "https://www.mizuhogroup.com",
+  "listed_ticker": "TYO:8411",
+  "one_line": "Japanese bank building an on-premises Nvidia DGX B200 AI factory.",
+  "source_urls": [
+   "https://blogs.nvidia.com/blog/japan-ecosystem-2026/"
+  ],
+  "notes": "Ticker is the parent Mizuho Financial Group."
+ },
+ {
+  "entity_id": "oversea-chinese-banking-corporation",
+  "name": "Oversea-Chinese Banking Corporation",
+  "aliases": [
+   "OCBC",
+   "OCBC Bank",
+   "ocbc"
+  ],
+  "hq_country": "Singapore",
+  "hq_city": "Singapore",
+  "website": "https://www.ocbc.com",
+  "listed_ticker": "SGX:O39",
+  "one_line": "Singapore bank raising annual technology spend to close to S$1bn.",
+  "source_urls": [
+   "https://thenextweb.com/news/ocbc-annual-tech-spending-771-million-ai"
+  ]
+ },
+ {
+  "entity_id": "malayan-banking-berhad",
+  "name": "Malayan Banking Berhad",
+  "aliases": [
+   "Maybank",
+   "maybank"
+  ],
+  "hq_country": "Malaysia",
+  "hq_city": "Kuala Lumpur",
+  "website": "https://www.maybank.com",
+  "listed_ticker": "KLSE:1155",
+  "one_line": "Malaysia's largest bank; RM10bn technology and AI plan to 2030.",
+  "source_urls": [
+   "https://www.maybank.com/en/news/2026/01/20/maybank-roar30-strategy-launch-2026.page"
+  ]
+ },
+ {
+  "entity_id": "tata-consultancy-services-limited",
+  "name": "Tata Consultancy Services Limited",
+  "aliases": [
+   "TCS",
+   "HyperVault",
+   "tcs"
+  ],
+  "hq_country": "India",
+  "hq_city": "Mumbai",
+  "website": "https://www.tcs.com",
+  "listed_ticker": "NSE:TCS",
+  "one_line": "India's largest IT services firm; its HyperVault unit is building over 1GW of AI data centres with TPG money and hosts OpenAI's first 100MW in India.",
+  "source_urls": [
+   "https://www.tcs.com/who-we-are/newsroom/press-release/tcs-secures-1bn-investment-from-tpg-accelerate-ai-data-center-business-hypervault"
+  ]
+ },
+ {
+  "entity_id": "tpg-inc",
+  "name": "TPG Inc.",
+  "aliases": [
+   "TPG Rise Climate",
+   "TPG Capital",
+   "tpg"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Fort Worth",
+  "website": "https://www.tpg.com",
+  "listed_ticker": "NASDAQ:TPG",
+  "one_line": "Private-equity firm investing $1bn in TCS HyperVault.",
+  "source_urls": [
+   "https://www.tpg.com/news-and-insights/tcs-secures-1bn-investment-from-tpg-to-accelerate-ai-data-center-business-hypervault"
+  ]
+ },
+ {
+  "entity_id": "indiaai-mission",
+  "name": "IndiaAI Mission",
+  "aliases": [
+   "IndiaAI",
+   "India AI Mission",
+   "IndiaAI Independent Business Division",
+   "IndiaAI IBD",
+   "indiaai-mission"
+  ],
+  "hq_country": "India",
+  "hq_city": "New Delhi",
+  "website": "https://indiaai.gov.in",
+  "one_line": "MeitY's Rs 10,372 crore programme that rents subsidised GPUs to Indian developers; 38,000 GPUs onboarded, under Rs 401 crore released by February 2026.",
+  "source_urls": [
+   "https://www.medianama.com/2026/04/223-indiaai-mission-400-crore-over-rs-10000-crore-5-year-outlay-released/",
+   "https://www.pib.gov.in/PressNoteDetails.aspx?ModuleId=3&NoteId=156786&lang=1&reg=3",
+   "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2012375&reg=48&lang=2"
+  ],
+  "notes": "PIB describes it as 'an independent business division under the Ministry of Electronics and Information Technology (MeitY)'."
+ },
+ {
+  "entity_id": "ministry-of-electronics-and-information-technology-india",
+  "name": "Ministry of Electronics and Information Technology (India)",
+  "aliases": [
+   "MeitY",
+   "MEITY",
+   "Ministry of Electronics & IT",
+   "Ministry of Electronics and IT",
+   "meity-india"
+  ],
+  "hq_country": "India",
+  "hq_city": "New Delhi",
+  "website": "https://www.meity.gov.in",
+  "one_line": "Indian ministry that funds and runs the IndiaAI Mission.",
+  "source_urls": [
+   "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2132817&reg=3&lang=2",
+   "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2012375&reg=48&lang=2",
+   "https://indiaai.gov.in/article/meity-accelerates-empanelment-of-agencies-to-provide-ai-compute-and-services-for-the-indiaai-mission"
+  ]
+ },
+ {
+  "entity_id": "indiaai-empanelled-cloud-service-providers-collective",
+  "name": "IndiaAI empanelled cloud service providers (collective)",
+  "aliases": [
+   "IndiaAI compute providers",
+   "IndiaAI empanelled agencies",
+   "IndiaAI AI compute service providers",
+   "empanelled CSPs",
+   "indiaai-empanelled-csps"
+  ],
+  "hq_country": "India",
+  "website": "https://indiaai.gov.in",
+  "one_line": "The group of Indian cloud companies supplying GPUs to the IndiaAI portal.",
+  "source_urls": [
+   "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2132817&reg=3&lang=2",
+   "https://indiaai.gov.in/article/meity-accelerates-empanelment-of-agencies-to-provide-ai-compute-and-services-for-the-indiaai-mission",
+   "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2097709"
+  ],
+  "notes": "COLLECTIVE placeholder entity, not a legal person. Used as from_entity where a tranche was awarded to several providers at once and per-provider quantities are not published. Tranche-1 qualified bidders named by MeitY: CMS Computers India, Ctrls Datacenters, E2E Networks, Jio Platforms, Locuz Enterprise Solutions, NxtGen Datacenter and Cloud Technologies, Orient Technologies, Tata Communications, Vensysco Technologies, Yotta Data Services. Later government statements refer to 14 empanelled providers; the full 14-name list was not found on a primary source."
+ },
+ {
+  "entity_id": "adani-group",
+  "name": "Adani Group",
+  "aliases": [
+   "Adani Enterprises",
+   "AdaniConneX",
+   "adani-group"
+  ],
+  "hq_country": "India",
+  "hq_city": "Ahmedabad",
+  "website": "https://www.adani.com",
+  "listed_ticker": "NSE:ADANIENT",
+  "one_line": "Indian infrastructure conglomerate pledging $100bn of AI data centres by 2035 and building Google's Vizag hub.",
+  "source_urls": [
+   "https://finance.yahoo.com/news/indias-adani-group-invest-100-130024543.html"
+  ],
+  "notes": "Ticker is Adani Enterprises, the group flagship."
+ },
+ {
+  "entity_id": "hcl-technologies-limited",
+  "name": "HCL Technologies Limited",
+  "aliases": [
+   "HCLTech",
+   "hcltech"
+  ],
+  "hq_country": "India",
+  "hq_city": "Noida",
+  "website": "https://www.hcltech.com",
+  "listed_ticker": "NSE:HCLTECH",
+  "one_line": "Indian IT services firm investing Rs 3,500 crore in a 50MW AI data-centre platform.",
+  "source_urls": [
+   "https://www.hcltech.com/en-us/press-releases/hcltech-launches-full-stack-ai-offering-powered-new-ai-data-center-investment"
+  ]
+ },
+ {
+  "entity_id": "ntt-data-group-corporation",
+  "name": "NTT DATA Group Corporation",
+  "aliases": [
+   "NTT",
+   "ntt-data"
+  ],
+  "hq_country": "Japan",
+  "hq_city": "Tokyo",
+  "website": "https://www.nttdata.com",
+  "listed_ticker": "TYO:9613",
+  "one_line": "NTT's IT services and data-centre arm, reported to plan 1.5 trillion yen of Japanese data centres to 2033.",
+  "source_urls": [
+   "https://www.energyconnects.com/news/utilities/2026/august/ntt-data-eyeing-9-billion-outlay-for-japan-data-centers/"
+  ]
+ },
+ {
+  "entity_id": "noetra-corp",
+  "name": "Noetra Corp.",
+  "aliases": [
+   "FRONTia",
+   "noetra"
+  ],
+  "hq_country": "Japan",
+  "hq_city": "Tokyo",
+  "one_line": "Japanese consortium company (SoftBank Corp., Sony, NEC, Honda and about 44 others) building the METI-backed national AI factory with 27,500 Nvidia Rubin GPUs.",
+  "source_urls": [
+   "https://nvidianews.nvidia.com/news/japan-government-industrial-leaders-and-nvidia-launch-the-worlds-first-national-ai-infrastructure"
+  ],
+  "notes": "Website not found."
+ },
+ {
+  "entity_id": "ministry-of-economy-trade-and-industry-japan",
+  "name": "Ministry of Economy, Trade and Industry (Japan)",
+  "aliases": [
+   "METI",
+   "meti-japan"
+  ],
+  "hq_country": "Japan",
+  "hq_city": "Tokyo",
+  "website": "https://www.meti.go.jp",
+  "one_line": "Japanese ministry funding GENIAC, GPU cloud subsidies and the FRONTia national AI factory.",
+  "source_urls": [
+   "https://www.meti.go.jp/english/policy/mono_info_service/geniac/index.html",
+   "https://oecd.ai/en/dashboards/policy-initiatives/meti-subsidies-for-ai-computational-resources-under-the-economic-security-promotion-act"
+  ]
+ },
+ {
+  "entity_id": "new-energy-and-industrial-technology-development-organizatio",
+  "name": "New Energy and Industrial Technology Development Organization",
+  "aliases": [
+   "NEDO",
+   "nedo-japan"
+  ],
+  "hq_country": "Japan",
+  "hq_city": "Kawasaki",
+  "website": "https://www.nedo.go.jp",
+  "one_line": "METI's funding agency that administers GENIAC compute grants.",
+  "source_urls": [
+   "https://sakana.ai/nedo-grant/",
+   "https://www.meti.go.jp/english/policy/mono_info_service/geniac/index.html"
+  ]
+ },
+ {
+  "entity_id": "riken",
+  "name": "RIKEN",
+  "aliases": [
+   "RIKEN Center for Computational Science",
+   "R-CCS",
+   "riken"
+  ],
+  "hq_country": "Japan",
+  "hq_city": "Wako",
+  "website": "https://www.riken.jp",
+  "one_line": "Japan's national research institute, home of Fugaku and the new Blackwell-based RIKYU system.",
+  "source_urls": [
+   "https://blogs.nvidia.com/blog/japan-ecosystem-2026/"
+  ]
+ },
+ {
+  "entity_id": "cabinet-of-japan",
+  "name": "Cabinet of Japan",
+  "aliases": [
+   "Japanese government",
+   "Government of Japan",
+   "Prime Minister's Office of Japan",
+   "japan-cabinet"
+  ],
+  "hq_country": "Japan",
+  "hq_city": "Tokyo",
+  "website": "https://www.kantei.go.jp",
+  "one_line": "Japan's national government, which approved the 10 trillion yen chip and AI support framework through FY2030.",
+  "source_urls": [
+   "https://finance.yahoo.com/news/japan-earmarks-extra-9-9-080342643.html"
+  ]
+ },
+ {
+  "entity_id": "lg-group",
+  "name": "LG Group",
+  "aliases": [
+   "LG AI Research",
+   "LG CNS",
+   "LG Uplus",
+   "lg-group"
+  ],
+  "hq_country": "South Korea",
+  "hq_city": "Seoul",
+  "website": "https://www.lg.com",
+  "listed_ticker": "KRX:003550",
+  "one_line": "Korean conglomerate whose LG AI Research is a finalist in the national AI model project and which is building a group AI factory with Nvidia.",
+  "source_urls": [
+   "https://blogs.nvidia.com/blog/nvidia-and-lg-group-ai-factory/"
+  ],
+  "notes": "Ticker is LG Corp, the holding company."
+ },
+ {
+  "entity_id": "upstage",
+  "name": "Upstage",
+  "hq_country": "South Korea",
+  "hq_city": "Seoul",
+  "website": "https://www.upstage.ai",
+  "one_line": "Korean model start-up (Solar models), finalist in the national AI foundation-model project.",
+  "source_urls": [
+   "https://www.koreatimes.co.kr/business/tech-science/20260818/lg-ai-research-sk-telecom-upstage-survive-next-cut-in-national-ai-model-project"
+  ]
+ },
+ {
+  "entity_id": "ministry-of-digital-development-and-information-singapore",
+  "name": "Ministry of Digital Development and Information (Singapore)",
+  "aliases": [
+   "MDDI",
+   "mddi-singapore"
+  ],
+  "hq_country": "Singapore",
+  "hq_city": "Singapore",
+  "website": "https://www.mddi.gov.sg",
+  "one_line": "Singapore ministry that owns the National AI Strategy and the S$1bn AI research commitment.",
+  "source_urls": [
+   "https://www.mddi.gov.sg/newsroom/update-to-singapore-s-national-ai-strategy--refreshed-priorities-to-harness-ai-for-the-public-good-factsheet/"
+  ]
+ },
+ {
+  "entity_id": "singapore-telecommunications-limited",
+  "name": "Singapore Telecommunications Limited",
+  "aliases": [
+   "Singtel",
+   "SingTel",
+   "Nxera",
+   "RE:AI",
+   "singtel"
+  ],
+  "hq_country": "Singapore",
+  "hq_city": "Singapore",
+  "website": "https://www.singtel.com",
+  "listed_ticker": "SGX:Z74",
+  "one_line": "Singapore telecom group that sells GPU-as-a-service and swaps capacity with Nscale.",
+  "source_urls": [
+   "https://www.nscale.com/press-releases/singtel-and-nscale-unlock-gpu-capacity-globally-to-accelerate-ai-adoption"
+  ]
+ },
+ {
+  "entity_id": "advanced-info-service-public-company-limited",
+  "name": "Advanced Info Service Public Company Limited",
+  "aliases": [
+   "AIS",
+   "AIS Thailand",
+   "Advanced Info Service",
+   "ais"
+  ],
+  "hq_country": "Thailand",
+  "hq_city": "Bangkok",
+  "website": "https://www.ais.th",
+  "listed_ticker": "SET:ADVANC",
+  "one_line": "Thailand's largest mobile operator; spent 4bn baht on its own data centres for a sovereign cloud.",
+  "source_urls": [
+   "https://www.telecomtv.com/content/telcos-and-ai-channel/ais-makes-its-sovereign-play-in-thailand-53395/"
+  ]
+ },
+ {
+  "entity_id": "pldt-inc",
+  "name": "PLDT Inc.",
+  "aliases": [
+   "ePLDT",
+   "VITRO",
+   "pldt"
+  ],
+  "hq_country": "Philippines",
+  "hq_city": "Makati",
+  "website": "https://www.pldt.com",
+  "listed_ticker": "PSE:TEL",
+  "one_line": "Philippine telecom group whose VITRO Sta. Rosa is the country's first AI-ready hyperscale data centre.",
+  "source_urls": [
+   "https://www.rcrwireless.com/20250428/ai-ml/philippines-ai-data"
+  ]
+ },
+ {
+  "entity_id": "kinh-bac-city-development-holding-corporation",
+  "name": "Kinh Bac City Development Holding Corporation",
+  "aliases": [
+   "KBC",
+   "Kinh Bac City",
+   "kinh-bac-city"
+  ],
+  "hq_country": "Vietnam",
+  "hq_city": "Bac Ninh",
+  "website": "https://kinhbaccity.vn",
+  "listed_ticker": "HOSE:KBC",
+  "one_line": "Vietnamese industrial-park developer proposing a $2bn, 200MW, 100,000-GPU data centre.",
+  "source_urls": [
+   "https://en.vietnamplus.vn/vietnam-emerges-as-new-hotspot-for-ai-data-centre-investment-post332260.vnp"
+  ]
+ },
+ {
+  "entity_id": "hon-hai-precision-industry-co-ltd",
+  "name": "Hon Hai Precision Industry Co., Ltd.",
+  "aliases": [
+   "Foxconn",
+   "Hon Hai",
+   "Big Innovation Company",
+   "foxconn"
+  ],
+  "hq_country": "Taiwan",
+  "hq_city": "New Taipei",
+  "website": "https://www.honhai.com",
+  "listed_ticker": "TWSE:2317",
+  "one_line": "World's largest electronics manufacturer; building a 10,000-GPU Nvidia supercomputer for Taiwan's NSTC.",
+  "source_urls": [
+   "https://nvidianews.nvidia.com/news/foxconn-builds-ai-factory-in-partnership-with-taiwan-and-nvidia"
+  ]
+ },
+ {
+  "entity_id": "national-science-and-technology-council-taiwan",
+  "name": "National Science and Technology Council (Taiwan)",
+  "aliases": [
+   "NSTC",
+   "Taiwan NSTC",
+   "nstc-taiwan"
+  ],
+  "hq_country": "Taiwan",
+  "hq_city": "Taipei",
+  "website": "https://www.nstc.gov.tw",
+  "one_line": "Taiwan's science ministry, targeting 480 petaflops of national supercomputing by 2029.",
+  "source_urls": [
+   "https://www.taipeitimes.com/News/front/archives/2025/01/12/2003830052"
+  ]
+ },
+ {
+  "entity_id": "hong-kong-cyberport-management-company-limited",
+  "name": "Hong Kong Cyberport Management Company Limited",
+  "aliases": [
+   "Cyberport",
+   "Cyberport AISC",
+   "cyberport"
+  ],
+  "hq_country": "Hong Kong",
+  "hq_city": "Hong Kong",
+  "website": "https://www.cyberport.hk",
+  "one_line": "Hong Kong government-owned tech park operating the 3,000-petaflop AI Supercomputing Centre.",
+  "source_urls": [
+   "https://www.info.gov.hk/gia/general/202410/07/P2024100700266.htm"
+  ]
+ },
+ {
+  "entity_id": "digital-policy-office-hong-kong-sar-government",
+  "name": "Digital Policy Office, Hong Kong SAR Government",
+  "aliases": [
+   "DPO",
+   "Hong Kong Digital Policy Office",
+   "Hong Kong government",
+   "hk-digital-policy-office"
+  ],
+  "hq_country": "Hong Kong",
+  "hq_city": "Hong Kong",
+  "website": "https://www.digitalpolicy.gov.hk",
+  "one_line": "Hong Kong government office funding the HK$3bn AI Subsidy Scheme.",
+  "source_urls": [
+   "https://www.info.gov.hk/gia/general/202410/07/P2024100700266.htm"
+  ]
+ },
+ {
+  "entity_id": "taiwan-semiconductor-manufacturing-company-limited",
+  "name": "Taiwan Semiconductor Manufacturing Company Limited",
+  "aliases": [
+   "TSMC"
+  ],
+  "hq_country": "Taiwan",
+  "hq_city": "Hsinchu",
+  "website": "https://www.tsmc.com",
+  "listed_ticker": "TWSE:2330",
+  "one_line": "World's largest chip foundry; named as a research user of the Foxconn-Nvidia 10,000-GPU supercomputer, its only disclosed external compute use.",
+  "source_urls": [
+   "https://nvidianews.nvidia.com/news/foxconn-builds-ai-factory-in-partnership-with-taiwan-and-nvidia"
+  ]
+ },
+ {
+  "entity_id": "sony-group-corporation",
+  "name": "Sony Group Corporation",
+  "hq_country": "Japan",
+  "hq_city": "Tokyo",
+  "website": "https://www.sony.com",
+  "listed_ticker": "TYO:6758",
+  "one_line": "Japanese electronics and entertainment group; an anchor shareholder of the Noetra national AI factory consortium.",
+  "source_urls": [
+   "https://www.techtimes.com/articles/320785/20260716/japan-stakes-62-billion-physical-ai-factory-built-nvidia-vera-rubin.htm"
+  ]
+ },
+ {
+  "entity_id": "nec-corporation",
+  "name": "NEC Corporation",
+  "hq_country": "Japan",
+  "hq_city": "Tokyo",
+  "website": "https://www.nec.com",
+  "listed_ticker": "TYO:6701",
+  "one_line": "Japanese IT company; an anchor shareholder of the Noetra consortium.",
+  "source_urls": [
+   "https://www.techtimes.com/articles/320785/20260716/japan-stakes-62-billion-physical-ai-factory-built-nvidia-vera-rubin.htm"
+  ]
+ },
+ {
+  "entity_id": "honda-motor-co-ltd",
+  "name": "Honda Motor Co., Ltd.",
+  "aliases": [
+   "Honda"
+  ],
+  "hq_country": "Japan",
+  "hq_city": "Tokyo",
+  "website": "https://global.honda",
+  "listed_ticker": "TYO:7267",
+  "one_line": "Japanese car maker; an anchor shareholder of the Noetra consortium building physical-AI models.",
+  "source_urls": [
+   "https://www.techtimes.com/articles/320785/20260716/japan-stakes-62-billion-physical-ai-factory-built-nvidia-vera-rubin.htm"
+  ]
+ },
+ {
+  "entity_id": "sk-hynix-inc",
+  "name": "SK hynix Inc.",
+  "hq_country": "South Korea",
+  "hq_city": "Icheon",
+  "website": "https://www.skhynix.com",
+  "listed_ticker": "KRX:000660",
+  "one_line": "Korean memory maker committed with Samsung to up to 900,000 DRAM wafer starts a month for OpenAI's Stargate.",
+  "source_urls": [
+   "https://openai.com/index/samsung-and-sk-join-stargate/"
+  ]
+ },
+ {
+  "entity_id": "soket-ai-labs",
+  "name": "Soket AI Labs",
+  "hq_country": "India",
+  "hq_city": "Gurugram",
+  "website": "https://soket.ai",
+  "one_line": "Indian start-up selected by the IndiaAI Mission to build a 120bn-parameter model; GPU allocation not published.",
+  "source_urls": [
+   "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2132817&reg=3&lang=2"
+  ]
+ },
+ {
+  "entity_id": "gan-ai",
+  "name": "Gan AI",
+  "hq_country": "India",
+  "hq_city": "Bengaluru",
+  "website": "https://gan.ai",
+  "one_line": "Indian start-up selected by the IndiaAI Mission to build a 70bn-parameter text-to-speech model; GPU allocation not published.",
+  "source_urls": [
+   "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2132817&reg=3&lang=2"
+  ]
+ },
+ {
+  "entity_id": "bharti-airtel-limited",
+  "name": "Bharti Airtel Limited",
+  "aliases": [
+   "Airtel",
+   "Nxtra"
+  ],
+  "hq_country": "India",
+  "hq_city": "New Delhi",
+  "website": "https://www.airtel.in",
+  "listed_ticker": "NSE:BHARTIARTL",
+  "one_line": "Indian telecom operator; connectivity and Nxtra data-centre partner in Google's $15bn Visakhapatnam AI hub.",
+  "source_urls": [
+   "https://blog.google/intl/en-in/company-news/our-first-ai-hub-in-india-powered-by-a-15-billion-investment/"
+  ]
+ },
+ {
+  "entity_id": "chronoscale-holdings-corp",
+  "name": "ChronoScale Holdings Corp",
+  "aliases": [
+   "CHRN",
+   "Applied Digital Cloud Services"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Dallas",
+  "listed_ticker": "NASDAQ:CHRN",
+  "one_line": "GPU cloud business separated out of Applied Digital in May 2026 and separately listed.",
+  "source_urls": [
+   "https://www.sec.gov/cgi-bin/browse-edgar?company=chronoscale&type=10-K&action=getcompany",
+   "https://www.sec.gov/Archives/edgar/data/1144879/000114487926000048/apld-20260531.htm"
+  ],
+  "notes": "Rents space at third-party colocation centres in Colorado, Minnesota and Utah. Applied Digital retained ~97% of the equity at separation."
+ },
+ {
+  "entity_id": "nxtgen-datacenter-and-cloud-technologies-private-limited",
+  "name": "NxtGen Datacenter and Cloud Technologies Private Limited",
+  "aliases": [
+   "NxtGen",
+   "NxtGen Datacenter & Cloud Technologies"
+  ],
+  "hq_country": "India",
+  "hq_city": "Bengaluru",
+  "one_line": "Indian data centre and cloud provider empanelled under the IndiaAI Mission.",
+  "source_urls": [
+   "https://indiaai.gov.in/article/meity-accelerates-empanelment-of-agencies-to-provide-ai-compute-and-services-for-the-indiaai-mission"
+  ]
+ },
+ {
+  "entity_id": "locuz-enterprise-solutions-limited",
+  "name": "Locuz Enterprise Solutions Limited",
+  "aliases": [
+   "Locuz"
+  ],
+  "hq_country": "India",
+  "hq_city": "Hyderabad",
+  "one_line": "Indian IT infrastructure integrator empanelled under the IndiaAI Mission; bid with AWS in round two.",
+  "source_urls": [
+   "https://indiaai.gov.in/article/meity-accelerates-empanelment-of-agencies-to-provide-ai-compute-and-services-for-the-indiaai-mission"
+  ]
+ },
+ {
+  "entity_id": "orient-technologies-limited",
+  "name": "Orient Technologies Limited",
+  "hq_country": "India",
+  "hq_city": "Mumbai",
+  "one_line": "Indian IT services and infrastructure company empanelled under the IndiaAI Mission.",
+  "source_urls": [
+   "https://indiaai.gov.in/article/meity-accelerates-empanelment-of-agencies-to-provide-ai-compute-and-services-for-the-indiaai-mission"
+  ]
+ },
+ {
+  "entity_id": "vensysco-technologies-limited",
+  "name": "Vensysco Technologies Limited",
+  "hq_country": "India",
+  "one_line": "Indian technology services company empanelled under the IndiaAI Mission; bid with AWS in round two.",
+  "source_urls": [
+   "https://indiaai.gov.in/article/meity-accelerates-empanelment-of-agencies-to-provide-ai-compute-and-services-for-the-indiaai-mission"
+  ]
+ },
+ {
+  "entity_id": "cms-computers-india-pvt-ltd",
+  "name": "CMS Computers India Pvt Ltd",
+  "aliases": [
+   "CMS Computers",
+   "CMS Computers India"
+  ],
+  "hq_country": "India",
+  "hq_city": "Mumbai",
+  "one_line": "Indian IT infrastructure company empanelled under the IndiaAI Mission.",
+  "source_urls": [
+   "https://indiaai.gov.in/article/meity-accelerates-empanelment-of-agencies-to-provide-ai-compute-and-services-for-the-indiaai-mission"
+  ]
+ },
+ {
+  "entity_id": "gnani-ai",
+  "name": "Gnani AI",
+  "aliases": [
+   "Gnani Innovations"
+  ],
+  "hq_country": "India",
+  "hq_city": "Bengaluru",
+  "one_line": "Indian voice-AI and foundation model developer allocated GPU hours under the IndiaAI Mission.",
+  "source_urls": [
+   "https://www.business-standard.com/markets/capital-market-news/e2e-networks-jumps-after-receiving-order-worth-rs-177-cr-from-meity-125090300234_1.html"
+  ]
+ },
+ {
+  "entity_id": "sify-digital-services",
+  "name": "Sify Digital Services",
+  "aliases": [
+   "Sify",
+   "Sify Technologies"
+  ],
+  "hq_country": "India",
+  "hq_city": "Chennai",
+  "one_line": "Indian data centre and digital services provider shortlisted in the IndiaAI GPU tender round two.",
+  "source_urls": [
+   "https://inc42.com/buzz/indiaai-mission-govt-shortlists-7-companies-for-second-round-of-gpu-tender/"
+  ]
+ },
+ {
+  "entity_id": "netmagic-it-services",
+  "name": "Netmagic IT Services",
+  "aliases": [
+   "Netmagic",
+   "NTT-Netmagic",
+   "Netmagic Solutions"
+  ],
+  "hq_country": "India",
+  "hq_city": "Mumbai",
+  "one_line": "NTT-owned Indian data centre operator shortlisted in the IndiaAI GPU tender round two as a Google Cloud partner.",
+  "source_urls": [
+   "https://inc42.com/buzz/indiaai-mission-govt-shortlists-7-companies-for-second-round-of-gpu-tender/"
+  ]
+ },
+ {
+  "entity_id": "cyfuture-india",
+  "name": "Cyfuture India",
+  "aliases": [
+   "Cyfuture"
+  ],
+  "hq_country": "India",
+  "hq_city": "Noida",
+  "one_line": "Indian cloud and data centre provider shortlisted in the IndiaAI GPU tender round two.",
+  "source_urls": [
+   "https://inc42.com/buzz/indiaai-mission-govt-shortlists-7-companies-for-second-round-of-gpu-tender/"
+  ]
+ },
+ {
+  "entity_id": "ishan-infotech",
+  "name": "Ishan Infotech",
+  "hq_country": "India",
+  "hq_city": "Ahmedabad",
+  "one_line": "Indian IT infrastructure company shortlisted in the IndiaAI GPU tender round two, partnered with Oracle.",
+  "source_urls": [
+   "https://inc42.com/buzz/indiaai-mission-govt-shortlists-7-companies-for-second-round-of-gpu-tender/"
+  ]
+ },
+ {
+  "entity_id": "national-institute-of-advanced-industrial-science-and-techno",
+  "name": "National Institute of Advanced Industrial Science and Technology",
+  "aliases": [
+   "AIST",
+   "aist-japan"
+  ],
+  "hq_country": "Japan",
+  "hq_city": "Tsukuba",
+  "website": "https://www.aist.go.jp",
+  "one_line": "Japanese national research institute that operates the ABCI AI supercomputers.",
+  "source_urls": [
+   "https://oecd.ai/en/dashboards/policy-initiatives/meti-subsidies-for-ai-computational-resources-under-the-economic-security-promotion-act"
+  ]
+ },
+ {
+  "entity_id": "sharp-corporation",
+  "name": "Sharp Corporation",
+  "aliases": [
+   "sharp-corporation"
+  ],
+  "hq_country": "Japan",
+  "hq_city": "Sakai",
+  "listed_ticker": "TSE:6753",
+  "one_line": "Japanese electronics maker whose former Sakai LCD plant is being converted into an AI data centre by SoftBank Corp.",
+  "source_urls": [
+   "https://www.softbank.jp/en/corp/news/press/sbkk/2024/20240607_01/"
+  ]
+ },
+ {
+  "entity_id": "hyundai-motor-group",
+  "name": "Hyundai Motor Group",
+  "aliases": [
+   "Hyundai"
+  ],
+  "hq_country": "South Korea",
+  "hq_city": "Seoul",
+  "one_line": "Korean automotive group allocated 50,000 GPUs under the October 2025 Nvidia-Korea announcement.",
+  "source_urls": [
+   "https://www.lightreading.com/ai-machine-learning/south-korea-to-boost-ai-infrastructure-with-260-000-nvidia-chips"
+  ]
+ },
+ {
+  "entity_id": "infocomm-media-development-authority",
+  "name": "Infocomm Media Development Authority",
+  "aliases": [
+   "IMDA",
+   "Infocomm Media Development Authority of Singapore",
+   "imda-singapore"
+  ],
+  "hq_country": "Singapore",
+  "hq_city": "Singapore",
+  "website": "https://www.imda.gov.sg",
+  "one_line": "Singapore's digital sector regulator, which allocates new data centre power capacity jointly with EDB.",
+  "source_urls": [
+   "https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/four-data-centre-proposals-selected-as-part-of-second-data-centre-call-for-application"
+  ]
+ },
+ {
+  "entity_id": "singapore-economic-development-board",
+  "name": "Singapore Economic Development Board",
+  "aliases": [
+   "EDB",
+   "Singapore EDB"
+  ],
+  "hq_country": "Singapore",
+  "hq_city": "Singapore",
+  "website": "https://www.edb.gov.sg",
+  "one_line": "Singapore's investment promotion agency, co-runs the Data Centre Call for Application capacity allocation.",
+  "source_urls": [
+   "https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/four-data-centre-proposals-selected-as-part-of-second-data-centre-call-for-application"
+  ]
+ },
+ {
+  "entity_id": "ministry-of-investment-trade-and-industry-malaysia",
+  "name": "Ministry of Investment, Trade and Industry (Malaysia)",
+  "aliases": [
+   "MITI",
+   "MITI Malaysia",
+   "Kementerian Pelaburan, Perdagangan dan Industri",
+   "miti-malaysia"
+  ],
+  "hq_country": "Malaysia",
+  "hq_city": "Kuala Lumpur",
+  "website": "https://www.miti.gov.my",
+  "one_line": "Malaysian ministry that administers the Strategic Trade Act 2010 and now requires permits for US-origin AI chips.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/malaysian-govt-introduces-export-license-and-30-day-notification-requirement-for-export-of-us-ai-chips/"
+  ]
+ },
+ {
+  "entity_id": "bureau-of-industry-and-security-u-s-department-of-commerce",
+  "name": "Bureau of Industry and Security, U.S. Department of Commerce",
+  "aliases": [
+   "BIS",
+   "Bureau of Industry and Security",
+   "US BIS",
+   "Commerce/BIS",
+   "bis-us-commerce"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Washington, D.C.",
+  "website": "https://www.bis.gov",
+  "one_line": "US agency that writes and enforces the export control rules determining which AI chips may be sold to which countries.",
+  "source_urls": [
+   "https://www.bis.gov/press-release/department-commerce-announces-rescission-biden-era-artificial-intelligence-diffusion-rule-strengthens"
+  ]
+ },
+ {
+  "entity_id": "core42-technology-projects-llc",
+  "name": "Core42 Technology Projects LLC",
+  "aliases": [
+   "Core42",
+   "Core42 Technology Projects LLC d/b/a Core42"
+  ],
+  "hq_country": "United Arab Emirates",
+  "hq_city": "Abu Dhabi",
+  "one_line": "G42 subsidiary named in the EAR as approved to receive advanced computing items in the UAE without a licence.",
+  "source_urls": [
+   "https://www.federalregister.gov/documents/2026/07/14/2026-14132/enhanced-favorable-treatment-for-the-united-arab-emirates-under-the-export-administration",
+   "https://www.ecfr.gov/current/title-15/part-740/appendix-Supplement No. 8 to Part 740"
+  ]
+ },
+ {
+  "entity_id": "applied-materials-inc",
+  "name": "Applied Materials, Inc.",
+  "aliases": [
+   "AMAT",
+   "Applied Materials Korea, Ltd.",
+   "AMK",
+   "applied-materials"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Santa Clara",
+  "listed_ticker": "NASDAQ:AMAT",
+  "one_line": "US semiconductor equipment maker penalised $252m for routing controlled equipment through Korea to an Entity-Listed Chinese customer.",
+  "source_urls": [
+   "https://www.bis.gov/press-release/applied-materials-pay-252-million-penalty-bis-illegally-exporting-semiconductor-manufacturing-equipment"
+  ]
+ },
+ {
+  "entity_id": "voltage-park",
+  "name": "Voltage Park",
+  "aliases": [
+   "Navigation Fund (owner)",
+   "voltage-park"
+  ],
+  "hq_country": "United States",
+  "hq_city": "San Francisco, California",
+  "website": "https://www.voltagepark.com",
+  "one_line": "Non-profit-owned GPU cloud that bought ~24,000 Nvidia H100s and rents them on demand and on reserved terms.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/ai-cloud-computing-non-profit-buys-24000-nvidia-h100-chips/",
+   "https://www.voltagepark.com/infrastructure"
+  ]
+ },
+ {
+  "entity_id": "tensorwave-inc",
+  "name": "TensorWave, Inc.",
+  "aliases": [
+   "tensorwave"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Las Vegas, Nevada",
+  "website": "https://tensorwave.com",
+  "one_line": "AMD-only AI cloud running Instinct accelerators as an alternative to Nvidia-based neoclouds.",
+  "source_urls": [
+   "https://www.businesswire.com/news/home/20260610650010/en/TensorWave-Raises-$350-Million-Series-B-at-$1.55B-Valuation-to-Expand-Global-AMD-Powered-AI-Infrastructure"
+  ]
+ },
+ {
+  "entity_id": "modal-labs-inc",
+  "name": "Modal Labs, Inc.",
+  "hq_country": "United States",
+  "hq_city": "New York, New York",
+  "website": "https://modal.com",
+  "one_line": "Serverless GPU compute platform that rents capacity from underlying clouds rather than owning data centres.",
+  "source_urls": [
+   "https://sacra.com/c/modal-labs/"
+  ],
+  "notes": "Asset-light; no owned data centre estate identified."
+ },
+ {
+  "entity_id": "baseten-inc",
+  "name": "Baseten, Inc.",
+  "hq_country": "United States",
+  "hq_city": "San Francisco, California",
+  "website": "https://www.baseten.co",
+  "one_line": "AI inference platform that resells and orchestrates GPU capacity sourced from multiple clouds.",
+  "source_urls": [
+   "https://sacra.com/c/baseten/"
+  ],
+  "notes": "Asset-light inference layer; buys capacity rather than building data centres."
+ },
+ {
+  "entity_id": "nexgen-cloud-ltd",
+  "name": "NexGen Cloud Ltd",
+  "aliases": [
+   "Hyperstack",
+   "AI Supercloud",
+   "nexgen-cloud"
+  ],
+  "hq_country": "United Kingdom",
+  "hq_city": "London",
+  "website": "https://www.nexgencloud.com",
+  "one_line": "UK GPU cloud trading as Hyperstack, hosting its 'AI Supercloud' in third-party European data centres.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/nexgen-cloud-to-host-ai-supercloud-in-norwegian-data-center/",
+   "https://www.hyperstack.cloud/blog/company-news/nexgen-cloud-and-aq-compute-advance-towards-net-zero-ai-supercloud"
+  ]
+ },
+ {
+  "entity_id": "datacrunch-oy",
+  "name": "DataCrunch Oy",
+  "aliases": [
+   "DataCrunch",
+   "DataCrunch.io"
+  ],
+  "hq_country": "Finland",
+  "hq_city": "Helsinki",
+  "website": "https://datacrunch.io",
+  "one_line": "Finnish GPU cloud renting Nvidia capacity from renewable-powered Nordic data centres.",
+  "source_urls": [
+   "https://datacrunch.io/"
+  ],
+  "notes": "Limited public disclosure; no verified MW or GPU counts found."
+ },
+ {
+  "entity_id": "paperspace-digitalocean",
+  "name": "Paperspace (DigitalOcean)",
+  "aliases": [
+   "Paperspace",
+   "Paperspace by DigitalOcean",
+   "Gradient"
+  ],
+  "hq_country": "United States",
+  "hq_city": "New York, New York",
+  "website": "https://www.paperspace.com",
+  "one_line": "GPU cloud acquired by DigitalOcean in 2023 and folded into DigitalOcean's GPU Droplet and Gradient products.",
+  "source_urls": [
+   "https://www.digitalocean.com/blog/introducing-new-atlanta-data-center"
+  ],
+  "notes": "Now operates as part of DigitalOcean; no separate site estate."
+ },
+ {
+  "entity_id": "digitalocean-holdings-inc",
+  "name": "DigitalOcean Holdings, Inc.",
+  "aliases": [
+   "DOCN"
+  ],
+  "hq_country": "United States",
+  "hq_city": "New York, New York",
+  "website": "https://www.digitalocean.com",
+  "listed_ticker": "NYSE:DOCN",
+  "one_line": "Developer-focused cloud that added GPU Droplets and an AI-optimised Atlanta data centre after buying Paperspace.",
+  "source_urls": [
+   "https://www.digitalocean.com/blog/introducing-new-atlanta-data-center"
+  ]
+ },
+ {
+  "entity_id": "massed-compute",
+  "name": "Massed Compute",
+  "aliases": [
+   "MassedCompute"
+  ],
+  "hq_country": "United States",
+  "website": "https://massedcompute.com",
+  "one_line": "Small US GPU rental provider offering on-demand Nvidia and AMD instances.",
+  "source_urls": [
+   "https://massedcompute.com/"
+  ],
+  "notes": "No verifiable chip counts, sites or contracts found in public sources."
+ },
+ {
+  "entity_id": "latitude-sh",
+  "name": "Latitude.sh",
+  "aliases": [
+   "Latitude",
+   "Maxihost"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Miami, Florida",
+  "website": "https://www.latitude.sh",
+  "one_line": "Bare-metal and GPU cloud with edge locations across the Americas and Europe, formerly Maxihost.",
+  "source_urls": [
+   "https://www.latitude.sh/"
+  ],
+  "notes": "No verifiable chip purchase or MW figures found."
+ },
+ {
+  "entity_id": "sesterce-sas",
+  "name": "Sesterce SAS",
+  "aliases": [
+   "Sesterce",
+   "Sesterce Cloud"
+  ],
+  "hq_country": "France",
+  "hq_city": "Paris",
+  "website": "https://www.sesterce.com",
+  "one_line": "French GPU cloud and data centre developer targeting European sovereign AI capacity.",
+  "source_urls": [
+   "https://www.clustermax.ai/cloudreview/sesterce"
+  ]
+ },
+ {
+  "entity_id": "gmi-cloud",
+  "name": "GMI Cloud",
+  "aliases": [
+   "GMI",
+   "gmi-cloud"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Mountain View, California",
+  "website": "https://www.gmicloud.ai",
+  "one_line": "Nvidia Cloud Partner renting GPU clusters, with operations spanning the US and Asia.",
+  "source_urls": [
+   "https://www.prnewswire.com/news-releases/gmi-cloud-secures-8x-arr-growth-as-global-ai-infrastructure-footprint-expands-302830473.html",
+   "https://www.datacenterdynamics.com/en/news/gmi-cloud-seeks-635m-loan-supported-by-customer-contracts-for-gpu-capacity-report/"
+  ],
+  "notes": "Asia-Pacific operations are out of scope for this slice."
+ },
+ {
+  "entity_id": "scaleway-sas",
+  "name": "Scaleway SAS",
+  "aliases": [
+   "Scaleway",
+   "Iliad Group cloud",
+   "Online.net"
+  ],
+  "hq_country": "France",
+  "hq_city": "Paris",
+  "website": "https://www.scaleway.com",
+  "one_line": "Iliad Group's French cloud, offering Nvidia GPU instances from its own European data centres.",
+  "source_urls": [
+   "https://www.scaleway.com/en/"
+  ]
+ },
+ {
+  "entity_id": "ovh-groupe-sa",
+  "name": "OVH Groupe SA",
+  "aliases": [
+   "OVHcloud",
+   "OVH",
+   "ovhcloud"
+  ],
+  "hq_country": "France",
+  "hq_city": "Roubaix",
+  "website": "https://www.ovhcloud.com",
+  "listed_ticker": "EPA:OVH",
+  "one_line": "European cloud operator with its own data centres and a growing Nvidia GPU bare-metal and public-cloud range.",
+  "source_urls": [
+   "https://corporate.ovhcloud.com/en/newsroom/news/ai-offer/"
+  ]
+ },
+ {
+  "entity_id": "vultr-constant-company-llc",
+  "name": "Vultr (Constant Company, LLC)",
+  "aliases": [
+   "Vultr",
+   "Constant Company",
+   "The Constant Company",
+   "vultr"
+  ],
+  "hq_country": "United States",
+  "hq_city": "West Palm Beach, Florida",
+  "website": "https://www.vultr.com",
+  "one_line": "Independent cloud provider positioning as an 'alternative hyperscaler', building AMD-based GPU superclusters.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/vultr-plans-50mw-amd-mi355x-cluster-in-springfield-ohio/"
+  ]
+ },
+ {
+  "entity_id": "core-scientific-inc",
+  "name": "Core Scientific, Inc.",
+  "aliases": [
+   "CORZ",
+   "core-scientific"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Austin, Texas",
+  "website": "https://corescientific.com",
+  "listed_ticker": "NASDAQ:CORZ",
+  "one_line": "Bitcoin-miner-turned-colocation landlord whose AI business is almost entirely a single 12-year take-or-pay contract with CoreWeave.",
+  "source_urls": [
+   "https://investors.corescientific.com/news-events/press-releases/detail/124/core-scientific-announces-termination-of-merger-agreement-with-coreweave"
+  ],
+  "notes": "Shareholders rejected CoreWeave's all-stock acquisition on 30 October 2025 and the merger agreement was terminated."
+ },
+ {
+  "entity_id": "bitfarms-ltd",
+  "name": "Bitfarms Ltd.",
+  "aliases": [
+   "BITF",
+   "bitfarms"
+  ],
+  "hq_country": "Canada",
+  "hq_city": "Toronto, Ontario",
+  "website": "https://bitfarms.com",
+  "listed_ticker": "NASDAQ:BITF",
+  "one_line": "Bitcoin miner converting its Pennsylvania and Washington State sites to liquid-cooled HPC/AI capacity.",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/bitfarms-converts-debt-into-project-financing-to-develop-pennsylvania-data-center/"
+  ],
+  "notes": "No signed AI tenant publicly identified as of the sources found."
+ },
+ {
+  "entity_id": "hypertec-group-inc",
+  "name": "Hypertec Group Inc.",
+  "aliases": [
+   "Hypertec Cloud",
+   "5C Data Centers",
+   "hypertec"
+  ],
+  "hq_country": "Canada",
+  "hq_city": "Montreal, Quebec",
+  "website": "https://hypertec.com",
+  "one_line": "Canadian server maker and data centre operator hosting Together AI's GPU fleet.",
+  "source_urls": [
+   "https://5c.ai/blog/hypertec-cloud-partners-with-together-ai-and-acquires-5c-data-centers-to-shape-the-next-generation-of-ai-factories"
+  ]
+ },
+ {
+  "entity_id": "aker-asa",
+  "name": "Aker ASA",
+  "aliases": [
+   "Aker",
+   "Aker-Nscale JV"
+  ],
+  "hq_country": "Norway",
+  "hq_city": "Oslo",
+  "website": "https://www.akerasa.com",
+  "listed_ticker": "OSL:AKER",
+  "one_line": "Norwegian industrial group and Nscale's joint-venture partner for Narvik AI capacity.",
+  "source_urls": [
+   "https://www.nscale.com/press-releases/nscale-microsoft-2025"
+  ]
+ },
+ {
+  "entity_id": "tallgrass-energy",
+  "name": "Tallgrass Energy",
+  "aliases": [
+   "Tallgrass",
+   "Tallgrass Energy Partners"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Leawood, Kansas",
+  "website": "https://tallgrass.com",
+  "one_line": "Midstream energy company building the on-site gas generation for Crusoe's Wyoming campus.",
+  "source_urls": [
+   "https://www.crusoe.ai/resources/newsroom/crusoe-and-tallgrass-announce-ai-data-center-in-wyoming"
+  ]
+ },
+ {
+  "entity_id": "bit-digital-inc",
+  "name": "Bit Digital, Inc.",
+  "aliases": [
+   "BTBT"
+  ],
+  "hq_country": "United States",
+  "hq_city": "New York, New York",
+  "website": "https://bit-digital.com",
+  "listed_ticker": "NASDAQ:BTBT",
+  "one_line": "Former bitcoin miner that contributed its HPC and GPU cloud business to WhiteFiber and retains a majority stake.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/2042022/000121390026088026/ea0300877-10q_whitefiber.htm"
+  ]
+ },
+ {
+  "entity_id": "canopy-wave-inc",
+  "name": "Canopy Wave Inc.",
+  "aliases": [
+   "Canopy",
+   "canopy-wave"
+  ],
+  "hq_country": "United States",
+  "one_line": "AI cloud company that was WhiteFiber's original anchor GPU customer before terminating the contract in 2026.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/2042022/000121390026088026/ea0300877-10q_whitefiber.htm"
+  ],
+  "notes": "Referred to in WhiteFiber filings as the 'Initial Customer'. WhiteFiber also held a SAFE in Canopy, surrendered and terminated on 10 August 2026."
+ },
+ {
+  "entity_id": "dna-fund",
+  "name": "DNA Fund",
+  "aliases": [
+   "DNA Holdings",
+   "dna-fund"
+  ],
+  "hq_country": "United States",
+  "one_line": "GPU cloud customer whose master services agreement with WhiteFiber was terminated with receivables left unpaid.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/2042022/000121390026088026/ea0300877-10q_whitefiber.htm"
+  ]
+ },
+ {
+  "entity_id": "block-inc",
+  "name": "Block, Inc.",
+  "aliases": [
+   "Proto Global LLC",
+   "Square"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Oakland, California",
+  "website": "https://block.xyz",
+  "listed_ticker": "NYSE:XYZ",
+  "one_line": "Payments company whose Proto mining-hardware unit had its Core Scientific supply contract terminated in 2026.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000014/core-20260630.htm"
+  ]
+ },
+ {
+  "entity_id": "dell-technologies-inc",
+  "name": "Dell Technologies Inc.",
+  "aliases": [
+   "Dell Marketing L.P.",
+   "dell"
+  ],
+  "hq_country": "United States",
+  "hq_city": "Round Rock, Texas",
+  "website": "https://www.dell.com",
+  "listed_ticker": "NYSE:DELL",
+  "one_line": "Server maker supplying GPU systems to neoclouds under non-cancellable purchase agreements.",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/a1015ie4ncnrandsupplemen.htm"
+  ]
+ },
+ {
+  "entity_id": "aq-compute",
+  "name": "AQ Compute",
+  "aliases": [
+   "AQ Group"
+  ],
+  "hq_country": "Norway",
+  "website": "https://aq-compute.com",
+  "one_line": "European renewable-powered data centre operator hosting NexGen Cloud's AI Supercloud.",
+  "source_urls": [
+   "https://www.hyperstack.cloud/blog/company-news/nexgen-cloud-and-aq-compute-advance-towards-net-zero-ai-supercloud"
+  ]
+ },
+ {
+  "entity_id": "singapore-economic-development-board-and-infocomm-media-deve",
+  "name": "Singapore Economic Development Board and Infocomm Media Development Authority"
+ },
+ {
+  "entity_id": "data-centre-operators-in-singapore",
+  "name": "data centre operators in Singapore"
+ },
+ {
+  "entity_id": "49-data-centre-projects-in-peninsular-malaysia",
+  "name": "49 data centre projects in Peninsular Malaysia"
+ },
+ {
+  "entity_id": "malaysian-water-regulator-and-johor-state-authorities",
+  "name": "Malaysian water regulator and Johor state authorities"
+ },
+ {
+  "entity_id": "data-centre-operators-in-johor-selangor-and-negeri-sembilan",
+  "name": "data centre operators in Johor, Selangor and Negeri Sembilan"
+ },
+ {
+  "entity_id": "johor-state-government",
+  "name": "Johor state government"
+ },
+ {
+  "entity_id": "data-centre-developers-in-johor",
+  "name": "data centre developers in Johor"
+ },
+ {
+  "entity_id": "dayone-for-the-firmus-batam-ai-factory-campus",
+  "name": "DayOne (for the Firmus Batam AI factory campus)"
+ },
+ {
+  "entity_id": "ytl-power-international-berhad-self-supply",
+  "name": "YTL Power International Berhad (self-supply)"
+ },
+ {
+  "entity_id": "ytl-ai-cloud-ytl-green-data-center-park",
+  "name": "YTL AI Cloud / YTL Green Data Center Park"
+ },
+ {
+  "entity_id": "telangana-power-authorities",
+  "name": "Telangana power authorities"
+ },
+ {
+  "entity_id": "centuria-capital-group-resetdata-self-supply",
+  "name": "Centuria Capital Group / ResetData (self-supply)"
+ },
+ {
+  "entity_id": "resetdata-ai-factories",
+  "name": "ResetData AI factories"
+ },
+ {
+  "entity_id": "australian-federal-government",
+  "name": "Australian federal government"
+ },
+ {
+  "entity_id": "large-scale-ai-data-centre-operators-in-australia",
+  "name": "large-scale AI data centre operators in Australia"
+ },
+ {
+  "entity_id": "firmus-technologies-with-nvidia-and-dayone",
+  "name": "Firmus Technologies with NVIDIA and DayOne"
+ },
+ {
+  "entity_id": "indonesia-batam",
+  "name": "Indonesia (Batam)"
+ },
+ {
+  "entity_id": "unnamed-ai-native-customers",
+  "name": "unnamed AI-native customers"
+ },
+ {
+  "entity_id": "australia-new-south-wales",
+  "name": "Australia (New South Wales)"
+ },
+ {
+  "entity_id": "sk-group-sk-telecom-sk-broadband-and-amazon-web-services",
+  "name": "SK Group (SK Telecom, SK Broadband) and Amazon Web Services"
+ },
+ {
+  "entity_id": "south-korea-ulsan",
+  "name": "South Korea (Ulsan)"
+ },
+ {
+  "entity_id": "kkr-led-consortium",
+  "name": "KKR-led consortium"
+ },
+ {
+  "entity_id": "market",
+  "name": "Market",
+  "aliases": [
+   "market"
+  ]
+ },
+ {
+  "entity_id": "south-korean-government-and-industry",
+  "name": "South Korean government and industry"
+ },
+ {
+  "entity_id": "korea-ministry-of-science-and-ict-national-ai-computing-cent",
+  "name": "Korea Ministry of Science and ICT (National AI Computing Center)"
+ },
+ {
+  "entity_id": "korean-enterprises",
+  "name": "Korean enterprises"
+ },
+ {
+  "entity_id": "korean-government-national-ai-research-programme",
+  "name": "Korean government national AI research programme"
+ },
+ {
+  "entity_id": "japanese-enterprises-and-ai-developers",
+  "name": "Japanese enterprises and AI developers"
+ },
+ {
+  "entity_id": "japan-osaka",
+  "name": "Japan (Osaka)"
+ },
+ {
+  "entity_id": "takeda-pharmaceutical-company-limited",
+  "name": "Takeda Pharmaceutical Company Limited"
+ },
+ {
+  "entity_id": "kddi-corporation-sakura-internet-inc-and-highreso-inc",
+  "name": "KDDI Corporation, SAKURA internet Inc. and Highreso Inc."
+ },
+ {
+  "entity_id": "each-other",
+  "name": "each other"
+ },
+ {
+  "entity_id": "japanese-customers",
+  "name": "Japanese customers"
+ },
+ {
+  "entity_id": "nvidia-corporation-systems-built-by-asus",
+  "name": "NVIDIA Corporation (systems built by ASUS)"
+ },
+ {
+  "entity_id": "taiwan-taoyuan",
+  "name": "Taiwan (Taoyuan)"
+ },
+ {
+  "entity_id": "taiwan-stock-exchange",
+  "name": "Taiwan Stock Exchange"
+ },
+ {
+  "entity_id": "unnamed-global-technology-company",
+  "name": "unnamed global technology company"
+ },
+ {
+  "entity_id": "unnamed-new-zealand-counterparty",
+  "name": "unnamed New Zealand counterparty"
+ },
+ {
+  "entity_id": "situational-awareness-and-oaktree-capital-management",
+  "name": "Situational Awareness and Oaktree Capital Management"
+ },
+ {
+  "entity_id": "macquarie-bank-specialised-and-asset-finance",
+  "name": "Macquarie Bank (Specialised and Asset Finance)"
+ },
+ {
+  "entity_id": "centuria-capital-group-resetdata",
+  "name": "Centuria Capital Group / ResetData"
+ },
+ {
+  "entity_id": "cdc-data-centres",
+  "name": "CDC Data Centres"
+ },
+ {
+  "entity_id": "hyperscale-neocloud-enterprise-and-government-customers-unna",
+  "name": "hyperscale, neocloud, enterprise and government customers (unnamed)"
+ },
+ {
+  "entity_id": "unnamed-ai-cloud-customers",
+  "name": "unnamed AI cloud customers"
+ },
+ {
+  "entity_id": "unnamed-landlord",
+  "name": "unnamed landlord"
+ },
+ {
+  "entity_id": "india-ministry-of-electronics-and-information-technology-mei",
+  "name": "India Ministry of Electronics and Information Technology (MeitY)"
+ },
+ {
+  "entity_id": "india-20-secondary-markets",
+  "name": "India (20 secondary markets)"
+ },
+ {
+  "entity_id": "indian-and-international-ai-customers",
+  "name": "Indian and international AI customers"
+ },
+ {
+  "entity_id": "india-gujarat",
+  "name": "India (Gujarat)"
+ },
+ {
+  "entity_id": "indosat-ooredoo-hutchison-ooredoo-group-nokia-and-nvidia",
+  "name": "Indosat Ooredoo Hutchison, Ooredoo Group, Nokia and NVIDIA"
+ },
+ {
+  "entity_id": "indonesia-and-asia-pacific",
+  "name": "Indonesia and Asia-Pacific"
+ },
+ {
+  "entity_id": "lintasarta-indosat",
+  "name": "Lintasarta (Indosat)"
+ },
+ {
+  "entity_id": "indonesian-customers",
+  "name": "Indonesian customers"
+ },
+ {
+  "entity_id": "sb-telecom-singapore-sc-zeus-data-centers-and-robust-hpc-gro",
+  "name": "SB Telecom Singapore, SC ZEUS Data Centers and Robust HPC Group"
+ },
+ {
+  "entity_id": "southeast-asian-markets",
+  "name": "Southeast Asian markets"
+ },
+ {
+  "entity_id": "vietnam-ho-chi-minh-city",
+  "name": "Vietnam (Ho Chi Minh City)"
+ },
+ {
+  "entity_id": "hong-kong-tseung-kwan-o",
+  "name": "Hong Kong (Tseung Kwan O)"
+ },
+ {
+  "entity_id": "hong-kong",
+  "name": "Hong Kong"
+ },
+ {
+  "entity_id": "asia-pacific-data-centre-developers-collectively",
+  "name": "Asia-Pacific data centre developers collectively"
+ },
+ {
+  "entity_id": "indian-data-centre-developers-collectively",
+  "name": "Indian data centre developers collectively"
+ },
+ {
+  "entity_id": "open-market",
+  "name": "open market"
+ },
+ {
+  "entity_id": "undisclosed",
+  "name": "Undisclosed"
+ },
+ {
+  "entity_id": "vantage-data-centers",
+  "name": "Vantage Data Centers"
+ },
+ {
+  "entity_id": "princeton-digital-group",
+  "name": "Princeton Digital Group"
+ },
+ {
+  "entity_id": "zdata-technologies-co-ltd",
+  "name": "ZDATA Technologies Co., Ltd."
+ },
+ {
+  "entity_id": "megaspeed",
+  "name": "MegaSpeed"
+ },
+ {
+  "entity_id": "empyrion-digital",
+  "name": "Empyrion Digital"
+ },
+ {
+  "entity_id": "digital-halo-data-center",
+  "name": "Digital Halo Data Center"
+ },
+ {
+  "entity_id": "bridge-data-centres",
+  "name": "Bridge Data Centres"
+ },
+ {
+  "entity_id": "epoch-digital",
+  "name": "Epoch Digital"
+ },
+ {
+  "entity_id": "global-data-centre-gdc",
+  "name": "Global Data Centre (GDC)"
+ },
+ {
+  "entity_id": "stack-infrastructure",
+  "name": "STACK INFRASTRUCTURE",
+  "aliases": [
+   "Stack Infrastructure"
+  ]
+ },
+ {
+  "entity_id": "digital-edge-dc",
+  "name": "Digital Edge DC"
+ },
+ {
+  "entity_id": "k2-data-centres",
+  "name": "K2 Data Centres"
+ },
+ {
+  "entity_id": "global-switch",
+  "name": "Global Switch"
+ },
+ {
+  "entity_id": "damac-digital",
+  "name": "DAMAC Digital"
+ },
+ {
+  "entity_id": "brightray",
+  "name": "BRIGHTRAY"
+ },
+ {
+  "entity_id": "open-dc",
+  "name": "Open DC"
+ },
+ {
+  "entity_id": "vads-berhad",
+  "name": "VADS Berhad"
+ },
+ {
+  "entity_id": "dayone-landlord-firmus-technologies-ai-factory-operator",
+  "name": "DayOne (landlord); Firmus Technologies (AI factory operator)"
+ },
+ {
+  "entity_id": "bw-digital",
+  "name": "BW Digital"
+ },
+ {
+  "entity_id": "pt-aesler-group-international-tbk",
+  "name": "PT. Aesler Group International Tbk"
+ },
+ {
+  "entity_id": "range-idc",
+  "name": "Range IDC"
+ },
+ {
+  "entity_id": "gaw-capital-partners",
+  "name": "Gaw Capital Partners"
+ },
+ {
+  "entity_id": "various-single-site-operators",
+  "name": "various single-site operators"
+ },
+ {
+  "entity_id": "digital-edge",
+  "name": "Digital Edge"
+ },
+ {
+  "entity_id": "edgeconnex",
+  "name": "EdgeConneX"
+ },
+ {
+  "entity_id": "bdx-data-centers",
+  "name": "BDx Data Centers"
+ },
+ {
+  "entity_id": "jtc-corporation",
+  "name": "JTC Corporation"
+ },
+ {
+  "entity_id": "sk-group-sk-telecom-sk-broadband-with-aws",
+  "name": "SK Group (SK Telecom / SK Broadband) with AWS"
+ },
+ {
+  "entity_id": "flow-digital-infrastructure",
+  "name": "FLOW Digital Infrastructure"
+ },
+ {
+  "entity_id": "china-telecom-global",
+  "name": "China Telecom Global"
+ },
+ {
+  "entity_id": "st-telemedia-global-data-centres-india",
+  "name": "ST Telemedia Global Data Centres India"
+ },
+ {
+  "entity_id": "keel-infrastructure-corp-formerly-bitfarms-ltd",
+  "name": "Keel Infrastructure Corp. (formerly Bitfarms Ltd.)"
+ },
+ {
+  "entity_id": "whitefiber-inc-enovum",
+  "name": "WhiteFiber, Inc. (Enovum)"
+ },
+ {
+  "entity_id": "epldt-vitro-inc",
+  "name": "ePLDT / VITRO Inc."
+ },
+ {
+  "entity_id": "china-national-computing",
+  "name": "China's national computing programme",
+  "aliases": [
+   "EDWC",
+   "Eastern Data Western Computing",
+   "China state computing"
+  ],
+  "hq_country": "China",
+  "hq_city": "Beijing",
+  "one_line": "The state programme that built out China's data centre capacity and is now trying to place the unused part of it.",
+  "source_urls": [
+   "https://www.aspistrategist.org.au/abundant-electricity-isnt-enough-chinas-overbuilt-ai-computing-power-is-underused/"
+  ]
+ },
+ {
+  "entity_id": "china-dc-operators-collective",
+  "name": "Chinese data centre operators (collective)",
+  "aliases": [
+   "Chinese data centre operators"
+  ],
+  "hq_country": "China",
+  "hq_city": "Beijing",
+  "one_line": "The group of Chinese operators holding built AI capacity that is running well below its design load.",
+  "source_urls": [
+   "https://www.scmp.com/tech/article/3281894/tech-war-china-sees-glut-ai-data-centres-gpu-mismatches-exacerbate-weak-demand"
+  ]
+ },
+ {
+  "entity_id": "vast-ai",
+  "name": "Vast.ai",
+  "aliases": [
+   "Vast AI",
+   "vast.ai marketplace"
+  ],
+  "hq_country": "United States",
+  "hq_city": "San Francisco",
+  "website": "https://vast.ai",
+  "one_line": "A marketplace where owners of spare GPUs rent them out by the hour; its listings show where unsold capacity actually sits.",
+  "source_urls": [
+   "https://vast.ai/"
+  ]
+ }
+]

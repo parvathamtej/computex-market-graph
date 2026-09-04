@@ -1,0 +1,140 @@
+[
+ {
+  "deal_id": "china-sell-excess-compute-2025-07",
+  "deal_type": "D15",
+  "from_entity": "china-national-computing",
+  "headline": "China said it would sell its excess computing power.",
+  "notes": "Reuters reported on 24 July 2025 that China planned to sell excess computing power. No volume or price was disclosed, so this record carries no megawatt figure -- it is the clearest public signal that a large block of Asian supply is looking for a buyer, not a measured quantity.",
+  "source_urls": [
+   "https://www.aspistrategist.org.au/abundant-electricity-isnt-enough-chinas-overbuilt-ai-computing-power-is-underused/"
+  ],
+  "geography": [
+   "China"
+  ],
+  "quantity_raw": "volume not disclosed",
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "non_binding",
+  "announced_date": "2025-07-24",
+  "captured_at": "2026-09-03",
+  "to_entity": null
+ },
+ {
+  "deal_id": "china-newbuild-idle-share-2025",
+  "deal_type": "D15",
+  "from_entity": "china-dc-operators-collective",
+  "headline": "About 80% of newly built Chinese data centre capacity is sitting unused.",
+  "notes": "MIT Technology Review reporting, cited by Light Reading (1 April 2025). Applies to newly built capacity, not the whole installed base, so it cannot be multiplied against the 4.6 GW operational figure. Recorded as a share because no megawatt number was published.",
+  "source_urls": [
+   "https://www.lightreading.com/ai-machine-learning/tumbling-prices-end-china-s-ai-data-center-binge"
+  ],
+  "geography": [
+   "China"
+  ],
+  "quantity_raw": "~80% of newly built capacity",
+  "status": "announced",
+  "confidence": "T4",
+  "binding_status": "non_binding",
+  "announced_date": "2025-04-01",
+  "captured_at": "2026-09-03",
+  "to_entity": null
+ },
+ {
+  "deal_id": "china-western-dc-utilisation-2026",
+  "deal_type": "D15",
+  "from_entity": "china-dc-operators-collective",
+  "headline": "Data centres in western China run at 20-30% utilisation against a 60% policy floor.",
+  "notes": "ASPI's Strategist. Beijing restated that data centres should run at no less than 60% utilisation and barred new large builds in cities where existing sites sit below 50%. The 30 to 40 points between actual and target utilisation is capacity already built and not sold.",
+  "source_urls": [
+   "https://www.aspistrategist.org.au/abundant-electricity-isnt-enough-chinas-overbuilt-ai-computing-power-is-underused/"
+  ],
+  "geography": [
+   "China"
+  ],
+  "quantity_raw": "20-30% utilised vs 60% target",
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "non_binding",
+  "captured_at": "2026-09-03",
+  "to_entity": null
+ },
+ {
+  "deal_id": "china-private-server-utilisation",
+  "deal_type": "D15",
+  "from_entity": "china-dc-operators-collective",
+  "headline": "Privately held Chinese server capacity runs below 5% CPU utilisation.",
+  "notes": "State Information Centre research report, via South China Morning Post. More than 250 internet data centres had been built or were under construction in China as of that June (CCID Consulting).",
+  "source_urls": [
+   "https://www.scmp.com/tech/article/3281894/tech-war-china-sees-glut-ai-data-centres-gpu-mismatches-exacerbate-weak-demand"
+  ],
+  "geography": [
+   "China"
+  ],
+  "quantity_raw": "<5% CPU utilisation",
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "non_binding",
+  "captured_at": "2026-09-03",
+  "to_entity": null
+ },
+ {
+  "deal_id": "vast-spare-cn-2026-09-02",
+  "deal_type": "D15",
+  "from_entity": "vast-ai",
+  "headline": "10 spare GPU offers listed for rent in China, middle price $0.12 an hour.",
+  "notes": "Live listings on the Vast.ai marketplace, captured 2026-09-02. These are owners with hardware nobody has rented yet, so they are supply looking for a buyer. Individual rigs rather than megawatt blocks, which is why there is no MW figure.",
+  "source_urls": [
+   "https://vast.ai/"
+  ],
+  "geography": [
+   "China"
+  ],
+  "quantity_raw": "10 offers",
+  "status": "announced",
+  "confidence": "T2",
+  "binding_status": "non_binding",
+  "announced_date": "2026-09-02",
+  "captured_at": "2026-09-03",
+  "to_entity": null
+ },
+ {
+  "deal_id": "vast-spare-kr-2026-09-02",
+  "deal_type": "D15",
+  "from_entity": "vast-ai",
+  "headline": "8 spare GPU offers listed for rent in South Korea, middle price $0.40 an hour.",
+  "notes": "Live listings on the Vast.ai marketplace, captured 2026-09-02. These are owners with hardware nobody has rented yet, so they are supply looking for a buyer. Individual rigs rather than megawatt blocks, which is why there is no MW figure.",
+  "source_urls": [
+   "https://vast.ai/"
+  ],
+  "geography": [
+   "South Korea"
+  ],
+  "quantity_raw": "8 offers",
+  "status": "announced",
+  "confidence": "T2",
+  "binding_status": "non_binding",
+  "announced_date": "2026-09-02",
+  "captured_at": "2026-09-03",
+  "to_entity": null
+ },
+ {
+  "deal_id": "vast-spare-vn-2026-09-02",
+  "deal_type": "D15",
+  "from_entity": "vast-ai",
+  "headline": "5 spare GPU offers listed for rent in Vietnam, middle price $0.09 an hour.",
+  "notes": "Live listings on the Vast.ai marketplace, captured 2026-09-02. These are owners with hardware nobody has rented yet, so they are supply looking for a buyer. Individual rigs rather than megawatt blocks, which is why there is no MW figure.",
+  "source_urls": [
+   "https://vast.ai/"
+  ],
+  "geography": [
+   "Vietnam"
+  ],
+  "quantity_raw": "5 offers",
+  "status": "announced",
+  "confidence": "T2",
+  "binding_status": "non_binding",
+  "announced_date": "2026-09-02",
+  "captured_at": "2026-09-03",
+  "to_entity": null
+ }
+]
