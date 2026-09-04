@@ -3,7 +3,7 @@
 A map of who supplies compute, who needs it, and who has already contracted with whom, built
 for the Asia-Pacific market and shown against the rest of the world.
 
-**Open it:** https://TEJ.github.io/computex-bi/
+**Open it:** https://parvathamtej.github.io/computex-market-graph/
 
 ## What is in it
 

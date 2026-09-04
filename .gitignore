@@ -1,0 +1,7 @@
+vendor/
+*.png
+node_modules/
+__pycache__/
+build/err*.mjs
+build/shot*.mjs
+build/dbg*.mjs
