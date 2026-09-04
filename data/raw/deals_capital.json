@@ -1096,7 +1096,7 @@
   "from_entity": "nvidia",
   "to_entity": "coreweave",
   "headline": "Nvidia is contractually obliged to buy any cloud capacity CoreWeave cannot sell, right through to April 2032.",
-  "notes": "THE CLEANEST DOCUMENTED VENDOR BACKSTOP IN THE SECTOR, and it is in an 8-K. Order form dated 2025-09-09 under the CoreWeave-NVIDIA Master Services Agreement of 2023-04-10, initial value $6.3bn. 'In instances where the Company's datacenter capacity is not fully utilized by its own customers, NVIDIA is obligated to purchase the residual unsold capacity through April 13, 2032', subject to delivery and availability requirements. Either party may terminate on 30 days' notice for breach, or on the other's bankruptcy if not dismissed within 90 days. The 8-K expressly notes NVIDIA also supplies CoreWeave's GPUs and is a CoreWeave stockholder \u2014 supplier, customer of last resort and shareholder simultaneously. Exact end date 2032-04-13.",
+  "notes": "THE CLEANEST DOCUMENTED VENDOR BACKSTOP IN THE SECTOR, and it is in an 8-K. Order form dated 2025-09-09 under the CoreWeave-NVIDIA Master Services Agreement of 2023-04-10, initial value $6.3bn. 'In instances where the Company's datacenter capacity is not fully utilized by its own customers, NVIDIA is obligated to purchase the residual unsold capacity through April 13, 2032', subject to delivery and availability requirements. Either party may terminate on 30 days' notice for breach, or on the other's bankruptcy if not dismissed within 90 days. The 8-K expressly notes NVIDIA also supplies CoreWeave's GPUs and is a CoreWeave stockholder \u2014 supplier, customer of last resort and shareholder simultaneously. Exact end date 2032-04-13. [Same announcement as nvidia-coreweave-backstop-6-3b-2025-09, kept once so the amount is not counted twice.]",
   "source_urls": [
    "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000047/crwv-20250909.htm"
   ],
@@ -1115,7 +1115,8 @@
   "term_end": "2032-04",
   "term_years": 6.6,
   "captured_at": "2026-09-02",
-  "is_restatement": false
+  "is_restatement": true,
+  "same_underlying_as": "nvidia-coreweave-backstop-6-3b-2025-09"
  },
  {
   "deal_id": "nvidia-openai-ohio-backstop-2026-08",
@@ -1123,7 +1124,7 @@
   "from_entity": "nvidia",
   "to_entity": "openai",
   "headline": "Nvidia agreed to backstop financing for a giant OpenAI data centre in Ohio, after cutting the size of its commitment under investor pressure.",
-  "notes": "FIGURES CONFLICT ACROSS SOURCES \u2014 RECORD WITH CARE. Semafor and CNBC on 2026-08-17 report Nvidia providing 'up to $105 billion to backstop a new OpenAI data center in Ohio'. Reporting of the Wall Street Journal the same day says Nvidia CUT the guarantee from an original $250bn to less than $120bn after 'investors had pushed back on the scale of Nvidia's financial commitment, worried the company was putting too much of its own balance sheet behind efforts to stimulate demand for its AI chips', and that the restructured deal backstops only the opening phase covering approximately five gigawatts, with funding for the rest decided later. quantity_value uses the $105bn figure; the $250bn original and the '<$120bn' revised figure are both attested and may refer to different scopes. Goldman Sachs is advising SB Energy and Morgan Stanley is advising Nvidia. The stated purpose of the backstop is to let the project borrow more cheaply because creditors have greater assurance the money is there. This is the single largest reported vendor guarantee in the dataset and the clearest instance of a chip maker underwriting its own customer's demand.",
+  "notes": "FIGURES CONFLICT ACROSS SOURCES \u2014 RECORD WITH CARE. Semafor and CNBC on 2026-08-17 report Nvidia providing 'up to $105 billion to backstop a new OpenAI data center in Ohio'. Reporting of the Wall Street Journal the same day says Nvidia CUT the guarantee from an original $250bn to less than $120bn after 'investors had pushed back on the scale of Nvidia's financial commitment, worried the company was putting too much of its own balance sheet behind efforts to stimulate demand for its AI chips', and that the restructured deal backstops only the opening phase covering approximately five gigawatts, with funding for the rest decided later. quantity_value uses the $105bn figure; the $250bn original and the '<$120bn' revised figure are both attested and may refer to different scopes. Goldman Sachs is advising SB Energy and Morgan Stanley is advising Nvidia. The stated purpose of the backstop is to let the project borrow more cheaply because creditors have greater assurance the money is there. This is the single largest reported vendor guarantee in the dataset and the clearest instance of a chip maker underwriting its own customer's demand. [Same announcement as nvidia-openai-ohio-guarantee-2026-08, kept once so the amount is not counted twice.]",
   "source_urls": [
    "https://www.semafor.com/article/08/17/2026/nvidia-to-offer-105-billion-backstop-for-openai-data-center",
    "https://www.cnbc.com/2026/08/17/nvidia-financing-open-ai-data-center-ohio.html",
@@ -1143,7 +1144,8 @@
   "announced_date": "2026-08-17",
   "term_start": "2026-08",
   "captured_at": "2026-09-02",
-  "is_restatement": false
+  "is_restatement": true,
+  "same_underlying_as": "nvidia-openai-ohio-guarantee-2026-08"
  },
  {
   "deal_id": "nvidia-sharonai-backstop-2026-06",

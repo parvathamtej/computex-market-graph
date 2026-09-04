@@ -10,13 +10,26 @@
 <style>
 :root{
   --sp1:4px; --sp2:8px; --sp3:12px; --sp4:16px; --sp5:24px;
-  --r-sm:6px; --r-md:8px; --r-lg:12px; --r-full:999px;
+  --r-xs:4px; --r-sm:6px; --r-md:8px; --r-lg:12px; --r-full:999px;
+  /* TYPE SCALE. There were twenty-one different font sizes in this file, which is what
+     happens when every element gets nudged half a pixel until it "looks right" -- the
+     result has no rhythm and reads as machine-assembled. Seven steps, ~1.15 ratio at the
+     small end where density matters and wider at the top where emphasis does. */
+  --fs-1:10.5px;  /* numerals, source links, badges */
+  --fs-2:11.5px;  /* labels, captions, secondary metadata */
+  --fs-3:12.5px;  /* dense rows and list items */
+  --fs-4:13.5px;  /* body */
+  --fs-5:15.5px;  /* card and section titles */
+  --fs-6:19px;    /* supporting statistic */
+  --fs-7:30px;    /* lead statistic */
   --dur:150ms; --ease:cubic-bezier(0,0,.2,1);
   --panel-w:384px;
   --font:'Inter',-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
   --mono:'IBM Plex Mono',ui-monospace,'SF Mono',Menlo,Consolas,monospace;
   /* dark is the primary theme for a map tool: pins read best on a dark ground */
   --bg:#0B0D10; --s1:#16191F; --s2:#1E2229; --s3:#262B33;
+  --cl-disc:rgba(16,19,25,.88); --cl-disc-h:rgba(28,33,42,.95);
+  --dur-fast:150ms; --dur-med:250ms; --ease-out:cubic-bezier(0,0,.2,1);
   --bd:rgba(255,255,255,.08); --bd2:rgba(255,255,255,.16);
   --t1:#ECEEF2; --t2:#A8B0BF; --t3:#8B93A3;
   --glass:rgba(22,25,31,.88); --glass-bd:rgba(255,255,255,.09);
@@ -29,12 +42,13 @@
   --c-off:#CC5555;   --c-off-t:#F08A8A;
   --c-px:#3390CC;    --c-px-t:#75BDF0;
   --c-ctry:#6B7A8C;
-  --acc:var(--c-con); --acct:var(--c-con-t);
+  --acc:#E3E7ED; --acct:#AFBACA; --acc-ink:#11151B;   /* chrome is achromatic: colour is reserved for data */
   --good:#4CC08A; --warn:#E0A227;
   color-scheme:dark;
 }
 :root[data-theme="light"]{
   --bg:#F3F5F7; --s1:#FFFFFF; --s2:#EEF1F4; --s3:#E3E8ED;
+  --cl-disc:rgba(255,255,255,.95); --cl-disc-h:rgba(255,255,255,1);
   --bd:rgba(10,20,30,.10); --bd2:rgba(10,20,30,.20);
   --t1:#0F151B; --t2:#46525E; --t3:#6E7B88;
   --glass:rgba(255,255,255,.92); --glass-bd:rgba(10,20,30,.10);
@@ -42,11 +56,12 @@
   --c-site:#0F7F71; --c-site-t:#0B6B5F; --c-dem:#9A6E0E; --c-dem-t:#7E5A0B;
   --c-con:#C22B78; --c-con-t:#A0205F; --c-cap:#6A55C9; --c-cap-t:#5442A6;
   --c-off:#C13F3F; --c-off-t:#A03030; --c-px:#2076B0; --c-px-t:#185E8E; --c-ctry:#7A8896;
+  --acc:#2B3440; --acct:#3E4A5A; --acc-ink:#FFFFFF;
   --good:#1E7F55; --warn:#9A6E0E; color-scheme:light;
 }
 *{box-sizing:border-box}
 html,body{height:100%;margin:0}
-body{background:var(--bg);color:var(--t1);font-family:var(--font);font-size:13.5px;line-height:1.45;
+body{background:var(--bg);color:var(--t1);font-family:var(--font);font-size:var(--fs-4);line-height:1.45;
      -webkit-font-smoothing:antialiased;overflow:hidden}
 button,input{font:inherit;color:inherit}
 a{color:var(--acct);text-decoration:none}a:hover{text-decoration:underline}
@@ -59,21 +74,34 @@ a{color:var(--acct);text-decoration:none}a:hover{text-decoration:underline}
 /* ---------- map ---------- */
 #map{position:fixed;inset:0;background:var(--bg);z-index:0}
 .leaflet-container{font:inherit;background:var(--bg)}
-.leaflet-control-attribution{background:var(--glass)!important;color:var(--t3)!important;font-size:10px;
+.leaflet-control-attribution{background:var(--glass)!important;color:var(--t3)!important;font-size:var(--fs-1);
   border-top-left-radius:6px}
 .leaflet-control-attribution a{color:var(--t2)!important}
 .leaflet-tooltip{background:var(--glass);color:var(--t1);border:1px solid var(--glass-bd);border-radius:var(--r-sm);
-  box-shadow:var(--sh);font-family:var(--font);font-size:12px;padding:6px 9px;line-height:1.35;backdrop-filter:blur(10px)}
+  box-shadow:var(--sh);font-family:var(--font);font-size:var(--fs-3);padding:6px 9px;line-height:1.35;backdrop-filter:blur(10px)}
 .leaflet-tooltip::before{display:none}
 .leaflet-tooltip b{font-weight:600}
-.leaflet-tooltip .tt-sub{color:var(--t3);font-size:11px;margin-top:2px}
-.leaflet-tooltip .tt-k{font-family:var(--mono);font-size:11px;color:var(--t2)}
+.leaflet-tooltip .tt-sub{color:var(--t3);font-size:var(--fs-2);margin-top:2px}
+.leaflet-tooltip .tt-k{font-family:var(--mono);font-size:var(--fs-2);color:var(--t2)}
 .leaflet-tooltip.tt-wide{max-width:360px;white-space:normal}
-.tt-h{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--t3);margin:7px 0 2px}
-.tt-row{display:flex;justify-content:space-between;gap:10px;font-size:11.5px;padding:2px 0;border-top:1px solid var(--bd)}
+
+/* ---------- labels ----------
+   Twelve separate rules used to render micro-labels as 9-9.5px IBM Plex Mono, uppercase,
+   with .1-.14em tracking. Three problems with that, all of them visible:
+   (a) uppercase strips the word-shape a reader uses to skim, so "Where this came from"
+       becomes a run of rectangles at the exact size where shape matters most;
+   (b) tracking a monospace face is treating a typewriter as a display face -- Plex Mono's
+       job here is lining up tabular figures, and it can't do that job in prose;
+   (c) applied to every label equally, it makes each one shout, so none of them ranks.
+   The labels are now sentence case in the UI face and rank by weight and colour. Mono is
+   reserved for numbers, which is the only thing it is better at. */
+.lbl,.tt-h,.pp-h,.subh,.pp-kind,.selh .kind,.kv dt,.res .rt,#legend h3,.lgt,table.ct th,.brand span{
+  font-family:var(--font);letter-spacing:0;text-transform:none}
+.tt-h{font-size:var(--fs-2);font-weight:600;color:var(--t2);margin:9px 0 3px}
+.tt-row{display:flex;justify-content:space-between;gap:10px;font-size:var(--fs-2);padding:2px 0;border-top:1px solid var(--bd)}
 .tt-row span:first-child{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .tt-row .tt-k{flex:none}
-.tt-src{display:block;font-family:var(--mono);font-size:10px;color:var(--t3);margin-top:3px}
+.tt-src{display:block;font-family:var(--mono);font-size:var(--fs-1);color:var(--t3);margin-top:3px}
 .ctryhandle{cursor:pointer}.ctryhandle:hover{color:var(--acct)}
 /* in-map popup card */
 .cxpop .leaflet-popup-content-wrapper{background:var(--glass);border:1px solid var(--glass-bd);backdrop-filter:blur(14px);border-radius:var(--r-lg);box-shadow:var(--sh);padding:0}
@@ -81,51 +109,73 @@ a{color:var(--acct);text-decoration:none}a:hover{text-decoration:underline}
 .cxpop .ppwrap{overflow:auto;resize:both;min-width:300px;min-height:180px;max-width:88vw;max-height:82vh;
   width:var(--pp-w,404px);height:var(--pp-h,440px)}
 .cxpop .ppwrap::-webkit-resizer{background:transparent}
-.pp .lnk{background:none;border:0;color:var(--acct);cursor:pointer;font:inherit;font-size:10.5px;padding:2px 0;text-decoration:underline}
+.pp .lnk{background:none;border:0;color:var(--acct);cursor:pointer;font:inherit;font-size:var(--fs-1);padding:2px 0;text-decoration:underline}
 .pp .lnk:hover{color:var(--t1)}
+/* Cluster donut: the number is the COUNT, magnitude rides on the ring weight and disc size.
+   One number in the middle beats two competing for it. */
+.dcl{position:relative;display:flex;align-items:center;justify-content:center;width:100%;height:100%;cursor:zoom-in}
+.dcl svg{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+.dcl .cdisc{fill:var(--cl-disc)}
+body.map-light .dcl .cdisc{fill:rgba(255,255,255,.96)}
+body.map-light .dcl b{color:#141A21}
+body.map-light .ctrychip{background:rgba(255,255,255,.94);border-color:rgba(20,26,33,.18)}
+body.map-light .ctrychip .cn{color:#141A21}
+body.map-light .arclab{background:rgba(255,255,255,.94);color:#141A21}
+.dcl b{position:relative;z-index:1;color:var(--t1);font-weight:700;font-variant-numeric:tabular-nums;line-height:1;letter-spacing:-.02em}
+.dcl:hover .cdisc{fill:var(--cl-disc-h)}
+.cl{position:relative;cursor:zoom-in}
+.cl-list{position:absolute;right:-3px;bottom:-3px;width:19px;height:19px;border-radius:50%;z-index:2;
+  background:var(--s1);border:1px solid var(--bd2);color:var(--t3);font-size:var(--fs-1);line-height:17px;
+  text-align:center;cursor:pointer;box-shadow:var(--sh-sm,0 1px 3px rgba(0,0,0,.35));
+  transition:background var(--dur-fast) var(--ease-out),color var(--dur-fast) var(--ease-out)}
+.cl-list:hover{background:var(--acc);color:#fff;border-color:var(--acc)}
+.cl-n{position:absolute;left:-3px;top:-3px;min-width:17px;height:17px;padding:0 4px;border-radius:9px;
+  background:var(--s1);border:1px solid var(--bd2);color:var(--t3);font-family:var(--mono);font-size:var(--fs-1);
+  line-height:15px;text-align:center;pointer-events:none}
 .cxpop .ppgrip{position:absolute;right:2px;bottom:2px;width:14px;height:14px;pointer-events:none;opacity:.5;
   background:linear-gradient(135deg,transparent 46%,var(--t3) 46%,var(--t3) 56%,transparent 56%,transparent 72%,var(--t3) 72%,var(--t3) 82%,transparent 82%)}
 .cxpop .leaflet-popup-tip{background:var(--glass)}
-.cxpop .leaflet-popup-close-button{color:var(--t3);font-size:18px;padding:6px 8px 0 0}
-.pp{padding:14px 16px 12px;font-family:var(--font);font-size:12.5px;color:var(--t1)}
-.pp-kind{font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--t3);margin-bottom:3px}
-.pp h3{margin:0 0 2px;font-size:15px;font-weight:600;letter-spacing:-.01em;line-height:1.25}
-.pp-sub{color:var(--t3);font-size:11.5px;margin-bottom:8px}
+.cxpop .leaflet-popup-close-button{color:var(--t3);font-size:var(--fs-6);padding:6px 8px 0 0}
+.pp{padding:14px 16px 12px;font-family:var(--font);font-size:var(--fs-3);color:var(--t1)}
+.pp-kind{font-size:var(--fs-2);font-weight:500;color:var(--t3);margin-bottom:2px}
+.pp h3{margin:0 0 2px;font-size:var(--fs-5);font-weight:600;letter-spacing:-.01em;line-height:1.25}
+.pp-sub{color:var(--t3);font-size:var(--fs-2);margin-bottom:8px}
 .pp-tags{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:8px}
-.pp-kpis{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin:8px 0 4px}
-.pp-kpis div{background:var(--s2);border:1px solid var(--bd);border-radius:var(--r-sm);padding:7px 8px}
-.pp-kpis b{display:block;font-size:17px;font-weight:700;letter-spacing:-.02em;line-height:1.05}
-.pp-kpis small{color:var(--t3);font-size:10.5px}
-.pp-h{font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--t3);margin:12px 0 4px}
+.pp-kpis{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0 12px;margin:10px 0 4px}
+.pp-kpis div{padding:7px 10px 6px 0;border-top:1px solid var(--bd2)}
+.pp-kpis b{display:block;font-size:var(--fs-6);font-weight:700;letter-spacing:-.02em;line-height:1.05}
+.pp-kpis small{color:var(--t3);font-size:var(--fs-1)}
+.pp-h{font-size:var(--fs-2);font-weight:600;color:var(--t2);margin:14px 0 4px}
 .prow2{display:flex;gap:10px;align-items:flex-start;padding:6px 0;border-top:1px solid var(--bd)}
 .prow2 .pr-l{flex:1;min-width:0}.prow2 .pr-l b{font-weight:600}
-.prow2 .pr-l small{display:block;color:var(--t3);font-size:11px;line-height:1.35;margin-top:1px}
-.prow2 .pr-v{font-family:var(--mono);font-size:11.5px;color:var(--t2);white-space:nowrap;flex:none}
-.pr-src{font-size:10.5px;margin-top:2px}
+.prow2 .pr-l small{display:block;color:var(--t3);font-size:var(--fs-2);line-height:1.35;margin-top:1px}
+.prow2 .pr-v{font-family:var(--mono);font-size:var(--fs-2);color:var(--t2);white-space:nowrap;flex:none}
+.pr-src{font-size:var(--fs-1);margin-top:2px}
 .pr-what{color:var(--t2)}
 .tag.dem{color:var(--c-dem-t);border-color:var(--c-dem)}
-.pp-none{color:var(--t3);font-size:11.5px;padding:4px 0}
-.pp-src{margin-top:10px;font-size:11px;color:var(--t3)}
-.pr-btns{display:flex;gap:6px;margin-top:12px}.pr-btns .btn{padding:7px 10px;font-size:12px}
-a.src{font-family:var(--mono);font-size:10.5px;color:var(--acct)}
-.when{font-family:var(--mono);font-size:10px;color:var(--t3)}
-.mini .mn small a.src{font-size:10px}
+.pp-none{color:var(--t3);font-size:var(--fs-2);padding:4px 0}
+.pp-src{margin-top:10px;font-size:var(--fs-2);color:var(--t3)}
+.pr-btns{display:flex;gap:6px;margin-top:12px}.pr-btns .btn{padding:7px 10px;font-size:var(--fs-3)}
+a.src{font-family:var(--mono);font-size:var(--fs-1);color:var(--acct)}
+.when{font-family:var(--mono);font-size:var(--fs-1);color:var(--t3)}
+.mini .mn small a.src{font-size:var(--fs-1)}
 .cl{display:flex;align-items:center;justify-content:center;border-radius:50%;color:#fff;font-weight:600;
-    font-size:11px;text-align:center;line-height:1.1;border:2px solid rgba(255,255,255,.7);
+    font-size:var(--fs-2);text-align:center;line-height:1.1;border:2px solid rgba(255,255,255,.7);
     box-shadow:0 2px 10px rgba(0,0,0,.4);font-family:var(--font)}
 .pxlabel{background:var(--glass);border:1px solid var(--c-px);color:var(--t1);border-radius:var(--r-sm);
-  padding:3px 7px;font-family:var(--mono);font-size:11px;white-space:nowrap;box-shadow:var(--sh)}
+  padding:3px 7px;font-family:var(--mono);font-size:var(--fs-2);white-space:nowrap;box-shadow:var(--sh)}
 .pxlabel b{color:var(--c-px-t);font-weight:600}
-.ctrylabel{background:none;border:0;box-shadow:none;color:var(--t1);font-weight:600;font-size:11.5px;text-shadow:0 1px 3px rgba(0,0,0,.8)}
-.ctrylabel small{display:block;font-weight:400;color:var(--t2);font-family:var(--mono);font-size:10px}
+.ctrylabel{background:none;border:0;box-shadow:none;color:var(--t1);font-weight:600;font-size:var(--fs-2);text-shadow:0 1px 3px rgba(0,0,0,.8)}
+.ctrylabel small{display:block;font-weight:400;color:var(--t2);font-family:var(--mono);font-size:var(--fs-1)}
 /* one country chip: the name never carries colour, the number always does */
-.ctrychip{display:inline-flex;align-items:baseline;gap:6px;transform:translate(-50%,-50%);white-space:nowrap;
+.leaflet-marker-icon:has(>.ctrychip){pointer-events:none}
+.ctrychip{pointer-events:auto;position:relative;display:inline-flex;align-items:baseline;gap:6px;transform:translate(-50%,-50%);white-space:nowrap;
   background:var(--glass);border:1px solid var(--bd);border-radius:var(--r-full);padding:3px 9px;
-  backdrop-filter:blur(8px);box-shadow:0 1px 6px rgba(0,0,0,.3);cursor:pointer;font-size:11.5px}
+  backdrop-filter:blur(8px);box-shadow:0 1px 6px rgba(0,0,0,.3);cursor:pointer;font-size:var(--fs-2)}
 .ctrychip:hover{border-color:var(--acc)}
 .ctrychip .cn{font-weight:600;color:var(--t1)}
-.ctrychip .cv{font-family:var(--mono);font-size:10.5px;font-weight:600}
-.ctrychip .cv em{font-style:normal;font-weight:400;opacity:.7;margin-left:2px;font-size:9px}
+.ctrychip .cv{font-family:var(--mono);font-size:var(--fs-1);font-weight:600}
+.ctrychip .cv em{font-style:normal;font-weight:400;opacity:.7;margin-left:2px;font-size:.86em}
 .ctrychip .cvsep{color:var(--t3);opacity:.5;margin:0 1px}
 .ctrychip .cv.none{color:var(--t3);font-weight:400}
 
@@ -136,7 +186,7 @@ a.src{font-family:var(--mono);font-size:10.5px;color:var(--acct)}
   display:flex;flex-direction:column;gap:8px}
 #search{position:relative}
 #search input{width:100%;padding:11px 40px 11px 40px;border-radius:var(--r-lg);background:var(--glass);
-  border:1px solid var(--glass-bd);font-size:14px;color:var(--t1);box-shadow:var(--sh);backdrop-filter:blur(14px)}
+  border:1px solid var(--glass-bd);font-size:var(--fs-4);color:var(--t1);box-shadow:var(--sh);backdrop-filter:blur(14px)}
 #search input::placeholder{color:var(--t3)}
 #search .mag{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--t3);pointer-events:none}
 #search .clr{position:absolute;right:8px;top:50%;transform:translateY(-50%);background:none;border:0;cursor:pointer;
@@ -148,16 +198,16 @@ a.src{font-family:var(--mono);font-size:10.5px;color:var(--acct)}
 .res:last-child{border-bottom:0}
 .res:hover,.res[aria-selected="true"]{background:var(--s2)}
 .res .rn{font-weight:500;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.res .rt{font-family:var(--mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--t3);flex:none}
+.res .rt{font-size:var(--fs-2);color:var(--t3);text-transform:capitalize;flex:none}
 .sw{width:10px;height:10px;border-radius:50%;flex:none;display:inline-block}
 #chips{display:flex;flex-wrap:wrap;gap:6px}
 .chipb{display:inline-flex;align-items:center;gap:7px;padding:6px 11px;border-radius:var(--r-full);
-  cursor:pointer;font-size:12.5px;font-weight:500;color:var(--t2);transition:all var(--dur) var(--ease)}
+  cursor:pointer;font-size:var(--fs-3);font-weight:500;color:var(--t2);transition:all var(--dur) var(--ease)}
 .chipb[aria-pressed="true"]{color:var(--t1);border-color:var(--bd2)}
 .chipb[aria-pressed="false"] .sw{opacity:.3}
 .chipb[aria-pressed="false"]{opacity:.7}
 .chipb:hover{color:var(--t1)}
-.chipb .n{font-family:var(--mono);font-size:10.5px;color:var(--t3)}
+.chipb .n{font-family:var(--mono);font-size:var(--fs-1);color:var(--t3)}
 
 /* ---------- right panel ---------- */
 #panel{position:fixed;top:0;right:0;bottom:0;width:var(--panel-w);z-index:1100;display:flex;flex-direction:column;
@@ -169,8 +219,8 @@ a.src{font-family:var(--mono);font-size:10.5px;color:var(--acct)}
 #panel.closed ~ #panel-tab{display:flex}
 .phead{display:flex;align-items:center;gap:10px;padding:14px 16px;border-bottom:1px solid var(--bd)}
 .brand{display:flex;align-items:baseline;gap:8px;flex:1;min-width:0}
-.brand b{font-size:16px;font-weight:700;letter-spacing:-.02em}
-.brand span{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--t3)}
+.brand b{font-size:var(--fs-5);font-weight:700;letter-spacing:-.02em}
+.brand span{font-size:var(--fs-2);color:var(--t3);font-weight:400}
 .ib{width:32px;height:32px;border-radius:var(--r-md);border:1px solid var(--bd);background:var(--s2);cursor:pointer;
     color:var(--t2);display:inline-flex;align-items:center;justify-content:center;flex:none}
 .ib:hover{background:var(--s3);color:var(--t1)}
@@ -181,133 +231,160 @@ a.src{font-family:var(--mono);font-size:10.5px;color:var(--acct)}
 #sel{margin:12px 12px 4px;border-radius:var(--r-lg);background:var(--s2);border:1px solid var(--bd2);overflow:hidden}
 #sel[hidden]{display:none}
 .selh{display:flex;align-items:flex-start;gap:10px;padding:14px 14px 10px}
-.selh .kind{font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px;font-weight:500}
-.selh h2{margin:0;font-size:16px;font-weight:600;letter-spacing:-.01em;line-height:1.25}
-.selh .sub{color:var(--t3);font-size:12px;margin-top:3px}
+.selh .kind{font-size:var(--fs-2);margin-bottom:5px;font-weight:500}
+.selh h2{margin:0;font-size:var(--fs-5);font-weight:600;letter-spacing:-.01em;line-height:1.25}
+.selh .sub{color:var(--t3);font-size:var(--fs-3);margin-top:3px}
 .selh .x{margin-left:auto}
 .selb{padding:0 14px 14px}
-.kv{display:grid;grid-template-columns:104px 1fr;gap:6px 12px;font-size:12.5px;margin:8px 0 12px}
-.kv dt{color:var(--t3);font-family:var(--mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding-top:2px}
+.kv{display:grid;grid-template-columns:104px 1fr;gap:6px 12px;font-size:var(--fs-3);margin:8px 0 12px}
+.kv dt{color:var(--t3);font-size:var(--fs-3);padding-top:1px}
 .kv dd{margin:0;color:var(--t1)}
-.tag{display:inline-flex;align-items:center;gap:4px;font-family:var(--mono);font-size:9.5px;letter-spacing:.05em;
-     text-transform:uppercase;padding:2px 6px;border-radius:3px;border:1px solid var(--bd2);color:var(--t2);white-space:nowrap}
+.tag{display:inline-flex;align-items:center;gap:4px;font-size:var(--fs-2);font-weight:500;
+     padding:1px 7px;border-radius:var(--r-full);border:1px solid var(--bd2);color:var(--t2);white-space:nowrap}
 .tag.site{color:var(--c-site-t);border-color:var(--c-site)} .tag.dem{color:var(--c-dem-t);border-color:var(--c-dem)}
 .tag.con{color:var(--c-con-t);border-color:var(--c-con)}   .tag.cap{color:var(--c-cap-t);border-color:var(--c-cap)}
 .tag.off{color:var(--c-off-t);border-color:var(--c-off)}   .tag.good{color:var(--good);border-color:var(--good)}
-.cf{font-family:var(--mono);font-size:9.5px;padding:2px 6px;border-radius:3px;white-space:nowrap}
-.cf1{background:rgba(76,192,138,.15);color:var(--good);border:1px solid var(--good)}
-.cf2{background:var(--s3);color:var(--t1);border:1px solid var(--bd2)}
-.cf3{color:var(--t2);border:1px solid var(--bd2)}
-.cf4{color:var(--t3);border:1px dashed var(--bd2)}
-.cf5{color:var(--t3);border:1px dotted var(--bd2);font-style:italic}
-.approx{background:rgba(224,162,39,.12);border-left:3px solid var(--warn);padding:8px 10px;font-size:12px;
+.cf{font-size:var(--fs-2);font-weight:500;padding:1px 7px;border-radius:var(--r-full);white-space:nowrap;
+  border:1px solid var(--bd2);color:var(--t2)}
+.cf1{background:rgba(76,192,138,.14);color:var(--good);border-color:var(--good)}
+.cf2{background:var(--s3);color:var(--t1)}
+.cf3{color:var(--t2)}
+.cf4{color:var(--t3);opacity:.85}
+.cf5{color:var(--t3);opacity:.7}
+.approx{background:rgba(224,162,39,.12);border-left:3px solid var(--warn);padding:8px 10px;font-size:var(--fs-3);
         color:var(--t2);border-radius:0 var(--r-sm) var(--r-sm) 0;margin:8px 0}
-.mini{display:flex;gap:8px;align-items:baseline;padding:7px 0;border-top:1px solid var(--bd);font-size:12.5px}
+.mini{display:flex;gap:8px;align-items:baseline;padding:7px 0;border-top:1px solid var(--bd);font-size:var(--fs-3)}
 .mini:first-of-type{border-top:0}
 .mini .mn{flex:1;min-width:0;color:var(--t1)}
-.mini .mn small{display:block;color:var(--t3);font-size:11.5px;line-height:1.35;margin-top:1px}
-.mini .mv{font-family:var(--mono);font-size:11.5px;color:var(--t2);white-space:nowrap}
+.mini .mn small{display:block;color:var(--t3);font-size:var(--fs-2);line-height:1.35;margin-top:1px}
+.mini .mv{font-family:var(--mono);font-size:var(--fs-2);color:var(--t2);white-space:nowrap}
 .mini.click{cursor:pointer}.mini.click:hover .mn{color:var(--acct)}
-.subh{font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--t3);
-      margin:14px 0 6px;font-weight:500}
+.subh{font-size:var(--fs-2);color:var(--t2);font-weight:600;
+      margin:18px 0 7px;padding-top:11px;border-top:1px solid var(--bd)}
+.subh:first-child{margin-top:2px;padding-top:0;border-top:0}
 .btnrow{display:flex;gap:8px;margin-top:12px}
 .btn{flex:1;padding:8px 10px;border-radius:var(--r-md);border:1px solid var(--bd2);background:var(--s3);cursor:pointer;
-     font-size:12.5px;font-weight:500;color:var(--t1);text-align:center}
+     font-size:var(--fs-3);font-weight:500;color:var(--t1);text-align:center}
 .btn:hover{border-color:var(--acct)}
 .btn.primary{background:var(--acc);border-color:var(--acc);color:#fff}
 .srcs{margin:0;padding:0;list-style:none}
-.srcs li{font-size:11.5px;padding:4px 0;word-break:break-all;line-height:1.35}
+.srcs li{font-size:var(--fs-2);padding:4px 0;word-break:break-all;line-height:1.35}
 .dash{color:var(--t3)}
 
 /* sections */
 details.sec{border-top:1px solid var(--bd)}
 details.sec summary{list-style:none;display:flex;align-items:center;gap:10px;padding:13px 16px;cursor:pointer;user-select:none}
 details.sec summary::-webkit-details-marker{display:none}
-details.sec summary h2{margin:0;font-size:13px;font-weight:600;letter-spacing:.01em;flex:1}
-details.sec summary .ssum{font-family:var(--mono);font-size:10.5px;color:var(--t3)}
+details.sec summary h2{margin:0;font-size:var(--fs-4);font-weight:600;letter-spacing:.01em;flex:1}
+details.sec summary .ssum{font-family:var(--mono);font-size:var(--fs-1);color:var(--t3)}
 details.sec summary .chev{transition:transform var(--dur)}
 details.sec[open] summary .chev{transform:rotate(180deg)}
 .secb{padding:2px 16px 16px}
 .kpis{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
 .kpi{background:var(--s2);border:1px solid var(--bd);border-radius:var(--r-md);padding:10px 11px}
-.kpi .v{font-size:20px;font-weight:700;letter-spacing:-.025em;line-height:1.05;font-variant-numeric:tabular-nums}
-.kpi .l{font-size:11px;color:var(--t3);margin-top:4px;line-height:1.3}
-.kpi .s{font-size:10px;color:var(--t3);margin-top:3px;line-height:1.3;opacity:.8}
+.kpi .v{font-size:var(--fs-6);font-weight:700;letter-spacing:-.025em;line-height:1.05;font-variant-numeric:tabular-nums}
+.kpi .l{font-size:var(--fs-2);color:var(--t3);margin-top:4px;line-height:1.3}
+/* Six identical tiles is a grid, not a hierarchy -- nothing is emphasised so nothing reads as
+   the headline. The two numbers this business turns on get the weight; the rest are context
+   and lose their boxes entirely, which also gives the row somewhere to breathe. */
+.kpis.lead{grid-template-columns:1fr 1fr;gap:8px}
+.kpis.lead .kpi{padding:13px 14px;background:var(--s2)}
+.kpis.lead .kpi .v{font-size:var(--fs-7);letter-spacing:-.035em}
+.kpis.lead .kpi .l{font-size:var(--fs-3);color:var(--t2);margin-top:5px}
+.kpis.rest{grid-template-columns:1fr 1fr;gap:0 16px;margin-top:2px}
+.kpis.rest .kpi{background:none;border:0;border-top:1px solid var(--bd);border-radius:0;padding:9px 0 8px}
+.kpis.rest .kpi .v{font-size:var(--fs-5);font-weight:650}
+.kpis.rest .kpi .l{font-size:var(--fs-2);margin-top:2px}
+.kpis.rest .kpi .s{display:none}
+.kpi .s{font-size:var(--fs-1);color:var(--t3);margin-top:3px;line-height:1.3;opacity:.8}
 .kpi.dim .v{color:var(--t3)}
-.mstrip{display:flex;flex-wrap:wrap;gap:4px 14px;margin:9px 0 0;font-size:11px;color:var(--t3);font-family:var(--mono)}
-.mstrip b{color:var(--t2);font-weight:600}
+.mstrip{display:flex;flex-wrap:wrap;gap:3px 14px;margin:11px 0 0;font-size:var(--fs-2);color:var(--t3);line-height:1.5}
+.mstrip b{color:var(--t2);font-weight:600;font-family:var(--mono);font-variant-numeric:tabular-nums}
 .scope{display:inline-flex;background:var(--s2);border:1px solid var(--bd);border-radius:var(--r-full);padding:2px;gap:2px}
-.scope button{background:none;border:0;border-radius:var(--r-full);padding:3px 10px;cursor:pointer;font-size:10.5px;
+.scope button{background:none;border:0;border-radius:var(--r-full);padding:3px 10px;cursor:pointer;font-size:var(--fs-1);
   font-family:var(--mono);color:var(--t3);font-weight:500}
 .scope button[aria-pressed="true"]{background:var(--s3);color:var(--t1)}
-.lgrule{display:flex;gap:10px;align-items:center;font-size:10.5px;color:var(--t3);margin:2px 0 8px;flex-wrap:wrap}
-.lgrule span{display:inline-flex;align-items:center;gap:4px}
-.lgrule i{width:8px;height:8px;border-radius:2px;display:block}
 .lgscale{display:flex;align-items:center;gap:8px;margin:8px 0 0;padding-top:8px;border-top:1px solid var(--bd)}
-.lgscale label{font-size:11px;color:var(--t3);flex:none}
+.lgscale label{font-size:var(--fs-2);color:var(--t3);flex:none}
 .lgscale input{flex:1;min-width:0;accent-color:var(--acc)}
-.lgscale .v{font-family:var(--mono);font-size:10px;color:var(--t3);flex:none;min-width:32px;text-align:right}
+.lgscale .v{font-family:var(--mono);font-size:var(--fs-1);color:var(--t3);flex:none;min-width:32px;text-align:right}
 .kpi.live .v{color:var(--good)} .kpi.build .v{color:var(--c-site-t)} .kpi.dem .v{color:var(--c-dem-t)}
 .lrow{display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid var(--bd)}
 .lrow:last-child{border-bottom:0}
 .lrow .sw{width:12px;height:12px}
-.lrow .lname{flex:1;font-weight:500;font-size:13px}
-.lrow .ln{font-family:var(--mono);font-size:10.5px;color:var(--t3)}
+.lrow .lname{flex:1;font-weight:500;font-size:var(--fs-4)}
+.lrow .ln{font-family:var(--mono);font-size:var(--fs-1);color:var(--t3)}
 .lrow.off .lname{color:var(--t3)}.lrow.off .sw{opacity:.3}
 .eye{width:28px;height:28px;border-radius:var(--r-sm);border:0;background:none;cursor:pointer;color:var(--t2);
      display:inline-flex;align-items:center;justify-content:center}
 .eye:hover{background:var(--s3);color:var(--t1)}
+/* Motion. Everything used to snap between states with no transition at all, which is what
+   made the whole thing feel machine-assembled rather than built. 150ms is below the
+   threshold where a control feels laggy and above the one where it feels like a glitch. */
+@media (prefers-reduced-motion:no-preference){
+  .eye,.chipb,.seg button,.frow select,.lrow,.gap,.res,.prow2,.loop,.tabbar button,
+  .btn,.lnk,.ctrychip,.cl-list,.kpi,.sec>summary{
+    transition:background var(--dur-fast) var(--ease-out),
+               border-color var(--dur-fast) var(--ease-out),
+               color var(--dur-fast) var(--ease-out),
+               opacity var(--dur-fast) var(--ease-out),
+               transform var(--dur-fast) var(--ease-out)}
+  .chipb:active,.btn:active,.tabbar button:active{transform:translateY(1px)}
+  .ctrychip:hover{transform:translate(-50%,-50%) scale(1.04)}
+  #panel{transition:transform var(--dur-med) var(--ease-out)}
+}
 .eye[aria-pressed="false"]{color:var(--t3)}
 .seg{display:flex;background:var(--s2);border:1px solid var(--bd);border-radius:var(--r-md);padding:2px;gap:2px;margin:6px 0 4px 22px}
-.seg button{flex:1;background:none;border:0;border-radius:6px;padding:5px 6px;cursor:pointer;font-size:11.5px;
+.seg button{flex:1;background:none;border:0;border-radius:6px;padding:5px 6px;cursor:pointer;font-size:var(--fs-2);
             color:var(--t3);font-weight:500;white-space:nowrap}
 .seg button[aria-pressed="true"]{background:var(--s3);color:var(--t1)}
 .fgrp{margin:0 0 9px 5px;padding:2px 0 2px 16px;border-left:2px solid var(--bd2)}
 .lrow.hasf{border-bottom:0;padding-bottom:2px}
 .frow{display:flex;align-items:center;gap:8px;margin:6px 0 0}
-.frow>span.fl{font-size:11.5px;color:var(--t3);flex:none;min-width:58px}
+.frow>span.fl{font-size:var(--fs-2);color:var(--t3);flex:none;min-width:58px}
 .frow select{flex:1;min-width:0;background:var(--s2);border:1px solid var(--bd);border-radius:var(--r-md);
-  color:var(--t1);font-family:inherit;font-size:11.5px;font-weight:500;padding:5px 24px 5px 8px;cursor:pointer;
+  color:var(--t1);font-family:inherit;font-size:var(--fs-2);font-weight:500;padding:5px 24px 5px 8px;cursor:pointer;
   -webkit-appearance:none;appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--t3) 50%),linear-gradient(135deg,var(--t3) 50%,transparent 50%);
   background-position:calc(100% - 13px) 12px,calc(100% - 9px) 12px;background-size:4px 4px;background-repeat:no-repeat}
 .frow select:hover{border-color:var(--bd2)}
 .frow select:focus-visible{outline:2px solid var(--acc);outline-offset:1px}
-.frow .fn{font-family:var(--mono);font-size:10.5px;color:var(--t3);flex:none;min-width:30px;text-align:right}
+.frow .fn{font-family:var(--mono);font-size:var(--fs-1);color:var(--t3);flex:none;min-width:30px;text-align:right}
 .arclab{display:inline-block;transform:translate(-50%,-50%);background:var(--glass);border:1px solid var(--c-con);border-radius:var(--r-sm);padding:2px 6px;
-  font-size:10px;line-height:1.35;color:var(--t1);white-space:nowrap;backdrop-filter:blur(8px);pointer-events:none;
+  font-size:var(--fs-1);line-height:1.35;color:var(--t1);white-space:nowrap;backdrop-filter:blur(8px);pointer-events:none;
   box-shadow:0 1px 5px rgba(0,0,0,.28)}
 .arclab b{color:var(--c-con-t);font-weight:600}
-.arclab i{display:block;font-style:normal;font-family:var(--mono);font-size:9px;color:var(--t3)}
-.hint{font-size:11.5px;color:var(--t3);line-height:1.45;margin:6px 0 0}
+.arclab i{display:block;font-style:normal;font-family:var(--mono);font-size:.88em;color:var(--t3)}
+.hint{font-size:var(--fs-2);color:var(--t3);line-height:1.45;margin:6px 0 0}
 .gap{display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid var(--bd);cursor:pointer}
 .gap:last-child{border-bottom:0}
 .gap:hover .gn{color:var(--acct)}
-.gap .gn{flex:1;min-width:0;font-weight:500;font-size:13px}
-.gap .gn small{display:block;color:var(--t3);font-weight:400;font-size:11.5px}
-.gap .gv{font-family:var(--mono);font-size:12px;color:var(--c-dem-t);font-weight:500;white-space:nowrap}
-.gap .noloc{font-family:var(--mono);font-size:9.5px;color:var(--t3);border:1px dashed var(--bd2);padding:1px 5px;border-radius:3px}
-.loop{padding:9px 0;border-bottom:1px solid var(--bd);cursor:pointer;font-size:12.5px;line-height:1.5}
+.gap .gn{flex:1;min-width:0;font-weight:500;font-size:var(--fs-4)}
+.gap .gn small{display:block;color:var(--t3);font-weight:400;font-size:var(--fs-2)}
+.gap .gv{font-family:var(--mono);font-size:var(--fs-3);color:var(--c-dem-t);font-weight:500;white-space:nowrap}
+.gap .noloc{font-family:var(--mono);font-size:var(--fs-1);color:var(--t3);border:1px dashed var(--bd2);padding:1px 5px;border-radius:3px}
+.loop{padding:9px 0;border-bottom:1px solid var(--bd);cursor:pointer;font-size:var(--fs-3);line-height:1.5}
 .loop:last-child{border-bottom:0}
 .loop:hover{color:var(--acct)}
 .loop b{font-weight:600}
 .loop .arr{color:var(--c-cap-t)}
-.prow{display:grid;grid-template-columns:82px 1fr 92px;gap:8px;align-items:center;padding:5px 0;border-bottom:1px solid var(--bd)}
+.prow{display:grid;grid-template-columns:88px 1fr 100px;gap:8px;align-items:center;padding:6px 0;border-bottom:1px solid var(--bd)}
 .prow:last-child{border-bottom:0}
-.prow .pg{font-size:12px;font-weight:600}.prow .pg small{display:block;font-weight:400;color:var(--t3);font-family:var(--mono);font-size:9.5px}
+.prow .pg{font-size:var(--fs-3);font-weight:600}.prow .pg small{display:block;font-weight:400;color:var(--t3);font-family:var(--mono);font-size:.85em}
 .track{position:relative;height:14px}
 .rng{position:absolute;height:6px;top:4px;background:var(--c-px);opacity:.45;border-radius:3px}
 .med{position:absolute;width:8px;height:8px;border-radius:50%;background:var(--c-px-t);top:3px;border:1.5px solid var(--s1)}
-.prow .pv{text-align:right;font-family:var(--mono);font-size:10.5px;color:var(--t2);white-space:nowrap}
-.prow .pv small{display:block;color:var(--t3);font-size:9.5px;margin-top:2px}
-table.ct{width:100%;border-collapse:collapse;font-size:12px}
-table.ct th{text-align:left;font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;
-  color:var(--t3);font-weight:500;padding:6px 4px;border-bottom:1px solid var(--bd2)}
+.prow .pv{text-align:right;font-family:var(--mono);font-size:var(--fs-1);color:var(--t2);white-space:nowrap}
+.prow .pv small{display:block;color:var(--t3);font-size:.88em;margin-top:2px}
+table.ct{width:100%;border-collapse:collapse;font-size:var(--fs-3)}
+table.ct th{text-align:left;font-size:var(--fs-2);
+  color:var(--t3);font-weight:500;padding:5px 4px 6px;border-bottom:1px solid var(--bd2)}
 table.ct td{padding:6px 4px;border-bottom:1px solid var(--bd);color:var(--t2)}
-table.ct td.r{text-align:right;font-variant-numeric:tabular-nums;font-family:var(--mono);font-size:11.5px}
+table.ct td.r{text-align:right;font-variant-numeric:tabular-nums;font-family:var(--mono);font-size:var(--fs-2)}
 table.ct td.n{color:var(--t1);font-weight:500}
 .bar{height:6px;background:var(--s3);border-radius:3px;overflow:hidden;display:flex}
 .bar i{display:block;height:100%}
-.pfoot{padding:12px 16px;border-top:1px solid var(--bd);font-family:var(--mono);font-size:10px;color:var(--t3);line-height:1.6}
+.pfoot{padding:12px 16px;border-top:1px solid var(--bd);font-size:var(--fs-2);color:var(--t3);line-height:1.6}
+.pfoot b{font-family:var(--mono);font-weight:500;color:var(--t2)}
 
 /* ---------- floating tools ---------- */
 #tools{position:fixed;right:calc(var(--panel-w) + 14px);top:50%;transform:translateY(-50%);z-index:1050;
@@ -318,26 +395,33 @@ body.panel-closed #tools{right:14px}
 #tools .ib[aria-pressed="true"]{background:var(--acc);border-color:var(--acc);color:#fff}
 #legend{position:fixed;left:14px;bottom:44px;z-index:1050;border-radius:var(--r-lg);padding:12px 14px;
   max-height:min(62vh,520px);overflow:auto;max-width:300px;
-        width:250px;font-size:12px;color:var(--t2)}
-#legend h3{margin:0 0 8px;font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--t3);font-weight:500;display:flex;align-items:center}
-#legend h3 button{margin-left:auto;background:none;border:0;color:var(--t3);cursor:pointer;font-size:12px}
+        width:250px;font-size:var(--fs-3);color:var(--t2)}
+#legend h3{margin:0 0 9px;font-size:var(--fs-2);color:var(--t2);font-weight:600;display:flex;align-items:center}
+#legend h3 button{margin-left:auto;background:none;border:0;color:var(--t3);cursor:pointer;font-size:var(--fs-3)}
 .lg{display:flex;align-items:center;gap:8px;padding:3px 0}
 .lg .dot{width:12px;height:12px;border-radius:50%;flex:none;border:2px solid transparent}
 .lg .line{width:20px;height:0;border-top:2px solid;flex:none}
 .lgs{margin:0 0 8px}.lgs:last-child{margin-bottom:0}
-.lgt{display:flex;align-items:center;gap:6px;font-family:var(--mono);font-size:9px;letter-spacing:.07em;
-  text-transform:uppercase;color:var(--t2);margin:0 0 3px;white-space:nowrap}
+.lgt{display:flex;align-items:center;gap:6px;font-size:var(--fs-2);font-weight:600;
+  color:var(--t2);margin:0 0 4px;white-space:nowrap}
 .lgt .sw{width:9px;height:9px;border-radius:2px;flex:none}
-.lgt .n{margin-left:auto;color:var(--t3);letter-spacing:0}
-.lg{font-size:11.5px;color:var(--t2);line-height:1.35;align-items:flex-start}
+.lgx{display:none}
+#legend.detail .lgx{display:block;padding-bottom:2px}
+#legend .lgs{margin:0}
+#legend.detail .lgs{margin:0 0 10px}
+.lgmore{display:block;width:100%;margin:9px 0 0;padding:6px 0 0;background:none;border:0;border-top:1px solid var(--bd);
+  color:var(--t3);font:inherit;font-size:var(--fs-2);text-align:left;cursor:pointer}
+.lgmore:hover{color:var(--t1)}
+.lgt .n{margin-left:auto;color:var(--t3);font-family:var(--mono);font-weight:400;font-size:var(--fs-1)}
+.lg{font-size:var(--fs-2);color:var(--t2);line-height:1.35;align-items:flex-start}
 .lg .dot,.lg .line{margin-top:3px}
 .lg .edot{margin-top:5px}
 .lg .edot{width:6px;height:6px;border-radius:50%;flex:none;margin-left:-6px}
 .sizekey{display:flex;align-items:flex-end;gap:6px;margin:8px 0 2px}
 .sizekey i{display:block;border-radius:50%;background:var(--c-site);opacity:.55;border:1.5px solid var(--c-site-t)}
-#legend-show{position:fixed;left:14px;bottom:44px;z-index:1050;display:none;padding:7px 12px;border-radius:var(--r-full);cursor:pointer;font-size:12px;color:var(--t2)}
+#legend-show{position:fixed;left:14px;bottom:44px;z-index:1050;display:none;padding:7px 12px;border-radius:var(--r-full);cursor:pointer;font-size:var(--fs-3);color:var(--t2)}
 #pill{position:fixed;left:50%;bottom:12px;transform:translateX(calc(-50% - var(--panel-w)/2));z-index:1050;
-      padding:9px 16px;border-radius:var(--r-full);font-size:12.5px;color:var(--t2);white-space:nowrap;
+      padding:9px 16px;border-radius:var(--r-full);font-size:var(--fs-3);color:var(--t2);white-space:nowrap;
       transition:transform var(--dur) var(--ease)}
 body.panel-closed #pill{transform:translateX(-50%)}
 #pill b{color:var(--t1);font-weight:600;font-variant-numeric:tabular-nums}
@@ -345,11 +429,11 @@ body.panel-closed #pill{transform:translateX(-50%)}
 
 /* ---------- presentation mode ---------- */
 body.present #topleft,body.present #panel,body.present #tools{display:none}
-body.present #pill{transform:translateX(-50%);font-size:15px;padding:12px 22px}
+body.present #pill{transform:translateX(-50%);font-size:var(--fs-5);padding:12px 22px}
 body.present #legend{transform:scale(1.25);transform-origin:bottom left}
 body.present #present-exit{display:flex}
 #present-exit{position:fixed;top:14px;right:14px;z-index:1200;display:none;padding:8px 14px;border-radius:var(--r-full);
-  cursor:pointer;font-size:12.5px;color:var(--t1)}
+  cursor:pointer;font-size:var(--fs-3);color:var(--t1)}
 
 @media (max-width:820px){
   :root{--panel-w:min(384px,92vw)}
@@ -613,7 +697,7 @@ function writeHash(){
 }
 
 /* ============ map ============ */
-const map = L.map("map", {zoomControl:false, preferCanvas:true, worldCopyJump:true, minZoom:2, maxZoom:15});
+const map = L.map("map", {zoomControl:false, worldCopyJump:true, minZoom:2, maxZoom:15});
 const ESRI = "https://server.arcgisonline.com/ArcGIS/rest/services/";
 const tl = (p, o) => L.tileLayer(ESRI + p + "/MapServer/tile/{z}/{y}/{x}", Object.assign({maxZoom:16, attribution:"Esri, HERE, Garmin, © OpenStreetMap contributors"}, o||{}));
 const BASES = {
@@ -633,14 +717,17 @@ function setBase(b){
   if (baseOn) baseOn.forEach(l => map.removeLayer(l));
   S.base = BASES[b] ? b : "dark";
   baseOn = BASES[S.base]; baseOn.forEach(l => l.addTo(map));
-  syncBaseLabels();
+  syncBaseLabels(); syncMapInk();
+  if (typeof G !== "undefined" && G.sites) rebuildAll();   // marks re-ink for the new tiles
   writeHash();
 }
 map.createPane("arcs");    map.getPane("arcs").style.zIndex = 420;
 map.createPane("country"); map.getPane("country").style.zIndex = 380;
 map.createPane("demand");  map.getPane("demand").style.zIndex = 450;
 map.createPane("hi");      map.getPane("hi").style.zIndex = 470;
-const canvas = L.canvas({padding:.5});
+const arcSvg = L.svg({pane:"arcs", padding:.5});       // arcs, in their own pane so z-order holds
+const demSvg = L.svg({pane:"demand", padding:.5});     // demand / resale / prices
+const ctrySvg = L.svg({pane:"country", padding:.5});   // country rings
 
 /* curved line between two points: a shallow arc so overlapping routes stay readable */
 function arcPts(a, b, bend){
@@ -672,63 +759,133 @@ const popRow = (title, sub, val, r) => `<div class="prow2"><div class="pr-l"><b>
 const popFoot = (selId, r) => `<div class="pr-btns"><button class="btn primary" data-sel="${esc(selId)}">Full details</button>${(r&&(r.source_urls||[])[0])?`<a class="btn" href="${esc(r.source_urls[0])}" target="_blank" rel="noopener">Source ↗</a>`:""}</div>`;
 const G = {};   // layer groups by id
 const MK = {sites:{}, demand:{}, contracts:{}, capital:{}, offload:{}};   // id -> marker
-const STATUS_FILL = {live:.78, under_construction:.42, phased:.42, permitted:.22, announced:.16, cancelled:.05};
+const STATUS_FILL = {live:.88, under_construction:.62, phased:.62, permitted:.42, announced:.34, cancelled:.18};
+const lightMap = () => S.base === "light" || S.base === "sat";
+const inkOn = () => lightMap() ? "#1B222B" : "#FFFFFF";      // the hairline that guarantees an edge
+function syncMapInk(){ document.body.classList.toggle("map-light", lightMap()); }
 const statusBucket = s => s === "live" ? "live" : (s === "under_construction" || s === "phased") ? "building" : "planned";
 
+/* ONE clustering behaviour for every point layer.
+   Modelled on the Arrivio demand map, which settled these choices over 67 commits:
+     - a donut carrying the COUNT, because that is what a cluster is; magnitude rides on the
+       ring weight and the disc size, not on a second number crowding the middle
+     - animate:true, so you WATCH the group come apart instead of it blinking out of existence
+     - a click that zooms to the group's bounds, and sub-clusters that behave identically
+       all the way down to single pins
+   Previously only the supply layer clustered at all; demand and resale were plain layer groups,
+   which is why nothing split on those categories. */
+function makeCluster(key, colVar, band, unitFn){
+  const g = L.markerClusterGroup({
+    maxClusterRadius: 55,
+    showCoverageOnHover: false,
+    animate: true, animateAddingMarkers: false,
+    spiderfyOnMaxZoom: true, spiderfyDistanceMultiplier: 1.7,
+    zoomToBoundsOnClick: false,       // handled below, so the list badge can share the icon
+    chunkedLoading: true,
+    iconCreateFunction: c => {
+      const ms = c.getAllChildMarkers();
+      const n = c.getChildCount();
+      const v = ms.reduce((a,m) => a + (m.options.val||0), 0);
+      const tier = v < band[0] ? 0 : v < band[1] ? 1 : 2;
+      const size = Math.round([38,46,54][tier] * S.scale);
+      const ring = [2.5,3.5,4.5][tier];
+      const r = size/2 - ring;
+      const fs = Math.max(12, Math.round(size * 0.32));
+      return L.divIcon({className:"", iconSize:[size,size], html:
+        `<div class="dcl"><svg viewBox="0 0 ${size} ${size}"><circle class="cdisc" cx="${size/2}" cy="${size/2}" r="${r}"
+           stroke="${cssv(colVar)}" stroke-width="${ring}"/></svg><b style="font-size:${fs}px">${n}</b>
+         <span class="cl-list" title="List all ${n} with their sources">&#9776;</span></div>`});
+    }
+  });
+  g.on("clustermouseover", e => {
+    const cl = e.propagatedFrom, ms = cl.getAllChildMarkers();
+    const v = ms.reduce((a,m) => a + (m.options.val||0), 0);
+    cl.bindTooltip(unitFn(ms.length, v) + '<div class="tt-sub">Click to zoom in and split · &#9776; for the full list</div>',
+      {direction:"top", offset:[0,-10], className:"tt-wide"}).openTooltip();
+  });
+  g.on("clusterclick", e => {
+    const cl = e.propagatedFrom;
+    const t = e.originalEvent && e.originalEvent.target;
+    CLUSTER_ZOOM = cl; CLUSTER_KEY = key;
+    if (t && t.closest && t.closest(".cl-list")) { openPopup(cl.getLatLng(), clusterList(key, cl)); return; }
+    splitCluster(cl);
+  });
+  return g;
+}
+/* Zoom to the group's own bounds. If every member sits on one point there is nothing to zoom
+   into, so fan them out instead -- either way the click always does something visible. */
+function splitCluster(cl){
+  const b = cl.getBounds();
+  if (b.getNorthEast().equals(b.getSouthWest())) { cl.spiderfy(); return; }
+  map.fitBounds(b, {padding:[70,70], maxZoom:15, animate:true});
+}
 function siteRadius(mw, z){ const base = mw ? Math.sqrt(mw) * .62 : 3.5; return Math.max(4, Math.min(30, base)) * (z >= 7 ? 1.25 : 1) * S.scale; }
 const LABELS = L.layerGroup();
 function buildSites(){
   LABELS.clearLayers(); if (!map.hasLayer(LABELS)) LABELS.addTo(map);
-  const g = L.markerClusterGroup({
-    maxClusterRadius: z => z >= 10 ? 14 : z >= 8 ? 26 : z >= 6 ? 38 : 52,
-    disableClusteringAtZoom: 11,        // at city zoom every site stands on its own
-    spiderfyOnMaxZoom: true, spiderfyDistanceMultiplier: 1.6,
-    showCoverageOnHover:false, animate:false, chunkedLoading:true,
-    zoomToBoundsOnClick:false,          // we open the full list instead; the popup offers the zoom
-    iconCreateFunction: c => {
-      const ms = c.getAllChildMarkers(); const mw = ms.reduce((a,m)=>a+(m.options.mw||0),0);
-      const live = ms.reduce((a,m)=>a+(m.options.live?m.options.mw||0:0),0);
-      const size = Math.max(40, Math.min(70, 34 + Math.sqrt(mw||1)*1.4));
-      const pct = mw ? Math.round(live/mw*100) : 0;
-      return L.divIcon({className:"", iconSize:[size,size], html:`<div class="cl" style="width:${size}px;height:${size}px;
-        background:conic-gradient(${cssv('--c-site-t')} ${pct}%, ${cssv('--c-site')} ${pct}% 100%);">
-        <div style="background:var(--glass);border-radius:50%;width:${size-8}px;height:${size-8}px;display:flex;align-items:center;justify-content:center;flex-direction:column">
-        <span>${mw?kf(mw):ms.length}</span><span style="font-size:8.5px;font-weight:500;opacity:.8">${mw?"MW":"sites"}</span></div></div>`});
-    }});
-  g.on("clustermouseover", e => {
-    const ms = e.propagatedFrom.getAllChildMarkers(); const mw = ms.reduce((a,m)=>a+(m.options.mw||0),0);
-    const live = ms.reduce((a,m)=>a+(m.options.live?m.options.mw||0:0),0);
-    const rows = ms.map(m=>SITE[m.options.sid]).filter(Boolean).sort((a,b)=>(b.it_load_mw||0)-(a.it_load_mw||0));
-    const list = rows.slice(0,8).map(s=>`<div class="tt-row"><span>${esc(s.operator||"Undisclosed operator")} · ${esc(s.name)}</span><span class="tt-k">${s.it_load_mw!=null?mwf(s.it_load_mw):"MW n/p"} · ${esc((s.status||"?").replace(/_/g," "))}</span></div>`).join("");
-    e.propagatedFrom.bindTooltip(`<b>Supply here: ${ms.length} sites · ${mwf(mw)}</b><div class="tt-sub">${mwf(live)} running</div>${list}${rows.length>8?`<div class="tt-sub">+${rows.length-8} more · click for the full list and sources</div>`:'<div class="tt-sub">click for the full list and sources</div>'}`,{direction:"top",offset:[0,-8],className:"tt-wide"}).openTooltip();
-  });
-  g.on("clusterclick", e => {
-    const cl = e.propagatedFrom;
-    const rows = cl.getAllChildMarkers().map(m => SITE[m.options.sid]).filter(Boolean)
-                   .sort((a,b) => (b.it_load_mw||0) - (a.it_load_mw||0));
-    CLUSTER_ZOOM = cl;
-    openPopup(cl.getLatLng(), clusterPopup(rows));
-  });
+  const g = makeCluster("sites", "--c-site-t", [300, 1200],
+    (n, v) => `<b>${nf(n)} supply site${n>1?"s":""} here</b><div class="tt-k">${mwf(v)} between them</div>`);
   SITES.forEach(s => {
     if (s.lat == null) return;
     const b = statusBucket(s.status);
     if (S.siteStatus !== "all" && b !== S.siteStatus) return;
     const approx = s.loc_precision !== "exact";
-    const m = L.circleMarker([s.lat,s.lng], {renderer:canvas, radius:siteRadius(s.it_load_mw, map.getZoom()),
-      color: cssv("--c-site-t"), weight: s.status==="live"?2:1.4, opacity: approx?.75:1, dashArray: approx?"3 3":null,
-      fillColor: cssv("--c-site"), fillOpacity: STATUS_FILL[s.status] ?? .12, mw:s.it_load_mw||0, live:s.status==="live", sid:s.site_id});
+    // stroke reads against the tiles, fill reads as the data colour
+
+    const m = L.circleMarker([s.lat,s.lng], {val:s.it_load_mw||0, radius:siteRadius(s.it_load_mw, map.getZoom()),
+      color: inkOn(), weight: s.status==="live"?1.8:1.3, opacity: approx?.85:1, dashArray: approx?"3 3":null,
+      fillColor: cssv("--c-site"), fillOpacity: STATUS_FILL[s.status] ?? .3, mw:s.it_load_mw||0, live:s.status==="live", sid:s.site_id});
     m.bindTooltip(`<b>Supply · ${esc(s.operator||"Undisclosed operator")}</b><div class="tt-sub">${esc(s.name)} · ${esc([s.city,s.country].filter(Boolean).join(", "))}</div>
       <div class="tt-k">${s.it_load_mw!=null?mwf(s.it_load_mw):"MW not published"} · ${esc((s.status||"status unknown").replace(/_/g," "))}${approx?" · "+(s.loc_precision==="country"?"country-level pin":"city-level pin"):""}</div>${srcA(s,true)}`,{direction:"top",offset:[0,-6]});
     m.on("click", () => openPopup([s.lat,s.lng], sitePopup(s)));
     m.on("mouseover", () => { if (S.sel!=="site:"+s.site_id){ m.setStyle({weight:3}); m.setRadius(siteRadius(s.it_load_mw,map.getZoom())*1.2);} m.bringToFront(); });
-    m.on("mouseout",  () => { if (S.sel!=="site:"+s.site_id){ m.setStyle({weight:s.status==="live"?2:1.4}); m.setRadius(siteRadius(s.it_load_mw,map.getZoom()));} });
+    m.on("mouseout",  () => { if (S.sel!=="site:"+s.site_id){ m.setStyle({weight:s.status==="live"?1.8:1.3}); m.setRadius(siteRadius(s.it_load_mw,map.getZoom()));} });
     MK.sites[s.site_id] = m; g.addLayer(m);
     if (S.on.labels && (s.it_load_mw||0) >= 300) LABELS.addLayer(L.marker([s.lat,s.lng],{interactive:false,icon:L.divIcon({className:"ctrylabel",iconSize:null,iconAnchor:[-10,8],
       html:`<div style="white-space:nowrap">${esc(s.name)}</div>`})}));
   });
   return g;
 }
-let CLUSTER_ZOOM = null;
+let CLUSTER_ZOOM = null, CLUSTER_KEY = null;
+const OFF = {}; OFFLOADS.forEach(d => OFF[d.deal_id] = d);
+function clusterList(key, cl){
+  const ms = cl.getAllChildMarkers();
+  if (key === "demand") {
+    const rows = ms.map(m => DEM[m.options.eid]).filter(Boolean).sort((a,b) => (b.size_mw||0)-(a.size_mw||0));
+    const mw = rows.reduce((a,x) => a + (x.size_mw||0), 0);
+    const open = rows.reduce((a,x) => a + (x.gap||0), 0);
+    return `<div class="pp"><div class="pp-kind" style="color:var(--c-dem-t)">Demand &middot; ${rows.length} companies here</div>
+      <h3>${esc(rows[0] ? [ (ENT[rows[0].entity_id]||{}).hq_city, (ENT[rows[0].entity_id]||{}).hq_country ].filter(Boolean).join(", ") : "This cluster")}</h3>
+      <div class="pp-sub">Everyone in this group who has asked for compute, biggest first. Each row links to its source.</div>
+      <div class="pp-kpis"><div><b style="color:var(--c-dem-t)">${mwf(mw)}</b><small>asked for</small></div>
+        <div><b>${open?mwf(open):"none"}</b><small>still unsigned</small></div>
+        <div><b>${nf(rows.length)}</b><small>companies</small></div></div>
+      <div class="pp-h">All ${rows.length}</div>${rows.map(x => {
+        const l = x.latest;
+        return `<div class="prow2"><div class="pr-l"><b>${esc(x.name)}</b><small>${esc(short((l&&(l.need_plain||l.headline))||"no public statement", 120))}</small>
+          <div class="pr-src">${l?srcA(l):'<span class="dash">no source recorded</span>'}</div></div>
+          <div class="pr-v">${x.size_mw?mwf(x.size_mw):'<span class="dash">n/p</span>'}
+          <div><button class="lnk" data-sel="ent:${esc(x.entity_id)}">open</button></div></div></div>`; }).join("")}
+      <div class="pr-btns"><button class="btn primary" data-act="clzoom">Zoom in to separate them</button></div></div>`;
+  }
+  if (key === "offload") {
+    const rows = ms.map(m => OFF[m.options.did]).filter(Boolean).sort((a,b) => (b.mw||0)-(a.mw||0));
+    const mw = rows.reduce((a,d) => a + (d.mw||0), 0);
+    return `<div class="pp"><div class="pp-kind" style="color:var(--c-off-t)">Supply for sale &middot; ${rows.length} here</div>
+      <h3>Compute looking for a buyer</h3>
+      <div class="pp-sub">Holders trying to place capacity they already own. Each row links to its source.</div>
+      ${mw?`<div class="pp-kpis"><div><b style="color:var(--c-off-t)">${mwf(mw)}</b><small>where a size is published</small></div>
+        <div><b>${nf(rows.length)}</b><small>offers</small></div></div>`:""}
+      <div class="pp-h">All ${rows.length}</div>${rows.map(d =>
+        `<div class="prow2"><div class="pr-l"><b>${esc(whoName(d.from_id))}</b><small>${esc(short(d.headline,120))}</small>
+         <div class="pr-src">${srcA(d)||'<span class="dash">no source recorded</span>'}</div></div>
+         <div class="pr-v">${d.mw?mwf(d.mw):(d.quantity_raw?esc(short(String(d.quantity_raw),16)):'<span class="dash">n/p</span>')}
+         <div><button class="lnk" data-sel="deal:${esc(d.deal_id)}">open</button></div></div></div>`).join("")}
+      <div class="pr-btns"><button class="btn primary" data-act="clzoom">Zoom in to separate them</button></div></div>`;
+  }
+  const rows = ms.map(m => SITE[m.options.sid]).filter(Boolean).sort((a,b) => (b.it_load_mw||0)-(a.it_load_mw||0));
+  return clusterPopup(rows);
+}
 function clusterPopup(rows){
   const mw = rows.reduce((a,s) => a + (s.it_load_mw||0), 0);
   const by = b => rows.filter(s => bucketOf(s.status) === b);
@@ -786,9 +943,31 @@ function chipValue(c){
   return bits.join('<span class="cvsep">·</span>');
 }
 let CTRYLAB = null, REMAINDER = null;
+const CTRY_MAX_ZOOM = 6;      // past this a country ring is bigger than the screen; the sites take over
+function zoomToCountry(c){
+  // bring the contents with you, or the drill-down lands on an empty map
+  let turnedOn = false;
+  if (!S.on.sites && !S.on.demand) { S.on.sites = true; S.on.demand = true; rebuild("sites"); rebuild("demand"); turnedOn = true; }
+  const own = SITES.filter(s => s.country === c.country && s.lat != null);
+  if (own.length > 1) map.fitBounds(L.latLngBounds(own.map(s => [s.lat, s.lng])), {padding:[80,80], maxZoom:9, animate:true});
+  else map.flyTo([c.lat, c.lng], Math.max(map.getZoom()+2, 6), {duration:.8});
+  if (turnedOn) { renderLayers(); renderLegend(); renderPill(); writeHash(); }
+}
+/* A country ring is a world-level aggregate. Once you are inside the country it is just a huge
+   circle sitting on top of the detail, so it steps aside and the sites and companies take over.
+   The layer stays "on" -- zoom back out and it returns. */
+function syncCountryZoom(){
+  if (!G.country) return;
+  // only step aside when something else is actually there to take over
+  const replacement = S.on.sites || S.on.demand;
+  const show = S.on.country && (map.getZoom() <= CTRY_MAX_ZOOM || !replacement);
+  if (show && !map.hasLayer(G.country)) G.country.addTo(map);
+  if (!show && map.hasLayer(G.country)) map.removeLayer(G.country);
+}
 function rebuildCountryLabels(){
   if (CTRYLAB) { map.removeLayer(CTRYLAB); CTRYLAB = null; }
   if (!S.on.country) return;
+  if (map.getZoom() > CTRY_MAX_ZOOM && (S.on.sites || S.on.demand)) return;
   const m = CMETRIC[S.ctryMetric] || CMETRIC.building;
   const b = map.getBounds(), placed = [];
   CTRYLAB = L.layerGroup();
@@ -813,10 +992,17 @@ function rebuildCountryLabels(){
     const val = chipValue(c);
     const mk = L.marker([c.lat, c.lng], {pane:"markerPane", interactive:true, icon:L.divIcon({
       className:"", iconSize:null, iconAnchor:[0,0],
-      html:`<span class="ctrychip" style="margin-top:${-(c._r||14)-14}px;display:inline-flex"><span class="cn">${esc(c.country)}</span>${val}</span>`})});
-    mk.bindTooltip(c._hover || countryHover(c), {direction:"top", offset:[0,-((c._r||14)+26)], className:"tt-wide"});
-    if (!c._hover) mk.on("click", () => openPopup([c.lat, c.lng], countryPopup(c)));
-    else mk.on("click", () => { $("sec-live").open = true; if (!S.panelOpen) togglePanel(true); });
+      html:`<span class="ctrychip" style="margin-top:${-(c._r||14)-14}px;display:inline-flex"><span class="cn">${esc(c.country)}</span>${val}<span class="cl-list" title="Everything in ${esc(c.country)}, with sources">&#9776;</span></span>`})});
+    mk.bindTooltip((c._hover || countryHover(c)) + '<div class="tt-sub">Click to zoom into this country &middot; &#9776; for the full card</div>', {direction:"top", offset:[0,-((c._r||14)+26)], className:"tt-wide"});
+    mk.on("click", e => {
+      const t = e.originalEvent && e.originalEvent.target;
+      if (t && t.closest && t.closest(".cl-list")) {
+        if (c._hover) { $("sec-live").open = true; if (!S.panelOpen) togglePanel(true); }
+        else openPopup([c.lat, c.lng], countryPopup(c));
+        return;
+      }
+      if (!c._hover) zoomToCountry(c);
+    });
     CTRYLAB.addLayer(mk);
   }
   CTRYLAB.addTo(map);
@@ -832,10 +1018,11 @@ function buildCountry(){
     // The ring itself answers the hover. Previously only the text label did, so every country
     // whose label lost the collision test -- and every country with no figure to print -- was
     // silently dead to the pointer.
-    const ring = L.circleMarker([c.lat,c.lng], {pane:"country", radius:r, color:cssv("--c-ctry"), weight:1.2, opacity:.7, dashArray:"2 4",
+    const ring = L.circleMarker([c.lat,c.lng], {pane:"country", renderer:ctrySvg, radius:r, color:cssv("--c-ctry"), weight:1.2, opacity:.7, dashArray:"2 4",
       fillColor:cssv("--c-ctry"), fillOpacity:.12, interactive:true});
     ring.bindTooltip(() => countryHover(c), {sticky:true, className:"tt-wide"});
-    ring.on("click", () => openPopup([c.lat,c.lng], countryPopup(c)));
+    // Same grammar as a cluster: the circle drills in, the label opens the detail.
+    ring.on("click", () => zoomToCountry(c));
     ring.on("mouseover", () => ring.setStyle({weight:2, opacity:1, fillOpacity:.2}));
     ring.on("mouseout",  () => ring.setStyle({weight:1.2, opacity:.7, fillOpacity:.12}));
     g.addLayer(ring);
@@ -846,7 +1033,7 @@ function buildCountry(){
     const rest = Math.round(APAC_TOTAL.under_construction_mw - attributed);
     if (rest > 0) {
       const r = (12 + Math.sqrt(rest/max) * 46) * S.scale, at = [12.0, 132.0];
-      const rring = L.circleMarker(at, {pane:"country", radius:r, color:cssv("--c-site-t"), weight:1.4, opacity:.8, dashArray:"4 4", fillColor:cssv("--c-site"), fillOpacity:.10, interactive:true});
+      const rring = L.circleMarker(at, {pane:"country", renderer:ctrySvg, radius:r, color:cssv("--c-site-t"), weight:1.4, opacity:.8, dashArray:"4 4", fillColor:cssv("--c-site"), fillOpacity:.10, interactive:true});
       rring.bindTooltip(`<b>${mwf(APAC_TOTAL.under_construction_mw)} being built across Asia-Pacific</b><div class="tt-sub">${esc(host(APAC_TOTAL.uc_source||""))} · includes mainland China</div><div class="tt-k">${mwf(rest)} of it is not split by country</div><div class="tt-sub">click for the full table</div>`,{sticky:true,className:"tt-wide"});
       rring.on("click", () => { $("sec-live").open = true; if (!S.panelOpen) togglePanel(true); });
       g.addLayer(rring);
@@ -889,13 +1076,15 @@ function countryPopup(c){
     ${popFoot("country:"+c.country)}</div>`;
 }
 function buildDemand(){
-  const g = L.layerGroup();
+  const g = makeCluster("demand", "--c-dem-t", [500, 3000],
+    (n, v) => `<b>${nf(n)} compan${n>1?"ies":"y"} needing compute</b><div class="tt-k">${v?mwf(v)+" between them":"amounts not published"}</div>`);
   const max = Math.max(...DEMAND.map(x=>x.size_mw||0), 1);
   DEMAND.forEach(x => {
     if (!x.loc || !demandVisible(x)) return;
     const r = (7 + Math.sqrt((x.size_mw||1)/max) * 26) * S.scale;
     const gap = DATA.demand_gaps.find(gp=>gp.entity_id===x.entity_id);
-    const m = L.circleMarker(x.loc, {pane:"demand", radius:r, color:cssv("--c-dem-t"), weight:gap?2.5:1.5, fillColor:cssv("--c-dem"), fillOpacity:gap?.5:.3});
+    const m = L.circleMarker(x.loc, {pane:"demand", renderer:demSvg, val:x.size_mw||0, eid:x.entity_id, radius:r,
+      color:inkOn(), weight:gap?2:1.4, opacity:.9, fillColor:cssv("--c-dem"), fillOpacity:gap?.82:.6});
     const l = x.latest;
     m.bindTooltip(`<b>Demand · ${esc(x.name)}</b><div class="tt-sub">${esc((l&&(l.need_plain||l.headline))||"")}</div>
       <div class="tt-k">${x.stated_mw?mwf(x.stated_mw)+" stated":""}${x.contracted_mw?" · "+mwf(x.contracted_mw)+" signed":""}${gap?" · "+mwf(gap.gap_mw)+" still open":""}</div>${l?srcA(l,true):""}<div class="tt-sub">click for every need with its source</div>`,{direction:"top",offset:[0,-r],className:"tt-wide"});
@@ -931,14 +1120,14 @@ function buildArcs(list, key, colVar, dashed, bend){
   list.forEach(d => {
     if (!d.ends) return;
     const w = 1.2 + (d.usd_value ? Math.sqrt(d.usd_value/max)*4.5 : 0);
-    const line = L.polyline(arcPts(d.ends[0], d.ends[1], bend), {pane:"arcs", renderer:canvas, color:cssv(colVar), weight:w, opacity:.62, dashArray:dashed?"5 5":null});
+    const line = L.polyline(arcPts(d.ends[0], d.ends[1], bend), {pane:"arcs", renderer:arcSvg, color:cssv(colVar), weight:w, opacity:.62, dashArray:dashed?"5 5":null});
     line.bindTooltip(`<b>${esc(ename(d.from_id))} → ${esc(ename(d.to_id))}</b><div class="tt-sub">${esc(d.headline)}</div>
       <div class="tt-k">${esc(DT[d.deal_type])}${d.usd_value?" · "+usd(d.usd_value):""}${d.quantity_raw?" · "+esc(d.quantity_raw).slice(0,60):""}</div>${srcA(d,true)}`,{sticky:true});
     line.on("click", () => select("deal:"+d.deal_id));
     line.on("mouseover", () => line.setStyle({opacity:1, weight:w+1.5}));
     line.on("mouseout",  () => { if (S.sel!=="deal:"+d.deal_id) line.setStyle({opacity:.62, weight:w}); });
     // small dot at the receiving end so direction is visible without arrowheads
-    const dot = L.circleMarker(d.ends[1], {pane:"arcs", renderer:canvas, radius:3, color:cssv(colVar), weight:1, fillColor:cssv(colVar), fillOpacity:1, interactive:false});
+    const dot = L.circleMarker(d.ends[1], {pane:"arcs", renderer:arcSvg, radius:3, color:cssv(colVar), weight:1, fillColor:cssv(colVar), fillOpacity:1, interactive:false});
     MK[key][d.deal_id] = line; g.addLayer(line); g.addLayer(dot);
   });
   return g;
@@ -963,13 +1152,25 @@ function rebuildArcLabels(){
   }
   ARCLAB.addTo(map);
 }
+function offloadPopup(d){
+  return `<div class="pp"><div class="pp-kind" style="color:var(--c-off-t)">Supply for sale</div>
+    <h3>${esc(whoName(d.from_id))}</h3>
+    <div class="pp-sub">${esc((d.map_countries||[]).join(", ")||"market not stated")}</div>
+    ${popRow("What is on offer", esc(d.headline), d.mw?mwf(d.mw):(d.quantity_raw?esc(String(d.quantity_raw).slice(0,40)):'<span class="dash">size not published</span>'))}
+    ${d.usd_value!=null?popRow("Value","",usd(d.usd_value)):""}
+    ${d.notes?`<p class="hint" style="margin:8px 0 0">${esc(String(d.notes).slice(0,600))}</p>`:""}
+    <div class="pp-src">${srcA(d)||'<span class="dash">no source recorded</span>'}</div>
+    ${popFoot("deal:"+d.deal_id, d)}</div>`;
+}
 function buildOffload(){
-  const g = L.layerGroup();
+  const g = makeCluster("offload", "--c-off-t", [200, 900],
+    (n, v) => `<b>${nf(n)} resale offer${n>1?"s":""} here</b><div class="tt-k">${v?mwf(v)+" between them":"sizes not published"}</div>`);
   OFFLOADS.forEach(d => {
     if (!d.loc) return;
-    const m = L.circleMarker(d.loc, {pane:"demand", radius:9, color:cssv("--c-off-t"), weight:2.5, fillColor:cssv("--c-off"), fillOpacity:.35, dashArray:"2 3"});
+    const m = L.circleMarker(d.loc, {pane:"demand", renderer:demSvg, val:d.mw||0, did:d.deal_id, radius:9,
+      color:inkOn(), weight:2, opacity:.9, fillColor:cssv("--c-off"), fillOpacity:.7, dashArray:"2 3"});
     m.bindTooltip(`<b>Supply for sale · ${esc(whoName(d.from_id))}</b><div class="tt-sub">${esc(d.headline)}</div><div class="tt-k">${d.usd_value?usd(d.usd_value):""}${d.mw?" · "+mwf(d.mw):""}</div>${srcA(d,true)}`,{direction:"top",offset:[0,-9],className:"tt-wide"});
-    m.on("click", () => select("deal:"+d.deal_id));
+    m.on("click", () => openPopup(d.loc, offloadPopup(d)));
     MK.offload[d.deal_id] = m; g.addLayer(m);
   });
   return g;
@@ -984,7 +1185,7 @@ function buildPrices(){
   Object.entries(ref.regions).forEach(([reg, price]) => {
     const R = AZ_REGION[reg]; if (!R) return;
     const t = hi > lo ? (price-lo)/(hi-lo) : 0;
-    const m = L.circleMarker([R[1],R[2]], {pane:"demand", radius:10+t*16, color:cssv("--c-px-t"), weight:2, fillColor:cssv("--c-px"), fillOpacity:.25+t*.4});
+    const m = L.circleMarker([R[1],R[2]], {pane:"demand", renderer:demSvg, radius:10+t*16, color:cssv("--c-px-t"), weight:2, fillColor:cssv("--c-px"), fillOpacity:.25+t*.4});
     m.bindTooltip(`<b>${esc(R[0])}</b><div class="tt-k">$${price.toFixed(2)}/hr · ${esc(ref.sku)}</div><div class="tt-sub">${((price/lo-1)*100).toFixed(0)}% above the cheapest Asian region</div>`,{direction:"top",offset:[0,-12]});
     g.addLayer(m);
     g.addLayer(L.marker([R[1],R[2]],{pane:"demand",interactive:false,icon:L.divIcon({className:"",iconSize:null,iconAnchor:[-(12+t*16),9],
@@ -1006,7 +1207,8 @@ function rebuild(id){
         : id==="offload"   ? buildOffload() : id==="prices" ? buildPrices() : null;
   if (G[id]) G[id].addTo(map);
   if (id==="contracts") rebuildArcLabels();
-  if (id==="country") { rebuildCountryLabels(); syncBaseLabels(); }
+  if (id==="country") { rebuildCountryLabels(); syncBaseLabels(); syncCountryZoom(); }
+  if (id==="sites" || id==="demand") syncCountryZoom();
 }
 function rebuildAll(){ LAYERS.forEach(l => { if (l.id !== "labels") rebuild(l.id); }); }
 
@@ -1038,29 +1240,25 @@ function renderMarket(){
   const n = marketNumbers(), where = n.apac ? "Asia-Pacific" : "worldwide";
   const tile = (cls, val, label, sub) =>
     `<div class="kpi ${cls}"><div class="v">${val}</div><div class="l">${label}</div>${sub?`<div class="s">${sub}</div>`:""}</div>`;
-  const none = t => `<span style="font-size:14px;font-weight:600">${t}</span>`;
+  const none = t => `<span style="font-size:var(--fs-4);font-weight:600">${t}</span>`;
   $("market").innerHTML = `
     <div style="display:flex;align-items:center;justify-content:space-between;margin:0 0 9px">
-      <span style="font-size:11px;color:var(--t3)">Everything below is ${where}</span>
+      <span style="font-size:var(--fs-2);color:var(--t3)">Everything below is ${where}</span>
       <span class="scope" role="group" aria-label="Which market">
         <button data-scope="apac" aria-pressed="${n.apac}">Asia</button>
         <button data-scope="world" aria-pressed="${!n.apac}">World</button></span>
     </div>
-    <div class="kpis">
+    <div class="kpis lead">
       ${tile("build", kf(n.building), "MW supply being built", n.apac ? "market figure, C&amp;W" : `${nf(SITES.filter(s=>bucketOf(s.status)==="building").length)} sites`)}
-      ${n.forSaleMw
-        ? tile("", kf(n.forSaleMw), "MW supply looking for a buyer",
-            `${nf(n.forSale.length)} offers${n.forSaleUsd?" · "+usd(n.forSaleUsd):""}`)
-        : n.forSale.length
-          ? tile("", nf(n.forSale.length), "reports of supply looking for a buyer",
-              "none of them publishes a megawatt figure")
-          : tile("dim", none("none found"), "supply looking for a buyer", "nothing found in this market yet")}
       ${tile("dem", kf(n.gapMw), "MW demand waiting for supply", `${nf(n.gaps.length)} companies, no contract found`)}
     </div>
-    <div class="kpis" style="margin-top:8px">
-      ${tile("dem", kf(n.pendingMw), "MW signed but not delivered", `${nf(n.pending.length)} contracts awarded`)}
-      ${tile("dem", kf(n.soonMw), `MW demand due by ${HORIZON}`, `${nf(n.soon.length)} needs carrying a date`)}
-      ${tile("dem", kf(n.nodateMw), "MW demand with no date yet", `${nf(n.nodate.length)} needs stated without a deadline`)}
+    <div class="kpis rest">
+      ${tile("dem", kf(n.soonMw), `demand due by ${HORIZON}`)}
+      ${tile("dem", kf(n.nodateMw), "demand with no date yet")}
+      ${tile("dem", kf(n.pendingMw), "signed, not delivered")}
+      ${n.forSaleMw ? tile("", kf(n.forSaleMw), "looking for a buyer")
+        : n.forSale.length ? tile("", nf(n.forSale.length), "reports of supply for sale")
+        : tile("dim", "&mdash;", "supply for sale, none found")}
     </div>
     <div class="mstrip">
       <span>we have dated <b>${nf(n.soon.length)}</b> of <b>${nf(n.soon.length + n.nodate.length)}</b> stated needs</span>
@@ -1080,7 +1278,7 @@ function counts(){
 const fsel = (f, label, opts, cur, n) => `<div class="frow"><span class="fl">${label}</span>
   <select data-f="${f}" aria-label="${label}">${opts.map(([k,t])=>`<option value="${k}"${cur===k?" selected":""}>${t}</option>`).join("")}</select>
   <span class="fn">${n==null?"":nf(n)}</span></div>`;
-const fchk = (id, on, label) => `<div class="frow"><label style="display:flex;align-items:center;gap:7px;cursor:pointer;font-size:11.5px;color:var(--t3)">
+const fchk = (id, on, label) => `<div class="frow"><label style="display:flex;align-items:center;gap:7px;cursor:pointer;font-size:var(--fs-2);color:var(--t3)">
   <input type="checkbox" id="${id}"${on?" checked":""} style="accent-color:var(--acc)"><span>${label}</span></label></div>`;
 function renderLayers(){
   const c = counts();
@@ -1184,13 +1382,27 @@ function renderData(){
     <div class="mini"><span class="mn">Sites placed at their country</span><span class="mv">${nf(SITES.filter(s=>s.loc_precision==="country").length)}</span></div>
     <div class="mini"><span class="mn">Companies at their head office</span><span class="mv">${nf(DATA.entities.filter(e=>e.hq_precision==="city"||e.hq_precision==="country").length)}</span></div>
     <div class="mini"><span class="mn">Companies placed where their deals are</span><span class="mv">${nf(nohq)}</span></div>
-    <p class="hint">Everything is on the map. Where we do not know the building, the pin sits on the city or the country, and the card says so. The point is who and how much, not the exact street.</p>
+    <p class="hint">Everything is on the map. Each pin sits at the finest level its source supports &mdash; the building where a source gives one, otherwise the city, otherwise the region &mdash; and the card names which. Where several sites are known only to the same city they are nudged a kilometre or two apart so you can click them separately; the card says when that has happened. The point is who and how much, not the exact street.</p>
     <div class="subh">What is still blank</div>
     <div class="mini"><span class="mn">Sites with no megawatt figure published</span><span class="mv">${nf(SITES.filter(s=>s.it_load_mw==null).length)} of ${nf(SITES.length)}</span></div>
     <div class="mini"><span class="mn">Deals with no dollar value published</span><span class="mv">${nf(COV.deals_total-COV.deals_with_usd)} of ${nf(COV.deals_total)}</span></div>
     <div class="mini"><span class="mn">Same deal announced twice, hidden from totals</span><span class="mv">${nf(COV.restatements)}</span></div>
     <div class="mini"><span class="mn">Companies that appeared under several names, merged</span><span class="mv">${nf(COV.entities_merged)}</span></div>
     <div class="subh">Our rules</div>
+    <div class="subh">Supply or demand?</div>
+    <p class="hint" style="margin:0 0 6px">We label the <b>deal</b>, not the company. "Y will supply 5 MW to X" is one
+      sentence containing both: Y is supply, X is demand, and it is the same 5 MW seen from two ends. Most real players
+      are both — Nvidia sells chips and rents cloud; Yotta buys GPUs and rents them out. Tagging companies would force
+      us to pick one and be wrong half the time.</p>
+    <p class="hint" style="margin:0 0 6px">So the question we actually answer is <b>whether the compute is still
+      available</b>. <b style="color:var(--c-dem-t)">Open demand</b> is someone who said they need it with no contract we
+      can find. <b style="color:var(--c-site-t)">Open supply</b> is capacity with no buyer named. Those two are the call
+      list. Everything in between is <b>matched</b> — not business, but it is where the price comes from.</p>
+    <p class="hint" style="margin:0 0 8px">Four rules keep the totals straight: one announcement is one record however
+      many outlets carry it; a need belongs to whoever needs it, not to the chip vendor they buy from; megawatts are
+      counted once at the site, never again on the deals that claim them; and a regional figure is never added into a
+      country.</p>
+    <div class="subh">Numbers</div>
     <p class="hint" style="margin:0">We never invent a number. A blank is better than a guess. Every deal links to the page that says it.
     Each deal is counted once, even if four companies announced it. If a source gives a number we use it; we only estimate when nobody does, and we mark it.
     Mainland China is left out on purpose.</p>
@@ -1257,7 +1469,7 @@ function select(id, opts){
       <dl class="kv">
         <dt>Provides</dt><dd><a href="#" data-sel="ent:${esc(d.from_id||"")}">${esc(ename(d.from_id))}</a></dd>
         <dt>Receives</dt><dd><a href="#" data-sel="ent:${esc(d.to_id||"")}">${esc(ename(d.to_id))}</a></dd>
-        <dt>Size</dt><dd>${d.quantity_raw?esc(d.quantity_raw):dash}${d.h100e?`<div class="dash" style="font-size:11.5px">≈ ${kf(d.h100e)} H100e · ${d.mw?mwf(d.mw):""} <span title="${esc(d.h100e_basis||"")}">(our conversion)</span></div>`:""}</dd>
+        <dt>Size</dt><dd>${d.quantity_raw?esc(d.quantity_raw):dash}${d.h100e?`<div class="dash" style="font-size:var(--fs-2)">≈ ${kf(d.h100e)} H100e · ${d.mw?mwf(d.mw):""} <span title="${esc(d.h100e_basis||"")}">(our conversion)</span></div>`:""}</dd>
         <dt>Value</dt><dd class="num">${d.usd_value!=null?usd(d.usd_value):dash}</dd>
         <dt>Term</dt><dd>${d.term_start||d.term_end?esc([d.term_start,d.term_end].filter(Boolean).join(" to ")):dash}${d.term_years?` <span class="dash">(${d.term_years} yr)</span>`:""}</dd>
         <dt>Where</dt><dd>${(d.geography||[]).length?esc(d.geography.join(", ")):dash}</dd>
@@ -1295,7 +1507,7 @@ function select(id, opts){
       ${sec(`Supply only announced · ${grp("planned").length} sites, ${mwf(c.planned_mw)}`, grp("planned").slice(0,15).map(siteRow), "No announced-only sites.")}
       ${money.length?sec(`Capital coming in · ${money.length}`, money.slice(0,10).map(dealRow), ""):""}
       <div class="subh">Companies involved here · ${c.companies.length}</div>
-      <div style="display:flex;flex-wrap:wrap;gap:5px">${c.companies.map(id=>ENT[id]).filter(e=>e&&!e.is_placeholder).sort((a,b)=>b.deal_count-a.deal_count).map(e=>`<button class="tag" data-sel="ent:${esc(e.entity_id)}" style="cursor:pointer;text-transform:none;letter-spacing:0;font-family:var(--font);font-size:11.5px">${esc(e.name)}</button>`).join("")}</div>
+      <div style="display:flex;flex-wrap:wrap;gap:5px">${c.companies.map(id=>ENT[id]).filter(e=>e&&!e.is_placeholder).sort((a,b)=>b.deal_count-a.deal_count).map(e=>`<button class="tag" data-sel="ent:${esc(e.entity_id)}" style="cursor:pointer;text-transform:none;letter-spacing:0;font-family:var(--font);font-size:var(--fs-2)">${esc(e.name)}</button>`).join("")}</div>
       ${c.official_source?`<div class="subh">Where the official number came from</div>${srcs([c.official_source].filter(u=>/^https?:/.test(u)))}`:""}`);
     focus = [c.lat, c.lng];
   }
@@ -1382,19 +1594,24 @@ __RIVALS_DATA__
 __RIVALS_RENDER__
 function renderLegend(){
   const c = counts(), out = [];
-  const sec = (col, title, n, rows) => `<div class="lgs"><div class="lgt"><span class="sw" style="background:var(${col})"></span>${title}${n==null?"":`<span class="n">${nf(n)}</span>`}</div>${rows.filter(Boolean).join("")}</div>`;
+  // The key is two tiers. Tier one is what a returning user needs: which colour is which
+  // layer, and how many of it is on the map -- one line each, seven lines total. Tier two is
+  // the prose that explains solid vs faint vs dashed, which you read once and never again.
+  // Both used to be on screen permanently, 500-odd pixels of it over a third of the map.
+  const sec = (col, title, n, rows) => `<div class="lgs"><div class="lgt"><span class="sw" style="background:var(${col})"></span>${title}${n==null?"":`<span class="n">${nf(n)}</span>`}</div><div class="lgx">${rows.filter(Boolean).join("")}</div></div>`;
   const row = (sw, txt) => `<div class="lg">${sw}<span>${txt}</span></div>`;
   const dot = st => `<span class="dot" style="${st}"></span>`;
   const line = st => `<span class="line" style="${st}"></span>`;
 
   if (S.on.country) out.push(sec("--c-ctry","By country",c.country,[
-    row(dot("border:1.5px dashed var(--c-ctry)"),`Showing <b>${(CMETRIC[S.ctryMetric]||CMETRIC.building).label.toLowerCase()}</b>. A ring with no number has none. Hover any ring for its full lists.`)]));
+    row(dot("border:1.5px dashed var(--c-ctry)"),`Showing <b>${(CMETRIC[S.ctryMetric]||CMETRIC.building).label.toLowerCase()}</b>. A ring with no number has none.`),
+    row(dot("border:1.5px dashed var(--c-ctry);opacity:.45"),`Click a ring to zoom into that country. Once you are inside it, the rings step aside and the sites take over.`)]));
 
   if (S.on.sites) out.push(sec("--c-site","Supply · data centres",c.sites,[
     row(dot("background:var(--c-site);border-color:var(--c-site-t)"),"<b>Solid</b> — running now"),
     row(dot("background:var(--c-site);opacity:.2;border-color:var(--c-site-t)"),"<b>Faint</b> — announced only, not built yet"),
     row(dot("border:2px dashed var(--c-site-t)"),"<b>Dashed edge</b> — pinned to the city, not the building"),
-    `<div class="sizekey"><i style="width:8px;height:8px"></i><i style="width:15px;height:15px"></i><i style="width:26px;height:26px"></i><span style="font-size:11px;color:var(--t3);margin-left:5px">10 → 600+ MW · hover one for the list</span></div>`]));
+    `<div class="sizekey"><i style="width:8px;height:8px"></i><i style="width:15px;height:15px"></i><i style="width:26px;height:26px"></i><span style="font-size:var(--fs-2);color:var(--t3);margin-left:5px">10 → 600+ MW · hover one for the list</span></div>`]));
 
   if (S.on.demand) out.push(sec("--c-dem","Demand · companies",c.demand,[
     row(dot("background:var(--c-dem);border-color:var(--c-dem-t)"),"<b>Size</b> — how much they have asked for"),
@@ -1414,14 +1631,19 @@ function renderLegend(){
     row(dot("background:var(--c-px);border-color:var(--c-px-t)"),"One Azure machine, price per hour. Bigger = dearer.")]));
 
   const circleOn = ["country","sites","demand","offload","prices"].some(k => S.on[k]);
+  $("legend").className = S.legendDetail ? "glass detail" : "glass";
   $("legend").innerHTML = `<h3>Key<button id="legend-hide" aria-label="Hide legend">✕</button></h3>` +
-    (out.length ? `<div class="lgrule"><span><i style="background:var(--c-site)"></i>teal = supply</span>
-       <span><i style="background:var(--c-dem)"></i>amber = demand</span>
-       <span><i style="background:var(--t2)"></i>white = names</span></div>` : "") +
     (out.join("") || '<div class="lg" style="color:var(--t3)">All layers are off.</div>') +
+    (out.length ? `<button class="lgmore" id="legend-more" aria-expanded="${!!S.legendDetail}">${S.legendDetail?"Hide":"What the shapes mean"}</button>` : "") +
     (circleOn ? `<div class="lgscale"><label for="scale">Circle size</label>
        <input type="range" id="scale" min="50" max="220" step="10" value="${Math.round(S.scale*100)}" aria-label="Circle size">
        <span class="v" id="scaleval">${Math.round(S.scale*100)}%</span></div>` : "");
+  const lm = $("legend-more");
+  if (lm) lm.addEventListener("click", () => {
+    S.legendDetail = !S.legendDetail;
+    try { localStorage.setItem("cx.lgdetail", S.legendDetail ? "1" : "0"); } catch(err){}
+    renderLegend();
+  });
   const sl = $("scale");
   if (sl) sl.addEventListener("input", e => {
     S.scale = +e.target.value/100; $("scaleval").textContent = e.target.value + "%";
@@ -1442,7 +1664,7 @@ function renderPill(){
   $("pill").innerHTML = bits.join('<span class="sep">·</span>') || `<b>${nf(DEALS.length)}</b> deals · <b>${nf(SITES.length)}</b> sites`;
 }
 function renderAllPanels(){ renderMarket(); renderLayers(); renderMatch(); renderCircles(); renderPrices(); renderLive(); renderData(); renderLegend(); renderPill();
-  $("pfoot").innerHTML = `${nf(COV.deals_total)} deals · ${nf(COV.entities_total)} companies · ${nf(COV.sites_total)} sites · ${nf(CTRY.length)} countries`; }
+  $("pfoot").innerHTML = `<b>${nf(COV.deals_total)}</b> deals · <b>${nf(COV.entities_total)}</b> companies · <b>${nf(COV.sites_total)}</b> sites · <b>${nf(CTRY.length)}</b> countries`; }
 
 /* ============ events ============ */
 function togglePanel(open){ S.panelOpen = open==null ? !S.panelOpen : open; $("panel").classList.toggle("closed", !S.panelOpen); document.body.classList.toggle("panel-closed", !S.panelOpen); setTimeout(()=>map.invalidateSize(),180); }
@@ -1460,7 +1682,7 @@ document.addEventListener("click", ev => {
   const st = t.closest("[data-status]"); if (st){ S.siteStatus=st.dataset.status; rebuild("sites"); renderLayers(); renderMarket(); renderPill(); writeHash(); return; }
   const sel = t.closest("[data-sel]"); if (sel){ ev.preventDefault(); if (sel.dataset.sel.endsWith(":")) return; select(sel.dataset.sel); $("results").classList.remove("on"); return; }
   const lp = t.closest("[data-loop]"); if (lp){ drawLoop(+lp.dataset.loop); return; }
-  if (t.closest("[data-act='clzoom']")) { if (CLUSTER_ZOOM) { map.closePopup(); CLUSTER_ZOOM.zoomToBounds({padding:[40,40]}); } return; }
+  if (t.closest("[data-act='clzoom']")) { if (CLUSTER_ZOOM) { map.closePopup(); splitCluster(CLUSTER_ZOOM); } return; }
   if (t.closest("[data-act='closesel']")) { closeSel(); return; }
   if (t.closest("[data-act='showdeals']")) { if (S.sel&&S.sel.startsWith("ent:")) drawDeals(S.sel.slice(4)); return; }
   if (t.closest("#btn-collapse")) { togglePanel(false); return; }
@@ -1506,16 +1728,17 @@ document.addEventListener("keydown", e => {
 });
 map.on("zoomend", () => { Object.values(MK.sites).forEach(m => m.setRadius(siteRadius(m.options.mw, map.getZoom()))); });
 map.on("moveend", () => { rebuildArcLabels(); rebuildCountryLabels(); });
+map.on("zoomend", () => { syncCountryZoom(); rebuildCountryLabels(); });
 function fitApac(){ const pts = SITES.filter(s=>s.lat!=null&&APAC.has(s.country)).map(s=>[s.lat,s.lng]); if (pts.length) map.fitBounds(L.latLngBounds(pts).pad(.08)); else map.setView([8,105],3); }
 function fitAll(){ const pts = SITES.filter(s=>s.lat!=null).map(s=>[s.lat,s.lng]); if (pts.length) map.fitBounds(L.latLngBounds(pts).pad(.05)); }
 
 /* ============ init ============ */
 (function init(){
-  try { const th=localStorage.getItem("cx.theme"); if (th) S.theme=th; const sc=parseFloat(localStorage.getItem("cx.scale")); if (sc>0) S.scale=sc; } catch(e){}
+  try { const th=localStorage.getItem("cx.theme"); if (th) S.theme=th; const sc=parseFloat(localStorage.getItem("cx.scale")); if (sc>0) S.scale=sc; S.legendDetail = localStorage.getItem("cx.lgdetail")==="1"; } catch(e){}
   readHash();
   document.documentElement.dataset.theme = S.theme;
   if (S.theme==="light" && S.base==="dark") S.base="light";
-  setBase(S.base);
+  setBase(S.base); syncMapInk();
   fitApac();
   rebuildAll();
   renderAllPanels();

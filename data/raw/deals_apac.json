@@ -714,7 +714,8 @@
   "headline": "Samsung Electronics will deploy over 50,000 NVIDIA GPUs in an AI factory for semiconductor manufacturing.",
   "notes": "Captive use for semiconductor manufacturing including cuLitho integration into Samsung's OPC lithography platform, not merchant compute supply. Component of the 250,000 total. Distinct from Samsung SDS, which sells GPU capacity commercially.",
   "source_urls": [
-   "https://nvidianews.nvidia.com/news/south-korea-ai-infrastructure"
+   "https://nvidianews.nvidia.com/news/south-korea-ai-infrastructure",
+   "https://www.datacenterdynamics.com/en/news/nvidia-to-deploy-more-than-250000-gpus-across-south-korea-with-samsung-sk-group-and-hyundai-all-announcing-ai-factories/"
   ],
   "geography": [
    "South Korea"
@@ -954,10 +955,10 @@
  {
   "deal_id": "sakura-internet-10000-gpus-per-year",
   "deal_type": "D7",
-  "from_entity": "SAKURA internet Inc.",
-  "to_entity": "NVIDIA Corporation",
+  "from_entity": "NVIDIA Corporation",
+  "to_entity": "SAKURA internet Inc.",
   "headline": "Sakura Internet said it wants to buy about 10,000 NVIDIA GPUs a year and needs 50,000 to 100,000 to meet current demand.",
-  "notes": "A demand signal, not an order: founder Kunihiro Tanaka's stated requirement, plus a claim of needing a million GPUs in ten years at current growth. Concrete elements: roughly 2,000 H100 installed at Ishikari, 8,000 more planned by December 2027, HGX B200 ordered in unspecified quantity, and a new Hokkaido facility for around 10,800 GPUs by 2027. announced_date approximates the reporting month. Sakura is TSE-listed.",
+  "notes": "A demand signal, not an order: founder Kunihiro Tanaka's stated requirement, plus a claim of needing a million GPUs in ten years at current growth. Concrete elements: roughly 2,000 H100 installed at Ishikari, 8,000 more planned by December 2027, HGX B200 ordered in unspecified quantity, and a new Hokkaido facility for around 10,800 GPUs by 2027. announced_date approximates the reporting month. Sakura is TSE-listed. [Direction corrected: the need belongs to the buyer, not to the chip vendor.]",
   "source_urls": [
    "https://www.datacenterdynamics.com/en/news/japans-sakura-internet-looks-to-buy-10000-gpus-a-year/"
   ],
@@ -1532,10 +1533,10 @@
  {
   "deal_id": "yotta-80000-gpus-fy2728-plan",
   "deal_type": "D7",
-  "from_entity": "Yotta Data Services Private Limited",
-  "to_entity": "NVIDIA Corporation",
+  "from_entity": "NVIDIA Corporation",
+  "to_entity": "Yotta Data Services Private Limited",
   "headline": "Yotta plans to scale to more than 80,000 next-generation GPUs by FY2027-28, including B200, B300, GB300 and Vera Rubin.",
-  "notes": "A plan, not an order: binding_status speculative. Current operating estate is 8,192 H100 and 1,024 L40S at NM1, so this represents roughly a tenfold increase. The '2 GW' scalability at NM2 is an aspiration with no power contract behind it in any source found. term_end 2028-03 assumes the Indian fiscal year ends in March.",
+  "notes": "A plan, not an order: binding_status speculative. Current operating estate is 8,192 H100 and 1,024 L40S at NM1, so this represents roughly a tenfold increase. The '2 GW' scalability at NM2 is an aspiration with no power contract behind it in any source found. term_end 2028-03 assumes the Indian fiscal year ends in March. [Direction corrected: the need belongs to the buyer, not to the chip vendor.]",
   "source_urls": [
    "https://www.prnewswire.com/news-releases/yotta-data-services-receives-frost--sullivans-2026-indian-company-of-the-year-recognition-for-leadership-in-sovereign-ai-infrastructure-302806131.html"
   ],

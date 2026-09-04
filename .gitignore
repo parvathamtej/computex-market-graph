@@ -5,3 +5,5 @@ __pycache__/
 build/err*.mjs
 build/shot*.mjs
 build/dbg*.mjs
+
+_to_delete/
