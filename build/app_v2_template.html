@@ -564,6 +564,10 @@ const NF = new Intl.NumberFormat("en-US");
 const nf = n => n == null ? "—" : NF.format(Math.round(n));
 const nf1 = n => n == null ? "—" : Number(n).toLocaleString("en-US",{maximumFractionDigits:1});
 const mwf = n => n == null ? "—" : (Math.abs(n) < 100 ? nf1(n) : nf(n)) + " MW";
+/* A zero is only a zero when we actually looked and found none. Where the number simply
+   was not published, say so -- "0 MW" reads as a finding and this is the absence of one. */
+const mwOr = (n, blank) => (n == null || n === 0) ? blank : mwf(n);
+const kfOr = n => (n == null || n === 0) ? "&mdash;" : kf(n);
 const kf = n => n == null ? "—" : n >= 1e6 ? (n/1e6).toFixed(1)+"M" : n >= 1e3 ? (n/1e3).toFixed(n>=1e4?0:1)+"k" : nf(n);
 const usd = v => v == null ? "—" : v >= 1e9 ? "$"+(v/1e9).toLocaleString("en-US",{maximumFractionDigits:1})+"bn"
   : v >= 1e6 ? "$"+(v/1e6).toLocaleString("en-US",{maximumFractionDigits:0})+"m" : "$"+nf(v);
@@ -1052,10 +1056,13 @@ function buildCountry(){
 function countryHover(c){
   const sites = c.sites.map(id=>SITE[id]).filter(Boolean).sort((a,b)=>(b.it_load_mw||0)-(a.it_load_mw||0)).slice(0,6);
   const dem = c.demand_deals.map(id=>DEAL[id]).filter(Boolean).sort((a,b)=>(b.mw||0)-(a.mw||0)).slice(0,5);
-  return `<b>${esc(c.country)}</b><div class="tt-sub">${mwf(c.official_live_mw??c.live_mw)} running · ${mwf(bld(c))} being built · ${mwf(c.demand_near_mw)} demand by 2028</div>
-    <div class="tt-h">Supply · top sites</div>${sites.length?sites.map(s=>`<div class="tt-row"><span>${esc(s.operator||"Undisclosed")} · ${esc(s.name)}</span><span class="tt-k">${s.it_load_mw!=null?mwf(s.it_load_mw):"n/p"}</span></div>`).join(""):'<div class="tt-sub">none found</div>'}
-    <div class="tt-h">Demand · who needs compute here</div>${dem.length?dem.map(d=>`<div class="tt-row"><span>${esc(whoName(d.to_id))}</span><span class="tt-k">${d.mw?mwf(d.mw):(d.usd_value?usd(d.usd_value):esc(String(d.quantity_raw||"").slice(0,16)))}</span></div>`).join(""):'<div class="tt-sub">nobody has stated a need here</div>'}
-    <div class="tt-sub">click for the full lists with sources</div>`;
+  const run = c.official_live_mw ?? c.live_mw, blank = c.mw_unknown_sites ? "size not published" : "none found";
+  const line = [`running ${mwOr(run, blank)}`, `being built ${mwOr(bld(c), "none found")}`,
+                `demand ${mwOr(c.demand_mw, "none stated")}`].join(" · ");
+  return `<b>${esc(c.country)}</b><div class="tt-sub">${line}</div>
+    <div class="tt-h">Biggest sites</div>${sites.length?sites.map(s=>`<div class="tt-row"><span>${esc(s.operator||"Undisclosed")} · ${esc(s.name)}</span><span class="tt-k">${s.it_load_mw!=null?mwf(s.it_load_mw):"n/p"}</span></div>`).join(""):'<div class="tt-sub">none found</div>'}
+    <div class="tt-h">Who needs compute here</div>${dem.length?dem.map(d=>`<div class="tt-row"><span>${esc(whoName(d.to_id))}</span><span class="tt-k">${d.mw?mwf(d.mw):(d.usd_value?usd(d.usd_value):esc(String(d.quantity_raw||"").slice(0,16)))}</span></div>`).join(""):'<div class="tt-sub">nobody has stated a need here</div>'}
+    <div class="tt-sub">click for the full lists and sources</div>`;
 }
 function countryPopup(c){
   const sitesHere = c.sites.map(id=>SITE[id]).filter(Boolean).sort((a,b)=>(b.it_load_mw||0)-(a.it_load_mw||0));
@@ -1066,12 +1073,15 @@ function countryPopup(c){
   const dRow = d => popRow(esc(whoName(d.to_id)), esc(d.need_plain||d.headline)+(d.by_when?" · by "+esc(d.by_when):""), d.mw?mwf(d.mw):(d.usd_value!=null?usd(d.usd_value):esc(String(d.quantity_raw||"").slice(0,18))), d);
   const cRow = d => popRow(esc(whoName(d.from_id))+" → "+esc(whoName(d.to_id)), esc(d.headline), d.usd_value!=null?usd(d.usd_value):(d.mw?mwf(d.mw):""), d);
   return `<div class="pp"><div class="pp-kind">Country</div><h3>${esc(c.country)}</h3>
-    <div class="pp-kpis"><div><b style="color:var(--good)">${kf(c.official_live_mw??c.live_mw)}</b><small>MW running</small></div><div><b style="color:var(--c-site-t)">${kf(bld(c))}</b><small>MW being built</small></div><div><b style="color:var(--c-dem-t)">${kf(c.demand_near_mw)}</b><small>MW demand by 2028</small></div></div>
-    ${c.official_uc_mw!=null?`<div class="pp-none">Being built is the market figure (${srcA({source_urls:[(CAPROW[c.country]||{}).uc_source||""]})||"source on file"}). The named sites below add up to ${mwf(c.building_mw)}; the rest is not named site by site in any public source.</div>`:""}
-    <div class="pp-h">Supply being built · ${grp("building").length}</div>${grp("building").slice(0,6).map(sRow).join("")||'<div class="pp-none">nothing under construction found</div>'}
-    <div class="pp-h">Demand · who needs compute here · ${dem.length}</div>${dem.slice(0,6).map(dRow).join("")||'<div class="pp-none">nobody has stated a need here</div>'}
-    <div class="pp-h">Supply → demand contracts · ${sup.length}</div>${sup.slice(0,5).map(cRow).join("")||'<div class="pp-none">none found</div>'}
-    <div class="pp-h">Supply running · ${grp("live").length}</div>${grp("live").slice(0,5).map(sRow).join("")||'<div class="pp-none">none verified</div>'}
+    <div class="pp-kpis">
+      <div><b style="color:var(--good)">${kfOr(c.official_live_mw??c.live_mw)}</b><small>MW running</small></div>
+      <div><b style="color:var(--c-site-t)">${kfOr(bld(c))}</b><small>MW being built</small></div>
+      <div><b style="color:var(--c-dem-t)">${kfOr(c.demand_mw)}</b><small>MW asked for</small></div></div>
+    ${c.official_uc_mw!=null?`<div class="pp-none">The being-built figure is the market total (${srcA({source_urls:[(CAPROW[c.country]||{}).uc_source||""]})||"source on file"}). Named sites below come to ${mwf(c.building_mw)}; the rest is not broken out anywhere public.</div>`:""}
+    <div class="pp-h">Being built · ${grp("building").length}</div>${grp("building").slice(0,6).map(sRow).join("")||'<div class="pp-none">nothing under construction found</div>'}
+    <div class="pp-h">Who needs compute here · ${dem.length}</div>${dem.slice(0,6).map(dRow).join("")||'<div class="pp-none">nobody has stated a need here</div>'}
+    <div class="pp-h">Contracts signed here · ${sup.length}</div>${sup.slice(0,5).map(cRow).join("")||'<div class="pp-none">none found</div>'}
+    <div class="pp-h">Already running · ${grp("live").length}</div>${grp("live").slice(0,5).map(sRow).join("")||'<div class="pp-none">none verified</div>'}
     ${c.official_source?`<div class="pp-src">Official total: ${srcA({source_urls:[c.official_source]})}</div>`:""}
     ${popFoot("country:"+c.country)}</div>`;
 }
@@ -1249,21 +1259,21 @@ function renderMarket(){
         <button data-scope="world" aria-pressed="${!n.apac}">World</button></span>
     </div>
     <div class="kpis lead">
-      ${tile("build", kf(n.building), "MW supply being built", n.apac ? "market figure, C&amp;W" : `${nf(SITES.filter(s=>bucketOf(s.status)==="building").length)} sites`)}
-      ${tile("dem", kf(n.gapMw), "MW demand waiting for supply", `${nf(n.gaps.length)} companies, no contract found`)}
+      ${tile("build", kf(n.building), "MW being built", n.apac ? "market figure, C&amp;W" : `${nf(SITES.filter(s=>bucketOf(s.status)==="building").length)} sites`)}
+      ${tile("dem", kf(n.gapMw), "MW wanted, no seller yet", `${nf(n.gaps.length)} companies, no contract found`)}
     </div>
     <div class="kpis rest">
-      ${tile("dem", kf(n.soonMw), `demand due by ${HORIZON}`)}
-      ${tile("dem", kf(n.nodateMw), "demand with no date yet")}
-      ${tile("dem", kf(n.pendingMw), "signed, not delivered")}
+      ${tile("dem", kf(n.soonMw), `wanted by ${HORIZON}`)}
+      ${tile("dem", kf(n.nodateMw), "wanted, no date given")}
+      ${tile("dem", kf(n.pendingMw), "signed, not delivered yet")}
       ${n.forSaleMw ? tile("", kf(n.forSaleMw), "looking for a buyer")
         : n.forSale.length ? tile("", nf(n.forSale.length), "reports of supply for sale")
         : tile("dim", "&mdash;", "supply for sale, none found")}
     </div>
     <div class="mstrip">
-      <span>we have dated <b>${nf(n.soon.length)}</b> of <b>${nf(n.soon.length + n.nodate.length)}</b> stated needs</span>
-      <span>supply running <b>${kf(n.running)}</b> MW, already sold</span>
-      ${(()=>{ const h=(PRICES.by_gpu||[]).find(r=>r.gpu==="H100"); return h?`<span>same H100, cheapest to dearest <b>${h.spread}×</b></span>`:""; })()}
+      <span><b>${nf(n.soon.length)}</b> of <b>${nf(n.soon.length + n.nodate.length)}</b> stated needs have a date</span>
+      <span><b>${kf(n.running)}</b> MW already running and sold</span>
+      ${(()=>{ const h=(PRICES.by_gpu||[]).find(r=>r.gpu==="H100"); return h?`<span>same H100 costs <b>${h.spread}×</b> more in the dearest city than the cheapest</span>`:""; })()}
     </div>`;
   $("sum-market").textContent = `${nf(visibleSites().length)} sites on map`;
 }

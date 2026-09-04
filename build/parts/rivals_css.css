@@ -52,14 +52,62 @@ body.tab-rivals #rivals{display:block}
 .co .fact:last-child{border-right:0}
 .co .fact .k{font-size:var(--fs-2);color:var(--t3)}
 .co .fact .v{font-size:var(--fs-3);color:var(--t1);margin-top:3px;font-weight:500;line-height:1.35}
-.co .mid{padding:16px 20px 6px}
-.co .mid h4{margin:0 0 9px;font-size:var(--fs-2);color:var(--t2);font-weight:600}
-.co ol{margin:0 0 4px;padding-left:0;list-style:none;counter-reset:st}
-.co ol li{counter-increment:st;position:relative;padding:0 0 11px 30px;font-size:var(--fs-4);line-height:1.6;color:var(--t2)}
-.co ol li::before{content:counter(st);position:absolute;left:0;top:1px;width:19px;height:19px;border-radius:50%;
-  background:var(--s3);color:var(--t3);font-family:var(--mono);font-size:var(--fs-1);display:grid;place-items:center}
-.sw2{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--bd)}
-.sw2 .c{padding:15px 20px;font-size:var(--fs-4);line-height:1.6;color:var(--t2)}
+/* Six numbered blocks per company, always in the same order, so the four can be read
+   in parallel: how it started, where the data came from, whose deals are inside, who
+   they work with, what they sell, what the market said. */
+.blk{padding:17px 20px 4px;border-top:1px solid var(--bd)}
+.blk:first-of-type{border-top:0}
+.blk h4{margin:0 0 11px;font-size:var(--fs-3);color:var(--t1);font-weight:650;display:flex;align-items:baseline;gap:9px}
+.blk h4 .bn{font-family:var(--mono);font-size:var(--fs-1);color:var(--t3);font-weight:400}
+.blk .hl{font-size:var(--fs-4);line-height:1.55;color:var(--t1);font-weight:600;margin:0 0 8px;max-width:72ch}
+.blk .bd{font-size:var(--fs-4);line-height:1.65;color:var(--t2);margin:0 0 10px;max-width:74ch}
+.blk .pl{margin:0 0 8px;padding:0;list-style:none}
+.blk .pl li{position:relative;padding:0 0 9px 15px;font-size:var(--fs-4);line-height:1.65;color:var(--t2);max-width:76ch}
+.blk .pl li::before{content:"";position:absolute;left:0;top:9px;width:5px;height:1px;background:var(--t3)}
+.blk .pl li b{color:var(--t1);font-weight:650}
+.blk q{quotes:none;font-style:italic;color:var(--t1)}
+.blk q::before{content:"\201C"} .blk q::after{content:"\201D"}
+/* who founded it */
+.ppl{display:grid;grid-template-columns:repeat(auto-fit,minmax(238px,1fr));gap:0 22px;margin:0 0 12px}
+.who1{padding:9px 0;border-top:1px solid var(--bd)}
+.who1 .wn{font-size:var(--fs-3);font-weight:650;color:var(--t1)}
+.who1 .wn span{font-weight:400;color:var(--t3);margin-left:7px;font-size:var(--fs-2)}
+.who1 p{font-size:var(--fs-3);line-height:1.55;color:var(--t2);margin:3px 0 0}
+.blk .when{font-size:var(--fs-3);color:var(--t3);margin:0 0 11px}
+/* the founding moment gets a rule, because it is the part people remember */
+.mom{border-left:2px solid var(--acct);padding:1px 0 1px 14px;margin:0 0 12px}
+.mom b{display:block;font-size:var(--fs-2);color:var(--acct);font-weight:600;margin-bottom:3px}
+.mom p{font-size:var(--fs-4);line-height:1.65;color:var(--t1);margin:0;max-width:72ch}
+/* partners: date, who, what */
+.ptbl{margin:0 0 6px}
+.prow3{display:grid;grid-template-columns:96px 168px 1fr;gap:14px;padding:9px 0;border-top:1px solid var(--bd);align-items:baseline}
+.prow3:first-child{border-top:0;padding-top:0}
+.prow3 .pd{font-family:var(--mono);font-size:var(--fs-1);color:var(--t3);white-space:nowrap}
+.prow3 .pw{font-size:var(--fs-3);font-weight:650;color:var(--t1)}
+.prow3 .pt{font-size:var(--fs-3);line-height:1.6;color:var(--t2)}
+/* products */
+.prods{display:grid;gap:0;margin:0 0 6px}
+.prod{padding:9px 0;border-top:1px solid var(--bd)}
+.prod:first-child{border-top:0;padding-top:0}
+.prod b{font-size:var(--fs-3);font-weight:650;color:var(--t1)}
+.prod p{font-size:var(--fs-3);line-height:1.6;color:var(--t2);margin:2px 0 0;max-width:78ch}
+/* an explicit correction sits apart from the ordinary criticism */
+.corr{margin:2px 20px 16px;padding:12px 14px;background:var(--s2);border-left:2px solid var(--warn);
+  border-radius:0 var(--r-sm) var(--r-sm) 0;font-size:var(--fs-3);line-height:1.65;color:var(--t2)}
+.corr b{color:var(--t1);font-weight:650}
+/* what nobody has said -- as important as what they have */
+.unk{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;padding:11px 20px 13px;border-top:1px solid var(--bd);background:var(--s2)}
+.unk b{font-size:var(--fs-2);color:var(--t3);font-weight:600;flex:none}
+.unk span{font-size:var(--fs-2);color:var(--t2);line-height:1.6}
+/* jargon: a dotted word with a plain explanation on hover, focus or tap */
+.j{border-bottom:1px dotted var(--acct);cursor:help;color:inherit}
+.j:hover,.j:focus{color:var(--t1);border-bottom-style:solid;outline:none}
+.jtip{position:fixed;z-index:2000;display:none;background:var(--s3);color:var(--t1);border:1px solid var(--bd2);
+  border-radius:var(--r-md);padding:9px 12px;font-size:var(--fs-3);line-height:1.5;box-shadow:var(--sh);
+  pointer-events:none;max-width:300px}
+.jhint{border-bottom:1px dotted var(--acct)}
+.sw2{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--bd);margin:6px -20px 0}
+.sw2 .c{padding:15px 20px 8px;font-size:var(--fs-4);line-height:1.6;color:var(--t2)}
 .sw2 .c:first-child{border-right:1px solid var(--bd)}
 .sw2 .c .k{display:flex;align-items:center;gap:6px;font-size:var(--fs-2);
   margin-bottom:7px;font-weight:600}
@@ -98,5 +146,8 @@ table.cmp td{color:var(--t2)}
 .gl div{padding:10px 0;border-bottom:1px solid var(--bd);font-size:var(--fs-4);line-height:1.55;color:var(--t2)}
 .gl div b{color:var(--t1);font-weight:650;display:block;font-size:var(--fs-3);margin-bottom:2px}
 .rvfoot{margin-top:44px;padding-top:18px;border-top:1px solid var(--bd);font-size:var(--fs-2);line-height:1.65;color:var(--t3);max-width:74ch}
-@media (max-width:860px){ .lanes,.sw2,.gl{grid-template-columns:1fr} .sw2 .c:first-child{border-right:0;border-bottom:1px solid var(--bd)}
-  .rv{padding:70px 16px 70px} .rv h1{font-size:var(--fs-7)} .tlrow .nm{width:96px;font-size:var(--fs-3)} }
+@media (max-width:860px){ .lanes,.sw2,.gl,.ppl{grid-template-columns:1fr} .sw2 .c:first-child{border-right:0;border-bottom:1px solid var(--bd)}
+  .rv{padding:70px 16px 70px} .tlrow .nm{width:96px;font-size:var(--fs-3)}
+  .prow3{grid-template-columns:1fr;gap:2px;padding:11px 0}
+  .blk,.co .top,.unk{padding-left:15px;padding-right:15px} .corr{margin-left:15px;margin-right:15px}
+  .co .fact{padding-left:15px;padding-right:15px} }
