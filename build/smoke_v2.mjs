@@ -26,6 +26,7 @@ console.log('RENDER', JSON.stringify(info, null, 1));
 await page.screenshot({ path: 'v2_home.png' });
 // open Match Board and click the first gap
 await page.click('#sec-layers summary').catch(()=>{}); await page.evaluate(()=>{document.getElementById('sec-layers').open=true}); await page.waitForTimeout(300);
+await page.click('[data-more="call"]'); await page.waitForTimeout(300);   // the list sits behind a chevron now, hidden by default
 await page.click('#match .gap'); await page.waitForTimeout(900);
 const sel1 = await page.evaluate(() => ({ hidden: document.getElementById('sel').hidden, title: document.querySelector('#sel h2')?.textContent }));
 console.log('SELECT company via match board:', JSON.stringify(sel1));
@@ -42,15 +43,13 @@ await page.evaluate(()=>{document.getElementById('sec-research').open=true; docu
 await page.click('#circles .loop'); await page.waitForTimeout(900);
 await page.screenshot({ path: 'v2_loop.png' });
 // toggle layers off/on via chips and eyes, switch status seg, theme
-await page.click('[data-layer="contracts"]'); await page.waitForTimeout(200);
-await page.click('[data-layer="capital"]'); await page.waitForTimeout(300);
+// sites, country, contracts and capital start off now; every details block starts folded
+await page.evaluate(()=>{['sites','demand','contracts','country','capital'].forEach(id=>{S.on[id]=true;rebuild(id);}); ['sites','demand','contracts','country'].forEach(id=>S.fopen[id]=true); renderAllPanels();});
+await page.waitForTimeout(400);
 await page.selectOption('select[data-f="status"]', 'live'); await page.waitForTimeout(500);
-await page.click('[data-layer="demand"]'); await page.waitForTimeout(400);
 await page.selectOption('select[data-f="dstatus"]', 'open'); await page.waitForTimeout(400);
 await page.selectOption('select[data-f="dwho"]', 'lab'); await page.waitForTimeout(400);
-await page.click('[data-layer="contracts"]'); await page.waitForTimeout(300);
 await page.selectOption('select[data-f="cstatus"]', 'pending'); await page.waitForTimeout(500);
-await page.evaluate(()=>{S.on.country=true;rebuild('country');renderAllPanels();});
 await page.selectOption('select[data-f="cmetric"]', 'all'); await page.waitForTimeout(500);
 console.log('country chips (all mode):', await page.locator('.ctrychip').count());
 console.log('rings interactive:', await page.evaluate(()=>{let n=0;G.country&&G.country.eachLayer(l=>{if(l.options&&l.options.interactive&&l.options.pane==='country')n++;});return n;}));

@@ -4,7 +4,7 @@
 # so history stopped whenever that machine was off, and the single price snapshot
 # we had was nearly lost. This runs whether anyone is awake or not, commits the
 # snapshot into the repo, and rebuilds index.html so the live site shows it.
-name: Daily inventory snapshot
+name: Daily inventory and price snapshot
 
 on:
   schedule:
@@ -34,6 +34,11 @@ jobs:
       - name: Capture marketplace inventory
         run: python3 build/capture_inventory.py
 
+      - name: Capture GPU prices (AWS, Azure, Oracle, Shadeform, Vast, RunPod)
+        run: |
+          python3 build/fetch_prices.py
+          python3 build/add_prices.py
+
       - name: Rebuild the page with the fresh snapshot
         run: |
           python3 build/assemble_v2.py
@@ -42,12 +47,13 @@ jobs:
       - name: Prune snapshots older than 180 days
         run: |
           find data/snapshots -name 'inventory_*.json' -mtime +180 -print -delete || true
+          find data/snapshots -name 'prices_*.json' -mtime +180 -print -delete || true
 
       - name: Commit if anything changed
         run: |
           git config user.name  "computex-snapshot"
           git config user.email "actions@github.com"
-          git add data/snapshots data/inventory_latest.json index.html ComputeX_Market_Graph.html
+          git add data/snapshots data/inventory_latest.json data/computex_dataset.json index.html ComputeX_Market_Graph.html
           if git diff --staged --quiet; then
             echo "nothing changed, not committing"
           else

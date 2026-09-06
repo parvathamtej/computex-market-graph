@@ -167,10 +167,16 @@ a.src{font-family:var(--mono);font-size:var(--fs-1);color:var(--acct)}
 .cl{display:flex;align-items:center;justify-content:center;border-radius:50%;color:#fff;font-weight:600;
     font-size:var(--fs-2);text-align:center;line-height:1.1;border:2px solid rgba(255,255,255,.7);
     box-shadow:0 2px 10px rgba(0,0,0,.4);font-family:var(--font)}
-.pxlabel{background:var(--glass);border:1px solid var(--c-px);color:var(--t1);border-radius:var(--r-sm);transform:translate(-50%,-50%);
+.pxlabel{background:var(--glass);border:1px solid var(--c-px);color:var(--t1);border-radius:var(--r-sm);transform:translate(-50%,10px);
   padding:3px 7px;font-family:var(--mono);font-size:var(--fs-2);white-space:nowrap;box-shadow:var(--sh);line-height:1.3}
 .pxlabel b{color:var(--c-px-t);font-weight:600}
 .pxlabel i{display:block;font-style:normal;font-size:.85em;color:var(--t3)}
+.pxlabel.dim{border-color:var(--bd2)}.pxlabel.dim b{color:var(--t2)}
+.pxtip{max-width:340px}
+.pxt{border-collapse:collapse;margin-top:6px;font-size:var(--fs-2)}
+.pxt td{padding:3px 8px 3px 0;vertical-align:top;border-top:1px solid var(--bd)}
+.pxt td.r{font-family:var(--mono);text-align:right;white-space:nowrap}
+.pxt small{display:block;color:var(--t3);font-size:.9em}
 .ctrylabel{background:none;border:0;box-shadow:none;color:var(--t1);font-weight:600;font-size:var(--fs-2);text-shadow:0 1px 3px rgba(0,0,0,.8)}
 .ctrylabel small{display:block;font-weight:400;color:var(--t2);font-family:var(--mono);font-size:var(--fs-1)}
 /* one country chip: the name never carries colour, the number always does */
@@ -218,9 +224,16 @@ a.src{font-family:var(--mono);font-size:var(--fs-1);color:var(--acct)}
 .chipb[aria-pressed="false"]{opacity:.7}
 .chipb:hover{color:var(--t1)}
 .chipb .n{font-family:var(--mono);font-size:var(--fs-1);color:var(--t3)}
-.chipb.pxchip{color:var(--c-px-t);border-color:var(--c-px)}
-.chipb.pxchip[aria-pressed="true"]{background:var(--c-px);color:#fff;border-color:var(--c-px)}
-.chipb.pxchip .ic{stroke:currentColor}
+/* the price switch: top right, in the gap beside the panel, so it is the first
+   thing on that side of the screen. One control, one job. */
+#pxbtn{position:fixed;top:14px;right:calc(var(--panel-w) + 14px);z-index:1100;display:inline-flex;align-items:center;gap:7px;
+  padding:9px 14px;border-radius:var(--r-lg);font-size:var(--fs-3);font-weight:500;cursor:pointer;
+  color:var(--c-px-t);border-color:var(--c-px);white-space:nowrap}
+#pxbtn .ic{width:15px;height:15px;stroke:currentColor}
+#pxbtn:hover{color:var(--t1)}
+#pxbtn[aria-pressed="true"]{background:var(--c-px);color:#fff;border-color:var(--c-px)}
+body.panel-closed #pxbtn{right:14px}
+body.present #pxbtn{display:none}
 
 /* ---------- right panel ---------- */
 #panel{position:fixed;top:0;right:0;bottom:0;width:var(--panel-w);z-index:1100;display:flex;flex-direction:column;
@@ -372,6 +385,11 @@ details.sec[open] summary .chev{transform:rotate(180deg)}
   #panel{transition:transform var(--dur-med) var(--ease-out)}
 }
 .eye[aria-pressed="false"]{color:var(--t3)}
+.more{width:28px;height:28px;border-radius:var(--r-sm);border:0;background:none;cursor:pointer;color:var(--t3);display:inline-flex;align-items:center;justify-content:center;padding:0}
+.more .ic{width:14px;height:14px;transition:transform var(--dur) var(--ease)}
+.more[aria-expanded="true"] .ic{transform:rotate(180deg)}
+.more:hover{background:var(--s3);color:var(--t1)}
+.lrow.off .more{visibility:hidden}
 .seg{display:flex;background:var(--s2);border:1px solid var(--bd);border-radius:var(--r-md);padding:2px;gap:2px;margin:6px 0 4px 22px}
 .seg button{flex:1;background:none;border:0;border-radius:6px;padding:5px 6px;cursor:pointer;font-size:var(--fs-2);
             color:var(--t3);font-weight:500;white-space:nowrap}
@@ -497,6 +515,13 @@ __RIVALS_CSS__
   #tabscrim{ height:calc(64px + env(safe-area-inset-top)) }
 
   #topleft{ top:calc(58px + env(safe-area-inset-top)); left:10px; right:10px; width:auto; gap:7px }
+  #search{ margin-right:54px }                       /* leaves room for the price switch */
+  #pxbtn{ top:calc(58px + env(safe-area-inset-top)); right:10px; width:46px; height:46px; padding:0; justify-content:center; border-radius:var(--r-lg) }
+  #pxbtn span{ display:none }
+  body[data-sheet="full"] #pxbtn{ display:none }   /* the sheet covers the map, the switch would float over it */
+  .pxlabel{ font-size:var(--fs-1); padding:2px 6px }
+  .pxlabel i{ max-width:150px; overflow:hidden; text-overflow:ellipsis }
+  #pxbtn .ic{ width:18px; height:18px }
   /* 16px is not a style choice: below it, iOS Safari zooms the whole page on focus
      and never zooms back out, which strands the user at 1.4x with no way home. */
   #search input{ font-size:16px; padding:12px 42px 12px 40px }
@@ -552,6 +577,7 @@ __RIVALS_CSS__
   /* ---- everything a finger has to hit is now at least 40 and mostly 44.    ---- */
   .ib{ width:44px; height:44px }
   .eye{ width:44px; height:44px }
+  .more{ width:44px; height:44px }
   .lrow{ padding:11px 0 }
   .lrow .lname{ font-size:var(--fs-4) }
   .frow{ margin:9px 0 0 }
@@ -678,7 +704,7 @@ __RIVALS_CSS__
       <summary><h2>Key</h2><span class="ssum" id="sum-key"></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
       <div class="secb" id="key-slot"></div>
     </details>
-    <details class="sec" id="sec-research">
+    <details class="sec" id="sec-research" open>
       <summary><h2>Research</h2><span class="ssum" id="sum-research"></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
       <div class="secb" style="padding:0 0 4px">
         <div id="rlayers" class="rlayers"></div>
@@ -705,6 +731,8 @@ __RIVALS_CSS__
 </aside>
 <button id="panel-tab" aria-label="Open panel"><svg class="ic" style="transform:rotate(-90deg)"><use href="#i-chev"/></svg></button>
 
+<button id="pxbtn" class="glass" data-act="prices" aria-pressed="false" title="Show the H100 price in every country">
+  <svg class="ic"><use href="#i-price"/></svg><span>Prices on the map</span></button>
 <div id="tools">
   <button class="ib" id="t-present" title="Presentation mode (P)" aria-label="Presentation mode"><svg class="ic"><use href="#i-play"/></svg></button>
   <button class="ib" id="t-apac" title="Fit Asia-Pacific (Home)" aria-label="Fit Asia-Pacific"><svg class="ic"><use href="#i-home"/></svg></button>
@@ -827,17 +855,18 @@ const LAYERS = [
    desc:"Compute somebody has and does not need. Colour says how you get it. Untick a status below to hide it."},
   {id:"demand", name:"Demand \u00b7 asking for compute", col:"--c-dem",  tcol:"--c-dem-t",  on:false,
    desc:"Everyone who has said publicly that they need compute, whether or not they have found it yet."},
-  {id:"sites",  name:"Supply \u00b7 data centres",   col:"--c-site", tcol:"--c-site-t", on:true,
+  {id:"sites",  name:"Supply \u00b7 data centres",   col:"--c-site", tcol:"--c-site-t", on:false,
    desc:"Each site. Bigger means more megawatts. Solid means running, faint means only announced."},
-  {id:"country",name:"Supply & demand by country",col:"--c-ctry",tcol:"--t2",on:true,
+  {id:"country",name:"Supply & demand by country",col:"--c-ctry",tcol:"--t2",on:false,
    desc:"One circle per country. Hover the name for who is supplying and who needs compute there."},
-  {id:"contracts",name:"Contracts to track", col:"--c-con",tcol:"--c-con-t",on:true, group:"research",
+  {id:"contracts",name:"Contracts to track", col:"--c-con",tcol:"--c-con-t",on:false, group:"research",
    desc:"One curve per signed compute contract, seller to buyer. Demand that already found a seller."},
   {id:"capital",name:"Capital \u00b7 who funds whom",col:"--c-cap",  tcol:"--c-cap-t",  on:false, group:"research", desc:"Loans, investments and guarantees. Lender to borrower."}
 ];
 const S = {
   on: Object.assign({labels:false, arclabels:true, prices:false}, Object.fromEntries(LAYERS.map(l => [l.id, l.on]))),
   xhide: {},                                   // excess statuses the user has unticked
+  fopen: {},                                   // layer rows whose details (filters, list) are shown
   siteStatus:"all",            // all | live | building | planned
   demStatus:"all",             // all | open | signed | running | plan
   conStatus:"all",             // all | pending | running | changed
@@ -925,6 +954,7 @@ map.createPane("arcs");    map.getPane("arcs").style.zIndex = 420;
 map.createPane("country"); map.getPane("country").style.zIndex = 380;
 map.createPane("demand");  map.getPane("demand").style.zIndex = 450;
 map.createPane("hi");      map.getPane("hi").style.zIndex = 470;
+map.createPane("px");      map.getPane("px").style.zIndex = 640;   /* price labels above markers, below tooltips */
 const arcSvg = L.svg({pane:"arcs", padding:.5});       // arcs, in their own pane so z-order holds
 const demSvg = L.svg({pane:"demand", padding:.5});     // demand / resale / prices
 const ctrySvg = L.svg({pane:"country", padding:.5});   // country rings
@@ -1431,32 +1461,66 @@ const AZ_REGION = {southeastasia:["Singapore",1.29,103.85], eastasia:["Hong Kong
 const ISO2 = {US:"United States",CA:"Canada",GB:"United Kingdom",DE:"Germany",FR:"France",NL:"Netherlands",PL:"Poland",CZ:"Czech Republic",BG:"Bulgaria",RO:"Romania",MD:"Moldova",NO:"Norway",SE:"Sweden",FI:"Finland",
   ES:"Spain",IT:"Italy",PT:"Portugal",CH:"Switzerland",AT:"Austria",BE:"Belgium",IE:"Ireland",UA:"Ukraine",RU:"Russia",TR:"Turkey",IL:"Israel",AE:"United Arab Emirates",SA:"Saudi Arabia",
   IN:"India",CN:"China",JP:"Japan",KR:"South Korea",TW:"Taiwan",HK:"Hong Kong",SG:"Singapore",MY:"Malaysia",ID:"Indonesia",TH:"Thailand",VN:"Vietnam",PH:"Philippines",
-  AU:"Australia",NZ:"New Zealand",BR:"Brazil",MX:"Mexico",AR:"Argentina",CL:"Chile",ZA:"South Africa",EG:"Egypt",NG:"Nigeria",KZ:"Kazakhstan",PK:"Pakistan",BD:"Bangladesh"};
+  AU:"Australia",NZ:"New Zealand",BR:"Brazil",MX:"Mexico",AR:"Argentina",CL:"Chile",ZA:"South Africa",EG:"Egypt",NG:"Nigeria",KZ:"Kazakhstan",PK:"Pakistan",BD:"Bangladesh",
+  IS:"Iceland",DK:"Denmark",EE:"Estonia",GR:"Greece",HU:"Hungary",RS:"Serbia",MK:"North Macedonia",BY:"Belarus",QA:"Qatar",OM:"Oman",BH:"Bahrain",MO:"Macau"};
 /* centroids for countries the dataset has no site in, so a price can still be placed there */
 const CENT_EXTRA = {"Czech Republic":[49.8,15.5],"Bulgaria":[42.7,25.5],"Romania":[45.9,25.0],"Moldova":[47.2,28.5],"South Africa":[-29.0,25.0],
   "Ireland":[53.2,-8.0],"Finland":[63.0,26.0],"Sweden":[62.0,15.0],"Norway":[62.0,10.0],"Spain":[40.0,-3.7],"Italy":[42.5,12.5],"Portugal":[39.5,-8.0],
   "Switzerland":[46.8,8.2],"Austria":[47.5,14.5],"Belgium":[50.6,4.5],"Ukraine":[49.0,32.0],"Turkey":[39.0,35.0],"Israel":[31.5,34.9],"Saudi Arabia":[24.0,45.0],
   "Brazil":[-10.0,-55.0],"Mexico":[23.6,-102.5],"Argentina":[-34.0,-64.0],"Chile":[-33.0,-71.0],"Egypt":[26.8,30.8],"Nigeria":[9.1,8.7],"Kazakhstan":[48.0,68.0],
-  "Pakistan":[30.4,69.3],"Bangladesh":[23.7,90.4],"Canada":[56.0,-96.0],"Netherlands":[52.1,5.3],"Poland":[52.0,19.0],"Germany":[51.2,10.4],"France":[46.6,2.2],"United Kingdom":[54.0,-2.0]};
-const AZ_CC = {southeastasia:"SG", eastasia:"HK", japaneast:"JP", koreacentral:"KR", centralindia:"IN", australiaeast:"AU"};
+  "Pakistan":[30.4,69.3],"Bangladesh":[23.7,90.4],"Iceland":[65.0,-18.5],"Denmark":[56.0,10.0],"Estonia":[58.7,25.0],"Greece":[39.0,22.0],"Hungary":[47.2,19.5],"Serbia":[44.0,21.0],"North Macedonia":[41.6,21.7],"Belarus":[53.7,28.0],"Qatar":[25.3,51.2],"Oman":[21.0,57.0],"Bahrain":[26.0,50.5],"Macau":[22.2,113.55],"New Zealand":[-41.0,174.0],"Hong Kong":[22.3,114.2],"Singapore":[1.35,103.8],"South Korea":[36.5,127.8],"Taiwan":[23.7,121.0],"Malaysia":[4.0,102.0],"Indonesia":[-2.5,118.0],"Thailand":[15.0,101.0],"Vietnam":[16.0,107.0],"Philippines":[12.5,122.0],"Australia":[-25.0,134.0],"India":[21.0,78.0],"China":[35.0,104.0],"Japan":[36.5,138.0],"United States":[39.5,-98.5],"United Arab Emirates":[24.0,54.0],"Russia":[60.0,90.0],"Israel":[31.5,34.9],"Canada":[56.0,-96.0],"Netherlands":[52.1,5.3],"Poland":[52.0,19.0],"Germany":[51.2,10.4],"France":[46.6,2.2],"United Kingdom":[54.0,-2.0]};
+const KIND_TXT = {list:"cloud list price", ask:"marketplace ask"};
 function buildPrices(){
+  /* One label per country. The big number is the cheapest H100-class price we
+     found there, and the small line says who charges it, because $1.66 from a
+     hobbyist host and $8.60 from Amazon are not the same thing. */
   const g = L.layerGroup();
-  const vast = INV && (INV.venues||[]).find(v => v.venue === "Vast.ai");
-  const h = (vast && vast.h100_by_country) || {};
-  const az = (PRICES.azure_apac_regional||[]).find(r => /H100/.test(r.sku)) || {};
-  const azByCC = {}; Object.entries(az.regions||{}).forEach(([reg, p]) => { if (AZ_CC[reg]) azByCC[AZ_CC[reg]] = p; });
-  const ccs = new Set([...Object.keys(h), ...Object.keys(azByCC)]);
+  const board = PRICES.h100_by_country || {}, fb = PRICES.fallback_by_country || {};
+  const ccs = new Set([...Object.keys(board), ...Object.keys(fb)]);
   ccs.forEach(cc => {
     const name = ISO2[cc]; if (!name) return;
     const c = DATA.centroids[name] || (CENT_EXTRA[name] ? {lat:CENT_EXTRA[name][0], lng:CENT_EXTRA[name][1]} : null); if (!c) return;
-    const m = h[cc], a = azByCC[cc];
-    const html = `<div class="pxlabel"><b>${m ? "$"+m.usd_med.toFixed(2) : "\u2014"}</b>/hr H100${m ? `<i>${nf(m.n)} offer${m.n>1?"s":""}</i>` : ""}${a ? `<i>Azure $${a.toFixed(2)}</i>` : ""}</div>`;
-    const lab = L.marker([c.lat, c.lng], {pane:"markerPane", interactive:true, icon:L.divIcon({className:"", iconSize:null, iconAnchor:[0,0], html})});
-    lab.bindTooltip(`<b>${esc(name)}</b><div class="tt-sub">${m ? "Median asking price for an H100, per GPU hour, from "+nf(m.n)+" marketplace offer"+(m.n>1?"s":"")+", counted "+esc(agoTxt(INV.captured_at)) : "No marketplace H100 offers here"}${a ? "<br>Azure list price for its H100 machine in this region: $"+a.toFixed(2)+"/GPU-hr" : ""}</div>`, {direction:"top", offset:[0,-6]});
+    const b = board[cc], f = fb[cc];
+    let html, tip, rank;
+    if (b) {
+      const lo = b.rows[0];
+      const who = lo.who === "Vast.ai hosts" ? "Vast.ai hosts" : lo.who.replace(" via Shadeform", "");
+      html = `<div class="pxlabel"><b>$${lo.usd.toFixed(2)}</b>/hr ${esc(lo.gpu)}<i>${b.n > 1 ? "from " + nf(b.n) + " sellers, lowest " + esc(who) : esc(who) + " list price"}</i></div>`;
+      tip = `<b>${esc(name)}</b><div class="tt-sub">Price per GPU hour, cheapest first</div>` +
+        `<table class="pxt">${b.rows.map(r => `<tr><td>${esc(r.who)}<small>${esc(r.where)}${r.n ? " \u00b7 " + nf(r.n) + " offers" : ""}</small></td><td>${esc(r.gpu)}</td><td class="r">$${r.usd.toFixed(2)}</td><td><small>${KIND_TXT[r.kind]||""}</small></td></tr>`).join("")}</table>` +
+        `<div class="tt-sub" style="margin-top:6px">${PRICES.oci_h100_usd ? "Oracle lists H100 at $" + PRICES.oci_h100_usd.toFixed(2) + " in every region it sells it. " : ""}Read ${esc((PRICES.captured_at_utc||"").slice(0,10))}.</div>`;
+      rank = 100 + b.n;
+    } else {
+      html = `<div class="pxlabel dim"><b>$${f.usd.toFixed(2)}</b>/hr ${esc(f.gpu)}<i>no H100 listed here</i></div>`;
+      tip = `<b>${esc(name)}</b><div class="tt-sub">No H100 or H200 on sale here from any source we read. The commonest card on Vast.ai here is the ${esc(f.gpu)}: median ask $${f.usd.toFixed(2)}/hr from ${nf(f.n)} offers.</div>`;
+      rank = 1;
+    }
+    const lab = L.marker([c.lat, c.lng], {pane:"px", interactive:true, icon:L.divIcon({className:"", iconSize:null, iconAnchor:[0,0], html})});
+    lab._pxrank = rank;
+    lab.bindTooltip(tip, {direction:"auto", offset:[10,14], className:"pxtip"});
     g.addLayer(lab);
   });
+  g.on("add", () => setTimeout(declutterPrices, 0));
   return g;
-}function rebuild(id){
+}
+/* Labels that would sit on top of each other: keep the one with more sellers,
+   hide the other until the map is zoomed in enough for both to fit. */
+function declutterPrices(){
+  const g = G.prices; if (!g) return;
+  const kept = [];
+  const ms = []; g.eachLayer(m => ms.push(m));
+  ms.sort((a, b) => b._pxrank - a._pxrank);
+  ms.forEach(m => {
+    const el = m.getElement(); if (!el) return;
+    const p = map.latLngToContainerPoint(m.getLatLng());
+    const w = (el.firstElementChild ? el.firstElementChild.offsetWidth : 90) || 90, h = 34;
+    const box = {x1:p.x - w/2, x2:p.x + w/2, y1:p.y + 10, y2:p.y + 10 + h};
+    const hit = kept.some(k => box.x1 < k.x2 && box.x2 > k.x1 && box.y1 < k.y2 && box.y2 > k.y1);
+    el.style.display = hit ? "none" : "";
+    if (!hit) kept.push(box);
+  });
+}
+function rebuild(id){
   if (G[id]) { map.removeLayer(G[id]); delete G[id]; }
   if (!S.on[id]) {
     if (id === "contracts") rebuildArcLabels();
@@ -1540,24 +1604,27 @@ function counts(){
     demand: DEMAND.filter(g=>g.loc&&demandVisible(g)).length, call: DEMAND.filter(g=>g.loc&&hasGap(g.entity_id)).length,
     contracts: CONTRACTS.filter(conVisible).length,
     capital: CAPITAL.filter(d=>d.ends).length, offload: OFFLOADS.filter(d=>d.loc && !S.xhide[d.open_status||"available_now"]).length,
-    prices: (PRICES.azure_apac_regional||[]).length?6:0};
+    prices: Object.keys(PRICES.h100_by_country||{}).length};
 }
 const fsel = (f, label, opts, cur, n) => `<div class="frow"><span class="fl">${label}</span>
   <select data-f="${f}" aria-label="${label}">${opts.map(([k,t])=>`<option value="${k}"${cur===k?" selected":""}>${t}</option>`).join("")}</select>
   <span class="fn">${n==null?"":nf(n)}</span></div>`;
 const fchk = (id, on, label) => `<div class="frow"><label style="display:flex;align-items:center;gap:7px;cursor:pointer;font-size:var(--fs-2);color:var(--t3)">
   <input type="checkbox" id="${id}"${on?" checked":""} style="accent-color:var(--acc)"><span>${label}</span></label></div>`;
+/* layers whose row can open a details block (filters, tick boxes, a ranked list) */
+const DETAILED = ["country","sites","demand","contracts","offload","call"];
 function renderLayers(){
   const c = counts();
   const rowOf = l => `
-    <div class="lrow${S.on[l.id]?"":" off"}${S.on[l.id]&&["sites","demand","contracts","offload","call"].includes(l.id)?" hasf":""}" data-lrow="${l.id}">
+    <div class="lrow${S.on[l.id]?"":" off"}${S.on[l.id]&&S.fopen[l.id]&&DETAILED.includes(l.id)?" hasf":""}" data-lrow="${l.id}">
       ${l.col?`<span class="sw" style="background:var(${l.col})"></span>`:`<span class="sw" style="background:none;border:1px solid var(--bd2)"></span>`}
       <span class="lname" title="${esc(l.desc)}">${esc(l.name)}</span>
       <span class="ln">${nf(c[l.id])}</span>
+      ${DETAILED.includes(l.id)?`<button class="more" data-more="${l.id}" aria-expanded="${!!S.fopen[l.id]}" aria-label="${S.fopen[l.id]?"Hide":"Show"} details for ${esc(l.name)}" title="${S.fopen[l.id]?"Hide details":"Show details"}"><svg class="ic"><use href="#i-chev"/></svg></button>`:""}
       <button class="eye" data-layer="${l.id}" aria-pressed="${S.on[l.id]}" aria-label="Toggle ${esc(l.name)}">
         <svg class="ic"><use href="${S.on[l.id]?"#i-eye":"#i-eyeoff"}"/></svg></button>
     </div>
-    ${!S.on[l.id]||!["country","sites","demand","contracts","offload","call"].includes(l.id)?"":`<div class="fgrp" style="border-left-color:var(${l.col})">`+(
+    ${!S.on[l.id]||!S.fopen[l.id]||!DETAILED.includes(l.id)?"":`<div class="fgrp" style="border-left-color:var(${l.col})">`+(
       l.id==="country"?fsel("cmetric","Show",[["all","All — supply and demand"],["building","Being built"],["running","Running now"],["demand","Demand by 2028"]],S.ctryMetric,c.country)
     : l.id==="sites"?fsel("status","Show",[["all","All sites"],["live","Running now"],["building","Being built"],["planned","Only announced"]],S.siteStatus,c.sites)
         +fchk("siteNames",S.on.labels,"Name the biggest sites")
@@ -1583,9 +1650,8 @@ function renderLayers(){
   renderChips();
 }
 function renderChips(){
-  /* the price toggle sits first in the chip row, the first thing under the search box */
-  $("chips").innerHTML = `<button class="chipb glass pxchip" data-act="prices" aria-pressed="${!!S.on.prices}"><svg class="ic" style="width:13px;height:13px"><use href="#i-price"/></svg>Prices on the map</button>` +
-    LAYERS.filter(l => ["call","offload","demand","sites"].includes(l.id)).map(l =>
+  $("pxbtn").setAttribute("aria-pressed", String(!!S.on.prices));
+  $("chips").innerHTML = LAYERS.filter(l => ["call","offload","demand","sites"].includes(l.id)).map(l =>
     `<button class="chipb glass" data-chip="${l.id}" aria-pressed="${S.on[l.id]}"><span class="sw" style="background:var(${l.col})"></span>${esc(l.name)}</button>`).join("");
 }
 
@@ -1661,7 +1727,7 @@ function renderPrices(){
       <div class="track"><div class="rng" style="left:${r.min/max*100}%;width:${Math.max((r.max-r.min)/max*100,1)}%"></div>
       <div class="med" style="left:calc(${r.median/max*100}% - 4px)" title="Median (the middle offer): $${r.median.toFixed(2)}/hr"></div></div>
       <div class="pv">$${r.min.toFixed(2)}–${r.max.toFixed(2)}<small>mid $${r.median.toFixed(2)}</small></div></div>`).join("") +
-    `<p class="hint">Turn on <b>Price by city</b> to see one Azure machine priced in six Asian cities.</p>`;
+    `<p class="hint">The <b>Prices on the map</b> switch at the top right puts the cheapest H100 price on every country, from Amazon, Microsoft, Oracle, Shadeform's clouds and Vast.ai hosts.</p>`;
   const h = rows.find(r=>r.gpu==="H100"); $("sum-prices").textContent = h ? `H100 ${h.spread}×` : "";
 }
 /* ============ panel: live vs planned ============ */
@@ -1957,8 +2023,9 @@ function renderLegend(){
     row(dot("border:2px dashed var(--c-off)"),"<b>Listed for rent</b> on a marketplace"),
     row(dot("border:2px dashed var(--t3);opacity:.6"),"<b>Hollow grey</b> \u2014 gone (someone else took it), shelved (owner stopped it) or announced but not open")]));
 
-  if (S.on.prices) out.push(sec("--c-px","Price by city",c.prices,[
-    row(dot("background:var(--c-px);border-color:var(--c-px-t)"),"One Azure machine, price per hour. Bigger = dearer.")]));
+  if (S.on.prices) out.push(sec("--c-px","Prices",c.prices,[
+    row(dot("background:var(--c-px);border-color:var(--c-px-t)"),"Cheapest H100 or H200 per GPU hour in that country. Hover for every seller."),
+    row(dot("border:1px solid var(--bd2)"),"Grey: no H100 on sale there; the number is the commonest card on Vast.ai")]));
 
   const circleOn = ["country","sites","demand","call","offload","prices"].some(k => S.on[k]);
   $("legend").className = S.legendDetail ? "glass detail" : "glass";
@@ -2130,6 +2197,7 @@ function setTheme(t){ S.theme=t; document.documentElement.dataset.theme=t; try{l
 function setPresent(on){ S.present=on; document.body.classList.toggle("present",on); setTimeout(()=>map.invalidateSize(),50); }
 document.addEventListener("click", ev => {
   const t = ev.target;
+  const more = t.closest("[data-more]"); if (more){ const id=more.dataset.more; S.fopen[id]=!S.fopen[id]; renderLayers(); return; }
   const eye = t.closest("[data-layer]"); if (eye){ const id=eye.dataset.layer; S.on[id]=!S.on[id]; rebuild(id); if (id==="call" && S.on.demand) rebuild("demand"); renderLayers(); renderLegend(); renderPill(); writeHash(); return; }
   const ds = t.closest("[data-dstatus]"); if (ds){ S.demStatus=ds.dataset.dstatus; rebuild("demand"); renderLayers(); renderMatch(); renderPill(); writeHash(); return; }
   const dw = t.closest("[data-dwho]"); if (dw){ S.demWho=dw.dataset.dwho; rebuild("demand"); renderLayers(); renderMatch(); renderPill(); writeHash(); return; }
@@ -2186,7 +2254,7 @@ document.addEventListener("keydown", e => {
   if (e.key.toLowerCase()==="h") fitApac();
 });
 map.on("zoomend", () => { Object.values(MK.sites).forEach(m => m.setRadius(siteRadius(m.options.mw, map.getZoom()))); });
-map.on("moveend", () => { rebuildArcLabels(); rebuildCountryLabels(); });
+map.on("moveend", () => { rebuildArcLabels(); rebuildCountryLabels(); declutterPrices(); });
 map.on("zoomend", () => { syncCountryZoom(); rebuildCountryLabels(); });
 function fitApac(){ const pts = SITES.filter(s=>s.lat!=null&&APAC.has(s.country)).map(s=>[s.lat,s.lng]); if (pts.length) map.fitBounds(L.latLngBounds(pts).pad(.08)); else map.setView([8,105],3); }
 function fitAll(){ const pts = SITES.filter(s=>s.lat!=null).map(s=>[s.lat,s.lng]); if (pts.length) map.fitBounds(L.latLngBounds(pts).pad(.05)); }
