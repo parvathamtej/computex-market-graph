@@ -721,6 +721,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   --c-off:#CC5555;   --c-off-t:#F08A8A;
   --c-px:#3390CC;    --c-px-t:#75BDF0;
   --c-ctry:#6B7A8C;
+  --x-call:#E05555; --x-court:#E09A2E; --x-gov:#5AA9DC;   /* excess: how you get it */
   --acc:#E3E7ED; --acct:#AFBACA; --acc-ink:#11151B;   /* chrome is achromatic: colour is reserved for data */
   --good:#4CC08A; --warn:#E0A227;
   color-scheme:dark;
@@ -734,7 +735,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   --sh:0 10px 30px rgba(20,30,40,.14), 0 1px 2px rgba(20,30,40,.10);
   --c-site:#0F7F71; --c-site-t:#0B6B5F; --c-dem:#9A6E0E; --c-dem-t:#7E5A0B;
   --c-con:#C22B78; --c-con-t:#A0205F; --c-cap:#6A55C9; --c-cap-t:#5442A6;
-  --c-off:#C13F3F; --c-off-t:#A03030; --c-px:#2076B0; --c-px-t:#185E8E; --c-ctry:#7A8896;
+  --c-off:#C13F3F; --c-off-t:#A03030; --x-call:#C13F3F; --x-court:#B8721A; --x-gov:#2A7DB0; --c-px:#2076B0; --c-px-t:#185E8E; --c-ctry:#7A8896;
   --acc:#2B3440; --acct:#3E4A5A; --acc-ink:#FFFFFF;
   --good:#1E7F55; --warn:#9A6E0E; color-scheme:light;
 }
@@ -808,7 +809,7 @@ body.map-light .arclab{background:rgba(255,255,255,.94);color:#141A21}
   background:var(--s1);border:1px solid var(--bd2);color:var(--t3);font-size:var(--fs-1);line-height:17px;
   text-align:center;cursor:pointer;box-shadow:var(--sh-sm,0 1px 3px rgba(0,0,0,.35));
   transition:background var(--dur-fast) var(--ease-out),color var(--dur-fast) var(--ease-out)}
-.cl-list:hover{background:var(--acc);color:#fff;border-color:var(--acc)}
+.cl-list:hover{background:var(--acc);color:var(--acc-ink);border-color:var(--acc)}
 .cl-n{position:absolute;left:-3px;top:-3px;min-width:17px;height:17px;padding:0 4px;border-radius:9px;
   background:var(--s1);border:1px solid var(--bd2);color:var(--t3);font-family:var(--mono);font-size:var(--fs-1);
   line-height:15px;text-align:center;pointer-events:none}
@@ -963,7 +964,7 @@ body:not(.mob) #sec-key{display:none}
 .btn{flex:1;padding:8px 10px;border-radius:var(--r-md);border:1px solid var(--bd2);background:var(--s3);cursor:pointer;
      font-size:var(--fs-3);font-weight:500;color:var(--t1);text-align:center}
 .btn:hover{border-color:var(--acct)}
-.btn.primary{background:var(--acc);border-color:var(--acc);color:#fff}
+.btn.primary{background:var(--acc);border-color:var(--acc);color:var(--acc-ink);font-weight:600}
 .srcs{margin:0;padding:0;list-style:none}
 .srcs li{font-size:var(--fs-2);padding:4px 0;word-break:break-all;line-height:1.35}
 .dash{color:var(--t3)}
@@ -1096,7 +1097,7 @@ table.ct td.n{color:var(--t1);font-weight:500}
 body.panel-closed #tools{right:14px}
 #tools .ib{width:38px;height:38px;border-radius:var(--r-md);background:var(--glass);border:1px solid var(--glass-bd);
   color:var(--t1);box-shadow:var(--sh);backdrop-filter:blur(14px)}
-#tools .ib[aria-pressed="true"]{background:var(--acc);border-color:var(--acc);color:#fff}
+#tools .ib[aria-pressed="true"]{background:var(--acc);border-color:var(--acc);color:var(--acc-ink)}
 #legend{position:fixed;left:14px;bottom:44px;z-index:1050;border-radius:var(--r-lg);padding:12px 14px;
   max-height:min(62vh,520px);overflow:auto;max-width:300px;
         width:250px;font-size:var(--fs-3);color:var(--t2)}
@@ -3290,12 +3291,19 @@ const DEM = {}; DEMAND.forEach(r => DEM[r.entity_id] = r);
 
 /* ============ layers vocabulary ============ */
 const LAYERS = [
-  {id:"country",name:"Supply & demand by country",col:"--c-ctry",tcol:"--t2",on:true, desc:"One circle per country. Hover the name for who is supplying and who needs compute there."},
-  {id:"sites",  name:"Supply · data centres",   col:"--c-site", tcol:"--c-site-t", on:true,  desc:"Each site. Bigger means more megawatts. Solid means running, faint means only announced."},
-  {id:"demand", name:"Demand · companies",       col:"--c-dem",  tcol:"--c-dem-t",  on:true,  desc:"Every company that has said it needs compute or has bought it. Bigger means more."},
-  {id:"contracts",name:"Contracts · who buys from whom",col:"--c-con",tcol:"--c-con-t",on:true,  desc:"One curve per compute contract, drawn from the seller to the buyer. Thicker means a bigger deal."},
-  {id:"capital",name:"Capital · who funds whom",col:"--c-cap",  tcol:"--c-cap-t",  on:false, desc:"Loans, investments and guarantees. Lender to borrower."},
-  {id:"offload",name:"Excess compute",          col:"--c-off",  tcol:"--c-off-t",  on:false, desc:"Compute somebody has and does not need: released, for sale, or listed on a marketplace."},
+  {id:"call",   name:"Who to call \u00b7 need compute, no seller yet", col:"--c-dem", tcol:"--c-dem-t", on:true,
+   desc:"Companies that said they need compute and where we found no contract. These are the people to phone."},
+  {id:"offload",name:"Excess compute we could buy", col:"--c-off",  tcol:"--c-off-t",  on:true,
+   desc:"Compute somebody has and does not need. Colour says how you get it: call them, a court sale, or a government programme."},
+  {id:"demand", name:"Demand \u00b7 asking for compute", col:"--c-dem",  tcol:"--c-dem-t",  on:false,
+   desc:"Everyone who has said publicly that they need compute, whether or not they have found it yet."},
+  {id:"contracts",name:"Demand \u00b7 buying compute (contracts)", col:"--c-con",tcol:"--c-con-t",on:true,
+   desc:"One curve per signed compute contract, seller to buyer. This is demand that already found a seller."},
+  {id:"sites",  name:"Supply \u00b7 data centres",   col:"--c-site", tcol:"--c-site-t", on:true,
+   desc:"Each site. Bigger means more megawatts. Solid means running, faint means only announced."},
+  {id:"country",name:"Supply & demand by country",col:"--c-ctry",tcol:"--t2",on:true,
+   desc:"One circle per country. Hover the name for who is supplying and who needs compute there."},
+  {id:"capital",name:"Capital \u00b7 who funds whom",col:"--c-cap",  tcol:"--c-cap-t",  on:false, desc:"Loans, investments and guarantees. Lender to borrower."},
   {id:"prices", name:"Price by city",           col:"--c-px",   tcol:"--c-px-t",   on:false, desc:"The same Azure machine, priced per hour in six Asian cities."}
 ];
 const S = {
@@ -3420,7 +3428,7 @@ function openPopup(latlng, html){
 const popRow = (title, sub, val, r) => `<div class="prow2"><div class="pr-l"><b>${title}</b>${sub?`<small>${sub}</small>`:""}${r?`<div class="pr-src">${srcA(r)}</div>`:""}</div><div class="pr-v">${val||""}</div></div>`;
 const popFoot = (selId, r) => `<div class="pr-btns"><button class="btn primary" data-sel="${esc(selId)}">Full details</button>${(r&&(r.source_urls||[])[0])?`<a class="btn" href="${esc(r.source_urls[0])}" target="_blank" rel="noopener">Source ↗</a>`:""}</div>`;
 const G = {};   // layer groups by id
-const MK = {sites:{}, demand:{}, contracts:{}, capital:{}, offload:{}};   // id -> marker
+const MK = {sites:{}, demand:{}, call:{}, contracts:{}, capital:{}, offload:{}};   // id -> marker
 const STATUS_FILL = {live:.88, under_construction:.62, phased:.62, permitted:.42, announced:.34, cancelled:.18};
 const lightMap = () => S.base === "light" || S.base === "sat";
 const inkOn = () => lightMap() ? "#1B222B" : "#FFFFFF";      // the hairline that guarantees an edge
@@ -3533,7 +3541,7 @@ function clusterList(key, cl){
   if (key === "offload") {
     const rows = ms.map(m => OFF[m.options.did]).filter(Boolean).sort((a,b) => (b.mw||0)-(a.mw||0));
     const mw = rows.reduce((a,d) => a + (d.mw||0), 0);
-    return `<div class="pp"><div class="pp-kind" style="color:var(--c-off-t)">Supply for sale &middot; ${rows.length} here</div>
+    return `<div class="pp"><div class="pp-kind" style="color:var(--c-off-t)">Excess compute &middot; ${rows.length} here</div>
       <h3>Compute looking for a buyer</h3>
       <div class="pp-sub">Holders trying to place capacity they already own. Each row links to its source.</div>
       ${mw?`<div class="pp-kpis"><div><b style="color:var(--c-off-t)">${mwf(mw)}</b><small>where a size is published</small></div>
@@ -3743,12 +3751,32 @@ function countryPopup(c){
     ${c.official_source?`<div class="pp-src">Official total: ${srcA({source_urls:[c.official_source]})}</div>`:""}
     ${popFoot("country:"+c.country)}</div>`;
 }
+const hasGap = eid => DATA.demand_gaps.some(gp => gp.entity_id === eid);
+function buildCall(){
+  const g = makeCluster("call", "--c-dem-t", [500, 3000],
+    (n, v) => `<b>${nf(n)} compan${n>1?"ies":"y"} to call</b><div class="tt-k">${v?mwf(v)+" still open between them":"amounts not published"}</div>`);
+  const max = Math.max(...DEMAND.map(x=>x.size_mw||0), 1);
+  DEMAND.forEach(x => {
+    if (!x.loc || !hasGap(x.entity_id)) return;
+    const gap = DATA.demand_gaps.find(gp=>gp.entity_id===x.entity_id);
+    const r = (7 + Math.sqrt((x.size_mw||1)/max) * 26) * S.scale;
+    const m = L.circleMarker(x.loc, {pane:"demand", renderer:demSvg, val:gap.gap_mw||0, eid:x.entity_id, radius:r,
+      color:cssv("--c-dem-t"), weight:3, opacity:1, fillColor:cssv("--c-dem"), fillOpacity:.85});
+    const l = x.latest;
+    m.bindTooltip(`<b>Call \u00b7 ${esc(x.name)}</b><div class="tt-sub">${esc((l&&(l.need_plain||l.headline))||"")}</div>
+      <div class="tt-k">${mwf(gap.gap_mw)} still open</div>${l?srcA(l,true):""}<div class="tt-sub">click for every need with its source</div>`,{direction:"top",offset:[0,-r],className:"tt-wide"});
+    m.on("click", () => openPopup(x.loc, demandPopup(x)));
+    MK.call[x.entity_id] = m; g.addLayer(m);
+  });
+  return g;
+}
 function buildDemand(){
   const g = makeCluster("demand", "--c-dem-t", [500, 3000],
     (n, v) => `<b>${nf(n)} compan${n>1?"ies":"y"} needing compute</b><div class="tt-k">${v?mwf(v)+" between them":"amounts not published"}</div>`);
   const max = Math.max(...DEMAND.map(x=>x.size_mw||0), 1);
   DEMAND.forEach(x => {
     if (!x.loc || !demandVisible(x)) return;
+    if (S.on.call && hasGap(x.entity_id)) return;      // already drawn by the Who-to-call layer
     const r = (7 + Math.sqrt((x.size_mw||1)/max) * 26) * S.scale;
     const gap = DATA.demand_gaps.find(gp=>gp.entity_id===x.entity_id);
     const m = L.circleMarker(x.loc, {pane:"demand", renderer:demSvg, val:x.size_mw||0, eid:x.entity_id, radius:r,
@@ -3821,7 +3849,7 @@ function rebuildArcLabels(){
   ARCLAB.addTo(map);
 }
 function offloadPopup(d){
-  return `<div class="pp"><div class="pp-kind" style="color:var(--c-off-t)">Supply for sale</div>
+  return `<div class="pp"><div class="pp-kind" style="color:var(--c-off-t)">Excess compute</div>
     <h3>${esc(whoName(d.from_id))}</h3>
     <div class="pp-sub">${esc((d.map_countries||[]).join(", ")||"market not stated")}</div>
     ${popRow("What is on offer", esc(d.headline), d.mw?mwf(d.mw):(d.quantity_raw?esc(String(d.quantity_raw).slice(0,40)):'<span class="dash">size not published</span>'))}
@@ -3835,13 +3863,31 @@ function buildOffload(){
     (n, v) => `<b>${nf(n)} resale offer${n>1?"s":""} here</b><div class="tt-k">${v?mwf(v)+" between them":"sizes not published"}</div>`);
   OFFLOADS.forEach(d => {
     if (!d.loc) return;
-    const m = L.circleMarker(d.loc, {pane:"demand", renderer:demSvg, val:d.mw||0, did:d.deal_id, radius:9,
-      color:inkOn(), weight:2, opacity:.9, fillColor:cssv("--c-off"), fillOpacity:.7, dashArray:"2 3"});
-    m.bindTooltip(`<b>Supply for sale · ${esc(whoName(d.from_id))}</b><div class="tt-sub">${esc(d.headline)}</div><div class="tt-k">${d.usd_value?usd(d.usd_value):""}${d.mw?" · "+mwf(d.mw):""}</div>${srcA(d,true)}`,{direction:"top",offset:[0,-9],className:"tt-wide"});
+    const x = xStyle(d);
+    const m = L.circleMarker(d.loc, {pane:"demand", renderer:demSvg, val:d.mw||0, did:d.deal_id, radius:x.fill>.5?10:8,
+      color:x.fill>.5?inkOn():x.col, weight:2, opacity:.9, fillColor:x.col, fillOpacity:x.fill, dashArray:x.dash});
+    m.bindTooltip(`<b>${esc(x.label)} · ${esc(whoName(d.from_id))}</b><div class="tt-sub">${esc(d.headline)}</div><div class="tt-k">${d.usd_value?usd(d.usd_value):""}${d.mw?" · "+mwf(d.mw):""}</div>${srcA(d,true)}`,{direction:"top",offset:[0,-9],className:"tt-wide"});
     m.on("click", () => openPopup(d.loc, offloadPopup(d)));
     MK.offload[d.deal_id] = m; g.addLayer(m);
   });
   return g;
+}
+/* One colour per way in. Anything you cannot act on today is hollow and grey, so the
+   map never shows a spoken-for or shelved block as if it were a lead. */
+const XROUTE = {
+  "enterprise sales contact": ["--x-call",  "Call them"],
+  "direct":                   ["--x-call",  "Call them"],
+  "broker":                   ["--x-call",  "Call them"],
+  "auction or court process": ["--x-court", "Court sale"],
+  "government tender":        ["--x-gov",   "Government programme"],
+};
+function xStyle(d){
+  const open = d.open_status === "available_now" || (!d.open_status && d.status !== "cancelled");
+  const r = XROUTE[d.how_to_buy];
+  if (open && r) return {col: cssv(r[0]), fill: .85, dash: null, label: r[1]};
+  if (open)      return {col: cssv("--c-off"), fill: .7, dash: "2 3", label: "Listed for rent"};
+  const lab = d.open_status === "already_taken" ? "Gone" : d.open_status === "announced_not_open" ? "Announced, not open" : "Shelved";
+  return {col: cssv("--t3"), fill: .12, dash: "3 3", label: lab};
 }
 const AZ_REGION = {southeastasia:["Singapore",1.29,103.85], eastasia:["Hong Kong",22.32,114.17], japaneast:["Tokyo",35.68,139.69],
   koreacentral:["Seoul",37.57,126.98], centralindia:["Pune",18.52,73.86], australiaeast:["Sydney",-33.87,151.21]};
@@ -3869,7 +3915,7 @@ function rebuild(id){
     return;
   }
   Object.keys(MK[id]||{}).forEach(k => delete MK[id][k]);
-  G[id] = id==="sites" ? buildSites() : id==="country" ? buildCountry() : id==="demand" ? buildDemand()
+  G[id] = id==="sites" ? buildSites() : id==="country" ? buildCountry() : id==="demand" ? buildDemand() : id==="call" ? buildCall()
         : id==="contracts" ? buildArcs(CONTRACTS.filter(conVisible),"contracts","--c-con",false,.18)
         : id==="capital"   ? buildArcs(CAPITAL,"capital","--c-cap",true,-.18)
         : id==="offload"   ? buildOffload() : id==="prices" ? buildPrices() : null;
@@ -3927,7 +3973,7 @@ function renderMarket(){
     <div class="kpis four">
       ${tile("build", kf(n.building), "MW", "Being built", n.apac ? "market total" : `${nf(SITES.filter(s=>bucketOf(s.status)==="building").length)} sites`)}
       ${tile("dem", kf(askedMw), "MW", "Asked for now", `${nf(n.gaps.length)} companies still need a seller`)}
-      ${tile("off", excessMw ? kf(excessMw) : nf(openNow.length), excessMw ? "MW" : "open", "Excess out there", `${nf(openNow.length)} open now${excessGpus ? ` · ${nf(excessGpus)} GPUs free on marketplaces` : ""}`)}
+      ${tile("off", excessMw ? kf(excessMw) : nf(openNow.length), excessMw ? "MW" : "open", "Excess we could buy", `${nf(openNow.length)} open now${excessGpus ? ` · ${nf(excessGpus)} GPUs free on marketplaces` : ""}`)}
       ${tile("live", kf(n.running), "MW", "Running now", n.apac ? "market total, already sold" : "our named sites only")}
     </div>`;
   $("sum-market").textContent = `${nf(visibleSites().length)} sites on map`;
@@ -3935,7 +3981,8 @@ function renderMarket(){
 /* ============ panel: layers ============ */
 function counts(){
   return {sites: visibleSites().length, country: CTRY.length,
-    demand: DEMAND.filter(g=>g.loc&&demandVisible(g)).length, contracts: CONTRACTS.filter(conVisible).length,
+    demand: DEMAND.filter(g=>g.loc&&demandVisible(g)).length, call: DEMAND.filter(g=>g.loc&&hasGap(g.entity_id)).length,
+    contracts: CONTRACTS.filter(conVisible).length,
     capital: CAPITAL.filter(d=>d.ends).length, offload: OFFLOADS.filter(d=>d.loc).length,
     prices: (PRICES.azure_apac_regional||[]).length?6:0};
 }
@@ -3971,7 +4018,7 @@ function renderLayers(){
   renderChips();
 }
 function renderChips(){
-  $("chips").innerHTML = LAYERS.filter(l => ["sites","demand","contracts","capital","offload","prices"].includes(l.id)).map(l =>
+  $("chips").innerHTML = LAYERS.filter(l => ["call","offload","demand","contracts","sites","capital","prices"].includes(l.id)).map(l =>
     `<button class="chipb glass" data-chip="${l.id}" aria-pressed="${S.on[l.id]}"><span class="sw" style="background:var(${l.col})"></span>${esc(l.name)}</button>`).join("");
 }
 
@@ -4919,13 +4966,19 @@ function renderLegend(){
   if (S.on.capital) out.push(sec("--c-cap","Capital",c.capital,[
     row(line("border-color:var(--c-cap);border-top-style:dashed")+`<span class="edot" style="background:var(--c-cap)"></span>`,"Loan, investment or guarantee, <b>lender → borrower</b>")]));
 
-  if (S.on.offload) out.push(sec("--c-off","Supply for sale",c.offload,[
-    row(dot("border:2px dashed var(--c-off-t)"),"Compute a company is trying to resell")]));
+  if (S.on.call) out.push(sec("--c-dem","Who to call",c.call,[
+    row(dot("background:var(--c-dem);border:3px solid var(--c-dem-t)"),"Said they need compute, and we found no seller. Bigger = more open.")]));
+  if (S.on.offload) out.push(sec("--c-off","Excess compute we could buy",c.offload,[
+    row(dot("background:var(--x-call)"),"<b>Call them</b> \u2014 released, and the owner will talk"),
+    row(dot("background:var(--x-court)"),"<b>Court sale</b> \u2014 bankruptcy or auction"),
+    row(dot("background:var(--x-gov)"),"<b>Government programme</b> \u2014 apply through a tender"),
+    row(dot("border:2px dashed var(--c-off)"),"<b>Listed for rent</b> on a marketplace"),
+    row(dot("border:2px dashed var(--t3);opacity:.6"),"<b>Hollow grey</b> \u2014 gone, shelved or not open yet")]));
 
   if (S.on.prices) out.push(sec("--c-px","Price by city",c.prices,[
     row(dot("background:var(--c-px);border-color:var(--c-px-t)"),"One Azure machine, price per hour. Bigger = dearer.")]));
 
-  const circleOn = ["country","sites","demand","offload","prices"].some(k => S.on[k]);
+  const circleOn = ["country","sites","demand","call","offload","prices"].some(k => S.on[k]);
   $("legend").className = S.legendDetail ? "glass detail" : "glass";
   $("legend").innerHTML = `<h3>Key<button id="legend-hide" aria-label="Hide legend">✕</button></h3>` +
     (out.join("") || '<div class="lg" style="color:var(--t3)">All layers are off.</div>') +
@@ -4952,6 +5005,8 @@ function renderPill(){
   const vs = visibleSites(); const mw = vs.reduce((a,s)=>a+(s.it_load_mw||0),0);
   const bits = [];
   if (S.on.sites) bits.push(`supply <b>${nf(vs.length)}</b> sites · <b>${kf(mw)}</b> MW`);
+  if (S.on.call) { const cv = DEMAND.filter(x=>x.loc&&hasGap(x.entity_id));
+    bits.push(`to call <b>${nf(cv.length)}</b> \u00b7 <b>${kf(GAPS.filter(g=>cv.some(x=>x.entity_id===g.entity_id)).reduce((a,g)=>a+g.gap_mw,0))}</b> MW open`); }
   if (S.on.demand) { const dv = DEMAND.filter(demandVisible); const ids = new Set(dv.map(x=>x.entity_id));
     bits.push(`demand <b>${nf(dv.length)}</b> companies · <b>${kf(GAPS.filter(g=>ids.has(g.entity_id)).reduce((a,g)=>a+g.gap_mw,0))}</b> MW open`); }
   if (S.on.contracts) bits.push(`<b>${nf(CONTRACTS.filter(conVisible).length)}</b> contracts`);
@@ -4964,7 +5019,7 @@ function renderPill(){
   if (S.on.demand) short.push(`<b>${nf(DEMAND.filter(demandVisible).length)}</b> want compute`);
   if (S.on.contracts) short.push(`<b>${nf(CONTRACTS.filter(conVisible).length)}</b> contracts`);
   if (S.on.capital && short.length < 2) short.push(`<b>${nf(CAPITAL.filter(d=>d.ends).length)}</b> money flows`);
-  if (S.on.offload && short.length < 2) short.push(`<b>${nf(OFFLOADS.filter(offVisible).length)}</b> for sale`);
+  if (S.on.offload && short.length < 2) short.push(`<b>${nf(OFFLOADS.filter(d=>d.loc).length)}</b> for sale`);
   $("sheet-stat").innerHTML = short.slice(0,3).join('<span class="sep">·</span>')
     || `<b>${nf(DEALS.length)}</b> deals · <b>${nf(SITES.length)}</b> sites`;
 }
@@ -5093,12 +5148,12 @@ function setTheme(t){ S.theme=t; document.documentElement.dataset.theme=t; try{l
 function setPresent(on){ S.present=on; document.body.classList.toggle("present",on); setTimeout(()=>map.invalidateSize(),50); }
 document.addEventListener("click", ev => {
   const t = ev.target;
-  const eye = t.closest("[data-layer]"); if (eye){ const id=eye.dataset.layer; S.on[id]=!S.on[id]; rebuild(id); renderLayers(); renderLegend(); renderPill(); writeHash(); return; }
+  const eye = t.closest("[data-layer]"); if (eye){ const id=eye.dataset.layer; S.on[id]=!S.on[id]; rebuild(id); if (id==="call" && S.on.demand) rebuild("demand"); renderLayers(); renderLegend(); renderPill(); writeHash(); return; }
   const ds = t.closest("[data-dstatus]"); if (ds){ S.demStatus=ds.dataset.dstatus; rebuild("demand"); renderLayers(); renderMatch(); renderPill(); writeHash(); return; }
   const dw = t.closest("[data-dwho]"); if (dw){ S.demWho=dw.dataset.dwho; rebuild("demand"); renderLayers(); renderMatch(); renderPill(); writeHash(); return; }
   const tb = t.closest("[data-tab]"); if (tb){ setTab(tb.dataset.tab); return; }
   const sc = t.closest("[data-scope]"); if (sc){ S.scope=sc.dataset.scope; renderMarket(); writeHash(); return; }
-  const chip = t.closest("[data-chip]"); if (chip){ const id=chip.dataset.chip; S.on[id]=!S.on[id]; rebuild(id); renderLayers(); renderLegend(); renderPill(); writeHash(); return; }
+  const chip = t.closest("[data-chip]"); if (chip){ const id=chip.dataset.chip; S.on[id]=!S.on[id]; rebuild(id); if (id==="call" && S.on.demand) rebuild("demand"); renderLayers(); renderLegend(); renderPill(); writeHash(); return; }
   const st = t.closest("[data-status]"); if (st){ S.siteStatus=st.dataset.status; rebuild("sites"); renderLayers(); renderMarket(); renderPill(); writeHash(); return; }
   const sel = t.closest("[data-sel]"); if (sel){ ev.preventDefault(); if (sel.dataset.sel.endsWith(":")) return; select(sel.dataset.sel); $("results").classList.remove("on"); return; }
   const lp = t.closest("[data-loop]"); if (lp){ drawLoop(+lp.dataset.loop); return; }

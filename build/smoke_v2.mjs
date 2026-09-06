@@ -5,8 +5,9 @@ const browser = await chromium.launch({ executablePath: '/opt/pw-browsers/chromi
 const page = await browser.newPage({ viewport: { width: 1600, height: 900 } });
 page.on('console', m => { if (m.type() === 'error' && !/ERR_CONNECTION|net::|Failed to load resource/.test(m.text())) errors.push(m.text()); });
 page.on('pageerror', e => errors.push('PAGEERROR: ' + e.message));
-await page.route(/arcgisonline|fonts\.g/, r => r.abort());
-await page.goto('file://' + process.cwd() + '/ComputeX_Market_Graph.html', { waitUntil: 'domcontentloaded' });
+await page.route(/arcgisonline/, r=>r.fulfill({status:200,contentType:'image/png',body:Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==','base64')}));
+await page.route(/fonts\.g/, r=>r.abort());
+await page.goto('http://127.0.0.1:8899/ComputeX_Market_Graph.html', { waitUntil: 'domcontentloaded' });
 await page.waitForTimeout(2500);
 const info = await page.evaluate(() => ({
   markers: document.querySelectorAll('.leaflet-marker-icon').length,
@@ -44,6 +45,7 @@ await page.screenshot({ path: 'v2_loop.png' });
 await page.click('[data-chip="contracts"]'); await page.waitForTimeout(200);
 await page.click('[data-layer="capital"]'); await page.waitForTimeout(300);
 await page.selectOption('select[data-f="status"]', 'live'); await page.waitForTimeout(500);
+await page.click('[data-layer="demand"]'); await page.waitForTimeout(400);
 await page.selectOption('select[data-f="dstatus"]', 'open'); await page.waitForTimeout(400);
 await page.selectOption('select[data-f="dwho"]', 'lab'); await page.waitForTimeout(400);
 await page.click('[data-chip="contracts"]'); await page.waitForTimeout(300);
