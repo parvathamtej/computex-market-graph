@@ -28,7 +28,11 @@
   "RTX PRO 6000": 0.35,
   "RTXPRO6000": 0.35,
   "H20": 0.15,
-  "GH200": 1.1
+  "GH200": 1.1,
+  "BLACKWELL": 2.2,
+  "RUBIN": 3.3,
+  "VERA RUBIN": 3.3,
+  "VR200": 3.3
  },
  "kw_per_h100e": 1.43,
  "note": "Conversion factors are our own estimates, shown so they can be challenged. Raw as-reported figures are preserved on every record."

@@ -13,6 +13,7 @@ H100E = {
  "MI300X":0.90,"MI325X":1.10,"MI355X":1.80,"MI350X":1.60,
  "TPUV5E":0.30,"TPUV6E":0.70,"TPUV7":1.50,"TRAINIUM2":0.60,"TRAINIUM3":1.20,
  "RTX PRO 6000":0.35,"RTXPRO6000":0.35,"H20":0.15,"GH200":1.10,
+ "BLACKWELL":2.20,"RUBIN":3.30,"VERA RUBIN":3.30,"VR200":3.30,   # our estimates; Rubin is unshipped, so treat as ~1.5x Blackwell
 }
 KW_PER_H100E = 1.43          # ~700 H100-equivalents per MW of IT load
 GW_TO_MW = 1000.0

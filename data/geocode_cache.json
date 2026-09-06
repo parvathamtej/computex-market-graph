@@ -663,5 +663,430 @@
 "lat": 39.9057136,
 "lng": 116.3912972,
 "matched": "Beijing, China"
+},
+"Gurugram, India": {
+"lat": 28.4646148,
+"lng": 77.0299194,
+"matched": "Gurgaon, Haryana, India"
+},
+"Bengaluru, India": {
+"lat": 12.9767936,
+"lng": 77.590082,
+"matched": "Bengaluru, Bangalore North, Bengaluru Urban, Karnataka, India"
+},
+"Hyderabad, India": {
+"lat": 17.360589,
+"lng": 78.4740613,
+"matched": "Hyderabad, Bahadurpura mandal, Hyderabad, Telangana, India"
+},
+"Nashik, India": {
+"lat": 20.0112475,
+"lng": 73.7902364,
+"matched": "Nashik, Nashik Subdistrict, Nashik District, Maharashtra, 422001, India"
+},
+"Osaka, Japan": {
+"lat": 34.6937569,
+"lng": 135.5014539,
+"matched": "Osaka, Osaka Prefecture, Japan"
+},
+"Tokyo, Japan": {
+"lat": 35.6768601,
+"lng": 139.7638947,
+"matched": "Tokyo, Japan"
+},
+"Kyoto, Japan": {
+"lat": 35.0115754,
+"lng": 135.7681441,
+"matched": "Kyoto, Kyoto Prefecture, Japan"
+},
+"Seongnam, South Korea": {
+"lat": 37.4201556,
+"lng": 127.1262092,
+"matched": "Seongnam-si, Gyeonggi, South Korea"
+},
+"Seoul, South Korea": {
+"lat": 37.5666791,
+"lng": 126.9782914,
+"matched": "Seoul, South Korea"
+},
+"Taipei, Taiwan": {
+"lat": 25.0375198,
+"lng": 121.5636796,
+"matched": "Taipei, Taiwan"
+},
+"Hsinchu, Taiwan": {
+"lat": 24.8066333,
+"lng": 120.9686833,
+"matched": "Hsinchu, Taiwan"
+},
+"Kuala Lumpur, Malaysia": {
+"lat": 3.1516964,
+"lng": 101.6942371,
+"matched": "Kuala Lumpur, Malaysia"
+},
+"Hanoi, Vietnam": {
+"lat": 21.0283334,
+"lng": 105.854041,
+"matched": "H\u00e0 N\u1ed9i, Vietnam"
+},
+"Brisbane, Australia": {
+"lat": -27.4689623,
+"lng": 153.0235009,
+"matched": "Brisbane, Queensland, Australia"
+},
+"Sydney, Australia": {
+"lat": -33.8698439,
+"lng": 151.2082848,
+"matched": "Sydney, New South Wales, Australia"
+},
+"Melbourne, Australia": {
+"lat": -37.8142454,
+"lng": 144.9631732,
+"matched": "Melbourne, Victoria, Australia"
+},
+"Hong Kong, Hong Kong": {
+"lat": 22.2818333,
+"lng": 114.1582831,
+"matched": "Hong Kong, China"
+},
+"Redwood City, United States": {
+"lat": 37.4863239,
+"lng": -122.232523,
+"matched": "Redwood City, San Mateo County, California, United States"
+},
+"Austin, United States": {
+"lat": 30.2711286,
+"lng": -97.7436995,
+"matched": "Austin, Travis County, Texas, United States"
+},
+"Geneva, Switzerland": {
+"lat": 46.2017559,
+"lng": 6.1466014,
+"matched": "Geneva, Switzerland"
+},
+"Santa Clara, United States": {
+"lat": 37.2333253,
+"lng": -121.6846349,
+"matched": "Santa Clara County, California, United States"
+},
+"London, United Kingdom": {
+"lat": 51.5074456,
+"lng": -0.1277653,
+"matched": "Greater London, England, United Kingdom"
+},
+"Livingston, New Jersey, United States": {
+"lat": 40.7959335,
+"lng": -74.3148713,
+"matched": "Livingston, Essex County, New Jersey, 07039, United States"
+},
+"San Jose, United States": {
+"lat": 37.3361663,
+"lng": -121.890591,
+"matched": "San Jose, Santa Clara County, California, United States"
+},
+"Amsterdam, Netherlands": {
+"lat": 52.3730796,
+"lng": 4.8924534,
+"matched": "Amsterdam, North Holland, Netherlands"
+},
+"Easton, United States": {
+"lat": 40.6916081,
+"lng": -75.2099866,
+"matched": "Easton, Northampton County, Pennsylvania, United States"
+},
+"Dallas, United States": {
+"lat": 32.7762719,
+"lng": -96.7968559,
+"matched": "Dallas, Dallas County, Texas, United States"
+},
+"New York, United States": {
+"lat": 40.7127281,
+"lng": -74.0060152,
+"matched": "New York, United States"
+},
+"Denver, Colorado, United States": {
+"lat": 39.7392364,
+"lng": -104.984862,
+"matched": "Denver, Colorado, United States"
+},
+"North Sydney, Australia": {
+"lat": -33.8343157,
+"lng": 151.2091974,
+"matched": "North Sydney Council, Lower North Shore, Sydney, New South Wales, 2060, Australia"
+},
+"Castle Rock, United States": {
+"lat": 39.3722552,
+"lng": -104.858682,
+"matched": "Castle Rock, Douglas County, Colorado, United States"
+},
+"Elk Grove Village, Illinois, United States": {
+"lat": 42.0035588,
+"lng": -88.0037711,
+"matched": "Elk Grove Village, Elk Grove Township, Cook County, Illinois, 60007, United States"
+},
+"Richland Parish, Louisiana, United States": {
+"lat": 32.4196791,
+"lng": -91.8105911,
+"matched": "Richland Parish, Louisiana, United States"
+},
+"Santa Clara, California, United States": {
+"lat": 37.2333253,
+"lng": -121.6846349,
+"matched": "Santa Clara County, California, United States"
+},
+"Redmond, Washington, United States": {
+"lat": 47.6694141,
+"lng": -122.1238767,
+"matched": "Redmond, King County, Washington, 98052, United States"
+},
+"Mountain View, California, United States": {
+"lat": 37.3893889,
+"lng": -122.0832101,
+"matched": "Mountain View, Santa Clara County, California, United States"
+},
+"Menlo Park, California, United States": {
+"lat": 37.4519671,
+"lng": -122.177992,
+"matched": "Menlo Park, San Mateo County, California, 94025, United States"
+},
+"San Francisco, California, United States": {
+"lat": 37.7879363,
+"lng": -122.4075201,
+"matched": "San Francisco, California, United States"
+},
+"Palo Alto, United States": {
+"lat": 37.4443293,
+"lng": -122.1598465,
+"matched": "Palo Alto, Santa Clara County, California, United States"
+},
+"Toronto, Canada": {
+"lat": 43.6534817,
+"lng": -79.3839347,
+"matched": "Toronto, Golden Horseshoe, Ontario, Canada"
+},
+"Newport Beach, California, United States": {
+"lat": 33.6170092,
+"lng": -117.9294401,
+"matched": "Newport Beach, Orange County, California, United States"
+},
+"Oslo, Norway": {
+"lat": 59.9133301,
+"lng": 10.7389701,
+"matched": "Oslo, Norway"
+},
+"Reykjavik, Iceland": {
+"lat": 64.145981,
+"lng": -21.9422367,
+"matched": "Reykjavik, Capital Region, Iceland"
+},
+"Starbase, United States": {
+"lat": 25.9914611,
+"lng": -97.1829783,
+"matched": "Starbase, Cameron County, Texas, United States"
+},
+"Seattle, United States": {
+"lat": 47.6038321,
+"lng": -122.330062,
+"matched": "Seattle, King County, Washington, United States"
+},
+"Cupertino, United States": {
+"lat": 37.3228934,
+"lng": -122.0322895,
+"matched": "Cupertino, Santa Clara County, California, 95014, United States"
+},
+"Miami, United States": {
+"lat": 25.7741566,
+"lng": -80.1935973,
+"matched": "Miami, Miami-Dade County, Florida, United States"
+},
+"Hangzhou, China": {
+"lat": 30.2489634,
+"lng": 120.2052342,
+"matched": "Hangzhou City, Zhejiang, China"
+},
+"Shenzhen, China": {
+"lat": 22.5445741,
+"lng": 114.0545429,
+"matched": "Shenzhen, Guangdong, China"
+},
+"Suwon, South Korea": {
+"lat": 37.2633325,
+"lng": 127.0287472,
+"matched": "Suwon-si, Gyeonggi, South Korea"
+},
+"Sejong, South Korea": {
+"lat": 36.4799999,
+"lng": 127.289,
+"matched": "Sejong, South Korea"
+},
+"Brussels, Belgium": {
+"lat": 50.8467372,
+"lng": 4.352493,
+"matched": "Brussels, Brussels-Capital, Belgium"
+},
+"Sunnyvale, United States": {
+"lat": 37.3688301,
+"lng": -122.036349,
+"matched": "Sunnyvale, Santa Clara County, California, United States"
+},
+"Abu Dhabi, United Arab Emirates": {
+"lat": 24.4538352,
+"lng": 54.3774014,
+"matched": "Abu Dhabi, Abu Dhabi Emirate, United Arab Emirates"
+},
+"Riyadh, Saudi Arabia": {
+"lat": 24.638916,
+"lng": 46.7160104,
+"matched": "Riyadh, Riyadh governorate, Riyadh Region, 12643, Saudi Arabia"
+},
+"Mountain View, United States": {
+"lat": 37.3893889,
+"lng": -122.0832101,
+"matched": "Mountain View, Santa Clara County, California, United States"
+},
+"Longboat Key, United States": {
+"lat": 27.4125417,
+"lng": -82.6589881,
+"matched": "Longboat Key, Manatee County, Florida, 34228, United States"
+},
+"Armonk, United States": {
+"lat": 41.132973,
+"lng": -73.7126064,
+"matched": "Armonk, Town of North Castle, Westchester County, New York, 10504, United States"
+},
+"Bozeman, United States": {
+"lat": 45.6794293,
+"lng": -111.044047,
+"matched": "Bozeman, Gallatin County, Montana, United States"
+},
+"Indianapolis, United States": {
+"lat": 39.7683331,
+"lng": -86.1583502,
+"matched": "Indianapolis, Marion County, Indiana, United States"
+},
+"Fort Worth, United States": {
+"lat": 32.753177,
+"lng": -97.3327459,
+"matched": "Fort Worth, Tarrant County, Texas, United States"
+},
+"New Delhi, India": {
+"lat": 28.6138954,
+"lng": 77.2090057,
+"matched": "New Delhi, Delhi, India"
+},
+"Ahmedabad, India": {
+"lat": 23.0215374,
+"lng": 72.5800568,
+"matched": "Ahmedabad, Gujarat, 380001, India"
+},
+"Kawasaki, Japan": {
+"lat": 35.5306639,
+"lng": 139.7037668,
+"matched": "Kawasaki, Kanagawa Prefecture, Japan"
+},
+"Wako, Japan": {
+"lat": 35.7817053,
+"lng": 139.6058692,
+"matched": "Wako, Saitama Prefecture, Japan"
+},
+"Bangkok, Thailand": {
+"lat": 13.7524938,
+"lng": 100.4935089,
+"matched": "Bangkok, Thailand"
+},
+"Makati, Philippines": {
+"lat": 14.5567949,
+"lng": 121.0211226,
+"matched": "Makati, Southern Manila District, Metro Manila, Philippines"
+},
+"Bac Ninh, Vietnam": {
+"lat": 21.1784838,
+"lng": 106.0562047,
+"matched": "Bac Ninh, Thanh Bac Street, Ninh Xa 2, Kinh Bac Ward, Kinh Bac, B\u1eafc Ninh City, Vietnam"
+},
+"New Taipei, Taiwan": {
+"lat": 25.011997,
+"lng": 121.4656619,
+"matched": "New Taipei, Taiwan"
+},
+"Tsukuba, Japan": {
+"lat": 36.0833265,
+"lng": 140.077279,
+"matched": "Tsukuba, Ibaraki Prefecture, Japan"
+},
+"Sakai, Japan": {
+"lat": 34.5737364,
+"lng": 135.4828866,
+"matched": "Sakai, Osaka Prefecture, 590-0078, Japan"
+},
+"Washington, D.C., United States": {
+"lat": 38.8950982,
+"lng": -77.0363849,
+"matched": "Washington, District of Columbia, United States"
+},
+"Las Vegas, Nevada, United States": {
+"lat": 36.1674263,
+"lng": -115.1484131,
+"matched": "Las Vegas, Clark County, Nevada, United States"
+},
+"Roubaix, France": {
+"lat": 50.6915893,
+"lng": 3.1741734,
+"matched": "Roubaix, Lille, Nord, Hauts-de-France, Metropolitan France, 59100, France"
+},
+"West Palm Beach, Florida, United States": {
+"lat": 26.715364,
+"lng": -80.0532942,
+"matched": "West Palm Beach, Palm Beach County, Florida, United States"
+},
+"Toronto, Ontario, Canada": {
+"lat": 43.6534817,
+"lng": -79.3839347,
+"matched": "Toronto, Golden Horseshoe, Ontario, Canada"
+},
+"Montreal, Quebec, Canada": {
+"lat": 45.5031824,
+"lng": -73.5698065,
+"matched": "Montreal, Urban agglomeration of Montreal, Montreal (administrative region), Quebec, Canada"
+},
+"Round Rock, Texas, United States": {
+"lat": 30.5085915,
+"lng": -97.6788056,
+"matched": "Round Rock, Williamson County, Texas, United States"
+},
+"Germany": {
+"lat": 51.1638175,
+"lng": 10.4478313,
+"matched": "Germany"
+},
+"Italy": {
+"lat": 42.6384261,
+"lng": 12.674297,
+"matched": "Italy"
+},
+"Russia": {
+"lat": 64.6863136,
+"lng": 97.7453061,
+"matched": "Russia"
+},
+"Haenam, South Korea": {
+"lat": 34.55269,
+"lng": 126.52431,
+"matched": "Haenam-gun, Jeonnam-Gwangju Special Metropolitan City, South Korea"
+},
+"Luxembourg, Luxembourg": {
+"lat": 49.6112768,
+"lng": 6.129799,
+"matched": "Luxembourg, Canton Luxembourg, Luxembourg"
+},
+"European Union": {
+"lat": 42.6795963,
+"lng": 23.3214829,
+"matched": "European Union, Cherni vrah Blvd., Sofia, Triaditsa, Stolichna, Sofia-City, 1421, Bulgaria"
+},
+"Luxembourg": {
+"lat": 49.8158683,
+"lng": 6.1296751,
+"matched": "Luxembourg"
 }
 }

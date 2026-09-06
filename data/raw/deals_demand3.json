@@ -1,0 +1,300 @@
+[
+ {
+  "deal_id": "korea-msit-vera-rubin-10000-lease-2027-budget",
+  "deal_type": "D7",
+  "from_entity": null,
+  "to_entity": "Ministry of Science and ICT, Republic of Korea",
+  "headline": "Korea's 2027 budget sets aside 3.85 trillion won to secure 10,000 NVIDIA Vera Rubin GPUs, as a lease, for the national frontier-model programme.",
+  "notes": "From the ministry's 2027 budget proposal announced 1 September 2026. GPU expansion line rises from 2.0841 trillion won (2026) to 3.85 trillion won (2027). Interim plan: put 7,000 government-held GPUs to work first, add 8,000 privately leased GPUs for industry/academia, then bring in the 10,000 Vera Rubin. No supplier for the lease has been chosen; edaily and zdnet describe it as a lease programme (임차 사업), which is what makes this a who-to-call. Separate from the 260,000-GPU NVIDIA framework of Oct 2025 and from the 15,000 GPUs in the 2026 budget.",
+  "source_urls": [
+   "https://zdnet.co.kr/view/?no=20260901104934",
+   "https://www.edaily.co.kr/Read?newsId=01214486645544824"
+  ],
+  "geography": [
+   "South Korea"
+  ],
+  "quantity_raw": "10,000 NVIDIA Vera Rubin GPUs; 3.85 trillion won GPU budget for 2027",
+  "quantity_value": 10000,
+  "quantity_unit": "GPUS",
+  "chip_skus": [
+   "Rubin"
+  ],
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "non_binding",
+  "announced_date": "2026-09-01",
+  "captured_at": "2026-09-06",
+  "need_plain": "Korea's science ministry wants 10,000 Vera Rubin GPUs on lease in 2027 for its national frontier-model programme, and has not yet picked who will supply them.",
+  "purpose": "sovereign",
+  "by_when": "2027"
+ },
+ {
+  "deal_id": "lg-group-10000-blackwell-2026-06",
+  "deal_type": "D7",
+  "from_entity": null,
+  "to_entity": "LG AI Research",
+  "headline": "LG Group plans to acquire about 10,000 NVIDIA Blackwell GPUs to train EXAONE, develop LG Electronics humanoid robots and expand LG U+ AI data-centre services.",
+  "notes": "Reported by Maeil Business (exclusive) and EBN on 4 June 2026, attributed to a group-level AI transformation drive under chairman Koo Kwang-mo. Multi-trillion-won purchase. LG has not issued its own release with the number; the articles use 'plans to secure' language and name no system integrator, hosting provider or delivery date. Treat as press-reported.",
+  "source_urls": [
+   "https://www.ebn.co.kr/news/articleView.html?idxno=1711311",
+   "https://v.daum.net/v/20260604180616826"
+  ],
+  "geography": [
+   "South Korea"
+  ],
+  "quantity_raw": "about 10,000 NVIDIA Blackwell GPUs",
+  "quantity_value": 10000,
+  "quantity_unit": "GPUS",
+  "chip_skus": [
+   "Blackwell"
+  ],
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "non_binding",
+  "announced_date": "2026-06-04",
+  "captured_at": "2026-09-06",
+  "need_plain": "LG wants about 10,000 Blackwell GPUs for its EXAONE models, humanoid robots and LG U+ AI services; no delivery date or host named.",
+  "purpose": "both",
+  "by_when": null
+ },
+ {
+  "deal_id": "naver-gak-sejong-200mw-2028",
+  "deal_type": "D7",
+  "from_entity": null,
+  "to_entity": "NAVER Corporation",
+  "headline": "NAVER wants its GAK Sejong AI factory to reach 200 MW by 2028 (about 100,000 NVIDIA GPUs) for HyperCLOVA X and sovereign AI, with roughly 60 MW already ordered.",
+  "notes": "NAVER's own June 2026 release and NVIDIA's July 2026 release give the path 55 MW (2027) -> 100 MW (within 2027) -> 200 MW (2028), with a 1 GW long-term ambition. The ~100,000-GPU figure is from The Elec and Kyunghyang. NAVER ordered 60,000 NVIDIA GPUs in October 2025 (the first ~60 MW tranche), so the quantity here is the UNCOVERED 140 MW. Brookfield signed only a non-binding term sheet for up to USD 9bn; NVIDIA's USD 1bn equity is conditional. Construction, power and non-GPU equipment for the expansion are not contracted. Caveat: NAVER also resells capacity as GPUaaS, so it is part buyer, part seller.",
+  "source_urls": [
+   "https://nvidianews.nvidia.com/news/naver-nvidia-and-brookfield-to-expand-koreas-national-ai-factory-infrastructure-buildout",
+   "https://www.navercorp.com/en/media/pressReleasesDetail?seq=10034386",
+   "https://www.thelec.net/news/articleView.html?idxno=12752"
+  ],
+  "geography": [
+   "South Korea"
+  ],
+  "site": "GAK Sejong",
+  "quantity_raw": "200 MW by 2028, of which about 60 MW (60,000 GPUs) was ordered in October 2025; 140 MW still open",
+  "quantity_value": 140,
+  "quantity_unit": "MW",
+  "status": "announced",
+  "confidence": "T2",
+  "binding_status": "non_binding",
+  "announced_date": "2026-07-24",
+  "captured_at": "2026-09-06",
+  "need_plain": "NAVER wants 200 MW of AI compute at GAK Sejong by 2028; about 60 MW is ordered, 140 MW is still open.",
+  "purpose": "both",
+  "by_when": "by 2028"
+ },
+ {
+  "deal_id": "koacc-national-ai-computing-center-15000-2028",
+  "deal_type": "D7",
+  "from_entity": null,
+  "to_entity": "Korea AI Computing Center Co., Ltd.",
+  "headline": "Korea's National AI Computing Center SPC needs 15,000 advanced AI accelerators on a 40 MW site at Haenam, partial service 2027, full operation 2028, about 2.5 trillion won.",
+  "notes": "SPC established 10 June 2026; consortium led by Samsung SDS with Naver Cloud, Samsung C&T, Samsung Electronics, Kakao, Crush, KT and Jeonnam-Gwangju. Groundbreaking coverage 3 August 2026 by Byline Network and Edaily. Chip initially proposed as B200, now 'optimal chip at time of purchase'; no GPU supplier or system vendor selected. The 2027 partial service will run from an existing Samsung SDS data centre. 40 MW of grid power confirmed by KEPCO. Different legal entity from the ministry programme recorded elsewhere in this dataset.",
+  "source_urls": [
+   "https://byline.network/2026/08/3-439/",
+   "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03939286645543712"
+  ],
+  "geography": [
+   "South Korea"
+  ],
+  "site": "Haenam, South Jeolla",
+  "quantity_raw": "15,000 advanced AI accelerators; 40 MW; about 2.5 trillion won",
+  "quantity_value": 15000,
+  "quantity_unit": "GPUS",
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "non_binding",
+  "announced_date": "2026-08-03",
+  "captured_at": "2026-09-06",
+  "need_plain": "Korea's national AI computing centre company needs 15,000 GPUs at Haenam by 2028 and has not chosen the chip or the supplier.",
+  "purpose": "sovereign",
+  "by_when": "full operation 2028"
+ },
+ {
+  "deal_id": "coupang-owned-ai-factory-50mw-2026-08",
+  "deal_type": "D7",
+  "from_entity": null,
+  "to_entity": "Coupang, Inc.",
+  "headline": "Coupang is leaving leased Seoul data halls to build its own AI factory with data halls of 50+ MW IT load each for its logistics AI; site, builder and GPU supplier not named.",
+  "notes": "Korea Economic Daily (19 and 24 August 2026) reports the 50 MW-per-hall and 100 kW-per-rack specs from Coupang's own design and procurement job postings; the reporters estimate several hundred MW in total, so the conservative 50 MW minimum is used here. Coupang was rejected from both government GPU tenders (2025, 2026), which triggered the owned-build plan. Existing Coupang Intelligent Cloud runs on NVIDIA DGX SuperPOD in leased Empyrion space; that does not cover the new facility.",
+  "source_urls": [
+   "https://www.hankyung.com/article/2026081904971",
+   "https://www.hankyung.com/article/2026082479301"
+  ],
+  "geography": [
+   "South Korea"
+  ],
+  "quantity_raw": "data halls of 50+ MW IT load each; 100 kW+ per GPU rack; several hundred MW estimated in total",
+  "quantity_value": 50,
+  "quantity_unit": "MW",
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "non_binding",
+  "announced_date": "2026-08-19",
+  "captured_at": "2026-09-06",
+  "need_plain": "Coupang wants to build its own AI factory with 50 MW-plus data halls for its logistics AI, and has not named a site, builder or GPU supplier.",
+  "purpose": "both",
+  "by_when": null
+ },
+ {
+  "deal_id": "taiwan-moda-sovereign-10000-gpus-boo-2027",
+  "deal_type": "D7",
+  "from_entity": null,
+  "to_entity": "Ministry of Digital Affairs, Taiwan",
+  "headline": "Taiwan's digital ministry wants more than 10,000 GPUs of sovereign AI compute inside Taiwan within a year through a build-own-operate scheme; two unnamed applicants, no award yet.",
+  "notes": "Minister Lin Yi-jing at the 31 August 2026 Technology Sovereignty Forum (Focus Taiwan/CNA, Newtalk, TaiSounds); iThome reports an internal goal of 20,000+. BOO terms from the NDC/MODA notice of 16 April 2026: minimum NT$3bn investment, 15 PFLOPS FP32, free or discounted capacity for government and academia; first sites to break ground by end-2026 and serve by Q1 2027. The government will not buy the GPUs itself, so the eventual BOO operators will be the purchasers; MODA is recorded as the demand owner because it set the quantity and the deadline. Taiwan's separate NCHC supercomputer is recorded elsewhere.",
+  "source_urls": [
+   "https://focustaiwan.tw/business/202609010020",
+   "https://www.ithome.com.tw/news/178528",
+   "https://ncsd.ndc.gov.tw/Fore/News_detail/ad94bee2-ebc4-4c6a-8c73-c6a7bec4e610"
+  ],
+  "geography": [
+   "Taiwan"
+  ],
+  "quantity_raw": "more than 10,000 GPUs within one year; internal goal 20,000+",
+  "quantity_value": 10000,
+  "quantity_unit": "GPUS",
+  "status": "announced",
+  "confidence": "T2",
+  "binding_status": "non_binding",
+  "announced_date": "2026-08-31",
+  "captured_at": "2026-09-06",
+  "need_plain": "Taiwan's digital ministry wants over 10,000 GPUs of sovereign compute built in Taiwan by late 2027 under a build-own-operate scheme; no operator has been awarded.",
+  "purpose": "sovereign",
+  "by_when": "by Q3 2027"
+ },
+ {
+  "deal_id": "maharashtra-state-2000-gpus-2026-04",
+  "deal_type": "D7",
+  "from_entity": null,
+  "to_entity": "Government of Maharashtra",
+  "headline": "Maharashtra's state government says it will put 2,000 GPUs in the hands of innovators through a state compute-as-a-service facility under its AI Policy 2026.",
+  "notes": "Direct quote from Chief Minister Devendra Fadnavis at Mumbai Tech Week (Business Standard, 29 May 2026: 'We are creating a compute-as-a-service facility through which we will make available 2,000 GPUs to all innovators'); the same 2,000 figure is in the cabinet-approved AI Policy 2026 (29 April 2026). No chip, vendor, timeline or procurement route (state tender vs IndiaAI-empanelled cloud) stated.",
+  "source_urls": [
+   "https://www.business-standard.com/india-news/maharashtra-readying-2-000-gpus-for-innovators-cm-devendra-fadnavis-126052901592_1.html",
+   "https://www.varindia.com/news/maharashtra-to-provide-2-000-gpus-to-boost-ai-innovation"
+  ],
+  "geography": [
+   "India"
+  ],
+  "quantity_raw": "2,000 GPUs",
+  "quantity_value": 2000,
+  "quantity_unit": "GPUS",
+  "status": "announced",
+  "confidence": "T3",
+  "binding_status": "non_binding",
+  "announced_date": "2026-04-29",
+  "captured_at": "2026-09-06",
+  "need_plain": "Maharashtra's government wants 2,000 GPUs for a state compute service for startups; no vendor or date named.",
+  "purpose": "sovereign",
+  "by_when": null
+ },
+ {
+  "deal_id": "soket-ai-10000-gpus-frontier-2026-07",
+  "deal_type": "D7",
+  "from_entity": null,
+  "to_entity": "Soket AI Labs",
+  "headline": "Soket AI's CEO says training its trillion-parameter model needs 10,000 GPUs working together, ten times what it has had access to.",
+  "notes": "Abhishek Upperwal to AIM (Mohit Pandey, 14 July 2026): 'One thousand GPUs are not enough. You need 10,000 GPUs working together.' A stated requirement in an interview, not a purchase plan, so confidence is T4. Soket is one of the 12 IndiaAI Mission sovereign-model teams (Rs 177 crore grant) and its compute so far has come through IndiaAI-empanelled providers and free cloud credits; the 10,000-GPU need is not covered by any named provider.",
+  "source_urls": [
+   "https://analyticsindiamag.com/ai-features/soket-ai-is-building-indias-answer-to-anthropic-fable/"
+  ],
+  "geography": [
+   "India"
+  ],
+  "quantity_raw": "10,000 GPUs working together",
+  "quantity_value": 10000,
+  "quantity_unit": "GPUS",
+  "status": "announced",
+  "confidence": "T4",
+  "binding_status": "non_binding",
+  "announced_date": "2026-07-14",
+  "captured_at": "2026-09-06",
+  "need_plain": "Soket AI says it needs 10,000 GPUs in one cluster to train a trillion-parameter Indian model; it has had about a tenth of that.",
+  "purpose": "train",
+  "by_when": null
+ },
+ {
+  "deal_id": "eurohpc-ai-gigafactories-tender-2026-07",
+  "deal_type": "D7",
+  "from_entity": null,
+  "to_entity": "EuroHPC Joint Undertaking",
+  "headline": "The EU's EuroHPC JU opened a tender in July 2026 for seven AI Gigafactories of about 75,000 to 100,000 H100-equivalent accelerators each, selection by end-2026, first sites running in 2028.",
+  "notes": "Two categories: medium-scale around 75,000 GPUs and large-scale around 100,000 (EC tender Q&A counts 100,000 H100-equivalent units for Lot 2 Phase 2). Funding: EU 17%, member state 17%, private two-thirds; 76 expressions of interest from 16 member states, over EUR 230bn proposed. Quantity here is 7 x ~85,000 = about 600,000 H100e as a midpoint; the exact split between medium and large is not fixed. Declared bids include a Poland-led consortium (Poland, Czechia, Lithuania, Hungary), Czech Prague Gateway DC, and a Romanian Black Sea bid. No contractor has been selected, which is the point: whoever wins supplies the compute. Geography left empty on purpose: the seven sites will be spread across member states, so no single country circle should carry 858 MW.",
+  "source_urls": [
+   "https://centraleuropeantimes.com/chasing-gigafactories-cees-ai-infrastructure-bet/",
+   "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/support/proc-qa"
+  ],
+  "geography": [],
+  "quantity_raw": "seven facilities of about 75,000 to 100,000 H100-equivalent accelerators each",
+  "quantity_value": 600000,
+  "quantity_unit": "H100E",
+  "status": "announced",
+  "confidence": "T2",
+  "binding_status": "non_binding",
+  "announced_date": "2026-07-06",
+  "captured_at": "2026-09-06",
+  "need_plain": "The EU wants seven AI gigafactories of 75,000 to 100,000 H100-class chips each; bids are in, nobody has been chosen, first ones due in 2028.",
+  "purpose": "sovereign",
+  "by_when": "first facilities 2028"
+ },
+ {
+  "deal_id": "indiaai-secure-sovereign-cluster-3000-2026-02",
+  "deal_type": "D7",
+  "from_entity": null,
+  "to_entity": "IndiaAI Mission",
+  "headline": "IndiaAI is building a secure GPU cluster of 3,000 next-generation GPUs for sovereign and strategic applications; builder, site and date not stated.",
+  "notes": "PIB backgrounder for the India-AI Impact Summit, 8 February 2026: 'Under the IndiaAI Mission, a secure GPU cluster is being constructed to house 3,000 next-generation GPUs for sovereign and strategic applications.' Separate from the 38,000 subsidised GPUs on the IndiaAI Compute Portal and from the 20,000 more GPUs announced 17 February 2026, whose orders the minister said would be placed within a week through empanelled providers.",
+  "source_urls": [
+   "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2225069",
+   "https://www.eetimes.com/india-to-add-20000-gpus-as-ai-mission-2-0-expands-compute-and-chip-push/"
+  ],
+  "geography": [
+   "India"
+  ],
+  "quantity_raw": "3,000 next-generation GPUs",
+  "quantity_value": 3000,
+  "quantity_unit": "GPUS",
+  "status": "announced",
+  "confidence": "T1",
+  "binding_status": "non_binding",
+  "announced_date": "2026-02-08",
+  "captured_at": "2026-09-06",
+  "need_plain": "IndiaAI is building a secure 3,000-GPU cluster for strategic use; who builds it is not stated.",
+  "purpose": "sovereign",
+  "by_when": null
+ },
+ {
+  "deal_id": "figure-nscale-100000-vera-rubin-2026-09",
+  "deal_type": "D1",
+  "from_entity": "Nscale",
+  "to_entity": "Figure AI",
+  "headline": "Figure AI committed $3.5 billion, potentially $6 billion, to Nscale for up to 100,000 NVIDIA Vera Rubin GPUs in West Texas to train its Helix robot models, first deployment late 2027.",
+  "notes": "Forbes and Tech Times, 4 September 2026; Nscale takes an equity stake in Figure. Initial deployment at Barstow, Texas from the second half of 2027. Recorded as a signed compute contract, so Figure is not a who-to-call.",
+  "source_urls": [
+   "https://www.techtimes.com/articles/20260904/nscale-backs-figure-ai-with-35-billion-takes-equity-stake-in-humanoid-push.htm"
+  ],
+  "geography": [
+   "United States"
+  ],
+  "site": "Barstow, Texas",
+  "usd_value": 3500000000,
+  "quantity_raw": "up to 100,000 NVIDIA Vera Rubin GPUs; $3.5bn rising to $6bn",
+  "quantity_value": 100000,
+  "quantity_unit": "GPUS",
+  "chip_skus": [
+   "Rubin"
+  ],
+  "status": "signed",
+  "confidence": "T3",
+  "binding_status": "binding",
+  "announced_date": "2026-09-04",
+  "captured_at": "2026-09-06",
+  "term_start": "2027-07",
+  "need_plain": "Figure AI booked up to 100,000 Vera Rubin GPUs from Nscale in Texas to train its humanoid-robot models, starting late 2027.",
+  "purpose": "train",
+  "by_when": "from late 2027"
+ }
+]
