@@ -33,7 +33,10 @@ import json, os, sys, time, datetime, urllib.request, urllib.error, collections
 UA = "ComputeX-MarketGraph/1.0 (market research; github.com/parvathamtej/computex-market-graph)"
 OUTDIR = "data/snapshots"
 LATEST = "data/inventory_latest.json"
-ENABLE_TOS_RESTRICTED = os.environ.get("CX_ALLOW_RESTRICTED") == "1"
+# Vast.ai and RunPod are read as of 6 September 2026. Their terms restrict systematic
+# compilation; the owner reviewed that and took responsibility on the basis that this is
+# not a commercial tool. Set CX_SKIP_RESTRICTED=1 to switch them back off.
+ENABLE_TOS_RESTRICTED = os.environ.get("CX_SKIP_RESTRICTED") != "1"
 
 APAC = {"CN","JP","KR","TW","HK","SG","MY","ID","TH","VN","PH","IN","AU","NZ","MO","BD","LK","PK","KH","LA","MM","BN"}
 
@@ -131,11 +134,82 @@ def cap_spheron():
             "clusters": [{"cluster": k, "offers": v} for k, v in cc.most_common(20)],
             "note": "Heavily North America and the Nordics. Asia-Pacific presence is a handful of offers."}
 
+def cap_vast():
+    """Vast.ai returns at most 64 offers per query and ignores offset, so the space is
+    partitioned: by GPU name, then by price band, split until a cell comes back under 64.
+    ~200 calls at 0.35s spacing; zero 429s seen at that pace."""
+    import urllib.parse
+    BASE = "https://console.vast.ai/api/v0/bundles/"
+    store = {}
+    def fetch(q):
+        d = get(BASE + "?" + urllib.parse.urlencode({"q": json.dumps(q)}), timeout=90, tries=3)
+        time.sleep(0.35)
+        return (d or {}).get("offers", [])
+    def base(**kw):
+        q = {"verified": {}, "external": {"eq": False}, "rentable": {"eq": True}, "type": "on-demand"}; q.update(kw); return q
+    def split(extra, lo, hi, depth=0):
+        q = base(**extra); q["dph_total"] = {"gte": lo, "lte": hi}; q["order"] = [["dph_total", "asc"]]
+        o = fetch(q)
+        for x in o: store[x["id"]] = x
+        if len(o) >= 64 and depth < 14 and hi - lo > 1e-4:
+            mid = (lo + hi) / 2; split(extra, lo, mid, depth + 1); split(extra, mid, hi, depth + 1)
+    names = set()
+    for order in [["dph_total","asc"],["dph_total","desc"],["score","desc"],["num_gpus","desc"],["id","asc"],["id","desc"]]:
+        for x in fetch(base(order=[order])): store[x["id"]] = x; names.add(x["gpu_name"])
+    for n in sorted(names): split({"gpu_name": {"eq": n}}, 0.0, 80.0)
+    for n in sorted({x["gpu_name"] for x in store.values()} - names): split({"gpu_name": {"eq": n}}, 0.0, 80.0)
+    offers = list(store.values())
+    if not offers: return None
+    gpus = sum(o.get("num_gpus") or 0 for o in offers)
+    cc_off = collections.Counter(); cc_gpu = collections.Counter()
+    price = collections.defaultdict(list)
+    for o in offers:
+        cc = (str(o.get("geolocation") or "").split(",")[-1].strip() or "").upper()[:2]
+        if cc: cc_off[cc] += 1; cc_gpu[cc] += o.get("num_gpus") or 0
+        if o.get("gpu_name") and o.get("dph_total") and o.get("num_gpus"):
+            price[o["gpu_name"]].append(o["dph_total"] / o["num_gpus"])
+    bands = []
+    for g, v in sorted(price.items(), key=lambda kv: -len(kv[1]))[:14]:
+        v = sorted(v); bands.append({"gpu": g[:44], "n": len(v), "usd_med": round(v[len(v)//2], 3)})
+    return {"venue": "Vast.ai", "kind": "peer-to-peer marketplace", "auth": "none",
+            "offers": len(offers), "gpus_total": gpus, "gpus_free": gpus,   # every offer here is rentable now
+            "asking_prices": bands,
+            "by_country": [{"cc": cc, "offers": cc_off[cc], "gpus": cc_gpu[cc], "free": cc_gpu[cc]} for cc, _ in cc_gpu.most_common(30)],
+            "note": "Every offer listed is rentable right now, so listed equals free. Per-GPU asking prices."}
+
+def cap_runpod():
+    """RunPod withholds counts without auth but gives per-type lowest prices and per-site
+    stock status for free. Read as a status signal, not a quantity."""
+    q = {"query": "{ gpuTypes { id displayName memoryInGb communityCloud secureCloud lowestPrice(input:{gpuCount:1}) { minimumBidPrice uninterruptablePrice stockStatus } } dataCenters { id name location listed gpuAvailability { gpuTypeId available stockStatus } } }"}
+    try:
+        req = urllib.request.Request("https://api.runpod.io/graphql", data=json.dumps(q).encode(),
+                                     headers={"User-Agent": UA, "Content-Type": "application/json"})
+        with urllib.request.urlopen(req, timeout=40) as r: d = json.load(r).get("data") or {}
+    except Exception as e:
+        print(f"    ! runpod failed: {type(e).__name__} {str(e)[:100]}", file=sys.stderr); return None
+    types = []
+    for g in d.get("gpuTypes") or []:
+        lp = g.get("lowestPrice") or {}
+        if lp.get("uninterruptablePrice") is None and lp.get("minimumBidPrice") is None: continue
+        types.append({"gpu": g.get("displayName"), "usd_on_demand": lp.get("uninterruptablePrice"),
+                      "usd_spot": lp.get("minimumBidPrice"), "stock": lp.get("stockStatus")})
+    dcs = []
+    for c in d.get("dataCenters") or []:
+        av = [a for a in (c.get("gpuAvailability") or []) if a.get("available")]
+        dcs.append({"site": c.get("id"), "where": c.get("location"), "listed": c.get("listed"), "types_in_stock": len(av)})
+    return {"venue": "RunPod", "kind": "GPU cloud, community and secure", "auth": "none (counts withheld)",
+            "gpus_total": None, "gpus_free": None,
+            "types": sorted(types, key=lambda x: -(x["usd_on_demand"] or 0))[:24],
+            "sites": dcs,
+            "note": "RunPod does not publish GPU counts without a login. What is shown is stock status per site, not a quantity."}
+
 def main():
     now = datetime.datetime.now(datetime.timezone.utc)
     stamp = now.strftime("%Y-%m-%dT%H%MZ")
     venues, skipped = [], []
-    for name, fn in [("Akash", cap_akash), ("Clore.ai", cap_clore), ("Spheron", cap_spheron)]:
+    readers = [("Akash", cap_akash), ("Clore.ai", cap_clore), ("Spheron", cap_spheron)]
+    if ENABLE_TOS_RESTRICTED: readers += [("Vast.ai", cap_vast), ("RunPod", cap_runpod)]
+    for name, fn in readers:
         print(f"  capturing {name} ...")
         v = fn()
         if v: venues.append(v)

@@ -226,6 +226,7 @@ a.src{font-family:var(--mono);font-size:var(--fs-1);color:var(--acct)}
   cursor:pointer;color:var(--t2);display:none;align-items:center;justify-content:center}
 #panel.closed ~ #panel-tab{display:flex}
 #sheet-head{display:none}
+body:not(.mob) #sec-key{display:none}
 .phead{display:flex;align-items:center;gap:10px;padding:14px 16px;border-bottom:1px solid var(--bd)}
 .brand{display:flex;align-items:baseline;gap:8px;flex:1;min-width:0}
 .brand b{font-size:var(--fs-5);font-weight:700;letter-spacing:-.02em}
@@ -307,6 +308,13 @@ details.sec[open] summary .chev{transform:rotate(180deg)}
 /* Six identical tiles is a grid, not a hierarchy -- nothing is emphasised so nothing reads as
    the headline. The two numbers this business turns on get the weight; the rest are context
    and lose their boxes entirely, which also gives the row somewhere to breathe. */
+.kpis.four{grid-template-columns:1fr 1fr;gap:8px}
+.kpis.four .kpi{padding:12px 13px;background:var(--s2)}
+.kpis.four .kpi .v{font-size:26px;letter-spacing:-.03em}
+.kpis.four .kpi .v .u{font-size:var(--fs-2);font-weight:500;color:var(--t3);margin-left:4px;letter-spacing:0}
+.kpis.four .kpi .l{font-size:var(--fs-3);color:var(--t1);font-weight:600;margin-top:5px}
+.kpis.four .kpi .s{font-size:var(--fs-2);color:var(--t3);margin-top:2px}
+.kpi.off .v{color:var(--c-off-t)}
 .kpis.lead{grid-template-columns:1fr 1fr;gap:8px}
 .kpis.lead .kpi{padding:13px 14px;background:var(--s2)}
 .kpis.lead .kpi .v{font-size:var(--fs-7);letter-spacing:-.035em}
@@ -659,10 +667,6 @@ __RIVALS_CSS__
       <summary><h2>Key</h2><span class="ssum" id="sum-key"></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
       <div class="secb" id="key-slot"></div>
     </details>
-    <details class="sec" id="sec-spare">
-      <summary><h2>Spare right now</h2><span class="ssum" id="sum-spare"></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
-      <div class="secb" id="spare"></div>
-    </details>
     <details class="sec" id="sec-match">
       <summary><h2>Who to call</h2><span class="ssum" id="sum-match"></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
       <div class="secb" id="match"></div>
@@ -809,7 +813,7 @@ const LAYERS = [
   {id:"demand", name:"Demand · companies",       col:"--c-dem",  tcol:"--c-dem-t",  on:true,  desc:"Every company that has said it needs compute or has bought it. Bigger means more."},
   {id:"contracts",name:"Contracts · who buys from whom",col:"--c-con",tcol:"--c-con-t",on:true,  desc:"One curve per compute contract, drawn from the seller to the buyer. Thicker means a bigger deal."},
   {id:"capital",name:"Capital · who funds whom",col:"--c-cap",  tcol:"--c-cap-t",  on:false, desc:"Loans, investments and guarantees. Lender to borrower."},
-  {id:"offload",name:"Supply for sale",         col:"--c-off",  tcol:"--c-off-t",  on:false, desc:"Companies trying to sell compute they already hold."},
+  {id:"offload",name:"Excess compute",          col:"--c-off",  tcol:"--c-off-t",  on:false, desc:"Compute somebody has and does not need: released, for sale, or listed on a marketplace."},
   {id:"prices", name:"Price by city",           col:"--c-px",   tcol:"--c-px-t",   on:false, desc:"The same Azure machine, priced per hour in six Asian cities."}
 ];
 const S = {
@@ -1420,36 +1424,32 @@ function marketNumbers(){
 }
 function renderMarket(){
   const n = marketNumbers(), where = n.apac ? "Asia-Pacific" : "worldwide";
-  const tile = (cls, val, label, sub) =>
-    `<div class="kpi ${cls}"><div class="v">${val}</div><div class="l">${label}</div>${sub?`<div class="s">${sub}</div>`:""}</div>`;
-  const none = t => `<span style="font-size:var(--fs-4);font-weight:600">${t}</span>`;
+  /* Four numbers, one question each. Being built: what to track and go after. Asked for: the
+     demand, so you can see whether supply and demand match. Excess: what is loose right now.
+     Running: the baseline everything else is measured against. */
+  const askedMw = n.gapMw + n.pendingMw;                 // open needs plus signed-but-not-delivered
+  /* Only capacity that is open right now counts as excess. A 10 GW target and a power
+     allocation nobody has energised are in the list for context, not in this number. */
+  const openNow = n.forSale.filter(d => d.open_status === "available_now");
+  const excessMw = openNow.reduce((a,d) => a + (d.mw||0), 0);
+  const excessGpus = (INV && INV.totals) ? INV.totals.gpus_spare : 0;
+  const tile = (cls, val, unit, label, sub) =>
+    `<div class="kpi ${cls}"><div class="v">${val}<small class="u">${unit}</small></div><div class="l">${label}</div>${sub?`<div class="s">${sub}</div>`:""}</div>`;
   $("market").innerHTML = `
     <div style="display:flex;align-items:center;justify-content:space-between;margin:0 0 9px">
-      <span style="font-size:var(--fs-2);color:var(--t3)">Everything below is ${where}</span>
+      <span style="font-size:var(--fs-2);color:var(--t3)">${where}</span>
       <span class="scope" role="group" aria-label="Which market">
         <button data-scope="apac" aria-pressed="${n.apac}">Asia</button>
         <button data-scope="world" aria-pressed="${!n.apac}">World</button></span>
     </div>
-    <div class="kpis lead">
-      ${tile("build", kf(n.building), "MW being built", n.apac ? "market figure, C&amp;W" : `${nf(SITES.filter(s=>bucketOf(s.status)==="building").length)} sites`)}
-      ${tile("dem", kf(n.gapMw), "MW wanted, no seller yet", `${nf(n.gaps.length)} companies, no contract found`)}
-    </div>
-    <div class="kpis rest">
-      ${tile("dem", kf(n.soonMw), `wanted by ${HORIZON}`)}
-      ${tile("dem", kf(n.nodateMw), "wanted, no date given")}
-      ${tile("dem", kf(n.pendingMw), "signed, not delivered yet")}
-      ${n.forSaleMw ? tile("", kf(n.forSaleMw), "looking for a buyer")
-        : n.forSale.length ? tile("", nf(n.forSale.length), "reports of supply for sale")
-        : tile("dim", "&mdash;", "supply for sale, none found")}
-    </div>
-    <div class="mstrip">
-      <span><b>${nf(n.soon.length)}</b> of <b>${nf(n.soon.length + n.nodate.length)}</b> stated needs have a date</span>
-      <span><b>${kf(n.running)}</b> MW already running and sold</span>
-      ${(()=>{ const h=(PRICES.by_gpu||[]).find(r=>r.gpu==="H100"); return h?`<span>same H100 costs <b>${h.spread}×</b> more in the dearest city than the cheapest</span>`:""; })()}
+    <div class="kpis four">
+      ${tile("build", kf(n.building), "MW", "Being built", n.apac ? "market total" : `${nf(SITES.filter(s=>bucketOf(s.status)==="building").length)} sites`)}
+      ${tile("dem", kf(askedMw), "MW", "Asked for now", `${nf(n.gaps.length)} companies still need a seller`)}
+      ${tile("off", excessMw ? kf(excessMw) : nf(openNow.length), excessMw ? "MW" : "open", "Excess out there", `${nf(openNow.length)} open now${excessGpus ? ` · ${nf(excessGpus)} GPUs free on marketplaces` : ""}`)}
+      ${tile("live", kf(n.running), "MW", "Running now", n.apac ? "market total, already sold" : "our named sites only")}
     </div>`;
   $("sum-market").textContent = `${nf(visibleSites().length)} sites on map`;
 }
-
 /* ============ panel: layers ============ */
 function counts(){
   return {sites: visibleSites().length, country: CTRY.length,
@@ -1465,14 +1465,14 @@ const fchk = (id, on, label) => `<div class="frow"><label style="display:flex;al
 function renderLayers(){
   const c = counts();
   $("layers").innerHTML = LAYERS.map(l => `
-    <div class="lrow${S.on[l.id]?"":" off"}${S.on[l.id]&&["sites","demand","contracts"].includes(l.id)?" hasf":""}" data-lrow="${l.id}">
+    <div class="lrow${S.on[l.id]?"":" off"}${S.on[l.id]&&["sites","demand","contracts","offload"].includes(l.id)?" hasf":""}" data-lrow="${l.id}">
       ${l.col?`<span class="sw" style="background:var(${l.col})"></span>`:`<span class="sw" style="background:none;border:1px solid var(--bd2)"></span>`}
       <span class="lname" title="${esc(l.desc)}">${esc(l.name)}</span>
       <span class="ln">${nf(c[l.id])}</span>
       <button class="eye" data-layer="${l.id}" aria-pressed="${S.on[l.id]}" aria-label="Toggle ${esc(l.name)}">
         <svg class="ic"><use href="${S.on[l.id]?"#i-eye":"#i-eyeoff"}"/></svg></button>
     </div>
-    ${!S.on[l.id]||!["country","sites","demand","contracts"].includes(l.id)?"":`<div class="fgrp" style="border-left-color:var(${l.col})">`+(
+    ${!S.on[l.id]||!["country","sites","demand","contracts","offload"].includes(l.id)?"":`<div class="fgrp" style="border-left-color:var(${l.col})">`+(
       l.id==="country"?fsel("cmetric","Show",[["all","All — supply and demand"],["building","Being built"],["running","Running now"],["demand","Demand by 2028"]],S.ctryMetric,c.country)
     : l.id==="sites"?fsel("status","Show",[["all","All sites"],["live","Running now"],["building","Being built"],["planned","Only announced"]],S.siteStatus,c.sites)
         +fchk("siteNames",S.on.labels,"Name the biggest sites")
@@ -1480,7 +1480,9 @@ function renderLayers(){
         +fsel("dwho","Who",[["all","Everyone"],["lab","AI labs"],["cloud","Big clouds"],["gov","Governments"],["ent","Enterprises"]],S.demWho)
     : l.id==="contracts"?fsel("cstatus","Show",[["all","All contracts"],["pending","Signed, not delivered"],["running","Delivered, running"],["changed","Cut back or cancelled"]],S.conStatus,c.contracts)
         +fchk("arcNames",S.on.arclabels,"Name the 10 biggest deals")
+    : l.id==="offload"?`<div id="spare"></div>`
     : "")+`</div>`}`).join("");
+  if ($("spare")) renderSpare();
   $("sum-layers").textContent = LAYERS.filter(l=>S.on[l.id]).length + " on";
   const sn = $("siteNames"); if (sn) sn.addEventListener("change", e => { S.on.labels = e.target.checked; rebuild("sites"); });
   const an = $("arcNames"); if (an) an.addEventListener("change", e => { S.on.arclabels = e.target.checked; rebuild("contracts"); });
@@ -1515,30 +1517,30 @@ function renderSpare(){
     return (r[a.open_status] - r[b.open_status]) || ((b.mw||0) - (a.mw||0));
   });
   const openN = offers.filter(d => d.open_status === "available_now").length;
+  if (!$("spare")) return;
   let live = "";
   if (INV && INV.totals){
     const T = INV.totals, stale = (Date.now() - Date.parse(INV.captured_at)) > 36*3.6e6;
     live = `<div class="invhead">
-        <b>${nf(T.gpus_spare)}</b> GPUs spare across ${T.venues_read} public marketplaces
+        <b>${nf(T.gpus_spare)}</b> GPUs free to rent right now on ${T.venues_read} marketplaces
         <span class="invage${stale?" old":""}">${esc(agoTxt(INV.captured_at))}</span></div>
       <div class="mstrip" style="margin-top:6px">
         <span><b>${nf(T.gpus_seen)}</b> GPUs listed in total</span>
         <span><b>${nf(T.apac_spare)}</b> of the spare are in Asia-Pacific</span></div>
       ${INV.venues.map(v => `<div class="mini"><span class="mn">${esc(v.venue)}<small>${esc(v.kind)}</small></span>
         <span class="mv">${v.gpus_free!=null||v.gpus_available!=null ? nf(v.gpus_free!=null?v.gpus_free:v.gpus_available)+" free" : "\u2014"}</span></div>`).join("")}
-      <p class="hint">A snapshot, not a feed. ${INV.not_read.length} more venues are not read: ${esc(INV.not_read.map(x=>x.venue).join(", "))}. Hover the count for why.</p>`;
+      <p class="hint">Counted ${esc(agoTxt(INV.captured_at))}. Updated once a day.</p>`;
   } else {
     live = `<p class="hint">No marketplace snapshot has been captured yet.</p>`;
   }
   $("spare").innerHTML = live +
-    `<div class="subh">Capacity someone has let go &middot; ${offers.length}</div>` +
+    `<div class="subh">Compute someone let go of &middot; ${offers.length}</div>` +
     offers.map(d => `<div class="mini click" data-sel="deal:${esc(d.deal_id)}">
         <span class="mn">${esc(whoName(d.from_id))}
           <small>${esc(clip(d.headline||"",118))}</small>
           <small class="buyline">${esc(d.how_to_buy||"route unknown")}${d.taken_by?" &middot; taken by "+esc(d.taken_by):""}</small></span>
         <span class="mv"><span class="ostag ${OPEN_CLS[d.open_status]||""}">${esc(OPEN_LABEL[d.open_status]||d.open_status)}</span>
           ${d.mw?"<br>"+mwf(d.mw):""}</span></div>`).join("");
-  $("sum-spare").textContent = `${openN} open now`;
 }
 function renderMatch(){
   $("match").innerHTML = `<p class="hint" style="margin:0 0 6px">The same companies as the <b style="color:var(--c-dem-t)">Demand</b> layer, ranked by how much they still need. Click a name to find it on the map.</p>` +
@@ -1904,7 +1906,7 @@ function renderPill(){
   $("sheet-stat").innerHTML = short.slice(0,3).join('<span class="sep">·</span>')
     || `<b>${nf(DEALS.length)}</b> deals · <b>${nf(SITES.length)}</b> sites`;
 }
-function renderAllPanels(){ renderMarket(); renderLayers(); renderSpare(); renderMatch(); renderCircles(); renderPrices(); renderLive(); renderData(); renderLegend(); renderPill();
+function renderAllPanels(){ renderMarket(); renderLayers(); renderMatch(); renderCircles(); renderPrices(); renderLive(); renderData(); renderLegend(); renderPill();
   $("pfoot").innerHTML = `<b>${nf(COV.deals_total)}</b> deals · <b>${nf(COV.entities_total)}</b> companies · <b>${nf(COV.sites_total)}</b> sites · <b>${nf(CTRY.length)}</b> countries`; }
 
 

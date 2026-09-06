@@ -902,6 +902,7 @@ a.src{font-family:var(--mono);font-size:var(--fs-1);color:var(--acct)}
   cursor:pointer;color:var(--t2);display:none;align-items:center;justify-content:center}
 #panel.closed ~ #panel-tab{display:flex}
 #sheet-head{display:none}
+body:not(.mob) #sec-key{display:none}
 .phead{display:flex;align-items:center;gap:10px;padding:14px 16px;border-bottom:1px solid var(--bd)}
 .brand{display:flex;align-items:baseline;gap:8px;flex:1;min-width:0}
 .brand b{font-size:var(--fs-5);font-weight:700;letter-spacing:-.02em}
@@ -983,6 +984,13 @@ details.sec[open] summary .chev{transform:rotate(180deg)}
 /* Six identical tiles is a grid, not a hierarchy -- nothing is emphasised so nothing reads as
    the headline. The two numbers this business turns on get the weight; the rest are context
    and lose their boxes entirely, which also gives the row somewhere to breathe. */
+.kpis.four{grid-template-columns:1fr 1fr;gap:8px}
+.kpis.four .kpi{padding:12px 13px;background:var(--s2)}
+.kpis.four .kpi .v{font-size:26px;letter-spacing:-.03em}
+.kpis.four .kpi .v .u{font-size:var(--fs-2);font-weight:500;color:var(--t3);margin-left:4px;letter-spacing:0}
+.kpis.four .kpi .l{font-size:var(--fs-3);color:var(--t1);font-weight:600;margin-top:5px}
+.kpis.four .kpi .s{font-size:var(--fs-2);color:var(--t3);margin-top:2px}
+.kpi.off .v{color:var(--c-off-t)}
 .kpis.lead{grid-template-columns:1fr 1fr;gap:8px}
 .kpis.lead .kpi{padding:13px 14px;background:var(--s2)}
 .kpis.lead .kpi .v{font-size:var(--fs-7);letter-spacing:-.035em}
@@ -1499,10 +1507,6 @@ table.cmp td{color:var(--t2)}
       <summary><h2>Key</h2><span class="ssum" id="sum-key"></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
       <div class="secb" id="key-slot"></div>
     </details>
-    <details class="sec" id="sec-spare">
-      <summary><h2>Spare right now</h2><span class="ssum" id="sum-spare"></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
-      <div class="secb" id="spare"></div>
-    </details>
     <details class="sec" id="sec-match">
       <summary><h2>Who to call</h2><span class="ssum" id="sum-match"></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
       <div class="secb" id="match"></div>
@@ -1557,13 +1561,13 @@ table.cmp td{color:var(--t2)}
 /* ============ data ============ */
 const DATA = JSON.parse(document.getElementById("dataset").textContent);
 const INV = {
- "captured_at": "2026-09-06T09:16:38Z",
+ "captured_at": "2026-09-06T09:48:37Z",
  "totals": {
-  "gpus_seen": 8478,
-  "gpus_spare": 4140,
-  "apac_gpus": 546,
-  "apac_spare": 387,
-  "venues_read": 3
+  "gpus_seen": 14664,
+  "gpus_spare": 10410,
+  "apac_gpus": 2072,
+  "apac_spare": 1914,
+  "venues_read": 5
  },
  "venues": [
   {
@@ -1571,7 +1575,7 @@ const INV = {
    "kind": "decentralised reverse auction",
    "auth": "none",
    "gpus_total": 453,
-   "gpus_available": 163,
+   "gpus_available": 161,
    "models": [
     {
      "model": "nvidia a100 80Gi SXM4",
@@ -1600,7 +1604,7 @@ const INV = {
     {
      "model": "nvidia pro6000se 96Gi PCIe",
      "total": 24,
-     "available": 24,
+     "available": 23,
      "usd_min": 2.04,
      "usd_med": 2.04,
      "usd_max": 2.04
@@ -1739,7 +1743,7 @@ const INV = {
      "cc": "US",
      "providers": 220,
      "gpus": 352,
-     "available": 116
+     "available": 115
     },
     {
      "cc": "GB",
@@ -1751,7 +1755,7 @@ const INV = {
      "cc": "PT",
      "providers": 3,
      "gpus": 15,
-     "available": 9
+     "available": 8
     },
     {
      "cc": "BE",
@@ -1762,8 +1766,8 @@ const INV = {
     {
      "cc": "UA",
      "providers": 9,
-     "gpus": 10,
-     "available": 4
+     "gpus": 11,
+     "available": 5
     },
     {
      "cc": "RU",
@@ -1922,9 +1926,9 @@ const INV = {
    "venue": "Clore.ai",
    "kind": "peer-to-peer marketplace",
    "auth": "none",
-   "servers": 2386,
-   "gpus_total": 8025,
-   "gpus_free": 3977,
+   "servers": 2389,
+   "gpus_total": 8016,
+   "gpus_free": 4054,
    "asking_prices": [
     {
      "gpu": "6x NVIDIA GeForce RTX 3070",
@@ -1933,23 +1937,18 @@ const INV = {
     },
     {
      "gpu": "1x NVIDIA GeForce RTX 4090",
-     "n": 55,
-     "usd_med": 6
+     "n": 67,
+     "usd_med": 5.7
     },
     {
      "gpu": "1x NVIDIA GeForce RTX 5090",
-     "n": 49,
-     "usd_med": 9
+     "n": 54,
+     "usd_med": 8.15
     },
     {
      "gpu": "1x NVIDIA GeForce RTX 5070 Ti",
-     "n": 39,
-     "usd_med": 5
-    },
-    {
-     "gpu": "1x NVIDIA GeForce RTX 3090",
-     "n": 35,
-     "usd_med": 3
+     "n": 47,
+     "usd_med": 4.43
     },
     {
      "gpu": "6x NVIDIA GeForce RTX 3080",
@@ -1957,9 +1956,19 @@ const INV = {
      "usd_med": 13.2
     },
     {
+     "gpu": "1x NVIDIA GeForce RTX 3090",
+     "n": 34,
+     "usd_med": 4
+    },
+    {
      "gpu": "1x NVIDIA GeForce RTX 5080",
-     "n": 25,
-     "usd_med": 4.1
+     "n": 32,
+     "usd_med": 4
+    },
+    {
+     "gpu": "1x NVIDIA GeForce RTX 3080",
+     "n": 22,
+     "usd_med": 2.8
     },
     {
      "gpu": "8x NVIDIA RTX A2000",
@@ -1967,19 +1976,14 @@ const INV = {
      "usd_med": 4.5
     },
     {
-     "gpu": "1x NVIDIA GeForce RTX 3080",
-     "n": 20,
-     "usd_med": 2.99
+     "gpu": "3x NVIDIA GeForce RTX 5090",
+     "n": 19,
+     "usd_med": 23.91
     },
     {
      "gpu": "1x NVIDIA GeForce RTX 3080 Ti",
      "n": 19,
      "usd_med": 2.69
-    },
-    {
-     "gpu": "3x NVIDIA GeForce RTX 5090",
-     "n": 19,
-     "usd_med": 23.91
     },
     {
      "gpu": "1x NVIDIA GeForce RTX 5060 Ti",
@@ -1993,24 +1997,24 @@ const INV = {
     },
     {
      "gpu": "2x NVIDIA GeForce RTX 5090",
-     "n": 14,
+     "n": 15,
      "usd_med": 15.94
     }
    ],
    "rented_prices": [
     {
      "gpu": "1x NVIDIA GeForce RTX 3090",
-     "n": 104,
+     "n": 106,
      "usd_med": 2
     },
     {
      "gpu": "1x NVIDIA GeForce RTX 5090",
-     "n": 100,
+     "n": 96,
      "usd_med": 6.67
     },
     {
      "gpu": "1x NVIDIA GeForce RTX 4090",
-     "n": 83,
+     "n": 71,
      "usd_med": 4
     },
     {
@@ -2020,8 +2024,8 @@ const INV = {
     },
     {
      "gpu": "1x NVIDIA GeForce RTX 5080",
-     "n": 46,
-     "usd_med": 3.3
+     "n": 39,
+     "usd_med": 3.2
     },
     {
      "gpu": "1x NVIDIA GeForce RTX 3060",
@@ -2034,24 +2038,24 @@ const INV = {
      "usd_med": 0.9
     },
     {
-     "gpu": "1x NVIDIA GeForce RTX 5070 Ti",
-     "n": 29,
-     "usd_med": 2.99
-    },
-    {
-     "gpu": "8x NVIDIA CMP 50HX",
-     "n": 26,
-     "usd_med": 6.6
-    },
-    {
      "gpu": "1x NVIDIA GeForce RTX 5060 Ti",
      "n": 26,
      "usd_med": 1.36
     },
     {
+     "gpu": "8x NVIDIA CMP 50HX",
+     "n": 25,
+     "usd_med": 6.6
+    },
+    {
      "gpu": "2x NVIDIA GeForce RTX 4090",
-     "n": 24,
+     "n": 23,
      "usd_med": 8.6
+    },
+    {
+     "gpu": "1x NVIDIA GeForce RTX 5070 Ti",
+     "n": 21,
+     "usd_med": 2.99
     },
     {
      "gpu": "1x NVIDIA GeForce RTX 3080",
@@ -2072,27 +2076,27 @@ const INV = {
    "by_country": [
     {
      "cc": "RU",
-     "servers": 739,
-     "gpus": 2804,
-     "free": 1672
+     "servers": 737,
+     "gpus": 2791,
+     "free": 1687
     },
     {
      "cc": "US",
      "servers": 277,
      "gpus": 1096,
-     "free": 248
+     "free": 259
     },
     {
      "cc": "UA",
-     "servers": 213,
-     "gpus": 508,
-     "free": 298
+     "servers": 214,
+     "gpus": 509,
+     "free": 311
     },
     {
      "cc": "FI",
-     "servers": 81,
-     "gpus": 442,
-     "free": 372
+     "servers": 85,
+     "gpus": 446,
+     "free": 379
     },
     {
      "cc": "TW",
@@ -2104,43 +2108,43 @@ const INV = {
      "cc": "HR",
      "servers": 46,
      "gpus": 274,
-     "free": 114
+     "free": 122
     },
     {
      "cc": "PL",
      "servers": 72,
      "gpus": 270,
-     "free": 107
+     "free": 109
     },
     {
      "cc": "DE",
      "servers": 68,
      "gpus": 216,
-     "free": 91
+     "free": 79
     },
     {
      "cc": "BY",
      "servers": 59,
      "gpus": 196,
-     "free": 92
+     "free": 95
     },
     {
      "cc": "AR",
      "servers": 66,
      "gpus": 153,
-     "free": 47
+     "free": 48
     },
     {
      "cc": "NL",
      "servers": 64,
      "gpus": 142,
-     "free": 51
+     "free": 58
     },
     {
      "cc": "CA",
      "servers": 76,
      "gpus": 139,
-     "free": 54
+     "free": 53
     },
     {
      "cc": "KZ",
@@ -2150,21 +2154,21 @@ const INV = {
     },
     {
      "cc": "ES",
-     "servers": 19,
-     "gpus": 108,
-     "free": 76
+     "servers": 18,
+     "gpus": 107,
+     "free": 75
     },
     {
      "cc": "BR",
      "servers": 42,
      "gpus": 101,
-     "free": 22
+     "free": 24
     },
     {
      "cc": "CN",
      "servers": 50,
      "gpus": 97,
-     "free": 82
+     "free": 84
     },
     {
      "cc": "PT",
@@ -2186,15 +2190,21 @@ const INV = {
     },
     {
      "cc": "EE",
-     "servers": 16,
-     "gpus": 59,
-     "free": 44
+     "servers": 14,
+     "gpus": 50,
+     "free": 45
     },
     {
      "cc": "IN",
      "servers": 10,
      "gpus": 48,
      "free": 38
+    },
+    {
+     "cc": "MY",
+     "servers": 15,
+     "gpus": 47,
+     "free": 11
     },
     {
      "cc": "BG",
@@ -2207,12 +2217,6 @@ const INV = {
      "servers": 32,
      "gpus": 44,
      "free": 44
-    },
-    {
-     "cc": "MY",
-     "servers": 14,
-     "gpus": 42,
-     "free": 6
     },
     {
      "cc": "NO",
@@ -2248,7 +2252,7 @@ const INV = {
      "cc": "NZ",
      "servers": 6,
      "gpus": 28,
-     "free": 28
+     "free": 27
     }
    ],
    "note": "Asking prices sit well above rented levels. Use the rented set for price signal and the free set for spare supply."
@@ -2257,7 +2261,7 @@ const INV = {
    "venue": "Spheron",
    "kind": "tier-3/4 data centre aggregator",
    "auth": "none",
-   "groups_total": 29,
+   "groups_total": 28,
    "groups": [
     {
      "gpu": "CPU NODE",
@@ -2267,27 +2271,21 @@ const INV = {
     },
     {
      "gpu": "L40S PCIe",
-     "available": 37,
+     "available": 34,
      "usd_low": 0.96,
      "usd_high": 15.379000000000001
     },
     {
      "gpu": "A100 80G PCIe",
-     "available": 30,
+     "available": 31,
      "usd_low": 1.1954,
      "usd_high": 21.0144
     },
     {
      "gpu": "RTXPRO6000 PCIe",
-     "available": 25,
-     "usd_low": 2.388,
+     "available": 29,
+     "usd_low": 1.25,
      "usd_high": 19.104
-    },
-    {
-     "gpu": "A6000 PCIe",
-     "available": 25,
-     "usd_low": 0.4474,
-     "usd_high": 10.1904
     },
     {
      "gpu": "H100 PCIe",
@@ -2297,33 +2295,39 @@ const INV = {
     },
     {
      "gpu": "L40 PCIe",
-     "available": 23,
+     "available": 24,
      "usd_low": 0.8874,
      "usd_high": 10.56
     },
     {
-     "gpu": "A100 80G SXM4",
-     "available": 18,
-     "usd_low": 1.1875,
-     "usd_high": 31.68
+     "gpu": "A6000 PCIe",
+     "available": 22,
+     "usd_low": 0.4474,
+     "usd_high": 10.1904
     },
     {
      "gpu": "H100 SXM5",
-     "available": 9,
+     "available": 15,
      "usd_low": 2.9429999999999996,
      "usd_high": 42.1344
     },
     {
-     "gpu": "A6000 PCIe (High Performance)",
-     "available": 9,
-     "usd_low": 0.564,
-     "usd_high": 4.512
+     "gpu": "A100 80G SXM4",
+     "available": 15,
+     "usd_low": 1.8216,
+     "usd_high": 31.68
     },
     {
      "gpu": "RTX6000ADA PCIe",
-     "available": 7,
+     "available": 10,
      "usd_low": 0.78,
-     "usd_high": 2.5608
+     "usd_high": 3.12
+    },
+    {
+     "gpu": "A6000 PCIe (High Performance)",
+     "available": 7,
+     "usd_low": 0.564,
+     "usd_high": 4.512
     },
     {
      "gpu": "H200 SXM5",
@@ -2347,7 +2351,7 @@ const INV = {
      "gpu": "A6000 PCIe (Low RAM)",
      "available": 4,
      "usd_low": 0.54,
-     "usd_high": 1.08
+     "usd_high": 2.16
     },
     {
      "gpu": "V100 32G PCIe",
@@ -2387,22 +2391,26 @@ const INV = {
     },
     {
      "cluster": "EU North 1",
-     "offers": 26
+     "offers": 23
     },
     {
      "cluster": "us-central-3",
      "offers": 22
     },
     {
-     "cluster": "desmoines-usa-1",
-     "offers": 18
+     "cluster": "Finland 2",
+     "offers": 19
     },
     {
-     "cluster": "newyork-usa-1",
-     "offers": 16
+     "cluster": "desmoines-usa-1",
+     "offers": 19
     },
     {
      "cluster": "us-central-2",
+     "offers": 17
+    },
+    {
+     "cluster": "newyork-usa-1",
      "offers": 16
     },
     {
@@ -2414,19 +2422,15 @@ const INV = {
      "offers": 14
     },
     {
-     "cluster": "Finland 2",
-     "offers": 13
-    },
-    {
      "cluster": "kansascity-usa-1",
-     "offers": 11
-    },
-    {
-     "cluster": "MON1",
-     "offers": 8
+     "offers": 12
     },
     {
      "cluster": "warsaw-poland-1",
+     "offers": 7
+    },
+    {
+     "cluster": "MON1",
      "offers": 7
     },
     {
@@ -2439,10 +2443,6 @@ const INV = {
     },
     {
      "cluster": "calgary-canada-1",
-     "offers": 5
-    },
-    {
-     "cluster": "Finland 1",
      "offers": 5
     },
     {
@@ -2460,20 +2460,735 @@ const INV = {
     {
      "cluster": "beltsville-usa-1",
      "offers": 4
+    },
+    {
+     "cluster": "us-central-9",
+     "offers": 4
     }
    ],
    "note": "Heavily North America and the Nordics. Asia-Pacific presence is a handful of offers."
-  }
- ],
- "not_read": [
+  },
   {
    "venue": "Vast.ai",
-   "reason": "terms of service forbid systematic compilation into a database and use in a competing product; open API notwithstanding. Ask for written permission before enabling."
+   "kind": "peer-to-peer marketplace",
+   "auth": "none",
+   "offers": 3167,
+   "gpus_total": 6195,
+   "gpus_free": 6195,
+   "asking_prices": [
+    {
+     "gpu": "RTX 5090",
+     "n": 662,
+     "usd_med": 0.467
+    },
+    {
+     "gpu": "RTX 4090",
+     "n": 425,
+     "usd_med": 0.394
+    },
+    {
+     "gpu": "RTX 3090",
+     "n": 326,
+     "usd_med": 0.155
+    },
+    {
+     "gpu": "RTX 3060",
+     "n": 268,
+     "usd_med": 0.06
+    },
+    {
+     "gpu": "RTX 5060 Ti",
+     "n": 191,
+     "usd_med": 0.121
+    },
+    {
+     "gpu": "RTX A4000",
+     "n": 141,
+     "usd_med": 0.095
+    },
+    {
+     "gpu": "RTX 5080",
+     "n": 58,
+     "usd_med": 0.202
+    },
+    {
+     "gpu": "RTX 3080",
+     "n": 43,
+     "usd_med": 0.096
+    },
+    {
+     "gpu": "RTX 4060 Ti",
+     "n": 42,
+     "usd_med": 0.103
+    },
+    {
+     "gpu": "RTX PRO 6000 WS",
+     "n": 42,
+     "usd_med": 1.442
+    },
+    {
+     "gpu": "RTX PRO 6000 Max-Q",
+     "n": 42,
+     "usd_med": 1.469
+    },
+    {
+     "gpu": "A100 SXM4",
+     "n": 41,
+     "usd_med": 0.834
+    },
+    {
+     "gpu": "RTX 3080 Ti",
+     "n": 41,
+     "usd_med": 0.122
+    },
+    {
+     "gpu": "RTX 3070",
+     "n": 39,
+     "usd_med": 0.082
+    }
+   ],
+   "by_country": [
+    {
+     "cc": "US",
+     "offers": 1027,
+     "gpus": 2069,
+     "free": 2069
+    },
+    {
+     "cc": "CA",
+     "offers": 227,
+     "gpus": 487,
+     "free": 487
+    },
+    {
+     "cc": "TW",
+     "offers": 124,
+     "gpus": 371,
+     "free": 371
+    },
+    {
+     "cc": "KR",
+     "offers": 224,
+     "gpus": 342,
+     "free": 342
+    },
+    {
+     "cc": "CN",
+     "offers": 147,
+     "gpus": 322,
+     "free": 322
+    },
+    {
+     "cc": "JP",
+     "offers": 114,
+     "gpus": 277,
+     "free": 277
+    },
+    {
+     "cc": "CZ",
+     "offers": 106,
+     "gpus": 191,
+     "free": 191
+    },
+    {
+     "cc": "GB",
+     "offers": 56,
+     "gpus": 180,
+     "free": 180
+    },
+    {
+     "cc": "NO",
+     "offers": 92,
+     "gpus": 149,
+     "free": 149
+    },
+    {
+     "cc": "DE",
+     "offers": 72,
+     "gpus": 138,
+     "free": 138
+    },
+    {
+     "cc": "PL",
+     "offers": 79,
+     "gpus": 105,
+     "free": 105
+    },
+    {
+     "cc": "BG",
+     "offers": 43,
+     "gpus": 86,
+     "free": 86
+    },
+    {
+     "cc": "FR",
+     "offers": 53,
+     "gpus": 85,
+     "free": 85
+    },
+    {
+     "cc": "RU",
+     "offers": 33,
+     "gpus": 80,
+     "free": 80
+    },
+    {
+     "cc": "EE",
+     "offers": 43,
+     "gpus": 78,
+     "free": 78
+    },
+    {
+     "cc": "IS",
+     "offers": 35,
+     "gpus": 77,
+     "free": 77
+    },
+    {
+     "cc": "VN",
+     "offers": 51,
+     "gpus": 75,
+     "free": 75
+    },
+    {
+     "cc": "HU",
+     "offers": 39,
+     "gpus": 70,
+     "free": 70
+    },
+    {
+     "cc": "ES",
+     "offers": 43,
+     "gpus": 62,
+     "free": 62
+    },
+    {
+     "cc": "AE",
+     "offers": 15,
+     "gpus": 59,
+     "free": 59
+    },
+    {
+     "cc": "HK",
+     "offers": 20,
+     "gpus": 54,
+     "free": 54
+    },
+    {
+     "cc": "UA",
+     "offers": 40,
+     "gpus": 52,
+     "free": 52
+    },
+    {
+     "cc": "SE",
+     "offers": 28,
+     "gpus": 52,
+     "free": 52
+    },
+    {
+     "cc": "ZA",
+     "offers": 17,
+     "gpus": 49,
+     "free": 49
+    },
+    {
+     "cc": "AR",
+     "offers": 30,
+     "gpus": 48,
+     "free": 48
+    },
+    {
+     "cc": "AU",
+     "offers": 28,
+     "gpus": 48,
+     "free": 48
+    },
+    {
+     "cc": "DK",
+     "offers": 31,
+     "gpus": 48,
+     "free": 48
+    },
+    {
+     "cc": "NL",
+     "offers": 31,
+     "gpus": 44,
+     "free": 44
+    },
+    {
+     "cc": "RO",
+     "offers": 27,
+     "gpus": 35,
+     "free": 35
+    },
+    {
+     "cc": "TH",
+     "offers": 25,
+     "gpus": 32,
+     "free": 32
+    }
+   ],
+   "note": "Every offer listed is rentable right now, so listed equals free. Per-GPU asking prices."
   },
   {
    "venue": "RunPod",
-   "reason": "terms of service forbid data gathering tools and use in an effort to compete. Ask for written permission before enabling."
-  },
+   "kind": "GPU cloud, community and secure",
+   "auth": "none (counts withheld)",
+   "gpus_total": null,
+   "gpus_free": null,
+   "types": [
+    {
+     "gpu": "B300",
+     "usd_on_demand": 6.94,
+     "usd_spot": 6.94,
+     "stock": "Low"
+    },
+    {
+     "gpu": "B200",
+     "usd_on_demand": 5.98,
+     "usd_spot": 5.98,
+     "stock": "Low"
+    },
+    {
+     "gpu": "H200 SXM",
+     "usd_on_demand": 3.59,
+     "usd_spot": 3.59,
+     "stock": "Medium"
+    },
+    {
+     "gpu": "H100 SXM",
+     "usd_on_demand": 2.69,
+     "usd_spot": 2.69,
+     "stock": "High"
+    },
+    {
+     "gpu": "H100 NVL",
+     "usd_on_demand": 2.59,
+     "usd_spot": 2.59,
+     "stock": "Low"
+    },
+    {
+     "gpu": "H100 PCIe",
+     "usd_on_demand": 1.99,
+     "usd_spot": 1.99,
+     "stock": "Low"
+    },
+    {
+     "gpu": "RTX PRO 6000",
+     "usd_on_demand": 1.69,
+     "usd_spot": 1.69,
+     "stock": "High"
+    },
+    {
+     "gpu": "RTX PRO 6000 WK",
+     "usd_on_demand": 1.69,
+     "usd_spot": 1.69,
+     "stock": "Low"
+    },
+    {
+     "gpu": "A100 SXM",
+     "usd_on_demand": 1.39,
+     "usd_spot": 1.39,
+     "stock": "High"
+    },
+    {
+     "gpu": "A100 PCIe",
+     "usd_on_demand": 1.19,
+     "usd_spot": 1.19,
+     "stock": "Low"
+    },
+    {
+     "gpu": "A100 SXM 40GB",
+     "usd_on_demand": 1,
+     "usd_spot": 1,
+     "stock": "Low"
+    },
+    {
+     "gpu": "PRO 6000 MIG 48GB",
+     "usd_on_demand": 1,
+     "usd_spot": 1,
+     "stock": "Medium"
+    },
+    {
+     "gpu": "RTX PRO 5000",
+     "usd_on_demand": 0.82,
+     "usd_spot": 0.82,
+     "stock": "Low"
+    },
+    {
+     "gpu": "L40S",
+     "usd_on_demand": 0.79,
+     "usd_spot": 0.79,
+     "stock": "High"
+    },
+    {
+     "gpu": "RTX 6000 Ada",
+     "usd_on_demand": 0.74,
+     "usd_spot": 0.74,
+     "stock": "Low"
+    },
+    {
+     "gpu": "RTX 5090",
+     "usd_on_demand": 0.69,
+     "usd_spot": 0.69,
+     "stock": "Medium"
+    },
+    {
+     "gpu": "RTX PRO 4000",
+     "usd_on_demand": 0.5,
+     "usd_spot": 0.5,
+     "stock": "Medium"
+    },
+    {
+     "gpu": "RTX PRO 4500 SE",
+     "usd_on_demand": 0.5,
+     "usd_spot": 0.5,
+     "stock": "Low"
+    },
+    {
+     "gpu": "PRO 6000 MIG 24GB",
+     "usd_on_demand": 0.5,
+     "usd_spot": 0.5,
+     "stock": "Medium"
+    },
+    {
+     "gpu": "RTX 5000 Ada",
+     "usd_on_demand": 0.49,
+     "usd_spot": 0.49,
+     "stock": "Low"
+    },
+    {
+     "gpu": "L4",
+     "usd_on_demand": 0.44,
+     "usd_spot": 0.44,
+     "stock": "Low"
+    },
+    {
+     "gpu": "RTX 5080",
+     "usd_on_demand": 0.39,
+     "usd_spot": 0.39,
+     "stock": "Low"
+    },
+    {
+     "gpu": "A40",
+     "usd_on_demand": 0.35,
+     "usd_spot": 0.35,
+     "stock": "Low"
+    },
+    {
+     "gpu": "RTX 4090",
+     "usd_on_demand": 0.34,
+     "usd_spot": 0.34,
+     "stock": "High"
+    }
+   ],
+   "sites": [
+    {
+     "site": "AP-IN-1",
+     "where": "India",
+     "listed": true,
+     "types_in_stock": 1
+    },
+    {
+     "site": "AP-IN-2",
+     "where": "India",
+     "listed": false,
+     "types_in_stock": 1
+    },
+    {
+     "site": "AP-JP-1",
+     "where": "Japan",
+     "listed": true,
+     "types_in_stock": 2
+    },
+    {
+     "site": "CA-MTL-1",
+     "where": "Canada",
+     "listed": true,
+     "types_in_stock": 2
+    },
+    {
+     "site": "CA-MTL-2",
+     "where": "Canada",
+     "listed": false,
+     "types_in_stock": 0
+    },
+    {
+     "site": "CA-MTL-3",
+     "where": "Canada",
+     "listed": true,
+     "types_in_stock": 3
+    },
+    {
+     "site": "CA-MTL-4",
+     "where": "Canada",
+     "listed": true,
+     "types_in_stock": 0
+    },
+    {
+     "site": "EU-CZ-1",
+     "where": "Europe",
+     "listed": true,
+     "types_in_stock": 4
+    },
+    {
+     "site": "EU-DK-1",
+     "where": "Europe",
+     "listed": false,
+     "types_in_stock": 0
+    },
+    {
+     "site": "EU-FR-1",
+     "where": "France",
+     "listed": true,
+     "types_in_stock": 1
+    },
+    {
+     "site": "EU-NL-1",
+     "where": "Europe",
+     "listed": true,
+     "types_in_stock": 4
+    },
+    {
+     "site": "EU-RO-1",
+     "where": "Europe",
+     "listed": true,
+     "types_in_stock": 9
+    },
+    {
+     "site": "EU-SE-1",
+     "where": "Europe",
+     "listed": true,
+     "types_in_stock": 2
+    },
+    {
+     "site": "EU-SE-2",
+     "where": "Europe",
+     "listed": false,
+     "types_in_stock": 0
+    },
+    {
+     "site": "EUR-IS-1",
+     "where": "Europe",
+     "listed": true,
+     "types_in_stock": 6
+    },
+    {
+     "site": "EUR-IS-2",
+     "where": "Europe",
+     "listed": true,
+     "types_in_stock": 5
+    },
+    {
+     "site": "EUR-IS-3",
+     "where": "Europe",
+     "listed": true,
+     "types_in_stock": 1
+    },
+    {
+     "site": "EUR-IS-4",
+     "where": "Europe",
+     "listed": true,
+     "types_in_stock": 1
+    },
+    {
+     "site": "EUR-IS-5",
+     "where": "Europe",
+     "listed": true,
+     "types_in_stock": 1
+    },
+    {
+     "site": "EUR-NO-1",
+     "where": "Europe",
+     "listed": true,
+     "types_in_stock": 1
+    },
+    {
+     "site": "EUR-NO-2",
+     "where": "Europe",
+     "listed": true,
+     "types_in_stock": 1
+    },
+    {
+     "site": "OC-AU-1",
+     "where": "Australia",
+     "listed": true,
+     "types_in_stock": 1
+    },
+    {
+     "site": "SEA-SG-1",
+     "where": "SE Asia",
+     "listed": false,
+     "types_in_stock": 0
+    },
+    {
+     "site": "US-CA-1",
+     "where": "United States",
+     "listed": false,
+     "types_in_stock": 0
+    },
+    {
+     "site": "US-CA-2",
+     "where": "United States",
+     "listed": true,
+     "types_in_stock": 3
+    },
+    {
+     "site": "US-CO-1",
+     "where": "United States",
+     "listed": true,
+     "types_in_stock": 1
+    },
+    {
+     "site": "US-DE-1",
+     "where": "United States",
+     "listed": false,
+     "types_in_stock": 0
+    },
+    {
+     "site": "US-GA-1",
+     "where": "United States",
+     "listed": false,
+     "types_in_stock": 0
+    },
+    {
+     "site": "US-GA-2",
+     "where": "United States",
+     "listed": true,
+     "types_in_stock": 3
+    },
+    {
+     "site": "US-IL-1",
+     "where": "United States",
+     "listed": true,
+     "types_in_stock": 1
+    },
+    {
+     "site": "US-KS-1",
+     "where": "United States",
+     "listed": false,
+     "types_in_stock": 0
+    },
+    {
+     "site": "US-KS-2",
+     "where": "United States",
+     "listed": true,
+     "types_in_stock": 4
+    },
+    {
+     "site": "US-KS-3",
+     "where": "United States",
+     "listed": false,
+     "types_in_stock": 0
+    },
+    {
+     "site": "US-MD-1",
+     "where": "United States",
+     "listed": true,
+     "types_in_stock": 1
+    },
+    {
+     "site": "US-MO-1",
+     "where": "United States",
+     "listed": true,
+     "types_in_stock": 4
+    },
+    {
+     "site": "US-MO-2",
+     "where": "United States",
+     "listed": true,
+     "types_in_stock": 1
+    },
+    {
+     "site": "US-NC-1",
+     "where": "United States",
+     "listed": true,
+     "types_in_stock": 3
+    },
+    {
+     "site": "US-NC-2",
+     "where": "United States",
+     "listed": true,
+     "types_in_stock": 2
+    },
+    {
+     "site": "US-NE-1",
+     "where": "United States",
+     "listed": true,
+     "types_in_stock": 5
+    },
+    {
+     "site": "US-OR-1",
+     "where": "United States",
+     "listed": false,
+     "types_in_stock": 0
+    },
+    {
+     "site": "US-OR-2",
+     "where": "United States",
+     "listed": false,
+     "types_in_stock": 0
+    },
+    {
+     "site": "US-PA-1",
+     "where": "United States",
+     "listed": false,
+     "types_in_stock": 3
+    },
+    {
+     "site": "US-TX-1",
+     "where": "United States",
+     "listed": false,
+     "types_in_stock": 1
+    },
+    {
+     "site": "US-TX-2",
+     "where": "United States",
+     "listed": false,
+     "types_in_stock": 0
+    },
+    {
+     "site": "US-TX-3",
+     "where": "United States",
+     "listed": true,
+     "types_in_stock": 1
+    },
+    {
+     "site": "US-TX-4",
+     "where": "United States",
+     "listed": true,
+     "types_in_stock": 1
+    },
+    {
+     "site": "US-TX-5",
+     "where": "United States",
+     "listed": false,
+     "types_in_stock": 0
+    },
+    {
+     "site": "US-TX-6",
+     "where": "United States",
+     "listed": false,
+     "types_in_stock": 0
+    },
+    {
+     "site": "US-WA-1",
+     "where": "United States",
+     "listed": true,
+     "types_in_stock": 2
+    },
+    {
+     "site": "US-WA-2",
+     "where": "United States",
+     "listed": true,
+     "types_in_stock": 1
+    }
+   ],
+   "note": "RunPod does not publish GPU counts without a login. What is shown is stock status per site, not a quantity."
+  }
+ ],
+ "not_read": [
   {
    "venue": "Compute Exchange",
    "reason": "robots.txt disallows /api/ for all agents, and they are a direct competitor. Never poll."
@@ -2580,7 +3295,7 @@ const LAYERS = [
   {id:"demand", name:"Demand · companies",       col:"--c-dem",  tcol:"--c-dem-t",  on:true,  desc:"Every company that has said it needs compute or has bought it. Bigger means more."},
   {id:"contracts",name:"Contracts · who buys from whom",col:"--c-con",tcol:"--c-con-t",on:true,  desc:"One curve per compute contract, drawn from the seller to the buyer. Thicker means a bigger deal."},
   {id:"capital",name:"Capital · who funds whom",col:"--c-cap",  tcol:"--c-cap-t",  on:false, desc:"Loans, investments and guarantees. Lender to borrower."},
-  {id:"offload",name:"Supply for sale",         col:"--c-off",  tcol:"--c-off-t",  on:false, desc:"Companies trying to sell compute they already hold."},
+  {id:"offload",name:"Excess compute",          col:"--c-off",  tcol:"--c-off-t",  on:false, desc:"Compute somebody has and does not need: released, for sale, or listed on a marketplace."},
   {id:"prices", name:"Price by city",           col:"--c-px",   tcol:"--c-px-t",   on:false, desc:"The same Azure machine, priced per hour in six Asian cities."}
 ];
 const S = {
@@ -3191,36 +3906,32 @@ function marketNumbers(){
 }
 function renderMarket(){
   const n = marketNumbers(), where = n.apac ? "Asia-Pacific" : "worldwide";
-  const tile = (cls, val, label, sub) =>
-    `<div class="kpi ${cls}"><div class="v">${val}</div><div class="l">${label}</div>${sub?`<div class="s">${sub}</div>`:""}</div>`;
-  const none = t => `<span style="font-size:var(--fs-4);font-weight:600">${t}</span>`;
+  /* Four numbers, one question each. Being built: what to track and go after. Asked for: the
+     demand, so you can see whether supply and demand match. Excess: what is loose right now.
+     Running: the baseline everything else is measured against. */
+  const askedMw = n.gapMw + n.pendingMw;                 // open needs plus signed-but-not-delivered
+  /* Only capacity that is open right now counts as excess. A 10 GW target and a power
+     allocation nobody has energised are in the list for context, not in this number. */
+  const openNow = n.forSale.filter(d => d.open_status === "available_now");
+  const excessMw = openNow.reduce((a,d) => a + (d.mw||0), 0);
+  const excessGpus = (INV && INV.totals) ? INV.totals.gpus_spare : 0;
+  const tile = (cls, val, unit, label, sub) =>
+    `<div class="kpi ${cls}"><div class="v">${val}<small class="u">${unit}</small></div><div class="l">${label}</div>${sub?`<div class="s">${sub}</div>`:""}</div>`;
   $("market").innerHTML = `
     <div style="display:flex;align-items:center;justify-content:space-between;margin:0 0 9px">
-      <span style="font-size:var(--fs-2);color:var(--t3)">Everything below is ${where}</span>
+      <span style="font-size:var(--fs-2);color:var(--t3)">${where}</span>
       <span class="scope" role="group" aria-label="Which market">
         <button data-scope="apac" aria-pressed="${n.apac}">Asia</button>
         <button data-scope="world" aria-pressed="${!n.apac}">World</button></span>
     </div>
-    <div class="kpis lead">
-      ${tile("build", kf(n.building), "MW being built", n.apac ? "market figure, C&amp;W" : `${nf(SITES.filter(s=>bucketOf(s.status)==="building").length)} sites`)}
-      ${tile("dem", kf(n.gapMw), "MW wanted, no seller yet", `${nf(n.gaps.length)} companies, no contract found`)}
-    </div>
-    <div class="kpis rest">
-      ${tile("dem", kf(n.soonMw), `wanted by ${HORIZON}`)}
-      ${tile("dem", kf(n.nodateMw), "wanted, no date given")}
-      ${tile("dem", kf(n.pendingMw), "signed, not delivered yet")}
-      ${n.forSaleMw ? tile("", kf(n.forSaleMw), "looking for a buyer")
-        : n.forSale.length ? tile("", nf(n.forSale.length), "reports of supply for sale")
-        : tile("dim", "&mdash;", "supply for sale, none found")}
-    </div>
-    <div class="mstrip">
-      <span><b>${nf(n.soon.length)}</b> of <b>${nf(n.soon.length + n.nodate.length)}</b> stated needs have a date</span>
-      <span><b>${kf(n.running)}</b> MW already running and sold</span>
-      ${(()=>{ const h=(PRICES.by_gpu||[]).find(r=>r.gpu==="H100"); return h?`<span>same H100 costs <b>${h.spread}×</b> more in the dearest city than the cheapest</span>`:""; })()}
+    <div class="kpis four">
+      ${tile("build", kf(n.building), "MW", "Being built", n.apac ? "market total" : `${nf(SITES.filter(s=>bucketOf(s.status)==="building").length)} sites`)}
+      ${tile("dem", kf(askedMw), "MW", "Asked for now", `${nf(n.gaps.length)} companies still need a seller`)}
+      ${tile("off", excessMw ? kf(excessMw) : nf(openNow.length), excessMw ? "MW" : "open", "Excess out there", `${nf(openNow.length)} open now${excessGpus ? ` · ${nf(excessGpus)} GPUs free on marketplaces` : ""}`)}
+      ${tile("live", kf(n.running), "MW", "Running now", n.apac ? "market total, already sold" : "our named sites only")}
     </div>`;
   $("sum-market").textContent = `${nf(visibleSites().length)} sites on map`;
 }
-
 /* ============ panel: layers ============ */
 function counts(){
   return {sites: visibleSites().length, country: CTRY.length,
@@ -3236,14 +3947,14 @@ const fchk = (id, on, label) => `<div class="frow"><label style="display:flex;al
 function renderLayers(){
   const c = counts();
   $("layers").innerHTML = LAYERS.map(l => `
-    <div class="lrow${S.on[l.id]?"":" off"}${S.on[l.id]&&["sites","demand","contracts"].includes(l.id)?" hasf":""}" data-lrow="${l.id}">
+    <div class="lrow${S.on[l.id]?"":" off"}${S.on[l.id]&&["sites","demand","contracts","offload"].includes(l.id)?" hasf":""}" data-lrow="${l.id}">
       ${l.col?`<span class="sw" style="background:var(${l.col})"></span>`:`<span class="sw" style="background:none;border:1px solid var(--bd2)"></span>`}
       <span class="lname" title="${esc(l.desc)}">${esc(l.name)}</span>
       <span class="ln">${nf(c[l.id])}</span>
       <button class="eye" data-layer="${l.id}" aria-pressed="${S.on[l.id]}" aria-label="Toggle ${esc(l.name)}">
         <svg class="ic"><use href="${S.on[l.id]?"#i-eye":"#i-eyeoff"}"/></svg></button>
     </div>
-    ${!S.on[l.id]||!["country","sites","demand","contracts"].includes(l.id)?"":`<div class="fgrp" style="border-left-color:var(${l.col})">`+(
+    ${!S.on[l.id]||!["country","sites","demand","contracts","offload"].includes(l.id)?"":`<div class="fgrp" style="border-left-color:var(${l.col})">`+(
       l.id==="country"?fsel("cmetric","Show",[["all","All — supply and demand"],["building","Being built"],["running","Running now"],["demand","Demand by 2028"]],S.ctryMetric,c.country)
     : l.id==="sites"?fsel("status","Show",[["all","All sites"],["live","Running now"],["building","Being built"],["planned","Only announced"]],S.siteStatus,c.sites)
         +fchk("siteNames",S.on.labels,"Name the biggest sites")
@@ -3251,7 +3962,9 @@ function renderLayers(){
         +fsel("dwho","Who",[["all","Everyone"],["lab","AI labs"],["cloud","Big clouds"],["gov","Governments"],["ent","Enterprises"]],S.demWho)
     : l.id==="contracts"?fsel("cstatus","Show",[["all","All contracts"],["pending","Signed, not delivered"],["running","Delivered, running"],["changed","Cut back or cancelled"]],S.conStatus,c.contracts)
         +fchk("arcNames",S.on.arclabels,"Name the 10 biggest deals")
+    : l.id==="offload"?`<div id="spare"></div>`
     : "")+`</div>`}`).join("");
+  if ($("spare")) renderSpare();
   $("sum-layers").textContent = LAYERS.filter(l=>S.on[l.id]).length + " on";
   const sn = $("siteNames"); if (sn) sn.addEventListener("change", e => { S.on.labels = e.target.checked; rebuild("sites"); });
   const an = $("arcNames"); if (an) an.addEventListener("change", e => { S.on.arclabels = e.target.checked; rebuild("contracts"); });
@@ -3286,30 +3999,30 @@ function renderSpare(){
     return (r[a.open_status] - r[b.open_status]) || ((b.mw||0) - (a.mw||0));
   });
   const openN = offers.filter(d => d.open_status === "available_now").length;
+  if (!$("spare")) return;
   let live = "";
   if (INV && INV.totals){
     const T = INV.totals, stale = (Date.now() - Date.parse(INV.captured_at)) > 36*3.6e6;
     live = `<div class="invhead">
-        <b>${nf(T.gpus_spare)}</b> GPUs spare across ${T.venues_read} public marketplaces
+        <b>${nf(T.gpus_spare)}</b> GPUs free to rent right now on ${T.venues_read} marketplaces
         <span class="invage${stale?" old":""}">${esc(agoTxt(INV.captured_at))}</span></div>
       <div class="mstrip" style="margin-top:6px">
         <span><b>${nf(T.gpus_seen)}</b> GPUs listed in total</span>
         <span><b>${nf(T.apac_spare)}</b> of the spare are in Asia-Pacific</span></div>
       ${INV.venues.map(v => `<div class="mini"><span class="mn">${esc(v.venue)}<small>${esc(v.kind)}</small></span>
         <span class="mv">${v.gpus_free!=null||v.gpus_available!=null ? nf(v.gpus_free!=null?v.gpus_free:v.gpus_available)+" free" : "\u2014"}</span></div>`).join("")}
-      <p class="hint">A snapshot, not a feed. ${INV.not_read.length} more venues are not read: ${esc(INV.not_read.map(x=>x.venue).join(", "))}. Hover the count for why.</p>`;
+      <p class="hint">Counted ${esc(agoTxt(INV.captured_at))}. Updated once a day.</p>`;
   } else {
     live = `<p class="hint">No marketplace snapshot has been captured yet.</p>`;
   }
   $("spare").innerHTML = live +
-    `<div class="subh">Capacity someone has let go &middot; ${offers.length}</div>` +
+    `<div class="subh">Compute someone let go of &middot; ${offers.length}</div>` +
     offers.map(d => `<div class="mini click" data-sel="deal:${esc(d.deal_id)}">
         <span class="mn">${esc(whoName(d.from_id))}
           <small>${esc(clip(d.headline||"",118))}</small>
           <small class="buyline">${esc(d.how_to_buy||"route unknown")}${d.taken_by?" &middot; taken by "+esc(d.taken_by):""}</small></span>
         <span class="mv"><span class="ostag ${OPEN_CLS[d.open_status]||""}">${esc(OPEN_LABEL[d.open_status]||d.open_status)}</span>
           ${d.mw?"<br>"+mwf(d.mw):""}</span></div>`).join("");
-  $("sum-spare").textContent = `${openN} open now`;
 }
 function renderMatch(){
   $("match").innerHTML = `<p class="hint" style="margin:0 0 6px">The same companies as the <b style="color:var(--c-dem-t)">Demand</b> layer, ranked by how much they still need. Click a name to find it on the map.</p>` +
@@ -4255,7 +4968,7 @@ function renderPill(){
   $("sheet-stat").innerHTML = short.slice(0,3).join('<span class="sep">·</span>')
     || `<b>${nf(DEALS.length)}</b> deals · <b>${nf(SITES.length)}</b> sites`;
 }
-function renderAllPanels(){ renderMarket(); renderLayers(); renderSpare(); renderMatch(); renderCircles(); renderPrices(); renderLive(); renderData(); renderLegend(); renderPill();
+function renderAllPanels(){ renderMarket(); renderLayers(); renderMatch(); renderCircles(); renderPrices(); renderLive(); renderData(); renderLegend(); renderPill();
   $("pfoot").innerHTML = `<b>${nf(COV.deals_total)}</b> deals · <b>${nf(COV.entities_total)}</b> companies · <b>${nf(COV.sites_total)}</b> sites · <b>${nf(CTRY.length)}</b> countries`; }
 
 

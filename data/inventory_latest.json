@@ -1,11 +1,11 @@
 {
- "captured_at": "2026-09-06T09:16:38Z",
+ "captured_at": "2026-09-06T09:48:37Z",
  "totals": {
-  "gpus_seen": 8478,
-  "gpus_spare": 4140,
-  "apac_gpus": 546,
-  "apac_spare": 387,
-  "venues_read": 3
+  "gpus_seen": 14664,
+  "gpus_spare": 10410,
+  "apac_gpus": 2072,
+  "apac_spare": 1914,
+  "venues_read": 5
  },
  "venues": [
   {
@@ -13,7 +13,7 @@
    "kind": "decentralised reverse auction",
    "auth": "none",
    "gpus_total": 453,
-   "gpus_available": 163,
+   "gpus_available": 161,
    "models": [
     {
      "model": "nvidia a100 80Gi SXM4",
@@ -42,7 +42,7 @@
     {
      "model": "nvidia pro6000se 96Gi PCIe",
      "total": 24,
-     "available": 24,
+     "available": 23,
      "usd_min": 2.04,
      "usd_med": 2.04,
      "usd_max": 2.04
@@ -181,7 +181,7 @@
      "cc": "US",
      "providers": 220,
      "gpus": 352,
-     "available": 116
+     "available": 115
     },
     {
      "cc": "GB",
@@ -193,7 +193,7 @@
      "cc": "PT",
      "providers": 3,
      "gpus": 15,
-     "available": 9
+     "available": 8
     },
     {
      "cc": "BE",
@@ -204,8 +204,8 @@
     {
      "cc": "UA",
      "providers": 9,
-     "gpus": 10,
-     "available": 4
+     "gpus": 11,
+     "available": 5
     },
     {
      "cc": "RU",
@@ -364,9 +364,9 @@
    "venue": "Clore.ai",
    "kind": "peer-to-peer marketplace",
    "auth": "none",
-   "servers": 2386,
-   "gpus_total": 8025,
-   "gpus_free": 3977,
+   "servers": 2389,
+   "gpus_total": 8016,
+   "gpus_free": 4054,
    "asking_prices": [
     {
      "gpu": "6x NVIDIA GeForce RTX 3070",
@@ -375,23 +375,18 @@
     },
     {
      "gpu": "1x NVIDIA GeForce RTX 4090",
-     "n": 55,
-     "usd_med": 6
+     "n": 67,
+     "usd_med": 5.7
     },
     {
      "gpu": "1x NVIDIA GeForce RTX 5090",
-     "n": 49,
-     "usd_med": 9
+     "n": 54,
+     "usd_med": 8.15
     },
     {
      "gpu": "1x NVIDIA GeForce RTX 5070 Ti",
-     "n": 39,
-     "usd_med": 5
-    },
-    {
-     "gpu": "1x NVIDIA GeForce RTX 3090",
-     "n": 35,
-     "usd_med": 3
+     "n": 47,
+     "usd_med": 4.43
     },
     {
      "gpu": "6x NVIDIA GeForce RTX 3080",
@@ -399,9 +394,19 @@
      "usd_med": 13.2
     },
     {
+     "gpu": "1x NVIDIA GeForce RTX 3090",
+     "n": 34,
+     "usd_med": 4
+    },
+    {
      "gpu": "1x NVIDIA GeForce RTX 5080",
-     "n": 25,
-     "usd_med": 4.1
+     "n": 32,
+     "usd_med": 4
+    },
+    {
+     "gpu": "1x NVIDIA GeForce RTX 3080",
+     "n": 22,
+     "usd_med": 2.8
     },
     {
      "gpu": "8x NVIDIA RTX A2000",
@@ -409,19 +414,14 @@
      "usd_med": 4.5
     },
     {
-     "gpu": "1x NVIDIA GeForce RTX 3080",
-     "n": 20,
-     "usd_med": 2.99
+     "gpu": "3x NVIDIA GeForce RTX 5090",
+     "n": 19,
+     "usd_med": 23.91
     },
     {
      "gpu": "1x NVIDIA GeForce RTX 3080 Ti",
      "n": 19,
      "usd_med": 2.69
-    },
-    {
-     "gpu": "3x NVIDIA GeForce RTX 5090",
-     "n": 19,
-     "usd_med": 23.91
     },
     {
      "gpu": "1x NVIDIA GeForce RTX 5060 Ti",
@@ -435,24 +435,24 @@
     },
     {
      "gpu": "2x NVIDIA GeForce RTX 5090",
-     "n": 14,
+     "n": 15,
      "usd_med": 15.94
     }
    ],
    "rented_prices": [
     {
      "gpu": "1x NVIDIA GeForce RTX 3090",
-     "n": 104,
+     "n": 106,
      "usd_med": 2
     },
     {
      "gpu": "1x NVIDIA GeForce RTX 5090",
-     "n": 100,
+     "n": 96,
      "usd_med": 6.67
     },
     {
      "gpu": "1x NVIDIA GeForce RTX 4090",
-     "n": 83,
+     "n": 71,
      "usd_med": 4
     },
     {
@@ -462,8 +462,8 @@
     },
     {
      "gpu": "1x NVIDIA GeForce RTX 5080",
-     "n": 46,
-     "usd_med": 3.3
+     "n": 39,
+     "usd_med": 3.2
     },
     {
      "gpu": "1x NVIDIA GeForce RTX 3060",
@@ -476,24 +476,24 @@
      "usd_med": 0.9
     },
     {
-     "gpu": "1x NVIDIA GeForce RTX 5070 Ti",
-     "n": 29,
-     "usd_med": 2.99
-    },
-    {
-     "gpu": "8x NVIDIA CMP 50HX",
-     "n": 26,
-     "usd_med": 6.6
-    },
-    {
      "gpu": "1x NVIDIA GeForce RTX 5060 Ti",
      "n": 26,
      "usd_med": 1.36
     },
     {
+     "gpu": "8x NVIDIA CMP 50HX",
+     "n": 25,
+     "usd_med": 6.6
+    },
+    {
      "gpu": "2x NVIDIA GeForce RTX 4090",
-     "n": 24,
+     "n": 23,
      "usd_med": 8.6
+    },
+    {
+     "gpu": "1x NVIDIA GeForce RTX 5070 Ti",
+     "n": 21,
+     "usd_med": 2.99
     },
     {
      "gpu": "1x NVIDIA GeForce RTX 3080",
@@ -514,27 +514,27 @@
    "by_country": [
     {
      "cc": "RU",
-     "servers": 739,
-     "gpus": 2804,
-     "free": 1672
+     "servers": 737,
+     "gpus": 2791,
+     "free": 1687
     },
     {
      "cc": "US",
      "servers": 277,
      "gpus": 1096,
-     "free": 248
+     "free": 259
     },
     {
      "cc": "UA",
-     "servers": 213,
-     "gpus": 508,
-     "free": 298
+     "servers": 214,
+     "gpus": 509,
+     "free": 311
     },
     {
      "cc": "FI",
-     "servers": 81,
-     "gpus": 442,
-     "free": 372
+     "servers": 85,
+     "gpus": 446,
+     "free": 379
     },
     {
      "cc": "TW",
@@ -546,43 +546,43 @@
      "cc": "HR",
      "servers": 46,
      "gpus": 274,
-     "free": 114
+     "free": 122
     },
     {
      "cc": "PL",
      "servers": 72,
      "gpus": 270,
-     "free": 107
+     "free": 109
     },
     {
      "cc": "DE",
      "servers": 68,
      "gpus": 216,
-     "free": 91
+     "free": 79
     },
     {
      "cc": "BY",
      "servers": 59,
      "gpus": 196,
-     "free": 92
+     "free": 95
     },
     {
      "cc": "AR",
      "servers": 66,
      "gpus": 153,
-     "free": 47
+     "free": 48
     },
     {
      "cc": "NL",
      "servers": 64,
      "gpus": 142,
-     "free": 51
+     "free": 58
     },
     {
      "cc": "CA",
      "servers": 76,
      "gpus": 139,
-     "free": 54
+     "free": 53
     },
     {
      "cc": "KZ",
@@ -592,21 +592,21 @@
     },
     {
      "cc": "ES",
-     "servers": 19,
-     "gpus": 108,
-     "free": 76
+     "servers": 18,
+     "gpus": 107,
+     "free": 75
     },
     {
      "cc": "BR",
      "servers": 42,
      "gpus": 101,
-     "free": 22
+     "free": 24
     },
     {
      "cc": "CN",
      "servers": 50,
      "gpus": 97,
-     "free": 82
+     "free": 84
     },
     {
      "cc": "PT",
@@ -628,15 +628,21 @@
     },
     {
      "cc": "EE",
-     "servers": 16,
-     "gpus": 59,
-     "free": 44
+     "servers": 14,
+     "gpus": 50,
+     "free": 45
     },
     {
      "cc": "IN",
      "servers": 10,
      "gpus": 48,
      "free": 38
+    },
+    {
+     "cc": "MY",
+     "servers": 15,
+     "gpus": 47,
+     "free": 11
     },
     {
      "cc": "BG",
@@ -649,12 +655,6 @@
      "servers": 32,
      "gpus": 44,
      "free": 44
-    },
-    {
-     "cc": "MY",
-     "servers": 14,
-     "gpus": 42,
-     "free": 6
     },
     {
      "cc": "NO",
@@ -690,7 +690,7 @@
      "cc": "NZ",
      "servers": 6,
      "gpus": 28,
-     "free": 28
+     "free": 27
     }
    ],
    "note": "Asking prices sit well above rented levels. Use the rented set for price signal and the free set for spare supply."
@@ -699,7 +699,7 @@
    "venue": "Spheron",
    "kind": "tier-3/4 data centre aggregator",
    "auth": "none",
-   "groups_total": 29,
+   "groups_total": 28,
    "groups": [
     {
      "gpu": "CPU NODE",
@@ -709,27 +709,21 @@
     },
     {
      "gpu": "L40S PCIe",
-     "available": 37,
+     "available": 34,
      "usd_low": 0.96,
      "usd_high": 15.379000000000001
     },
     {
      "gpu": "A100 80G PCIe",
-     "available": 30,
+     "available": 31,
      "usd_low": 1.1954,
      "usd_high": 21.0144
     },
     {
      "gpu": "RTXPRO6000 PCIe",
-     "available": 25,
-     "usd_low": 2.388,
+     "available": 29,
+     "usd_low": 1.25,
      "usd_high": 19.104
-    },
-    {
-     "gpu": "A6000 PCIe",
-     "available": 25,
-     "usd_low": 0.4474,
-     "usd_high": 10.1904
     },
     {
      "gpu": "H100 PCIe",
@@ -739,33 +733,39 @@
     },
     {
      "gpu": "L40 PCIe",
-     "available": 23,
+     "available": 24,
      "usd_low": 0.8874,
      "usd_high": 10.56
     },
     {
-     "gpu": "A100 80G SXM4",
-     "available": 18,
-     "usd_low": 1.1875,
-     "usd_high": 31.68
+     "gpu": "A6000 PCIe",
+     "available": 22,
+     "usd_low": 0.4474,
+     "usd_high": 10.1904
     },
     {
      "gpu": "H100 SXM5",
-     "available": 9,
+     "available": 15,
      "usd_low": 2.9429999999999996,
      "usd_high": 42.1344
     },
     {
-     "gpu": "A6000 PCIe (High Performance)",
-     "available": 9,
-     "usd_low": 0.564,
-     "usd_high": 4.512
+     "gpu": "A100 80G SXM4",
+     "available": 15,
+     "usd_low": 1.8216,
+     "usd_high": 31.68
     },
     {
      "gpu": "RTX6000ADA PCIe",
-     "available": 7,
+     "available": 10,
      "usd_low": 0.78,
-     "usd_high": 2.5608
+     "usd_high": 3.12
+    },
+    {
+     "gpu": "A6000 PCIe (High Performance)",
+     "available": 7,
+     "usd_low": 0.564,
+     "usd_high": 4.512
     },
     {
      "gpu": "H200 SXM5",
@@ -789,7 +789,7 @@
      "gpu": "A6000 PCIe (Low RAM)",
      "available": 4,
      "usd_low": 0.54,
-     "usd_high": 1.08
+     "usd_high": 2.16
     },
     {
      "gpu": "V100 32G PCIe",
@@ -829,22 +829,26 @@
     },
     {
      "cluster": "EU North 1",
-     "offers": 26
+     "offers": 23
     },
     {
      "cluster": "us-central-3",
      "offers": 22
     },
     {
-     "cluster": "desmoines-usa-1",
-     "offers": 18
+     "cluster": "Finland 2",
+     "offers": 19
     },
     {
-     "cluster": "newyork-usa-1",
-     "offers": 16
+     "cluster": "desmoines-usa-1",
+     "offers": 19
     },
     {
      "cluster": "us-central-2",
+     "offers": 17
+    },
+    {
+     "cluster": "newyork-usa-1",
      "offers": 16
     },
     {
@@ -856,19 +860,15 @@
      "offers": 14
     },
     {
-     "cluster": "Finland 2",
-     "offers": 13
-    },
-    {
      "cluster": "kansascity-usa-1",
-     "offers": 11
-    },
-    {
-     "cluster": "MON1",
-     "offers": 8
+     "offers": 12
     },
     {
      "cluster": "warsaw-poland-1",
+     "offers": 7
+    },
+    {
+     "cluster": "MON1",
      "offers": 7
     },
     {
@@ -881,10 +881,6 @@
     },
     {
      "cluster": "calgary-canada-1",
-     "offers": 5
-    },
-    {
-     "cluster": "Finland 1",
      "offers": 5
     },
     {
@@ -902,20 +898,735 @@
     {
      "cluster": "beltsville-usa-1",
      "offers": 4
+    },
+    {
+     "cluster": "us-central-9",
+     "offers": 4
     }
    ],
    "note": "Heavily North America and the Nordics. Asia-Pacific presence is a handful of offers."
-  }
- ],
- "not_read": [
+  },
   {
    "venue": "Vast.ai",
-   "reason": "terms of service forbid systematic compilation into a database and use in a competing product; open API notwithstanding. Ask for written permission before enabling."
+   "kind": "peer-to-peer marketplace",
+   "auth": "none",
+   "offers": 3167,
+   "gpus_total": 6195,
+   "gpus_free": 6195,
+   "asking_prices": [
+    {
+     "gpu": "RTX 5090",
+     "n": 662,
+     "usd_med": 0.467
+    },
+    {
+     "gpu": "RTX 4090",
+     "n": 425,
+     "usd_med": 0.394
+    },
+    {
+     "gpu": "RTX 3090",
+     "n": 326,
+     "usd_med": 0.155
+    },
+    {
+     "gpu": "RTX 3060",
+     "n": 268,
+     "usd_med": 0.06
+    },
+    {
+     "gpu": "RTX 5060 Ti",
+     "n": 191,
+     "usd_med": 0.121
+    },
+    {
+     "gpu": "RTX A4000",
+     "n": 141,
+     "usd_med": 0.095
+    },
+    {
+     "gpu": "RTX 5080",
+     "n": 58,
+     "usd_med": 0.202
+    },
+    {
+     "gpu": "RTX 3080",
+     "n": 43,
+     "usd_med": 0.096
+    },
+    {
+     "gpu": "RTX 4060 Ti",
+     "n": 42,
+     "usd_med": 0.103
+    },
+    {
+     "gpu": "RTX PRO 6000 WS",
+     "n": 42,
+     "usd_med": 1.442
+    },
+    {
+     "gpu": "RTX PRO 6000 Max-Q",
+     "n": 42,
+     "usd_med": 1.469
+    },
+    {
+     "gpu": "A100 SXM4",
+     "n": 41,
+     "usd_med": 0.834
+    },
+    {
+     "gpu": "RTX 3080 Ti",
+     "n": 41,
+     "usd_med": 0.122
+    },
+    {
+     "gpu": "RTX 3070",
+     "n": 39,
+     "usd_med": 0.082
+    }
+   ],
+   "by_country": [
+    {
+     "cc": "US",
+     "offers": 1027,
+     "gpus": 2069,
+     "free": 2069
+    },
+    {
+     "cc": "CA",
+     "offers": 227,
+     "gpus": 487,
+     "free": 487
+    },
+    {
+     "cc": "TW",
+     "offers": 124,
+     "gpus": 371,
+     "free": 371
+    },
+    {
+     "cc": "KR",
+     "offers": 224,
+     "gpus": 342,
+     "free": 342
+    },
+    {
+     "cc": "CN",
+     "offers": 147,
+     "gpus": 322,
+     "free": 322
+    },
+    {
+     "cc": "JP",
+     "offers": 114,
+     "gpus": 277,
+     "free": 277
+    },
+    {
+     "cc": "CZ",
+     "offers": 106,
+     "gpus": 191,
+     "free": 191
+    },
+    {
+     "cc": "GB",
+     "offers": 56,
+     "gpus": 180,
+     "free": 180
+    },
+    {
+     "cc": "NO",
+     "offers": 92,
+     "gpus": 149,
+     "free": 149
+    },
+    {
+     "cc": "DE",
+     "offers": 72,
+     "gpus": 138,
+     "free": 138
+    },
+    {
+     "cc": "PL",
+     "offers": 79,
+     "gpus": 105,
+     "free": 105
+    },
+    {
+     "cc": "BG",
+     "offers": 43,
+     "gpus": 86,
+     "free": 86
+    },
+    {
+     "cc": "FR",
+     "offers": 53,
+     "gpus": 85,
+     "free": 85
+    },
+    {
+     "cc": "RU",
+     "offers": 33,
+     "gpus": 80,
+     "free": 80
+    },
+    {
+     "cc": "EE",
+     "offers": 43,
+     "gpus": 78,
+     "free": 78
+    },
+    {
+     "cc": "IS",
+     "offers": 35,
+     "gpus": 77,
+     "free": 77
+    },
+    {
+     "cc": "VN",
+     "offers": 51,
+     "gpus": 75,
+     "free": 75
+    },
+    {
+     "cc": "HU",
+     "offers": 39,
+     "gpus": 70,
+     "free": 70
+    },
+    {
+     "cc": "ES",
+     "offers": 43,
+     "gpus": 62,
+     "free": 62
+    },
+    {
+     "cc": "AE",
+     "offers": 15,
+     "gpus": 59,
+     "free": 59
+    },
+    {
+     "cc": "HK",
+     "offers": 20,
+     "gpus": 54,
+     "free": 54
+    },
+    {
+     "cc": "UA",
+     "offers": 40,
+     "gpus": 52,
+     "free": 52
+    },
+    {
+     "cc": "SE",
+     "offers": 28,
+     "gpus": 52,
+     "free": 52
+    },
+    {
+     "cc": "ZA",
+     "offers": 17,
+     "gpus": 49,
+     "free": 49
+    },
+    {
+     "cc": "AR",
+     "offers": 30,
+     "gpus": 48,
+     "free": 48
+    },
+    {
+     "cc": "AU",
+     "offers": 28,
+     "gpus": 48,
+     "free": 48
+    },
+    {
+     "cc": "DK",
+     "offers": 31,
+     "gpus": 48,
+     "free": 48
+    },
+    {
+     "cc": "NL",
+     "offers": 31,
+     "gpus": 44,
+     "free": 44
+    },
+    {
+     "cc": "RO",
+     "offers": 27,
+     "gpus": 35,
+     "free": 35
+    },
+    {
+     "cc": "TH",
+     "offers": 25,
+     "gpus": 32,
+     "free": 32
+    }
+   ],
+   "note": "Every offer listed is rentable right now, so listed equals free. Per-GPU asking prices."
   },
   {
    "venue": "RunPod",
-   "reason": "terms of service forbid data gathering tools and use in an effort to compete. Ask for written permission before enabling."
-  },
+   "kind": "GPU cloud, community and secure",
+   "auth": "none (counts withheld)",
+   "gpus_total": null,
+   "gpus_free": null,
+   "types": [
+    {
+     "gpu": "B300",
+     "usd_on_demand": 6.94,
+     "usd_spot": 6.94,
+     "stock": "Low"
+    },
+    {
+     "gpu": "B200",
+     "usd_on_demand": 5.98,
+     "usd_spot": 5.98,
+     "stock": "Low"
+    },
+    {
+     "gpu": "H200 SXM",
+     "usd_on_demand": 3.59,
+     "usd_spot": 3.59,
+     "stock": "Medium"
+    },
+    {
+     "gpu": "H100 SXM",
+     "usd_on_demand": 2.69,
+     "usd_spot": 2.69,
+     "stock": "High"
+    },
+    {
+     "gpu": "H100 NVL",
+     "usd_on_demand": 2.59,
+     "usd_spot": 2.59,
+     "stock": "Low"
+    },
+    {
+     "gpu": "H100 PCIe",
+     "usd_on_demand": 1.99,
+     "usd_spot": 1.99,
+     "stock": "Low"
+    },
+    {
+     "gpu": "RTX PRO 6000",
+     "usd_on_demand": 1.69,
+     "usd_spot": 1.69,
+     "stock": "High"
+    },
+    {
+     "gpu": "RTX PRO 6000 WK",
+     "usd_on_demand": 1.69,
+     "usd_spot": 1.69,
+     "stock": "Low"
+    },
+    {
+     "gpu": "A100 SXM",
+     "usd_on_demand": 1.39,
+     "usd_spot": 1.39,
+     "stock": "High"
+    },
+    {
+     "gpu": "A100 PCIe",
+     "usd_on_demand": 1.19,
+     "usd_spot": 1.19,
+     "stock": "Low"
+    },
+    {
+     "gpu": "A100 SXM 40GB",
+     "usd_on_demand": 1,
+     "usd_spot": 1,
+     "stock": "Low"
+    },
+    {
+     "gpu": "PRO 6000 MIG 48GB",
+     "usd_on_demand": 1,
+     "usd_spot": 1,
+     "stock": "Medium"
+    },
+    {
+     "gpu": "RTX PRO 5000",
+     "usd_on_demand": 0.82,
+     "usd_spot": 0.82,
+     "stock": "Low"
+    },
+    {
+     "gpu": "L40S",
+     "usd_on_demand": 0.79,
+     "usd_spot": 0.79,
+     "stock": "High"
+    },
+    {
+     "gpu": "RTX 6000 Ada",
+     "usd_on_demand": 0.74,
+     "usd_spot": 0.74,
+     "stock": "Low"
+    },
+    {
+     "gpu": "RTX 5090",
+     "usd_on_demand": 0.69,
+     "usd_spot": 0.69,
+     "stock": "Medium"
+    },
+    {
+     "gpu": "RTX PRO 4000",
+     "usd_on_demand": 0.5,
+     "usd_spot": 0.5,
+     "stock": "Medium"
+    },
+    {
+     "gpu": "RTX PRO 4500 SE",
+     "usd_on_demand": 0.5,
+     "usd_spot": 0.5,
+     "stock": "Low"
+    },
+    {
+     "gpu": "PRO 6000 MIG 24GB",
+     "usd_on_demand": 0.5,
+     "usd_spot": 0.5,
+     "stock": "Medium"
+    },
+    {
+     "gpu": "RTX 5000 Ada",
+     "usd_on_demand": 0.49,
+     "usd_spot": 0.49,
+     "stock": "Low"
+    },
+    {
+     "gpu": "L4",
+     "usd_on_demand": 0.44,
+     "usd_spot": 0.44,
+     "stock": "Low"
+    },
+    {
+     "gpu": "RTX 5080",
+     "usd_on_demand": 0.39,
+     "usd_spot": 0.39,
+     "stock": "Low"
+    },
+    {
+     "gpu": "A40",
+     "usd_on_demand": 0.35,
+     "usd_spot": 0.35,
+     "stock": "Low"
+    },
+    {
+     "gpu": "RTX 4090",
+     "usd_on_demand": 0.34,
+     "usd_spot": 0.34,
+     "stock": "High"
+    }
+   ],
+   "sites": [
+    {
+     "site": "AP-IN-1",
+     "where": "India",
+     "listed": true,
+     "types_in_stock": 1
+    },
+    {
+     "site": "AP-IN-2",
+     "where": "India",
+     "listed": false,
+     "types_in_stock": 1
+    },
+    {
+     "site": "AP-JP-1",
+     "where": "Japan",
+     "listed": true,
+     "types_in_stock": 2
+    },
+    {
+     "site": "CA-MTL-1",
+     "where": "Canada",
+     "listed": true,
+     "types_in_stock": 2
+    },
+    {
+     "site": "CA-MTL-2",
+     "where": "Canada",
+     "listed": false,
+     "types_in_stock": 0
+    },
+    {
+     "site": "CA-MTL-3",
+     "where": "Canada",
+     "listed": true,
+     "types_in_stock": 3
+    },
+    {
+     "site": "CA-MTL-4",
+     "where": "Canada",
+     "listed": true,
+     "types_in_stock": 0
+    },
+    {
+     "site": "EU-CZ-1",
+     "where": "Europe",
+     "listed": true,
+     "types_in_stock": 4
+    },
+    {
+     "site": "EU-DK-1",
+     "where": "Europe",
+     "listed": false,
+     "types_in_stock": 0
+    },
+    {
+     "site": "EU-FR-1",
+     "where": "France",
+     "listed": true,
+     "types_in_stock": 1
+    },
+    {
+     "site": "EU-NL-1",
+     "where": "Europe",
+     "listed": true,
+     "types_in_stock": 4
+    },
+    {
+     "site": "EU-RO-1",
+     "where": "Europe",
+     "listed": true,
+     "types_in_stock": 9
+    },
+    {
+     "site": "EU-SE-1",
+     "where": "Europe",
+     "listed": true,
+     "types_in_stock": 2
+    },
+    {
+     "site": "EU-SE-2",
+     "where": "Europe",
+     "listed": false,
+     "types_in_stock": 0
+    },
+    {
+     "site": "EUR-IS-1",
+     "where": "Europe",
+     "listed": true,
+     "types_in_stock": 6
+    },
+    {
+     "site": "EUR-IS-2",
+     "where": "Europe",
+     "listed": true,
+     "types_in_stock": 5
+    },
+    {
+     "site": "EUR-IS-3",
+     "where": "Europe",
+     "listed": true,
+     "types_in_stock": 1
+    },
+    {
+     "site": "EUR-IS-4",
+     "where": "Europe",
+     "listed": true,
+     "types_in_stock": 1
+    },
+    {
+     "site": "EUR-IS-5",
+     "where": "Europe",
+     "listed": true,
+     "types_in_stock": 1
+    },
+    {
+     "site": "EUR-NO-1",
+     "where": "Europe",
+     "listed": true,
+     "types_in_stock": 1
+    },
+    {
+     "site": "EUR-NO-2",
+     "where": "Europe",
+     "listed": true,
+     "types_in_stock": 1
+    },
+    {
+     "site": "OC-AU-1",
+     "where": "Australia",
+     "listed": true,
+     "types_in_stock": 1
+    },
+    {
+     "site": "SEA-SG-1",
+     "where": "SE Asia",
+     "listed": false,
+     "types_in_stock": 0
+    },
+    {
+     "site": "US-CA-1",
+     "where": "United States",
+     "listed": false,
+     "types_in_stock": 0
+    },
+    {
+     "site": "US-CA-2",
+     "where": "United States",
+     "listed": true,
+     "types_in_stock": 3
+    },
+    {
+     "site": "US-CO-1",
+     "where": "United States",
+     "listed": true,
+     "types_in_stock": 1
+    },
+    {
+     "site": "US-DE-1",
+     "where": "United States",
+     "listed": false,
+     "types_in_stock": 0
+    },
+    {
+     "site": "US-GA-1",
+     "where": "United States",
+     "listed": false,
+     "types_in_stock": 0
+    },
+    {
+     "site": "US-GA-2",
+     "where": "United States",
+     "listed": true,
+     "types_in_stock": 3
+    },
+    {
+     "site": "US-IL-1",
+     "where": "United States",
+     "listed": true,
+     "types_in_stock": 1
+    },
+    {
+     "site": "US-KS-1",
+     "where": "United States",
+     "listed": false,
+     "types_in_stock": 0
+    },
+    {
+     "site": "US-KS-2",
+     "where": "United States",
+     "listed": true,
+     "types_in_stock": 4
+    },
+    {
+     "site": "US-KS-3",
+     "where": "United States",
+     "listed": false,
+     "types_in_stock": 0
+    },
+    {
+     "site": "US-MD-1",
+     "where": "United States",
+     "listed": true,
+     "types_in_stock": 1
+    },
+    {
+     "site": "US-MO-1",
+     "where": "United States",
+     "listed": true,
+     "types_in_stock": 4
+    },
+    {
+     "site": "US-MO-2",
+     "where": "United States",
+     "listed": true,
+     "types_in_stock": 1
+    },
+    {
+     "site": "US-NC-1",
+     "where": "United States",
+     "listed": true,
+     "types_in_stock": 3
+    },
+    {
+     "site": "US-NC-2",
+     "where": "United States",
+     "listed": true,
+     "types_in_stock": 2
+    },
+    {
+     "site": "US-NE-1",
+     "where": "United States",
+     "listed": true,
+     "types_in_stock": 5
+    },
+    {
+     "site": "US-OR-1",
+     "where": "United States",
+     "listed": false,
+     "types_in_stock": 0
+    },
+    {
+     "site": "US-OR-2",
+     "where": "United States",
+     "listed": false,
+     "types_in_stock": 0
+    },
+    {
+     "site": "US-PA-1",
+     "where": "United States",
+     "listed": false,
+     "types_in_stock": 3
+    },
+    {
+     "site": "US-TX-1",
+     "where": "United States",
+     "listed": false,
+     "types_in_stock": 1
+    },
+    {
+     "site": "US-TX-2",
+     "where": "United States",
+     "listed": false,
+     "types_in_stock": 0
+    },
+    {
+     "site": "US-TX-3",
+     "where": "United States",
+     "listed": true,
+     "types_in_stock": 1
+    },
+    {
+     "site": "US-TX-4",
+     "where": "United States",
+     "listed": true,
+     "types_in_stock": 1
+    },
+    {
+     "site": "US-TX-5",
+     "where": "United States",
+     "listed": false,
+     "types_in_stock": 0
+    },
+    {
+     "site": "US-TX-6",
+     "where": "United States",
+     "listed": false,
+     "types_in_stock": 0
+    },
+    {
+     "site": "US-WA-1",
+     "where": "United States",
+     "listed": true,
+     "types_in_stock": 2
+    },
+    {
+     "site": "US-WA-2",
+     "where": "United States",
+     "listed": true,
+     "types_in_stock": 1
+    }
+   ],
+   "note": "RunPod does not publish GPU counts without a login. What is shown is stock status per site, not a quantity."
+  }
+ ],
+ "not_read": [
   {
    "venue": "Compute Exchange",
    "reason": "robots.txt disallows /api/ for all agents, and they are a direct competitor. Never poll."
