@@ -323,6 +323,14 @@ details.sec summary h2{margin:0;font-size:var(--fs-4);font-weight:600;letter-spa
 details.sec summary .ssum{font-family:var(--mono);font-size:var(--fs-1);color:var(--t3)}
 details.sec summary .chev{transition:transform var(--dur)}
 details.sec[open] summary .chev{transform:rotate(180deg)}
+/* one-line teaser so a closed section says what is inside; gone once it is open */
+details.sec summary .sprev{flex-basis:100%;margin:2px 0 0;font-size:var(--fs-2);color:var(--t3);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+details.sec summary{flex-wrap:wrap}
+details.sec[open] > summary .sprev{display:none}
+details.sec summary .sprev:empty{display:none}
+.lprev{margin:-2px 0 8px 22px;font-size:var(--fs-2);color:var(--t3);line-height:1.45}
+.lprev .lnk{margin-left:6px;white-space:nowrap;background:none;border:0;color:var(--acct);cursor:pointer;font:inherit;font-size:var(--fs-2);padding:0;text-decoration:underline;text-underline-offset:2px}
+.lprev .lnk:hover{color:var(--t1)}
 .secb{padding:2px 16px 16px}
 .kpis{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
 .kpi{background:var(--s2);border:1px solid var(--bd);border-radius:var(--r-md);padding:10px 11px}
@@ -578,6 +586,7 @@ __RIVALS_CSS__
   .ib{ width:44px; height:44px }
   .eye{ width:44px; height:44px }
   .more{ width:44px; height:44px }
+  .lprev .lnk{ display:inline-block; padding:12px 8px; margin-left:0 }
   .lrow{ padding:11px 0 }
   .lrow .lname{ font-size:var(--fs-4) }
   .frow{ margin:9px 0 0 }
@@ -709,19 +718,19 @@ __RIVALS_CSS__
       <div class="secb" style="padding:0 0 4px">
         <div id="rlayers" class="rlayers"></div>
     <details class="sec" id="sec-circles">
-      <summary><h2>Circles</h2><span class="ssum" id="sum-circles"></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
+      <summary><h2>Circles</h2><span class="ssum" id="sum-circles"></span><svg class="ic chev"><use href="#i-chev"/></svg><span class="sprev" id="prev-circles"></span></summary>
       <div class="secb" id="circles"></div>
     </details>
     <details class="sec" id="sec-prices">
-      <summary><h2>Prices</h2><span class="ssum" id="sum-prices"></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
+      <summary><h2>Prices</h2><span class="ssum" id="sum-prices"></span><svg class="ic chev"><use href="#i-chev"/></svg><span class="sprev" id="prev-prices"></span></summary>
       <div class="secb" id="prices"></div>
     </details>
     <details class="sec" id="sec-live">
-      <summary><h2>Running vs being built</h2><span class="ssum" id="sum-live"></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
+      <summary><h2>Running vs being built</h2><span class="ssum" id="sum-live"></span><svg class="ic chev"><use href="#i-chev"/></svg><span class="sprev" id="prev-live"></span></summary>
       <div class="secb" id="live"></div>
     </details>
     <details class="sec" id="sec-data">
-      <summary><h2>How to read this</h2><span class="ssum" id="sum-data"></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
+      <summary><h2>How to read this</h2><span class="ssum" id="sum-data"></span><svg class="ic chev"><use href="#i-chev"/></svg><span class="sprev" id="prev-data"></span></summary>
       <div class="secb" id="datasec"></div>
     </details>
       </div>
@@ -760,6 +769,8 @@ const PRICES = DATA.prices, COV = DATA.coverage, CAP = DATA.apac_capacity || [];
 const CTRY = DATA.country_summary || []; const CT = {}; CTRY.forEach(c => CT[c.country] = c);
 const CAPROW = {}; CAP.forEach(c => CAPROW[c.country] = c);
 const APAC_TOTAL = CAPROW["APAC total"] || null;
+const WORLD_TOTAL = CAPROW["World total"] || null;
+const TOTAL_ROWS = new Set(["APAC total","World total"]);
 const bld = c => (c.official_uc_mw != null ? c.official_uc_mw : c.building_mw) || 0;
 const DEAL = {}; DATA.deals.forEach(d => DEAL[d.deal_id] = d);
 const SITE = {}; SITES.forEach(s => SITE[s.site_id] = s);
@@ -1263,7 +1274,7 @@ function buildCountry(){
     c._r = r;
   });
   if (APAC_TOTAL && APAC_TOTAL.under_construction_mw) {
-    const attributed = CAP.filter(c => c.country !== "APAC total" && c.under_construction_mw != null).reduce((a,c)=>a+c.under_construction_mw, 0);
+    const attributed = CAP.filter(c => !TOTAL_ROWS.has(c.country) && c.under_construction_mw != null).reduce((a,c)=>a+c.under_construction_mw, 0);
     const rest = Math.round(APAC_TOTAL.under_construction_mw - attributed);
     if (rest > 0) {
       const r = (12 + Math.sqrt(rest/max) * 46) * S.scale, at = [12.0, 132.0];
@@ -1552,14 +1563,18 @@ function marketNumbers(){
   const mw = rows => rows.reduce((a,d) => a + (d.mw||0), 0);
   const ourSites = b => SITES.filter(s => bucketOf(s.status) === b && (!apac || APAC.has(s.country)))
                             .reduce((a,s) => a + (s.it_load_mw||0), 0);
-  const building = apac && APAC_TOTAL && APAC_TOTAL.under_construction_mw ? APAC_TOTAL.under_construction_mw : ourSites("building");
-  const running  = apac && APAC_TOTAL && APAC_TOTAL.live_mw ? APAC_TOTAL.live_mw : ourSites("live");
+  /* Same yardstick in both scopes: the Cushman & Wakefield market total (all data
+     centres, AI and not) is the big number; what we found ourselves is the sub-line. */
+  const TOT = apac ? APAC_TOTAL : WORLD_TOTAL;
+  const building = TOT && TOT.under_construction_mw ? TOT.under_construction_mw : ourSites("building");
+  const running  = TOT && TOT.live_mw ? TOT.live_mw : ourSites("live");
+  const namedBuilding = ourSites("building"), namedRunning = ourSites("live"), hasTotal = !!(TOT && TOT.live_mw);
   const forSale  = OFFLOADS.filter(inScope);
   const gaps     = GAPS.filter(g => { const x = DEMBY[g.entity_id]; return x && (S.scope === "world" || (x.needs||[]).some(inScope)); });
   const pending  = CONTRACTS.filter(d => ["announced","signed","in_progress"].includes(d.status) && inScope(d));
   const soon     = needs.filter(d => { const y = YEAR(d.by_when); return y && y <= HORIZON; });
   const nodate   = needs.filter(d => !YEAR(d.by_when));
-  return {apac, building, running, forSale, gaps, pending, soon, nodate,
+  return {apac, building, running, namedBuilding, namedRunning, hasTotal, forSale, gaps, pending, soon, nodate,
     forSaleMw: mw(forSale), forSaleUsd: forSale.reduce((a,d)=>a+(d.usd_value||0),0),
     gapMw: gaps.reduce((a,g)=>a+(g.gap_mw||0),0), pendingMw: mw(pending), soonMw: mw(soon), nodateMw: mw(nodate)};
 }
@@ -1591,10 +1606,10 @@ function renderMarket(){
         <button data-scope="world" aria-pressed="${!n.apac}">World</button></span>
     </div>
     <div class="kpis four">
-      ${tile("build", kf(n.building), "MW", "Being built", n.apac ? "market total" : `${nf(SITES.filter(s=>bucketOf(s.status)==="building").length)} sites`)}
+      ${tile("build", kf(n.building), "MW", "Being built", n.hasTotal ? `all data centres (C&W) \u00b7 our named AI sites ${kf(n.namedBuilding)} MW` : `our named sites only`)}
       ${tile("dem", kf(askedMw), "MW", "Asked for now", `${nf(n.gaps.length)} companies still need a seller`)}
       ${tile("off", excessMw ? kf(excessMw) : nf(n.forSale.length), excessMw ? "MW" : "cases", "Excess compute", `${split}${excessGpus ? ` \u00b7 ${nf(excessGpus)} GPUs free to rent` : ""}`)}
-      ${tile("live", kf(n.running), "MW", "Running now", n.apac ? "market total, already sold" : "our named sites only")}
+      ${tile("live", kf(n.running), "MW", "Running now", n.hasTotal ? `all data centres (C&W), AI and not \u00b7 our named AI sites ${kf(n.namedRunning)} MW` : `our named sites only`)}
     </div>`;
   $("sum-market").textContent = `${nf(visibleSites().length)} sites on map`;
 }
@@ -1613,6 +1628,22 @@ const fchk = (id, on, label) => `<div class="frow"><label style="display:flex;al
   <input type="checkbox" id="${id}"${on?" checked":""} style="accent-color:var(--acc)"><span>${label}</span></label></div>`;
 /* layers whose row can open a details block (filters, tick boxes, a ranked list) */
 const DETAILED = ["country","sites","demand","contracts","offload","call"];
+/* one line that says what the folded details hold, so nobody has to guess */
+function layerPreview(id){
+  const c = counts();
+  if (id === "call") return GAPS.slice(0,3).map(g => `${esc(shortName(g.name))} ${mwf(g.gap_mw)}`).join(" \u00b7 ") + (GAPS.length > 3 ? ` \u00b7 ${nf(GAPS.length-3)} more` : "");
+  if (id === "offload") {
+    const n = {}; OFFLOADS.forEach(d => { const k = d.open_status || "available_now"; n[k] = (n[k]||0) + 1; });
+    const free = INV && INV.totals ? ` \u00b7 ${nf(INV.totals.gpus_spare)} GPUs free to rent` : "";
+    return `${nf(n.available_now||0)} open now \u00b7 ${nf(n.announced_not_open||0)} announced \u00b7 ${nf(n.already_taken||0)} gone \u00b7 ${nf(n.withdrawn||0)} shelved${free}`;
+  }
+  if (id === "demand") return `${nf(c.demand)} companies asking \u00b7 filter by status and who is asking`;
+  if (id === "sites") return `${nf(c.sites)} sites \u00b7 filter running, being built, announced \u00b7 name the biggest`;
+  if (id === "country") return `${nf(c.country)} countries \u00b7 pick which number each circle shows`;
+  if (id === "contracts") return `${nf(c.contracts)} contracts \u00b7 filter signed, running, cut back \u00b7 name the 10 biggest`;
+  return "";
+}
+const shortName = n => n.replace(/,? (Inc\.|Corp\.|Corporation|Limited|Ltd\.?|PBC|Co\., Ltd\.|Holding Corporation|Public Company Limited)$/i, "").replace("Space Exploration Technologies", "SpaceX");
 function renderLayers(){
   const c = counts();
   const rowOf = l => `
@@ -1624,6 +1655,7 @@ function renderLayers(){
       <button class="eye" data-layer="${l.id}" aria-pressed="${S.on[l.id]}" aria-label="Toggle ${esc(l.name)}">
         <svg class="ic"><use href="${S.on[l.id]?"#i-eye":"#i-eyeoff"}"/></svg></button>
     </div>
+    ${S.on[l.id]&&!S.fopen[l.id]&&DETAILED.includes(l.id)&&layerPreview(l.id)?`<div class="lprev">${layerPreview(l.id)}<button class="lnk" data-more="${l.id}">Show details</button></div>`:""}
     ${!S.on[l.id]||!S.fopen[l.id]||!DETAILED.includes(l.id)?"":`<div class="fgrp" style="border-left-color:var(${l.col})">`+(
       l.id==="country"?fsel("cmetric","Show",[["all","All — supply and demand"],["building","Being built"],["running","Running now"],["demand","Demand by 2028"]],S.ctryMetric,c.country)
     : l.id==="sites"?fsel("status","Show",[["all","All sites"],["live","Running now"],["building","Being built"],["planned","Only announced"]],S.siteStatus,c.sites)
@@ -1718,6 +1750,7 @@ function renderCircles(){
     DATA.circular_loops.map((l,i) => { const ids=[l.a,l.b,l.c].filter(Boolean);
       return `<div class="loop" data-loop="${i}">${ids.map(ename).map(esc).join(' <span class="arr">→</span> ')} <span class="arr">→</span> ${esc(ename(ids[0]))}</div>`; }).join("");
   $("sum-circles").textContent = nf(DATA.circular_loops.length);
+  $("prev-circles").textContent = DATA.circular_loops.slice(0,2).map(l => [l.a,l.b,l.c].filter(Boolean).map(ename).map(shortName).join(" \u2192 ")).join(" \u00b7 ") + (DATA.circular_loops.length > 2 ? ` \u00b7 ${nf(DATA.circular_loops.length-2)} more` : "");
 }
 /* ============ panel: prices ============ */
 function renderPrices(){
@@ -1729,10 +1762,12 @@ function renderPrices(){
       <div class="pv">$${r.min.toFixed(2)}–${r.max.toFixed(2)}<small>mid $${r.median.toFixed(2)}</small></div></div>`).join("") +
     `<p class="hint">The <b>Prices on the map</b> switch at the top right puts the cheapest H100 price on every country, from Amazon, Microsoft, Oracle, Shadeform's clouds and Vast.ai hosts.</p>`;
   const h = rows.find(r=>r.gpu==="H100"); $("sum-prices").textContent = h ? `H100 ${h.spread}×` : "";
+  const b = PRICES.h100_by_country || {}, lows = Object.values(b).map(x => x.low);
+  $("prev-prices").textContent = h ? `H100 from $${h.min.toFixed(2)} to $${h.max.toFixed(2)}/hr across ${h.n} sellers` + (lows.length ? ` \u00b7 ${nf(lows.length)} countries priced on the map` : "") : "";
 }
 /* ============ panel: live vs planned ============ */
 function renderLive(){
-  const rows = CAP.filter(c => c.country !== "APAC total").slice().sort((a,b)=>(b.live_mw||0)-(a.live_mw||0));
+  const rows = CAP.filter(c => !TOTAL_ROWS.has(c.country)).slice().sort((a,b)=>(b.live_mw||0)-(a.live_mw||0));
   const tot = rows.reduce((a,c)=>a+(c.live_mw||0),0), uc = rows.reduce((a,c)=>a+(c.under_construction_mw||0),0), pl = rows.reduce((a,c)=>a+(c.planned_mw||0),0);
   const region = APAC_TOTAL ? APAC_TOTAL.under_construction_mw : null; const rest = region ? Math.round(region - uc) : null;
   const ours = SITES.filter(s => APAC.has(s.country) && bucketOf(s.status)==="building").reduce((a,s)=>a+(s.it_load_mw||0),0);
@@ -1752,6 +1787,7 @@ function renderLive(){
     </tbody></table>
     <p class="hint">Running and being built are IT load, the power that reaches the computers. A building's grid connection runs 20 to 40% higher. Click any country for the sites and sources.</p>`;
   $("sum-live").textContent = (region?kf(region):kf(uc)) + " MW building";
+  $("prev-live").textContent = `Asia-Pacific: ${kf(APAC_TOTAL&&APAC_TOTAL.live_mw?APAC_TOTAL.live_mw:tot)} MW running, ${kf(region||uc)} MW being built \u00b7 ${rows.length} countries, biggest ${esc(rows[0]?rows[0].country:"")}`;
 }
 
 /* ============ panel: data & method ============ */
@@ -1799,6 +1835,7 @@ function renderData(){
     <p class="hint" style="margin:0">We treat 1 MW as ${nf(1000/DATA.conversion_table.kw_per_h100e)} H100-class GPUs. Newer chips count for more:
     ${Object.entries(DATA.conversion_table.h100_equivalents).filter(([k])=>["H100","H200","B200","B300","GB200","GB300","A100","MI300X"].includes(k)).map(([k,v])=>`${k} ${v}`).join(" · ")}. These are our own factors and can be changed.</p>`;
   $("sum-data").textContent = `${nf(new Set(ALLDEALS.flatMap(d=>d.source_urls||[])).size)} sources`;
+  $("prev-data").textContent = `How much to trust each deal (T1 official filing to T5 rumour), how MW and GPUs are converted, and where every number came from`;
 }
 
 /* ============ selection ============ */
@@ -1964,7 +2001,7 @@ const INDEX = [
   ...DATA.entities.filter(e=>!e.is_placeholder&&e.deal_count>0).map(e=>({t:DEM[e.entity_id]?"demand":"company",n:e.name,a:(e.aliases||[]).join(" "),id:"ent:"+e.entity_id,c:DEM[e.entity_id]?"--c-dem":"--c-con"})),
   ...SITES.map(s=>({t:"site",n:s.name,a:[s.operator,s.city,s.country].filter(Boolean).join(" "),id:"site:"+s.site_id,c:"--c-site"})),
   ...DEALS.map(d=>({t:"deal",n:d.headline,a:ename(d.from_id)+" "+ename(d.to_id),id:"deal:"+d.deal_id,c:["D8","D9","D10"].includes(d.deal_type)?"--c-cap":"--c-con"})),
-  ...CTRY.filter(c=>c.country!=="APAC total").map(c=>({t:"country",n:c.country,a:"",id:"country:"+c.country,c:"--c-ctry"}))
+  ...CTRY.filter(c=>!TOTAL_ROWS.has(c.country)).map(c=>({t:"country",n:c.country,a:"",id:"country:"+c.country,c:"--c-ctry"}))
 ];
 function search(q){
   const r = $("results"); q = q.trim().toLowerCase();
