@@ -38,17 +38,17 @@ await page.keyboard.press('Enter'); await page.waitForTimeout(800);
 const sel2 = await page.evaluate(() => document.querySelector('#sel h2')?.textContent);
 console.log('SEARCH results:', res, '→ selected:', sel2);
 // loop
-await page.click('#sec-circles summary'); await page.waitForTimeout(200);
+await page.evaluate(()=>{document.getElementById('sec-research').open=true; document.getElementById('sec-circles').open=true;}); await page.waitForTimeout(200);
 await page.click('#circles .loop'); await page.waitForTimeout(900);
 await page.screenshot({ path: 'v2_loop.png' });
 // toggle layers off/on via chips and eyes, switch status seg, theme
-await page.click('[data-chip="contracts"]'); await page.waitForTimeout(200);
+await page.click('[data-layer="contracts"]'); await page.waitForTimeout(200);
 await page.click('[data-layer="capital"]'); await page.waitForTimeout(300);
 await page.selectOption('select[data-f="status"]', 'live'); await page.waitForTimeout(500);
 await page.click('[data-layer="demand"]'); await page.waitForTimeout(400);
 await page.selectOption('select[data-f="dstatus"]', 'open'); await page.waitForTimeout(400);
 await page.selectOption('select[data-f="dwho"]', 'lab'); await page.waitForTimeout(400);
-await page.click('[data-chip="contracts"]'); await page.waitForTimeout(300);
+await page.click('[data-layer="contracts"]'); await page.waitForTimeout(300);
 await page.selectOption('select[data-f="cstatus"]', 'pending'); await page.waitForTimeout(500);
 await page.evaluate(()=>{S.on.country=true;rebuild('country');renderAllPanels();});
 await page.selectOption('select[data-f="cmetric"]', 'all'); await page.waitForTimeout(500);

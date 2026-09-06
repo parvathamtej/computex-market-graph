@@ -218,6 +218,9 @@ a.src{font-family:var(--mono);font-size:var(--fs-1);color:var(--acct)}
 .chipb[aria-pressed="false"]{opacity:.7}
 .chipb:hover{color:var(--t1)}
 .chipb .n{font-family:var(--mono);font-size:var(--fs-1);color:var(--t3)}
+.chipb.pxchip{color:var(--c-px-t);border-color:var(--c-px)}
+.chipb.pxchip[aria-pressed="true"]{background:var(--c-px);color:#fff;border-color:var(--c-px)}
+.chipb.pxchip .ic{stroke:currentColor}
 
 /* ---------- right panel ---------- */
 #panel{position:fixed;top:0;right:0;bottom:0;width:var(--panel-w);z-index:1100;display:flex;flex-direction:column;
@@ -296,6 +299,11 @@ body:not(.mob) #sec-key{display:none}
 
 /* sections */
 details.sec{border-top:1px solid var(--bd)}
+#sec-research details.sec{border-top:1px solid var(--bd);margin:0 0 0 16px}
+#sec-research details.sec summary{padding:11px 16px 11px 0}
+#sec-research details.sec summary h2{font-size:var(--fs-3);font-weight:500;color:var(--t2)}
+#sec-research details.sec[open] summary h2{color:var(--t1)}
+.rlayers{padding:6px 16px 4px 16px}
 details.sec summary{list-style:none;display:flex;align-items:center;gap:10px;padding:13px 16px;cursor:pointer;user-select:none}
 details.sec summary::-webkit-details-marker{display:none}
 details.sec summary h2{margin:0;font-size:var(--fs-4);font-weight:600;letter-spacing:.01em;flex:1}
@@ -670,6 +678,10 @@ __RIVALS_CSS__
       <summary><h2>Key</h2><span class="ssum" id="sum-key"></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
       <div class="secb" id="key-slot"></div>
     </details>
+    <details class="sec" id="sec-research">
+      <summary><h2>Research</h2><span class="ssum" id="sum-research"></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
+      <div class="secb" style="padding:0 0 4px">
+        <div id="rlayers" class="rlayers"></div>
     <details class="sec" id="sec-circles">
       <summary><h2>Circles</h2><span class="ssum" id="sum-circles"></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
       <div class="secb" id="circles"></div>
@@ -686,6 +698,8 @@ __RIVALS_CSS__
       <summary><h2>How to read this</h2><span class="ssum" id="sum-data"></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
       <div class="secb" id="datasec"></div>
     </details>
+      </div>
+    </details>
   </div>
   <div class="pfoot" id="pfoot"></div>
 </aside>
@@ -696,7 +710,6 @@ __RIVALS_CSS__
   <button class="ib" id="t-apac" title="Fit Asia-Pacific (Home)" aria-label="Fit Asia-Pacific"><svg class="ic"><use href="#i-home"/></svg></button>
   <button class="ib" id="t-world" title="Fit everything" aria-label="Fit everything"><svg class="ic"><use href="#i-globe"/></svg></button>
   <button class="ib" id="t-base" title="Switch basemap" aria-label="Switch basemap"><svg class="ic"><use href="#i-layers"/></svg></button>
-  <button class="ib" id="t-price" title="Show prices on every country" aria-label="Show prices" aria-pressed="false"><svg class="ic"><use href="#i-price"/></svg></button>
   <button class="ib" id="t-key" title="Key" aria-label="Show the key"><svg class="ic"><use href="#i-info"/></svg></button>
   <button class="ib" id="t-zin" title="Zoom in" aria-label="Zoom in"><svg class="ic"><use href="#i-plus"/></svg></button>
   <button class="ib" id="t-zout" title="Zoom out" aria-label="Zoom out"><svg class="ic"><use href="#i-minus"/></svg></button>
@@ -818,9 +831,9 @@ const LAYERS = [
    desc:"Each site. Bigger means more megawatts. Solid means running, faint means only announced."},
   {id:"country",name:"Supply & demand by country",col:"--c-ctry",tcol:"--t2",on:true,
    desc:"One circle per country. Hover the name for who is supplying and who needs compute there."},
-  {id:"contracts",name:"Contracts to track", col:"--c-con",tcol:"--c-con-t",on:true,
+  {id:"contracts",name:"Contracts to track", col:"--c-con",tcol:"--c-con-t",on:true, group:"research",
    desc:"One curve per signed compute contract, seller to buyer. Demand that already found a seller."},
-  {id:"capital",name:"Capital \u00b7 who funds whom",col:"--c-cap",  tcol:"--c-cap-t",  on:false, desc:"Loans, investments and guarantees. Lender to borrower."}
+  {id:"capital",name:"Capital \u00b7 who funds whom",col:"--c-cap",  tcol:"--c-cap-t",  on:false, group:"research", desc:"Loans, investments and guarantees. Lender to borrower."}
 ];
 const S = {
   on: Object.assign({labels:false, arclabels:true, prices:false}, Object.fromEntries(LAYERS.map(l => [l.id, l.on]))),
@@ -1536,7 +1549,7 @@ const fchk = (id, on, label) => `<div class="frow"><label style="display:flex;al
   <input type="checkbox" id="${id}"${on?" checked":""} style="accent-color:var(--acc)"><span>${label}</span></label></div>`;
 function renderLayers(){
   const c = counts();
-  $("layers").innerHTML = LAYERS.map(l => `
+  const rowOf = l => `
     <div class="lrow${S.on[l.id]?"":" off"}${S.on[l.id]&&["sites","demand","contracts","offload","call"].includes(l.id)?" hasf":""}" data-lrow="${l.id}">
       ${l.col?`<span class="sw" style="background:var(${l.col})"></span>`:`<span class="sw" style="background:none;border:1px solid var(--bd2)"></span>`}
       <span class="lname" title="${esc(l.desc)}">${esc(l.name)}</span>
@@ -1556,10 +1569,13 @@ function renderLayers(){
     : l.id==="offload"?[["available_now","Open now \u2014 you can act on it today"],["announced_not_open","Announced, not open \u2014 they said they will sell, nothing to buy yet"],["already_taken","Gone \u2014 somebody else took it; kept so you know who is active"],["withdrawn","Shelved \u2014 the owner stopped the project; some can be resubmitted"]]
           .map(([k,lab]) => `<div class="frow"><label style="display:flex;align-items:center;gap:7px;cursor:pointer;font-size:var(--fs-2);color:var(--t2)"><input type="checkbox" data-xf="${k}"${S.xhide[k]?"":" checked"}> ${lab}</label></div>`).join("")
           +`<div id="spare"></div>`
-    : "")+`</div>`}`).join("");
+    : "")+`</div>`}`;
+  $("layers").innerHTML  = LAYERS.filter(l => l.group !== "research").map(rowOf).join("");
+  $("rlayers").innerHTML = LAYERS.filter(l => l.group === "research").map(rowOf).join("");
   if ($("spare")) renderSpare();
   if ($("match")) renderMatch();
-  $("sum-layers").textContent = LAYERS.filter(l=>S.on[l.id]).length + " on";
+  $("sum-layers").textContent = LAYERS.filter(l => l.group !== "research" && S.on[l.id]).length + " on";
+  $("sum-research").textContent = LAYERS.filter(l => l.group === "research" && S.on[l.id]).length + " on the map";
   const sn = $("siteNames"); if (sn) sn.addEventListener("change", e => { S.on.labels = e.target.checked; rebuild("sites"); });
   const an = $("arcNames"); if (an) an.addEventListener("change", e => { S.on.arclabels = e.target.checked; rebuild("contracts"); });
   document.querySelectorAll("[data-xf]").forEach(cb => cb.addEventListener("change", e => {
@@ -1567,7 +1583,9 @@ function renderLayers(){
   renderChips();
 }
 function renderChips(){
-  $("chips").innerHTML = LAYERS.filter(l => ["call","offload","demand","contracts","sites","capital"].includes(l.id)).map(l =>
+  /* the price toggle sits first in the chip row, the first thing under the search box */
+  $("chips").innerHTML = `<button class="chipb glass pxchip" data-act="prices" aria-pressed="${!!S.on.prices}"><svg class="ic" style="width:13px;height:13px"><use href="#i-price"/></svg>Prices on the map</button>` +
+    LAYERS.filter(l => ["call","offload","demand","sites"].includes(l.id)).map(l =>
     `<button class="chipb glass" data-chip="${l.id}" aria-pressed="${S.on[l.id]}"><span class="sw" style="background:var(${l.col})"></span>${esc(l.name)}</button>`).join("");
 }
 
@@ -2101,7 +2119,6 @@ function togglePanel(open){
               if (!(open && S.sheet==="full")) setSheet(want); return; }
   S.panelOpen = open==null ? !S.panelOpen : open; $("panel").classList.toggle("closed", !S.panelOpen);
   document.body.classList.toggle("panel-closed", !S.panelOpen); setTimeout(()=>map.invalidateSize(),180); }
-function syncPriceBtn(){ const b = $("t-price"); if (b) b.setAttribute("aria-pressed", String(!!S.on.prices)); }
 function openSection(id){
   const d = $(id); if (!d) return;
   d.open = true;
@@ -2129,7 +2146,7 @@ document.addEventListener("click", ev => {
   if (t.closest("#panel-tab")) { togglePanel(true); return; }
   if (t.closest("#btn-theme")) { setTheme(S.theme==="dark"?"light":"dark"); return; }
   if (t.closest("#t-key")) { openSection("sec-key"); return; }
-  if (t.closest("#t-price")) { S.on.prices = !S.on.prices; rebuild("prices"); syncPriceBtn(); writeHash(); return; }
+  if (t.closest("[data-act='prices']")) { S.on.prices = !S.on.prices; rebuild("prices"); renderChips(); writeHash(); return; }
   if (t.closest("#t-present")) { setPresent(true); return; }
   if (t.closest("#present-exit")) { setPresent(false); return; }
   if (t.closest("#t-apac")) { fitApac(); return; }
