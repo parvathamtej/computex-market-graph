@@ -1,0 +1,60 @@
+# Capture live marketplace inventory and rebuild the site, on GitHub's servers.
+#
+# Why this exists: the price and inventory capture used to run only on one laptop,
+# so history stopped whenever that machine was off, and the single price snapshot
+# we had was nearly lost. This runs whether anyone is awake or not, commits the
+# snapshot into the repo, and rebuilds index.html so the live site shows it.
+name: Daily inventory snapshot
+
+on:
+  schedule:
+    # 16:30 Singapore is 08:30 UTC. Same window the price benchmark uses, so the
+    # inventory and the prices describe the same moment.
+    - cron: "30 8 * * *"
+  workflow_dispatch:        # lets you run it by hand from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: snapshot
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Capture marketplace inventory
+        run: python3 build/capture_inventory.py
+
+      - name: Rebuild the page with the fresh snapshot
+        run: |
+          python3 build/assemble_v2.py
+          cp ComputeX_Market_Graph.html index.html
+
+      - name: Prune snapshots older than 180 days
+        run: |
+          find data/snapshots -name 'inventory_*.json' -mtime +180 -print -delete || true
+
+      - name: Commit if anything changed
+        run: |
+          git config user.name  "computex-snapshot"
+          git config user.email "actions@github.com"
+          git add data/snapshots data/inventory_latest.json index.html ComputeX_Market_Graph.html
+          if git diff --staged --quiet; then
+            echo "nothing changed, not committing"
+          else
+            SPARE=$(python3 -c "import json;print(f\"{json.load(open('data/inventory_latest.json'))['totals']['gpus_spare']:,}\")")
+            git commit -m "Inventory snapshot: ${SPARE} GPUs spare
+
+          Captured by the daily workflow, not by hand. Figures are a point in time
+          and the page shows how old they are."
+            git push
+          fi

@@ -1,0 +1,1030 @@
+[
+ {
+  "deal_id": "crusoe-abilene-600mw-released-2026-03",
+  "deal_type": "D15",
+  "from_entity": "Crusoe Energy Systems LLC",
+  "to_entity": null,
+  "headline": "OpenAI and Oracle stopped work on growing the Abilene site past 1.2 GW, putting 600 MW that was being built for them back on the market.",
+  "quantity_raw": "600 megawatts OpenAI had walked away from; the expansion would have pushed the site toward 2 gigawatts",
+  "quantity_value": 600,
+  "quantity_unit": "MW",
+  "usd_value": null,
+  "geography": [
+   "United States"
+  ],
+  "site": "Lancium Clean Campus, Abilene, Texas",
+  "chip_skus": [],
+  "status": "cancelled",
+  "binding_status": "reported",
+  "announced_date": "2026-03-06",
+  "confidence": "T3",
+  "how_to_buy": "enterprise sales contact",
+  "open_status": "already_taken",
+  "taken_by": "Microsoft Corporation",
+  "source_urls": [
+   "https://www.bloomberg.com/news/articles/2026-03-06/oracle-and-openai-end-plans-to-expand-flagship-data-center",
+   "https://www.tomshardware.com/tech-industry/oracle-and-openai-scrap-planned-600mw-abilene-expansion",
+   "https://www.datacenterdynamics.com/en/news/microsoft-agrees-to-lease-700mw-at-crusoes-data-center-in-abilene-texas-report/"
+  ],
+  "notes": "Nvidia had paid Crusoe a $150m deposit to secure the space and shopped it to Meta; no Meta deal was signed. Microsoft agreed to lease about 700 MW at Abilene, reported 24 March 2026. Oracle publicly disputed the framing on 9 March, saying the 4.5 GW OpenAI agreement is intact. Crusoe separately announced a NEW 900 MW Abilene campus for Microsoft on 27 March; public sources do not make clear whether the ~700 MW and the 900 MW are the same capacity described twice, so do not sum them."
+ },
+ {
+  "deal_id": "openai-stargate-norway-exit-2026-04",
+  "deal_type": "D15",
+  "from_entity": "Nscale Global Holdings Ltd",
+  "to_entity": null,
+  "headline": "OpenAI could not agree terms with Nscale and gave up the Norwegian site it had announced, and Microsoft took the slot instead.",
+  "quantity_raw": "OpenAI had planned 100,000 GPUs and had discussed leasing about half the 230 MW facility; Microsoft contracted 30,000 Nvidia Rubin GPUs",
+  "quantity_value": null,
+  "quantity_unit": null,
+  "usd_value": null,
+  "geography": [
+   "Norway"
+  ],
+  "site": "Kvandal, Narvik",
+  "chip_skus": [
+   "Rubin"
+  ],
+  "status": "cancelled",
+  "binding_status": "reported",
+  "announced_date": "2026-04-15",
+  "confidence": "T3",
+  "how_to_buy": "enterprise sales contact",
+  "open_status": "already_taken",
+  "taken_by": "Microsoft Corporation",
+  "source_urls": [
+   "https://www.cnbc.com/2026/04/15/openai-stargate-norway-project-microsoft.html",
+   "https://www.datacenterdynamics.com/en/news/microsoft-contracts-30000-nvidia-rubin-gpus-from-nscale-at-data-center-in-narvik-norway/",
+   "https://www.networkworld.com/article/4159269/openai-pulls-out-of-a-second-stargate-data-center-deal.html"
+  ],
+  "notes": "Updates openai-stargate-norway-230mw-2025-07, which recorded OpenAI as the initial offtaker. OpenAI is no longer the offtaker. 230 MW is the site size, not a published figure for the released block. Value of the Microsoft agreement not disclosed."
+ },
+ {
+  "deal_id": "openai-stargate-uk-paused-2026-04",
+  "deal_type": "D15",
+  "from_entity": "Nscale Global Holdings Ltd",
+  "to_entity": null,
+  "headline": "OpenAI stopped its UK data centre plan over power prices and rules, leaving the site partner without its anchor customer.",
+  "quantity_raw": "up to 8,000 Nvidia GPUs in Q1 2026 scaling to 31,000 over time; the site has about 35 MW of capacity",
+  "quantity_value": null,
+  "quantity_unit": null,
+  "usd_value": null,
+  "geography": [
+   "United Kingdom"
+  ],
+  "site": "Cobalt Park, North Tyneside / Blyth",
+  "chip_skus": [],
+  "status": "cancelled",
+  "binding_status": "reported",
+  "announced_date": "2026-04-09",
+  "confidence": "T3",
+  "how_to_buy": "enterprise sales contact",
+  "open_status": "withdrawn",
+  "taken_by": null,
+  "source_urls": [
+   "https://www.cnbc.com/2026/04/09/openai-halts-uk-stargate-project.html",
+   "https://www.computerweekly.com/news/366641483/OpenAI-pauses-Stargate-UK-Sudden-setback-or-calculated-move",
+   "https://sifted.eu/articles/openai-stargate-uk-pause-nscale"
+  ],
+  "notes": "Updates openai-stargate-uk-8k-gpus-2025-09. OpenAI said it could resume under the right conditions. No replacement tenant found. Computer Weekly reports no planning applications lodged and no construction underway at the site. A GBP 31bn figure circulates via TechRadar but is a programme headline, not a contract value."
+ },
+ {
+  "deal_id": "qts-pw-digital-gateway-terminated-2026-07",
+  "deal_type": "D15",
+  "from_entity": "QTS Realty Trust",
+  "to_entity": null,
+  "headline": "After losing in court, QTS gave up the whole 2,100-acre Virginia campus and withdrew its filings.",
+  "quantity_raw": "2,100 acres, up to 5 GW across 37 planned facilities; estimated spending reported variously as $30bn and $100bn",
+  "quantity_value": null,
+  "quantity_unit": null,
+  "usd_value": null,
+  "geography": [
+   "United States"
+  ],
+  "site": "PW Digital Gateway, Prince William County, Virginia",
+  "chip_skus": [],
+  "status": "cancelled",
+  "binding_status": "confirmed",
+  "announced_date": "2026-07-03",
+  "confidence": "T2",
+  "how_to_buy": "not open yet",
+  "open_status": "withdrawn",
+  "taken_by": null,
+  "source_urls": [
+   "https://w.media/qts-walks-away-from-2100-acre-digital-gateway-project-in-northern-virgina/",
+   "https://www.datacenterdynamics.com/en/news/compass-pulls-out-of-pw-digital-gateway-project-residents-sue-to-get-out-of-contracts-with-qts/"
+  ],
+  "notes": "QTS is Blackstone-owned. The rezoning is voided and the land reverts to prior zoning, so this is not capacity we could acquire. Published size figures disagree: w.media says up to 5 GW and $100bn, Data Center Knowledge headlined $30bn. Left as null rather than picking one. Would have been the largest data centre campus ever proposed."
+ },
+ {
+  "deal_id": "compass-pw-digital-gateway-exit-2026-04",
+  "deal_type": "D15",
+  "from_entity": "Compass Datacenters LLC",
+  "to_entity": null,
+  "headline": "Compass quit its half of the Prince William campus two months before QTS did, saying there was no way forward.",
+  "quantity_raw": "up to 11.55 million sq ft of data centre space; about 37 buildings at full build-out across the 2,100-acre site with QTS",
+  "quantity_value": null,
+  "quantity_unit": null,
+  "usd_value": null,
+  "geography": [
+   "United States"
+  ],
+  "site": "PW Digital Gateway, Prince William County, Virginia",
+  "chip_skus": [],
+  "status": "cancelled",
+  "binding_status": "confirmed",
+  "announced_date": "2026-04-29",
+  "confidence": "T2",
+  "how_to_buy": "not open yet",
+  "open_status": "withdrawn",
+  "taken_by": null,
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/compass-pulls-out-of-pw-digital-gateway-project-residents-sue-to-get-out-of-contracts-with-qts/"
+  ],
+  "notes": "Compass said legal actions and regulatory hurdles had closed a viable path forward. Same campus as qts-pw-digital-gateway-terminated-2026-07; two separate developers, two separate withdrawals. Do not sum their footprints as if they were one block."
+ },
+ {
+  "deal_id": "aws-calvert-cliffs-500mw-withdrawn-2026-08",
+  "deal_type": "D15",
+  "from_entity": "Amazon.com, Inc.",
+  "to_entity": null,
+  "headline": "Amazon decided not to build its data centre campus next to a Maryland nuclear plant, releasing the site and its power arrangement.",
+  "quantity_raw": "approximately 500 MW, over 2.46 million square feet across eight buildings",
+  "quantity_value": 500,
+  "quantity_unit": "MW",
+  "usd_value": null,
+  "geography": [
+   "United States"
+  ],
+  "site": "Calvert Technology Center, Lusby, Maryland",
+  "chip_skus": [],
+  "status": "cancelled",
+  "binding_status": "confirmed",
+  "announced_date": "2026-08-05",
+  "confidence": "T2",
+  "how_to_buy": "unknown",
+  "open_status": "withdrawn",
+  "taken_by": null,
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/aws-pulls-out-of-planned-data-center-campus-next-to-maryland-nuclear-plant/"
+  ],
+  "notes": "Power was to come under a Constellation Energy agreement; no party has published what happened to that agreement. Amazon said it decided not to move forward at this time. Calvert County is weighing a six-month data centre moratorium. No marketing process has been announced, so the 500 MW is not straightforwardly acquirable."
+ },
+ {
+  "deal_id": "beale-project-blue-600mw-2025-12",
+  "deal_type": "D15",
+  "from_entity": "Beale Infrastructure",
+  "to_entity": null,
+  "headline": "Amazon stopped being the intended customer for a 600 MW Tucson campus, so the developer is looking for someone else to run it.",
+  "quantity_raw": "290 acres, up to 10 buildings, 2 million sq ft, 600 MW",
+  "quantity_value": 600,
+  "quantity_unit": "MW",
+  "usd_value": 3600000000,
+  "geography": [
+   "United States"
+  ],
+  "site": "Project Blue, Pima County, Tucson, Arizona",
+  "chip_skus": [],
+  "status": "announced",
+  "binding_status": "reported",
+  "announced_date": "2025-12-05",
+  "confidence": "T3",
+  "how_to_buy": "enterprise sales contact",
+  "open_status": "available_now",
+  "taken_by": null,
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/amazon-backs-out-of-project-blue-data-center-campus-in-arizona-report/",
+   "https://www.kjzz.org/the-show/2025-12-09/rejected-by-tucson-and-abandoned-by-amazon-project-blue-data-center-moves-forward"
+  ],
+  "notes": "OUTREACH TARGET. Beale Infrastructure is Blue Owl Capital-owned. Beale says AWS never had an agreement in place. Local officials mentioned seven or eight potential end-user tenants. Beale said only that it is confident of having an operator by the time the buildings are ready in 2027. Meta was floated as interested and a local reporter says county supervisors indicated Meta may already have withdrawn; unconfirmed."
+ },
+ {
+  "deal_id": "stack-babenhausen-156mw-cancelled-2026-07",
+  "deal_type": "D15",
+  "from_entity": "STACK Infrastructure",
+  "to_entity": null,
+  "headline": "STACK dropped its German data centre campus after approvals dragged on, and the landowner is now looking for a new investor.",
+  "quantity_raw": "bis zu 156 MW installed electrical capacity; investment volume rund 3 Milliarden Euro",
+  "quantity_value": 156,
+  "quantity_unit": "MW",
+  "usd_value": null,
+  "geography": [
+   "Germany"
+  ],
+  "site": "Aumovio site, Babenhausen, Hesse",
+  "chip_skus": [],
+  "status": "cancelled",
+  "binding_status": "reported",
+  "announced_date": "2026-07-08",
+  "confidence": "T3",
+  "how_to_buy": "enterprise sales contact",
+  "open_status": "available_now",
+  "taken_by": null,
+  "source_urls": [
+   "https://blackout-news.de/aktuelles/babenhausen-verliert-rechenzentrum-drei-milliarden-projekt-auf-aumovio-areal-geplatzt/"
+  ],
+  "notes": "OUTREACH TARGET. Site is a former Continental plant owned by Aumovio, whose production there ends late 2026. Aumovio is seeking a new investor and filing development plan resolutions. Grid connection status is unresolved in the reporting. Found through German-language search after English search returned only a headline; the same sweep in other European languages would likely find more."
+ },
+ {
+  "deal_id": "fermi-matador-anchor-terminated-2025-12",
+  "deal_type": "D15",
+  "from_entity": "Fermi Inc.",
+  "to_entity": null,
+  "headline": "Fermi's first big customer cancelled the agreement to fund construction and let its exclusivity lapse, leaving the site without its anchor.",
+  "quantity_raw": "the First Tenant agreed to advance up to $150 million to fund construction costs; no funds were drawn; no megawatt figure was published for this tenant",
+  "quantity_value": null,
+  "quantity_unit": null,
+  "usd_value": 150000000,
+  "geography": [
+   "United States"
+  ],
+  "site": "Project Matador, Carson County, near Amarillo, Texas",
+  "chip_skus": [],
+  "status": "cancelled",
+  "binding_status": "confirmed",
+  "announced_date": "2025-12-12",
+  "confidence": "T1",
+  "how_to_buy": "enterprise sales contact",
+  "open_status": "already_taken",
+  "taken_by": "TensorWave (partially)",
+  "source_urls": [
+   "https://www.sec.gov/Archives/edgar/data/2071778/000121390025120940/ea0269377-8k_fermi.htm",
+   "https://www.datacenterdynamics.com/en/news/fermi-share-price-craters-as-tenant-pulls-back-from-150m-texas-data-center-deal/"
+  ],
+  "notes": "From the Form 8-K, so T1. The tenant was described only as investment grade-rated and never named. On 10 August 2026 Fermi signed a $6.5bn lease with TensorWave for 222 MW initially, expandable beyond 650 MW across three data centres; reporting frames that as new capacity rather than a straight replacement, so do not assume the original block is spoken for. A securities class action followed."
+ },
+ {
+  "deal_id": "microsoft-oracle-3bn-capacity-collapse-2026-06",
+  "deal_type": "D15",
+  "from_entity": "Oracle Corporation",
+  "to_entity": null,
+  "headline": "Microsoft ended talks to rent more than $3 billion of Oracle cloud capacity, reportedly over a missing government security accreditation.",
+  "quantity_raw": "a deal worth more than $3B to lease Oracle cloud capacity",
+  "quantity_value": null,
+  "quantity_unit": null,
+  "usd_value": 3000000000,
+  "geography": [
+   "United States"
+  ],
+  "site": null,
+  "chip_skus": [],
+  "status": "cancelled",
+  "binding_status": "speculative",
+  "announced_date": "2026-06-16",
+  "confidence": "T3",
+  "how_to_buy": "enterprise sales contact",
+  "open_status": "withdrawn",
+  "taken_by": null,
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/oracle-denies-3bn-microsoft-data-center-deal-collapsed-over-security-and-compliance-concerns/"
+  ],
+  "notes": "DISPUTED. Business Insider reported it from unnamed sources; Oracle said the details in the article are inaccurate and that Microsoft is both an OCI partner and a customer. Microsoft declined to comment. Kept because the claim is specific and from a credible outlet, but the denial is on the record and should be shown alongside it. No evidence the capacity was re-let."
+ },
+ {
+  "deal_id": "microsoft-caledonia-cancelled-2025-10",
+  "deal_type": "D15",
+  "from_entity": "Microsoft Corporation",
+  "to_entity": null,
+  "headline": "Microsoft withdrew its application for a Wisconsin data centre campus after residents objected.",
+  "quantity_raw": "244 acres, three data centre buildings plus a 15-acre electrical substation",
+  "quantity_value": null,
+  "quantity_unit": null,
+  "usd_value": null,
+  "geography": [
+   "United States"
+  ],
+  "site": "Project Nova, Caledonia, Racine County, Wisconsin",
+  "chip_skus": [],
+  "status": "cancelled",
+  "binding_status": "confirmed",
+  "announced_date": "2025-10-10",
+  "confidence": "T2",
+  "how_to_buy": "unknown",
+  "open_status": "withdrawn",
+  "taken_by": null,
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/microsoft-cancels-plans-for-data-center-caledonia-wisconsin/"
+  ],
+  "notes": "Microsoft said it chose not to move forward based on community feedback. Land remains on hold. No MW figure was ever published."
+ },
+ {
+  "deal_id": "vintage-laveen-scrapped-2026-03",
+  "deal_type": "D15",
+  "from_entity": "Vintage Partners",
+  "to_entity": null,
+  "headline": "A Phoenix developer dropped its data centre and will build homes and shops instead, even though the substation is already on site.",
+  "quantity_raw": "63-acre site; existing transmission lines and electrical substation remain on the property but will serve the new mixed-use development",
+  "quantity_value": null,
+  "quantity_unit": null,
+  "usd_value": null,
+  "geography": [
+   "United States"
+  ],
+  "site": "Laveen, Phoenix, Arizona",
+  "chip_skus": [],
+  "status": "cancelled",
+  "binding_status": "confirmed",
+  "announced_date": "2026-03-05",
+  "confidence": "T3",
+  "how_to_buy": "not open yet",
+  "open_status": "withdrawn",
+  "taken_by": null,
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/vintage-partners-scraps-phoenix-arizona-data-center-plans/"
+  ],
+  "notes": "Worth noting because the power infrastructure was already built and is being reassigned to housing. Powered land being repurposed away from data centres is the opposite of the usual direction of travel."
+ },
+ {
+  "deal_id": "thailand-166-projects-frozen-2026-09",
+  "deal_type": "D17",
+  "from_entity": "Royal Thai Government",
+  "to_entity": "data centre projects in Thailand",
+  "headline": "Thailand paused 166 data centre projects, including 49 already being built, while it rewrites the rules.",
+  "quantity_raw": "166 data-centre projects paused: 49 already under construction and 117 awaiting approval; 35 already operating",
+  "quantity_value": null,
+  "quantity_unit": null,
+  "usd_value": null,
+  "geography": [
+   "Thailand"
+  ],
+  "site": null,
+  "chip_skus": [],
+  "status": "announced",
+  "binding_status": "confirmed",
+  "announced_date": "2026-09-04",
+  "confidence": "T3",
+  "how_to_buy": "government tender",
+  "open_status": "announced_not_open",
+  "taken_by": null,
+  "source_urls": [
+   "https://www.globe.co.th/news/thailand/thailand-halts-166-data-centre-projects-pending-new-policies/",
+   "https://www.thaiexaminer.com/thai-news-foreigners/2026/09/03/data-centre-projects-put-on-hold-in-bangkok-as-officials-scramble-to-examine-the-impact-of-the-industry/"
+  ],
+  "notes": "TWO DAYS OLD AT CAPTURE and the largest single freeze found in the region. Four subcommittees have one month to draft new criteria, so the BOI should publish a project-level list in early October 2026. No MW figure has been published. H1 2026 AI and data centre investment applications were THB886bn against THB623bn for all of 2025."
+ },
+ {
+  "deal_id": "infinigence-gansu-yisuan-terminated-2026-07",
+  "deal_type": "D15",
+  "from_entity": "Gansu Yisuan Intelligent Technology Co., Ltd.",
+  "to_entity": null,
+  "headline": "A Chinese AI company cancelled a five-year compute purchase four years early, leaving a Gansu computing centre without its anchor customer.",
+  "quantity_raw": "contract value about RMB 113 million including tax; first phase of the Qingyang centre is 2500P of compute",
+  "quantity_value": null,
+  "quantity_unit": null,
+  "usd_value": null,
+  "geography": [
+   "China"
+  ],
+  "site": "Qingyang domestic 10,000-card intelligent computing centre, Gansu",
+  "chip_skus": [],
+  "status": "cancelled",
+  "binding_status": "confirmed",
+  "announced_date": "2026-07-01",
+  "confidence": "T1",
+  "how_to_buy": "enterprise sales contact",
+  "open_status": "available_now",
+  "taken_by": null,
+  "source_urls": [
+   "https://www.stcn.com/article/detail/3993391.html",
+   "https://www.nbd.com.cn/articles/2026-07-01/4444488.html",
+   "https://www.bjnews.com.cn/detail/1782971226129098.html"
+  ],
+  "notes": "OUTREACH TARGET, and the named Chinese record we were missing. Seller is a wholly-owned subsidiary of Shenzhen-listed Zhejiang Entive (300911.SZ); the buyer that walked is Shanghai Infinigence AI. Signed 28 November 2024, performed just over a year, terminated 1 July 2026, reason given as objective changes in the buyer's compute business, settled by friendly negotiation. The subsidiary posted RMB 25.6m revenue and a RMB 45.7m net loss in 2025. Compute published as 2500P with no chip model or card count, so no MW or H100e can be derived honestly."
+ },
+ {
+  "deal_id": "jinji-yingzhi-921m-terminated-2024-11",
+  "deal_type": "D15",
+  "from_entity": "Yingzhi Innovation (Shenzhen) Technology Co., Ltd.",
+  "to_entity": null,
+  "headline": "A Chinese customer could not use the compute it had leased, so both sides tore up a contract worth more than RMB 900 million.",
+  "quantity_raw": "RMB 921.6 million including tax; 2048P of AI compute contracted, of which 1696P was built and networked",
+  "quantity_value": null,
+  "quantity_unit": null,
+  "usd_value": null,
+  "geography": [
+   "China"
+  ],
+  "site": "AI Innovation Empowerment Centre, Shenzhen",
+  "chip_skus": [],
+  "status": "cancelled",
+  "binding_status": "confirmed",
+  "announced_date": "2024-11-12",
+  "confidence": "T1",
+  "how_to_buy": "enterprise sales contact",
+  "open_status": "available_now",
+  "taken_by": null,
+  "source_urls": [
+   "https://www.chnfund.com/article/AR144a37e7-c10e-0404-f54e-3a16355d2f0a",
+   "https://stcn.com/article/detail/1409781.html"
+  ],
+  "notes": "OUTREACH TARGET. Seller is a wholly-owned subsidiary of Shenzhen-listed Jiangsu Jinji Industry (300798.SZ). Buyer that walked is Shenzhen Dixi Yunlian Technology. Company language: the compute market changed violently, the business did not start on schedule, and the partner could not use the compute service provided. Terminated by friendly negotiation with no breach liability either side. Only RMB 15.9m of revenue had been recognised. The capacity was physically built and networked, which is what makes this acquirable rather than theoretical. Older than the rest of this batch; current status of the 1696P is unverified."
+ },
+ {
+  "deal_id": "sinnet-idle-racks-2026-04",
+  "deal_type": "D15",
+  "from_entity": "Beijing Sinnet Technology Co., Ltd.",
+  "to_entity": null,
+  "headline": "A big Chinese data centre operator switched on more racks than ever in one year, could not fill them, and posted its worst loss since listing.",
+  "quantity_raw": "overall rack occupancy about 60%; over 86,000 racks in production of which 26,000 were added in 2025, the highest ever; over 230,000 racks planned nationwide at 4.4kW each",
+  "quantity_value": null,
+  "quantity_unit": null,
+  "usd_value": null,
+  "geography": [
+   "China"
+  ],
+  "site": "Tianjin Baodi, Yanjiao, Shanghai Jiading, Inner Mongolia, Hainan",
+  "chip_skus": [],
+  "status": "live",
+  "binding_status": "confirmed",
+  "announced_date": "2026-04-29",
+  "confidence": "T1",
+  "how_to_buy": "enterprise sales contact",
+  "open_status": "available_now",
+  "taken_by": null,
+  "source_urls": [
+   "https://static.cninfo.com.cn/finalpage/2026-04-29/1225233868.PDF",
+   "https://www.guandian.cn/m/show/558641"
+  ],
+  "notes": "OUTREACH TARGET, and the named Chinese operator behind the country-level idle-capacity numbers we already hold. From the FY2025 annual report on cninfo, so T1. About 40% of 86,000 racks is empty. IDC gross margin fell to 29.15%, cloud to 6.76%, and net loss was about RMB 759m, down 299% year on year. The company's own explanation is that customers rack up later than capacity is delivered. Deliberately NOT converting racks to MW: the company published racks and a percentage, not megawatts, and 4.4kW is a planning figure for a different, larger portfolio."
+ },
+ {
+  "deal_id": "indiaai-38000-gpus-underused-2026",
+  "deal_type": "D15",
+  "from_entity": "IndiaAI Mission",
+  "to_entity": null,
+  "headline": "India subsidised tens of thousands of GPUs for startups but far fewer people are using them than it built for.",
+  "quantity_raw": "38,000+ GPUs onboarded, mostly Nvidia H100 and H200, against an original 2024 target of 10,000 and a 100,000 year-end target; subsidised rates Rs 65 to 92 an hour",
+  "quantity_value": 38000,
+  "quantity_unit": "GPUs",
+  "usd_value": null,
+  "geography": [
+   "India"
+  ],
+  "site": null,
+  "chip_skus": [
+   "H100",
+   "H200"
+  ],
+  "status": "live",
+  "binding_status": "reported",
+  "announced_date": "2026-06-29",
+  "confidence": "T3",
+  "how_to_buy": "government tender",
+  "open_status": "available_now",
+  "taken_by": null,
+  "source_urls": [
+   "https://www.communicationstoday.co.in/38000-gpus-one-big-problem-indias-ai-mission-cant-find-enough-users/",
+   "https://www.business-standard.com/technology/artificial-intelligence/india-ai-compute-race-subsidised-gpu-capability-gap-126062900734_1.html"
+  ],
+  "notes": "OUTREACH TARGET and the largest single pool of underused GPUs found anywhere. Of Rs 10,371.92 crore allocated, only about Rs 400 crore has been released, roughly 4%. Friction cited: a seven-day lease cap for fine-tuning and unpredictable renewals. Installation delays named at Jio Platforms and CtrlS. Empanelled providers include Tata Communications, Yotta, E2E Networks, NxtGen. No per-provider utilisation figure has been published; that is the number to chase next."
+ },
+ {
+  "deal_id": "malaysia-declared-vs-used-power-2025-11",
+  "deal_type": "D15",
+  "from_entity": "Government of Malaysia",
+  "to_entity": null,
+  "headline": "Malaysian data centres asked for far more electricity than they used, and the government said this risks stranded assets.",
+  "quantity_raw": "actual consumption 603 MW as at June 2025 against declared maximum demand of 1,276 MW; government target is 85% of declared maximum demand",
+  "quantity_value": 673,
+  "quantity_unit": "MW",
+  "usd_value": null,
+  "geography": [
+   "Malaysia"
+  ],
+  "site": null,
+  "chip_skus": [],
+  "status": "live",
+  "binding_status": "confirmed",
+  "announced_date": "2025-11-05",
+  "confidence": "T2",
+  "how_to_buy": "not open yet",
+  "open_status": "announced_not_open",
+  "taken_by": null,
+  "source_urls": [
+   "https://www.edgeprop.my/content/1914317/data-centres-consume-only-about-half-declared-power-capacity-govt-flags-potential-risk-stranded-assets",
+   "https://theenergy.co/articles/its-not-a-moratorium-malaysian-regulators-battle-data-centre-glut"
+  ],
+  "notes": "BETTER SOURCED THAN THE 7,100 MW FIGURE. Stated in Dewan Rakyat by Deputy Minister Liew Chin Tong, so T2 on the record. 673 MW is declared but unused. The mechanism that will force release: operators must hit 85% of declared maximum demand in the first four years, dropping to 75% in years five and six, with RM8.50 levied per kilowatt of shortfall monthly. A regulator described it as take or pay. The Energy Commission has identified a likelihood of speculative applications. Malaysia approved 143 data centre projects worth RM144.4bn from 2021 to June 2025. No public register names which project holds which allocation."
+ },
+ {
+  "deal_id": "malaysia-esa-gap-7100mw-2025-10",
+  "deal_type": "D15",
+  "from_entity": "Tenaga Nasional Berhad counterparties",
+  "to_entity": null,
+  "headline": "Data centre developers signed power contracts for about 7,100 MW in Malaysia but only about 850 MW was actually switched on.",
+  "quantity_raw": "49 data centre projects with signed Electricity Supply Agreements totalling 7,100 MW; 850 MW reached by October 2025",
+  "quantity_value": 6250,
+  "quantity_unit": "MW",
+  "usd_value": null,
+  "geography": [
+   "Malaysia"
+  ],
+  "site": null,
+  "chip_skus": [],
+  "status": "announced",
+  "binding_status": "speculative",
+  "announced_date": "2025-10-01",
+  "confidence": "T4",
+  "how_to_buy": "unknown",
+  "open_status": "announced_not_open",
+  "taken_by": null,
+  "source_urls": [
+   "https://bizruption.asia/asia-in-focus/malaysia-data-centre-grid-water-constraint-2026/"
+  ],
+  "notes": "TREAT WITH CARE. This is the widely quoted Malaysian gap figure and we could only reach it through one secondary outlet citing Kenanga Research citing TNB. NST and The Edge both block automated fetching, so neither the Kenanga note nor a primary TNB source was verified. Marked T4 for that reason. The better-sourced version of the same story is malaysia-declared-vs-used-power-2025-11, which has a minister on the record. Do not quote 7,100 MW externally until someone pulls the Kenanga note. TNB baseline as at Q1 2026: 59 projects with ESAs, 36 completed."
+ },
+ {
+  "deal_id": "sakura-gpu-surplus-2025-07",
+  "deal_type": "D15",
+  "from_entity": "Sakura Internet Inc.",
+  "to_entity": null,
+  "headline": "The big AI customer Sakura expected to keep renewing did not, so its GPUs sat idle and it cut its profit forecast by about 90%.",
+  "quantity_raw": "cause given as the impact of the ending of a large generative-AI project it had expected to continue; operating profit forecast cut from 3.8 billion yen to 350 million yen and GPU infrastructure revenue from 15.8 billion to 8.5 billion yen",
+  "quantity_value": null,
+  "quantity_unit": null,
+  "usd_value": null,
+  "geography": [
+   "Japan"
+  ],
+  "site": "Ishikari, Hokkaido",
+  "chip_skus": [
+   "B200",
+   "H100"
+  ],
+  "status": "live",
+  "binding_status": "confirmed",
+  "announced_date": "2025-07-28",
+  "confidence": "T2",
+  "how_to_buy": "enterprise sales contact",
+  "open_status": "already_taken",
+  "taken_by": "a domestic major enterprise, a government agency and the National Institute of Informatics",
+  "source_urls": [
+   "https://www.itmedia.co.jp/aiplus/articles/2507/28/news101.html",
+   "https://toyokeizai.net/articles/-/955211?display=b",
+   "https://www.nikkei.com/article/DGXZQOUF286990Y5A720C2000000/"
+  ],
+  "notes": "USEFUL AS A BASE RATE. The cleanest APAC example of a walk-away that fully resolved inside twelve months. Refilled by about 1,100 B200 GPUs to a domestic major enterprise through March 2028 signed February 2026, a government agency contract worth 3.8bn yen in April 2026, and a National Institute of Informatics contract worth 2.5bn yen in May 2026. Toyo Keizai reports the idle GPUs returned to near full utilisation. CEO Tanaka said in October 2025 the B200 was hard to sell because only limited customers immediately need that performance."
+ },
+ {
+  "deal_id": "firmus-tasmania-stalled-2026",
+  "deal_type": "D15",
+  "from_entity": "Firmus Technologies",
+  "to_entity": null,
+  "headline": "A big Tasmanian AI data centre plan slowed on power and community objections, so the company is racing to build in South Australia instead.",
+  "quantity_raw": "St Leonards about 1.6 gigawatts under construction; Bell Bay a 288-megawatt proposed site on former pulp-mill land; Wesley Vale a third site",
+  "quantity_value": 288,
+  "quantity_unit": "MW",
+  "usd_value": null,
+  "geography": [
+   "Australia"
+  ],
+  "site": "Project Southgate: St Leonards, Bell Bay, Wesley Vale, Tasmania",
+  "chip_skus": [],
+  "status": "announced",
+  "binding_status": "reported",
+  "announced_date": "2026-06-01",
+  "confidence": "T3",
+  "how_to_buy": "not open yet",
+  "open_status": "announced_not_open",
+  "taken_by": null,
+  "source_urls": [
+   "https://kalkine.com.au/news/general-news/firmus-races-to-fast-track-south-australian-data-centres-as-tasmania-plans-stall",
+   "https://www.datacenterdynamics.com/en/news/firmus-proposes-third-data-center-project-in-tasmania/"
+  ],
+  "notes": "A DELAY, NOT A RELEASE. No power allocation has been returned and no grid connection has lapsed, so this is not capacity we can take. Included because it flags a stalled pipeline worth watching. CEO Oliver Curtis on grid priority: they have priority over us, we are basically last on and first off. Over 120 residents objected at a George Town Council meeting on Bell Bay. Transmission depends on the delayed Marinus Link."
+ },
+ {
+  "deal_id": "norway-green-energy-iloilo-withdrawn-2026-08",
+  "deal_type": "D15",
+  "from_entity": "Norway Green Energy",
+  "to_entity": null,
+  "headline": "A Norwegian developer dropped its plan for a 50 MW AI data centre in the Philippines after residents objected.",
+  "quantity_raw": "WS Hyperscale AI Campus, 50 MW, PHP 20.3 billion, 10-hectare site",
+  "quantity_value": 50,
+  "quantity_unit": "MW",
+  "usd_value": null,
+  "geography": [
+   "Philippines"
+  ],
+  "site": "Barangay Abilay Sur, Oton, Iloilo",
+  "chip_skus": [],
+  "status": "cancelled",
+  "binding_status": "speculative",
+  "announced_date": "2026-08-21",
+  "confidence": "T3",
+  "how_to_buy": "unknown",
+  "open_status": "withdrawn",
+  "taken_by": null,
+  "source_urls": [
+   "https://scandasia.com/norwegian-developer-withdraws-proposed-ai-data-centre-project-in-philippines/",
+   "https://www.gmanetwork.com/regionaltv/news/115201/proposal-to-build-ai-data-center-in-iloilo-town-withdrawn/story/"
+  ],
+  "notes": "Treat the developer's substance as unverified. Philippine media raised questions about the company's corporate background and its absence from the SEC database. The developer cited current circumstances."
+ },
+ {
+  "deal_id": "kota-damansara-dc-withdrawn-2026-08",
+  "deal_type": "D15",
+  "from_entity": "undisclosed developer",
+  "to_entity": null,
+  "headline": "A developer pulled its planning application for a Selangor data centre after 500 households objected.",
+  "quantity_raw": "two blocks of three-storey facilities across 19 private lots plus government road reserve",
+  "quantity_value": null,
+  "quantity_unit": null,
+  "usd_value": null,
+  "geography": [
+   "Malaysia"
+  ],
+  "site": "Section 9 Kota Damansara, Petaling Jaya, Selangor",
+  "chip_skus": [],
+  "status": "cancelled",
+  "binding_status": "confirmed",
+  "announced_date": "2026-08-20",
+  "confidence": "T3",
+  "how_to_buy": "unknown",
+  "open_status": "withdrawn",
+  "taken_by": null,
+  "source_urls": [
+   "https://w.media/data-center-application-shelved-in-malaysia-after-outcry-from-500-households/",
+   "https://www.nst.com.my/news/nation/2026/08/1515179/kota-damansara-data-centre-project-put-hold-after-developer-application"
+  ],
+  "notes": "Withdrawn to let the developer re-evaluate feasibility; explicitly resubmittable if zoning-compliant. The developer has not been named in any source. Part of a wider pattern of Malaysian community objection alongside the Johor stop-work order."
+ },
+ {
+  "deal_id": "johor-stop-work-order-2025-08",
+  "deal_type": "D17",
+  "from_entity": "Iskandar Puteri City Council",
+  "to_entity": "undisclosed data centre developer",
+  "headline": "Johor issued its first ever stop-work order on a data centre site after residents complained about the construction.",
+  "quantity_raw": "first data centre in Johor issued a stop-work order for breaching stipulated conditions; developer given two weeks to meet five conditions",
+  "quantity_value": null,
+  "quantity_unit": null,
+  "usd_value": null,
+  "geography": [
+   "Malaysia"
+  ],
+  "site": "Iskandar Puteri, Johor",
+  "chip_skus": [],
+  "status": "announced",
+  "binding_status": "confirmed",
+  "announced_date": "2025-08-21",
+  "confidence": "T3",
+  "how_to_buy": "unknown",
+  "open_status": "withdrawn",
+  "taken_by": null,
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/data-center-project-in-johor-malaysia-shut-down-for-breaching-building-regulations/",
+   "https://www.malaymail.com/amp/news/malaysia/2025/08/21/in-a-first-johor-halts-iskandar-puteri-data-centre-project-after-complaints-over-construction-breaches/188421"
+  ],
+  "notes": "Breaches were soil banks, dirty roads, no hoarding and late-night noise. The identity of the project has not been disclosed. Temporary suspension rather than a release."
+ },
+ {
+  "deal_id": "poolin-chapter11-auction-2026-09",
+  "deal_type": "D15",
+  "from_entity": "Poolin Technology Pte. Ltd.",
+  "to_entity": null,
+  "headline": "A failed mining company closed its two West Texas sites and is selling them and their power rights at a court auction this month.",
+  "quantity_raw": "$52 million stalking-horse floor: $37m for the Tarbush assets and $15m for the Pyote site including power rights and equipment; debts about $173 million",
+  "quantity_value": null,
+  "quantity_unit": null,
+  "usd_value": 52000000,
+  "geography": [
+   "United States"
+  ],
+  "site": "Pyote and Tarbush sites, West Texas",
+  "chip_skus": [],
+  "status": "announced",
+  "binding_status": "confirmed",
+  "announced_date": "2026-07-22",
+  "confidence": "T1",
+  "how_to_buy": "auction or court process",
+  "open_status": "available_now",
+  "taken_by": null,
+  "source_urls": [
+   "https://news.bitcoin.com/bitcoin-miner-poolin-technology-files-chapter-11-with-173m-debt-as-52m-asset-sale-moves-forward/",
+   "https://www.cryptotimes.io/2026/08/21/poolin-auction-set-for-september-10-as-objection-deadline-bars-late-creditors/",
+   "https://bondoro.com/poolin/"
+  ],
+  "notes": "TIME-CRITICAL AT CAPTURE. Bid deadline 8 September 2026, auction 10 September 2026 at 10:00 ET, sale hearing 18 September. US Bankruptcy Court, District of New Jersey, Judge Eamonn J. O'Hagan. Debtor's counsel Stephen M. Packman, Archer & Greiner PC, Voorhees NJ, where the auction is held. CRO Michael DuFrayne. Stalking horse is Thor CALAP LLC but bidding is open; the process already produced 28 NDAs, seven LOIs and three further indications of interest. ASIC mining sites, no GPU fleet, and no MW figure disclosed. Tarbush is 64 acres, Pyote about 23 acres. Power rights are the asset that matters here."
+ },
+ {
+  "deal_id": "bitriver-fox-group-insolvency-2026-01",
+  "deal_type": "D15",
+  "from_entity": "Fox Group of Companies LLC",
+  "to_entity": null,
+  "headline": "Russia's biggest crypto miner could not pay its bills, its sites went dark, and a court put it into a bankruptcy process.",
+  "quantity_raw": "533MW IT capacity across 15 data centres historically; Buryatia 100MW never became operational and Ingushetia 40MW was closed by police; $9.2 million owed",
+  "quantity_value": 533,
+  "quantity_unit": "MW",
+  "usd_value": 9200000,
+  "geography": [
+   "Russia"
+  ],
+  "site": "Irkutsk region, Buryatia, Ingushetia",
+  "chip_skus": [],
+  "status": "cancelled",
+  "binding_status": "confirmed",
+  "announced_date": "2026-01-27",
+  "confidence": "T1",
+  "how_to_buy": "auction or court process",
+  "open_status": "available_now",
+  "taken_by": null,
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/russian-cryptominer-bitriver-faces-bankruptcy-over-92m-unpaid-debt/",
+   "https://www.coindesk.com/business/2026/02/02/russia-s-biggest-bitcoin-mining-firm-s-founder-arrested-for-tax-evasion-while-his-company-faces-bankruptcy"
+  ],
+  "notes": "LARGEST MW BLOCK IN THE DISTRESS BUCKET AND EFFECTIVELY UNREACHABLE. BitRiver has been under US sanctions since 2022, so this is not acquirable by us or by most buyers. Observation proceedings opened by the Sverdlovsk Regional Arbitration Court; Fox Group owns 98% of BitRiver Management Company. Founder Igor Runets under house arrest January 2026, jailed July 2026 over an alleged $12m fraud tied to Deripaska's En+. Over 175,000 ASIC rigs; AI and HPC plans existed but no GPU count is published. DCD reports takeover talks with unnamed parties. No arbitration manager named in English-language sources."
+ },
+ {
+  "deal_id": "northern-data-breakup-2026",
+  "deal_type": "D15",
+  "from_entity": "Northern Data AG",
+  "to_entity": null,
+  "headline": "Northern Data sold its mining business, sold its big Texas power campus, and then sold the whole remaining company, so its GPUs and data centres all changed hands.",
+  "quantity_raw": "Taiga Cloud over 22,000 GPUs across European locations; Ardent about 250MW online or in development across eight facilities by 2027; Corpus Christi campus 600MW grid capacity of which 100MW was used for mining",
+  "quantity_value": 250,
+  "quantity_unit": "MW",
+  "usd_value": null,
+  "geography": [
+   "Germany",
+   "Sweden",
+   "Norway",
+   "United States",
+   "United Kingdom",
+   "Portugal",
+   "Netherlands"
+  ],
+  "site": "Ardent Data Centers; Peak Mining, Corpus Christi II, Texas",
+  "chip_skus": [],
+  "status": "cancelled",
+  "binding_status": "confirmed",
+  "announced_date": "2025-11-03",
+  "confidence": "T2",
+  "how_to_buy": "direct",
+  "open_status": "already_taken",
+  "taken_by": "Rumble Inc. (whole company) and Elektron Energy LP (Peak Mining)",
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/rumble-inc-to-buy-northern-data/",
+   "https://northerndata.de/en/investor-relations/news/northern-data-group-announces-peak-mining-divestiture"
+  ],
+  "notes": "A forced deleveraging and break-up rather than a formal insolvency. Majority-controlled by its own creditor Tether. Rumble deal: 2.0281 Rumble Class A shares per Northern Data share, $200m total cash, with Tether, co-CEO Aroosh Thillainathan and one other holder committing about 72%. Two different Peak Mining prices were published: the August 2025 term sheet says up to about $235m with $175m upfront, the November 2025 completion release says $50m upfront plus up to $150m deferred. Both quoted rather than picking one. The Corpus Christi 600MW campus went to an unnamed infrastructure asset management firm."
+ },
+ {
+  "deal_id": "rhodium-liquidating-plan-2026-01",
+  "deal_type": "D15",
+  "from_entity": "Rhodium Enterprises, Inc.",
+  "to_entity": null,
+  "headline": "A Texas miner lost its power supply and its cash, settled with Riot, and is now selling everything off under a liquidating plan.",
+  "quantity_raw": "$185 million settlement with Whinstone and Riot; petition listed $2.49 million of liquidity remaining and about $67 million in unpaid energy credits",
+  "quantity_value": null,
+  "quantity_unit": null,
+  "usd_value": 185000000,
+  "geography": [
+   "United States"
+  ],
+  "site": "Rockdale and Temple, Texas",
+  "chip_skus": [],
+  "status": "cancelled",
+  "binding_status": "confirmed",
+  "announced_date": "2026-01-14",
+  "confidence": "T1",
+  "how_to_buy": "auction or court process",
+  "open_status": "available_now",
+  "taken_by": null,
+  "source_urls": [
+   "https://elevenflo.com/blog/rhodium-encore-riot-settlement-drives-liquidation-plan",
+   "https://www.veritaglobal.net/rhodium"
+  ],
+  "notes": "Chapter 11 liquidating plan confirmed 19 December 2025, effective 14 January 2026. Full wind-down, not a reorganisation. Case No. 24-90448, US Bankruptcy Court, Southern District of Texas, Houston, Judge Alfredo R. Perez. Claims agent Verita. Liquidating trustee not named in reachable sources. Asset monetisation ongoing through 2026. For price context, its Temple lease position sold for $40m in December 2024."
+ },
+ {
+  "deal_id": "hyperscale-data-michigan-for-sale-2026-08",
+  "deal_type": "D15",
+  "from_entity": "Hyperscale Data, Inc.",
+  "to_entity": null,
+  "headline": "A listed company put its Michigan AI data centre up for sale or lease, and switched off Bitcoin mining there to free the power for AI.",
+  "quantity_raw": "20MW of AI compute initially deployed, expandable by 32MW; site total planned capacity about 340 megawatts",
+  "quantity_value": 340,
+  "quantity_unit": "MW",
+  "usd_value": null,
+  "geography": [
+   "United States"
+  ],
+  "site": "Alliance Cloud Services campus, southwest Michigan",
+  "chip_skus": [],
+  "status": "live",
+  "binding_status": "confirmed",
+  "announced_date": "2026-08-11",
+  "confidence": "T2",
+  "how_to_buy": "broker",
+  "open_status": "announced_not_open",
+  "taken_by": null,
+  "source_urls": [
+   "https://www.prnewswire.com/news-releases/hyperscale-data-board-considers-all-options-to-maximize-stockholder-value-including-potential-sale-of-its-michigan-data-center-302847878.html",
+   "https://en.cryptonomist.ch/2026/09/02/hyperscale-data-ai-transition/"
+  ],
+  "notes": "OUTREACH TARGET. Roughly 85% of the 340 MW site is uncontracted. Formerly Ault Alliance and BitNile Holdings; its subsidiary Gresham Worldwide completed a Chapter 11 in 2025. Anchor customer is an unnamed California-based neocloud on a contract worth about $1.2bn initial term, over $3bn if the expansion option is exercised. Strategic review opened 11 August 2026 with no predetermined timetable; mining shut 1 September 2026. The company has engaged an unnamed major investment bank. Executive Chairman Milton Todd Ault III is the decision-maker."
+ },
+ {
+  "deal_id": "nfn8-chapter11-2026-02",
+  "deal_type": "D15",
+  "from_entity": "NFN8 Group",
+  "to_entity": null,
+  "headline": "A fire burned out its main Texas site, revenue halved, and the company filed for bankruptcy and put every asset up for sale.",
+  "quantity_raw": "assets below $50,000 against liabilities of $1-10 million; fire reduced capacity and revenue by 50%; over 5,000 ASIC miners",
+  "quantity_value": null,
+  "quantity_unit": null,
+  "usd_value": null,
+  "geography": [
+   "United States"
+  ],
+  "site": "Crystal City, Zavala County, Texas; plus Iowa and Austin",
+  "chip_skus": [],
+  "status": "cancelled",
+  "binding_status": "confirmed",
+  "announced_date": "2026-02-02",
+  "confidence": "T3",
+  "how_to_buy": "auction or court process",
+  "open_status": "available_now",
+  "taken_by": null,
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/cryptominer-nfn8-files-for-bankruptcy-following-data-center-fire-and-bitcoin-price-crash/",
+   "https://www.webopedia.com/news/markets/bitcoin-miners-exit-2026/"
+  ],
+  "notes": "Small. Chief Restructuring Officer Erik White is the door. DIP financing from Twelve Bridge Capital. Sources conflict on the filing date: Webopedia gives 2 February 2026, DCD published 18 February; unresolved, so the earlier date is used with this note. Previously lost its Core Scientific hosting relationship in 2023, leaving thousands of stranded miners. Faces arbitration from three sale-leaseback participants."
+ },
+ {
+  "deal_id": "argo-restructuring-growler-2025-12",
+  "deal_type": "D15",
+  "from_entity": "Argo Blockchain plc",
+  "to_entity": null,
+  "headline": "Argo could not pay its debts, so a court let a creditor take almost all of the company in exchange for cash and mining machines.",
+  "quantity_raw": "about US$40 million of unsecured notes equitised; Growler injected US$3.5m of new capital and transferred US$18.4m of mining assets; equity split 87.5% Growler, 10% noteholders, 2.5% existing shareholders",
+  "quantity_value": null,
+  "quantity_unit": null,
+  "usd_value": 40000000,
+  "geography": [
+   "United Kingdom",
+   "Canada",
+   "United States"
+  ],
+  "site": "Baie-Comeau, Quebec; Texas",
+  "chip_skus": [],
+  "status": "cancelled",
+  "binding_status": "confirmed",
+  "announced_date": "2025-12-23",
+  "confidence": "T1",
+  "how_to_buy": "direct",
+  "open_status": "already_taken",
+  "taken_by": "Growler Mining",
+  "source_urls": [
+   "https://www.cliffordchance.com/briefings/2026/01/re-argo-blockchain-plc--part-26a-restructuring-plan-sanctioned.html",
+   "https://www.lexisnexis.com/en-gb/legal/guidance/part-26a-restructuring-plan-deal-debrief-argo-blockchain-plc"
+  ],
+  "notes": "A change of ownership, not capacity coming to market. Included because it is the first UK Part 26A restructuring plan for a crypto miner and it identifies Growler Mining as an active consolidator worth knowing. Sanctioned by the English High Court 23 December 2025 and recognised in the US under Chapter 15. LSE listing dropped, NASDAQ retained."
+ },
+ {
+  "deal_id": "sharon-ai-tcdc-divest-2025-12",
+  "deal_type": "D15",
+  "from_entity": "Sharon AI Holdings Inc.",
+  "to_entity": null,
+  "headline": "Sharon AI sold its half of a Texas data centre joint venture to its partner and took the money early.",
+  "quantity_raw": "US$70m: a $50 million convertible note plus $20 million in cash and equity",
+  "quantity_value": null,
+  "quantity_unit": null,
+  "usd_value": 70000000,
+  "geography": [
+   "United States"
+  ],
+  "site": "Texas Critical Data Centers LLC, Texas",
+  "chip_skus": [],
+  "status": "cancelled",
+  "binding_status": "confirmed",
+  "announced_date": "2025-12-23",
+  "confidence": "T2",
+  "how_to_buy": "direct",
+  "open_status": "already_taken",
+  "taken_by": "New Era Energy & Digital",
+  "source_urls": [
+   "https://www.businesswire.com/news/home/20251223879898/en/Sharon-AI-to-Divest-50-Interest-in-Texas-Critical-Data-Centers-LLC-for-US$70m",
+   "https://www.businesswire.com/news/home/20260413805279/en/Sharon-AI-Announces-Accelerated-Receipt-of-Remaining-Consideration-from-Sale-of-50-Ownership-in-Texas-Critical-Data-Centers-Joint-Venture"
+  ],
+  "notes": "Low confidence that this is distress; read it as a divestiture. Binding term sheet 30 December 2025, remaining consideration accelerated April 2026. The JV campus has been described elsewhere as targeting 1 GW but no firm MW figure for what was sold could be sourced."
+ },
+ {
+  "deal_id": "eni-hpc-opened-2026-07",
+  "deal_type": "D15",
+  "from_entity": "Eni S.p.A.",
+  "to_entity": null,
+  "headline": "An oil and gas company opened its own supercomputers to outside companies, startups and research centres.",
+  "quantity_raw": "the HPC6 and HPC7 supercomputers, a combination that enables Eni to surpass Exascale-class performance; HPC7 debuted at number 6 on the TOP500. No MW, GPU count or price published.",
+  "quantity_value": null,
+  "quantity_unit": null,
+  "usd_value": null,
+  "geography": [
+   "Italy"
+  ],
+  "site": "Eni Green Data Center, Ferrera Erbognone",
+  "chip_skus": [],
+  "status": "announced",
+  "binding_status": "confirmed",
+  "announced_date": "2026-07-28",
+  "confidence": "T2",
+  "how_to_buy": "enterprise sales contact",
+  "open_status": "announced_not_open",
+  "taken_by": null,
+  "source_urls": [
+   "https://www.eni.com/en-IT/media/press-release/2026/07/pr-eni-opens-supercomputing-capabilities-innovation-ecosystem.html",
+   "https://www.hpcwire.com/off-the-wire/eni-opens-supercomputing-infrastructure-to-ai-partners/"
+  ],
+  "notes": "THE ONLY NON-TECH CORPORATE FOUND MONETISING AN INTERNAL FLEET. Delivered through AI services on a project basis, not instances. Others join over time through project proposals of mutual interest, so partner-by-partner rather than self-serve. Six partners already in: Domyn, Mercuria, Dompe, Almawave, Reply, Fondazione Bruno Kessler. Commercial terms undisclosed. A wide search for banks, pharma, retailers and car makers doing the same found nothing else."
+ },
+ {
+  "deal_id": "softbank-sb-neo-10gw-2026-07",
+  "deal_type": "D15",
+  "from_entity": "SoftBank Group Corp.",
+  "to_entity": null,
+  "headline": "SoftBank set up a new company to rent AI computing capacity in the United States at up to 10 GW scale.",
+  "quantity_raw": "10 gigawatts by around 2030; Ohio project 10GW of capacity",
+  "quantity_value": 10000,
+  "quantity_unit": "MW",
+  "usd_value": null,
+  "geography": [
+   "United States",
+   "Japan"
+  ],
+  "site": "Ohio; Sakai, Osaka; Hokkaido",
+  "chip_skus": [],
+  "status": "announced",
+  "binding_status": "speculative",
+  "announced_date": "2026-07-02",
+  "confidence": "T3",
+  "how_to_buy": "not open yet",
+  "open_status": "announced_not_open",
+  "taken_by": null,
+  "source_urls": [
+   "https://finance.yahoo.com/technology/ai/articles/softbank-plans-ai-cloud-services-073106168.html",
+   "https://www.japantimes.co.jp/business/2026/07/03/companies/softbank-ai-cloud-service/"
+  ],
+  "notes": "BORDERLINE, FLAGGED HONESTLY. SoftBank has NOT framed this as excess. It is a new-build neocloud unit called SB Neo, not surplus disposal. Included so the sell side is complete, but if the bar is strictly capacity someone no longer needs, drop it. 10 GW is a target, not built capacity. Service launch stated as next fiscal year. No launch customers confirmed; OpenAI described only as a likely customer. CEO Miyakawa called it a second founding for the company."
+ },
+ {
+  "deal_id": "openai-compute-resale-intent-2025-11",
+  "deal_type": "D15",
+  "from_entity": "OpenAI",
+  "to_entity": null,
+  "headline": "Sam Altman said OpenAI wants to sell compute to other companies, but the only thing shipped so far is reserved API capacity.",
+  "quantity_raw": "no capacity figure has ever been attached to a resale offer",
+  "quantity_value": null,
+  "quantity_unit": null,
+  "usd_value": null,
+  "geography": [
+   "United States"
+  ],
+  "site": null,
+  "chip_skus": [],
+  "status": "announced",
+  "binding_status": "speculative",
+  "announced_date": "2025-11-07",
+  "confidence": "T2",
+  "how_to_buy": "not open yet",
+  "open_status": "announced_not_open",
+  "taken_by": null,
+  "source_urls": [
+   "https://www.datacenterdynamics.com/en/news/sam-altman-openai-isnt-seeking-a-government-bailout-has-14tn-in-data-center-commitments-may-launch-an-ai-cloud-service/",
+   "https://winbuzzer.com/2026/05/20/openai-launches-guaranteed-capacity-for-ai-compute-xcxwbn/"
+  ],
+  "notes": "WEAKEST OF THE RESALE RECORDS. Altman: we are looking at ways to more directly sell compute capacity to other companies, and the world is going to need a lot of AI cloud. But OpenAI is structurally a net buyer with about $1.4tn of compute commitments, so it fails the excess test. The live product, Guaranteed Capacity launched 20 May 2026, is reserved API and token capacity on one to three year commitments, not raw GPU rental."
+ },
+ {
+  "deal_id": "meta-compute-resale-2026-07",
+  "deal_type": "D15",
+  "from_entity": "Meta Platforms, Inc.",
+  "to_entity": null,
+  "headline": "Meta says it will sell AI compute under a business it calls Meta Compute, but there is still nothing anyone can buy.",
+  "quantity_raw": "no capacity figure for resale has ever been published, by Meta or by any reporter",
+  "quantity_value": null,
+  "quantity_unit": null,
+  "usd_value": null,
+  "geography": [
+   "United States"
+  ],
+  "site": null,
+  "chip_skus": [],
+  "status": "announced",
+  "binding_status": "speculative",
+  "announced_date": "2026-07-01",
+  "confidence": "T3",
+  "how_to_buy": "not open yet",
+  "open_status": "announced_not_open",
+  "taken_by": null,
+  "source_urls": [
+   "https://www.bloomberg.com/news/articles/2026-07-01/meta-is-building-a-cloud-business-to-sell-excess-ai-compute",
+   "https://s21.q4cdn.com/399680738/files/doc_financials/2026/q2/META-Q2-2026-Earnings-Call-Transcript.pdf",
+   "https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/",
+   "https://www.datacenterdynamics.com/en/news/meta-establishes-meta-compute-plans-multiple-gigawatt-plus-scale-ai-data-centers/",
+   "https://www.cnbc.com/2026/07/17/meta-ai-compute.html",
+   "https://www.fierce-network.com/cloud/metas-cloud-play-may-hinge-bare-metal-not-winning-full-stack-fight"
+  ],
+  "notes": "THE HEADLINE IS LOUDER THAN THE SUBSTANCE, AND THAT GAP IS THE FINDING. What is real: Meta has confirmed the NAME Meta Compute and used it for a financing venture, a 1 GW El Paso data centre announced 28 July 2026 with BlackRock funding 80%, and Meta itself stated as the initial sole occupant, online from 2028. Its model API is live and buyable today at developer.meta.com/ai. What is NOT real: any compute product. meta.com/compute, ai.meta.com/compute and developer.meta.com/ai/compute all returned 404 when checked on 6 September 2026. No pricing, no waitlist, no signup, no named customer, no MW, no GPU count, no date. Every reported deal is inbound and bilateral. THE AWKWARD PART: Meta's own posture on the record contradicts the 'excess capacity' framing that every headline used. Susan Li on the Q2 call said Meta is 'supply constrained' and expects to be for the foreseeable future. Zuckerberg said 'there's just nowhere near enough compute for all the demand', that Meta has 'quite a number of offers for the compute that we have' at 'a significant premium over what we paid for it', and that it 'would be foolish to basically just sell all of the compute and take a short-term profit'. So this is opportunistic monetisation of capacity Meta is choosing not to use, not disposal of surplus it cannot use. Only prospect named: Anthropic, in early talks reported 17 July 2026 for up to $10bn of compute over two years with either side able to exit early; not signed as of 6 September 2026. Analysts split hard: SemiAnalysis argues Meta is structurally over-provisioned because training runs leave clusters at 30-50% between runs and that 200MW sold externally is $10bn a year of revenue; sceptics including Capacity Global argue Meta has no spare capacity at all. Market reaction 1-2 July: META up 9-10%, CoreWeave down 10.8%, Nebius down 12.4%. Capacity estimates that circulate (SemiAnalysis 'over 5GW contracted', Capacity Global '20 gigawatts') are analyst figures, not Meta's, and are deliberately left out of the quantity fields."
+ }
+]

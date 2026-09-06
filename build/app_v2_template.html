@@ -268,6 +268,17 @@ a.src{font-family:var(--mono);font-size:var(--fs-1);color:var(--acct)}
 .mini .mn small{display:block;color:var(--t3);font-size:var(--fs-2);line-height:1.35;margin-top:1px}
 .mini .mv{font-family:var(--mono);font-size:var(--fs-2);color:var(--t2);white-space:nowrap}
 .mini.click{cursor:pointer}.mini.click:hover .mn{color:var(--acct)}
+.invhead{font-size:var(--fs-4);color:var(--t1);line-height:1.45;margin:2px 0 0}
+.invhead b{font-size:var(--fs-6);font-weight:700;letter-spacing:-.02em;color:var(--good)}
+.invage{display:inline-block;margin-left:7px;font-size:var(--fs-2);color:var(--t3)}
+.invage.old{color:var(--warn)}
+/* Whether you can actually buy it is the first thing to know, so it is the loudest thing on the row. */
+.ostag{display:inline-block;font-size:var(--fs-2);font-weight:600;padding:1px 8px;border-radius:var(--r-full);
+  border:1px solid var(--bd2);color:var(--t3);white-space:nowrap}
+.ostag.os-open{color:var(--good);border-color:var(--good);background:rgba(76,192,138,.12)}
+.ostag.os-soon{color:var(--warn);border-color:var(--warn)}
+.ostag.os-gone{color:var(--t3);opacity:.7}
+.mini .buyline{color:var(--acct)}
 .subh{font-size:var(--fs-2);color:var(--t2);font-weight:600;
       margin:18px 0 7px;padding-top:11px;border-top:1px solid var(--bd)}
 .subh:first-child{margin-top:2px;padding-top:0;border-top:0}
@@ -648,6 +659,10 @@ __RIVALS_CSS__
       <summary><h2>Key</h2><span class="ssum" id="sum-key"></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
       <div class="secb" id="key-slot"></div>
     </details>
+    <details class="sec" id="sec-spare">
+      <summary><h2>Spare right now</h2><span class="ssum" id="sum-spare"></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
+      <div class="secb" id="spare"></div>
+    </details>
     <details class="sec" id="sec-match">
       <summary><h2>Who to call</h2><span class="ssum" id="sum-match"></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
       <div class="secb" id="match"></div>
@@ -693,6 +708,7 @@ __RIVALS_CSS__
 "use strict";
 /* ============ data ============ */
 const DATA = JSON.parse(document.getElementById("dataset").textContent);
+const INV = __INVENTORY__;   /* live marketplace snapshot, or null if none captured */
 const DEALS = DATA.deals.filter(d => !d.is_restatement), ALLDEALS = DATA.deals, SITES = DATA.sites;
 const ENT = {}; DATA.entities.forEach(e => ENT[e.entity_id] = e);
 const PRICES = DATA.prices, COV = DATA.coverage, CAP = DATA.apac_capacity || [];
@@ -1476,6 +1492,54 @@ function renderChips(){
 }
 
 /* ============ panel: match board ============ */
+/* ============ spare capacity ============
+   Two different things sit here and they must not be confused. The top block is
+   live inventory read from marketplaces minutes ago. The bottom block is capacity
+   somebody has released or is selling, found by hand, where the size is whatever
+   they published and often nothing. Every row says how you would actually buy it,
+   because "X has spare capacity" is useless without the door. */
+/* cut at a word boundary, not mid-word: "bankruptcy pro" reads like a bug */
+const clip = (s,n) => s.length<=n ? s : s.slice(0, s.lastIndexOf(" ", n)>0 ? s.lastIndexOf(" ", n) : n).replace(/[,;:.\s]+$/,"") + "\u2026";
+const OPEN_LABEL = {available_now:"open now", announced_not_open:"announced, not open",
+                    already_taken:"gone", withdrawn:"shelved"};
+const OPEN_CLS = {available_now:"os-open", announced_not_open:"os-soon",
+                  already_taken:"os-gone", withdrawn:"os-gone"};
+function agoTxt(iso){
+  const ms = Date.now() - Date.parse(iso); if (!(ms >= 0)) return "";
+  const h = ms/3.6e6;
+  return h < 1 ? Math.round(ms/6e4) + " min ago" : h < 48 ? Math.round(h) + " h ago" : Math.round(h/24) + " days ago";
+}
+function renderSpare(){
+  const offers = DEALS.filter(d => d.open_status).sort((a,b) => {
+    const r = {available_now:0, announced_not_open:1, withdrawn:2, already_taken:3};
+    return (r[a.open_status] - r[b.open_status]) || ((b.mw||0) - (a.mw||0));
+  });
+  const openN = offers.filter(d => d.open_status === "available_now").length;
+  let live = "";
+  if (INV && INV.totals){
+    const T = INV.totals, stale = (Date.now() - Date.parse(INV.captured_at)) > 36*3.6e6;
+    live = `<div class="invhead">
+        <b>${nf(T.gpus_spare)}</b> GPUs spare across ${T.venues_read} public marketplaces
+        <span class="invage${stale?" old":""}">${esc(agoTxt(INV.captured_at))}</span></div>
+      <div class="mstrip" style="margin-top:6px">
+        <span><b>${nf(T.gpus_seen)}</b> GPUs listed in total</span>
+        <span><b>${nf(T.apac_spare)}</b> of the spare are in Asia-Pacific</span></div>
+      ${INV.venues.map(v => `<div class="mini"><span class="mn">${esc(v.venue)}<small>${esc(v.kind)}</small></span>
+        <span class="mv">${v.gpus_free!=null||v.gpus_available!=null ? nf(v.gpus_free!=null?v.gpus_free:v.gpus_available)+" free" : "\u2014"}</span></div>`).join("")}
+      <p class="hint">A snapshot, not a feed. ${INV.not_read.length} more venues are not read: ${esc(INV.not_read.map(x=>x.venue).join(", "))}. Hover the count for why.</p>`;
+  } else {
+    live = `<p class="hint">No marketplace snapshot has been captured yet.</p>`;
+  }
+  $("spare").innerHTML = live +
+    `<div class="subh">Capacity someone has let go &middot; ${offers.length}</div>` +
+    offers.map(d => `<div class="mini click" data-sel="deal:${esc(d.deal_id)}">
+        <span class="mn">${esc(whoName(d.from_id))}
+          <small>${esc(clip(d.headline||"",118))}</small>
+          <small class="buyline">${esc(d.how_to_buy||"route unknown")}${d.taken_by?" &middot; taken by "+esc(d.taken_by):""}</small></span>
+        <span class="mv"><span class="ostag ${OPEN_CLS[d.open_status]||""}">${esc(OPEN_LABEL[d.open_status]||d.open_status)}</span>
+          ${d.mw?"<br>"+mwf(d.mw):""}</span></div>`).join("");
+  $("sum-spare").textContent = `${openN} open now`;
+}
 function renderMatch(){
   $("match").innerHTML = `<p class="hint" style="margin:0 0 6px">The same companies as the <b style="color:var(--c-dem-t)">Demand</b> layer, ranked by how much they still need. Click a name to find it on the map.</p>` +
     GAPS.map(g => { const x = DEM[g.entity_id]; const l = x && x.latest; return `<div class="gap" data-sel="ent:${esc(g.entity_id)}">
@@ -1840,7 +1904,7 @@ function renderPill(){
   $("sheet-stat").innerHTML = short.slice(0,3).join('<span class="sep">·</span>')
     || `<b>${nf(DEALS.length)}</b> deals · <b>${nf(SITES.length)}</b> sites`;
 }
-function renderAllPanels(){ renderMarket(); renderLayers(); renderMatch(); renderCircles(); renderPrices(); renderLive(); renderData(); renderLegend(); renderPill();
+function renderAllPanels(){ renderMarket(); renderLayers(); renderSpare(); renderMatch(); renderCircles(); renderPrices(); renderLive(); renderData(); renderLegend(); renderPill();
   $("pfoot").innerHTML = `<b>${nf(COV.deals_total)}</b> deals · <b>${nf(COV.entities_total)}</b> companies · <b>${nf(COV.sites_total)}</b> sites · <b>${nf(CTRY.length)}</b> countries`; }
 
 

@@ -1,6 +1,8 @@
 import json, os, re
 tpl = open("build/app_v2_template.html").read()
 data = open("data/computex_dataset.json").read()
+try:    inv = open("data/inventory_latest.json").read()
+except Exception: inv = "null"
 lcss = re.sub(r"url\((['\"]?)images/[^)]*\)", "none", open("vendor/leaflet.css").read()) + "\n" + open("vendor/mc.css").read()
 ljs = open("vendor/leaflet.js").read() + "\n;\n" + open("vendor/mc.js").read()
 rcss = open("build/parts/rivals_css.css").read()
@@ -11,6 +13,7 @@ tpl = (tpl.replace("__RIVALS_CSS__", rcss)
           .replace("__RIVALS_RENDER__", rrender))
 out = (tpl.replace("__LEAFLET_CSS__", lcss)
           .replace("__LEAFLET_JS__", ljs.replace("</script", "<\\/script"))
-          .replace("__DATA__", data.replace("</", "<\\/")))
+          .replace("__DATA__", data.replace("</", "<\\/"))
+          .replace("__INVENTORY__", inv.replace("</", "<\\/")))
 open("ComputeX_Market_Graph.html","w").write(out)
 print(f"built ComputeX_Market_Graph.html  {os.path.getsize('ComputeX_Market_Graph.html')/1024:,.0f} KB")

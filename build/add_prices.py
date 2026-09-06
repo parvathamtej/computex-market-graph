@@ -1,6 +1,9 @@
 import json, glob, statistics as st, os
 ds = json.load(open("data/computex_dataset.json"))
-snaps = sorted(glob.glob("snapshots/prices_*.json"))
+snaps = sorted(glob.glob("data/snapshots/prices_*.json")) or sorted(glob.glob("snapshots/prices_*.json"))
+if not snaps:
+    raise SystemExit("no price snapshot found in data/snapshots/ or snapshots/ - "
+                     "run build/fetch_prices.py first, or the dataset will lose its price block")
 rows, provider_rows = [], []
 snap = json.load(open(snaps[-1])); S = snap["sources"]
 

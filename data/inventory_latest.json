@@ -1,0 +1,924 @@
+{
+ "captured_at": "2026-09-06T09:16:38Z",
+ "totals": {
+  "gpus_seen": 8478,
+  "gpus_spare": 4140,
+  "apac_gpus": 546,
+  "apac_spare": 387,
+  "venues_read": 3
+ },
+ "venues": [
+  {
+   "venue": "Akash Network",
+   "kind": "decentralised reverse auction",
+   "auth": "none",
+   "gpus_total": 453,
+   "gpus_available": 163,
+   "models": [
+    {
+     "model": "nvidia a100 80Gi SXM4",
+     "total": 238,
+     "available": 79,
+     "usd_min": 1.83,
+     "usd_med": 1.84,
+     "usd_max": 1.91
+    },
+    {
+     "model": "nvidia h100 80Gi SXM5",
+     "total": 69,
+     "available": 10,
+     "usd_min": 2.04,
+     "usd_med": 2.56,
+     "usd_max": 3.16
+    },
+    {
+     "model": "nvidia h200 141Gi SXM5",
+     "total": 40,
+     "available": 8,
+     "usd_min": 4.44,
+     "usd_med": 4.44,
+     "usd_max": 4.44
+    },
+    {
+     "model": "nvidia pro6000se 96Gi PCIe",
+     "total": 24,
+     "available": 24,
+     "usd_min": 2.04,
+     "usd_med": 2.04,
+     "usd_max": 2.04
+    },
+    {
+     "model": "nvidia b300 288Gi SXM6",
+     "total": 16,
+     "available": 0,
+     "usd_min": null,
+     "usd_med": null,
+     "usd_max": null
+    },
+    {
+     "model": "nvidia rtx5090 32Gi PCIe",
+     "total": 12,
+     "available": 7,
+     "usd_min": 0.57,
+     "usd_med": 0.64,
+     "usd_max": 0.71
+    },
+    {
+     "model": "nvidia v100 32Gi PCIe",
+     "total": 10,
+     "available": 8,
+     "usd_min": 0.12,
+     "usd_med": 0.21,
+     "usd_max": 0.3
+    },
+    {
+     "model": "nvidia rtx3090 24Gi PCIe",
+     "total": 8,
+     "available": 0,
+     "usd_min": 0.15,
+     "usd_med": 0.15,
+     "usd_max": 0.15
+    },
+    {
+     "model": "nvidia rtx4000ada 20Gi PCIe",
+     "total": 7,
+     "available": 3,
+     "usd_min": 0.41,
+     "usd_med": 0.41,
+     "usd_max": 0.41
+    },
+    {
+     "model": "nvidia rtx4090 24Gi PCIe",
+     "total": 7,
+     "available": 4,
+     "usd_min": 0.28,
+     "usd_med": 0.34,
+     "usd_max": 0.77
+    },
+    {
+     "model": "nvidia p2000 5Gi PCIe",
+     "total": 4,
+     "available": 4,
+     "usd_min": 0.25,
+     "usd_med": 0.25,
+     "usd_max": 0.25
+    },
+    {
+     "model": "nvidia p4 8Gi PCIe",
+     "total": 2,
+     "available": 2,
+     "usd_min": 0.03,
+     "usd_med": 0.03,
+     "usd_max": 0.03
+    },
+    {
+     "model": "nvidia rtx6000 24Gi PCIe",
+     "total": 2,
+     "available": 2,
+     "usd_min": 0.17,
+     "usd_med": 0.17,
+     "usd_max": 0.17
+    },
+    {
+     "model": "nvidia t4 16Gi PCIe",
+     "total": 2,
+     "available": 1,
+     "usd_min": 0.11,
+     "usd_med": 0.15,
+     "usd_max": 0.18
+    },
+    {
+     "model": "nvidia gtx1050 2Gi PCIe",
+     "total": 1,
+     "available": 1,
+     "usd_min": 0.05,
+     "usd_med": 0.05,
+     "usd_max": 0.05
+    },
+    {
+     "model": "nvidia gtx1050ti 4Gi PCIe",
+     "total": 1,
+     "available": 1,
+     "usd_min": null,
+     "usd_med": null,
+     "usd_max": null
+    },
+    {
+     "model": "nvidia gtx1070ti 8Gi PCIe",
+     "total": 1,
+     "available": 1,
+     "usd_min": 0.08,
+     "usd_med": 0.08,
+     "usd_max": 0.08
+    },
+    {
+     "model": "nvidia m4000 8Gi PCIe",
+     "total": 1,
+     "available": 1,
+     "usd_min": 0.06,
+     "usd_med": 0.06,
+     "usd_max": 0.06
+    },
+    {
+     "model": "nvidia p40 24Gi PCIe",
+     "total": 1,
+     "available": 1,
+     "usd_min": 0.08,
+     "usd_med": 0.08,
+     "usd_max": 0.08
+    },
+    {
+     "model": "nvidia pro6000mq 96Gi PCIe",
+     "total": 1,
+     "available": 0,
+     "usd_min": null,
+     "usd_med": null,
+     "usd_max": null
+    }
+   ],
+   "by_country": [
+    {
+     "cc": "US",
+     "providers": 220,
+     "gpus": 352,
+     "available": 116
+    },
+    {
+     "cc": "GB",
+     "providers": 14,
+     "gpus": 33,
+     "available": 4
+    },
+    {
+     "cc": "PT",
+     "providers": 3,
+     "gpus": 15,
+     "available": 9
+    },
+    {
+     "cc": "BE",
+     "providers": 5,
+     "gpus": 11,
+     "available": 9
+    },
+    {
+     "cc": "UA",
+     "providers": 9,
+     "gpus": 10,
+     "available": 4
+    },
+    {
+     "cc": "RU",
+     "providers": 10,
+     "gpus": 9,
+     "available": 9
+    },
+    {
+     "cc": "NL",
+     "providers": 11,
+     "gpus": 8,
+     "available": 1
+    },
+    {
+     "cc": "TH",
+     "providers": 2,
+     "gpus": 6,
+     "available": 2
+    },
+    {
+     "cc": "CH",
+     "providers": 7,
+     "gpus": 5,
+     "available": 5
+    },
+    {
+     "cc": "AU",
+     "providers": 8,
+     "gpus": 3,
+     "available": 3
+    },
+    {
+     "cc": "VN",
+     "providers": 5,
+     "gpus": 2,
+     "available": 2
+    },
+    {
+     "cc": "HR",
+     "providers": 2,
+     "gpus": 1,
+     "available": 1
+    },
+    {
+     "cc": "FI",
+     "providers": 13,
+     "gpus": 1,
+     "available": 0
+    },
+    {
+     "cc": "DK",
+     "providers": 3,
+     "gpus": 0,
+     "available": 0
+    },
+    {
+     "cc": "CA",
+     "providers": 32,
+     "gpus": 0,
+     "available": 0
+    },
+    {
+     "cc": "ES",
+     "providers": 14,
+     "gpus": 0,
+     "available": 0
+    },
+    {
+     "cc": "DE",
+     "providers": 50,
+     "gpus": 0,
+     "available": 0
+    },
+    {
+     "cc": "PL",
+     "providers": 15,
+     "gpus": 0,
+     "available": 0
+    },
+    {
+     "cc": "IT",
+     "providers": 9,
+     "gpus": 0,
+     "available": 0
+    },
+    {
+     "cc": "TR",
+     "providers": 5,
+     "gpus": 0,
+     "available": 0
+    },
+    {
+     "cc": "SI",
+     "providers": 1,
+     "gpus": 0,
+     "available": 0
+    },
+    {
+     "cc": "AR",
+     "providers": 2,
+     "gpus": 0,
+     "available": 0
+    },
+    {
+     "cc": "RO",
+     "providers": 12,
+     "gpus": 0,
+     "available": 0
+    },
+    {
+     "cc": "CZ",
+     "providers": 3,
+     "gpus": 0,
+     "available": 0
+    },
+    {
+     "cc": "FR",
+     "providers": 33,
+     "gpus": 0,
+     "available": 0
+    },
+    {
+     "cc": "IN",
+     "providers": 11,
+     "gpus": 0,
+     "available": 0
+    },
+    {
+     "cc": "MD",
+     "providers": 1,
+     "gpus": 0,
+     "available": 0
+    },
+    {
+     "cc": "IS",
+     "providers": 2,
+     "gpus": 0,
+     "available": 0
+    },
+    {
+     "cc": "ID",
+     "providers": 2,
+     "gpus": 0,
+     "available": 0
+    },
+    {
+     "cc": "HU",
+     "providers": 3,
+     "gpus": 0,
+     "available": 0
+    }
+   ],
+   "note": "Prices are cleared auction prices, not asking prices. Volume is small, so read it for price, not for supply."
+  },
+  {
+   "venue": "Clore.ai",
+   "kind": "peer-to-peer marketplace",
+   "auth": "none",
+   "servers": 2386,
+   "gpus_total": 8025,
+   "gpus_free": 3977,
+   "asking_prices": [
+    {
+     "gpu": "6x NVIDIA GeForce RTX 3070",
+     "n": 89,
+     "usd_med": 9
+    },
+    {
+     "gpu": "1x NVIDIA GeForce RTX 4090",
+     "n": 55,
+     "usd_med": 6
+    },
+    {
+     "gpu": "1x NVIDIA GeForce RTX 5090",
+     "n": 49,
+     "usd_med": 9
+    },
+    {
+     "gpu": "1x NVIDIA GeForce RTX 5070 Ti",
+     "n": 39,
+     "usd_med": 5
+    },
+    {
+     "gpu": "1x NVIDIA GeForce RTX 3090",
+     "n": 35,
+     "usd_med": 3
+    },
+    {
+     "gpu": "6x NVIDIA GeForce RTX 3080",
+     "n": 35,
+     "usd_med": 13.2
+    },
+    {
+     "gpu": "1x NVIDIA GeForce RTX 5080",
+     "n": 25,
+     "usd_med": 4.1
+    },
+    {
+     "gpu": "8x NVIDIA RTX A2000",
+     "n": 22,
+     "usd_med": 4.5
+    },
+    {
+     "gpu": "1x NVIDIA GeForce RTX 3080",
+     "n": 20,
+     "usd_med": 2.99
+    },
+    {
+     "gpu": "1x NVIDIA GeForce RTX 3080 Ti",
+     "n": 19,
+     "usd_med": 2.69
+    },
+    {
+     "gpu": "3x NVIDIA GeForce RTX 5090",
+     "n": 19,
+     "usd_med": 23.91
+    },
+    {
+     "gpu": "1x NVIDIA GeForce RTX 5060 Ti",
+     "n": 16,
+     "usd_med": 2
+    },
+    {
+     "gpu": "6x NVIDIA GeForce RTX 5070 Ti",
+     "n": 16,
+     "usd_med": 30
+    },
+    {
+     "gpu": "2x NVIDIA GeForce RTX 5090",
+     "n": 14,
+     "usd_med": 15.94
+    }
+   ],
+   "rented_prices": [
+    {
+     "gpu": "1x NVIDIA GeForce RTX 3090",
+     "n": 104,
+     "usd_med": 2
+    },
+    {
+     "gpu": "1x NVIDIA GeForce RTX 5090",
+     "n": 100,
+     "usd_med": 6.67
+    },
+    {
+     "gpu": "1x NVIDIA GeForce RTX 4090",
+     "n": 83,
+     "usd_med": 4
+    },
+    {
+     "gpu": "8x Tesla V100SXM232GB",
+     "n": 57,
+     "usd_med": 10.25
+    },
+    {
+     "gpu": "1x NVIDIA GeForce RTX 5080",
+     "n": 46,
+     "usd_med": 3.3
+    },
+    {
+     "gpu": "1x NVIDIA GeForce RTX 3060",
+     "n": 31,
+     "usd_med": 0.7
+    },
+    {
+     "gpu": "1x NVIDIA GeForce RTX 3070",
+     "n": 29,
+     "usd_med": 0.9
+    },
+    {
+     "gpu": "1x NVIDIA GeForce RTX 5070 Ti",
+     "n": 29,
+     "usd_med": 2.99
+    },
+    {
+     "gpu": "8x NVIDIA CMP 50HX",
+     "n": 26,
+     "usd_med": 6.6
+    },
+    {
+     "gpu": "1x NVIDIA GeForce RTX 5060 Ti",
+     "n": 26,
+     "usd_med": 1.36
+    },
+    {
+     "gpu": "2x NVIDIA GeForce RTX 4090",
+     "n": 24,
+     "usd_med": 8.6
+    },
+    {
+     "gpu": "1x NVIDIA GeForce RTX 3080",
+     "n": 18,
+     "usd_med": 1.6
+    },
+    {
+     "gpu": "1x NVIDIA GeForce RTX 3080 Ti",
+     "n": 17,
+     "usd_med": 1.7
+    },
+    {
+     "gpu": "4x NVIDIA GeForce RTX 5090",
+     "n": 16,
+     "usd_med": 30
+    }
+   ],
+   "by_country": [
+    {
+     "cc": "RU",
+     "servers": 739,
+     "gpus": 2804,
+     "free": 1672
+    },
+    {
+     "cc": "US",
+     "servers": 277,
+     "gpus": 1096,
+     "free": 248
+    },
+    {
+     "cc": "UA",
+     "servers": 213,
+     "gpus": 508,
+     "free": 298
+    },
+    {
+     "cc": "FI",
+     "servers": 81,
+     "gpus": 442,
+     "free": 372
+    },
+    {
+     "cc": "TW",
+     "servers": 62,
+     "gpus": 286,
+     "free": 200
+    },
+    {
+     "cc": "HR",
+     "servers": 46,
+     "gpus": 274,
+     "free": 114
+    },
+    {
+     "cc": "PL",
+     "servers": 72,
+     "gpus": 270,
+     "free": 107
+    },
+    {
+     "cc": "DE",
+     "servers": 68,
+     "gpus": 216,
+     "free": 91
+    },
+    {
+     "cc": "BY",
+     "servers": 59,
+     "gpus": 196,
+     "free": 92
+    },
+    {
+     "cc": "AR",
+     "servers": 66,
+     "gpus": 153,
+     "free": 47
+    },
+    {
+     "cc": "NL",
+     "servers": 64,
+     "gpus": 142,
+     "free": 51
+    },
+    {
+     "cc": "CA",
+     "servers": 76,
+     "gpus": 139,
+     "free": 54
+    },
+    {
+     "cc": "KZ",
+     "servers": 24,
+     "gpus": 116,
+     "free": 21
+    },
+    {
+     "cc": "ES",
+     "servers": 19,
+     "gpus": 108,
+     "free": 76
+    },
+    {
+     "cc": "BR",
+     "servers": 42,
+     "gpus": 101,
+     "free": 22
+    },
+    {
+     "cc": "CN",
+     "servers": 50,
+     "gpus": 97,
+     "free": 82
+    },
+    {
+     "cc": "PT",
+     "servers": 18,
+     "gpus": 84,
+     "free": 35
+    },
+    {
+     "cc": "FR",
+     "servers": 17,
+     "gpus": 70,
+     "free": 8
+    },
+    {
+     "cc": "SE",
+     "servers": 23,
+     "gpus": 60,
+     "free": 16
+    },
+    {
+     "cc": "EE",
+     "servers": 16,
+     "gpus": 59,
+     "free": 44
+    },
+    {
+     "cc": "IN",
+     "servers": 10,
+     "gpus": 48,
+     "free": 38
+    },
+    {
+     "cc": "BG",
+     "servers": 13,
+     "gpus": 46,
+     "free": 5
+    },
+    {
+     "cc": "MD",
+     "servers": 32,
+     "gpus": 44,
+     "free": 44
+    },
+    {
+     "cc": "MY",
+     "servers": 14,
+     "gpus": 42,
+     "free": 6
+    },
+    {
+     "cc": "NO",
+     "servers": 10,
+     "gpus": 40,
+     "free": 11
+    },
+    {
+     "cc": "TR",
+     "servers": 12,
+     "gpus": 39,
+     "free": 3
+    },
+    {
+     "cc": "VN",
+     "servers": 32,
+     "gpus": 34,
+     "free": 26
+    },
+    {
+     "cc": "LV",
+     "servers": 7,
+     "gpus": 34,
+     "free": 4
+    },
+    {
+     "cc": "SA",
+     "servers": 9,
+     "gpus": 33,
+     "free": 29
+    },
+    {
+     "cc": "NZ",
+     "servers": 6,
+     "gpus": 28,
+     "free": 28
+    }
+   ],
+   "note": "Asking prices sit well above rented levels. Use the rented set for price signal and the free set for spare supply."
+  },
+  {
+   "venue": "Spheron",
+   "kind": "tier-3/4 data centre aggregator",
+   "auth": "none",
+   "groups_total": 29,
+   "groups": [
+    {
+     "gpu": "CPU NODE",
+     "available": 49,
+     "usd_low": 0.0928,
+     "usd_high": 3.9606
+    },
+    {
+     "gpu": "L40S PCIe",
+     "available": 37,
+     "usd_low": 0.96,
+     "usd_high": 15.379000000000001
+    },
+    {
+     "gpu": "A100 80G PCIe",
+     "available": 30,
+     "usd_low": 1.1954,
+     "usd_high": 21.0144
+    },
+    {
+     "gpu": "RTXPRO6000 PCIe",
+     "available": 25,
+     "usd_low": 2.388,
+     "usd_high": 19.104
+    },
+    {
+     "gpu": "A6000 PCIe",
+     "available": 25,
+     "usd_low": 0.4474,
+     "usd_high": 10.1904
+    },
+    {
+     "gpu": "H100 PCIe",
+     "available": 24,
+     "usd_low": 2.2074,
+     "usd_high": 17.6074
+    },
+    {
+     "gpu": "L40 PCIe",
+     "available": 23,
+     "usd_low": 0.8874,
+     "usd_high": 10.56
+    },
+    {
+     "gpu": "A100 80G SXM4",
+     "available": 18,
+     "usd_low": 1.1875,
+     "usd_high": 31.68
+    },
+    {
+     "gpu": "H100 SXM5",
+     "available": 9,
+     "usd_low": 2.9429999999999996,
+     "usd_high": 42.1344
+    },
+    {
+     "gpu": "A6000 PCIe (High Performance)",
+     "available": 9,
+     "usd_low": 0.564,
+     "usd_high": 4.512
+    },
+    {
+     "gpu": "RTX6000ADA PCIe",
+     "available": 7,
+     "usd_low": 0.78,
+     "usd_high": 2.5608
+    },
+    {
+     "gpu": "H200 SXM5",
+     "available": 5,
+     "usd_low": 3.3615,
+     "usd_high": 42.24
+    },
+    {
+     "gpu": "RTX5090 PCIe",
+     "available": 4,
+     "usd_low": 0.858,
+     "usd_high": 7.392
+    },
+    {
+     "gpu": "RTX4090 PCIe",
+     "available": 4,
+     "usd_low": 0.768,
+     "usd_high": 3.168
+    },
+    {
+     "gpu": "A6000 PCIe (Low RAM)",
+     "available": 4,
+     "usd_low": 0.54,
+     "usd_high": 1.08
+    },
+    {
+     "gpu": "V100 32G PCIe",
+     "available": 4,
+     "usd_low": 3.0888,
+     "usd_high": 12.3552
+    },
+    {
+     "gpu": "L4 PCIe",
+     "available": 4,
+     "usd_low": 1.254,
+     "usd_high": 10.032
+    },
+    {
+     "gpu": "RTXPRO6000 PCIe Bare Metal",
+     "available": 3,
+     "usd_low": 36.0096,
+     "usd_high": 36.0096
+    },
+    {
+     "gpu": "A5000 PCIe",
+     "available": 3,
+     "usd_low": 1.8744,
+     "usd_high": 7.4976
+    },
+    {
+     "gpu": "A4000 PCIe",
+     "available": 3,
+     "usd_low": 1.056,
+     "usd_high": 4.224
+    }
+   ],
+   "clusters": [
+    {
+     "cluster": "CANADA-1",
+     "offers": 39
+    },
+    {
+     "cluster": "EU North 1",
+     "offers": 26
+    },
+    {
+     "cluster": "us-central-3",
+     "offers": 22
+    },
+    {
+     "cluster": "desmoines-usa-1",
+     "offers": 18
+    },
+    {
+     "cluster": "newyork-usa-1",
+     "offers": 16
+    },
+    {
+     "cluster": "us-central-2",
+     "offers": 16
+    },
+    {
+     "cluster": "montreal-canada-2",
+     "offers": 14
+    },
+    {
+     "cluster": "Finland 3",
+     "offers": 14
+    },
+    {
+     "cluster": "Finland 2",
+     "offers": 13
+    },
+    {
+     "cluster": "kansascity-usa-1",
+     "offers": 11
+    },
+    {
+     "cluster": "MON1",
+     "offers": 8
+    },
+    {
+     "cluster": "warsaw-poland-1",
+     "offers": 7
+    },
+    {
+     "cluster": "houston-usa-1",
+     "offers": 6
+    },
+    {
+     "cluster": "us-east-1",
+     "offers": 6
+    },
+    {
+     "cluster": "calgary-canada-1",
+     "offers": 5
+    },
+    {
+     "cluster": "Finland 1",
+     "offers": 5
+    },
+    {
+     "cluster": "culpeper-usa-1",
+     "offers": 5
+    },
+    {
+     "cluster": "oslo-norway-3",
+     "offers": 5
+    },
+    {
+     "cluster": "dallas-usa-3",
+     "offers": 4
+    },
+    {
+     "cluster": "beltsville-usa-1",
+     "offers": 4
+    }
+   ],
+   "note": "Heavily North America and the Nordics. Asia-Pacific presence is a handful of offers."
+  }
+ ],
+ "not_read": [
+  {
+   "venue": "Vast.ai",
+   "reason": "terms of service forbid systematic compilation into a database and use in a competing product; open API notwithstanding. Ask for written permission before enabling."
+  },
+  {
+   "venue": "RunPod",
+   "reason": "terms of service forbid data gathering tools and use in an effort to compete. Ask for written permission before enabling."
+  },
+  {
+   "venue": "Compute Exchange",
+   "reason": "robots.txt disallows /api/ for all agents, and they are a direct competitor. Never poll."
+  }
+ ]
+}
