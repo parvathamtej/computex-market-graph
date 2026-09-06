@@ -843,9 +843,10 @@ a.src{font-family:var(--mono);font-size:var(--fs-1);color:var(--acct)}
 .cl{display:flex;align-items:center;justify-content:center;border-radius:50%;color:#fff;font-weight:600;
     font-size:var(--fs-2);text-align:center;line-height:1.1;border:2px solid rgba(255,255,255,.7);
     box-shadow:0 2px 10px rgba(0,0,0,.4);font-family:var(--font)}
-.pxlabel{background:var(--glass);border:1px solid var(--c-px);color:var(--t1);border-radius:var(--r-sm);
-  padding:3px 7px;font-family:var(--mono);font-size:var(--fs-2);white-space:nowrap;box-shadow:var(--sh)}
+.pxlabel{background:var(--glass);border:1px solid var(--c-px);color:var(--t1);border-radius:var(--r-sm);transform:translate(-50%,-50%);
+  padding:3px 7px;font-family:var(--mono);font-size:var(--fs-2);white-space:nowrap;box-shadow:var(--sh);line-height:1.3}
 .pxlabel b{color:var(--c-px-t);font-weight:600}
+.pxlabel i{display:block;font-style:normal;font-size:.85em;color:var(--t3)}
 .ctrylabel{background:none;border:0;box-shadow:none;color:var(--t1);font-weight:600;font-size:var(--fs-2);text-shadow:0 1px 3px rgba(0,0,0,.8)}
 .ctrylabel small{display:block;font-weight:400;color:var(--t2);font-family:var(--mono);font-size:var(--fs-1)}
 /* one country chip: the name never carries colour, the number always does */
@@ -1463,6 +1464,7 @@ table.cmp td{color:var(--t2)}
   <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5zM3 13l9 5 9-5M3 17l9 5 9-5"/></symbol>
   <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
   <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+  <symbol id="i-price" viewBox="0 0 24 24"><path d="M12 2v20M16.5 6.5a3.5 3.5 0 0 0-3.5-2.5h-2a3 3 0 0 0 0 6h2a3 3 0 0 1 0 6h-2.5A3.5 3.5 0 0 1 7 13.5"/></symbol>
   <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 16v-5M12 8h.01"/></symbol>
   <symbol id="i-panel" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M15 4v16"/></symbol>
 </defs></svg>
@@ -1508,10 +1510,6 @@ table.cmp td{color:var(--t2)}
       <summary><h2>Key</h2><span class="ssum" id="sum-key"></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
       <div class="secb" id="key-slot"></div>
     </details>
-    <details class="sec" id="sec-match">
-      <summary><h2>Who to call</h2><span class="ssum" id="sum-match"></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
-      <div class="secb" id="match"></div>
-    </details>
     <details class="sec" id="sec-circles">
       <summary><h2>Circles</h2><span class="ssum" id="sum-circles"></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
       <div class="secb" id="circles"></div>
@@ -1538,6 +1536,7 @@ table.cmp td{color:var(--t2)}
   <button class="ib" id="t-apac" title="Fit Asia-Pacific (Home)" aria-label="Fit Asia-Pacific"><svg class="ic"><use href="#i-home"/></svg></button>
   <button class="ib" id="t-world" title="Fit everything" aria-label="Fit everything"><svg class="ic"><use href="#i-globe"/></svg></button>
   <button class="ib" id="t-base" title="Switch basemap" aria-label="Switch basemap"><svg class="ic"><use href="#i-layers"/></svg></button>
+  <button class="ib" id="t-price" title="Show prices on every country" aria-label="Show prices" aria-pressed="false"><svg class="ic"><use href="#i-price"/></svg></button>
   <button class="ib" id="t-key" title="Key" aria-label="Show the key"><svg class="ic"><use href="#i-info"/></svg></button>
   <button class="ib" id="t-zin" title="Zoom in" aria-label="Zoom in"><svg class="ic"><use href="#i-plus"/></svg></button>
   <button class="ib" id="t-zout" title="Zoom out" aria-label="Zoom out"><svg class="ic"><use href="#i-minus"/></svg></button>
@@ -1562,12 +1561,12 @@ table.cmp td{color:var(--t2)}
 /* ============ data ============ */
 const DATA = JSON.parse(document.getElementById("dataset").textContent);
 const INV = {
- "captured_at": "2026-09-06T09:48:37Z",
+ "captured_at": "2026-09-06T10:37:59Z",
  "totals": {
-  "gpus_seen": 14664,
-  "gpus_spare": 10410,
-  "apac_gpus": 2072,
-  "apac_spare": 1914,
+  "gpus_seen": 14577,
+  "gpus_spare": 10291,
+  "apac_gpus": 2132,
+  "apac_spare": 1980,
   "venues_read": 5
  },
  "venues": [
@@ -1576,7 +1575,7 @@ const INV = {
    "kind": "decentralised reverse auction",
    "auth": "none",
    "gpus_total": 453,
-   "gpus_available": 161,
+   "gpus_available": 162,
    "models": [
     {
      "model": "nvidia a100 80Gi SXM4",
@@ -1605,7 +1604,7 @@ const INV = {
     {
      "model": "nvidia pro6000se 96Gi PCIe",
      "total": 24,
-     "available": 23,
+     "available": 24,
      "usd_min": 2.04,
      "usd_med": 2.04,
      "usd_max": 2.04
@@ -1629,7 +1628,7 @@ const INV = {
     {
      "model": "nvidia v100 32Gi PCIe",
      "total": 10,
-     "available": 8,
+     "available": 7,
      "usd_min": 0.12,
      "usd_med": 0.21,
      "usd_max": 0.3
@@ -1743,8 +1742,8 @@ const INV = {
     {
      "cc": "US",
      "providers": 220,
-     "gpus": 352,
-     "available": 115
+     "gpus": 273,
+     "available": 97
     },
     {
      "cc": "GB",
@@ -1756,7 +1755,7 @@ const INV = {
      "cc": "PT",
      "providers": 3,
      "gpus": 15,
-     "available": 8
+     "available": 9
     },
     {
      "cc": "BE",
@@ -1927,9 +1926,9 @@ const INV = {
    "venue": "Clore.ai",
    "kind": "peer-to-peer marketplace",
    "auth": "none",
-   "servers": 2389,
-   "gpus_total": 8016,
-   "gpus_free": 4054,
+   "servers": 2391,
+   "gpus_total": 7991,
+   "gpus_free": 3996,
    "asking_prices": [
     {
      "gpu": "6x NVIDIA GeForce RTX 3070",
@@ -1938,18 +1937,23 @@ const INV = {
     },
     {
      "gpu": "1x NVIDIA GeForce RTX 4090",
-     "n": 67,
+     "n": 62,
      "usd_med": 5.7
     },
     {
      "gpu": "1x NVIDIA GeForce RTX 5090",
-     "n": 54,
+     "n": 52,
      "usd_med": 8.15
     },
     {
      "gpu": "1x NVIDIA GeForce RTX 5070 Ti",
-     "n": 47,
-     "usd_med": 4.43
+     "n": 44,
+     "usd_med": 4.5
+    },
+    {
+     "gpu": "1x NVIDIA GeForce RTX 3090",
+     "n": 35,
+     "usd_med": 2.75
     },
     {
      "gpu": "6x NVIDIA GeForce RTX 3080",
@@ -1957,18 +1961,13 @@ const INV = {
      "usd_med": 13.2
     },
     {
-     "gpu": "1x NVIDIA GeForce RTX 3090",
-     "n": 34,
-     "usd_med": 4
-    },
-    {
      "gpu": "1x NVIDIA GeForce RTX 5080",
-     "n": 32,
+     "n": 31,
      "usd_med": 4
     },
     {
      "gpu": "1x NVIDIA GeForce RTX 3080",
-     "n": 22,
+     "n": 23,
      "usd_med": 2.8
     },
     {
@@ -1983,12 +1982,12 @@ const INV = {
     },
     {
      "gpu": "1x NVIDIA GeForce RTX 3080 Ti",
-     "n": 19,
+     "n": 18,
      "usd_med": 2.69
     },
     {
      "gpu": "1x NVIDIA GeForce RTX 5060 Ti",
-     "n": 16,
+     "n": 17,
      "usd_med": 2
     },
     {
@@ -2010,12 +2009,12 @@ const INV = {
     },
     {
      "gpu": "1x NVIDIA GeForce RTX 5090",
-     "n": 96,
+     "n": 98,
      "usd_med": 6.67
     },
     {
      "gpu": "1x NVIDIA GeForce RTX 4090",
-     "n": 71,
+     "n": 76,
      "usd_med": 4
     },
     {
@@ -2025,12 +2024,12 @@ const INV = {
     },
     {
      "gpu": "1x NVIDIA GeForce RTX 5080",
-     "n": 39,
+     "n": 40,
      "usd_med": 3.2
     },
     {
      "gpu": "1x NVIDIA GeForce RTX 3060",
-     "n": 31,
+     "n": 33,
      "usd_med": 0.7
     },
     {
@@ -2039,24 +2038,24 @@ const INV = {
      "usd_med": 0.9
     },
     {
-     "gpu": "1x NVIDIA GeForce RTX 5060 Ti",
+     "gpu": "8x NVIDIA CMP 50HX",
      "n": 26,
-     "usd_med": 1.36
+     "usd_med": 6.6
     },
     {
-     "gpu": "8x NVIDIA CMP 50HX",
+     "gpu": "1x NVIDIA GeForce RTX 5070 Ti",
      "n": 25,
-     "usd_med": 6.6
+     "usd_med": 2.8
+    },
+    {
+     "gpu": "1x NVIDIA GeForce RTX 5060 Ti",
+     "n": 25,
+     "usd_med": 1.35
     },
     {
      "gpu": "2x NVIDIA GeForce RTX 4090",
      "n": 23,
      "usd_med": 8.6
-    },
-    {
-     "gpu": "1x NVIDIA GeForce RTX 5070 Ti",
-     "n": 21,
-     "usd_med": 2.99
     },
     {
      "gpu": "1x NVIDIA GeForce RTX 3080",
@@ -2065,75 +2064,75 @@ const INV = {
     },
     {
      "gpu": "1x NVIDIA GeForce RTX 3080 Ti",
-     "n": 17,
-     "usd_med": 1.7
+     "n": 18,
+     "usd_med": 1.75
     },
     {
-     "gpu": "4x NVIDIA GeForce RTX 5090",
-     "n": 16,
-     "usd_med": 30
+     "gpu": "2x NVIDIA GeForce RTX 3060",
+     "n": 15,
+     "usd_med": 1.4
     }
    ],
    "by_country": [
     {
      "cc": "RU",
-     "servers": 737,
-     "gpus": 2791,
-     "free": 1687
+     "servers": 736,
+     "gpus": 2789,
+     "free": 1656
     },
     {
      "cc": "US",
      "servers": 277,
      "gpus": 1096,
-     "free": 259
+     "free": 258
     },
     {
      "cc": "UA",
-     "servers": 214,
-     "gpus": 509,
-     "free": 311
+     "servers": 217,
+     "gpus": 511,
+     "free": 315
     },
     {
      "cc": "FI",
-     "servers": 85,
-     "gpus": 446,
-     "free": 379
+     "servers": 86,
+     "gpus": 447,
+     "free": 383
     },
     {
      "cc": "TW",
      "servers": 62,
      "gpus": 286,
-     "free": 200
+     "free": 206
     },
     {
      "cc": "HR",
      "servers": 46,
-     "gpus": 274,
-     "free": 122
+     "gpus": 269,
+     "free": 123
     },
     {
      "cc": "PL",
-     "servers": 72,
-     "gpus": 270,
-     "free": 109
+     "servers": 71,
+     "gpus": 258,
+     "free": 96
     },
     {
      "cc": "DE",
-     "servers": 68,
-     "gpus": 216,
-     "free": 79
+     "servers": 65,
+     "gpus": 199,
+     "free": 56
     },
     {
      "cc": "BY",
-     "servers": 59,
-     "gpus": 196,
-     "free": 95
+     "servers": 58,
+     "gpus": 195,
+     "free": 108
     },
     {
      "cc": "AR",
      "servers": 66,
      "gpus": 153,
-     "free": 48
+     "free": 42
     },
     {
      "cc": "NL",
@@ -2145,13 +2144,13 @@ const INV = {
      "cc": "CA",
      "servers": 76,
      "gpus": 139,
-     "free": 53
+     "free": 52
     },
     {
      "cc": "KZ",
      "servers": 24,
      "gpus": 116,
-     "free": 21
+     "free": 20
     },
     {
      "cc": "ES",
@@ -2160,52 +2159,46 @@ const INV = {
      "free": 75
     },
     {
-     "cc": "BR",
-     "servers": 42,
-     "gpus": 101,
-     "free": 24
-    },
-    {
      "cc": "CN",
      "servers": 50,
      "gpus": 97,
      "free": 84
     },
     {
+     "cc": "BR",
+     "servers": 40,
+     "gpus": 91,
+     "free": 16
+    },
+    {
      "cc": "PT",
      "servers": 18,
      "gpus": 84,
-     "free": 35
+     "free": 34
     },
     {
      "cc": "FR",
      "servers": 17,
      "gpus": 70,
-     "free": 8
+     "free": 7
     },
     {
      "cc": "SE",
-     "servers": 23,
-     "gpus": 60,
-     "free": 16
+     "servers": 25,
+     "gpus": 63,
+     "free": 17
     },
     {
      "cc": "EE",
-     "servers": 14,
-     "gpus": 50,
+     "servers": 15,
+     "gpus": 58,
      "free": 45
     },
     {
-     "cc": "IN",
-     "servers": 10,
-     "gpus": 48,
-     "free": 38
-    },
-    {
      "cc": "MY",
-     "servers": 15,
-     "gpus": 47,
-     "free": 11
+     "servers": 16,
+     "gpus": 50,
+     "free": 13
     },
     {
      "cc": "BG",
@@ -2220,6 +2213,12 @@ const INV = {
      "free": 44
     },
     {
+     "cc": "IN",
+     "servers": 9,
+     "gpus": 40,
+     "free": 30
+    },
+    {
      "cc": "NO",
      "servers": 10,
      "gpus": 40,
@@ -2232,10 +2231,10 @@ const INV = {
      "free": 3
     },
     {
-     "cc": "VN",
-     "servers": 32,
-     "gpus": 34,
-     "free": 26
+     "cc": "NZ",
+     "servers": 8,
+     "gpus": 36,
+     "free": 35
     },
     {
      "cc": "LV",
@@ -2247,13 +2246,13 @@ const INV = {
      "cc": "SA",
      "servers": 9,
      "gpus": 33,
-     "free": 29
+     "free": 25
     },
     {
-     "cc": "NZ",
-     "servers": 6,
-     "gpus": 28,
-     "free": 27
+     "cc": "VN",
+     "servers": 31,
+     "gpus": 33,
+     "free": 26
     }
    ],
    "note": "Asking prices sit well above rented levels. Use the rented set for price signal and the free set for spare supply."
@@ -2266,15 +2265,21 @@ const INV = {
    "groups": [
     {
      "gpu": "CPU NODE",
-     "available": 49,
+     "available": 51,
      "usd_low": 0.0928,
      "usd_high": 3.9606
     },
     {
      "gpu": "L40S PCIe",
-     "available": 34,
+     "available": 41,
      "usd_low": 0.96,
      "usd_high": 15.379000000000001
+    },
+    {
+     "gpu": "RTXPRO6000 PCIe",
+     "available": 32,
+     "usd_low": 1.25,
+     "usd_high": 19.104
     },
     {
      "gpu": "A100 80G PCIe",
@@ -2283,16 +2288,10 @@ const INV = {
      "usd_high": 21.0144
     },
     {
-     "gpu": "RTXPRO6000 PCIe",
-     "available": 29,
-     "usd_low": 1.25,
-     "usd_high": 19.104
-    },
-    {
-     "gpu": "H100 PCIe",
-     "available": 24,
-     "usd_low": 2.2074,
-     "usd_high": 17.6074
+     "gpu": "A6000 PCIe",
+     "available": 26,
+     "usd_low": 0.4474,
+     "usd_high": 10.1904
     },
     {
      "gpu": "L40 PCIe",
@@ -2301,22 +2300,22 @@ const INV = {
      "usd_high": 10.56
     },
     {
-     "gpu": "A6000 PCIe",
-     "available": 22,
-     "usd_low": 0.4474,
-     "usd_high": 10.1904
-    },
-    {
-     "gpu": "H100 SXM5",
-     "available": 15,
-     "usd_low": 2.9429999999999996,
-     "usd_high": 42.1344
+     "gpu": "H100 PCIe",
+     "available": 17,
+     "usd_low": 2.2074,
+     "usd_high": 17.6074
     },
     {
      "gpu": "A100 80G SXM4",
-     "available": 15,
+     "available": 17,
      "usd_low": 1.8216,
      "usd_high": 31.68
+    },
+    {
+     "gpu": "H100 SXM5",
+     "available": 14,
+     "usd_low": 2.9429999999999996,
+     "usd_high": 42.1344
     },
     {
      "gpu": "RTX6000ADA PCIe",
@@ -2326,33 +2325,27 @@ const INV = {
     },
     {
      "gpu": "A6000 PCIe (High Performance)",
-     "available": 7,
+     "available": 10,
      "usd_low": 0.564,
      "usd_high": 4.512
     },
     {
      "gpu": "H200 SXM5",
-     "available": 5,
+     "available": 6,
      "usd_low": 3.3615,
      "usd_high": 42.24
     },
     {
-     "gpu": "RTX5090 PCIe",
-     "available": 4,
-     "usd_low": 0.858,
-     "usd_high": 7.392
+     "gpu": "A6000 PCIe (Low RAM)",
+     "available": 6,
+     "usd_low": 0.54,
+     "usd_high": 2.16
     },
     {
      "gpu": "RTX4090 PCIe",
      "available": 4,
      "usd_low": 0.768,
      "usd_high": 3.168
-    },
-    {
-     "gpu": "A6000 PCIe (Low RAM)",
-     "available": 4,
-     "usd_low": 0.54,
-     "usd_high": 2.16
     },
     {
      "gpu": "V100 32G PCIe",
@@ -2373,6 +2366,12 @@ const INV = {
      "usd_high": 36.0096
     },
     {
+     "gpu": "RTX5090 PCIe",
+     "available": 3,
+     "usd_low": 0.858,
+     "usd_high": 3.432
+    },
+    {
      "gpu": "A5000 PCIe",
      "available": 3,
      "usd_low": 1.8744,
@@ -2388,26 +2387,30 @@ const INV = {
    "clusters": [
     {
      "cluster": "CANADA-1",
-     "offers": 39
+     "offers": 36
     },
     {
      "cluster": "EU North 1",
-     "offers": 23
+     "offers": 27
     },
     {
      "cluster": "us-central-3",
-     "offers": 22
-    },
-    {
-     "cluster": "Finland 2",
-     "offers": 19
+     "offers": 25
     },
     {
      "cluster": "desmoines-usa-1",
-     "offers": 19
+     "offers": 21
     },
     {
      "cluster": "us-central-2",
+     "offers": 20
+    },
+    {
+     "cluster": "Finland 3",
+     "offers": 18
+    },
+    {
+     "cluster": "Finland 2",
      "offers": 17
     },
     {
@@ -2415,23 +2418,15 @@ const INV = {
      "offers": 16
     },
     {
-     "cluster": "montreal-canada-2",
-     "offers": 14
-    },
-    {
-     "cluster": "Finland 3",
-     "offers": 14
-    },
-    {
      "cluster": "kansascity-usa-1",
-     "offers": 12
+     "offers": 16
+    },
+    {
+     "cluster": "montreal-canada-2",
+     "offers": 11
     },
     {
      "cluster": "warsaw-poland-1",
-     "offers": 7
-    },
-    {
-     "cluster": "MON1",
      "offers": 7
     },
     {
@@ -2441,6 +2436,14 @@ const INV = {
     {
      "cluster": "us-east-1",
      "offers": 6
+    },
+    {
+     "cluster": "MON1",
+     "offers": 5
+    },
+    {
+     "cluster": "helsinki-finland-5",
+     "offers": 5
     },
     {
      "cluster": "calgary-canada-1",
@@ -2455,15 +2458,11 @@ const INV = {
      "offers": 5
     },
     {
-     "cluster": "dallas-usa-3",
+     "cluster": "US Central 1",
      "offers": 4
     },
     {
      "cluster": "beltsville-usa-1",
-     "offers": 4
-    },
-    {
-     "cluster": "us-central-9",
      "offers": 4
     }
    ],
@@ -2473,69 +2472,59 @@ const INV = {
    "venue": "Vast.ai",
    "kind": "peer-to-peer marketplace",
    "auth": "none",
-   "offers": 3167,
-   "gpus_total": 6195,
-   "gpus_free": 6195,
+   "offers": 3150,
+   "gpus_total": 6133,
+   "gpus_free": 6133,
    "asking_prices": [
     {
      "gpu": "RTX 5090",
-     "n": 662,
-     "usd_med": 0.467
+     "n": 675,
+     "usd_med": 0.461
     },
     {
      "gpu": "RTX 4090",
-     "n": 425,
-     "usd_med": 0.394
+     "n": 414,
+     "usd_med": 0.4
     },
     {
      "gpu": "RTX 3090",
-     "n": 326,
-     "usd_med": 0.155
+     "n": 336,
+     "usd_med": 0.152
     },
     {
      "gpu": "RTX 3060",
-     "n": 268,
-     "usd_med": 0.06
+     "n": 262,
+     "usd_med": 0.056
     },
     {
      "gpu": "RTX 5060 Ti",
-     "n": 191,
-     "usd_med": 0.121
+     "n": 198,
+     "usd_med": 0.119
     },
     {
      "gpu": "RTX A4000",
-     "n": 141,
+     "n": 155,
      "usd_med": 0.095
     },
     {
      "gpu": "RTX 5080",
-     "n": 58,
+     "n": 59,
      "usd_med": 0.202
+    },
+    {
+     "gpu": "RTX PRO 6000 WS",
+     "n": 47,
+     "usd_med": 1.468
+    },
+    {
+     "gpu": "RTX 4060 Ti",
+     "n": 44,
+     "usd_med": 0.102
     },
     {
      "gpu": "RTX 3080",
      "n": 43,
-     "usd_med": 0.096
-    },
-    {
-     "gpu": "RTX 4060 Ti",
-     "n": 42,
-     "usd_med": 0.103
-    },
-    {
-     "gpu": "RTX PRO 6000 WS",
-     "n": 42,
-     "usd_med": 1.442
-    },
-    {
-     "gpu": "RTX PRO 6000 Max-Q",
-     "n": 42,
-     "usd_med": 1.469
-    },
-    {
-     "gpu": "A100 SXM4",
-     "n": 41,
-     "usd_med": 0.834
+     "usd_med": 0.089
     },
     {
      "gpu": "RTX 3080 Ti",
@@ -2543,161 +2532,165 @@ const INV = {
      "usd_med": 0.122
     },
     {
-     "gpu": "RTX 3070",
-     "n": 39,
-     "usd_med": 0.082
+     "gpu": "RTX 4070S",
+     "n": 40,
+     "usd_med": 0.095
+    },
+    {
+     "gpu": "Tesla V100",
+     "n": 37,
+     "usd_med": 0.148
+    },
+    {
+     "gpu": "H100 SXM",
+     "n": 37,
+     "usd_med": 2.668
     }
    ],
    "by_country": [
     {
      "cc": "US",
-     "offers": 1027,
-     "gpus": 2069,
-     "free": 2069
+     "offers": 1022,
+     "gpus": 2021,
+     "free": 2021
     },
     {
      "cc": "CA",
-     "offers": 227,
-     "gpus": 487,
-     "free": 487
-    },
-    {
-     "cc": "TW",
-     "offers": 124,
-     "gpus": 371,
-     "free": 371
+     "offers": 218,
+     "gpus": 450,
+     "free": 450
     },
     {
      "cc": "KR",
-     "offers": 224,
-     "gpus": 342,
-     "free": 342
+     "offers": 229,
+     "gpus": 361,
+     "free": 361
     },
     {
      "cc": "CN",
-     "offers": 147,
-     "gpus": 322,
-     "free": 322
+     "offers": 162,
+     "gpus": 355,
+     "free": 355
+    },
+    {
+     "cc": "TW",
+     "offers": 119,
+     "gpus": 348,
+     "free": 348
     },
     {
      "cc": "JP",
-     "offers": 114,
-     "gpus": 277,
-     "free": 277
-    },
-    {
-     "cc": "CZ",
-     "offers": 106,
-     "gpus": 191,
-     "free": 191
+     "offers": 118,
+     "gpus": 292,
+     "free": 292
     },
     {
      "cc": "GB",
-     "offers": 56,
-     "gpus": 180,
-     "free": 180
+     "offers": 64,
+     "gpus": 217,
+     "free": 217
+    },
+    {
+     "cc": "CZ",
+     "offers": 96,
+     "gpus": 173,
+     "free": 173
     },
     {
      "cc": "NO",
-     "offers": 92,
-     "gpus": 149,
-     "free": 149
+     "offers": 93,
+     "gpus": 150,
+     "free": 150
     },
     {
      "cc": "DE",
-     "offers": 72,
-     "gpus": 138,
-     "free": 138
+     "offers": 73,
+     "gpus": 144,
+     "free": 144
     },
     {
      "cc": "PL",
-     "offers": 79,
-     "gpus": 105,
-     "free": 105
-    },
-    {
-     "cc": "BG",
-     "offers": 43,
-     "gpus": 86,
-     "free": 86
+     "offers": 75,
+     "gpus": 95,
+     "free": 95
     },
     {
      "cc": "FR",
-     "offers": 53,
-     "gpus": 85,
-     "free": 85
+     "offers": 60,
+     "gpus": 92,
+     "free": 92
+    },
+    {
+     "cc": "IS",
+     "offers": 39,
+     "gpus": 82,
+     "free": 82
     },
     {
      "cc": "RU",
-     "offers": 33,
+     "offers": 34,
      "gpus": 80,
      "free": 80
     },
     {
-     "cc": "EE",
-     "offers": 43,
+     "cc": "HU",
+     "offers": 41,
      "gpus": 78,
      "free": 78
     },
     {
-     "cc": "IS",
-     "offers": 35,
-     "gpus": 77,
-     "free": 77
-    },
-    {
-     "cc": "VN",
-     "offers": 51,
-     "gpus": 75,
-     "free": 75
-    },
-    {
-     "cc": "HU",
-     "offers": 39,
-     "gpus": 70,
-     "free": 70
-    },
-    {
-     "cc": "ES",
-     "offers": 43,
-     "gpus": 62,
-     "free": 62
-    },
-    {
-     "cc": "AE",
-     "offers": 15,
-     "gpus": 59,
-     "free": 59
+     "cc": "EE",
+     "offers": 41,
+     "gpus": 76,
+     "free": 76
     },
     {
      "cc": "HK",
-     "offers": 20,
-     "gpus": 54,
-     "free": 54
+     "offers": 23,
+     "gpus": 74,
+     "free": 74
     },
     {
-     "cc": "UA",
-     "offers": 40,
-     "gpus": 52,
-     "free": 52
+     "cc": "BG",
+     "offers": 37,
+     "gpus": 73,
+     "free": 73
+    },
+    {
+     "cc": "ES",
+     "offers": 50,
+     "gpus": 67,
+     "free": 67
+    },
+    {
+     "cc": "VN",
+     "offers": 38,
+     "gpus": 64,
+     "free": 64
+    },
+    {
+     "cc": "AR",
+     "offers": 34,
+     "gpus": 55,
+     "free": 55
+    },
+    {
+     "cc": "DK",
+     "offers": 34,
+     "gpus": 51,
+     "free": 51
     },
     {
      "cc": "SE",
      "offers": 28,
-     "gpus": 52,
-     "free": 52
+     "gpus": 50,
+     "free": 50
     },
     {
-     "cc": "ZA",
-     "offers": 17,
+     "cc": "UA",
+     "offers": 38,
      "gpus": 49,
      "free": 49
-    },
-    {
-     "cc": "AR",
-     "offers": 30,
-     "gpus": 48,
-     "free": 48
     },
     {
      "cc": "AU",
@@ -2706,30 +2699,264 @@ const INV = {
      "free": 48
     },
     {
-     "cc": "DK",
-     "offers": 31,
-     "gpus": 48,
-     "free": 48
+     "cc": "ZA",
+     "offers": 17,
+     "gpus": 46,
+     "free": 46
     },
     {
-     "cc": "NL",
-     "offers": 31,
-     "gpus": 44,
-     "free": 44
-    },
-    {
-     "cc": "RO",
-     "offers": 27,
-     "gpus": 35,
-     "free": 35
+     "cc": "AE",
+     "offers": 12,
+     "gpus": 39,
+     "free": 39
     },
     {
      "cc": "TH",
-     "offers": 25,
-     "gpus": 32,
-     "free": 32
+     "offers": 26,
+     "gpus": 37,
+     "free": 37
+    },
+    {
+     "cc": "NL",
+     "offers": 28,
+     "gpus": 36,
+     "free": 36
+    },
+    {
+     "cc": "RO",
+     "offers": 24,
+     "gpus": 34,
+     "free": 34
     }
    ],
+   "h100_by_country": {
+    "ZA": {
+     "n": 4,
+     "usd_med": 3.469
+    },
+    "TW": {
+     "n": 5,
+     "usd_med": 3.135
+    },
+    "AE": {
+     "n": 11,
+     "usd_med": 3.069
+    },
+    "US": {
+     "n": 13,
+     "usd_med": 5.234
+    },
+    "CZ": {
+     "n": 8,
+     "usd_med": 3.15
+    },
+    "FR": {
+     "n": 5,
+     "usd_med": 1.988
+    },
+    "BG": {
+     "n": 3,
+     "usd_med": 2.67
+    },
+    "NL": {
+     "n": 8,
+     "usd_med": 1.869
+    },
+    "GB": {
+     "n": 2,
+     "usd_med": 2.709
+    },
+    "IE": {
+     "n": 1,
+     "usd_med": 2.776
+    },
+    "RO": {
+     "n": 1,
+     "usd_med": 2.805
+    },
+    "DE": {
+     "n": 3,
+     "usd_med": 1.601
+    },
+    "PL": {
+     "n": 1,
+     "usd_med": 2.536
+    },
+    "MD": {
+     "n": 1,
+     "usd_med": 1.336
+    },
+    "RU": {
+     "n": 2,
+     "usd_med": 1.602
+    },
+    "JP": {
+     "n": 1,
+     "usd_med": 2.002
+    }
+   },
+   "rtx4090_by_country": {
+    "US": {
+     "n": 130,
+     "usd_med": 0.394
+    },
+    "DE": {
+     "n": 6,
+     "usd_med": 0.401
+    },
+    "CA": {
+     "n": 34,
+     "usd_med": 0.469
+    },
+    "CN": {
+     "n": 19,
+     "usd_med": 0.401
+    },
+    "JP": {
+     "n": 13,
+     "usd_med": 0.344
+    },
+    "GB": {
+     "n": 17,
+     "usd_med": 0.467
+    },
+    "EE": {
+     "n": 12,
+     "usd_med": 0.338
+    },
+    "IS": {
+     "n": 8,
+     "usd_med": 0.402
+    },
+    "ES": {
+     "n": 9,
+     "usd_med": 0.536
+    },
+    "DK": {
+     "n": 11,
+     "usd_med": 0.403
+    },
+    "TW": {
+     "n": 25,
+     "usd_med": 0.361
+    },
+    "UA": {
+     "n": 6,
+     "usd_med": 0.496
+    },
+    "IT": {
+     "n": 8,
+     "usd_med": 0.398
+    },
+    "BR": {
+     "n": 1,
+     "usd_med": 0.296
+    },
+    "FR": {
+     "n": 3,
+     "usd_med": 0.336
+    },
+    "ZA": {
+     "n": 4,
+     "usd_med": 0.537
+    },
+    "KR": {
+     "n": 4,
+     "usd_med": 0.322
+    },
+    "NO": {
+     "n": 41,
+     "usd_med": 0.403
+    },
+    "MY": {
+     "n": 5,
+     "usd_med": 0.362
+    },
+    "RS": {
+     "n": 1,
+     "usd_med": 0.366
+    },
+    "OM": {
+     "n": 2,
+     "usd_med": 0.402
+    },
+    "RU": {
+     "n": 11,
+     "usd_med": 0.256
+    },
+    "PL": {
+     "n": 4,
+     "usd_med": 0.453
+    },
+    "HK": {
+     "n": 1,
+     "usd_med": 0.469
+    },
+    "AR": {
+     "n": 1,
+     "usd_med": 0.256
+    },
+    "RO": {
+     "n": 4,
+     "usd_med": 0.309
+    },
+    "TR": {
+     "n": 4,
+     "usd_med": 0.322
+    },
+    "BG": {
+     "n": 2,
+     "usd_med": 0.376
+    },
+    "SE": {
+     "n": 7,
+     "usd_med": 0.296
+    },
+    "IL": {
+     "n": 2,
+     "usd_med": 0.445
+    },
+    "AT": {
+     "n": 2,
+     "usd_med": 0.322
+    },
+    "BE": {
+     "n": 1,
+     "usd_med": 0.362
+    },
+    "NL": {
+     "n": 1,
+     "usd_med": 0.401
+    },
+    "GR": {
+     "n": 1,
+     "usd_med": 0.334
+    },
+    "TH": {
+     "n": 1,
+     "usd_med": 0.334
+    },
+    "BY": {
+     "n": 2,
+     "usd_med": 0.496
+    },
+    "QA": {
+     "n": 1,
+     "usd_med": 0.549
+    },
+    "HU": {
+     "n": 6,
+     "usd_med": 0.67
+    },
+    "MK": {
+     "n": 3,
+     "usd_med": 0.434
+    },
+    "CZ": {
+     "n": 1,
+     "usd_med": 0.354
+    }
+   },
    "note": "Every offer listed is rentable right now, so listed equals free. Per-GPU asking prices."
   },
   {
@@ -2755,7 +2982,7 @@ const INV = {
      "gpu": "H200 SXM",
      "usd_on_demand": 3.59,
      "usd_spot": 3.59,
-     "stock": "Medium"
+     "stock": "High"
     },
     {
      "gpu": "H100 SXM",
@@ -2821,7 +3048,7 @@ const INV = {
      "gpu": "L40S",
      "usd_on_demand": 0.79,
      "usd_spot": 0.79,
-     "stock": "High"
+     "stock": "Medium"
     },
     {
      "gpu": "RTX 6000 Ada",
@@ -2834,6 +3061,12 @@ const INV = {
      "usd_on_demand": 0.69,
      "usd_spot": 0.69,
      "stock": "Medium"
+    },
+    {
+     "gpu": "RTX 2000 Ada",
+     "usd_on_demand": 0.5,
+     "usd_spot": 0.5,
+     "stock": "Low"
     },
     {
      "gpu": "RTX PRO 4000",
@@ -2857,12 +3090,6 @@ const INV = {
      "gpu": "RTX 5000 Ada",
      "usd_on_demand": 0.49,
      "usd_spot": 0.49,
-     "stock": "Low"
-    },
-    {
-     "gpu": "L4",
-     "usd_on_demand": 0.44,
-     "usd_spot": 0.44,
      "stock": "Low"
     },
     {
@@ -2895,7 +3122,7 @@ const INV = {
      "site": "AP-IN-2",
      "where": "India",
      "listed": false,
-     "types_in_stock": 1
+     "types_in_stock": 0
     },
     {
      "site": "AP-JP-1",
@@ -2907,7 +3134,7 @@ const INV = {
      "site": "CA-MTL-1",
      "where": "Canada",
      "listed": true,
-     "types_in_stock": 2
+     "types_in_stock": 3
     },
     {
      "site": "CA-MTL-2",
@@ -2931,7 +3158,7 @@ const INV = {
      "site": "EU-CZ-1",
      "where": "Europe",
      "listed": true,
-     "types_in_stock": 4
+     "types_in_stock": 5
     },
     {
      "site": "EU-DK-1",
@@ -2943,7 +3170,7 @@ const INV = {
      "site": "EU-FR-1",
      "where": "France",
      "listed": true,
-     "types_in_stock": 1
+     "types_in_stock": 0
     },
     {
      "site": "EU-NL-1",
@@ -2973,13 +3200,13 @@ const INV = {
      "site": "EUR-IS-1",
      "where": "Europe",
      "listed": true,
-     "types_in_stock": 6
+     "types_in_stock": 7
     },
     {
      "site": "EUR-IS-2",
      "where": "Europe",
      "listed": true,
-     "types_in_stock": 5
+     "types_in_stock": 6
     },
     {
      "site": "EUR-IS-3",
@@ -3003,7 +3230,7 @@ const INV = {
      "site": "EUR-NO-1",
      "where": "Europe",
      "listed": true,
-     "types_in_stock": 1
+     "types_in_stock": 2
     },
     {
      "site": "EUR-NO-2",
@@ -3033,7 +3260,7 @@ const INV = {
      "site": "US-CA-2",
      "where": "United States",
      "listed": true,
-     "types_in_stock": 3
+     "types_in_stock": 4
     },
     {
      "site": "US-CO-1",
@@ -3294,20 +3521,20 @@ const LAYERS = [
   {id:"call",   name:"Who to call \u00b7 need compute, no seller yet", col:"--c-dem", tcol:"--c-dem-t", on:true,
    desc:"Companies that said they need compute and where we found no contract. These are the people to phone."},
   {id:"offload",name:"Excess compute we could buy", col:"--c-off",  tcol:"--c-off-t",  on:true,
-   desc:"Compute somebody has and does not need. Colour says how you get it: call them, a court sale, or a government programme."},
+   desc:"Compute somebody has and does not need. Colour says how you get it. Untick a status below to hide it."},
   {id:"demand", name:"Demand \u00b7 asking for compute", col:"--c-dem",  tcol:"--c-dem-t",  on:false,
    desc:"Everyone who has said publicly that they need compute, whether or not they have found it yet."},
-  {id:"contracts",name:"Demand \u00b7 buying compute (contracts)", col:"--c-con",tcol:"--c-con-t",on:true,
-   desc:"One curve per signed compute contract, seller to buyer. This is demand that already found a seller."},
   {id:"sites",  name:"Supply \u00b7 data centres",   col:"--c-site", tcol:"--c-site-t", on:true,
    desc:"Each site. Bigger means more megawatts. Solid means running, faint means only announced."},
   {id:"country",name:"Supply & demand by country",col:"--c-ctry",tcol:"--t2",on:true,
    desc:"One circle per country. Hover the name for who is supplying and who needs compute there."},
-  {id:"capital",name:"Capital \u00b7 who funds whom",col:"--c-cap",  tcol:"--c-cap-t",  on:false, desc:"Loans, investments and guarantees. Lender to borrower."},
-  {id:"prices", name:"Price by city",           col:"--c-px",   tcol:"--c-px-t",   on:false, desc:"The same Azure machine, priced per hour in six Asian cities."}
+  {id:"contracts",name:"Contracts to track", col:"--c-con",tcol:"--c-con-t",on:true,
+   desc:"One curve per signed compute contract, seller to buyer. Demand that already found a seller."},
+  {id:"capital",name:"Capital \u00b7 who funds whom",col:"--c-cap",  tcol:"--c-cap-t",  on:false, desc:"Loans, investments and guarantees. Lender to borrower."}
 ];
 const S = {
-  on: Object.assign({labels:false, arclabels:true}, Object.fromEntries(LAYERS.map(l => [l.id, l.on]))),
+  on: Object.assign({labels:false, arclabels:true, prices:false}, Object.fromEntries(LAYERS.map(l => [l.id, l.on]))),
+  xhide: {},                                   // excess statuses the user has unticked
   siteStatus:"all",            // all | live | building | planned
   demStatus:"all",             // all | open | signed | running | plan
   conStatus:"all",             // all | pending | running | changed
@@ -3340,6 +3567,8 @@ function readHash(){
     if (k === "theme") S.theme = v;
     if (k === "sel") S.sel = v;
     if (k === "q") S.q = v;
+    if (k === "px") S.on.prices = v === "1";
+    if (k === "xhide") v.split(",").filter(Boolean).forEach(x => S.xhide[x] = true);
   }
 }
 function writeHash(){
@@ -3359,6 +3588,8 @@ function writeHash(){
   if (S.theme !== "dark") p.push("theme=" + S.theme);
   if (S.sel) p.push("sel=" + encodeURIComponent(S.sel));
   if (S.q) p.push("q=" + encodeURIComponent(S.q));
+  if (S.on.prices) p.push("px=1");
+  const xh = Object.keys(S.xhide).filter(k => S.xhide[k]); if (xh.length) p.push("xhide=" + xh.join(","));
   history.replaceState(null, "", "#" + p.join("&"));
 }
 
@@ -3862,7 +4093,7 @@ function buildOffload(){
   const g = makeCluster("offload", "--c-off-t", [200, 900],
     (n, v) => `<b>${nf(n)} resale offer${n>1?"s":""} here</b><div class="tt-k">${v?mwf(v)+" between them":"sizes not published"}</div>`);
   OFFLOADS.forEach(d => {
-    if (!d.loc) return;
+    if (!d.loc || S.xhide[d.open_status || "available_now"]) return;
     const x = xStyle(d);
     const m = L.circleMarker(d.loc, {pane:"demand", renderer:demSvg, val:d.mw||0, did:d.deal_id, radius:x.fill>.5?10:8,
       color:x.fill>.5?inkOn():x.col, weight:2, opacity:.9, fillColor:x.col, fillOpacity:x.fill, dashArray:x.dash});
@@ -3891,23 +4122,38 @@ function xStyle(d){
 }
 const AZ_REGION = {southeastasia:["Singapore",1.29,103.85], eastasia:["Hong Kong",22.32,114.17], japaneast:["Tokyo",35.68,139.69],
   koreacentral:["Seoul",37.57,126.98], centralindia:["Pune",18.52,73.86], australiaeast:["Sydney",-33.87,151.21]};
+/* One label per country, same chip everywhere, so the numbers are comparable. H100 asking
+   price from the marketplace snapshot first; Azure's H100 list price for the six regions it
+   publishes as a second line. Nothing is shown for a country with no H100 offers. */
+const ISO2 = {US:"United States",CA:"Canada",GB:"United Kingdom",DE:"Germany",FR:"France",NL:"Netherlands",PL:"Poland",CZ:"Czech Republic",BG:"Bulgaria",RO:"Romania",MD:"Moldova",NO:"Norway",SE:"Sweden",FI:"Finland",
+  ES:"Spain",IT:"Italy",PT:"Portugal",CH:"Switzerland",AT:"Austria",BE:"Belgium",IE:"Ireland",UA:"Ukraine",RU:"Russia",TR:"Turkey",IL:"Israel",AE:"United Arab Emirates",SA:"Saudi Arabia",
+  IN:"India",CN:"China",JP:"Japan",KR:"South Korea",TW:"Taiwan",HK:"Hong Kong",SG:"Singapore",MY:"Malaysia",ID:"Indonesia",TH:"Thailand",VN:"Vietnam",PH:"Philippines",
+  AU:"Australia",NZ:"New Zealand",BR:"Brazil",MX:"Mexico",AR:"Argentina",CL:"Chile",ZA:"South Africa",EG:"Egypt",NG:"Nigeria",KZ:"Kazakhstan",PK:"Pakistan",BD:"Bangladesh"};
+/* centroids for countries the dataset has no site in, so a price can still be placed there */
+const CENT_EXTRA = {"Czech Republic":[49.8,15.5],"Bulgaria":[42.7,25.5],"Romania":[45.9,25.0],"Moldova":[47.2,28.5],"South Africa":[-29.0,25.0],
+  "Ireland":[53.2,-8.0],"Finland":[63.0,26.0],"Sweden":[62.0,15.0],"Norway":[62.0,10.0],"Spain":[40.0,-3.7],"Italy":[42.5,12.5],"Portugal":[39.5,-8.0],
+  "Switzerland":[46.8,8.2],"Austria":[47.5,14.5],"Belgium":[50.6,4.5],"Ukraine":[49.0,32.0],"Turkey":[39.0,35.0],"Israel":[31.5,34.9],"Saudi Arabia":[24.0,45.0],
+  "Brazil":[-10.0,-55.0],"Mexico":[23.6,-102.5],"Argentina":[-34.0,-64.0],"Chile":[-33.0,-71.0],"Egypt":[26.8,30.8],"Nigeria":[9.1,8.7],"Kazakhstan":[48.0,68.0],
+  "Pakistan":[30.4,69.3],"Bangladesh":[23.7,90.4],"Canada":[56.0,-96.0],"Netherlands":[52.1,5.3],"Poland":[52.0,19.0],"Germany":[51.2,10.4],"France":[46.6,2.2],"United Kingdom":[54.0,-2.0]};
+const AZ_CC = {southeastasia:"SG", eastasia:"HK", japaneast:"JP", koreacentral:"KR", centralindia:"IN", australiaeast:"AU"};
 function buildPrices(){
   const g = L.layerGroup();
-  const ref = (PRICES.azure_apac_regional||[]).find(r => /H100|H200/.test(r.sku)) || (PRICES.azure_apac_regional||[])[0];
-  if (!ref) return g;
-  const vals = Object.values(ref.regions); const lo = Math.min(...vals), hi = Math.max(...vals);
-  Object.entries(ref.regions).forEach(([reg, price]) => {
-    const R = AZ_REGION[reg]; if (!R) return;
-    const t = hi > lo ? (price-lo)/(hi-lo) : 0;
-    const m = L.circleMarker([R[1],R[2]], {pane:"demand", renderer:demSvg, radius:10+t*16, color:cssv("--c-px-t"), weight:2, fillColor:cssv("--c-px"), fillOpacity:.25+t*.4});
-    m.bindTooltip(`<b>${esc(R[0])}</b><div class="tt-k">$${price.toFixed(2)}/hr · ${esc(ref.sku)}</div><div class="tt-sub">${((price/lo-1)*100).toFixed(0)}% above the cheapest Asian region</div>`,{direction:"top",offset:[0,-12]});
-    g.addLayer(m);
-    g.addLayer(L.marker([R[1],R[2]],{pane:"demand",interactive:false,icon:L.divIcon({className:"",iconSize:null,iconAnchor:[-(12+t*16),9],
-      html:`<span class="pxlabel"><b>$${price.toFixed(0)}</b>/hr ${esc(R[0])}</span>`})}));
+  const vast = INV && (INV.venues||[]).find(v => v.venue === "Vast.ai");
+  const h = (vast && vast.h100_by_country) || {};
+  const az = (PRICES.azure_apac_regional||[]).find(r => /H100/.test(r.sku)) || {};
+  const azByCC = {}; Object.entries(az.regions||{}).forEach(([reg, p]) => { if (AZ_CC[reg]) azByCC[AZ_CC[reg]] = p; });
+  const ccs = new Set([...Object.keys(h), ...Object.keys(azByCC)]);
+  ccs.forEach(cc => {
+    const name = ISO2[cc]; if (!name) return;
+    const c = DATA.centroids[name] || (CENT_EXTRA[name] ? {lat:CENT_EXTRA[name][0], lng:CENT_EXTRA[name][1]} : null); if (!c) return;
+    const m = h[cc], a = azByCC[cc];
+    const html = `<div class="pxlabel"><b>${m ? "$"+m.usd_med.toFixed(2) : "\u2014"}</b>/hr H100${m ? `<i>${nf(m.n)} offer${m.n>1?"s":""}</i>` : ""}${a ? `<i>Azure $${a.toFixed(2)}</i>` : ""}</div>`;
+    const lab = L.marker([c.lat, c.lng], {pane:"markerPane", interactive:true, icon:L.divIcon({className:"", iconSize:null, iconAnchor:[0,0], html})});
+    lab.bindTooltip(`<b>${esc(name)}</b><div class="tt-sub">${m ? "Median asking price for an H100, per GPU hour, from "+nf(m.n)+" marketplace offer"+(m.n>1?"s":"")+", counted "+esc(agoTxt(INV.captured_at)) : "No marketplace H100 offers here"}${a ? "<br>Azure list price for its H100 machine in this region: $"+a.toFixed(2)+"/GPU-hr" : ""}</div>`, {direction:"top", offset:[0,-6]});
+    g.addLayer(lab);
   });
   return g;
-}
-function rebuild(id){
+}function rebuild(id){
   if (G[id]) { map.removeLayer(G[id]); delete G[id]; }
   if (!S.on[id]) {
     if (id === "contracts") rebuildArcLabels();
@@ -3958,8 +4204,15 @@ function renderMarket(){
   const askedMw = n.gapMw + n.pendingMw;                 // open needs plus signed-but-not-delivered
   /* Only capacity that is open right now counts as excess. A 10 GW target and a power
      allocation nobody has energised are in the list for context, not in this number. */
-  const openNow = n.forSale.filter(d => d.open_status === "available_now");
-  const excessMw = openNow.reduce((a,d) => a + (d.mw||0), 0);
+  /* Everything in the excess list counts here, including what is announced, gone or
+     shelved, because the owner asked for the whole picture in one number. The split is
+     written underneath so nobody reads the total as buyable today. */
+  const st = k => n.forSale.filter(d => (d.open_status||"available_now") === k);
+  const openNow = st("available_now");
+  const mwOf = a => a.reduce((s,d) => s + (d.mw||0), 0);
+  const excessMw = mwOf(n.forSale);
+  const split = [["open", openNow], ["announced", st("announced_not_open")], ["gone", st("already_taken")], ["shelved", st("withdrawn")]]
+    .filter(([k,a]) => a.length).map(([k,a]) => `${nf(a.length)} ${k}${mwOf(a) ? " "+kf(mwOf(a))+" MW" : ""}`).join(" \u00b7 ");
   const excessGpus = (INV && INV.totals) ? INV.totals.gpus_spare : 0;
   const tile = (cls, val, unit, label, sub) =>
     `<div class="kpi ${cls}"><div class="v">${val}<small class="u">${unit}</small></div><div class="l">${label}</div>${sub?`<div class="s">${sub}</div>`:""}</div>`;
@@ -3973,7 +4226,7 @@ function renderMarket(){
     <div class="kpis four">
       ${tile("build", kf(n.building), "MW", "Being built", n.apac ? "market total" : `${nf(SITES.filter(s=>bucketOf(s.status)==="building").length)} sites`)}
       ${tile("dem", kf(askedMw), "MW", "Asked for now", `${nf(n.gaps.length)} companies still need a seller`)}
-      ${tile("off", excessMw ? kf(excessMw) : nf(openNow.length), excessMw ? "MW" : "open", "Excess we could buy", `${nf(openNow.length)} open now${excessGpus ? ` · ${nf(excessGpus)} GPUs free on marketplaces` : ""}`)}
+      ${tile("off", excessMw ? kf(excessMw) : nf(n.forSale.length), excessMw ? "MW" : "cases", "Excess compute", `${split}${excessGpus ? ` \u00b7 ${nf(excessGpus)} GPUs free to rent` : ""}`)}
       ${tile("live", kf(n.running), "MW", "Running now", n.apac ? "market total, already sold" : "our named sites only")}
     </div>`;
   $("sum-market").textContent = `${nf(visibleSites().length)} sites on map`;
@@ -3983,7 +4236,7 @@ function counts(){
   return {sites: visibleSites().length, country: CTRY.length,
     demand: DEMAND.filter(g=>g.loc&&demandVisible(g)).length, call: DEMAND.filter(g=>g.loc&&hasGap(g.entity_id)).length,
     contracts: CONTRACTS.filter(conVisible).length,
-    capital: CAPITAL.filter(d=>d.ends).length, offload: OFFLOADS.filter(d=>d.loc).length,
+    capital: CAPITAL.filter(d=>d.ends).length, offload: OFFLOADS.filter(d=>d.loc && !S.xhide[d.open_status||"available_now"]).length,
     prices: (PRICES.azure_apac_regional||[]).length?6:0};
 }
 const fsel = (f, label, opts, cur, n) => `<div class="frow"><span class="fl">${label}</span>
@@ -3994,14 +4247,14 @@ const fchk = (id, on, label) => `<div class="frow"><label style="display:flex;al
 function renderLayers(){
   const c = counts();
   $("layers").innerHTML = LAYERS.map(l => `
-    <div class="lrow${S.on[l.id]?"":" off"}${S.on[l.id]&&["sites","demand","contracts","offload"].includes(l.id)?" hasf":""}" data-lrow="${l.id}">
+    <div class="lrow${S.on[l.id]?"":" off"}${S.on[l.id]&&["sites","demand","contracts","offload","call"].includes(l.id)?" hasf":""}" data-lrow="${l.id}">
       ${l.col?`<span class="sw" style="background:var(${l.col})"></span>`:`<span class="sw" style="background:none;border:1px solid var(--bd2)"></span>`}
       <span class="lname" title="${esc(l.desc)}">${esc(l.name)}</span>
       <span class="ln">${nf(c[l.id])}</span>
       <button class="eye" data-layer="${l.id}" aria-pressed="${S.on[l.id]}" aria-label="Toggle ${esc(l.name)}">
         <svg class="ic"><use href="${S.on[l.id]?"#i-eye":"#i-eyeoff"}"/></svg></button>
     </div>
-    ${!S.on[l.id]||!["country","sites","demand","contracts","offload"].includes(l.id)?"":`<div class="fgrp" style="border-left-color:var(${l.col})">`+(
+    ${!S.on[l.id]||!["country","sites","demand","contracts","offload","call"].includes(l.id)?"":`<div class="fgrp" style="border-left-color:var(${l.col})">`+(
       l.id==="country"?fsel("cmetric","Show",[["all","All — supply and demand"],["building","Being built"],["running","Running now"],["demand","Demand by 2028"]],S.ctryMetric,c.country)
     : l.id==="sites"?fsel("status","Show",[["all","All sites"],["live","Running now"],["building","Being built"],["planned","Only announced"]],S.siteStatus,c.sites)
         +fchk("siteNames",S.on.labels,"Name the biggest sites")
@@ -4009,16 +4262,22 @@ function renderLayers(){
         +fsel("dwho","Who",[["all","Everyone"],["lab","AI labs"],["cloud","Big clouds"],["gov","Governments"],["ent","Enterprises"]],S.demWho)
     : l.id==="contracts"?fsel("cstatus","Show",[["all","All contracts"],["pending","Signed, not delivered"],["running","Delivered, running"],["changed","Cut back or cancelled"]],S.conStatus,c.contracts)
         +fchk("arcNames",S.on.arclabels,"Name the 10 biggest deals")
-    : l.id==="offload"?`<div id="spare"></div>`
+    : l.id==="call"?`<div id="match"></div>`
+    : l.id==="offload"?[["available_now","Open now \u2014 you can act on it today"],["announced_not_open","Announced, not open \u2014 they said they will sell, nothing to buy yet"],["already_taken","Gone \u2014 somebody else took it; kept so you know who is active"],["withdrawn","Shelved \u2014 the owner stopped the project; some can be resubmitted"]]
+          .map(([k,lab]) => `<div class="frow"><label style="display:flex;align-items:center;gap:7px;cursor:pointer;font-size:var(--fs-2);color:var(--t2)"><input type="checkbox" data-xf="${k}"${S.xhide[k]?"":" checked"}> ${lab}</label></div>`).join("")
+          +`<div id="spare"></div>`
     : "")+`</div>`}`).join("");
   if ($("spare")) renderSpare();
+  if ($("match")) renderMatch();
   $("sum-layers").textContent = LAYERS.filter(l=>S.on[l.id]).length + " on";
   const sn = $("siteNames"); if (sn) sn.addEventListener("change", e => { S.on.labels = e.target.checked; rebuild("sites"); });
   const an = $("arcNames"); if (an) an.addEventListener("change", e => { S.on.arclabels = e.target.checked; rebuild("contracts"); });
+  document.querySelectorAll("[data-xf]").forEach(cb => cb.addEventListener("change", e => {
+    S.xhide[e.target.dataset.xf] = !e.target.checked; rebuild("offload"); renderSpare(); renderLegend(); renderMarket(); writeHash(); }));
   renderChips();
 }
 function renderChips(){
-  $("chips").innerHTML = LAYERS.filter(l => ["call","offload","demand","contracts","sites","capital","prices"].includes(l.id)).map(l =>
+  $("chips").innerHTML = LAYERS.filter(l => ["call","offload","demand","contracts","sites","capital"].includes(l.id)).map(l =>
     `<button class="chipb glass" data-chip="${l.id}" aria-pressed="${S.on[l.id]}"><span class="sw" style="background:var(${l.col})"></span>${esc(l.name)}</button>`).join("");
 }
 
@@ -4041,7 +4300,7 @@ function agoTxt(iso){
   return h < 1 ? Math.round(ms/6e4) + " min ago" : h < 48 ? Math.round(h) + " h ago" : Math.round(h/24) + " days ago";
 }
 function renderSpare(){
-  const offers = DEALS.filter(d => d.open_status).sort((a,b) => {
+  const offers = DEALS.filter(d => d.open_status && !S.xhide[d.open_status]).sort((a,b) => {
     const r = {available_now:0, announced_not_open:1, withdrawn:2, already_taken:3};
     return (r[a.open_status] - r[b.open_status]) || ((b.mw||0) - (a.mw||0));
   });
@@ -4072,19 +4331,14 @@ function renderSpare(){
           ${d.mw?"<br>"+mwf(d.mw):""}</span></div>`).join("");
 }
 function renderMatch(){
-  $("match").innerHTML = `<p class="hint" style="margin:0 0 6px">The same companies as the <b style="color:var(--c-dem-t)">Demand</b> layer, ranked by how much they still need. Click a name to find it on the map.</p>` +
+  if (!$("match")) return;
+  $("match").innerHTML = `<p class="hint" style="margin:0 0 6px">Ranked by how much they still need. Click a name to find it on the map.</p>` +
     GAPS.map(g => { const x = DEM[g.entity_id]; const l = x && x.latest; return `<div class="gap" data-sel="ent:${esc(g.entity_id)}">
       <span class="sw" style="background:var(--c-dem)"></span>
-      <span class="gn">${esc(g.name)}<small>${esc((l&&l.need_plain)||("stated "+kf(g.stated_h100e)+" H100e · signed "+kf(g.contracted_h100e)))}</small>${l?`<small>${srcA(l)}</small>`:""}</span>
+      <span class="gn">${esc(g.name)}<small>${esc((l&&l.need_plain)||("stated "+kf(g.stated_h100e)+" H100e \u00b7 signed "+kf(g.contracted_h100e)))}</small>${l?`<small>${srcA(l)}</small>`:""}</span>
       ${g.loc?"":'<span class="noloc" title="No location found, so it is not drawn">no pin</span>'}
-      <span class="gv">${mwf(g.gap_mw)}</span></div>`; }).join("") +
-    `<div class="subh">Every company with demand · ${DEMAND.filter(demandVisible).length}${S.demStatus!=="all"||S.demWho!=="all"?" (filtered)":""}</div>` +
-    DEMAND.filter(demandVisible).map(x => `<div class="gap" data-sel="ent:${esc(x.entity_id)}"><span class="sw" style="background:var(--c-dem);opacity:.6"></span>
-      <span class="gn">${esc(x.name)}<small>${esc((x.latest&&(x.latest.need_plain||x.latest.headline))||"")}</small>${x.latest?`<small>${srcA(x.latest)}</small>`:""}</span>
-      <span class="gv" style="color:var(--t2)">${x.size_mw?mwf(x.size_mw):(x.stated_usd?usd(x.stated_usd):"")}</span></div>`).join("");
-  $("sum-match").textContent = nf(GAPS.length) + " open · " + nf(DEMAND.length) + " total";
-}
-/* ============ panel: circles ============ */
+      <span class="gv">${mwf(g.gap_mw)}</span></div>`; }).join("");
+}/* ============ panel: circles ============ */
 function renderCircles(){
   $("circles").innerHTML = `<p class="hint" style="margin:0 0 6px">Money that leaves a company and comes back through someone else. Click one to draw it.</p>` +
     DATA.circular_loops.map((l,i) => { const ids=[l.a,l.b,l.c].filter(Boolean);
@@ -4973,7 +5227,7 @@ function renderLegend(){
     row(dot("background:var(--x-court)"),"<b>Court sale</b> \u2014 bankruptcy or auction"),
     row(dot("background:var(--x-gov)"),"<b>Government programme</b> \u2014 apply through a tender"),
     row(dot("border:2px dashed var(--c-off)"),"<b>Listed for rent</b> on a marketplace"),
-    row(dot("border:2px dashed var(--t3);opacity:.6"),"<b>Hollow grey</b> \u2014 gone, shelved or not open yet")]));
+    row(dot("border:2px dashed var(--t3);opacity:.6"),"<b>Hollow grey</b> \u2014 gone (someone else took it), shelved (owner stopped it) or announced but not open")]));
 
   if (S.on.prices) out.push(sec("--c-px","Price by city",c.prices,[
     row(dot("background:var(--c-px);border-color:var(--c-px-t)"),"One Azure machine, price per hour. Bigger = dearer.")]));
@@ -5023,7 +5277,7 @@ function renderPill(){
   $("sheet-stat").innerHTML = short.slice(0,3).join('<span class="sep">·</span>')
     || `<b>${nf(DEALS.length)}</b> deals · <b>${nf(SITES.length)}</b> sites`;
 }
-function renderAllPanels(){ renderMarket(); renderLayers(); renderMatch(); renderCircles(); renderPrices(); renderLive(); renderData(); renderLegend(); renderPill();
+function renderAllPanels(){ renderMarket(); renderLayers(); renderCircles(); renderPrices(); renderLive(); renderData(); renderLegend(); renderPill();
   $("pfoot").innerHTML = `<b>${nf(COV.deals_total)}</b> deals · <b>${nf(COV.entities_total)}</b> companies · <b>${nf(COV.sites_total)}</b> sites · <b>${nf(CTRY.length)}</b> countries`; }
 
 
@@ -5137,6 +5391,7 @@ function togglePanel(open){
               if (!(open && S.sheet==="full")) setSheet(want); return; }
   S.panelOpen = open==null ? !S.panelOpen : open; $("panel").classList.toggle("closed", !S.panelOpen);
   document.body.classList.toggle("panel-closed", !S.panelOpen); setTimeout(()=>map.invalidateSize(),180); }
+function syncPriceBtn(){ const b = $("t-price"); if (b) b.setAttribute("aria-pressed", String(!!S.on.prices)); }
 function openSection(id){
   const d = $(id); if (!d) return;
   d.open = true;
@@ -5164,6 +5419,7 @@ document.addEventListener("click", ev => {
   if (t.closest("#panel-tab")) { togglePanel(true); return; }
   if (t.closest("#btn-theme")) { setTheme(S.theme==="dark"?"light":"dark"); return; }
   if (t.closest("#t-key")) { openSection("sec-key"); return; }
+  if (t.closest("#t-price")) { S.on.prices = !S.on.prices; rebuild("prices"); syncPriceBtn(); writeHash(); return; }
   if (t.closest("#t-present")) { setPresent(true); return; }
   if (t.closest("#present-exit")) { setPresent(false); return; }
   if (t.closest("#t-apac")) { fitApac(); return; }

@@ -25,7 +25,7 @@ const info = await page.evaluate(() => ({
 console.log('RENDER', JSON.stringify(info, null, 1));
 await page.screenshot({ path: 'v2_home.png' });
 // open Match Board and click the first gap
-await page.click('#sec-match summary'); await page.waitForTimeout(300);
+await page.click('#sec-layers summary').catch(()=>{}); await page.evaluate(()=>{document.getElementById('sec-layers').open=true}); await page.waitForTimeout(300);
 await page.click('#match .gap'); await page.waitForTimeout(900);
 const sel1 = await page.evaluate(() => ({ hidden: document.getElementById('sel').hidden, title: document.querySelector('#sel h2')?.textContent }));
 console.log('SELECT company via match board:', JSON.stringify(sel1));

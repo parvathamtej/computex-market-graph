@@ -171,10 +171,21 @@ def cap_vast():
     bands = []
     for g, v in sorted(price.items(), key=lambda kv: -len(kv[1]))[:14]:
         v = sorted(v); bands.append({"gpu": g[:44], "n": len(v), "usd_med": round(v[len(v)//2], 3)})
+    # the same chip priced per country, so a price map compares like with like
+    h100 = collections.defaultdict(list); rtx = collections.defaultdict(list)
+    for o in offers:
+        cc = (str(o.get("geolocation") or "").split(",")[-1].strip() or "").upper()[:2]
+        if not cc or not o.get("dph_total") or not o.get("num_gpus"): continue
+        per = o["dph_total"] / o["num_gpus"]; g = str(o.get("gpu_name") or "")
+        if "H100" in g: h100[cc].append(per)
+        elif "4090" in g: rtx[cc].append(per)
+    def med(dd): return {cc: {"n": len(v), "usd_med": round(sorted(v)[len(v)//2], 3)} for cc, v in dd.items()}
+    h100_cc, rtx_cc = med(h100), med(rtx)
     return {"venue": "Vast.ai", "kind": "peer-to-peer marketplace", "auth": "none",
             "offers": len(offers), "gpus_total": gpus, "gpus_free": gpus,   # every offer here is rentable now
             "asking_prices": bands,
             "by_country": [{"cc": cc, "offers": cc_off[cc], "gpus": cc_gpu[cc], "free": cc_gpu[cc]} for cc, _ in cc_gpu.most_common(30)],
+            "h100_by_country": h100_cc, "rtx4090_by_country": rtx_cc,
             "note": "Every offer listed is rentable right now, so listed equals free. Per-GPU asking prices."}
 
 def cap_runpod():
